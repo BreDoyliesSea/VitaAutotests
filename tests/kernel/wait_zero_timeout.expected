@@ -1,0 +1,47 @@
+thread end, can't end at once: the wait: 0x80028005
+thread end, can't end at once: the time it wrote back: 0x00000000
+thread end, can end at once: the wait: 0x00000000
+thread end, can end at once: the time it wrote back: 0x00000000
+event flag, can't end at once: the wait: 0x80028005
+event flag, can't end at once: the time it wrote back: 0x00000000
+event flag, can end at once: the wait: 0x00000000
+event flag, can end at once: the time it wrote back: 0x00000000
+semaphore, can't end at once: the wait: 0x80028005
+semaphore, can't end at once: the time it wrote back: 0x00000000
+semaphore, can end at once: the wait: 0x00000000
+semaphore, can end at once: the time it wrote back: 0x00000000
+mutex, can't end at once: the wait: 0x80028005
+mutex, can't end at once: the time it wrote back: 0x00000000
+mutex, can end at once: the wait: 0x00000000
+mutex, can end at once: the time it wrote back: 0x00000000
+read lock, can't end at once: the wait: 0x80028005
+read lock, can't end at once: the time it wrote back: 0x00000000
+read lock, can end at once: the wait: 0x00000000
+read lock, can end at once: the time it wrote back: 0x00000000
+write lock, can't end at once: the wait: 0x80028005
+write lock, can't end at once: the time it wrote back: 0x00000000
+write lock, can end at once: the wait: 0x00000000
+write lock, can end at once: the time it wrote back: 0x00000000
+condition variable, can't end at once: the wait: 0x80028005
+condition variable, can't end at once: the time it wrote back: 0x00000000
+lightweight mutex, can't end at once: the wait: 0x80028005
+lightweight mutex, can't end at once: the time it wrote back: 0x00000000
+lightweight mutex, can end at once: the wait: 0x00000000
+lightweight mutex, can end at once: the time it wrote back: 0x00000000
+simple event, can't end at once: the wait: 0x80028005
+simple event, can't end at once: the time it wrote back: 0x00000000
+simple event, can end at once: the wait: 0x00000000
+simple event, can end at once: the time it wrote back: 0x00000000
+message pipe receive, can't end at once: the wait: 0x80028005
+message pipe receive, can't end at once: the time it wrote back: 0x00000000
+message pipe receive, can end at once: the wait: 0x00000000
+message pipe receive, can end at once: the time it wrote back: 0x00000000
+message pipe send, can't end at once: the wait: 0x80028005
+message pipe send, can't end at once: the time it wrote back: 0x00000000
+message pipe send, can end at once: the wait: 0x00000000
+message pipe send, can end at once: the time it wrote back: 0x00000000
+multiple events, can't end at once: the wait: 0x80028005
+multiple events, can't end at once: the time it wrote back: 0x00000000
+multiple events, can end at once: the wait: 0x00000001
+multiple events, can end at once: the time it wrote back: 0x00000000
+DONE
