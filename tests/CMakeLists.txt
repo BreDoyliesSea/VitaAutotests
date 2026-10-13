@@ -84,6 +84,7 @@ vita_test(callback_owner_end kernel/callback_owner_end.c)
 vita_test(callback_priority_requeue kernel/callback_priority_requeue.c)
 vita_test(cb_waits kernel/cb_waits.c)
 vita_test(callback_event_waits kernel/callback_event_waits.c)
+vita_test(exit_process_thread kernel/exit_process_thread.c)
 
 vita_test(memblock memory/memblock.c)
 
