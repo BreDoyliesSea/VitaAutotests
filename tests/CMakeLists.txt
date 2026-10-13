@@ -107,6 +107,18 @@ vita_test(thread_event_handler_edges kernel/thread_event_handler_edges.c)
 vita_test(thread_signal kernel/thread_signal.c)
 vita_test(thread_signal_timeout kernel/thread_signal_timeout.c)
 vita_test(thread_change_attr kernel/thread_change_attr.c)
+vita_test(module_start_thread kernel/module_start_thread.c)
+
+# The module module_start_thread loads. vita_create_self runs in a function, since it adds its flags
+# to the scope it runs in, where they would also apply to the test vpk's self.
+add_executable(probe_module kernel/probe_module/probe_module.c)
+target_link_libraries(probe_module SceLibKernel_stub SceKernelThreadMgr_stub)
+target_link_options(probe_module PRIVATE -nostartfiles -Wl,-e,module_start)
+function(probe_module_self)
+	vita_create_self(probe_module.suprx probe_module CONFIG ${CMAKE_CURRENT_SOURCE_DIR}/kernel/probe_module/exports.yml)
+endfunction()
+probe_module_self()
+vita_test_file(${CMAKE_CURRENT_BINARY_DIR}/probe_module.suprx probe_module.suprx)
 
 vita_test(memblock memory/memblock.c)
 vita_test(address_ranges memory/address_ranges.c)

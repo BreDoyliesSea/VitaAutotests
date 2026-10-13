@@ -1,0 +1,58 @@
+main thread: load and start: 0x00000000
+main thread: the start status: 0x00000000
+main thread: runs of its start function: 0x00000001
+main thread: its start function runs on the calling thread: 0x00000000
+main thread: its thread is in this process: 0x00000001
+main thread: its thread's priority: 0x000000A0
+main thread: that is the caller's priority: 0x00000001
+main thread: its thread's initial priority: 0x000000A0
+main thread: its thread's stack size: 0x00004000
+main thread: its thread's attributes: 0x80008000
+main thread: on the caller's stack, below its frame: 0x00000000
+main thread: it gets the caller's arguments as they are: 0x00000000
+main thread: their size: 0x00000004
+main thread: the thread of the start function is still there after the load: 0x00000000
+main thread: stop and unload: 0x00000000
+main thread: the stop status: 0x00000000
+main thread: runs of its stop function: 0x00000001
+main thread: its stop function runs on the calling thread: 0x00000000
+main thread: its thread is in this process: 0x00000001
+main thread: its thread's priority: 0x000000A0
+main thread: that is the caller's priority: 0x00000001
+main thread: its thread's initial priority: 0x000000A0
+main thread: its thread's stack size: 0x00004000
+main thread: its thread's attributes: 0x80008000
+main thread: on the caller's stack, below its frame: 0x00000000
+main thread: it gets the caller's arguments as they are: 0x00000000
+main thread: their size: 0x00000004
+main thread: start and stop run on the same thread: 0x00000000
+another thread: load and start: 0x00000000
+another thread: the start status: 0x00000000
+another thread: runs of its start function: 0x00000001
+another thread: its start function runs on the calling thread: 0x00000000
+another thread: its thread is in this process: 0x00000001
+another thread: its thread's priority: 0x000000A0
+another thread: that is the caller's priority: 0x00000000
+another thread: its thread's initial priority: 0x000000A0
+another thread: its thread's stack size: 0x00004000
+another thread: its thread's attributes: 0x80008000
+another thread: on the caller's stack, below its frame: 0x00000000
+another thread: it gets the caller's arguments as they are: 0x00000000
+another thread: their size: 0x00000004
+another thread: the thread of the start function is still there after the load: 0x00000000
+another thread: stop and unload: 0x00000000
+another thread: the stop status: 0x00000000
+another thread: runs of its stop function: 0x00000001
+another thread: its stop function runs on the calling thread: 0x00000000
+another thread: its thread is in this process: 0x00000001
+another thread: its thread's priority: 0x000000A0
+another thread: that is the caller's priority: 0x00000000
+another thread: its thread's initial priority: 0x000000A0
+another thread: its thread's stack size: 0x00004000
+another thread: its thread's attributes: 0x80008000
+another thread: on the caller's stack, below its frame: 0x00000000
+another thread: it gets the caller's arguments as they are: 0x00000000
+another thread: their size: 0x00000004
+another thread: start and stop run on the same thread: 0x00000000
+both loads run the start function on the same thread: 0x00000000
+DONE

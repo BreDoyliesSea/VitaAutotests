@@ -25,10 +25,16 @@ function(vita_test name)
 	set_property(GLOBAL APPEND PROPERTY VITA_TEST_NAMES ${name})
 endfunction()
 
+# Adds a file the tests need to the vpk, at dest inside it
+function(vita_test_file source dest)
+	set_property(GLOBAL APPEND PROPERTY VITA_TEST_FILES ${source} ${dest})
+endfunction()
+
 # Builds every test added so far into one vpk with the given title ID. Each launch runs one test.
 function(vita_tests_vpk title_id)
 	get_property(sources GLOBAL PROPERTY VITA_TEST_SOURCES)
 	get_property(names GLOBAL PROPERTY VITA_TEST_NAMES)
+	get_property(files GLOBAL PROPERTY VITA_TEST_FILES)
 	set(table "")
 	foreach(name ${names})
 		string(APPEND table "TEST(${name})\n")
@@ -42,7 +48,7 @@ function(vita_tests_vpk title_id)
 	# Room for the import tables vita-elf-create adds after the code, which outgrow the page padding
 	target_link_options(vita-autotests PRIVATE -Wl,--defsym,__sce_headroom=0x4000)
 	vita_create_self(vita-autotests.self vita-autotests)
-	vita_create_vpk(vita-autotests.vpk ${title_id} vita-autotests.self NAME vita-autotests)
+	vita_create_vpk(vita-autotests.vpk ${title_id} vita-autotests.self NAME vita-autotests FILE ${files})
 endfunction()
 
 add_subdirectory(tests)
