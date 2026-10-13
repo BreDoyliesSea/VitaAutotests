@@ -100,6 +100,13 @@ vita_test(callback_event_results kernel/callback_event_results.c)
 vita_test(callback_stack kernel/callback_stack.c)
 vita_test(priority_requeue_others kernel/priority_requeue_others.c)
 vita_test(cond_signal_all_order kernel/cond_signal_all_order.c)
+vita_test(thread_ready_status kernel/thread_ready_status.c)
+vita_test(thread_fpscr kernel/thread_fpscr.c)
+vita_test(thread_id_registers kernel/thread_id_registers.c)
+vita_test(thread_event_handler_edges kernel/thread_event_handler_edges.c)
+vita_test(thread_signal kernel/thread_signal.c)
+vita_test(thread_signal_timeout kernel/thread_signal_timeout.c)
+vita_test(thread_change_attr kernel/thread_change_attr.c)
 
 vita_test(memblock memory/memblock.c)
 

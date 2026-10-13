@@ -1,0 +1,22 @@
+the main thread's TPIDRURO is 0x800 past its first TLS slot: 0x00000001
+the main thread's TPIDRURW: 0x00000000
+a new thread's TPIDRURW: 0x00000000
+its TPIDRURO differs from the main thread's: 0x00000001
+its TPIDRURO is 0x800 past its first TLS slot: 0x00000001
+and its last TLS slot is 255 words past the first: 0x00000001
+after a delay: TPIDRURW: 0x00001111
+after a delay: its TPIDRURO is the same: 0x00000001
+the other thread on its core has another TPIDRURO: 0x00000001
+after another thread ran on its core: TPIDRURW: 0x00001111
+after another thread ran on its core: its TPIDRURO is the same: 0x00000001
+a callback run by a wait sees TPIDRURW: 0x00001111
+it sees the thread's TPIDRURO: 0x00000001
+after the wait: TPIDRURW: 0x00001111
+after the wait: its TPIDRURO is the same: 0x00000001
+a callback run by a check sees TPIDRURW: 0x00001111
+it sees the thread's TPIDRURO: 0x00000001
+after the check: TPIDRURW: 0x00001111
+after the check: its TPIDRURO is the same: 0x00000001
+started again: TPIDRURW: 0x00000000
+started again: its TPIDRURO is the same: 0x00000001
+DONE

@@ -1,0 +1,19 @@
+send a signal to this thread: 0x00000000
+send a second one before it is taken: 0x80028121
+wait with a signal sent: 0x00000000
+its time left is all of it: 0x00000001
+wait without a timeout with a signal sent: 0x00000000
+wait with 1 as the first argument: 0x00000000
+wait with a delay of 200 ms and a signal sent: 0x00000000
+it took longer than 100 ms: 0x00000000
+wait with callbacks, a signal sent and a callback pending: 0x00000000
+runs of the callback: 0x00000001
+a thread waiting for a signal: its wait type: 0x00000004
+its wait UID is itself: 0x00000000
+its wait UID is 0: 0x00000000
+send it a signal: 0x00000000
+its wait: 0x00000000
+send a signal to a thread that never started: 0x00000000
+send a signal to a semaphore: 0x80028021
+send a signal to an unknown UID: 0x80028021
+DONE
