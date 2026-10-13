@@ -1,0 +1,15 @@
+exit and delete: the wait for its end: 0x00000000
+exit and delete: the status: 0x00000033
+with callbacks: runs of the callback during the wait: 0x00000001
+with callbacks: the wait for its end: 0x00000000
+with callbacks: the status: 0x00000044
+two waiters: the one that timed out: 0x80028005
+two waiters: its status: 0x0000DEAD
+two waiters: the other one: 0x00000000
+two waiters: its status: 0x00000022
+target in a callback: a wait for its end: 0x80028005
+target in a callback: the status written: 0x0000DEAD
+target in a callback: the wait once it ends: 0x00000000
+target in a callback: the status: 0x00000055
+wait for the main thread's end: 0x80028005
+DONE

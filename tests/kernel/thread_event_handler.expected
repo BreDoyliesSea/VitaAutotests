@@ -1,0 +1,49 @@
+a thread that returns: register: 0x00000000
+a thread that returns: the exit status: 0x00000007
+a thread that returns: handler runs: 0x00000002
+a thread that returns: handler runs before the entry: 0x00000001
+a thread that returns: run 1: the type: 0x00000004
+a thread that returns: run 1: the thread is the target: 0x00000001
+a thread that returns: run 1: the argument: 0x00000000
+a thread that returns: run 1: the common pointer is the one given: 0x00000001
+a thread that returns: run 1: it runs on the target: 0x00000001
+a thread that returns: run 2: the type: 0x00000008
+a thread that returns: run 2: the thread is the target: 0x00000001
+a thread that returns: run 2: the argument: 0x00000000
+a thread that returns: run 2: the common pointer is the one given: 0x00000001
+a thread that returns: run 2: it runs on the target: 0x00000001
+a thread that returns: unregister: 0x00000000
+a thread that exits: register: 0x00000000
+a thread that exits: the exit status: 0x00000009
+a thread that exits: handler runs: 0x00000002
+a thread that exits: handler runs before the entry: 0x00000001
+a thread that exits: run 1: the type: 0x00000004
+a thread that exits: run 1: the thread is the target: 0x00000001
+a thread that exits: run 1: the argument: 0x00000000
+a thread that exits: run 1: the common pointer is the one given: 0x00000001
+a thread that exits: run 1: it runs on the target: 0x00000001
+a thread that exits: run 2: the type: 0x00000008
+a thread that exits: run 2: the thread is the target: 0x00000001
+a thread that exits: run 2: the argument: 0x00000000
+a thread that exits: run 2: the common pointer is the one given: 0x00000001
+a thread that exits: run 2: it runs on the target: 0x00000001
+a thread that exits: unregister: 0x00000000
+every thread: register: 0x00000000
+every thread: the exit status: 0x00000007
+every thread: handler runs: 0x00000002
+every thread: handler runs before the entry: 0x00000001
+every thread: run 1: the type: 0x00000004
+every thread: run 1: the thread is the target: 0x00000001
+every thread: run 1: the argument: 0x00000000
+every thread: run 1: the common pointer is the one given: 0x00000001
+every thread: run 1: it runs on the target: 0x00000001
+every thread: run 2: the type: 0x00000008
+every thread: run 2: the thread is the target: 0x00000001
+every thread: run 2: the argument: 0x00000000
+every thread: run 2: the common pointer is the one given: 0x00000001
+every thread: run 2: it runs on the target: 0x00000001
+every thread: unregister: 0x00000000
+register for an unknown thread: 0x80028021
+register for no events: 0x80020005
+unregister an unknown handler: 0x80028061
+DONE

@@ -1,0 +1,12 @@
+recursive mutex locked 3 times: the waiter's lock: 0x00000000
+recursive mutex locked 3 times: its count after: 0x00000000
+recursive mutex locked 3 times: it has an owner after: 0x00000000
+mutex whose owner exits and deletes itself: the waiter's lock: 0x00000000
+lightweight mutex: the waiter's lock: 0x80028005
+lightweight mutex: its count after: 0x00000001
+lightweight mutex: try to lock it: 0x80028185
+write lock: the waiter's lock: 0x00000000
+write lock: try to lock it for writing after: 0x00000000
+read lock: the waiter's lock: 0x80028005
+read lock: try to lock it for writing after: 0x800281E6
+DONE
