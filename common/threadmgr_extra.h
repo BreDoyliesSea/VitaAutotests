@@ -215,3 +215,12 @@ SceInt32 sceKernelGetTimerInfo(SceUID id, TimerInfo *info);
 SceInt32 sceKernelGetTimerTime(SceUID id, SceKernelSysClock *clock);
 SceInt32 sceKernelSetTimerTime(SceUID id, SceKernelSysClock *clock);
 SceInt32 sceKernelGetTimerBase(SceUID id, SceKernelSysClock *base);
+
+// What sceKernelGetThreadInfo reports as the wait type. Waits that run callbacks add WAIT_TYPE_CB.
+#define WAIT_TYPE_SEMA 0x20
+#define WAIT_TYPE_MUTEX 0x40
+#define WAIT_TYPE_CB 0x80000000
+
+SceInt32 sceKernelWaitLwCondCB(SceKernelLwCondWork *work, SceUInt32 *timeout);
+SceInt32 sceKernelSendMsgPipeVectorCB(SceUID id, const MsgPipeVector *vectors, SceUInt32 count, SceUInt32 mode, SceSize *result, SceUInt32 *timeout);
+SceInt32 sceKernelReceiveMsgPipeVectorCB(SceUID id, const MsgPipeVector *vectors, SceUInt32 count, SceUInt32 mode, SceSize *result, SceUInt32 *timeout);

@@ -1,0 +1,149 @@
+delay, blocks: the wait: 0x00000000
+delay, blocks: runs of the pending callback: 0x00000001
+delay, timeout of 0: the wait: 0x80020005
+delay, timeout of 0: runs of the pending callback: 0x00000000
+thread end, blocks: the wait: 0x80028005
+thread end, blocks: runs of the pending callback: 0x00000001
+thread end, can end at once: the wait: 0x00000000
+thread end, can end at once: runs of the pending callback: 0x00000001
+thread end, timeout of 0: the wait: 0x80028005
+thread end, timeout of 0: runs of the pending callback: 0x00000001
+thread end, unknown UID: the wait: 0x80028021
+thread end, unknown UID: runs of the pending callback: 0x00000000
+event flag, blocks: the wait: 0x80028005
+event flag, blocks: runs of the pending callback: 0x00000001
+event flag, can end at once: the wait: 0x00000000
+event flag, can end at once: runs of the pending callback: 0x00000001
+event flag, timeout of 0: the wait: 0x80028005
+event flag, timeout of 0: runs of the pending callback: 0x00000001
+event flag, unknown UID: the wait: 0x800280E1
+event flag, unknown UID: runs of the pending callback: 0x00000000
+semaphore, blocks: the wait: 0x80028005
+semaphore, blocks: runs of the pending callback: 0x00000001
+semaphore, can end at once: the wait: 0x00000000
+semaphore, can end at once: runs of the pending callback: 0x00000001
+semaphore, timeout of 0: the wait: 0x80028005
+semaphore, timeout of 0: runs of the pending callback: 0x00000001
+semaphore, unknown UID: the wait: 0x80028101
+semaphore, unknown UID: runs of the pending callback: 0x00000000
+mutex, blocks: the wait: 0x80028005
+mutex, blocks: runs of the pending callback: 0x00000001
+mutex, can end at once: the wait: 0x00000000
+mutex, can end at once: runs of the pending callback: 0x00000001
+mutex, timeout of 0: the wait: 0x80028005
+mutex, timeout of 0: runs of the pending callback: 0x00000001
+mutex, unknown UID: the wait: 0x80028141
+mutex, unknown UID: runs of the pending callback: 0x00000000
+read lock, blocks: the wait: 0x80028005
+read lock, blocks: runs of the pending callback: 0x00000001
+read lock, can end at once: the wait: 0x00000000
+read lock, can end at once: runs of the pending callback: 0x00000001
+read lock, timeout of 0: the wait: 0x80028005
+read lock, timeout of 0: runs of the pending callback: 0x00000001
+read lock, unknown UID: the wait: 0x800281E1
+read lock, unknown UID: runs of the pending callback: 0x00000000
+write lock, blocks: the wait: 0x80028005
+write lock, blocks: runs of the pending callback: 0x00000001
+write lock, can end at once: the wait: 0x00000000
+write lock, can end at once: runs of the pending callback: 0x00000001
+write lock, timeout of 0: the wait: 0x80028005
+write lock, timeout of 0: runs of the pending callback: 0x00000001
+write lock, unknown UID: the wait: 0x800281E1
+write lock, unknown UID: runs of the pending callback: 0x00000000
+condition variable, blocks: the wait: 0x80028005
+condition variable, blocks: runs of the pending callback: 0x00000001
+condition variable, timeout of 0: the wait: 0x80028005
+condition variable, timeout of 0: runs of the pending callback: 0x00000001
+condition variable, unknown UID: the wait: 0x800281A1
+condition variable, unknown UID: runs of the pending callback: 0x00000000
+lightweight mutex, blocks: the wait: 0x80028005
+lightweight mutex, blocks: runs of the pending callback: 0x00000001
+lightweight mutex, can end at once: the wait: 0x00000000
+lightweight mutex, can end at once: runs of the pending callback: 0x00000000
+lightweight mutex, timeout of 0: the wait: 0x80028005
+lightweight mutex, timeout of 0: runs of the pending callback: 0x00000001
+lightweight condition variable, blocks: the wait: 0x80028005
+lightweight condition variable, blocks: runs of the pending callback: 0x00000001
+lightweight condition variable, timeout of 0: the wait: 0x80028005
+lightweight condition variable, timeout of 0: runs of the pending callback: 0x00000001
+simple event, blocks: the wait: 0x80028005
+simple event, blocks: runs of the pending callback: 0x00000001
+simple event, can end at once: the wait: 0x00000000
+simple event, can end at once: runs of the pending callback: 0x00000001
+simple event, timeout of 0: the wait: 0x80028005
+simple event, timeout of 0: runs of the pending callback: 0x00000001
+simple event, unknown UID: the wait: 0x80028201
+simple event, unknown UID: runs of the pending callback: 0x00000000
+message pipe receive, blocks: the wait: 0x80028005
+message pipe receive, blocks: runs of the pending callback: 0x00000001
+message pipe receive, can end at once: the wait: 0x00000000
+message pipe receive, can end at once: runs of the pending callback: 0x00000001
+message pipe receive, timeout of 0: the wait: 0x80028005
+message pipe receive, timeout of 0: runs of the pending callback: 0x00000001
+message pipe receive, unknown UID: the wait: 0x80028221
+message pipe receive, unknown UID: runs of the pending callback: 0x00000000
+message pipe send, blocks: the wait: 0x80028005
+message pipe send, blocks: runs of the pending callback: 0x00000001
+message pipe send, can end at once: the wait: 0x00000000
+message pipe send, can end at once: runs of the pending callback: 0x00000001
+message pipe send, timeout of 0: the wait: 0x80028005
+message pipe send, timeout of 0: runs of the pending callback: 0x00000001
+message pipe send, unknown UID: the wait: 0x80028221
+message pipe send, unknown UID: runs of the pending callback: 0x00000000
+message pipe vector receive, blocks: the wait: 0x80028005
+message pipe vector receive, blocks: runs of the pending callback: 0x00000001
+message pipe vector receive, can end at once: the wait: 0x00000000
+message pipe vector receive, can end at once: runs of the pending callback: 0x00000001
+message pipe vector receive, timeout of 0: the wait: 0x80028005
+message pipe vector receive, timeout of 0: runs of the pending callback: 0x00000001
+message pipe vector receive, unknown UID: the wait: 0x80028221
+message pipe vector receive, unknown UID: runs of the pending callback: 0x00000000
+message pipe vector send, blocks: the wait: 0x80028005
+message pipe vector send, blocks: runs of the pending callback: 0x00000001
+message pipe vector send, can end at once: the wait: 0x00000000
+message pipe vector send, can end at once: runs of the pending callback: 0x00000001
+message pipe vector send, timeout of 0: the wait: 0x80028005
+message pipe vector send, timeout of 0: runs of the pending callback: 0x00000001
+message pipe vector send, unknown UID: the wait: 0x80028221
+message pipe vector send, unknown UID: runs of the pending callback: 0x00000000
+multiple events, blocks: the wait: 0x80028005
+multiple events, blocks: runs of the pending callback: 0x00000001
+multiple events, can end at once: the wait: 0x00000001
+multiple events, can end at once: runs of the pending callback: 0x00000001
+multiple events, timeout of 0: the wait: 0x80028005
+multiple events, timeout of 0: runs of the pending callback: 0x00000001
+multiple events, unknown UID: the wait: 0x00000001
+multiple events, unknown UID: runs of the pending callback: 0x00000001
+semaphore wait without callbacks: 0x80028005
+poll the semaphore: 0x80028102
+delay without callbacks: 0x00000000
+runs of the pending callback after them: 0x00000000
+delay: the wait type: 0x80000001
+thread end: the wait type: 0x80000002
+thread end: the wait UID is the object: 0x00000001
+event flag: the wait type: 0x80000010
+event flag: the wait UID is the object: 0x00000001
+semaphore: the wait type: 0x80000020
+semaphore: the wait UID is the object: 0x00000001
+mutex: the wait type: 0x80000040
+mutex: the wait UID is the object: 0x00000001
+read lock: the wait type: 0x80000080
+read lock: the wait UID is the object: 0x00000001
+write lock: the wait type: 0x80000080
+write lock: the wait UID is the object: 0x00000001
+condition variable: the wait type: 0x80000100
+condition variable: the wait UID is the object: 0x00000001
+lightweight mutex: the wait type: 0x80100000
+lightweight condition variable: the wait type: 0x80200000
+simple event: the wait type: 0x80010000
+simple event: the wait UID is the object: 0x00000001
+message pipe receive: the wait type: 0x80040000
+message pipe receive: the wait UID is the object: 0x00000001
+message pipe send: the wait type: 0x80040000
+message pipe send: the wait UID is the object: 0x00000001
+message pipe vector receive: the wait type: 0x80040000
+message pipe vector receive: the wait UID is the object: 0x00000001
+message pipe vector send: the wait type: 0x80040000
+message pipe vector send: the wait UID is the object: 0x00000001
+multiple events: the wait type: 0x80020000
+DONE

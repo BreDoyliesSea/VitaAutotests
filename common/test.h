@@ -95,6 +95,12 @@ static inline void test_wait_until_waiting(SceUID thread) {
     }
 }
 
+// Returns whether thread is in a wait of the given type on the object id
+static inline int test_in_wait(SceUID thread, SceUInt32 type, SceUID id) {
+    SceKernelThreadInfo info = { .size = sizeof(info) };
+    return sceKernelGetThreadInfo(thread, &info) == 0 && info.waitType == type && info.waitId == id;
+}
+
 // Ends the test. The last output line marks that it got this far.
 static inline void test_exit(void) {
     test_output("DONE\n", 5);

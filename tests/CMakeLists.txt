@@ -74,6 +74,16 @@ vita_test(thread_create_current_priority kernel/thread_create_current_priority.c
 vita_test(wait_delete_timeout kernel/wait_delete_timeout.c)
 vita_test(rwlock_reader_again kernel/rwlock_reader_again.c)
 vita_test(wait_priority_change kernel/wait_priority_change.c)
+vita_test(callback_outer_wake kernel/callback_outer_wake.c)
+vita_test(callback_inner_wait kernel/callback_inner_wait.c)
+vita_test(callback_nesting kernel/callback_nesting.c)
+vita_test(callback_outer_timeout kernel/callback_outer_timeout.c)
+vita_test(callback_info kernel/callback_info.c)
+vita_test(callback_changes kernel/callback_changes.c)
+vita_test(callback_owner_end kernel/callback_owner_end.c)
+vita_test(callback_priority_requeue kernel/callback_priority_requeue.c)
+vita_test(cb_waits kernel/cb_waits.c)
+vita_test(callback_event_waits kernel/callback_event_waits.c)
 
 vita_test(memblock memory/memblock.c)
 

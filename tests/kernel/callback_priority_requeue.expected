@@ -1,0 +1,10 @@
+raise the thread to 0x60: 0x00000000
+its priority: 0x00000060
+it still waits in its callback: 0x00000001
+the outer semaphore: waits its cancel ended: 0x00000000
+the outer semaphore: the raised thread's wait: 0x80028005
+the outer semaphore: the other thread's wait: 0x00000000
+the inner semaphore: waits its cancel ended: 0x00000001
+the inner semaphore: the raised thread's wait: 0x00000000
+the inner semaphore: the other thread's wait: 0x80028007
+DONE

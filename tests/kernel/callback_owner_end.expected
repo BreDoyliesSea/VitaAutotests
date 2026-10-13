@@ -1,0 +1,28 @@
+ended owner: the callback's info: 0x800280A1
+ended owner: its thread is the one that made it: 0x00000000
+ended owner: its notifications: 0x800280A1
+ended owner: notify the callback: 0x800280A1
+ended owner: its notifications after: 0x800280A1
+ended owner: a check on this thread runs it: 0x00000000
+restarted owner: its check: 0x00000000
+restarted owner: runs of the callback: 0x00000000
+restarted owner: the callback's info: 0x800280A1
+restarted owner: its thread is the one that made it: 0x00000000
+restarted owner: its notifications: 0x800280A1
+deleted owner: delete the thread: 0x00000000
+deleted owner: the callback's info: 0x800280A1
+deleted owner: its thread is the one that made it: 0x00000000
+deleted owner: its notifications: 0x800280A1
+deleted owner: notify the callback: 0x800280A1
+deleted owner: delete the callback: 0x800280A1
+ended with one pending: runs of the callback: 0x00000000
+ended with one pending: the callback's info: 0x800280A1
+ended with one pending: its thread is the one that made it: 0x00000000
+ended with one pending: its notifications: 0x800280A1
+ended with one pending, then deleted: the callback's info: 0x800280A1
+ended with one pending, then deleted: its thread is the one that made it: 0x00000000
+ended with one pending, then deleted: its notifications: 0x800280A1
+deleted itself: the callback's info: 0x800280A1
+deleted itself: its thread is the one that made it: 0x00000000
+deleted itself: its notifications: 0x800280A1
+DONE

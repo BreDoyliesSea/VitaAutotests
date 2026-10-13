@@ -1,0 +1,26 @@
+before the callback: the thread's status: 0x00000008
+before the callback: its wait type: 0x80000020
+before the callback: its wait UID is the outer semaphore: 0x00000001
+before the callback: its wait UID is the inner semaphore: 0x00000000
+in the callback's wait: the thread's status: 0x00000008
+in the callback's wait: its wait type: 0x00000020
+in the callback's wait: its wait UID is the outer semaphore: 0x00000000
+in the callback's wait: its wait UID is the inner semaphore: 0x00000001
+in the callback's wait: the outer semaphore's waiters: 0x00000000
+in the callback's wait: the inner semaphore's waiters: 0x00000001
+in the callback's wait: the callback's notifications: 0x00000000
+the callback's wait: 0x00000000
+the outer wait after the callback: 0x00000000
+same semaphore: its waiters: 0x00000001
+same semaphore: the callback's wait: 0x00000000
+same semaphore: the outer wait: 0x00000000
+same semaphore: the count at the end: 0x00000000
+same mutex: its waiters: 0x00000001
+same mutex: the callback's lock: 0x00000000
+same mutex: the outer lock: 0x00000000
+same mutex: its count at the end: 0x00000000
+single waiter event flag: the callback's wait: 0x80028005
+single waiter event flag: the outer wait: 0x00000000
+inner timeout: the callback's wait: 0x80028005
+inner timeout: the outer wait: 0x00000000
+DONE

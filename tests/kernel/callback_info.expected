@@ -1,0 +1,75 @@
+check: the notify ID is -1: 0x00000001
+check: the notify ID is 0: 0x00000000
+check: the notify ID is the callback: 0x00000000
+check: the notify ID is the notifying thread: 0x00000000
+check: the count: 0x00000002
+check: the argument: 0x00000012
+check: the common pointer is the one given at create: 0x00000001
+check: the thread's status inside: 0x00000001
+check: its wait type inside: 0x00000000
+check: its wait UID inside is the semaphore: 0x00000000
+check: the semaphore's waiters inside: 0x00000000
+check: the callback's notifications inside: 0x00000000
+check: the callback's info inside: 0x00000000
+check: the notification count in its info inside: 0x00000000
+check: the argument in its info inside: 0x00000000
+delay: the notify ID is -1: 0x00000001
+delay: the notify ID is 0: 0x00000000
+delay: the notify ID is the callback: 0x00000000
+delay: the notify ID is the notifying thread: 0x00000000
+delay: the count: 0x00000001
+delay: the argument: 0x00000021
+delay: the common pointer is the one given at create: 0x00000001
+delay: the thread's status inside: 0x00000001
+delay: its wait type inside: 0x00000000
+delay: its wait UID inside is the semaphore: 0x00000000
+delay: the semaphore's waiters inside: 0x00000000
+delay: the callback's notifications inside: 0x00000000
+delay: the callback's info inside: 0x00000000
+delay: the notification count in its info inside: 0x00000000
+delay: the argument in its info inside: 0x00000000
+semaphore wait: the notify ID is -1: 0x00000001
+semaphore wait: the notify ID is 0: 0x00000000
+semaphore wait: the notify ID is the callback: 0x00000000
+semaphore wait: the notify ID is the notifying thread: 0x00000000
+semaphore wait: the count: 0x00000001
+semaphore wait: the argument: 0x00000031
+semaphore wait: the common pointer is the one given at create: 0x00000001
+semaphore wait: the thread's status inside: 0x00000001
+semaphore wait: its wait type inside: 0x00000000
+semaphore wait: its wait UID inside is the semaphore: 0x00000000
+semaphore wait: the semaphore's waiters inside: 0x00000000
+semaphore wait: the callback's notifications inside: 0x00000000
+semaphore wait: the callback's info inside: 0x00000000
+semaphore wait: the notification count in its info inside: 0x00000000
+semaphore wait: the argument in its info inside: 0x00000000
+notified by another thread: the notify ID is -1: 0x00000001
+notified by another thread: the notify ID is 0: 0x00000000
+notified by another thread: the notify ID is the callback: 0x00000000
+notified by another thread: the notify ID is the notifying thread: 0x00000000
+notified by another thread: the count: 0x00000001
+notified by another thread: the argument: 0x00000077
+notified by another thread: the common pointer is the one given at create: 0x00000001
+notified by another thread: the thread's status inside: 0x00000001
+notified by another thread: its wait type inside: 0x00000000
+notified by another thread: its wait UID inside is the semaphore: 0x00000000
+notified by another thread: the semaphore's waiters inside: 0x00000000
+notified by another thread: the callback's notifications inside: 0x00000000
+notified by another thread: the callback's info inside: 0x00000000
+notified by another thread: the notification count in its info inside: 0x00000000
+notified by another thread: the argument in its info inside: 0x00000000
+plain wait: the callback notify field with none pending is 0: 0x00000001
+plain wait: the callback notify field with one pending is 0: 0x00000000
+plain wait: the callback notify field with one pending is 1: 0x00000001
+plain wait: the callback notify field with one pending is the callback: 0x00000000
+running callback: it started: 0x00000001
+running callback: the thread's status: 0x00000001
+running callback: its wait type: 0x00000000
+running callback: its wait UID is the semaphore: 0x00000000
+running callback: the semaphore's waiters: 0x00000000
+running callback: signal the semaphore: 0x00000000
+running callback: the count after the signal: 0x00000001
+running callback: the waiters after the signal: 0x00000000
+running callback: the wait: 0x00000000
+running callback: the count at the end: 0x00000000
+DONE

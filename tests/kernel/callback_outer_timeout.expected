@@ -1,0 +1,12 @@
+a wait of 500 ms with a callback of 1000 ms ends within 250 ms of it: 0x00000001
+the wait: 0x80028005
+a delay of 500 ms with a callback of 1000 ms ends within 250 ms of it: 0x00000001
+the delay: 0x00000000
+a wait of 1000 ms with a callback after 600 ms ends within 700 ms of it: 0x00000001
+a delay of 1000 ms with a callback after 600 ms ends within 700 ms of it: 0x00000001
+past the timeout in the callback: the semaphore's waiters: 0x00000000
+past the timeout in the callback: the signal: 0x00000000
+past the timeout in the callback: the count after the signal: 0x00000001
+past the timeout in the callback: the wait: 0x00000000
+past the timeout in the callback: its time left is 0: 0x00000000
+DONE
