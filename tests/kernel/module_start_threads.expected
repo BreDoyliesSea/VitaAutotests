@@ -1,0 +1,34 @@
+register the handler: 0x00000000
+load and start the test's module: 0x00000000
+load and start the test's module: threads that started: 0x00000001
+load and start the test's module: thread 1 is named probe_module EntryCall: 0x00000001
+load and start the test's module: thread 1: its stack size: 0x00004000
+load and start the test's module: thread 1: its attributes: 0x80008000
+load and start the test's module: thread 1: its priority: 0x000000A0
+load and start the test's module: thread 1: the handler runs on it: 0x00000001
+stop and unload it: 0x00000000
+stop and unload it: threads that started: 0x00000001
+stop and unload it: thread 1 is named probe_module EntryCall: 0x00000001
+stop and unload it: thread 1: its stack size: 0x00004000
+stop and unload it: thread 1: its attributes: 0x80008000
+stop and unload it: thread 1: its priority: 0x000000A0
+stop and unload it: thread 1: the handler runs on it: 0x00000001
+load libfiber: 0x00000000
+load libfiber: threads that started: 0x00000001
+load libfiber: thread 1 is named SceFiber EntryCall: 0x00000001
+load libfiber: thread 1: its stack size: 0x00004000
+load libfiber: thread 1: its attributes: 0x80008000
+load libfiber: thread 1: its priority: 0x000000A0
+load libfiber: thread 1: the handler runs on it: 0x00000001
+unload libfiber: 0x00000000
+unload libfiber: threads that started: 0x00000001
+unload libfiber: thread 1 is named SceFiber EntryCall: 0x00000001
+unload libfiber: thread 1: its stack size: 0x00004000
+unload libfiber: thread 1: its attributes: 0x80008000
+unload libfiber: thread 1: its priority: 0x000000A0
+unload libfiber: thread 1: the handler runs on it: 0x00000001
+load libjson: 0x00000000
+load libjson: threads that started: 0x00000000
+unload libjson: 0x00000000
+unload libjson: threads that started: 0x00000000
+DONE

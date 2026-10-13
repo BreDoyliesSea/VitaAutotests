@@ -44,3 +44,25 @@ static inline unsigned int get_tpidruro(void) {
     __asm__ volatile("mrc p15, 0, %0, c13, c0, 3" : "=r"(value));
     return value;
 }
+
+// Loads d8 and d16 from in, calls fn(a0, a1, a2), and stores d8 and d16 to out if out isn't NULL,
+// in one asm block so no compiler code touches the two registers in between
+static inline int call_with_d8_d16(int (*fn)(int, int, void *), int a0, int a1, void *a2, const unsigned long long *in, unsigned long long *out) {
+    register int r0 __asm__("r0") = a0;
+    register int r1 __asm__("r1") = a1;
+    register void *r2 __asm__("r2") = a2;
+    __asm__ volatile(
+        "vldr d8, [%[in]]\n\t"
+        "vldr d16, [%[in], #8]\n\t"
+        "blx %[fn]\n\t"
+        "cmp %[out], #0\n\t"
+        "beq 1f\n\t"
+        "vstr d8, [%[out]]\n\t"
+        "vstr d16, [%[out], #8]\n\t"
+        "1:\n\t"
+        : "+r"(r0), "+r"(r1), "+r"(r2)
+        : [in] "r"(in), [out] "r"(out), [fn] "r"(fn)
+        : "r3", "r12", "lr", "memory", "cc", "d0", "d1", "d2", "d3", "d4", "d5", "d6", "d7", "d8",
+          "d16", "d17", "d18", "d19", "d20", "d21", "d22", "d23", "d24", "d25", "d26", "d27", "d28", "d29", "d30", "d31");
+    return r0;
+}

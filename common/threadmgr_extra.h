@@ -244,3 +244,6 @@ SceInt32 sceKernelUnregisterCallbackFromEventAll(SceUID event_id);
 
 // Returns the VFP exception setting of the calling thread, which sceKernelChangeThreadVfpException changes
 SceInt32 sceKernelGetCurrentThreadVfpException(void);
+
+// Waits for a thread signal like sceKernelWaitSignal, running callbacks
+int sceKernelWaitSignalCB(SceUInt32 unk0, SceUInt32 delay, SceUInt32 *timeout);
