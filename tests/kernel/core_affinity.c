@@ -86,16 +86,17 @@ static int run_together(const int masks[WORKERS]) {
     return 1;
 }
 
-// Starts a worker with first_priority on core 1, then one with second_priority once the first is
-// halfway through. Where both spin at once, the first then ends well before the second.
-static void run_after(int first_priority, int second_priority) {
+// Starts a worker with first_priority on core 1, then one with second_priority once the first got
+// tenths of the way. Where both spin at once, how far the first got decides which one ends first,
+// so each check picks a point far from an even race.
+static void run_after(int first_priority, int second_priority, int tenths) {
     log_count = 0;
     progress[0] = 0;
     const SceUID first = start_worker(0, first_priority, CPU_MASK_USER_1);
     const SceUID second = start_worker(1, second_priority, CPU_MASK_USER_1);
     sceKernelSignalSema(go[0], 1);
     const SceUInt64 deadline = sceKernelGetProcessTimeWide() + DEADLINE_US;
-    while (progress[0] < SPINS / 2 && sceKernelGetProcessTimeWide() < deadline)
+    while (progress[0] < SPINS / 10 * tenths && sceKernelGetProcessTimeWide() < deadline)
         sceKernelDelayThread(1000);
     sceKernelSignalSema(go[1], 1);
     join_worker(first);
@@ -128,9 +129,11 @@ int main(void) {
     with_syscalls = 0;
     PRINT("threads on their own cores run one after another", run_together(own_cores));
 
-    run_after(PRIO_LOW, PRIO_HIGH);
+    // Started when the lower one is nine tenths through, so only preemption can end it first
+    run_after(PRIO_LOW, PRIO_HIGH, 9);
     PRINT("a higher priority thread ends before the running lower one", before(3, 1));
-    run_after(PRIO_HIGH, PRIO_LOW);
+    // Started when the higher one is a tenth through, so only waiting for it starts it after its end
+    run_after(PRIO_HIGH, PRIO_LOW, 1);
     PRINT("a lower priority thread starts after the running higher one ends", before(1, 2));
 
     test_exit();
