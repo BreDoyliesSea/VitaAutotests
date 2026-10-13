@@ -1,0 +1,16 @@
+register: 0x00000000
+set the event: 0x00000000
+start: 0x00000000
+one event: runs of the callback: 0x00000001
+one event: the notify ID is the timer: 0x00000001
+one event: the count: 0x00000001
+one event: the argument: 0x00000000
+one event: poll the timer's event: 0x00000000
+repeating: more than one notification pending: 0x00000001
+repeating: about one per event, give or take one: 0x00000001
+repeating: runs of the callback: 0x00000001
+repeating: the count it got is the notifications: 0x00000001
+stopped: runs of the callback: 0x00000000
+unregister: 0x00000000
+notify the woken only: runs of the callback: 0x00000001
+DONE

@@ -14,7 +14,7 @@ int main(void) {
 
     sceKernelSetTimerEvent(timer, 0, &interval, 0);
     sceKernelStartTimer(timer);
-    sceKernelDelayThread(20000);
+    sceKernelDelayThread(100000);
     PRINT("the timer event fires", sceKernelPollEvent(timer, TIMER_EVENT_BIT, &result, &user_data));
 
     interval = 10000000;

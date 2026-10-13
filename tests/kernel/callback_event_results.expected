@@ -1,0 +1,13 @@
+simple event set, for reference: the wait: 0x800280A2
+simple event set, for reference: the bits it got: 0x01000000
+simple event set, for reference: it ended before its timeout: 0x00000001
+timer event: the wait: 0x800280A2
+timer event: the bits it got: 0x00008000
+timer event: it ended before its timeout: 0x00000001
+simple event pulsed: the wait: 0x80028005
+simple event pulsed: the bits it got: 0x00000000
+simple event pulsed: it ended before its timeout: 0x00000000
+message pipe receive that didn't wait: the wait: 0x800280A2
+message pipe receive that didn't wait: the bits it got: 0x00000002
+message pipe receive that didn't wait: it ended before its timeout: 0x00000001
+DONE

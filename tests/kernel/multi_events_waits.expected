@@ -1,0 +1,73 @@
+OR, both set before: the wait: 0x00000002
+OR, both set before: result 0 is for event 1 or 2: 0x00000001
+OR, both set before: result 0: 0x00000000
+OR, both set before: result 0 bits: 0x01000000
+OR, both set before: result 1 is for event 1 or 2: 0x00000002
+OR, both set before: result 1: 0x00000000
+OR, both set before: result 1 bits: 0x01000000
+waiting: the wait type: 0x00020000
+waiting: the wait UID is the first event: 0x00000000
+waiting: the wait UID is the second event: 0x00000000
+waiting: the wait UID is 0: 0x00000000
+waiting: the wait UID is -1: 0x00000000
+OR, a set while waiting: 0x00000000
+OR, a set while waiting: the wait: 0x00000001
+OR, a set while waiting: result 0 is for event 1 or 2: 0x00000002
+OR, a set while waiting: result 0: 0x00000000
+OR, a set while waiting: result 0 bits: 0x01000000
+OR, a set while waiting: result 0 user data: 0x00000077
+OR, a set while waiting: result 1 is untouched: 0x00000000
+OR, auto reset: the wait: 0x00000001
+OR, auto reset: the first event's bits after: 0x00000004
+AND, auto reset, both set: the wait: 0x00000002
+AND, auto reset, both set: result 0 is for event 1 or 2: 0x00000001
+AND, auto reset, both set: result 0: 0x00000000
+AND, auto reset, both set: result 0 bits: 0x01000000
+AND, auto reset, both set: result 1 is for event 1 or 2: 0x00000002
+AND, auto reset, both set: result 1: 0x00000000
+AND, auto reset, both set: result 1 bits: 0x01000000
+AND, auto reset, both set: the first event's bits after: 0x00000004
+AND, auto reset, both set: the second event's bits after: 0x00000004
+AND, one set while waiting: the wait: 0x00000002
+AND, one set while waiting: result 0 is for event 1 or 2: 0x00000001
+AND, one set while waiting: result 0: 0x00000000
+AND, one set while waiting: result 0 bits: 0x01000000
+AND, one set while waiting: result 1 is for event 1 or 2: 0x00000002
+AND, one set while waiting: result 1: 0x00000000
+AND, one set while waiting: result 1 bits: 0x01000000
+AND, one set while waiting: result 1 user data: 0x00000000
+AND against a single wait: the single wait: 0x80028005
+AND against a single wait: the first event's bits after it: 0x00000004
+AND against a single wait: the multiple wait after the second set: 0x00000002
+AND against a single wait: the first event's bits at the end: 0x00000004
+AND against a single wait: the second event's bits at the end: 0x00000004
+OR against a single wait: the single wait: 0x00000000
+OR against a single wait: the multiple wait: 0x00000001
+OR against a single wait: result 0 is for event 1 or 2: 0x00000002
+OR against a single wait: result 0: 0x00000000
+OR against a single wait: result 0 bits: 0x01000000
+OR against a single wait: result 0 user data: 0x00000000
+OR against a single wait: result 1 is untouched: 0x00000000
+OR, an event deleted while waiting: the wait: 0x00000001
+OR, an event deleted while waiting: result 0 is for event 1 or 2: 0x00000001
+OR, an event deleted while waiting: result 0: 0x80028006
+OR, an event deleted while waiting: result 0 bits: 0x00000010
+OR, an event deleted while waiting: result 0 user data: 0x00000000
+OR, an event deleted while waiting: result 1 is untouched: 0x00000000
+AND, an event deleted while waiting: the wait: 0x80028005
+AND, an event deleted while waiting: result 0 is untouched: 0x00000000
+AND, an event deleted while waiting: result 1 is untouched: 0x00000000
+OR, a pulse while waiting: the wait: 0x00000001
+OR, a pulse while waiting: result 0 is for event 1 or 2: 0x00000001
+OR, a pulse while waiting: result 0: 0x00000000
+OR, a pulse while waiting: result 0 bits: 0x01000000
+OR, a pulse while waiting: result 0 user data: 0x00000088
+OR, a pulse while waiting: result 1 is untouched: 0x00000000
+OR, a pulse while waiting: the bits after: 0x00000004
+OR with a timer: the wait: 0x00000001
+OR with a timer: result 0 is for event 1 or 2: 0x00000002
+OR with a timer: result 0: 0x00000000
+OR with a timer: result 0 bits: 0x00008000
+OR with a timer: result 0 user data: 0x00000000
+OR with a timer: result 1 is untouched: 0x00000000
+DONE

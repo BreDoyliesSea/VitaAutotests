@@ -215,3 +215,32 @@ SceInt32 sceKernelGetTimerInfo(SceUID id, TimerInfo *info);
 SceInt32 sceKernelGetTimerTime(SceUID id, SceKernelSysClock *clock);
 SceInt32 sceKernelSetTimerTime(SceUID id, SceKernelSysClock *clock);
 SceInt32 sceKernelGetTimerBase(SceUID id, SceKernelSysClock *base);
+
+// What sceKernelGetThreadInfo reports as the wait type. Waits that run callbacks add WAIT_TYPE_CB.
+#define WAIT_TYPE_SEMA 0x20
+#define WAIT_TYPE_MUTEX 0x40
+#define WAIT_TYPE_CB 0x80000000
+
+SceInt32 sceKernelWaitLwCondCB(SceKernelLwCondWork *work, SceUInt32 *timeout);
+SceInt32 sceKernelSendMsgPipeVectorCB(SceUID id, const MsgPipeVector *vectors, SceUInt32 count, SceUInt32 mode, SceSize *result, SceUInt32 *timeout);
+SceInt32 sceKernelReceiveMsgPipeVectorCB(SceUID id, const MsgPipeVector *vectors, SceUInt32 count, SceUInt32 mode, SceSize *result, SceUInt32 *timeout);
+
+// Which callbacks registered to an event a notification reaches: all of them, or only those of the
+// threads it wakes
+#define EVENT_ATTR_NOTIFY_CB_ALL 0x0
+#define EVENT_ATTR_NOTIFY_CB_WAKEUP_ONLY 0x800
+
+SceInt32 sceKernelSetEventWithNotifyCallback(SceUID id, SceUInt32 pattern, SceUInt64 user_data, SceInt32 notify_arg);
+SceInt32 sceKernelPulseEventWithNotifyCallback(SceUID id, SceUInt32 pattern, SceUInt64 user_data, SceInt32 notify_arg);
+SceInt32 sceKernelUnregisterCallbackFromEvent(SceUID event_id, SceUID callback_id);
+SceInt32 sceKernelUnregisterCallbackFromEventAll(SceUID event_id);
+
+// A message pipe call that returns at once and reports its end later as an event of the pipe
+#define MSG_PIPE_MODE_DONT_WAIT 0x10
+
+// The events a message pipe reports for a send and for a receive that didn't wait
+#define EVENT_IN 0x1
+#define EVENT_OUT 0x2
+
+// Returns the VFP exception setting of the calling thread, which sceKernelChangeThreadVfpException changes
+SceInt32 sceKernelGetCurrentThreadVfpException(void);

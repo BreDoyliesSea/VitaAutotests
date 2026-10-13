@@ -1,0 +1,69 @@
+check with another callback pending: the check: 0x00000001
+check with another callback pending: the call inside the callback: 0x00000001
+check with another callback pending: runs of the callback when that call returned: 0x00000001
+check with another callback pending: runs of the other callback when it returned: 0x00000001
+check with another callback pending: runs of the callback after the check: 0x00000001
+check with another callback pending: runs of the other callback after the check: 0x00000001
+check with another callback pending: the deepest nesting: 0x00000001
+check with another callback pending: callbacks the other one ran inside: 0x00000001
+check with another callback pending: the callback's notifications left: 0x00000000
+check with another callback pending: the other callback's notifications left: 0x00000000
+check with another callback pending: the next check: 0x00000000
+check with itself pending: the check: 0x00000001
+check with itself pending: the call inside the callback: 0x00000001
+check with itself pending: runs of the callback when that call returned: 0x00000002
+check with itself pending: runs of the other callback when it returned: 0x00000000
+check with itself pending: runs of the callback after the check: 0x00000002
+check with itself pending: runs of the other callback after the check: 0x00000000
+check with itself pending: the deepest nesting: 0x00000002
+check with itself pending: the callback's notifications left: 0x00000000
+check with itself pending: the other callback's notifications left: 0x00000000
+check with itself pending: the next check: 0x00000000
+delay with another callback pending: the check: 0x00000001
+delay with another callback pending: the call inside the callback: 0x00000000
+delay with another callback pending: runs of the callback when that call returned: 0x00000001
+delay with another callback pending: runs of the other callback when it returned: 0x00000001
+delay with another callback pending: runs of the callback after the check: 0x00000001
+delay with another callback pending: runs of the other callback after the check: 0x00000001
+delay with another callback pending: the deepest nesting: 0x00000001
+delay with another callback pending: callbacks the other one ran inside: 0x00000001
+delay with another callback pending: the callback's notifications left: 0x00000000
+delay with another callback pending: the other callback's notifications left: 0x00000000
+delay with another callback pending: the next check: 0x00000000
+delay with itself pending: the check: 0x00000001
+delay with itself pending: the call inside the callback: 0x00000000
+delay with itself pending: runs of the callback when that call returned: 0x00000002
+delay with itself pending: runs of the other callback when it returned: 0x00000000
+delay with itself pending: runs of the callback after the check: 0x00000002
+delay with itself pending: runs of the other callback after the check: 0x00000000
+delay with itself pending: the deepest nesting: 0x00000002
+delay with itself pending: the callback's notifications left: 0x00000000
+delay with itself pending: the other callback's notifications left: 0x00000000
+delay with itself pending: the next check: 0x00000000
+wait with another callback pending: the check: 0x00000001
+wait with another callback pending: the call inside the callback: 0x80028005
+wait with another callback pending: runs of the callback when that call returned: 0x00000001
+wait with another callback pending: runs of the other callback when it returned: 0x00000001
+wait with another callback pending: runs of the callback after the check: 0x00000001
+wait with another callback pending: runs of the other callback after the check: 0x00000001
+wait with another callback pending: the deepest nesting: 0x00000001
+wait with another callback pending: callbacks the other one ran inside: 0x00000001
+wait with another callback pending: the callback's notifications left: 0x00000000
+wait with another callback pending: the other callback's notifications left: 0x00000000
+wait with another callback pending: the next check: 0x00000000
+wait with itself pending: the check: 0x00000001
+wait with itself pending: the call inside the callback: 0x80028005
+wait with itself pending: runs of the callback when that call returned: 0x00000002
+wait with itself pending: runs of the other callback when it returned: 0x00000000
+wait with itself pending: runs of the callback after the check: 0x00000002
+wait with itself pending: runs of the other callback after the check: 0x00000000
+wait with itself pending: the deepest nesting: 0x00000002
+wait with itself pending: the callback's notifications left: 0x00000000
+wait with itself pending: the other callback's notifications left: 0x00000000
+wait with itself pending: the next check: 0x00000000
+thread: it reports the callback's wait: 0x00000001
+thread: callbacks the other callback ran inside: 0x00000001
+thread: callbacks the callback ran inside when notified again: 0x00000001
+thread: the callback's wait: 0x80028005
+thread: the outer wait: 0x00000000
+DONE

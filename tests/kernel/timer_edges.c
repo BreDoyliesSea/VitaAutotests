@@ -26,7 +26,7 @@ int main(void) {
     interval = 5000;
     PRINT("set a pulse event", sceKernelSetTimerEvent(timer, 1, &interval, 0));
     sceKernelStartTimer(timer);
-    sceKernelDelayThread(20000);
+    sceKernelDelayThread(100000);
     PRINT("poll after a pulse event fired", sceKernelPollEvent(timer, TIMER_EVENT_BIT, &result, &user_data));
 
     // Stopping a timer before its event
@@ -60,7 +60,7 @@ int main(void) {
     interval = 5000;
     sceKernelSetTimerEvent(timer, 0, &interval, 0);
     sceKernelStartTimer(timer);
-    sceKernelDelayThread(20000);
+    sceKernelDelayThread(100000);
     PRINT("poll an auto reset timer event", sceKernelPollEvent(timer, TIMER_EVENT_BIT, &result, &user_data));
     PRINT("poll it again", sceKernelPollEvent(timer, TIMER_EVENT_BIT, &result, &user_data));
 

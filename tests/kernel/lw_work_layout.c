@@ -1,12 +1,16 @@
 // What the lightweight mutex and condition variable work areas hold after each call, and using
 // a copied or deleted work area. Games can look inside these, so what they hold is part of the
 // behavior. Words that hold the calling thread's UID print as 0x7EAD0001 and UIDs of other objects
-// as 0x7EA00000 plus their class, so the output doesn't depend on UID values.
+// as 0x7EA00000 plus their class, so the output doesn't depend on UID values. A deleted UID has no
+// class, so a word of the deleted mutex prints whether it still holds the UID the mutex had.
 #include <psp2/kernel/clib.h>
 #include <psp2/kernel/threadmgr.h>
 
 #include "test.h"
 #include "threadmgr_extra.h"
+
+// The UID of the lightweight mutex, from before its delete
+static unsigned int deleted_uid;
 
 static int normalize(unsigned int word) {
     if (word == (unsigned int)sceKernelGetThreadId())
@@ -20,10 +24,11 @@ static int normalize(unsigned int word) {
 
 static void print_words(const char *name, const void *work, int words) {
     const unsigned int *w = work;
-    char label[64];
     for (int i = 0; i < words; i++) {
-        sceClibSnprintf(label, sizeof(label), "%s word %d", name, i);
-        PRINT(label, normalize(w[i]));
+        if (deleted_uid && w[i] == deleted_uid)
+            PRINTF(1, "%s word %d is the UID from before the delete", name, i);
+        else
+            PRINTF(normalize(w[i]), "%s word %d", name, i);
     }
 }
 
@@ -52,6 +57,9 @@ int main(void) {
 
     sceKernelDeleteLwCond(&cond);
     print_words("condition deleted", &cond, 4);
+    LwMutexInfo info = { .size = sizeof(info) };
+    sceKernelGetLwMutexInfo(&mutex, &info);
+    deleted_uid = info.uid;
     sceKernelDeleteLwMutex(&mutex);
     print_words("deleted", &mutex, 8);
     PRINT("lock a deleted lightweight mutex", sceKernelTryLockLwMutex(&mutex, 1));

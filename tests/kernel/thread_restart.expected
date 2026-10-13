@@ -1,0 +1,22 @@
+first run: its TLS slot at the start: 0x00000000
+first run: its argument: 0x00000011
+start the waiting thread: 0x80028028
+delete the waiting thread: 0x80028028
+its exit status while it waits: 0x80028028
+the status written: 0x0000DEAD
+wait for the end of the first run: 0x00000000
+the first run's status: 0x00000001
+its TLS slot by its UID after it ended: 0x00001231
+start it again: 0x00000000
+second run: its TLS slot at the start: 0x00001231
+second run: its argument: 0x00000022
+second run: its stack free size is the same: 0x00000000
+second run: its exit status: 0x80028028
+second run: the status written: 0x0000DEAD
+second run: a wait for its end that times out: 0x80028005
+second run: the status written: 0x0000DEAD
+the second run's status: 0x00000002
+start it with no arguments: 0x00000000
+third run: its argument size: 0x00000000
+delete it: 0x00000000
+DONE

@@ -1,0 +1,136 @@
+exit and delete: register: 0x00000000
+exit and delete: handler runs: 0x00000002
+exit and delete: runs of the entry: 0x00000001
+exit and delete: run 1: the handler: 0x00000001
+exit and delete: run 1: the type: 0x00000004
+exit and delete: run 1: the thread's status: 0x00000001
+exit and delete: run 1: the thread's exit status: 0x80028028
+exit and delete: run 1: runs of the entry before it: 0x00000000
+exit and delete: run 2: the handler: 0x00000001
+exit and delete: run 2: the type: 0x00000008
+exit and delete: run 2: the thread's status: 0x00000001
+exit and delete: run 2: the thread's exit status: 0x80028028
+exit and delete: run 2: runs of the entry before it: 0x00000001
+exit and delete: unregister: 0x00000000
+every thread, created after: register: 0x00000000
+every thread, created after: the wait for the end: 0x00000000
+every thread, created after: the exit status: 0x00000005
+every thread, created after: handler runs: 0x00000002
+every thread, created after: runs of the entry: 0x00000001
+every thread, created after: run 1: the handler: 0x00000001
+every thread, created after: run 1: the type: 0x00000004
+every thread, created after: run 1: the thread's status: 0x00000001
+every thread, created after: run 1: the thread's exit status: 0x80028028
+every thread, created after: run 1: runs of the entry before it: 0x00000000
+every thread, created after: run 2: the handler: 0x00000001
+every thread, created after: run 2: the type: 0x00000008
+every thread, created after: run 2: the thread's status: 0x00000001
+every thread, created after: run 2: the thread's exit status: 0x80028028
+every thread, created after: run 2: runs of the entry before it: 0x00000001
+registered after the start: register: 0x00000000
+registered after the start: the wait for the end: 0x00000000
+registered after the start: the exit status: 0x00000005
+registered after the start: handler runs: 0x00000001
+registered after the start: runs of the entry: 0x00000001
+registered after the start: run 1: the handler: 0x00000001
+registered after the start: run 1: the type: 0x00000008
+registered after the start: run 1: the thread's status: 0x00000001
+registered after the start: run 1: the thread's exit status: 0x80028028
+registered after the start: run 1: runs of the entry before it: 0x00000001
+two handlers: register the first: 0x00000000
+two handlers: register the second: 0x00000000
+two handlers: the wait for the end: 0x00000000
+two handlers: the exit status: 0x00000005
+two handlers: handler runs: 0x00000004
+two handlers: runs of the entry: 0x00000001
+two handlers: run 1: the handler: 0x00000001
+two handlers: run 1: the type: 0x00000004
+two handlers: run 1: the thread's status: 0x00000001
+two handlers: run 1: the thread's exit status: 0x80028028
+two handlers: run 1: runs of the entry before it: 0x00000000
+two handlers: run 2: the handler: 0x00000002
+two handlers: run 2: the type: 0x00000004
+two handlers: run 2: the thread's status: 0x00000001
+two handlers: run 2: the thread's exit status: 0x80028028
+two handlers: run 2: runs of the entry before it: 0x00000000
+two handlers: run 3: the handler: 0x00000001
+two handlers: run 3: the type: 0x00000008
+two handlers: run 3: the thread's status: 0x00000001
+two handlers: run 3: the thread's exit status: 0x80028028
+two handlers: run 3: runs of the entry before it: 0x00000001
+two handlers: run 4: the handler: 0x00000002
+two handlers: run 4: the type: 0x00000008
+two handlers: run 4: the thread's status: 0x00000001
+two handlers: run 4: the thread's exit status: 0x80028028
+two handlers: run 4: runs of the entry before it: 0x00000001
+a start handler that returns 1: the wait for the end: 0x00000000
+a start handler that returns 1: the exit status: 0x00000005
+a start handler that returns 1: handler runs: 0x00000001
+a start handler that returns 1: runs of the entry: 0x00000001
+a start handler that returns 1: run 1: the handler: 0x00000001
+a start handler that returns 1: run 1: the type: 0x00000004
+a start handler that returns 1: run 1: the thread's status: 0x00000001
+a start handler that returns 1: run 1: the thread's exit status: 0x80028028
+a start handler that returns 1: run 1: runs of the entry before it: 0x00000000
+a start handler that returns 1: unregister it after: 0x80028061
+a start handler that returns -1: the wait for the end: 0x00000000
+a start handler that returns -1: the exit status: 0x00000005
+a start handler that returns -1: handler runs: 0x00000001
+a start handler that returns -1: runs of the entry: 0x00000001
+a start handler that returns -1: run 1: the handler: 0x00000001
+a start handler that returns -1: run 1: the type: 0x00000004
+a start handler that returns -1: run 1: the thread's status: 0x00000001
+a start handler that returns -1: run 1: the thread's exit status: 0x80028028
+a start handler that returns -1: run 1: runs of the entry before it: 0x00000000
+a start handler that returns -1: unregister it after: 0x80028061
+unregistered in the start handler: the wait for the end: 0x00000000
+unregistered in the start handler: the exit status: 0x00000005
+unregistered in the start handler: handler runs: 0x00000002
+unregistered in the start handler: runs of the entry: 0x00000001
+unregistered in the start handler: run 1: the handler: 0x00000001
+unregistered in the start handler: run 1: the type: 0x00000004
+unregistered in the start handler: run 1: the thread's status: 0x00000001
+unregistered in the start handler: run 1: the thread's exit status: 0x80028028
+unregistered in the start handler: run 1: runs of the entry before it: 0x00000000
+unregistered in the start handler: run 2: the handler: 0x00000001
+unregistered in the start handler: run 2: the type: 0x00000008
+unregistered in the start handler: run 2: the thread's status: 0x00000001
+unregistered in the start handler: run 2: the thread's exit status: 0x80028028
+unregistered in the start handler: run 2: runs of the entry before it: 0x00000001
+unregistered in the start handler: unregister it again: 0x00000000
+start only: the wait for the end: 0x00000000
+start only: the exit status: 0x00000005
+start only: handler runs: 0x00000001
+start only: runs of the entry: 0x00000001
+start only: run 1: the handler: 0x00000001
+start only: run 1: the type: 0x00000004
+start only: run 1: the thread's status: 0x00000001
+start only: run 1: the thread's exit status: 0x80028028
+start only: run 1: runs of the entry before it: 0x00000000
+started twice, first run: the wait for the end: 0x00000000
+started twice, first run: the exit status: 0x00000005
+started twice, second run: the wait for the end: 0x00000000
+started twice, second run: the exit status: 0x00000005
+started twice: handler runs: 0x00000004
+started twice: runs of the entry: 0x00000002
+started twice: run 1: the handler: 0x00000001
+started twice: run 1: the type: 0x00000004
+started twice: run 1: the thread's status: 0x00000001
+started twice: run 1: the thread's exit status: 0x80028028
+started twice: run 1: runs of the entry before it: 0x00000000
+started twice: run 2: the handler: 0x00000001
+started twice: run 2: the type: 0x00000008
+started twice: run 2: the thread's status: 0x00000001
+started twice: run 2: the thread's exit status: 0x80028028
+started twice: run 2: runs of the entry before it: 0x00000001
+started twice: run 3: the handler: 0x00000001
+started twice: run 3: the type: 0x00000004
+started twice: run 3: the thread's status: 0x00000001
+started twice: run 3: the thread's exit status: 0x80028028
+started twice: run 3: runs of the entry before it: 0x00000001
+started twice: run 4: the handler: 0x00000001
+started twice: run 4: the type: 0x00000008
+started twice: run 4: the thread's status: 0x00000001
+started twice: run 4: the thread's exit status: 0x80028028
+started twice: run 4: runs of the entry before it: 0x00000002
+DONE

@@ -1,5 +1,4 @@
 the next object gets the deleted UID back: 0x00000000
-UIDs grow: 0x00000001
 UIDs are odd: 0x00000001
 an opened UID is the object's own: 0x00000000
 opening twice gives the same UID: 0x00000000

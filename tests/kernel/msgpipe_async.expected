@@ -1,0 +1,30 @@
+receive without waiting from an empty pipe: 0x00000000
+the size it wrote: 0x0000DEAD
+poll for the receive's event before a send: 0x80028202
+a second receive without waiting: 0x00000000
+send: 0x00000000
+the receive: wait for the event: 0x00000000
+the receive: the event's bits: 0x00000002
+the receive: the low half of its user data: 0x00000000
+the receive: the high half of its user data: 0x00000004
+the receive got the message: 0x00000001
+receive what's left: 0x80028223
+send without waiting to a full pipe: 0x00000000
+the size it wrote: 0x0000DEAD
+poll for the send's event before a receive: 0x00000000
+receive the pipe's contents: 0x00000000
+the send: wait for the event: 0x00000000
+the send: the event's bits: 0x00000001
+the send: the low half of its user data: 0x00000000
+the send: the high half of its user data: 0x00000004
+receive the sent message: 0x00000000
+send without waiting to an empty pipe: 0x00000000
+the send that could end at once: wait for the event: 0x00000000
+the send that could end at once: the event's bits: 0x00000001
+the send that could end at once: the low half of its user data: 0x00000000
+the send that could end at once: the high half of its user data: 0x00000004
+register a callback to the pipe: 0x00000000
+the callback's notifications after the receive ended: 0x00000001
+runs of the callback: 0x00000001
+the notify ID is the pipe: 0x00000001
+DONE

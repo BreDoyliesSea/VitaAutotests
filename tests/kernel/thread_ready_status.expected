@@ -1,0 +1,10 @@
+started: the status: 0x00000002
+started: the current CPU: 0x00007FFF
+started: the wait type: 0x00000000
+waiting: the status: 0x00000008
+woken: the status: 0x00000002
+woken: the current CPU: 0x00007FFF
+woken: the wait type: 0x00000000
+this thread: the status: 0x00000001
+this thread: the current CPU: 0x00000000
+DONE

@@ -1,0 +1,10 @@
+the main thread's FPSCR control bits: 0x03000000
+a new thread's FPSCR control bits: 0x03000000
+after a delay: the rounding mode: 0x00000001
+after another thread ran on its core: the rounding mode: 0x00000001
+a callback run by a wait sees the rounding mode: 0x00000000
+after the wait: the rounding mode: 0x00000001
+a callback run by a check sees the rounding mode: 0x00000000
+after the check: the rounding mode: 0x00000001
+started again: the rounding mode: 0x00000000
+DONE

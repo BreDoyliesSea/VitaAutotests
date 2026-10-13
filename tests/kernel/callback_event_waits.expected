@@ -1,0 +1,23 @@
+semaphore: runs of the callback: 0x00000001
+semaphore: the wait: 0x80028005
+semaphore: it ended before its timeout: 0x00000000
+event flag: runs of the callback: 0x00000001
+event flag: the wait: 0x80028005
+event flag: it ended before its timeout: 0x00000000
+simple event: runs of the callback: 0x00000001
+simple event: the wait: 0x80028005
+simple event: it ended before its timeout: 0x00000000
+simple event set by the callback: runs of the callback: 0x00000001
+simple event set by the callback: the wait: 0x800280A2
+simple event set by the callback: it ended before its timeout: 0x00000001
+simple event set by the callback: the event's bits after it: 0x00000004
+timer: runs of the callback: 0x00000001
+timer: the wait: 0x80028005
+timer: it ended before its timeout: 0x00000000
+message pipe: runs of the callback: 0x00000001
+message pipe: the wait: 0x80028005
+message pipe: it ended before its timeout: 0x00000000
+delay: runs of the callback: 0x00000001
+delay: the wait: 0x00000000
+delay: it ended long before its time: 0x00000000
+DONE

@@ -1,0 +1,6 @@
+wait with no signal sent: 0x80028005
+its time left: 0x00000000
+wait again after taking the signal: 0x80028005
+send a signal to UID 0: 0x80028022
+wait after a signal to UID 0: 0x80028005
+DONE

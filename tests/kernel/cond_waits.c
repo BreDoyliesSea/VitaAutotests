@@ -8,7 +8,7 @@
 #define HIGH_PRIORITY 0x100000FE
 
 static SceUID mutex, cond;
-static int wait_result[2], order[2], woken;
+static volatile int wait_result[2], order[2], woken;
 static int unlock_two, unlock_three;
 
 // Locks the recursive mutex twice, waits, then unlocks twice and once more
@@ -34,6 +34,12 @@ static int wait_thread(SceSize args, void *argp) {
         order[i] = ++woken;
     sceKernelUnlockMutex(mutex, 1);
     return 0;
+}
+
+static SceUInt32 wait_type(SceUID thread) {
+    SceKernelThreadInfo info = { .size = sizeof(info) };
+    sceKernelGetThreadInfo(thread, &info);
+    return info.waitType;
 }
 
 static SceUID start_waiter(int i, int priority) {
@@ -64,10 +70,9 @@ int main(void) {
     waiter = start_waiter(0, 0x10000100);
     sceKernelLockMutex(mutex, 1, NULL);
     sceKernelSignalCond(cond);
-    test_let_threads_wait();
-    SceKernelThreadInfo info = { .size = sizeof(info) };
-    sceKernelGetThreadInfo(waiter, &info);
-    PRINT("a signaled waiter waits for the mutex", info.waitType);
+    // Until it is in a wait other than the one for the signal
+    TEST_WAIT_FOR(wait_type(waiter) != 0 && wait_type(waiter) != 0x100);
+    PRINT("a signaled waiter waits for the mutex", wait_type(waiter));
     PRINT("the wait isn't over before it has the mutex", wait_result[0] == -1);
     sceKernelUnlockMutex(mutex, 1);
     test_join_thread(waiter);
@@ -78,7 +83,7 @@ int main(void) {
     const SceUID first = start_waiter(0, 0x10000100);
     const SceUID second = start_waiter(1, 0x10000100);
     PRINT("signal the second waiter", sceKernelSignalCondTo(cond, second));
-    test_let_threads_wait();
+    TEST_WAIT_FOR(order[1] != 0);
     PRINT("the second waiter woke", order[1]);
     PRINT("the first one still waits", order[0]);
     PRINT("signal a thread that isn't waiting", sceKernelSignalCondTo(cond, sceKernelGetThreadId()) < 0);
@@ -92,7 +97,7 @@ int main(void) {
     const SceUID low = start_waiter(0, LOW_PRIORITY);
     const SceUID high = start_waiter(1, HIGH_PRIORITY);
     sceKernelSignalCond(cond);
-    test_let_threads_wait();
+    TEST_WAIT_FOR(order[0] != 0 || order[1] != 0);
     PRINT("one signal wakes one of two waiters", (order[0] != 0) + (order[1] != 0));
     PRINT("the higher priority waiter is the one", order[1] != 0);
     sceKernelSignalCond(cond);

@@ -1,0 +1,25 @@
+priority condition and mutex: the wait type while waiting for the mutex: 0x00000200
+priority condition and mutex: its wait UID is the condition: 0x00000000
+priority condition and mutex: its wait UID is the mutex: 0x00000001
+priority condition and mutex: waiter 1 gets the mutex as: 0x00000003
+priority condition and mutex: waiter 2 gets the mutex as: 0x00000002
+priority condition and mutex: waiter 3 gets the mutex as: 0x00000001
+FIFO condition, priority mutex: the wait type while waiting for the mutex: 0x00000200
+FIFO condition, priority mutex: its wait UID is the condition: 0x00000000
+FIFO condition, priority mutex: its wait UID is the mutex: 0x00000001
+FIFO condition, priority mutex: waiter 1 gets the mutex as: 0x00000003
+FIFO condition, priority mutex: waiter 2 gets the mutex as: 0x00000002
+FIFO condition, priority mutex: waiter 3 gets the mutex as: 0x00000001
+lightweight, priority condition and mutex: the wait type while waiting for the mutex: 0x00400000
+lightweight, priority condition and mutex: its wait UID is the condition: 0x00000000
+lightweight, priority condition and mutex: its wait UID is the mutex: 0x00000001
+lightweight, priority condition and mutex: waiter 1 gets the mutex as: 0x00000003
+lightweight, priority condition and mutex: waiter 2 gets the mutex as: 0x00000002
+lightweight, priority condition and mutex: waiter 3 gets the mutex as: 0x00000001
+lightweight, FIFO condition, priority mutex: the wait type while waiting for the mutex: 0x00400000
+lightweight, FIFO condition, priority mutex: its wait UID is the condition: 0x00000000
+lightweight, FIFO condition, priority mutex: its wait UID is the mutex: 0x00000001
+lightweight, FIFO condition, priority mutex: waiter 1 gets the mutex as: 0x00000003
+lightweight, FIFO condition, priority mutex: waiter 2 gets the mutex as: 0x00000002
+lightweight, FIFO condition, priority mutex: waiter 3 gets the mutex as: 0x00000001
+DONE

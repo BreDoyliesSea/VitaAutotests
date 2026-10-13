@@ -1,0 +1,15 @@
+a callback runs on its thread's stack: 0x00000001
+below the frame of the wait that ran it: 0x00000001
+less than 1 KiB below it: 0x00000001
+less than 4 KiB below it: 0x00000001
+a nested callback runs on the same stack: 0x00000001
+below the callback that ran it: 0x00000001
+less than 1 KiB below it: 0x00000001
+less than 4 KiB below it: 0x00000001
+a callback run by a check runs on the same stack: 0x00000001
+below the frame of the check: 0x00000001
+less than 1 KiB below it: 0x00000001
+inside it the stack has less free: 0x00000001
+it runs as its own thread: 0x00000001
+with the thread's priority: 0x00000001
+DONE

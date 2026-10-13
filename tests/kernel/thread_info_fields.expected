@@ -1,0 +1,134 @@
+main thread: info: 0x00000000
+main thread: the process is this one: 0x00000001
+main thread: the stack has an address: 0x00000001
+main thread: the attributes: 0x80000000
+main thread: the status: 0x00000001
+main thread: the initial priority: 0x000000A0
+main thread: the current priority: 0x000000A0
+main thread: the initial affinity: 0x00070000
+main thread: the current affinity: 0x00010000
+main thread: the current CPU: 0x00000000
+main thread: the last CPU it ran on: 0x00000000
+main thread: the wait type: 0x00000000
+main thread: the exit status: 0x80028028
+main thread: it has run for no time: 0x00000000
+run status: 0x80020006
+run status: the thread on core 0 is this one: 0x00000000
+run status: its process is this one: 0x00000000
+run status: its priority: 0x00000000
+created: info: 0x00000000
+created: the process is this one: 0x00000001
+created: the name is the one given: 0x00000001
+created: the entry is the one given: 0x00000001
+created: the stack size: 0x00004000
+created: the stack has an address: 0x00000001
+created: the attributes: 0x80000000
+created: the status: 0x00000010
+created: the initial priority: 0x00000060
+created: the current priority: 0x00000060
+created: the initial affinity: 0x00020000
+created: the current affinity: 0x00020000
+created: the current CPU: 0xFFFFFFFF
+created: the last CPU it ran on: 0xFFFFFFFF
+created: the wait type: 0x00000000
+created: the exit status: 0x80028027
+created: it has run for no time: 0x00000001
+change the priority of a thread that never ran: 0x00000000
+change its affinity: 0x00020000
+changed before the start: info: 0x00000000
+changed before the start: the process is this one: 0x00000001
+changed before the start: the name is the one given: 0x00000001
+changed before the start: the entry is the one given: 0x00000001
+changed before the start: the stack size: 0x00004000
+changed before the start: the stack has an address: 0x00000001
+changed before the start: the attributes: 0x80000000
+changed before the start: the status: 0x00000010
+changed before the start: the initial priority: 0x00000060
+changed before the start: the current priority: 0x00000070
+changed before the start: the initial affinity: 0x00020000
+changed before the start: the current affinity: 0x00040000
+changed before the start: the current CPU: 0xFFFFFFFF
+changed before the start: the last CPU it ran on: 0xFFFFFFFF
+changed before the start: the wait type: 0x00000000
+changed before the start: the exit status: 0x80028027
+changed before the start: it has run for no time: 0x00000001
+first run: the priority it runs with: 0x00000060
+first run: the affinity it runs with: 0x00020000
+waiting: info: 0x00000000
+waiting: the process is this one: 0x00000001
+waiting: the name is the one given: 0x00000001
+waiting: the entry is the one given: 0x00000001
+waiting: the stack size: 0x00004000
+waiting: the stack has an address: 0x00000001
+waiting: the attributes: 0x80000000
+waiting: the status: 0x00000008
+waiting: the initial priority: 0x00000060
+waiting: the current priority: 0x00000060
+waiting: the initial affinity: 0x00020000
+waiting: the current affinity: 0x00020000
+waiting: the current CPU: 0xFFFFFFFF
+waiting: the last CPU it ran on: 0x00000001
+waiting: the wait type: 0x00000020
+waiting: the exit status: 0x80028028
+waiting: it has run for no time: 0x00000000
+change the priority of the waiting thread: 0x00000000
+change its affinity: 0x00020000
+changed while waiting: info: 0x00000000
+changed while waiting: the process is this one: 0x00000001
+changed while waiting: the name is the one given: 0x00000001
+changed while waiting: the entry is the one given: 0x00000001
+changed while waiting: the stack size: 0x00004000
+changed while waiting: the stack has an address: 0x00000001
+changed while waiting: the attributes: 0x80000000
+changed while waiting: the status: 0x00000008
+changed while waiting: the initial priority: 0x00000060
+changed while waiting: the current priority: 0x00000068
+changed while waiting: the initial affinity: 0x00020000
+changed while waiting: the current affinity: 0x00020000
+changed while waiting: the current CPU: 0xFFFFFFFF
+changed while waiting: the last CPU it ran on: 0x00000001
+changed while waiting: the wait type: 0x00000020
+changed while waiting: the exit status: 0x80028028
+changed while waiting: it has run for no time: 0x00000000
+ended: info: 0x00000000
+ended: the process is this one: 0x00000001
+ended: the name is the one given: 0x00000001
+ended: the entry is the one given: 0x00000001
+ended: the stack size: 0x00004000
+ended: the stack has an address: 0x00000001
+ended: the attributes: 0x80000000
+ended: the status: 0x00000010
+ended: the initial priority: 0x00000060
+ended: the current priority: 0x00000050
+ended: the initial affinity: 0x00020000
+ended: the current affinity: 0x00020000
+ended: the current CPU: 0xFFFFFFFF
+ended: the last CPU it ran on: 0x00000001
+ended: the wait type: 0x00000000
+ended: the exit status: 0x00000000
+ended: it has run for no time: 0x00000000
+second run: the priority it runs with: 0x00000060
+second run: the affinity it runs with: 0x00020000
+started again: info: 0x00000000
+started again: the process is this one: 0x00000001
+started again: the name is the one given: 0x00000001
+started again: the entry is the one given: 0x00000001
+started again: the stack size: 0x00004000
+started again: the stack has an address: 0x00000001
+started again: the attributes: 0x80000000
+started again: the status: 0x00000008
+started again: the initial priority: 0x00000060
+started again: the current priority: 0x00000060
+started again: the initial affinity: 0x00020000
+started again: the current affinity: 0x00020000
+started again: the current CPU: 0xFFFFFFFF
+started again: the last CPU it ran on: 0x00000001
+started again: the wait type: 0x00000020
+started again: the exit status: 0x80028028
+started again: it has run for no time: 0x00000000
+change the ended thread's priority to 0: 0x00000000
+its priority after the change to 0: 0x000000A0
+own priority: after the change to 0x70: 0x00000070
+own priority: change it to 0: 0x00000000
+own priority: after the change to 0: 0x00000070
+DONE

@@ -8,12 +8,19 @@
 #define HIGH_PRIORITY 0x100000FE
 
 static SceUID sema, mutex, rwlock, pipe;
-static int need[3], order[3], woken;
+static int need[3];
+static volatile int order[3], woken;
 
 static void reset_order(void) {
     woken = 0;
     for (int i = 0; i < 3; i++)
         order[i] = 0;
+}
+
+static int sema_count(void) {
+    SceKernelSemaInfo info = { .size = sizeof(info) };
+    sceKernelGetSemaInfo(sema, &info);
+    return info.currentCount;
 }
 
 static SceUID start(SceKernelThreadEntry entry, int i, int priority) {
@@ -84,7 +91,8 @@ int main(void) {
     threads[0] = start(sema_thread, 0, 0x10000100);
     threads[1] = start(sema_thread, 1, 0x10000100);
     sceKernelSignalSema(sema, 1);
-    test_let_threads_wait();
+    // Until the small request has seen its wake, or the count shows the signal woke nobody
+    TEST_WAIT_FOR(order[1] != 0 || sema_count() != 0);
     PRINT("a small request behind a big one, after a signal of 1", order[1]);
     PRINT("the big request", order[0]);
     sceKernelSignalSema(sema, 3);
@@ -101,7 +109,7 @@ int main(void) {
     threads[1] = start(sema_thread, 1, HIGH_PRIORITY);
     sceKernelChangeThreadPriority(threads[0], 0x100000F0);
     sceKernelSignalSema(sema, 1);
-    test_let_threads_wait();
+    TEST_WAIT_FOR(woken == 1);
     PRINT("the waiter raised above the other while waiting wakes first", order[0]);
     sceKernelSignalSema(sema, 1);
     join_all(threads, 2);
@@ -135,7 +143,7 @@ int main(void) {
     threads[0] = start(pipe_thread, 0, LOW_PRIORITY);
     threads[1] = start(pipe_thread, 1, HIGH_PRIORITY);
     sceKernelSendMsgPipe(pipe, "a", 1, MSG_PIPE_MODE_FULL, NULL, NULL);
-    test_let_threads_wait();
+    TEST_WAIT_FOR(woken == 1);
     sceKernelSendMsgPipe(pipe, "b", 1, MSG_PIPE_MODE_FULL, NULL, NULL);
     join_all(threads, 2);
     PRINT("the first FIFO receiver gets the first byte", received[0]);
@@ -150,10 +158,11 @@ int main(void) {
         if (pipe < 0)
             continue;
         received[0] = received[1] = 0;
+        reset_order();
         threads[0] = start(pipe_thread, 0, LOW_PRIORITY);
         threads[1] = start(pipe_thread, 1, HIGH_PRIORITY);
         sceKernelSendMsgPipe(pipe, "a", 1, MSG_PIPE_MODE_FULL, NULL, NULL);
-        test_let_threads_wait();
+        TEST_WAIT_FOR(woken == 1);
         sceKernelSendMsgPipe(pipe, "b", 1, MSG_PIPE_MODE_FULL, NULL, NULL);
         join_all(threads, 2);
         sceClibSnprintf(label, sizeof(label), "the low priority receiver, which waited first, gets with 0x%X", attrs[a]);

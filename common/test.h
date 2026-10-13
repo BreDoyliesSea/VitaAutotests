@@ -20,8 +20,11 @@ static inline void test_output(const char *line, int len) {
     sceClibPrintf("%s", line);
     if (fd < 0)
         fd = sceIoOpen(test_output_path, SCE_O_WRONLY | SCE_O_CREAT | SCE_O_APPEND, 0666);
-    if (fd >= 0)
+    if (fd >= 0) {
         sceIoWrite(fd, line, len);
+        // A test that hangs is killed, and a Vita drops the writes of a killed app that weren't synced
+        sceIoSyncByFd(fd, 0);
+    }
     // Gives whatever reads the debug output time to keep up
     sceKernelDelayThread(2000);
 }
@@ -74,10 +77,13 @@ static inline void test_join_thread(SceUID thread) {
 // can take a while, and a waiter must still be waiting when the test wakes it.
 #define TEST_WAIT_US 2000000
 
-// Gives started threads time to reach their waits
-static inline void test_let_threads_wait(void) {
-    sceKernelDelayThread(10000);
-}
+// Polls cond every millisecond until it holds, for at most 5 seconds. A test waits this way for what
+// another thread records, since a fixed delay can end before that thread got its turn.
+#define TEST_WAIT_FOR(cond)                                           \
+    do {                                                              \
+        for (int test_poll_ = 0; test_poll_ < 5000 && !(cond); test_poll_++) \
+            sceKernelDelayThread(1000);                               \
+    } while (0)
 
 // Waits until thread is in a wait, for at most half a second, so waiters queue in a known order
 static inline void test_wait_until_waiting(SceUID thread) {
@@ -87,6 +93,12 @@ static inline void test_wait_until_waiting(SceUID thread) {
             return;
         sceKernelDelayThread(1000);
     }
+}
+
+// Returns whether thread is in a wait of the given type on the object id
+static inline int test_in_wait(SceUID thread, SceUInt32 type, SceUID id) {
+    SceKernelThreadInfo info = { .size = sizeof(info) };
+    return sceKernelGetThreadInfo(thread, &info) == 0 && info.waitType == type && info.waitId == id;
 }
 
 // Ends the test. The last output line marks that it got this far.

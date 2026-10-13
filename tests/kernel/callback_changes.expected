@@ -1,0 +1,70 @@
+delete itself: the check: 0x00000001
+delete itself: the call inside the callback: 0x00000000
+delete itself: runs of the callback: 0x00000001
+delete itself: runs of the other callback: 0x00000000
+delete itself: the callback's notifications after: 0x800280A1
+delete itself: the other callback's notifications after: 0x00000000
+delete itself: the next check: 0x00000000
+delete itself: runs of the callback after the next check: 0x00000001
+delete itself: notify the callback after: 0x800280A1
+cancel itself: the check: 0x00000001
+cancel itself: the call inside the callback: 0x00000000
+cancel itself: runs of the callback: 0x00000001
+cancel itself: runs of the other callback: 0x00000000
+cancel itself: the callback's notifications after: 0x00000000
+cancel itself: the other callback's notifications after: 0x00000000
+cancel itself: the next check: 0x00000000
+cancel itself: runs of the callback after the next check: 0x00000001
+cancel itself: notify the callback after: 0x00000000
+notify itself: the check: 0x00000001
+notify itself: the call inside the callback: 0x00000000
+notify itself: runs of the callback: 0x00000001
+notify itself: runs of the other callback: 0x00000000
+notify itself: the callback's notifications after: 0x00000001
+notify itself: the other callback's notifications after: 0x00000000
+notify itself: the next check: 0x00000001
+notify itself: runs of the callback after the next check: 0x00000002
+notify itself: notify the callback after: 0x00000000
+notify itself and return 1: the check: 0x00000001
+notify itself and return 1: the call inside the callback: 0x00000000
+notify itself and return 1: runs of the callback: 0x00000001
+notify itself and return 1: runs of the other callback: 0x00000000
+notify itself and return 1: the callback's notifications after: 0x800280A1
+notify itself and return 1: the other callback's notifications after: 0x00000000
+notify itself and return 1: the next check: 0x00000000
+notify itself and return 1: runs of the callback after the next check: 0x00000001
+notify itself and return 1: notify the callback after: 0x800280A1
+return -1: the check: 0x00000001
+return -1: runs of the callback: 0x00000001
+return -1: runs of the other callback: 0x00000000
+return -1: the callback's notifications after: 0x800280A1
+return -1: the other callback's notifications after: 0x00000000
+return -1: the next check: 0x00000000
+return -1: runs of the callback after the next check: 0x00000001
+return -1: notify the callback after: 0x800280A1
+delete another pending callback: the check: 0x00000001
+delete another pending callback: the call inside the callback: 0x00000000
+delete another pending callback: runs of the callback: 0x00000001
+delete another pending callback: runs of the other callback: 0x00000000
+delete another pending callback: the callback's notifications after: 0x00000000
+delete another pending callback: the other callback's notifications after: 0x800280A1
+delete another pending callback: the next check: 0x00000000
+delete another pending callback: runs of the callback after the next check: 0x00000001
+delete another pending callback: notify the callback after: 0x00000000
+notify another callback: the check: 0x00000002
+notify another callback: the call inside the callback: 0x00000000
+notify another callback: runs of the callback: 0x00000001
+notify another callback: runs of the other callback: 0x00000001
+notify another callback: the callback's notifications after: 0x00000000
+notify another callback: the other callback's notifications after: 0x00000000
+notify another callback: the next check: 0x00000000
+notify another callback: runs of the callback after the next check: 0x00000001
+notify another callback: notify the callback after: 0x00000000
+three pending callbacks: the check: 0x00000003
+three pending callbacks: run 1 is the one created as: 0x00000001
+three pending callbacks: run 2 is the one created as: 0x00000002
+three pending callbacks: run 3 is the one created as: 0x00000003
+another thread's pending callback: delete it: 0x00000000
+another thread's pending callback: that thread's check: 0x00000000
+another thread's pending callback: its runs: 0x00000000
+DONE

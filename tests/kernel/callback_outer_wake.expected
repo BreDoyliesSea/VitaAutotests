@@ -1,0 +1,54 @@
+semaphore: its waiters while the callback waits: 0x00000000
+semaphore: signal it: 0x00000000
+semaphore: its count after the signal: 0x00000001
+semaphore: its waiters after the signal: 0x00000000
+semaphore: the callback's wait: 0x00000000
+semaphore: the inner semaphore's count at the end: 0x00000000
+semaphore: the outer wait: 0x00000000
+semaphore: the outer wait has time left: 0x00000001
+semaphore: its count at the end: 0x00000000
+mutex: unlock it: 0x00000000
+mutex: the waiting thread owns it after the unlock: 0x00000000
+mutex: its count after the unlock: 0x00000000
+mutex: its waiters after the unlock: 0x00000000
+mutex: try to lock it: 0x00000000
+mutex: the callback's wait: 0x00000000
+mutex: the inner semaphore's count at the end: 0x00000000
+mutex: the outer wait: 0x00000000
+mutex: the outer wait has time left: 0x00000001
+event flag: set the bit: 0x00000000
+event flag: its bits after the set: 0x00000001
+event flag: its waiters after the set: 0x00000000
+event flag: the callback's wait: 0x00000000
+event flag: the inner semaphore's count at the end: 0x00000000
+event flag: the outer wait: 0x00000000
+event flag: the outer wait has time left: 0x00000001
+event flag: the bits the outer wait got: 0x00000001
+event flag: its bits at the end: 0x00000000
+simple event: set the bit: 0x00000000
+simple event: its bits after the set: 0x01000004
+simple event: the callback's wait: 0x00000000
+simple event: the inner semaphore's count at the end: 0x00000000
+simple event: the outer wait: 0x800280A2
+simple event: the outer wait has time left: 0x00000001
+simple event: its bits at the end: 0x00000004
+message pipe: send the message: 0x00000000
+message pipe: the bytes in it after the send: 0x00000004
+message pipe: its receivers after the send: 0x00000000
+message pipe: the callback's wait: 0x00000000
+message pipe: the inner semaphore's count at the end: 0x00000000
+message pipe: the outer wait: 0x00000000
+message pipe: the outer wait has time left: 0x00000001
+message pipe: the outer wait got the message: 0x00000001
+delete: delete the semaphore: 0x00000000
+delete: the callback's wait: 0x00000000
+delete: the inner semaphore's count at the end: 0x00000000
+delete: the outer wait: 0x80028006
+delete: the outer wait has time left: 0x00000001
+cancel: cancel the semaphore: 0x00000000
+cancel: the waiters it counts: 0x00000000
+cancel: the callback's wait: 0x00000000
+cancel: the inner semaphore's count at the end: 0x00000000
+cancel: the outer wait: 0x80028005
+cancel: the outer wait has time left: 0x00000000
+DONE

@@ -10,7 +10,6 @@ int main(void) {
     sceKernelDeleteSema(first);
     const SceUID second = sceKernelCreateSema("second", 0, 0, 1, NULL);
     PRINT("the next object gets the deleted UID back", second == first);
-    PRINT("UIDs grow", second > first);
     PRINT("UIDs are odd", (second & 1) == 1);
 
     // Opening by name

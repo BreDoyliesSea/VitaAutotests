@@ -3,7 +3,8 @@
 
 #include "test.h"
 
-static int calls, last_count, last_arg;
+static volatile int calls;
+static int last_count, last_arg;
 static SceUID last_thread;
 
 static int callback(int notify_id, int count, int arg, void *common) {
@@ -86,7 +87,7 @@ int main(void) {
     SceUID thread = test_start_thread(cb_wait_thread);
     test_wait_until_waiting(thread);
     sceKernelNotifyCallback(other_cb, 7);
-    test_let_threads_wait();
+    TEST_WAIT_FOR(calls != 0);
     PRINT("the waiting thread runs it", calls);
     PRINT("on its own thread", last_thread == thread);
     sceKernelSignalSema(other_sema, 1);
