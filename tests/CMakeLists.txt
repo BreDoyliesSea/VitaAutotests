@@ -98,6 +98,8 @@ vita_test(wait_zero_timeout kernel/wait_zero_timeout.c)
 vita_test(callback_requeue_order kernel/callback_requeue_order.c)
 vita_test(callback_event_results kernel/callback_event_results.c)
 vita_test(callback_stack kernel/callback_stack.c)
+vita_test(priority_requeue_others kernel/priority_requeue_others.c)
+vita_test(cond_signal_all_order kernel/cond_signal_all_order.c)
 
 vita_test(memblock memory/memblock.c)
 

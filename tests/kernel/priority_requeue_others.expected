@@ -1,0 +1,33 @@
+mutex: create it with the priority attribute: 0x00000000
+mutex: the low priority waiter that waited first: 0x00000003
+mutex: the raised waiter: 0x00000002
+mutex: the waiter already at that priority: 0x00000001
+event flag: create it with the priority attribute: 0x00000000
+event flag: the low priority waiter that waited first: 0x00000003
+event flag: the raised waiter: 0x00000002
+event flag: the waiter already at that priority: 0x00000001
+simple event: create it with the priority attribute: 0x00000000
+simple event: the low priority waiter that waited first: 0x00000003
+simple event: the raised waiter: 0x00000002
+simple event: the waiter already at that priority: 0x00000001
+message pipe: create it with the priority attribute: 0x00000000
+message pipe: the low priority waiter that waited first: 0x00000003
+message pipe: the raised waiter: 0x00000002
+message pipe: the waiter already at that priority: 0x00000001
+write lock: create it with the priority attribute: 0x00000000
+write lock: the low priority waiter that waited first: 0x00000003
+write lock: the raised waiter: 0x00000002
+write lock: the waiter already at that priority: 0x00000001
+lightweight mutex: create it with the priority attribute: 0x00000000
+lightweight mutex: the low priority waiter that waited first: 0x00000003
+lightweight mutex: the raised waiter: 0x00000002
+lightweight mutex: the waiter already at that priority: 0x00000001
+condition variable: create it with the priority attribute: 0x00000000
+condition variable: the low priority waiter that waited first: 0x00000003
+condition variable: the raised waiter: 0x00000002
+condition variable: the waiter already at that priority: 0x00000001
+condition variable, waiting for its mutex: create it with the priority attribute: 0x00000000
+condition variable, waiting for its mutex: the low priority waiter that waited first: 0x00000003
+condition variable, waiting for its mutex: the raised waiter: 0x00000002
+condition variable, waiting for its mutex: the waiter already at that priority: 0x00000001
+DONE
