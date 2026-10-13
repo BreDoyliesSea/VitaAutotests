@@ -1,0 +1,18 @@
+kinds: 1 other, 2 the thread's UID, 3 its stack's low end, 4 its high end, 5 on its stack, 6 its priority, 7 its affinity, 8 the process ID: 0x00000000
+the main thread: slots that aren't 0: 0x00000008
+the main thread: slot 1: what it holds: 0x00000002
+the main thread: slot 2: what it holds: 0x00000004
+the main thread: slot 3: what it holds: 0x00000003
+the main thread: slot 6: what it holds: 0x00000001
+the main thread: slot 7: what it holds: 0x00000001
+the main thread: slot 8: what it holds: 0x00000006
+the main thread: slot 9: what it holds: 0x00000007
+the main thread: slot 137: what it holds: 0x00000001
+a new thread: slots that aren't 0: 0x00000006
+a new thread: slot 1: what it holds: 0x00000002
+a new thread: slot 2: what it holds: 0x00000004
+a new thread: slot 3: what it holds: 0x00000003
+a new thread: slot 6: what it holds: 0x00000001
+a new thread: slot 7: what it holds: 0x00000001
+a new thread: slot 8: what it holds: 0x00000006
+DONE

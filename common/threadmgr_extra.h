@@ -247,3 +247,28 @@ SceInt32 sceKernelGetCurrentThreadVfpException(void);
 
 // Waits for a thread signal like sceKernelWaitSignal, running callbacks
 int sceKernelWaitSignalCB(SceUInt32 unk0, SceUInt32 delay, SceUInt32 *timeout);
+
+// What sceKernelGetThreadContextForVM fills: a thread's CPU registers, TPIDRURW and three more words
+typedef struct ThreadCpuRegisters {
+    SceSize size;
+    SceUInt32 cpsr;
+    SceUInt32 reg[16];
+    SceUInt32 tpidrurw;
+    SceUInt32 teehbr;
+    SceUInt32 sb;
+    SceUInt32 st;
+} ThreadCpuRegisters;
+
+// And its VFP registers, s0 to s63 as words
+typedef struct ThreadVfpRegisters {
+    SceSize size;
+    SceUInt32 fpscr;
+    SceUInt32 reg[64];
+} ThreadVfpRegisters;
+
+// Reads the registers of a thread that isn't running
+int sceKernelGetThreadContextForVM(SceUID thid, ThreadCpuRegisters *cpu, ThreadVfpRegisters *vfp);
+
+// Suspend and resume a thread for sceKernelGetThreadContextForVM
+int sceKernelSuspendThreadForVM(SceUID thid);
+int sceKernelResumeThreadForVM(SceUID thid);
