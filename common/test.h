@@ -20,8 +20,11 @@ static inline void test_output(const char *line, int len) {
     sceClibPrintf("%s", line);
     if (fd < 0)
         fd = sceIoOpen(test_output_path, SCE_O_WRONLY | SCE_O_CREAT | SCE_O_APPEND, 0666);
-    if (fd >= 0)
+    if (fd >= 0) {
         sceIoWrite(fd, line, len);
+        // A test that hangs is killed, and a Vita drops the writes of a killed app that weren't synced
+        sceIoSyncByFd(fd, 0);
+    }
     // Gives whatever reads the debug output time to keep up
     sceKernelDelayThread(2000);
 }

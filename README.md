@@ -17,7 +17,7 @@ cmake --build build
 
 Every test goes into one vpk, `build/tests/vita-autotests.vpk`, with title ID `VTST00000`. Each launch runs one test in a fresh process: the one named by the first argument, by the `arg` of the launch URI, or by the first line of `ux0:data/vita-autotests/test.txt`. The name `list` prints every test.
 
-A test prints each line to the debug output and to `ux0:data/vita-autotests/output/<name>.txt`. A Vita's debug output can drop lines when a test prints a lot at once, but the file never does.
+A test prints each line to the debug output and to `ux0:data/vita-autotests/output/<name>.txt`. A Vita's debug output can drop lines when a test prints a lot at once, but the file never does. Each line is synced as it is written, so the file keeps everything even when a test hangs and gets killed.
 
 A test that starts waiter threads waits for each one with `test_wait_until_waiting()`, and the waiters give up after `TEST_WAIT_US`. Starting a thread can take a while, so a fixed short delay isn't enough.
 

@@ -18,9 +18,12 @@ int main(void) {
     const SceUInt64 process_after = sceKernelGetProcessTimeWide();
     PRINT("process time advances by at least a 20 ms delay", process_after - process_before >= 20000);
     PRINT("and by less than a second", process_after - process_before < 1000000);
+    // Both read before printing, since a print takes longer than the 10 ms they may differ by
     SceKernelSysClock clock = 0;
-    PRINT("get the process time", sceKernelGetProcessTime(&clock));
-    PRINT("it matches the wide one", close_to((SceInt64)clock, (SceInt64)sceKernelGetProcessTimeWide(), 10000));
+    const int get_result = sceKernelGetProcessTime(&clock);
+    const SceUInt64 wide = sceKernelGetProcessTimeWide();
+    PRINT("get the process time", get_result);
+    PRINT("it matches the wide one", close_to((SceInt64)clock, (SceInt64)wide, 10000));
     const SceUInt32 low = sceKernelGetProcessTimeLow();
     const SceUInt32 wide_low = (SceUInt32)sceKernelGetProcessTimeWide();
     PRINT("the low one is the low word of the wide one", wide_low - low < 10000);
