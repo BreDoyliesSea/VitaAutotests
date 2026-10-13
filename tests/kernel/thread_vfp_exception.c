@@ -4,23 +4,9 @@
 // records everything and the main thread prints it after the thread ends.
 #include <psp2/kernel/threadmgr.h>
 
+#include "registers.h"
 #include "test.h"
 #include "threadmgr_extra.h"
-
-// The FPSCR bits that control VFP, without the flags of earlier operations
-#define FPSCR_CONTROL 0x07FF9F00
-// The condition flags and cumulative exception flags of FPSCR
-#define FPSCR_FLAGS 0xF800009F
-
-static unsigned int get_fpscr(void) {
-    unsigned int value;
-    __asm__ volatile("vmrs %0, fpscr" : "=r"(value));
-    return value;
-}
-
-static void set_fpscr(unsigned int value) {
-    __asm__ volatile("vmsr fpscr, %0" : : "r"(value));
-}
 
 // Each bit the header defines, and some it doesn't
 static const SceUInt32 bits[] = {

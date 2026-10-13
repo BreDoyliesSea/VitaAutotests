@@ -3,16 +3,8 @@
 // use VFP. Then the same for a thread that sets 0x01000000 on itself.
 #include <psp2/kernel/threadmgr.h>
 
+#include "registers.h"
 #include "test.h"
-
-// The FPSCR bits that control VFP, without the flags of earlier operations
-#define FPSCR_CONTROL 0x07FF9F00
-
-static unsigned int get_fpscr(void) {
-    unsigned int value;
-    __asm__ volatile("vmrs %0, fpscr" : "=r"(value));
-    return value;
-}
 
 // Returns whether a VFP add gives the right sum
 static int vfp_works(void) {
@@ -32,13 +24,13 @@ static int report_thread(SceSize args, void *argp) {
 }
 
 static volatile int set_result, clear_result;
-static volatile unsigned int set_fpscr, set_works;
+static volatile unsigned int attr_fpscr, set_works;
 
 static int set_attr_thread(SceSize args, void *argp) {
     (void)args;
     (void)argp;
     set_result = sceKernelChangeCurrentThreadAttr(0, 0x01000000);
-    set_fpscr = get_fpscr() & FPSCR_CONTROL;
+    attr_fpscr = get_fpscr() & FPSCR_CONTROL;
     set_works = vfp_works();
     clear_result = sceKernelChangeCurrentThreadAttr(0x01000000, 0);
     return 0;
@@ -63,7 +55,7 @@ int main(void) {
 
     test_join_thread(test_start_thread(set_attr_thread));
     PRINT("a thread sets 0x01000000 on itself", set_result);
-    PRINT("then its FPSCR control bits", set_fpscr);
+    PRINT("then its FPSCR control bits", attr_fpscr);
     PRINT("then VFP works", set_works);
     PRINT("it clears 0x01000000", clear_result);
 

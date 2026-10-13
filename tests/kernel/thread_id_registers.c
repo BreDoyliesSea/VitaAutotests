@@ -4,24 +4,9 @@
 // restart keeps. Addresses are printed as comparisons.
 #include <psp2/kernel/threadmgr.h>
 
+#include "registers.h"
 #include "test.h"
 #include "threadmgr_extra.h"
-
-static unsigned int get_tpidrurw(void) {
-    unsigned int value;
-    __asm__ volatile("mrc p15, 0, %0, c13, c0, 2" : "=r"(value));
-    return value;
-}
-
-static void set_tpidrurw(unsigned int value) {
-    __asm__ volatile("mcr p15, 0, %0, c13, c0, 2" : : "r"(value));
-}
-
-static unsigned int get_tpidruro(void) {
-    unsigned int value;
-    __asm__ volatile("mrc p15, 0, %0, c13, c0, 3" : "=r"(value));
-    return value;
-}
 
 static SceUID sema, cb;
 static volatile int phase, runs;

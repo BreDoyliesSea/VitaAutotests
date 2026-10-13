@@ -3,33 +3,9 @@
 // whether a change made in it stays, and what a restart keeps
 #include <psp2/kernel/threadmgr.h>
 
+#include "registers.h"
 #include "test.h"
 #include "threadmgr_extra.h"
-
-// The FPSCR bits that control VFP, without the flags of earlier operations
-#define FPSCR_CONTROL 0x07FF9F00
-#define FPSCR_RMODE_SHIFT 22
-#define RMODE_PLUS 1
-#define RMODE_MINUS 2
-#define RMODE_ZERO 3
-
-static unsigned int get_fpscr(void) {
-    unsigned int value;
-    __asm__ volatile("vmrs %0, fpscr" : "=r"(value));
-    return value;
-}
-
-static void set_fpscr(unsigned int value) {
-    __asm__ volatile("vmsr fpscr, %0" : : "r"(value));
-}
-
-static int get_rmode(void) {
-    return (get_fpscr() >> FPSCR_RMODE_SHIFT) & 3;
-}
-
-static void set_rmode(int mode) {
-    set_fpscr((get_fpscr() & ~(3u << FPSCR_RMODE_SHIFT)) | ((unsigned int)mode << FPSCR_RMODE_SHIFT));
-}
 
 static SceUID sema, cb;
 static volatile int phase, runs;
