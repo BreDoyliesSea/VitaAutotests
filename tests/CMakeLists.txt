@@ -107,6 +107,8 @@ vita_test(thread_event_handler_edges kernel/thread_event_handler_edges.c)
 vita_test(thread_signal kernel/thread_signal.c)
 vita_test(thread_signal_timeout kernel/thread_signal_timeout.c)
 vita_test(thread_change_attr kernel/thread_change_attr.c)
+vita_test(thread_create_attr kernel/thread_create_attr.c)
+vita_test(thread_vfp_exception kernel/thread_vfp_exception.c)
 vita_test(module_start_thread kernel/module_start_thread.c)
 
 # The module module_start_thread loads. vita_create_self runs in a function, since it adds its flags

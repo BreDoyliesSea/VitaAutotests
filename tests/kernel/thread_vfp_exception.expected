@@ -1,0 +1,83 @@
+the main thread's setting: 0x00000000
+a new thread's setting: 0x00000000
+set 0x00000001: 0x00000000
+set 0x00000001: the setting after: 0x00000001
+set 0x00000001: the FPSCR control bits after: 0x03000000
+clear 0x00000001: 0x00000001
+clear 0x00000001: the setting after: 0x00000000
+clear 0x00000001: the FPSCR control bits after: 0x03000000
+set 0x00000002: 0x00000000
+set 0x00000002: the setting after: 0x00000002
+set 0x00000002: the FPSCR control bits after: 0x03000000
+clear 0x00000002: 0x00000002
+clear 0x00000002: the setting after: 0x00000000
+clear 0x00000002: the FPSCR control bits after: 0x03000000
+set 0x00000004: 0x00000000
+set 0x00000004: the setting after: 0x00000004
+set 0x00000004: the FPSCR control bits after: 0x03000000
+clear 0x00000004: 0x00000004
+clear 0x00000004: the setting after: 0x00000000
+clear 0x00000004: the FPSCR control bits after: 0x03000000
+set 0x00000008: 0x00000000
+set 0x00000008: the setting after: 0x00000008
+set 0x00000008: the FPSCR control bits after: 0x03000000
+clear 0x00000008: 0x00000008
+clear 0x00000008: the setting after: 0x00000000
+clear 0x00000008: the FPSCR control bits after: 0x03000000
+set 0x00000010: 0x00000000
+set 0x00000010: the setting after: 0x00000010
+set 0x00000010: the FPSCR control bits after: 0x03000000
+clear 0x00000010: 0x00000010
+clear 0x00000010: the setting after: 0x00000000
+clear 0x00000010: the FPSCR control bits after: 0x03000000
+set 0x00000020: 0x80020005
+set 0x00000020: the setting after: 0x00000000
+set 0x00000020: the FPSCR control bits after: 0x03000000
+clear 0x00000020: 0x80020005
+clear 0x00000020: the setting after: 0x00000000
+clear 0x00000020: the FPSCR control bits after: 0x03000000
+set 0x00000040: 0x80020005
+set 0x00000040: the setting after: 0x00000000
+set 0x00000040: the FPSCR control bits after: 0x03000000
+clear 0x00000040: 0x80020005
+clear 0x00000040: the setting after: 0x00000000
+clear 0x00000040: the FPSCR control bits after: 0x03000000
+set 0x00000080: 0x00000000
+set 0x00000080: the setting after: 0x00000080
+set 0x00000080: the FPSCR control bits after: 0x03000000
+clear 0x00000080: 0x00000080
+clear 0x00000080: the setting after: 0x00000000
+clear 0x00000080: the FPSCR control bits after: 0x03000000
+set 0x00000100: 0x80020005
+set 0x00000100: the setting after: 0x00000000
+set 0x00000100: the FPSCR control bits after: 0x03000000
+clear 0x00000100: 0x80020005
+clear 0x00000100: the setting after: 0x00000000
+clear 0x00000100: the FPSCR control bits after: 0x03000000
+set 0x08000000: 0x00000000
+set 0x08000000: the setting after: 0x08000000
+set 0x08000000: the FPSCR control bits after: 0x03000000
+clear 0x08000000: 0x08000000
+clear 0x08000000: the setting after: 0x00000000
+clear 0x08000000: the FPSCR control bits after: 0x03000000
+set 0x80000000: 0x80020005
+set 0x80000000: the setting after: 0x00000000
+set 0x80000000: the FPSCR control bits after: 0x03000000
+clear 0x80000000: 0x80020005
+clear 0x80000000: the setting after: 0x00000000
+clear 0x80000000: the FPSCR control bits after: 0x03000000
+set every bit: 0x00000000
+set every bit: the setting after: 0x0800009F
+set every bit: the FPSCR control bits after: 0x03000000
+a thread it creates: the setting: 0x00000000
+a thread it creates: the FPSCR control bits: 0x03000000
+a callback run by a check: the setting: 0x00000000
+a callback run by a check: the FPSCR control bits: 0x03000000
+after the check: the setting: 0x0800009F
+a callback run by a delay: the setting: 0x00000000
+it sets 0x00000001, which returns: 0x00000000
+after the delay: the setting: 0x0800009F
+clear every bit: 0x0800009F
+clear every bit: the setting after: 0x00000000
+started again after setting 0x00000002: the setting: 0x00000002
+DONE

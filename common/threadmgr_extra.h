@@ -241,3 +241,6 @@ SceInt32 sceKernelUnregisterCallbackFromEventAll(SceUID event_id);
 // The events a message pipe reports for a send and for a receive that didn't wait
 #define EVENT_IN 0x1
 #define EVENT_OUT 0x2
+
+// Returns the VFP exception setting of the calling thread, which sceKernelChangeThreadVfpException changes
+SceInt32 sceKernelGetCurrentThreadVfpException(void);
