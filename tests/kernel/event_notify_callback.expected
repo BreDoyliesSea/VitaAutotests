@@ -1,0 +1,102 @@
+register: 0x00000000
+register the same callback again: 0x00000000
+set with notification: 0x00000000
+the bits after it: 0x01000004
+set with notification: the callback's notifications: 0x00000002
+set with notification: runs of the callback: 0x00000001
+set with notification: the notify ID is the event: 0x00000001
+set with notification: the count: 0x00000002
+set with notification: the argument: 0x00000033
+pulse with notification: 0x00000000
+the bits after it: 0x01000004
+pulse with notification: the callback's notifications: 0x00000002
+pulse with notification: runs of the callback: 0x00000001
+pulse with notification: the notify ID is the event: 0x00000001
+pulse with notification: the count: 0x00000002
+pulse with notification: the argument: 0x00000044
+two sets with notification: the callback's notifications: 0x00000004
+two sets with notification: runs of the callback: 0x00000001
+two sets with notification: the notify ID is the event: 0x00000001
+two sets with notification: the count: 0x00000004
+two sets with notification: the argument: 0x00000002
+set without notification: 0x00000000
+set without notification: the callback's notifications: 0x00000000
+set without notification: runs of the callback: 0x00000000
+set no bits with notification: 0x00000000
+set no bits with notification: the callback's notifications: 0x00000000
+set no bits with notification: runs of the callback: 0x00000000
+unregister: 0x00000000
+set after unregistering: the callback's notifications: 0x00000001
+set after unregistering: runs of the callback: 0x00000001
+set after unregistering: the notify ID is the event: 0x00000001
+set after unregistering: the count: 0x00000001
+set after unregistering: the argument: 0x00000006
+unregister again: 0x00000000
+another thread: register its callback: 0x00000000
+another thread's callback after the set: 0x800280A1
+set with another thread's callback registered too: the callback's notifications: 0x00000001
+set with another thread's callback registered too: runs of the callback: 0x00000001
+set with another thread's callback registered too: the notify ID is the event: 0x00000001
+set with another thread's callback registered too: the count: 0x00000001
+set with another thread's callback registered too: the argument: 0x00000007
+unregister all: 0x00000000
+set after unregistering all: the callback's notifications: 0x00000000
+set after unregistering all: runs of the callback: 0x00000000
+another thread's callback after it: 0x800280A1
+set with a deleted callback registered: 0x00000000
+delete the event: 0x00000000
+deleting the event: the callback's notifications: 0x00000001
+deleting the event: runs of the callback: 0x00000001
+deleting the event: the notify ID is the event: 0x00000001
+deleting the event: the count: 0x00000001
+deleting the event: the argument: 0x00000008
+set a deleted event with notification: 0x80028201
+register to a deleted event: 0x80028201
+register to a semaphore: 0x80028201
+register to an unknown UID: 0x80028201
+register an unknown callback: 0x800280A1
+register a semaphore as the callback: 0x800280A1
+unregister a callback that isn't registered: 0x800280A3
+unregister all with none registered: 0x00000000
+notify all, a wait with callbacks: set with notification: 0x00000000
+notify all, a wait with callbacks: the waiter's wait: 0x00000000
+notify all, a wait with callbacks: runs of the waiter's callback when its wait returned: 0x00000001
+notify all, a wait with callbacks: runs of the waiter's callback after its next check: 0x00000001
+notify all, a wait with callbacks: the callback's notifications: 0x00000001
+notify all, a wait with callbacks: runs of the callback: 0x00000001
+notify all, a wait with callbacks: the notify ID is the event: 0x00000001
+notify all, a wait with callbacks: the count: 0x00000001
+notify all, a wait with callbacks: the argument: 0x00000055
+notify all, a wait without callbacks: set with notification: 0x00000000
+notify all, a wait without callbacks: the waiter's wait: 0x00000000
+notify all, a wait without callbacks: runs of the waiter's callback when its wait returned: 0x00000000
+notify all, a wait without callbacks: runs of the waiter's callback after its next check: 0x00000001
+notify all, a wait without callbacks: the callback's notifications: 0x00000001
+notify all, a wait without callbacks: runs of the callback: 0x00000001
+notify all, a wait without callbacks: the notify ID is the event: 0x00000001
+notify all, a wait without callbacks: the count: 0x00000001
+notify all, a wait without callbacks: the argument: 0x00000055
+notify the woken only, a wait with callbacks: set with notification: 0x00000000
+notify the woken only, a wait with callbacks: the waiter's wait: 0x00000000
+notify the woken only, a wait with callbacks: runs of the waiter's callback when its wait returned: 0x00000001
+notify the woken only, a wait with callbacks: runs of the waiter's callback after its next check: 0x00000001
+notify the woken only, a wait with callbacks: the callback's notifications: 0x00000001
+notify the woken only, a wait with callbacks: runs of the callback: 0x00000001
+notify the woken only, a wait with callbacks: the notify ID is the event: 0x00000001
+notify the woken only, a wait with callbacks: the count: 0x00000001
+notify the woken only, a wait with callbacks: the argument: 0x00000055
+notify the woken only, a wait without callbacks: set with notification: 0x00000000
+notify the woken only, a wait without callbacks: the waiter's wait: 0x00000000
+notify the woken only, a wait without callbacks: runs of the waiter's callback when its wait returned: 0x00000000
+notify the woken only, a wait without callbacks: runs of the waiter's callback after its next check: 0x00000001
+notify the woken only, a wait without callbacks: the callback's notifications: 0x00000001
+notify the woken only, a wait without callbacks: runs of the callback: 0x00000001
+notify the woken only, a wait without callbacks: the notify ID is the event: 0x00000001
+notify the woken only, a wait without callbacks: the count: 0x00000001
+notify the woken only, a wait without callbacks: the argument: 0x00000055
+notify the woken only, no waiter: the callback's notifications: 0x00000001
+notify the woken only, no waiter: runs of the callback: 0x00000001
+notify the woken only, no waiter: the notify ID is the event: 0x00000001
+notify the woken only, no waiter: the count: 0x00000001
+notify the woken only, no waiter: the argument: 0x0000000B
+DONE

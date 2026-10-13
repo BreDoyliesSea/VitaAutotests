@@ -90,6 +90,10 @@ vita_test(thread_restart kernel/thread_restart.c)
 vita_test(thread_end_waits kernel/thread_end_waits.c)
 vita_test(thread_event_handler kernel/thread_event_handler.c)
 vita_test(owner_end kernel/owner_end.c)
+vita_test(event_notify_callback kernel/event_notify_callback.c)
+vita_test(timer_callback kernel/timer_callback.c)
+vita_test(multi_events_waits kernel/multi_events_waits.c)
+vita_test(msgpipe_async kernel/msgpipe_async.c)
 
 vita_test(memblock memory/memblock.c)
 
