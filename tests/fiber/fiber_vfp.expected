@@ -1,0 +1,24 @@
+load the fiber module: 0x00000000
+initialize the first fiber: 0x00000000
+initialize the second fiber: 0x00000000
+the fiber at its entry: the FPSCR control bits: 0x03400000
+the fiber at its entry: the VFP exception setting: 0x08000000
+the fiber at its entry: TPIDRURW: 0x00001000
+the thread after the fiber returned: the FPSCR control bits: 0x03400000
+the thread after the fiber returned: the VFP exception setting: 0x00000001
+the thread after the fiber returned: TPIDRURW: 0x00001001
+the fiber run again: the FPSCR control bits: 0x03800000
+the fiber run again: the VFP exception setting: 0x00000002
+the fiber run again: TPIDRURW: 0x00001002
+a second fiber switched to: the FPSCR control bits: 0x02400000
+a second fiber switched to: the VFP exception setting: 0x00000004
+a second fiber switched to: TPIDRURW: 0x00001003
+the first fiber switched back to: the FPSCR control bits: 0x02400000
+the first fiber switched back to: the VFP exception setting: 0x00000008
+the first fiber switched back to: TPIDRURW: 0x00001004
+the thread at the end: the FPSCR control bits: 0x03C00000
+the thread at the end: the VFP exception setting: 0x00000010
+the thread at the end: TPIDRURW: 0x00001005
+finalize the first fiber: 0x00000000
+finalize the second fiber: 0x00000000
+DONE

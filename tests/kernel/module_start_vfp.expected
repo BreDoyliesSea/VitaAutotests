@@ -1,0 +1,14 @@
+load and start the module: 0x00000000
+the start function: runs: 0x00000001
+the start function: the FPSCR control bits: 0x03000000
+the start function: the VFP exception setting: 0x00000000
+the start function: TPIDRURW: 0x00000000
+after the start: the loading thread's rounding mode: 0x00000001
+after the start: its VFP exception setting: 0x08000000
+after the start: its TPIDRURW: 0x00007777
+stop and unload the module: 0x00000000
+the stop function: runs: 0x00000001
+the stop function: the FPSCR control bits: 0x03000000
+the stop function: the VFP exception setting: 0x00000000
+the stop function: TPIDRURW: 0x00000000
+DONE

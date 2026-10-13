@@ -110,11 +110,14 @@ vita_test(thread_change_attr kernel/thread_change_attr.c)
 vita_test(thread_create_attr kernel/thread_create_attr.c)
 vita_test(thread_vfp_exception kernel/thread_vfp_exception.c)
 vita_test(module_start_thread kernel/module_start_thread.c)
+vita_test(module_start_vfp kernel/module_start_vfp.c)
+vita_test(thread_event_handler_vfp kernel/thread_event_handler_vfp.c)
 
-# The module module_start_thread loads. vita_create_self runs in a function, since it adds its flags
+# The module module_start_thread and module_start_vfp load. vita_create_self runs in a function, since it adds its flags
 # to the scope it runs in, where they would also apply to the test vpk's self.
 add_executable(probe_module kernel/probe_module/probe_module.c)
 target_link_libraries(probe_module SceLibKernel_stub SceKernelThreadMgr_stub)
+target_include_directories(probe_module PRIVATE ${PROJECT_SOURCE_DIR}/common)
 target_link_options(probe_module PRIVATE -nostartfiles -Wl,-e,module_start)
 function(probe_module_self)
 	vita_create_self(probe_module.suprx probe_module CONFIG ${CMAKE_CURRENT_SOURCE_DIR}/kernel/probe_module/exports.yml)
@@ -130,6 +133,9 @@ vita_test(directories io/directories.c)
 
 vita_test(fibers fiber/fibers.c)
 vita_test(fiber_entry_returns fiber/fiber_entry_returns.c)
+vita_test(fiber_vfp fiber/fiber_vfp.c)
+
+vita_test(shader_patcher_callback gxm/shader_patcher_callback.c)
 
 vita_test(rtc rtc/rtc.c)
 
