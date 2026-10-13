@@ -109,6 +109,7 @@ vita_test(thread_signal_timeout kernel/thread_signal_timeout.c)
 vita_test(thread_change_attr kernel/thread_change_attr.c)
 
 vita_test(memblock memory/memblock.c)
+vita_test(address_ranges memory/address_ranges.c)
 
 vita_test(files io/files.c)
 vita_test(directories io/directories.c)

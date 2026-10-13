@@ -1,0 +1,26 @@
+the code: 0x00000008
+the data: 0x00000008
+the main thread's stack: 0x00000008
+the main thread's stack per its info: 0x00000008
+the main thread's TLS: 0x00000008
+a new thread's stack: 0x00000008
+its frame is on it: 0x00000001
+USER_RW: allocate: 0x00000000
+USER_RW: the region of its base: 0x00000008
+USER_RW: the region of its last byte: 0x00000008
+USER_RW_UNCACHE: allocate: 0x00000000
+USER_RW_UNCACHE: the region of its base: 0x00000007
+USER_RW_UNCACHE: the region of its last byte: 0x00000007
+USER_CDRAM_RW: allocate: 0x00000000
+USER_CDRAM_RW: the region of its base: 0x00000006
+USER_CDRAM_RW: the region of its last byte: 0x00000006
+USER_MAIN_PHYCONT_RW: allocate: 0x00000000
+USER_MAIN_PHYCONT_RW: the region of its base: 0x00000008
+USER_MAIN_PHYCONT_RW: the region of its last byte: 0x00000008
+USER_MAIN_PHYCONT_NC_RW: allocate: 0x00000000
+USER_MAIN_PHYCONT_NC_RW: the region of its base: 0x00000007
+USER_MAIN_PHYCONT_NC_RW: the region of its last byte: 0x00000007
+a 16 MiB USER_RW block: allocate: 0x00000000
+a 16 MiB USER_RW block: the region of its base: 0x00000008
+a 16 MiB USER_RW block: the region of its last byte: 0x00000008
+DONE
