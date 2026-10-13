@@ -6,7 +6,8 @@
 #include "threadmgr_extra.h"
 
 static SceUID held, release;
-static int other_unlock, other_lock, waiter_lock;
+static int other_unlock, other_lock;
+static volatile int waiter_lock;
 
 // Waits for the held mutex, then keeps it until release is signaled
 static int waiter_thread(SceSize args, void *argp) {
@@ -69,7 +70,7 @@ int main(void) {
     SceUID waiter = test_start_thread(waiter_thread);
     test_wait_until_waiting(waiter);
     sceKernelUnlockMutex(held, 1);
-    test_let_threads_wait();
+    TEST_WAIT_FOR(waiter_lock != -1);
     PRINT("the waiter gets the mutex when it is unlocked", waiter_lock);
     PRINT("the waiter owns it now", sceKernelTryLockMutex(held, 1));
     sceKernelSignalSema(release, 1);

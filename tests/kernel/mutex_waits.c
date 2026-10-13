@@ -7,7 +7,7 @@
 #define LOW_PRIORITY 0x10000102
 #define HIGH_PRIORITY 0x100000FE
 
-static SceUID mutex;
+static SceUID mutex, release;
 static SceKernelLwMutexWork lw_mutex;
 static int lock_result[2], order[2], woken;
 static SceUInt time_left;
@@ -20,12 +20,13 @@ static int lock_and_end_thread(SceSize args, void *argp) {
     return 0;
 }
 
-// Locks the mutex, holds it for a while, then ends without unlocking it
+// Locks the mutex, holds it until released, then ends without unlocking it
 static int hold_and_end_thread(SceSize args, void *argp) {
     (void)args;
     (void)argp;
     sceKernelLockMutex(mutex, 1, NULL);
-    sceKernelDelayThread(30000);
+    SceUInt timeout = TEST_WAIT_US;
+    sceKernelWaitSema(release, 1, &timeout);
     return 0;
 }
 
@@ -73,9 +74,11 @@ int main(void) {
     sceKernelUnlockMutex(mutex, 1);
 
     mutex = sceKernelCreateMutex("mutex", 0, 0, NULL);
+    release = sceKernelCreateSema("release", 0, 0, 1, NULL);
     const SceUID holder = test_start_thread(hold_and_end_thread);
     test_wait_until_waiting(holder);
     SceUID waiter = start_waiter(0, 0x10000100);
+    sceKernelSignalSema(release, 1);
     test_join_thread(holder);
     test_join_thread(waiter);
     PRINT("a waiter gets the mutex when its owner ends", lock_result[0]);

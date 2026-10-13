@@ -50,3 +50,9 @@ Write `tests/<area>/<name>.c` with `PRINT`, `PRINTF` and `test_exit()` from `com
 Cases that pass NULL pointers or huge sizes go at the end of a test, so an implementation that crashes on them loses nothing else. An info call given a size past its struct gets a buffer with room behind it, in case it writes that far.
 
 A case that a wrong implementation may crash or hang on, like `wait_own_end`, goes in a test of its own, so it doesn't lose the output of the checks after it.
+
+The output must not depend on timing, so it is the same however many times the test runs:
+
+- A test never sleeps a fixed time to let another thread get somewhere. It waits for what that thread records, or for its end, with `TEST_WAIT_FOR()` or a join.
+- A value is only read while every other thread of the test is blocked or has ended. Where the test expects a wake to do nothing, it reads right after the call that would have done it.
+- Times are printed as comparisons, with every threshold far from each outcome the test tells apart. A timer event that must have fired gets at least ten times its interval.

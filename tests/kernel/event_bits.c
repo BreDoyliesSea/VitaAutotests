@@ -132,7 +132,6 @@ int main(void) {
     // An AND wait needs every bit, even when they come from separate sets
     waiter = start_flag_waiter(0x3, EVF_WAITMODE_AND);
     sceKernelSetEventFlag(flag, 0x1);
-    test_let_threads_wait();
     PRINT("an AND wait goes on with one of its bits", wait_result == -1);
     sceKernelSetEventFlag(flag, 0x2);
     test_join_thread(waiter);

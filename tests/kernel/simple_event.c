@@ -4,7 +4,7 @@
 #include "threadmgr_extra.h"
 
 static SceUID event;
-static int wait_result[2];
+static volatile int wait_result[2];
 static SceUInt32 wait_pattern[2];
 static SceUInt64 wait_user_data[2];
 
@@ -71,7 +71,7 @@ int main(void) {
     // Auto reset: each bit wakes one waiter, and is cleared by it
     start_two_waiters(EVENT_ATTR_AUTO_RESET, threads);
     sceKernelSetEvent(event, EVENT_BIT_A, 0);
-    test_let_threads_wait();
+    TEST_WAIT_FOR(woken() != 0);
     PRINT("auto reset set wakes one waiter", woken());
     sceKernelGetEventPattern(event, &pattern);
     PRINT("the bit that woke it is cleared", pattern);

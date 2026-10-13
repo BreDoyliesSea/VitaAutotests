@@ -4,7 +4,7 @@
 #include "test.h"
 
 static SceUID sema;
-static int wait_result[3];
+static volatile int wait_result[3];
 static SceUInt time_left[3];
 
 // Waits for one count into slot i
@@ -36,7 +36,7 @@ int main(void) {
     // One signal for two counts ends two of three waits
     start_waiters(threads);
     sceKernelSignalSema(sema, 2);
-    test_let_threads_wait();
+    TEST_WAIT_FOR(ended() == 2);
     PRINT("a signal of 2 ends two waits", ended());
     PRINT("nothing is left for the third", sceKernelPollSema(sema, 1));
     sceKernelSignalSema(sema, 1);

@@ -8,7 +8,7 @@
 #define HIGH_PRIORITY 0x100000FE
 
 static SceUID sema;
-static int woken, order[2];
+static volatile int woken, order[2];
 
 static int wait_thread(SceSize args, void *argp) {
     (void)args;
@@ -34,7 +34,7 @@ static int first_woken(SceUInt32 attr) {
     const SceUID low = start_waiter(0, LOW_PRIORITY);
     const SceUID high = start_waiter(1, HIGH_PRIORITY);
     sceKernelSignalSema(sema, 1);
-    test_let_threads_wait();
+    TEST_WAIT_FOR(woken == 1);
     sceKernelSignalSema(sema, 1);
     test_join_thread(low);
     test_join_thread(high);

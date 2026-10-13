@@ -74,10 +74,13 @@ static inline void test_join_thread(SceUID thread) {
 // can take a while, and a waiter must still be waiting when the test wakes it.
 #define TEST_WAIT_US 2000000
 
-// Gives started threads time to reach their waits
-static inline void test_let_threads_wait(void) {
-    sceKernelDelayThread(10000);
-}
+// Polls cond every millisecond until it holds, for at most 5 seconds. A test waits this way for what
+// another thread records, since a fixed delay can end before that thread got its turn.
+#define TEST_WAIT_FOR(cond)                                           \
+    do {                                                              \
+        for (int test_poll_ = 0; test_poll_ < 5000 && !(cond); test_poll_++) \
+            sceKernelDelayThread(1000);                               \
+    } while (0)
 
 // Waits until thread is in a wait, for at most half a second, so waiters queue in a known order
 static inline void test_wait_until_waiting(SceUID thread) {

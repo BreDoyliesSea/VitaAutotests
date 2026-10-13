@@ -8,7 +8,7 @@
 #define MID_PRIORITY 0x10000100
 
 static SceUID sema;
-static int order[3], woken;
+static volatile int order[3], woken;
 
 static int sema_thread(SceSize args, void *argp) {
     (void)args;
@@ -26,11 +26,11 @@ static SceUID start(int i, int priority) {
     return thread;
 }
 
-// Wakes the waiters one at a time and joins them
+// Wakes the waiters one at a time, each once the one before has seen its wake, and joins them
 static void wake_all(SceUID *threads, int count) {
     for (int i = 0; i < count; i++) {
         sceKernelSignalSema(sema, 1);
-        test_let_threads_wait();
+        TEST_WAIT_FOR(woken == i + 1);
     }
     for (int i = 0; i < count; i++)
         test_join_thread(threads[i]);
