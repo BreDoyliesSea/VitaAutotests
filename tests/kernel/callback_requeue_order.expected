@@ -1,0 +1,13 @@
+FIFO semaphore: the first waiter waits again after its callback: 0x00000001
+FIFO semaphore: waits the cancel ended: 0x00000001
+FIFO semaphore: the waiter that ran a callback: 0x80028007
+FIFO semaphore: the waiter that came after it: 0x00000000
+priority semaphore, same priorities: the first waiter waits again after its callback: 0x00000001
+priority semaphore, same priorities: waits the cancel ended: 0x00000001
+priority semaphore, same priorities: the waiter that ran a callback: 0x80028007
+priority semaphore, same priorities: the waiter that came after it: 0x00000000
+event flag that clears: the first waiter waits again after its callback: 0x00000001
+event flag that clears: waits the cancel ended: 0x00000001
+event flag that clears: the waiter that ran a callback: 0x80028007
+event flag that clears: the waiter that came after it: 0x00000000
+DONE

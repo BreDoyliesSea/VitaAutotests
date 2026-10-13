@@ -95,6 +95,9 @@ vita_test(timer_callback kernel/timer_callback.c)
 vita_test(multi_events_waits kernel/multi_events_waits.c)
 vita_test(msgpipe_async kernel/msgpipe_async.c)
 vita_test(wait_zero_timeout kernel/wait_zero_timeout.c)
+vita_test(callback_requeue_order kernel/callback_requeue_order.c)
+vita_test(callback_event_results kernel/callback_event_results.c)
+vita_test(callback_stack kernel/callback_stack.c)
 
 vita_test(memblock memory/memblock.c)
 
