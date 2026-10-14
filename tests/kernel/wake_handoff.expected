@@ -1,0 +1,52 @@
+semaphore: the waiter still reports its wait after the signal: 0x00000000
+semaphore: the signaler's poll right after it: 0x80028102
+semaphore: the count after the poll: 0x00000000
+semaphore: the waiters after the poll: 0x00000000
+semaphore: the waiter's result: 0x00000000
+event flag, a clearing waiter: the waiter still reports its wait after the set: 0x00000000
+event flag, a clearing waiter: the setter's poll right after it: 0x800280E3
+event flag, a clearing waiter: the bits the poll got: 0x00000000
+event flag, a clearing waiter: the bits after the poll: 0x00000000
+event flag, a clearing waiter: the waiters after the poll: 0x00000000
+event flag, a clearing waiter: the waiter's result: 0x00000000
+event flag, a clearing waiter: the bits the waiter got: 0x00000001
+event flag, a waiter that doesn't clear: the waiter still reports its wait after the set: 0x00000000
+event flag, a waiter that doesn't clear: the setter's poll right after it: 0x00000000
+event flag, a waiter that doesn't clear: the bits the poll got: 0x00000001
+event flag, a waiter that doesn't clear: the bits after the poll: 0x00000001
+event flag, a waiter that doesn't clear: the waiters after the poll: 0x00000000
+event flag, a waiter that doesn't clear: the waiter's result: 0x00000000
+event flag, a waiter that doesn't clear: the bits the waiter got: 0x00000001
+lightweight mutex: the waiter still reports its wait after the unlock: 0x00000000
+lightweight mutex: the unlocker's try lock right after it: 0x80028185
+lightweight mutex: the owner after the try is the waiter: 0x00000001
+lightweight mutex: the count after the try: 0x00000001
+lightweight mutex: the waiters after the try: 0x00000000
+lightweight mutex: the waiter's result: 0x00000000
+rwlock write unlock: the waiting writer still reports its wait after the unlock: 0x00000000
+rwlock write unlock: the unlocker's try read lock right after it: 0x800281E6
+rwlock write unlock: the unlocker's try write lock after that: 0x800281E6
+rwlock write unlock: the writer's result: 0x00000000
+rwlock read unlock: the waiting writer still reports its wait after the unlock: 0x00000000
+rwlock read unlock: the unlocker's try read lock right after it: 0x800281E6
+rwlock read unlock: the unlocker's try write lock after that: 0x800281E6
+rwlock read unlock: the writer's result: 0x00000000
+auto reset simple event: the waiter still reports its wait after the set: 0x00000000
+auto reset simple event: the setter's poll right after it: 0x80028202
+auto reset simple event: the bits the poll got: 0x00000000
+auto reset simple event: the bit after the poll: 0x00000000
+auto reset simple event: the waiter's result: 0x00000000
+auto reset simple event: the bits the waiter got: 0x01000000
+manual reset simple event: the waiter still reports its wait after the set: 0x00000000
+manual reset simple event: the setter's poll right after it: 0x00000000
+manual reset simple event: the bits the poll got: 0x01000000
+manual reset simple event: the bit after the poll: 0x01000000
+manual reset simple event: the waiter's result: 0x00000000
+manual reset simple event: the bits the waiter got: 0x01000000
+message pipe: the send to a waiting receiver: 0x00000000
+message pipe: the receiver still reports its wait after the send: 0x00000000
+message pipe: the sender's receive right after it: 0x80028223
+message pipe: the bytes that receive got: 0x00000000
+message pipe: the receiver's result: 0x00000000
+message pipe: the receiver got the first send: 0x00000001
+DONE

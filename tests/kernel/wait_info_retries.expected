@@ -1,0 +1,67 @@
+event flag, waiting for 0x3: its status: 0x00000008
+event flag, waiting for 0x3: its wait type: 0x00000010
+event flag, waiting for 0x3: it reports the object as what it waits on: 0x00000001
+event flag, after a set of 0x1: its status: 0x00000008
+event flag, after a set of 0x1: its wait type: 0x00000010
+event flag, after a set of 0x1: it reports the object as what it waits on: 0x00000001
+event flag, after a set of 0x1: the flag's waiting threads: 0x00000001
+event flag, after a clear of 0x1 and a set of 0x2: its status: 0x00000008
+event flag, after a clear of 0x1 and a set of 0x2: its wait type: 0x00000010
+event flag, after a clear of 0x1 and a set of 0x2: it reports the object as what it waits on: 0x00000001
+event flag, after a set of 0x1 again: its status: 0x00000002
+event flag, after a set of 0x1 again: its wait type: 0x00000000
+event flag, after a set of 0x1 again: it reports the object as what it waits on: 0x00000000
+event flag: the wait's result: 0x00000000
+event flag: the bits it got: 0x00000003
+semaphore, waiting for 3: its status: 0x00000008
+semaphore, waiting for 3: its wait type: 0x00000020
+semaphore, waiting for 3: it reports the object as what it waits on: 0x00000001
+semaphore, after a signal of 1: its status: 0x00000008
+semaphore, after a signal of 1: its wait type: 0x00000020
+semaphore, after a signal of 1: it reports the object as what it waits on: 0x00000001
+semaphore, after a signal of 1: the count: 0x00000001
+semaphore, after a signal of 1: the waiting threads: 0x00000001
+semaphore, after another signal of 1: its status: 0x00000008
+semaphore, after another signal of 1: its wait type: 0x00000020
+semaphore, after another signal of 1: it reports the object as what it waits on: 0x00000001
+semaphore, after another signal of 1: the count: 0x00000002
+semaphore, after another signal of 1: the waiting threads: 0x00000001
+semaphore, after a signal of 2: its status: 0x00000002
+semaphore, after a signal of 2: its wait type: 0x00000000
+semaphore, after a signal of 2: it reports the object as what it waits on: 0x00000000
+semaphore, after a signal of 2: the count: 0x00000001
+semaphore, after a signal of 2: the waiting threads: 0x00000000
+semaphore: the wait's result: 0x00000000
+message pipe, receiving 8 bytes: its status: 0x00000008
+message pipe, receiving 8 bytes: its wait type: 0x00040000
+message pipe, receiving 8 bytes: it reports the object as what it waits on: 0x00000001
+message pipe: send 4 bytes: 0x00000000
+message pipe, after 4 bytes: its status: 0x00000008
+message pipe, after 4 bytes: its wait type: 0x00040000
+message pipe, after 4 bytes: it reports the object as what it waits on: 0x00000001
+message pipe, after 4 bytes: the bytes in the pipe: 0x00000000
+message pipe, after 4 bytes: the waiting receivers: 0x00000001
+message pipe: send 4 more: 0x00000000
+message pipe, after 4 more: its status: 0x00000002
+message pipe, after 4 more: its wait type: 0x00000000
+message pipe, after 4 more: it reports the object as what it waits on: 0x00000000
+message pipe, after 4 more: the bytes in the pipe: 0x00000000
+message pipe, after 4 more: the waiting receivers: 0x00000000
+message pipe: the receive's result: 0x00000000
+message pipe: the bytes it received: 0x00000008
+message pipe: they arrived in order: 0x00000001
+mutex, the first waiter: its status: 0x00000008
+mutex, the first waiter: its wait type: 0x00000040
+mutex, the first waiter: it reports the object as what it waits on: 0x00000001
+mutex, the first waiter after the unlock: its status: 0x00000002
+mutex, the first waiter after the unlock: its wait type: 0x00000000
+mutex, the first waiter after the unlock: it reports the object as what it waits on: 0x00000000
+mutex, the second waiter after the unlock: its status: 0x00000008
+mutex, the second waiter after the unlock: its wait type: 0x00000040
+mutex, the second waiter after the unlock: it reports the object as what it waits on: 0x00000001
+mutex, after the unlock: the first waiter owns it: 0x00000001
+mutex, after the unlock: its count: 0x00000001
+mutex, after the unlock: the waiting threads: 0x00000001
+mutex: the first waiter's lock: 0x00000000
+mutex: the second waiter's lock: 0x00000000
+DONE

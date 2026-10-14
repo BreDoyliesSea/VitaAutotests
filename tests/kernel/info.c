@@ -22,7 +22,7 @@ static int flag_waiter(SceSize args, void *argp) {
     (void)argp;
     SceUInt timeout = WAIT_US;
     unsigned int bits;
-    sceKernelWaitEventFlag(flag, 0x10, EVF_WAITMODE_AND, &bits, &timeout);
+    sceKernelWaitEventFlag(flag, 0x10, SCE_EVENT_WAITAND, &bits, &timeout);
     return 0;
 }
 
@@ -68,7 +68,7 @@ int main(void) {
     PRINT("semaphore maximum", sema_info.maxCount);
     PRINT("semaphore waiting threads", sema_info.numWaitThreads);
 
-    flag = sceKernelCreateEventFlag("flag", EVF_ATTR_MULTI, 0x3, NULL);
+    flag = sceKernelCreateEventFlag("flag", SCE_EVENT_WAITMULTIPLE, 0x3, NULL);
     sceKernelSetEventFlag(flag, 0x4);
     waiter = test_start_thread(flag_waiter);
     test_wait_until_waiting(waiter);
@@ -82,7 +82,7 @@ int main(void) {
     PRINT("event flag pattern", flag_info.currentPattern);
     PRINT("event flag waiting threads", flag_info.numWaitThreads);
 
-    mutex = sceKernelCreateMutex("mutex", MUTEX_ATTR_RECURSIVE, 1, NULL);
+    mutex = sceKernelCreateMutex("mutex", SCE_KERNEL_MUTEX_ATTR_RECURSIVE, 1, NULL);
     sceKernelLockMutex(mutex, 1, NULL);
     waiter = test_start_thread(mutex_waiter);
     test_wait_until_waiting(waiter);

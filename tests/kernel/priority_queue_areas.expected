@@ -1,0 +1,49 @@
+priority 0x70: T runs on core 0 or 1: 0x00000001
+priority 0x70, a pinned thread takes T's core: T goes on running: 0x00000001
+priority 0x70, a pinned thread takes T's core: T runs on the other core: 0x00000001
+priority 0x70, a pinned thread takes T's core: T's status: 0x00000001
+priority 0x70, its core is free again: T runs: 0x00000001
+priority 0x70: T last ran on core 0 or 1: 0x00000001
+priority 0x70, woken while its last core is busy: T runs: 0x00000001
+priority 0x70, woken while its last core is busy: T runs on the other core: 0x00000001
+priority 0x70, woken while its last core is busy: T's status: 0x00000001
+priority 0x70, its last core is free again: T runs: 0x00000001
+priority 0x70, started while core 0 is busy: T runs: 0x00000001
+priority 0x70, started while core 0 is busy: T runs on the free core: 0x00000001
+priority 0x70, started while core 1 is busy: T runs: 0x00000001
+priority 0x70, started while core 1 is busy: T runs on the free core: 0x00000001
+priority 0x70, woken while both its cores are busy: T runs: 0x00000000
+priority 0x70, woken while both its cores are busy: T's status: 0x00000004
+priority 0x70: T last ran on core 0 or 1: 0x00000001
+priority 0x70, then the core it didn't last run on frees up: T runs: 0x00000000
+priority 0x70, then the other core frees up too: T runs: 0x00000001
+priority 0x70, woken while both its cores are busy: T runs: 0x00000000
+priority 0x70, woken while both its cores are busy: T's status: 0x00000004
+priority 0x70: T last ran on core 0 or 1: 0x00000001
+priority 0x70, then the core it last ran on frees up: T runs: 0x00000001
+priority 0x70, then the other core frees up too: T runs: 0x00000001
+priority 0xA0: T runs on core 0 or 1: 0x00000001
+priority 0xA0, a pinned thread takes T's core: T goes on running: 0x00000001
+priority 0xA0, a pinned thread takes T's core: T runs on the other core: 0x00000001
+priority 0xA0, a pinned thread takes T's core: T's status: 0x00000001
+priority 0xA0, its core is free again: T runs: 0x00000001
+priority 0xA0: T last ran on core 0 or 1: 0x00000001
+priority 0xA0, woken while its last core is busy: T runs: 0x00000001
+priority 0xA0, woken while its last core is busy: T runs on the other core: 0x00000001
+priority 0xA0, woken while its last core is busy: T's status: 0x00000001
+priority 0xA0, its last core is free again: T runs: 0x00000001
+priority 0xA0, started while core 0 is busy: T runs: 0x00000001
+priority 0xA0, started while core 0 is busy: T runs on the free core: 0x00000001
+priority 0xA0, started while core 1 is busy: T runs: 0x00000001
+priority 0xA0, started while core 1 is busy: T runs on the free core: 0x00000001
+priority 0xA0, woken while both its cores are busy: T runs: 0x00000000
+priority 0xA0, woken while both its cores are busy: T's status: 0x00000002
+priority 0xA0: T last ran on core 0 or 1: 0x00000001
+priority 0xA0, then the core it didn't last run on frees up: T runs: 0x00000001
+priority 0xA0, then the other core frees up too: T runs: 0x00000001
+priority 0xA0, woken while both its cores are busy: T runs: 0x00000000
+priority 0xA0, woken while both its cores are busy: T's status: 0x00000002
+priority 0xA0: T last ran on core 0 or 1: 0x00000001
+priority 0xA0, then the core it last ran on frees up: T runs: 0x00000001
+priority 0xA0, then the other core frees up too: T runs: 0x00000001
+DONE

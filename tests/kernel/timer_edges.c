@@ -15,31 +15,31 @@ int main(void) {
     // Whether setting the time past a set event reports it at once
     SceUID timer = sceKernelCreateTimer("past", 0, NULL);
     interval = 1000000;
-    sceKernelSetTimerEvent(timer, 0, &interval, 0);
+    sceKernelSetTimerEvent(timer, TIMER_TYPE_SET_EVENT, &interval, 0);
     sceKernelStartTimer(timer);
     sceKernelSetTimerTimeWide(timer, 2000000);
-    PRINT("an event set before the time jumps past it", sceKernelPollEvent(timer, TIMER_EVENT_BIT, &result, &user_data));
+    PRINT("an event set before the time jumps past it", sceKernelPollEvent(timer, EVENT_TIMER, &result, &user_data));
     PRINT("the result pattern", result);
 
     // A pulse event is only seen by threads waiting when it fires
     timer = sceKernelCreateTimer("pulse", 0, NULL);
     interval = 5000;
-    PRINT("set a pulse event", sceKernelSetTimerEvent(timer, 1, &interval, 0));
+    PRINT("set a pulse event", sceKernelSetTimerEvent(timer, TIMER_TYPE_PULSE_EVENT, &interval, 0));
     sceKernelStartTimer(timer);
     sceKernelDelayThread(100000);
-    PRINT("poll after a pulse event fired", sceKernelPollEvent(timer, TIMER_EVENT_BIT, &result, &user_data));
+    PRINT("poll after a pulse event fired", sceKernelPollEvent(timer, EVENT_TIMER, &result, &user_data));
 
     // Stopping a timer before its event
     timer = sceKernelCreateTimer("stop", 0, NULL);
     interval = 10000;
-    sceKernelSetTimerEvent(timer, 0, &interval, 0);
+    sceKernelSetTimerEvent(timer, TIMER_TYPE_SET_EVENT, &interval, 0);
     sceKernelStartTimer(timer);
     sceKernelStopTimer(timer);
     sceKernelDelayThread(30000);
-    PRINT("an event of a timer stopped before it", sceKernelPollEvent(timer, TIMER_EVENT_BIT, &result, &user_data));
+    PRINT("an event of a timer stopped before it", sceKernelPollEvent(timer, EVENT_TIMER, &result, &user_data));
     sceKernelStartTimer(timer);
     timeout = 200000;
-    PRINT("the event after starting again", sceKernelWaitEvent(timer, TIMER_EVENT_BIT, &result, &user_data, &timeout));
+    PRINT("the event after starting again", sceKernelWaitEvent(timer, EVENT_TIMER, &result, &user_data, &timeout));
 
     // The base time and the current time
     timer = sceKernelCreateTimer("base", 0, NULL);
@@ -58,11 +58,11 @@ int main(void) {
     // How many waiters an auto reset timer event wakes
     timer = sceKernelCreateTimer("auto", EVENT_ATTR_AUTO_RESET, NULL);
     interval = 5000;
-    sceKernelSetTimerEvent(timer, 0, &interval, 0);
+    sceKernelSetTimerEvent(timer, TIMER_TYPE_SET_EVENT, &interval, 0);
     sceKernelStartTimer(timer);
     sceKernelDelayThread(100000);
-    PRINT("poll an auto reset timer event", sceKernelPollEvent(timer, TIMER_EVENT_BIT, &result, &user_data));
-    PRINT("poll it again", sceKernelPollEvent(timer, TIMER_EVENT_BIT, &result, &user_data));
+    PRINT("poll an auto reset timer event", sceKernelPollEvent(timer, EVENT_TIMER, &result, &user_data));
+    PRINT("poll it again", sceKernelPollEvent(timer, EVENT_TIMER, &result, &user_data));
 
     test_exit();
     return 0;

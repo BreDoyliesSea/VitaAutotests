@@ -1,0 +1,19 @@
+the error that ended the creation, 0 if the cap was reached: 0x8002450D
+at least 16 threads created: 0x00000001
+at least 64 threads created: 0x00000001
+at least 128 threads created: 0x00000000
+at least 256 threads created: 0x00000000
+at least 512 threads created: 0x00000000
+every thread up to the cap created: 0x00000000
+every created thread deleted: 0x00000001
+create after deleting them: 0x00000000
+start it: 0x00000000
+wait for its end: 0x00000000
+the error that ended the starts, 0 if every runner started: 0x8002450D
+all 128 runners started: 0x00000000
+every started runner ran: 0x00000001
+every started runner waits on the semaphore: 0x00000001
+release them: 0x00000000
+every runner ended: 0x00000001
+every runner got the semaphore: 0x00000001
+DONE

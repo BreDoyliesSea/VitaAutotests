@@ -11,7 +11,7 @@ static int entry(SceSize args, void *argp) {
 
 // Returns 0 if a thread can be created like this, or the error
 static int create(const char *name, SceKernelThreadEntry fn, int stack_size) {
-    const SceUID thread = sceKernelCreateThread(name, fn, 0x10000100, stack_size, 0, 0, NULL);
+    const SceUID thread = sceKernelCreateThread(name, fn, SCE_KERNEL_DEFAULT_PRIORITY_USER, stack_size, 0, 0, NULL);
     if (thread < 0)
         return thread;
     sceKernelDeleteThread(thread);

@@ -1,0 +1,117 @@
+delay of 0: 0x80020005
+delay of 1: 0x00000000
+delay of 1: it lasts at least as asked: 0x00000001
+delay of 1: and not much longer: 0x00000001
+delay of 100: 0x00000000
+delay of 100: it lasts at least as asked: 0x00000001
+delay of 100: and not much longer: 0x00000001
+delay of 199: 0x00000000
+delay of 199: it lasts at least as asked: 0x00000001
+delay of 199: and not much longer: 0x00000001
+delay of 200: 0x00000000
+delay of 200: it lasts at least as asked: 0x00000001
+delay of 200: and not much longer: 0x00000001
+delay of 201: 0x00000000
+delay of 201: it lasts at least as asked: 0x00000001
+delay of 201: and not much longer: 0x00000001
+delay of 20000: 0x00000000
+delay of 20000: it lasts at least as asked: 0x00000001
+delay of 20000: and not much longer: 0x00000001
+delay with callbacks of 0: 0x80020005
+delay with callbacks of 1: 0x00000000
+delay with callbacks of 1: it lasts at least as asked: 0x00000001
+delay with callbacks of 1: and not much longer: 0x00000001
+delay with callbacks of 100: 0x00000000
+delay with callbacks of 100: it lasts at least as asked: 0x00000001
+delay with callbacks of 100: and not much longer: 0x00000001
+delay with callbacks of 199: 0x00000000
+delay with callbacks of 199: it lasts at least as asked: 0x00000001
+delay with callbacks of 199: and not much longer: 0x00000001
+delay with callbacks of 200: 0x00000000
+delay with callbacks of 200: it lasts at least as asked: 0x00000001
+delay with callbacks of 200: and not much longer: 0x00000001
+delay with callbacks of 201: 0x00000000
+delay with callbacks of 201: it lasts at least as asked: 0x00000001
+delay with callbacks of 201: and not much longer: 0x00000001
+delay with callbacks of 20000: 0x00000000
+delay with callbacks of 20000: it lasts at least as asked: 0x00000001
+delay with callbacks of 20000: and not much longer: 0x00000001
+delay 200 of 0: 0x00000000
+delay 200 of 0: it lasts at least as asked: 0x00000001
+delay 200 of 0: and not much longer: 0x00000001
+delay 200 of 0: it lasts at least 200 microseconds: 0x00000001
+delay 200 of 1: 0x00000000
+delay 200 of 1: it lasts at least as asked: 0x00000001
+delay 200 of 1: and not much longer: 0x00000001
+delay 200 of 1: it lasts at least 200 microseconds: 0x00000001
+delay 200 of 100: 0x00000000
+delay 200 of 100: it lasts at least as asked: 0x00000001
+delay 200 of 100: and not much longer: 0x00000001
+delay 200 of 100: it lasts at least 200 microseconds: 0x00000001
+delay 200 of 199: 0x00000000
+delay 200 of 199: it lasts at least as asked: 0x00000001
+delay 200 of 199: and not much longer: 0x00000001
+delay 200 of 199: it lasts at least 200 microseconds: 0x00000001
+delay 200 of 200: 0x00000000
+delay 200 of 200: it lasts at least as asked: 0x00000001
+delay 200 of 200: and not much longer: 0x00000001
+delay 200 of 201: 0x00000000
+delay 200 of 201: it lasts at least as asked: 0x00000001
+delay 200 of 201: and not much longer: 0x00000001
+delay 200 of 20000: 0x00000000
+delay 200 of 20000: it lasts at least as asked: 0x00000001
+delay 200 of 20000: and not much longer: 0x00000001
+delay 200 with callbacks of 0: 0x00000000
+delay 200 with callbacks of 0: it lasts at least as asked: 0x00000001
+delay 200 with callbacks of 0: and not much longer: 0x00000001
+delay 200 with callbacks of 0: it lasts at least 200 microseconds: 0x00000001
+delay 200 with callbacks of 1: 0x00000000
+delay 200 with callbacks of 1: it lasts at least as asked: 0x00000001
+delay 200 with callbacks of 1: and not much longer: 0x00000001
+delay 200 with callbacks of 1: it lasts at least 200 microseconds: 0x00000001
+delay 200 with callbacks of 100: 0x00000000
+delay 200 with callbacks of 100: it lasts at least as asked: 0x00000001
+delay 200 with callbacks of 100: and not much longer: 0x00000001
+delay 200 with callbacks of 100: it lasts at least 200 microseconds: 0x00000001
+delay 200 with callbacks of 199: 0x00000000
+delay 200 with callbacks of 199: it lasts at least as asked: 0x00000001
+delay 200 with callbacks of 199: and not much longer: 0x00000001
+delay 200 with callbacks of 199: it lasts at least 200 microseconds: 0x00000001
+delay 200 with callbacks of 200: 0x00000000
+delay 200 with callbacks of 200: it lasts at least as asked: 0x00000001
+delay 200 with callbacks of 200: and not much longer: 0x00000001
+delay 200 with callbacks of 201: 0x00000000
+delay 200 with callbacks of 201: it lasts at least as asked: 0x00000001
+delay 200 with callbacks of 201: and not much longer: 0x00000001
+delay 200 with callbacks of 20000: 0x00000000
+delay 200 with callbacks of 20000: it lasts at least as asked: 0x00000001
+delay 200 with callbacks of 20000: and not much longer: 0x00000001
+delay, seen by another thread: the status: 0x00000008
+delay, seen by another thread: the wait type: 0x00000001
+delay, seen by another thread: the wait UID is 0: 0x00000000
+delay, seen by another thread: the wait UID is the thread: 0x00000000
+delay, seen by another thread: the class of the wait UID: 0x80024501
+delay, seen by another thread: its result: 0x00000000
+delay with callbacks, seen by another thread: the status: 0x00000008
+delay with callbacks, seen by another thread: the wait type: 0x80000001
+delay with callbacks, seen by another thread: the wait UID is 0: 0x00000000
+delay with callbacks, seen by another thread: the wait UID is the thread: 0x00000000
+delay with callbacks, seen by another thread: the class of the wait UID: 0x80024501
+delay with callbacks, seen by another thread: its result: 0x00000000
+delay 200, seen by another thread: the status: 0x00000008
+delay 200, seen by another thread: the wait type: 0x00000001
+delay 200, seen by another thread: the wait UID is 0: 0x00000000
+delay 200, seen by another thread: the wait UID is the thread: 0x00000000
+delay 200, seen by another thread: the class of the wait UID: 0x80024501
+delay 200, seen by another thread: its result: 0x00000000
+delay 200 with callbacks, seen by another thread: the status: 0x00000008
+delay 200 with callbacks, seen by another thread: the wait type: 0x80000001
+delay 200 with callbacks, seen by another thread: the wait UID is 0: 0x00000000
+delay 200 with callbacks, seen by another thread: the wait UID is the thread: 0x00000000
+delay 200 with callbacks, seen by another thread: the class of the wait UID: 0x80024501
+delay 200 with callbacks, seen by another thread: its result: 0x00000000
+a callback during a delay: runs of the callback: 0x00000001
+a callback during a delay: the delay's result: 0x00000000
+a callback during a delay: the delay lasts at least 400 ms: 0x00000001
+a callback during a delay: the delay lasts less than 500 ms: 0x00000001
+DONE

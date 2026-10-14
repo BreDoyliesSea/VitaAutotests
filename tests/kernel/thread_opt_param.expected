@@ -1,0 +1,98 @@
+an option struct of size 0x0: 0x00000000
+an option struct of size 0x3: 0x00000000
+an option struct of size 0x4: 0x00000000
+an option struct of size 0x8: 0x00000000
+an option struct of size 0x14: 0x00000000
+an option struct of size 0x18: 0x00000000
+an option struct of size 0x1C: 0x00000000
+an option struct of size 0x20: 0x8002000B
+an option struct of size 0x1000: 0x8002000B
+option attr 0x00000001 with the other fields 0: 0x8002000E
+option attr 0x00000002 with the other fields 0: 0x8002000C
+option attr 0x00000004 with the other fields 0: 0x8002000C
+option attr 0x00000008 with the other fields 0: 0x8002000E
+option attr 0x00000010 with the other fields 0: 0x00000000
+option attr 0x00000020 with the other fields 0: 0x00000000
+option attr 0x00000040 with the other fields 0: 0x00000000
+option attr 0x00000080 with the other fields 0: 0x00000000
+option attr 0x00000100 with the other fields 0: 0x00000000
+option attr 0x00000200 with the other fields 0: 0x00000000
+option attr 0x00000400 with the other fields 0: 0x00000000
+option attr 0x00000800 with the other fields 0: 0x00000000
+option attr 0x00001000 with the other fields 0: 0x00000000
+option attr 0x00002000 with the other fields 0: 0x00000000
+option attr 0x00004000 with the other fields 0: 0x00000000
+option attr 0x00008000 with the other fields 0: 0x00000000
+option attr 0x00010000 with the other fields 0: 0x00000000
+option attr 0x00020000 with the other fields 0: 0x00000000
+option attr 0x00040000 with the other fields 0: 0x00000000
+option attr 0x00080000 with the other fields 0: 0x00000000
+option attr 0x00100000 with the other fields 0: 0x00000000
+option attr 0x00200000 with the other fields 0: 0x00000000
+option attr 0x00400000 with the other fields 0: 0x00000000
+option attr 0x00800000 with the other fields 0: 0x00000000
+option attr 0x01000000 with the other fields 0: 0x00000000
+option attr 0x02000000 with the other fields 0: 0x00000000
+option attr 0x04000000 with the other fields 0: 0x00000000
+option attr 0x08000000 with the other fields 0: 0x00000000
+option attr 0x10000000 with the other fields 0: 0x00000000
+option attr 0x20000000 with the other fields 0: 0x00000000
+option attr 0x40000000 with the other fields 0: 0x00000000
+option attr 0x80000000 with the other fields 0: 0x00000000
+a stack of 0x1: create: 0x00000000
+a stack of 0x1: the size in its info: 0x00001000
+a stack of 0x1: the stack is page aligned: 0x00000001
+a stack of 0x1: it runs to its end: 0x00000000
+a stack of 0x10: create: 0x00000000
+a stack of 0x10: the size in its info: 0x00001000
+a stack of 0x10: the stack is page aligned: 0x00000001
+a stack of 0x10: it runs to its end: 0x00000000
+a stack of 0xFF: create: 0x00000000
+a stack of 0xFF: the size in its info: 0x00001000
+a stack of 0xFF: the stack is page aligned: 0x00000001
+a stack of 0xFF: it runs to its end: 0x00000000
+a stack of 0x100: create: 0x00000000
+a stack of 0x100: the size in its info: 0x00001000
+a stack of 0x100: the stack is page aligned: 0x00000001
+a stack of 0x100: it runs to its end: 0x00000000
+a stack of 0x200: create: 0x00000000
+a stack of 0x200: the size in its info: 0x00001000
+a stack of 0x200: the stack is page aligned: 0x00000001
+a stack of 0x200: it runs to its end: 0x00000000
+a stack of 0x800: create: 0x00000000
+a stack of 0x800: the size in its info: 0x00001000
+a stack of 0x800: the stack is page aligned: 0x00000001
+a stack of 0x800: it runs to its end: 0x00000000
+a stack of 0xFFF: create: 0x00000000
+a stack of 0xFFF: the size in its info: 0x00001000
+a stack of 0xFFF: the stack is page aligned: 0x00000001
+a stack of 0xFFF: it runs to its end: 0x00000000
+a stack of 0x1000: create: 0x00000000
+a stack of 0x1000: the size in its info: 0x00001000
+a stack of 0x1000: the stack is page aligned: 0x00000001
+a stack of 0x1000: it runs to its end: 0x00000000
+a stack of 0x1001: create: 0x00000000
+a stack of 0x1001: the size in its info: 0x00002000
+a stack of 0x1001: the stack is page aligned: 0x00000001
+a stack of 0x1001: it runs to its end: 0x00000000
+a stack of 0x1800: create: 0x00000000
+a stack of 0x1800: the size in its info: 0x00002000
+a stack of 0x1800: the stack is page aligned: 0x00000001
+a stack of 0x1800: it runs to its end: 0x00000000
+a stack of 0x3FFF: create: 0x00000000
+a stack of 0x3FFF: the size in its info: 0x00004000
+a stack of 0x3FFF: the stack is page aligned: 0x00000001
+a stack of 0x3FFF: it runs to its end: 0x00000000
+a stack of 0x4000: create: 0x00000000
+a stack of 0x4000: the size in its info: 0x00004000
+a stack of 0x4000: the stack is page aligned: 0x00000001
+a stack of 0x4000: it runs to its end: 0x00000000
+a stack of 0x4001: create: 0x00000000
+a stack of 0x4001: the size in its info: 0x00005000
+a stack of 0x4001: the stack is page aligned: 0x00000001
+a stack of 0x4001: it runs to its end: 0x00000000
+a stack of 0x100000: create: 0x00000000
+a stack of 0x100000: the size in its info: 0x00100000
+a stack of 0x100000: the stack is page aligned: 0x00000001
+a stack of 0x100000: it runs to its end: 0x00000000
+DONE

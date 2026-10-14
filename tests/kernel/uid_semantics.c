@@ -13,7 +13,7 @@ int main(void) {
     PRINT("UIDs are odd", (second & 1) == 1);
 
     // Opening by name
-    const SceUID sema = sceKernelCreateSema("open", ATTR_OPENABLE, 0, 2, NULL);
+    const SceUID sema = sceKernelCreateSema("open", SCE_KERNEL_ATTR_OPENABLE, 0, 2, NULL);
     const SceUID opened = sceKernelOpenSema("open");
     PRINT("an opened UID is the object's own", opened == sema);
     const SceUID again = sceKernelOpenSema("open");
@@ -26,7 +26,7 @@ int main(void) {
     PRINT("the object after closing its own UID", sceKernelPollSema(sema, 1));
 
     // Deleting while opened
-    const SceUID shared = sceKernelCreateSema("shared", ATTR_OPENABLE, 0, 2, NULL);
+    const SceUID shared = sceKernelCreateSema("shared", SCE_KERNEL_ATTR_OPENABLE, 0, 2, NULL);
     const SceUID handle = sceKernelOpenSema("shared");
     PRINT("delete while opened", sceKernelDeleteSema(shared));
     PRINT("the opened UID after the delete", sceKernelSignalSema(handle, 1));
@@ -34,7 +34,7 @@ int main(void) {
     PRINT("delete through an opened UID", sceKernelDeleteSema(handle));
 
     // Mutexes open the same way
-    const SceUID mutex = sceKernelCreateMutex("mutex", ATTR_OPENABLE, 0, NULL);
+    const SceUID mutex = sceKernelCreateMutex("mutex", SCE_KERNEL_ATTR_OPENABLE, 0, NULL);
     const SceUID opened_mutex = sceKernelOpenMutex("mutex");
     PRINT("an opened mutex UID is the mutex's own", opened_mutex == mutex);
     PRINT("lock through it", sceKernelLockMutex(opened_mutex, 1, NULL));

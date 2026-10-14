@@ -4,8 +4,8 @@
 #include "test.h"
 #include "threadmgr_extra.h"
 
-#define LOW_PRIORITY 0x10000102
-#define HIGH_PRIORITY 0x100000FE
+#define LOW_PRIORITY (SCE_KERNEL_DEFAULT_PRIORITY_USER + 2)
+#define HIGH_PRIORITY (SCE_KERNEL_DEFAULT_PRIORITY_USER - 2)
 
 static SceUID sema;
 static volatile int woken, order[2];
@@ -44,7 +44,7 @@ static int first_woken(SceUInt32 attr) {
 
 int main(void) {
     PRINT("a FIFO semaphore wakes the first waiter first", first_woken(0));
-    PRINT("a priority semaphore wakes the higher priority waiter first", first_woken(ATTR_TH_PRIO));
+    PRINT("a priority semaphore wakes the higher priority waiter first", first_woken(SCE_KERNEL_ATTR_THREAD_PRIO));
 
     test_exit();
     return 0;

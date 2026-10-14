@@ -39,7 +39,7 @@ int main(void) {
     PRINT("create with mutex 0", test_created(sceKernelCreateCond("c", 0, 0, NULL)));
     PRINT("create with an empty name", test_created(sceKernelCreateCond("", 0, mutex, NULL)));
     PRINT("create with attribute 0x80000000", test_created(sceKernelCreateCond("c", 0x80000000, mutex, NULL)));
-    const SceUID recursive = sceKernelCreateMutex("recursive", MUTEX_ATTR_RECURSIVE, 0, NULL);
+    const SceUID recursive = sceKernelCreateMutex("recursive", SCE_KERNEL_MUTEX_ATTR_RECURSIVE, 0, NULL);
     PRINT("create with a recursive mutex", test_created(sceKernelCreateCond("c", 0, recursive, NULL)));
 
     // Signals with nobody waiting, to threads that can't be woken

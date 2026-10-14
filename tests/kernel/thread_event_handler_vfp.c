@@ -8,9 +8,6 @@
 #include "test.h"
 #include "threadmgr_extra.h"
 
-#define THREAD_EVENT_START 0x4
-#define THREAD_EVENT_EXIT 0x8
-
 #define STEPS 3
 static const char *step_names[STEPS] = { "the start handler", "the entry", "the end handler" };
 // The VFP exception setting each step leaves
@@ -47,7 +44,7 @@ static int handler(SceInt32 type, SceUID thread_id, SceInt32 arg, void *common) 
     (void)thread_id;
     (void)arg;
     (void)common;
-    const int step = type == THREAD_EVENT_START ? 0 : 2;
+    const int step = type == SCE_KERNEL_THREAD_EVENT_TYPE_START ? 0 : 2;
     record(step);
     change(step);
     return 0;
@@ -71,8 +68,8 @@ int main(void) {
     sceKernelChangeThreadVfpException(0, SCE_KERNEL_VFP_EXCP_QC);
     set_tpidrurw(0x7777);
 
-    target = sceKernelCreateThread("target", entry, 0x10000100, 0x4000, 0, 0, NULL);
-    const SceUID id = sceKernelRegisterThreadEventHandler("vfp", target, THREAD_EVENT_START | THREAD_EVENT_EXIT, handler, NULL);
+    target = sceKernelCreateThread("target", entry, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, 0, 0, NULL);
+    const SceUID id = sceKernelRegisterThreadEventHandler("vfp", target, SCE_KERNEL_THREAD_EVENT_TYPE_START | SCE_KERNEL_THREAD_EVENT_TYPE_EXIT, handler, NULL);
     PRINT("register the handler", test_created(id));
     run = 0;
     sceKernelStartThread(target, 0, NULL);

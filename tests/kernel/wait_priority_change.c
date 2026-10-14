@@ -4,8 +4,8 @@
 #include "test.h"
 #include "threadmgr_extra.h"
 
-#define LOW_PRIORITY 0x10000102
-#define MID_PRIORITY 0x10000100
+#define LOW_PRIORITY (SCE_KERNEL_DEFAULT_PRIORITY_USER + 2)
+#define MID_PRIORITY SCE_KERNEL_DEFAULT_PRIORITY_USER
 
 static SceUID sema;
 static volatile int order[3], woken;
@@ -42,7 +42,7 @@ int main(void) {
     // Two low priority waiters and one that waited after them at a higher priority, then the second
     // low one raised to the higher priority. It wakes third if it stays where it was, second if it
     // goes behind the waiter already at its new priority, and first if it keeps its place by arrival.
-    sema = sceKernelCreateSema("raise", ATTR_TH_PRIO, 0, 3, NULL);
+    sema = sceKernelCreateSema("raise", SCE_KERNEL_ATTR_THREAD_PRIO, 0, 3, NULL);
     woken = 0;
     threads[0] = start(0, LOW_PRIORITY);
     threads[1] = start(1, LOW_PRIORITY);
@@ -55,7 +55,7 @@ int main(void) {
     sceKernelDeleteSema(sema);
 
     // Changing a waiter's priority to the one it already has
-    sema = sceKernelCreateSema("same", ATTR_TH_PRIO, 0, 2, NULL);
+    sema = sceKernelCreateSema("same", SCE_KERNEL_ATTR_THREAD_PRIO, 0, 2, NULL);
     woken = 0;
     threads[0] = start(0, MID_PRIORITY);
     threads[1] = start(1, MID_PRIORITY);

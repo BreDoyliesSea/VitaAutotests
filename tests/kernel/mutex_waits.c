@@ -4,8 +4,8 @@
 #include "test.h"
 #include "threadmgr_extra.h"
 
-#define LOW_PRIORITY 0x10000102
-#define HIGH_PRIORITY 0x100000FE
+#define LOW_PRIORITY (SCE_KERNEL_DEFAULT_PRIORITY_USER + 2)
+#define HIGH_PRIORITY (SCE_KERNEL_DEFAULT_PRIORITY_USER - 2)
 
 static SceUID mutex, release;
 static SceKernelLwMutexWork lw_mutex;
@@ -77,7 +77,7 @@ int main(void) {
     release = sceKernelCreateSema("release", 0, 0, 1, NULL);
     const SceUID holder = test_start_thread(hold_and_end_thread);
     test_wait_until_waiting(holder);
-    SceUID waiter = start_waiter(0, 0x10000100);
+    SceUID waiter = start_waiter(0, SCE_KERNEL_DEFAULT_PRIORITY_USER);
     sceKernelSignalSema(release, 1);
     test_join_thread(holder);
     test_join_thread(waiter);
@@ -86,20 +86,20 @@ int main(void) {
     // The waiter gets the time it had left. A new mutex, since an ended owner may still hold the old one.
     mutex = sceKernelCreateMutex("mutex", 0, 0, NULL);
     sceKernelLockMutex(mutex, 1, NULL);
-    waiter = start_waiter(0, 0x10000100);
+    waiter = start_waiter(0, SCE_KERNEL_DEFAULT_PRIORITY_USER);
     sceKernelUnlockMutex(mutex, 1);
     test_join_thread(waiter);
     PRINT("a waiter that got the mutex has time left", time_left > 0 && time_left < 500000);
 
     // Deleting ends the wait
     sceKernelLockMutex(mutex, 1, NULL);
-    waiter = start_waiter(0, 0x10000100);
+    waiter = start_waiter(0, SCE_KERNEL_DEFAULT_PRIORITY_USER);
     PRINT("delete", sceKernelDeleteMutex(mutex));
     test_join_thread(waiter);
     PRINT("a wait on a deleted mutex", lock_result[0]);
 
     // The priority attribute hands the mutex to the higher priority waiter first
-    mutex = sceKernelCreateMutex("prio", ATTR_TH_PRIO, 1, NULL);
+    mutex = sceKernelCreateMutex("prio", SCE_KERNEL_ATTR_THREAD_PRIO, 1, NULL);
     woken = 0;
     const SceUID low = start_waiter(0, LOW_PRIORITY);
     const SceUID high = start_waiter(1, HIGH_PRIORITY);

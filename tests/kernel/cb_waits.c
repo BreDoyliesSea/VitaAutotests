@@ -81,7 +81,7 @@ static int do_wait(int kind, int state) {
         if (!unknown)
             id = sceKernelCreateEventFlag("flag", 0, ready, NULL);
         waited_id = id;
-        result = sceKernelWaitEventFlagCB(id, 0x1, EVF_WAITMODE_AND, &bits, &timeout);
+        result = sceKernelWaitEventFlagCB(id, 0x1, SCE_EVENT_WAITAND, &bits, &timeout);
         sceKernelDeleteEventFlag(id);
         return result;
     case SEMA:

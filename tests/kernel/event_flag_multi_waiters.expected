@@ -1,0 +1,40 @@
+FIFO, a set of 0x3: 0x00000000
+FIFO, after a set of 0x3: waiters left: 0x00000000
+FIFO, a set of 0x3: waiter 1's result: 0x00000000
+FIFO, a set of 0x3: the bits waiter 1 got: 0x00000003
+FIFO, a set of 0x3: waiter 2's result: 0x00000000
+FIFO, a set of 0x3: the bits waiter 2 got: 0x00000002
+FIFO, a set of 0x3: waiter 3's result: 0x00000000
+FIFO, a set of 0x3: the bits waiter 3 got: 0x00000002
+FIFO, a set of 0x3: the bits left: 0x00000000
+priority, a set of 0x3: 0x00000000
+priority, after a set of 0x3: waiters left: 0x00000002
+priority, a set of 0x3: waiter 1's result: 0x80028005
+priority, a set of 0x3: the bits waiter 1 got: 0x00000000
+priority, a set of 0x3: waiter 2's result: 0x80028005
+priority, a set of 0x3: the bits waiter 2 got: 0x00000000
+priority, a set of 0x3: waiter 3's result: 0x00000000
+priority, a set of 0x3: the bits waiter 3 got: 0x00000003
+priority, a set of 0x3: the bits left: 0x00000000
+a set of 0x7: 0x00000000
+after a set of 0x7: waiters left: 0x00000000
+a set of 0x7: waiter 1's result: 0x00000000
+a set of 0x7: the bits waiter 1 got: 0x00000007
+a set of 0x7: waiter 2's result: 0x00000000
+a set of 0x7: the bits waiter 2 got: 0x00000004
+a set of 0x7: the bits left: 0x00000000
+a set of 0x1 for a later waiter: waiters left: 0x00000001
+a set of 0x1 for a later waiter: the bits after it: 0x00000000
+then a set of 0x2: waiters left: 0x00000001
+a set of 0x1 then 0x2: waiter 1's result: 0x80028005
+a set of 0x1 then 0x2: the bits waiter 1 got: 0x00000000
+a set of 0x1 then 0x2: waiter 2's result: 0x00000000
+a set of 0x1 then 0x2: the bits waiter 2 got: 0x00000001
+a set of 0x1 then 0x2: the bits left: 0x00000002
+a clear with a waiter: 0x00000000
+after the clear: waiters: 0x00000001
+a set of 0x2 after the clear: waiters left: 0x00000001
+a clear then a set of 0x2: waiter 1's result: 0x80028005
+a clear then a set of 0x2: the bits waiter 1 got: 0x00000000
+a clear then a set of 0x2: the bits left: 0x00000002
+DONE

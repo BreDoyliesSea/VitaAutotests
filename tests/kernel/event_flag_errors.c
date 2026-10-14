@@ -13,7 +13,7 @@ static int wait_thread(SceSize args, void *argp) {
     (void)argp;
     unsigned int bits;
     SceUInt timeout = TEST_WAIT_US;
-    wait_result = sceKernelWaitEventFlag(flag, 0x8, EVF_WAITMODE_OR, &bits, &timeout);
+    wait_result = sceKernelWaitEventFlag(flag, 0x8, SCE_EVENT_WAITOR, &bits, &timeout);
     return 0;
 }
 
@@ -31,10 +31,10 @@ int main(void) {
         SceKernelEventFlagInfo info = { .size = sizeof(info) };
         PRINTF(sceKernelSetEventFlag(ids[i], 1), "set %s", names[i]);
         PRINTF(sceKernelClearEventFlag(ids[i], 0), "clear %s", names[i]);
-        PRINTF(sceKernelWaitEventFlag(ids[i], 1, EVF_WAITMODE_OR, &bits, &timeout), "wait on %s", names[i]);
+        PRINTF(sceKernelWaitEventFlag(ids[i], 1, SCE_EVENT_WAITOR, &bits, &timeout), "wait on %s", names[i]);
         timeout = 1000;
-        PRINTF(sceKernelWaitEventFlagCB(ids[i], 1, EVF_WAITMODE_OR, &bits, &timeout), "wait with callbacks on %s", names[i]);
-        PRINTF(sceKernelPollEventFlag(ids[i], 1, EVF_WAITMODE_OR, &bits), "poll %s", names[i]);
+        PRINTF(sceKernelWaitEventFlagCB(ids[i], 1, SCE_EVENT_WAITOR, &bits, &timeout), "wait with callbacks on %s", names[i]);
+        PRINTF(sceKernelPollEventFlag(ids[i], 1, SCE_EVENT_WAITOR, &bits), "poll %s", names[i]);
         PRINTF(sceKernelCancelEventFlag(ids[i], 0, &waiting), "cancel %s", names[i]);
         PRINTF(sceKernelGetEventFlagInfo(ids[i], &info), "info of %s", names[i]);
         PRINTF(sceKernelCloseEventFlag(ids[i]), "close %s", names[i]);
@@ -52,29 +52,29 @@ int main(void) {
     SceUInt timeout = 1000;
 
     // Wait modes on a flag with bits 0x3
-    PRINT("wait with both clear modes", sceKernelWaitEventFlag(flag, 0x1, EVF_WAITMODE_OR | EVF_WAITMODE_CLEAR_ALL | EVF_WAITMODE_CLEAR_PAT, &bits, &timeout));
+    PRINT("wait with both clear modes", sceKernelWaitEventFlag(flag, 0x1, SCE_EVENT_WAITOR | SCE_EVENT_WAITCLEAR | SCE_EVENT_WAITCLEAR_PAT, &bits, &timeout));
     timeout = 1000;
     PRINT("wait with mode 0x8", sceKernelWaitEventFlag(flag, 0x1, 0x8, &bits, &timeout));
     timeout = 0;
-    PRINT("wait with a timeout of 0 for a missing bit", sceKernelWaitEventFlag(flag, 0x4, EVF_WAITMODE_OR, &bits, &timeout));
-    PRINT("poll AND for one set and one missing bit", sceKernelPollEventFlag(flag, 0x5, EVF_WAITMODE_AND, &bits));
+    PRINT("wait with a timeout of 0 for a missing bit", sceKernelWaitEventFlag(flag, 0x4, SCE_EVENT_WAITOR, &bits, &timeout));
+    PRINT("poll AND for one set and one missing bit", sceKernelPollEventFlag(flag, 0x5, SCE_EVENT_WAITAND, &bits));
     PRINT("the bits it reports", bits);
     PRINT("set 0", sceKernelSetEventFlag(flag, 0));
     PRINT("clear with every bit set", sceKernelClearEventFlag(flag, 0xFFFFFFFF));
-    PRINT("poll after it", sceKernelPollEventFlag(flag, 0x3, EVF_WAITMODE_AND, &bits));
+    PRINT("poll after it", sceKernelPollEventFlag(flag, 0x3, SCE_EVENT_WAITAND, &bits));
 
     // A second waiter on a flag without the multi attribute
     const SceUID waiter = test_start_thread(wait_thread);
     test_wait_until_waiting(waiter);
     timeout = 1000;
-    PRINT("a second waiter without the multi attribute", sceKernelWaitEventFlag(flag, 0x8, EVF_WAITMODE_OR, &bits, &timeout));
+    PRINT("a second waiter without the multi attribute", sceKernelWaitEventFlag(flag, 0x8, SCE_EVENT_WAITOR, &bits, &timeout));
     SceUInt32 waiting = 0xDEAD;
     PRINT("cancel with a waiter", sceKernelCancelEventFlag(flag, 0x10, &waiting));
     test_join_thread(waiter);
     PRINT("the waiting count", waiting);
     PRINT("the waiter's result", wait_result);
     bits = 0xDEAD;
-    sceKernelPollEventFlag(flag, 0xFFFFFFFF, EVF_WAITMODE_OR, &bits);
+    sceKernelPollEventFlag(flag, 0xFFFFFFFF, SCE_EVENT_WAITOR, &bits);
     PRINT("the bits the cancel set", bits);
     PRINT("cancel without a waiting count pointer", sceKernelCancelEventFlag(flag, 0, NULL));
 
@@ -96,9 +96,9 @@ int main(void) {
 
     // NULL pointers last, so an implementation that crashes on them loses nothing else
     sceKernelSetEventFlag(flag, 0x1);
-    PRINT("poll without a bits pointer", sceKernelPollEventFlag(flag, 0x1, EVF_WAITMODE_OR, NULL));
+    PRINT("poll without a bits pointer", sceKernelPollEventFlag(flag, 0x1, SCE_EVENT_WAITOR, NULL));
     timeout = 1000;
-    PRINT("wait without a bits pointer", sceKernelWaitEventFlag(flag, 0x1, EVF_WAITMODE_OR, NULL, &timeout));
+    PRINT("wait without a bits pointer", sceKernelWaitEventFlag(flag, 0x1, SCE_EVENT_WAITOR, NULL, &timeout));
     PRINT("info with a NULL pointer", sceKernelGetEventFlagInfo(flag, NULL));
     PRINT("open with a NULL name", sceKernelOpenEventFlag(NULL));
     PRINT("create with a NULL name", test_created(sceKernelCreateEventFlag(NULL, 0, 0, NULL)));

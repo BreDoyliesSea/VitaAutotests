@@ -9,8 +9,6 @@
 #include "test.h"
 #include "threadmgr_extra.h"
 
-#define NOUSE_VFP 0x01000000
-
 static SceUID sema;
 static volatile int set_on_self, set_result, after_rmode;
 static const unsigned long long waiter_regs[2] = { 0x1122334455667788ULL, 0x99AABBCCDDEEFF00ULL };
@@ -30,7 +28,7 @@ static int waiter(SceSize args, void *argp) {
     (void)args;
     (void)argp;
     if (set_on_self)
-        set_result = sceKernelChangeCurrentThreadAttr(0, NOUSE_VFP);
+        set_result = sceKernelChangeCurrentThreadAttr(0, THREAD_ATTR_NOUSE_VFP);
     set_rmode(RMODE_PLUS);
     SceUInt timeout = TEST_WAIT_US;
     call_with_d8_d16(wait_sema, sema, 1, &timeout, waiter_regs, after_regs);
@@ -52,10 +50,10 @@ static void run(const char *name, SceUInt waiter_attr, SceUInt changer_attr, int
     set_result = after_rmode = 0xDEAD;
     after_regs[0] = after_regs[1] = 0xDEAD;
     // Both on core 1, so the changer runs on the core the waiter waits on
-    const SceUID w = sceKernelCreateThread("waiter", waiter, 0x10000100, 0x4000, waiter_attr, CPU_MASK_USER_1, NULL);
+    const SceUID w = sceKernelCreateThread("waiter", waiter, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, waiter_attr, SCE_KERNEL_CPU_MASK_USER_1, NULL);
     sceKernelStartThread(w, 0, NULL);
     TEST_WAIT_FOR(test_in_wait(w, WAIT_TYPE_SEMA, sema));
-    const SceUID c = sceKernelCreateThread("changer", changer, 0x10000100, 0x4000, changer_attr, CPU_MASK_USER_1, NULL);
+    const SceUID c = sceKernelCreateThread("changer", changer, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, changer_attr, SCE_KERNEL_CPU_MASK_USER_1, NULL);
     sceKernelStartThread(c, 0, NULL);
     test_join_thread(c);
     test_join_thread(w);
@@ -73,9 +71,9 @@ static void run(const char *name, SceUInt waiter_attr, SceUInt changer_attr, int
 
 int main(void) {
     run("neither has it", 0, 0, 0);
-    run("the waiter has it", NOUSE_VFP, 0, 0);
-    run("the other thread has it", 0, NOUSE_VFP, 0);
-    run("both have it", NOUSE_VFP, NOUSE_VFP, 0);
+    run("the waiter has it", THREAD_ATTR_NOUSE_VFP, 0, 0);
+    run("the other thread has it", 0, THREAD_ATTR_NOUSE_VFP, 0);
+    run("both have it", THREAD_ATTR_NOUSE_VFP, THREAD_ATTR_NOUSE_VFP, 0);
     run("the waiter sets it on itself", 0, 0, 1);
     test_exit();
     return 0;

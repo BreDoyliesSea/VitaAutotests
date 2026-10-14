@@ -78,10 +78,10 @@ int main(void) {
     PRINT("the main thread's FPSCR control bits", get_fpscr() & FPSCR_CONTROL);
 
     // Both threads on core 1, so the other one runs on the core the first one waits on
-    const SceUID thread = sceKernelCreateThread("fpscr", fpscr_thread, 0x10000100, 0x4000, 0, CPU_MASK_USER_1, NULL);
+    const SceUID thread = sceKernelCreateThread("fpscr", fpscr_thread, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, 0, SCE_KERNEL_CPU_MASK_USER_1, NULL);
     sceKernelStartThread(thread, 0, NULL);
     TEST_WAIT_FOR(test_in_wait(thread, WAIT_TYPE_SEMA, sema));
-    const SceUID other = sceKernelCreateThread("other", other_thread, 0x10000100, 0x4000, 0, CPU_MASK_USER_1, NULL);
+    const SceUID other = sceKernelCreateThread("other", other_thread, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, 0, SCE_KERNEL_CPU_MASK_USER_1, NULL);
     sceKernelStartThread(other, 0, NULL);
     test_join_thread(other);
     sceKernelWaitThreadEnd(thread, NULL, NULL);

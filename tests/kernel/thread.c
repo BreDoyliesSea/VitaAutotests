@@ -57,7 +57,7 @@ int main(void) {
     int status = -1;
     sema = sceKernelCreateSema("sema", 0, 0, 1, NULL);
 
-    SceUID thread = sceKernelCreateThread("return", return_thread, 0x10000100, 0x4000, 0, 0, NULL);
+    SceUID thread = sceKernelCreateThread("return", return_thread, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, 0, 0, NULL);
     PRINT("exit status of a thread never started", sceKernelGetThreadExitStatus(thread, &status));
     sceKernelStartThread(thread, 0, NULL);
     PRINT("wait for the end", sceKernelWaitThreadEnd(thread, &status, NULL));

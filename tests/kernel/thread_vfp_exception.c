@@ -96,7 +96,7 @@ static int setting_thread(SceSize args, void *argp) {
 int main(void) {
     PRINT("the main thread's setting", sceKernelGetCurrentThreadVfpException());
 
-    const SceUID thread = sceKernelCreateThread("setting", setting_thread, 0x10000100, 0x4000, 0, 0, NULL);
+    const SceUID thread = sceKernelCreateThread("setting", setting_thread, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, 0, 0, NULL);
     sceKernelStartThread(thread, 0, NULL);
     sceKernelWaitThreadEnd(thread, NULL, NULL);
 

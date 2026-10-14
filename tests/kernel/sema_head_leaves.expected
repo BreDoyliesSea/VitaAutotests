@@ -1,0 +1,50 @@
+FIFO queue, B behind A with 2 there: B got its count: 0x00000000
+FIFO queue, B behind A with 2 there: A is done: 0x00000000
+FIFO queue, B behind A with 2 there: the count: 0x00000002
+FIFO queue, after a signal of 1: A is done: 0x00000001
+FIFO queue, after a signal of 1: B is done: 0x00000001
+FIFO queue, after a signal of 1: the count: 0x00000000
+FIFO queue: A's result: 0x00000000
+FIFO queue: B's result: 0x80028005
+priority queue, B behind A with 2 there: B got its count: 0x00000000
+priority queue, B behind A with 2 there: A is done: 0x00000000
+priority queue, B behind A with 2 there: the count: 0x00000002
+priority queue, after a signal of 1: A is done: 0x00000001
+priority queue, after a signal of 1: B is done: 0x00000001
+priority queue, after a signal of 1: the count: 0x00000000
+priority queue: A's result: 0x00000000
+priority queue: B's result: 0x80028005
+FIFO queue, A times out, before A's timeout: B is done: 0x00000000
+FIFO queue, A times out: A's result: 0x80028005
+FIFO queue, A times out, after A's timeout: B got its count: 0x00000001
+FIFO queue, A times out, after A's timeout: the count: 0x00000001
+FIFO queue, A times out: B's result: 0x00000000
+priority queue, A times out, before A's timeout: B is done: 0x00000000
+priority queue, A times out: A's result: 0x80028005
+priority queue, A times out, after A's timeout: B got its count: 0x00000001
+priority queue, A times out, after A's timeout: the count: 0x00000001
+priority queue, A times out: B's result: 0x00000000
+priority queue, A drops below B: change A's priority: 0x00000000
+priority queue, before A drops: B is done: 0x00000000
+priority queue, after A drops below B: B got its count: 0x00000001
+priority queue, after A drops below B: A is done: 0x00000000
+priority queue, after A drops below B: the count: 0x00000001
+priority queue, A drops below B: A's result: 0x80028006
+priority queue, A drops below B: B's result: 0x00000000
+FIFO queue, A runs a callback: notify it: 0x00000000
+FIFO queue, A runs a callback: it ran: 0x00000001
+FIFO queue, while A runs a callback: B got its count: 0x00000001
+FIFO queue, after the callback: B is done: 0x00000001
+FIFO queue, after the callback: A is done: 0x00000000
+FIFO queue, after the callback: the count: 0x00000001
+FIFO queue, A runs a callback: A's result: 0x80028006
+FIFO queue, A runs a callback: B's result: 0x00000000
+priority queue, A runs a callback: notify it: 0x00000000
+priority queue, A runs a callback: it ran: 0x00000001
+priority queue, while A runs a callback: B got its count: 0x00000001
+priority queue, after the callback: B is done: 0x00000001
+priority queue, after the callback: A is done: 0x00000000
+priority queue, after the callback: the count: 0x00000001
+priority queue, A runs a callback: A's result: 0x80028006
+priority queue, A runs a callback: B's result: 0x00000000
+DONE

@@ -35,7 +35,7 @@ static void print_words(const char *name, const void *work, int words) {
 int main(void) {
     static SceKernelLwMutexWork mutex;
     sceClibMemset(&mutex, 0xEE, sizeof(mutex));
-    sceKernelCreateLwMutex(&mutex, "mutex", MUTEX_ATTR_RECURSIVE, 0, NULL);
+    sceKernelCreateLwMutex(&mutex, "mutex", LW_MUTEX_ATTR_RECURSIVE, 0, NULL);
     print_words("created", &mutex, 8);
     sceKernelLockLwMutex(&mutex, 1, NULL);
     print_words("locked once", &mutex, 8);

@@ -1,0 +1,13 @@
+attr 0x0, a read lock held and a writer waiting: another thread's try read lock: 0x800281E6
+attr 0x0, a read lock held and a writer waiting: the holder's try read lock: 0x800281E6
+attr 0x0, reader 0, writer 1, reader 2 behind a write lock: rounds: 0x00000212
+attr 0x4, a read lock held and a writer waiting: another thread's try read lock: 0x800281E6
+attr 0x4, a read lock held and a writer waiting: the holder's try read lock: 0x800281E6
+attr 0x4, reader 0, writer 1, reader 2 behind a write lock: rounds: 0x00000212
+attr 0x2000, a read lock held and a writer waiting: another thread's try read lock: 0x800281E6
+attr 0x2000, a read lock held and a writer waiting: the holder's try read lock: 0x800281E6
+attr 0x2000, reader 0, writer 1, reader 2 behind a write lock: rounds: 0x00000212
+attr 0x2004, a read lock held and a writer waiting: another thread's try read lock: 0x800281E6
+attr 0x2004, a read lock held and a writer waiting: the holder's try read lock: 0x800281E6
+attr 0x2004, reader 0, writer 1, reader 2 behind a write lock: rounds: 0x00000212
+DONE

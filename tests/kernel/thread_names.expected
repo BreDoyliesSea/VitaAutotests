@@ -1,0 +1,33 @@
+31 characters: create: 0x00000000
+31 characters: info: 0x00000000
+31 characters: the length of the name in its info: 0x0000001F
+31 characters: it is the start of the given name: 0x00000001
+32 characters: create: 0x00000000
+32 characters: info: 0x00000000
+32 characters: the length of the name in its info: 0x0000001F
+32 characters: it is the start of the given name: 0x00000001
+255 characters: create: 0x00000000
+255 characters: info: 0x00000000
+255 characters: the length of the name in its info: 0x0000001F
+255 characters: it is the start of the given name: 0x00000001
+an empty name: create: 0x00000000
+an empty name: info: 0x00000000
+an empty name: the length of the name in its info: 0x00000000
+an empty name: it is the start of the given name: 0x00000001
+bytes above 0x7F: create: 0x00000000
+bytes above 0x7F: info: 0x00000000
+bytes above 0x7F: the length of the name in its info: 0x00000005
+bytes above 0x7F: it is the start of the given name: 0x00000001
+bytes above 0x7F: byte 0 of the name: 0x00000080
+bytes above 0x7F: byte 1 of the name: 0x000000C3
+bytes above 0x7F: byte 2 of the name: 0x000000A9
+bytes above 0x7F: byte 3 of the name: 0x000000FE
+bytes above 0x7F: byte 4 of the name: 0x000000FF
+bytes above 0x7F: byte 5 of the name: 0x00000000
+same name: create the first: 0x00000000
+same name: create the second: 0x00000000
+same name: they are different threads: 0x00000001
+same name: both report it: 0x00000001
+same name: the second runs: 0x00000000
+the name is copied at creation: 0x00000001
+DONE

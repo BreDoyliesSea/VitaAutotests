@@ -1,0 +1,109 @@
+created: lock count: 0x00000000
+created: write owner: 0x00000000
+created: waiting readers: 0x00000000
+created: waiting writers: 0x00000000
+read locked once: lock count: 0x00000001
+read locked once: write owner: 0x00000000
+read locked once: waiting readers: 0x00000000
+read locked once: waiting writers: 0x00000000
+read locked twice: lock count: 0x00000002
+read locked twice: write owner: 0x00000000
+read locked twice: waiting readers: 0x00000000
+read locked twice: waiting writers: 0x00000000
+another thread read locks: 0x00000000
+read locked twice here and once there: lock count: 0x00000003
+read locked twice here and once there: write owner: 0x00000000
+read locked twice here and once there: waiting readers: 0x00000000
+read locked twice here and once there: waiting writers: 0x00000000
+a read unlock by a thread with no read lock: 0x00000000
+after it: lock count: 0x00000002
+after it: write owner: 0x00000000
+after it: waiting readers: 0x00000000
+after it: waiting writers: 0x00000000
+read unlock here: 0x00000000
+read unlock here again: 0x00000000
+the other thread's read unlock: 0x800281E5
+all unlocked: lock count: 0x00000000
+all unlocked: write owner: 0x00000000
+all unlocked: waiting readers: 0x00000000
+all unlocked: waiting writers: 0x00000000
+one read unlock too many: 0x800281E5
+write lock while holding a read lock, with a timeout: 0x80028005
+after that wait: lock count: 0x00000001
+after that wait: write owner: 0x00000000
+after that wait: waiting readers: 0x00000000
+after that wait: waiting writers: 0x00000000
+try read lock on another thread after it: 0x00000000
+write locked: lock count: 0x00000001
+write locked: write owner: 0x00000001
+write locked: waiting readers: 0x00000000
+write locked: waiting writers: 0x00000000
+read lock while holding the write lock, with a timeout: 0x800281E6
+write lock again, with a timeout: 0x800281E2
+after those waits: lock count: 0x00000001
+after those waits: write owner: 0x00000001
+after those waits: waiting readers: 0x00000000
+after those waits: waiting writers: 0x00000000
+a read unlock by another thread while write locked: 0x800281E7
+after it: lock count: 0x00000001
+after it: write owner: 0x00000001
+after it: waiting readers: 0x00000000
+after it: waiting writers: 0x00000000
+write unlock: 0x00000000
+write unlocked: lock count: 0x00000000
+write unlocked: write owner: 0x00000000
+write unlocked: waiting readers: 0x00000000
+write unlocked: waiting writers: 0x00000000
+another thread write locks: 0x00000000
+write locked by another thread: lock count: 0x00000001
+write locked by another thread: write owner: 0x00000002
+write locked by another thread: waiting readers: 0x00000000
+write locked by another thread: waiting writers: 0x00000000
+with a reader and a writer waiting: lock count: 0x00000001
+with a reader and a writer waiting: write owner: 0x00000002
+with a reader and a writer waiting: waiting readers: 0x00000001
+with a reader and a writer waiting: waiting writers: 0x00000001
+the writer's unlock: 0x00000000
+after the waiters are done: lock count: 0x00000000
+after the waiters are done: write owner: 0x00000000
+after the waiters are done: waiting readers: 0x00000000
+after the waiters are done: waiting writers: 0x00000000
+recursive: write lock: 0x00000000
+recursive: write lock again: 0x00000000
+recursive: try write lock a third time: 0x00000000
+recursive: after three write locks: lock count: 0x00000003
+recursive: after three write locks: write owner: 0x00000001
+recursive: after three write locks: waiting readers: 0x00000000
+recursive: after three write locks: waiting writers: 0x00000000
+recursive: try read lock while holding the write lock: 0x800281E6
+recursive: after it: lock count: 0x00000003
+recursive: after it: write owner: 0x00000001
+recursive: after it: waiting readers: 0x00000000
+recursive: after it: waiting writers: 0x00000000
+recursive: try write lock on another thread: 0x800281E6
+recursive: try read lock on another thread: 0x800281E6
+recursive: write unlock: 0x00000000
+recursive: after one write unlock: lock count: 0x00000002
+recursive: after one write unlock: write owner: 0x00000001
+recursive: after one write unlock: waiting readers: 0x00000000
+recursive: after one write unlock: waiting writers: 0x00000000
+recursive: try write lock on another thread after it: 0x800281E6
+recursive: write unlock 1 more: 0x00000000
+recursive: write unlock 2 more: 0x00000000
+recursive: write unlock 3 more: 0x800281E4
+recursive: unlocked: lock count: 0x00000000
+recursive: unlocked: write owner: 0x00000000
+recursive: unlocked: waiting readers: 0x00000000
+recursive: unlocked: waiting writers: 0x00000000
+recursive: after a read unlock: lock count: 0x00000000
+recursive: after a read unlock: write owner: 0x00000000
+recursive: after a read unlock: waiting readers: 0x00000000
+recursive: after a read unlock: waiting writers: 0x00000000
+recursive: read lock: 0x00000000
+recursive: try write lock while holding a read lock: 0x800281E6
+recursive: after it: lock count: 0x00000001
+recursive: after it: write owner: 0x00000000
+recursive: after it: waiting readers: 0x00000000
+recursive: after it: waiting writers: 0x00000000
+recursive: try write lock on another thread at the end: 0x00000000
+DONE

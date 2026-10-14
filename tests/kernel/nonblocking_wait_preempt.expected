@@ -1,0 +1,31 @@
+higher priority, signaled from core 1, then a wait on a free semaphore: L's call: 0x00000000
+higher priority, signaled from core 1, then a wait on a free semaphore: step 0: 0x00000000
+higher priority, signaled from core 1, then a wait on a free semaphore: step 1: 0x00000001
+higher priority, signaled from core 1, then a wait on a free semaphore: step 2: 0x00000002
+higher priority, signaled from core 1, then a wait on a free semaphore: step 3: 0x00000004
+higher priority, its delay ends, then a wait on a free semaphore: L's call: 0x00000000
+higher priority, its delay ends, then a wait on a free semaphore: step 0: 0x00000000
+higher priority, its delay ends, then a wait on a free semaphore: step 1: 0x00000001
+higher priority, its delay ends, then a wait on a free semaphore: step 2: 0x00000002
+higher priority, its delay ends, then a wait on a free semaphore: step 3: 0x00000004
+same priority, signaled from core 1, then a wait on a free semaphore: L's call: 0x00000000
+same priority, signaled from core 1, then a wait on a free semaphore: step 0: 0x00000000
+same priority, signaled from core 1, then a wait on a free semaphore: step 1: 0x00000003
+same priority, signaled from core 1, then a wait on a free semaphore: step 2: 0x00000004
+same priority, signaled from core 1, then a wait on a free semaphore: step 3: 0x00000001
+same priority, signaled from core 1, then a poll of a free semaphore: L's call: 0x00000000
+same priority, signaled from core 1, then a poll of a free semaphore: step 0: 0x00000000
+same priority, signaled from core 1, then a poll of a free semaphore: step 1: 0x00000003
+same priority, signaled from core 1, then a poll of a free semaphore: step 2: 0x00000004
+same priority, signaled from core 1, then a poll of a free semaphore: step 3: 0x00000001
+same priority, signaled from core 1, then a wait on a set event flag: L's call: 0x00000000
+same priority, signaled from core 1, then a wait on a set event flag: step 0: 0x00000000
+same priority, signaled from core 1, then a wait on a set event flag: step 1: 0x00000003
+same priority, signaled from core 1, then a wait on a set event flag: step 2: 0x00000004
+same priority, signaled from core 1, then a wait on a set event flag: step 3: 0x00000001
+same priority, its delay ends, then a wait on a free semaphore: L's call: 0x00000000
+same priority, its delay ends, then a wait on a free semaphore: step 0: 0x00000000
+same priority, its delay ends, then a wait on a free semaphore: step 1: 0x00000003
+same priority, its delay ends, then a wait on a free semaphore: step 2: 0x00000004
+same priority, its delay ends, then a wait on a free semaphore: step 3: 0x00000001
+DONE

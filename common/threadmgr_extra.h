@@ -4,31 +4,70 @@
 #include <psp2/kernel/threadmgr.h>
 #include <psp2/types.h>
 
+// Thread priorities. Games may use SCE_KERNEL_HIGHEST_PRIORITY_USER to
+// SCE_KERNEL_LOWEST_PRIORITY_USER. SCE_KERNEL_DEFAULT_PRIORITY_USER stands for the process's
+// default priority, which is SCE_KERNEL_DEFAULT_PRIORITY_GAME_APP for a game, and an offset can be
+// added to it or taken from it.
+#ifndef SCE_KERNEL_HIGHEST_PRIORITY_USER
+#define SCE_KERNEL_HIGHEST_PRIORITY_USER 64
+#endif
+#ifndef SCE_KERNEL_LOWEST_PRIORITY_USER
+#define SCE_KERNEL_LOWEST_PRIORITY_USER 191
+#endif
+#ifndef SCE_KERNEL_DEFAULT_PRIORITY
+#define SCE_KERNEL_DEFAULT_PRIORITY ((SceInt32)0x10000100)
+#endif
+#ifndef SCE_KERNEL_DEFAULT_PRIORITY_GAME_APP
+#define SCE_KERNEL_DEFAULT_PRIORITY_GAME_APP 160
+#endif
+#ifndef SCE_KERNEL_DEFAULT_PRIORITY_USER
+#define SCE_KERNEL_DEFAULT_PRIORITY_USER SCE_KERNEL_DEFAULT_PRIORITY
+#endif
+
+// The stack size of a process's main thread by default
+#ifndef SCE_KERNEL_THREAD_STACK_SIZE_DEFAULT_USER_MAIN
+#define SCE_KERNEL_THREAD_STACK_SIZE_DEFAULT_USER_MAIN SCE_KERNEL_256KiB
+#endif
+
+// The size of the thread specific data area, as the Vita Development Wiki calls it, which ends
+// where TPIDRURO points and holds the TLS slots
+#ifndef SCE_KERNEL_TLS_SIZE
+#define SCE_KERNEL_TLS_SIZE 0x800
+#endif
+
+// Thread attributes, which the Vita Development Wiki calls SCE_KERNEL_THREAD_ATTR_NOUSE_VFP and
+// SCE_KERNEL_THREAD_ATTR_VM. The ForVM calls only take threads with THREAD_ATTR_VM.
+#define THREAD_ATTR_NOUSE_VFP 0x01000000
+#define THREAD_ATTR_VM 0x04000000
+
+// The thread ID that registers a thread event handler for every thread of the process
+#ifndef SCE_KERNEL_THREAD_ID_PROCESS_ALL_ID
+#define SCE_KERNEL_THREAD_ID_PROCESS_ALL_ID 0x10027
+#endif
+
+// Lets the owner lock a lightweight mutex or a rwlock more than once, like
+// SCE_KERNEL_MUTEX_ATTR_RECURSIVE for a mutex
+#define LW_MUTEX_ATTR_RECURSIVE 0x2
+#define RW_LOCK_ATTR_RECURSIVE 0x2
+
 // Message pipe memory type, 0x40 is what games pass
 #define MSG_PIPE_TYPE_USER 0x40
 
 #define MSG_PIPE_MODE_ASAP 0x0
 #define MSG_PIPE_MODE_FULL 0x1
 
-// Queues the waiters of an object by priority instead of in arrival order
-#define ATTR_TH_PRIO 0x2000
-
 #define MSG_PIPE_MODE_DONT_REMOVE 0x100
 
-// Lets the owner lock a mutex more than once, for heavy and lightweight mutexes
-#define MUTEX_ATTR_RECURSIVE 0x2
-
-// Event flag wait modes, AND or OR, plus optionally one way of clearing the bits after the wait
-#define EVF_WAITMODE_AND 0x0
-#define EVF_WAITMODE_OR 0x1
-#define EVF_WAITMODE_CLEAR_ALL 0x2
-#define EVF_WAITMODE_CLEAR_PAT 0x4
-
-// Lets more than one thread wait on an event flag at a time
-#define EVF_ATTR_MULTI 0x1000
+// Queues a message pipe's waiting receivers by priority instead of in arrival order
+#define MSG_PIPE_ATTR_RECEIVE_PRIO 0x2
 
 // The event bit a timer sets when its event fires
-#define TIMER_EVENT_BIT 0x8000
+#define EVENT_TIMER 0x8000
+
+// Timer event types: set the timer's event when the time comes, or wake its waiters without
+// leaving it set
+#define TIMER_TYPE_SET_EVENT 0
+#define TIMER_TYPE_PULSE_EVENT 1
 
 SceUID sceKernelCreateSimpleEvent(const char *name, SceUInt32 attr, SceUInt32 init_pattern, const void *opt);
 SceInt32 sceKernelDeleteSimpleEvent(SceUID id);
@@ -89,14 +128,6 @@ SceInt32 sceKernelCancelEventFlag(SceUID id, SceUInt32 set_pattern, SceUInt32 *n
 // Event object attributes, for simple events and timers
 #define EVENT_ATTR_MANUAL_RESET 0x0
 #define EVENT_ATTR_AUTO_RESET 0x100
-
-// Lets sceKernelOpen* find an object by its name
-#define ATTR_OPENABLE 0x80
-
-// The user cores a thread may run on, for its CPU affinity mask
-#define CPU_MASK_USER_0 0x10000
-#define CPU_MASK_USER_1 0x20000
-#define CPU_MASK_USER_2 0x40000
 
 #define EVENT_WAIT_MODE_OR 0x1
 #define EVENT_WAIT_MODE_AND 0x2
@@ -217,8 +248,22 @@ SceInt32 sceKernelSetTimerTime(SceUID id, SceKernelSysClock *clock);
 SceInt32 sceKernelGetTimerBase(SceUID id, SceKernelSysClock *base);
 
 // What sceKernelGetThreadInfo reports as the wait type. Waits that run callbacks add WAIT_TYPE_CB.
+#define WAIT_TYPE_DELAY 0x1
+#define WAIT_TYPE_THREAD_END 0x2
+#define WAIT_TYPE_SIGNAL 0x4
+#define WAIT_TYPE_EVENT_FLAG 0x10
 #define WAIT_TYPE_SEMA 0x20
 #define WAIT_TYPE_MUTEX 0x40
+#define WAIT_TYPE_RW_LOCK 0x80
+#define WAIT_TYPE_COND 0x100
+// A condition waiter that was signaled and waits to lock the mutex again
+#define WAIT_TYPE_COND_MUTEX 0x200
+#define WAIT_TYPE_EVENT 0x10000
+#define WAIT_TYPE_MP_EVENTS 0x20000
+#define WAIT_TYPE_MSG_PIPE 0x40000
+#define WAIT_TYPE_LW_MUTEX 0x100000
+#define WAIT_TYPE_LW_COND 0x200000
+#define WAIT_TYPE_LW_COND_MUTEX 0x400000
 #define WAIT_TYPE_CB 0x80000000
 
 SceInt32 sceKernelWaitLwCondCB(SceKernelLwCondWork *work, SceUInt32 *timeout);
@@ -241,6 +286,13 @@ SceInt32 sceKernelUnregisterCallbackFromEventAll(SceUID event_id);
 // The events a message pipe reports for a send and for a receive that didn't wait
 #define EVENT_IN 0x1
 #define EVENT_OUT 0x2
+
+// Cancels the waits on a simple event, then sets set_pattern on it with user_data
+SceInt32 sceKernelCancelEventWithSetPattern(SceUID id, SceUInt32 set_pattern, SceUInt64 user_data, SceUInt32 *num_wait_threads);
+
+// Send and receive a message pipe vector without waiting
+SceInt32 sceKernelTrySendMsgPipeVector(SceUID id, const MsgPipeVector *vectors, SceUInt32 count, SceUInt32 mode, SceSize *result);
+SceInt32 sceKernelTryReceiveMsgPipeVector(SceUID id, const MsgPipeVector *vectors, SceUInt32 count, SceUInt32 mode, SceSize *result);
 
 // Returns the VFP exception setting of the calling thread, which sceKernelChangeThreadVfpException changes
 SceInt32 sceKernelGetCurrentThreadVfpException(void);
@@ -265,6 +317,13 @@ typedef struct ThreadVfpRegisters {
     SceUInt32 fpscr;
     SceUInt32 reg[64];
 } ThreadVfpRegisters;
+
+// Variants of sceKernelDelayThread and sceKernelDelayThreadCB with 200 in their names
+int sceKernelDelayThread200(SceUInt32 delay);
+int sceKernelDelayThreadCB200(SceUInt32 delay);
+
+// Another call that returns a thread's CPU affinity mask
+SceInt32 sceKernelGetThreadCpuAffinityMask2(SceUID thid);
 
 // Reads the registers of a thread that isn't running
 int sceKernelGetThreadContextForVM(SceUID thid, ThreadCpuRegisters *cpu, ThreadVfpRegisters *vfp);

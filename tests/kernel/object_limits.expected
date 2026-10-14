@@ -1,0 +1,11 @@
+create a semaphore before the others: 0x00000000
+semaphores: created before an error or the end of the loop: 0x000007EC
+semaphores: the error: 0x8002450D
+semaphores: create a mutex while they are there: 0x8002450D
+semaphores: every one deletes: 0x00000001
+semaphores: create one after deleting them: 0x00000000
+mutexes: created before an error or the end of the loop: 0x000007EC
+mutexes: the error: 0x8002450D
+mutexes: every one deletes: 0x00000001
+mutexes: create one after deleting them: 0x00000000
+DONE

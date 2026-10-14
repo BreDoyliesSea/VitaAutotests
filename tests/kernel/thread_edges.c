@@ -56,7 +56,7 @@ int main(void) {
     PRINT("delete it again", sceKernelDeleteThread(thread));
 
     // Priorities set through sceKernelChangeThreadPriority
-    static const int priorities[] = { 0, 0x10000100, 0x100000E0, 0x40, 0xBF, 0x3F, 0xC0, 0x20 };
+    static const int priorities[] = { 0, SCE_KERNEL_DEFAULT_PRIORITY_USER, SCE_KERNEL_DEFAULT_PRIORITY_USER - 0x20, SCE_KERNEL_HIGHEST_PRIORITY_USER, SCE_KERNEL_LOWEST_PRIORITY_USER, SCE_KERNEL_HIGHEST_PRIORITY_USER - 1, SCE_KERNEL_LOWEST_PRIORITY_USER + 1, 0x20 };
     for (unsigned int i = 0; i < sizeof(priorities) / sizeof(priorities[0]); i++) {
         test_join_thread(test_start_thread_arg(priority_thread, priorities[i]));
         char label[64];

@@ -60,7 +60,7 @@ static void print_fields(const char *name, SceUID thread, SceKernelThreadEntry e
 
 int main(void) {
     go = sceKernelCreateSema("go", 0, 0, 1, NULL);
-    sceKernelChangeThreadCpuAffinityMask(0, CPU_MASK_USER_0);
+    sceKernelChangeThreadCpuAffinityMask(0, SCE_KERNEL_CPU_MASK_USER_0);
     // The main thread only moves to core 0 when it is next scheduled
     sceKernelDelayThread(1000);
     print_fields("main thread", sceKernelGetThreadId(), NULL);
@@ -72,12 +72,12 @@ int main(void) {
     PRINT("run status: its process is this one", run_status.cpuInfo[0].processId == sceKernelGetProcessId());
     PRINT("run status: its priority", run_status.cpuInfo[0].priority);
 
-    const SceUID thread = sceKernelCreateThread("fields", fields_thread, 0x60, 0x4000, 0, CPU_MASK_USER_1, NULL);
+    const SceUID thread = sceKernelCreateThread("fields", fields_thread, 0x60, 0x4000, 0, SCE_KERNEL_CPU_MASK_USER_1, NULL);
     print_fields("created", thread, fields_thread);
 
     // Changes before the first start
     PRINT("change the priority of a thread that never ran", sceKernelChangeThreadPriority(thread, 0x70));
-    PRINT("change its affinity", sceKernelChangeThreadCpuAffinityMask(thread, CPU_MASK_USER_2));
+    PRINT("change its affinity", sceKernelChangeThreadCpuAffinityMask(thread, SCE_KERNEL_CPU_MASK_USER_2));
     print_fields("changed before the start", thread, fields_thread);
 
     // Running, then waiting
@@ -87,7 +87,7 @@ int main(void) {
     PRINT("first run: the affinity it runs with", run_affinity);
     print_fields("waiting", thread, fields_thread);
     PRINT("change the priority of the waiting thread", sceKernelChangeThreadPriority(thread, 0x68));
-    PRINT("change its affinity", sceKernelChangeThreadCpuAffinityMask(thread, CPU_MASK_USER_1));
+    PRINT("change its affinity", sceKernelChangeThreadCpuAffinityMask(thread, SCE_KERNEL_CPU_MASK_USER_1));
     print_fields("changed while waiting", thread, fields_thread);
 
     // Ended after raising its own priority

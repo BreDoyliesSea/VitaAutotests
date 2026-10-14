@@ -1,0 +1,39 @@
+cancel with 2 waiters: 0x00000000
+the waiting count: 0x00000002
+cancel: waiter 0: 0x80028007
+cancel: the pattern waiter 0 got: 0x00000010
+cancel: the user data waiter 0 got: 0x00000000
+cancel: waiter 1: 0x80028007
+cancel: the pattern waiter 1 got: 0x00000010
+cancel: the user data waiter 1 got: 0x00000000
+cancel: the pattern after: 0x02000004
+cancel: the user data after: 0x00000077
+cancel and set with 2 waiters: 0x00000000
+the waiting count: 0x00000002
+cancel and set: waiter 0: 0x80028007
+cancel and set: the pattern waiter 0 got: 0x00000010
+cancel and set: the user data waiter 0 got: 0x00000000
+cancel and set: waiter 1: 0x80028007
+cancel and set: the pattern waiter 1 got: 0x00000010
+cancel and set: the user data waiter 1 got: 0x00000000
+cancel and set: the pattern after: 0x04000000
+cancel and set: the user data after: 0x00000099
+cancel and set the waited bit: 0x00000000
+the waiting count: 0x00000001
+cancel and set the waited bit: waiter 0: 0x80028007
+cancel and set the waited bit: the pattern waiter 0 got: 0x00000010
+cancel and set the waited bit: the user data waiter 0 got: 0x00000000
+cancel and set the waited bit: the pattern after: 0x01000000
+cancel and set the waited bit: the user data after: 0x00000055
+cancel and set with no waiters: 0x00000000
+the waiting count: 0x00000000
+cancel and set a system bit: 0x8002000D
+the waiting count: 0x00000000
+cancel and set a system bit: the pattern after: 0x00000000
+cancel and set a system bit: the user data after: 0x00000000
+cancel and set without a count pointer: 0x00000000
+cancel without a count pointer with a waiter: 0x00000000
+cancel without a count pointer: waiter 0: 0x80028007
+cancel without a count pointer: the pattern waiter 0 got: 0x00000010
+cancel without a count pointer: the user data waiter 0 got: 0x00000000
+DONE

@@ -32,7 +32,7 @@ static int wait_thread(SceSize args, void *argp) {
     case DELAY_CB: sceKernelDelayThreadCB(WAIT_US); break;
     case SEMA: sceKernelWaitSema(sema, 1, &timeout); break;
     case SEMA_CB: sceKernelWaitSemaCB(sema, 1, &timeout); break;
-    case EVENT_FLAG: sceKernelWaitEventFlag(flag, 1, EVF_WAITMODE_AND, &bits, &timeout); break;
+    case EVENT_FLAG: sceKernelWaitEventFlag(flag, 1, SCE_EVENT_WAITAND, &bits, &timeout); break;
     case MUTEX: sceKernelLockMutex(mutex, 1, &timeout); break;
     case RW_LOCK: sceKernelLockReadRWLock(rwlock, &timeout); break;
     case COND:

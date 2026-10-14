@@ -156,7 +156,7 @@ int main(void) {
 
     // Another thread waits for the main thread's end
     const SceUID main_thread = sceKernelGetThreadId();
-    const SceUID thread = sceKernelCreateThread("main waiter", main_waiter, 0x10000100, 0x4000, 0, 0, NULL);
+    const SceUID thread = sceKernelCreateThread("main waiter", main_waiter, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, 0, 0, NULL);
     sceKernelStartThread(thread, sizeof(main_thread), (void *)&main_thread);
     test_join_thread(thread);
     PRINT("wait for the main thread's end", main_waiter_result);

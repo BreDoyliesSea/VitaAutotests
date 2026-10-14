@@ -1,0 +1,38 @@
+FIFO: the waiters: 0x00000003
+FIFO: the low priority waiter, queued first, gets it as: 0x00000001
+FIFO: the high priority waiter, queued second, gets it as: 0x00000002
+FIFO: the middle priority waiter, queued third, gets it as: 0x00000003
+priority: the waiters: 0x00000003
+priority: the low priority waiter, queued first, gets it as: 0x00000003
+priority: the high priority waiter, queued second, gets it as: 0x00000001
+priority: the middle priority waiter, queued third, gets it as: 0x00000002
+a waiter for a count of 3: its lock: 0x00000000
+a waiter for a count of 3: the count it holds: 0x00000003
+a waiter for a count of 3: its unlock of 3: 0x00000000
+held twice with a waiter: unlock once: 0x00000000
+held twice with a waiter: the waiter still waits: 0x00000001
+held twice with a waiter: the count after one unlock: 0x00000001
+held twice with a waiter: this thread still owns it: 0x00000001
+held twice with a waiter: the waiters after one unlock: 0x00000001
+held twice with a waiter: unlock again: 0x00000000
+held twice with a waiter: the waiter's lock: 0x00000000
+not recursive: a waiter for a count of 2 returns at once: 0x00000001
+not recursive: its lock: 0x8002000F
+lock with callbacks: notify the waiter's callback: 0x00000000
+lock with callbacks: runs of the callback: 0x00000001
+lock with callbacks: the callback's argument: 0x00001234
+lock with callbacks: the waiter waits again after it: 0x00000001
+lock with callbacks: the waiter is done before the unlock: 0x00000000
+lock with callbacks: its lock: 0x00000000
+lock with callbacks: its unlock: 0x00000000
+FIFO: right after the unlock the waiter owns the mutex: 0x00000001
+FIFO: the count right after the unlock: 0x00000001
+FIFO: the waiters right after the unlock: 0x00000000
+FIFO: try lock right after unlocking to a waiter: 0x80028185
+FIFO: the waiter's lock: 0x00000000
+priority: right after the unlock the waiter owns the mutex: 0x00000001
+priority: the count right after the unlock: 0x00000001
+priority: the waiters right after the unlock: 0x00000000
+priority: try lock right after unlocking to a waiter: 0x80028185
+priority: the waiter's lock: 0x00000000
+DONE

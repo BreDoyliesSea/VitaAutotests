@@ -42,12 +42,12 @@ int main(void) {
     PRINT("create with attribute 0x80000000", sceKernelCreateLwMutex(&work, "m", 0x80000000, 0, NULL));
     PRINT("create twice in the same work area", sceKernelCreateLwMutex(&work, "m", 0, 0, NULL));
     sceKernelDeleteLwMutex(&work);
-    PRINT("create with a negative count", sceKernelCreateLwMutex(&work, "m", MUTEX_ATTR_RECURSIVE, -1, NULL));
-    PRINT("create recursive with the largest count", sceKernelCreateLwMutex(&work, "m", MUTEX_ATTR_RECURSIVE, 0x7FFFFFFF, NULL));
+    PRINT("create with a negative count", sceKernelCreateLwMutex(&work, "m", LW_MUTEX_ATTR_RECURSIVE, -1, NULL));
+    PRINT("create recursive with the largest count", sceKernelCreateLwMutex(&work, "m", LW_MUTEX_ATTR_RECURSIVE, 0x7FFFFFFF, NULL));
     sceKernelDeleteLwMutex(&work);
 
     // Counts on a recursive mutex this thread holds once
-    sceKernelCreateLwMutex(&mutex, "mutex", MUTEX_ATTR_RECURSIVE, 1, NULL);
+    sceKernelCreateLwMutex(&mutex, "mutex", LW_MUTEX_ATTR_RECURSIVE, 1, NULL);
     PRINT("unlock 0", sceKernelUnlockLwMutex(&mutex, 0));
     PRINT("unlock -1", sceKernelUnlockLwMutex(&mutex, -1));
     PRINT("unlock 2 of 1", sceKernelUnlockLwMutex(&mutex, 2));

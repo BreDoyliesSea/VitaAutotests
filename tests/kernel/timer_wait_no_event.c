@@ -9,7 +9,7 @@ int main(void) {
     SceUInt32 result;
     SceUInt64 user_data;
     SceUInt32 timeout = 1000;
-    PRINT("wait on a timer with no event set", sceKernelWaitEvent(timer, TIMER_EVENT_BIT, &result, &user_data, &timeout));
+    PRINT("wait on a timer with no event set", sceKernelWaitEvent(timer, EVENT_TIMER, &result, &user_data, &timeout));
 
     test_exit();
     return 0;

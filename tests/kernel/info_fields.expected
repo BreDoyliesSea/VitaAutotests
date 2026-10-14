@@ -1,0 +1,227 @@
+semaphore: info: 0x00000000
+semaphore: the attribute: 0x00002000
+semaphore: the initial count: 0x00000002
+semaphore: the count: 0x00000002
+semaphore: the maximum: 0x00000007
+semaphore: the waiting threads: 0x00000000
+semaphore: the count after taking 1 and giving 3: 0x00000004
+semaphore: the initial count after it: 0x00000002
+semaphore: the count with 2 waiters: 0x00000000
+semaphore: the waiting threads with 2 waiters: 0x00000002
+semaphore: the waiting threads after they got it: 0x00000000
+semaphore: the reported length of a 31 character name: 0x0000001F
+semaphore: it is the start of the 31 character name: 0x00000001
+semaphore: the reported length of a 32 character name: 0x0000001F
+semaphore: it is the start of the 32 character name: 0x00000001
+semaphore: the reported length of a 40 character name: 0x0000001F
+semaphore: it is the start of the 40 character name: 0x00000001
+semaphore: info with a size of 0: 0x00000000
+semaphore: the end of what it writes with a size of 0: 0x00000000
+semaphore: info with a size of 4: 0x00000000
+semaphore: the end of what it writes with a size of 4: 0x00000000
+semaphore: info with a size of 8: 0x00000000
+semaphore: the end of what it writes with a size of 8: 0x00000008
+semaphore: info with a size of 40: 0x00000000
+semaphore: the end of what it writes with a size of 40: 0x00000028
+semaphore: info with a size of 56: 0x00000000
+semaphore: the end of what it writes with a size of 56: 0x00000038
+event flag: info: 0x00000000
+event flag: the attribute: 0x00003000
+event flag: the initial pattern: 0x00000005
+event flag: the pattern: 0x00000005
+event flag: the waiting threads: 0x00000000
+event flag: the pattern after a set and a clear: 0x00000014
+event flag: the initial pattern after them: 0x00000005
+event flag: the waiting threads with 2 waiters: 0x00000002
+event flag: the waiting threads after they woke: 0x00000000
+event flag: the pattern after they woke: 0x00000114
+event flag: the reported length of a 31 character name: 0x0000001F
+event flag: it is the start of the 31 character name: 0x00000001
+event flag: the reported length of a 32 character name: 0x0000001F
+event flag: it is the start of the 32 character name: 0x00000001
+event flag: the reported length of a 40 character name: 0x0000001F
+event flag: it is the start of the 40 character name: 0x00000001
+event flag: info with a size of 0: 0x00000000
+event flag: the end of what it writes with a size of 0: 0x00000000
+event flag: info with a size of 4: 0x00000000
+event flag: the end of what it writes with a size of 4: 0x00000000
+event flag: info with a size of 8: 0x00000000
+event flag: the end of what it writes with a size of 8: 0x00000008
+event flag: info with a size of 40: 0x00000000
+event flag: the end of what it writes with a size of 40: 0x00000028
+event flag: info with a size of 52: 0x00000000
+event flag: the end of what it writes with a size of 52: 0x00000034
+mutex: info: 0x00000000
+mutex: the attribute: 0x00002002
+mutex: the initial count: 0x00000002
+mutex: the count: 0x00000002
+mutex: the owner: 0x00000001
+mutex: the waiting threads: 0x00000000
+mutex: the ceiling priority: 0x00000000
+mutex: the count after unlocking it: 0x00000000
+mutex: the owner after unlocking it: 0x00000000
+mutex: the count after locking it 3 times: 0x00000003
+mutex: the initial count after it: 0x00000002
+mutex: the waiting threads with 2 waiters: 0x00000002
+mutex: the waiting threads after they got it: 0x00000000
+mutex: the owner after they unlocked it: 0x00000000
+mutex: the reported length of a 31 character name: 0x0000001F
+mutex: it is the start of the 31 character name: 0x00000001
+mutex: the reported length of a 32 character name: 0x0000001F
+mutex: it is the start of the 32 character name: 0x00000001
+mutex: the reported length of a 40 character name: 0x0000001F
+mutex: it is the start of the 40 character name: 0x00000001
+mutex: info with a size of 0: 0x00000000
+mutex: the end of what it writes with a size of 0: 0x00000000
+mutex: info with a size of 4: 0x00000000
+mutex: the end of what it writes with a size of 4: 0x00000000
+mutex: info with a size of 8: 0x00000000
+mutex: the end of what it writes with a size of 8: 0x00000008
+mutex: info with a size of 40: 0x00000000
+mutex: the end of what it writes with a size of 40: 0x00000028
+mutex: info with a size of 60: 0x00000000
+mutex: the end of what it writes with a size of 60: 0x0000003C
+lightweight mutex: info: 0x00000000
+lightweight mutex: the attribute: 0x00000002
+lightweight mutex: the work area: 0x00000001
+lightweight mutex: the initial count: 0x00000001
+lightweight mutex: the count: 0x00000001
+lightweight mutex: the owner: 0x00000001
+lightweight mutex: the waiting threads: 0x00000000
+lightweight mutex: info by UID: 0x00000000
+lightweight mutex: info by UID is the same: 0x00000001
+lightweight mutex: the count after locking it twice more: 0x00000003
+lightweight mutex: the count after unlocking it: 0x00000000
+lightweight mutex: the owner after unlocking it: 0x00000000
+lightweight mutex: the initial count after it: 0x00000001
+lightweight mutex: the waiting threads with 2 waiters: 0x00000002
+lightweight mutex: the first waiter got it: 0x00000000
+lightweight mutex: the second waiter got it: 0x00000000
+lightweight mutex: the waiting threads after they got it: 0x00000000
+lightweight mutex: the reported length of a 31 character name: 0x0000001F
+lightweight mutex: it is the start of the 31 character name: 0x00000001
+lightweight mutex: the reported length of a 32 character name: 0x0000001F
+lightweight mutex: it is the start of the 32 character name: 0x00000001
+lightweight mutex: the reported length of a 40 character name: 0x0000001F
+lightweight mutex: it is the start of the 40 character name: 0x00000001
+lightweight mutex: info with a size of 0: 0x00000000
+lightweight mutex: the end of what it writes with a size of 0: 0x00000000
+lightweight mutex: info with a size of 4: 0x00000000
+lightweight mutex: the end of what it writes with a size of 4: 0x00000000
+lightweight mutex: info with a size of 8: 0x00000000
+lightweight mutex: the end of what it writes with a size of 8: 0x00000008
+lightweight mutex: info with a size of 40: 0x00000000
+lightweight mutex: the end of what it writes with a size of 40: 0x00000028
+lightweight mutex: info with a size of 60: 0x00000000
+lightweight mutex: the end of what it writes with a size of 60: 0x0000003C
+condition variable: info: 0x00000000
+condition variable: the attribute: 0x00002000
+condition variable: the mutex: 0x00000001
+condition variable: the waiting threads: 0x00000000
+condition variable: the waiting threads with 2 waiters: 0x00000002
+condition variable: the waiting threads after they woke: 0x00000000
+condition variable: the reported length of a 31 character name: 0x0000001F
+condition variable: it is the start of the 31 character name: 0x00000001
+condition variable: the reported length of a 32 character name: 0x0000001F
+condition variable: it is the start of the 32 character name: 0x00000001
+condition variable: the reported length of a 40 character name: 0x0000001F
+condition variable: it is the start of the 40 character name: 0x00000001
+condition variable: info with a size of 0: 0x00000000
+condition variable: the end of what it writes with a size of 0: 0x00000000
+condition variable: info with a size of 4: 0x00000000
+condition variable: the end of what it writes with a size of 4: 0x00000000
+condition variable: info with a size of 8: 0x00000000
+condition variable: the end of what it writes with a size of 8: 0x00000008
+condition variable: info with a size of 40: 0x00000000
+condition variable: the end of what it writes with a size of 40: 0x00000028
+condition variable: info with a size of 48: 0x00000000
+condition variable: the end of what it writes with a size of 48: 0x00000030
+lightweight condition variable: info: 0x00000000
+lightweight condition variable: the attribute: 0x00000000
+lightweight condition variable: the work area: 0x00000001
+lightweight condition variable: the mutex: 0x00000001
+lightweight condition variable: the waiting threads: 0x00000000
+lightweight condition variable: the waiting threads with 2 waiters: 0x00000002
+lightweight condition variable: the waiting threads after they woke: 0x00000000
+lightweight condition variable: the reported length of a 31 character name: 0x0000001F
+lightweight condition variable: it is the start of the 31 character name: 0x00000001
+lightweight condition variable: the reported length of a 32 character name: 0x0000001F
+lightweight condition variable: it is the start of the 32 character name: 0x00000001
+lightweight condition variable: the reported length of a 40 character name: 0x0000001F
+lightweight condition variable: it is the start of the 40 character name: 0x00000001
+lightweight condition variable: info with a size of 0: 0x00000000
+lightweight condition variable: the end of what it writes with a size of 0: 0x00000008
+lightweight condition variable: info with a size of 4: 0x00000000
+lightweight condition variable: the end of what it writes with a size of 4: 0x00000008
+lightweight condition variable: info with a size of 8: 0x00000000
+lightweight condition variable: the end of what it writes with a size of 8: 0x00000008
+lightweight condition variable: info with a size of 40: 0x00000000
+lightweight condition variable: the end of what it writes with a size of 40: 0x00000028
+lightweight condition variable: info with a size of 52: 0x00000000
+lightweight condition variable: the end of what it writes with a size of 52: 0x00000034
+reader/writer lock: info: 0x00000000
+reader/writer lock: the attribute: 0x00002000
+reader/writer lock: the lock count: 0x00000000
+reader/writer lock: the writer: 0x00000000
+reader/writer lock: the waiting readers: 0x00000000
+reader/writer lock: the waiting writers: 0x00000000
+reader/writer lock: the lock count with 2 read locks: 0x00000002
+reader/writer lock: the writer with 2 read locks: 0x00000000
+reader/writer lock: the lock count with the write lock: 0x00000001
+reader/writer lock: the writer with the write lock: 0x00000001
+reader/writer lock: the waiting readers with 2 of them: 0x00000002
+reader/writer lock: the waiting writers with 1 of them: 0x00000001
+reader/writer lock: the lock count after they unlocked: 0x00000000
+reader/writer lock: the waiting readers after: 0x00000000
+reader/writer lock: the waiting writers after: 0x00000000
+reader/writer lock: the reported length of a 31 character name: 0x0000001F
+reader/writer lock: it is the start of the 31 character name: 0x00000001
+reader/writer lock: the reported length of a 32 character name: 0x0000001F
+reader/writer lock: it is the start of the 32 character name: 0x00000001
+reader/writer lock: the reported length of a 40 character name: 0x0000001F
+reader/writer lock: it is the start of the 40 character name: 0x00000001
+reader/writer lock: info with a size of 0: 0x00000000
+reader/writer lock: the end of what it writes with a size of 0: 0x00000000
+reader/writer lock: info with a size of 4: 0x00000000
+reader/writer lock: the end of what it writes with a size of 4: 0x00000000
+reader/writer lock: info with a size of 8: 0x00000000
+reader/writer lock: the end of what it writes with a size of 8: 0x00000008
+reader/writer lock: info with a size of 40: 0x00000000
+reader/writer lock: the end of what it writes with a size of 40: 0x00000028
+reader/writer lock: info with a size of 56: 0x00000000
+reader/writer lock: the end of what it writes with a size of 56: 0x00000038
+message pipe: info: 0x00000000
+message pipe: the attribute: 0x00000008
+message pipe: the buffer size: 0x00001000
+message pipe: the free size: 0x00001000
+message pipe: the waiting senders: 0x00000000
+message pipe: the waiting receivers: 0x00000000
+message pipe: the free size after sending 10: 0x00000FF6
+message pipe: the free size after receiving 4: 0x00000FFA
+message pipe: the waiting receivers with 2 of them: 0x00000002
+message pipe: the waiting senders with them: 0x00000000
+message pipe: the first receiver got its part: 0x00000000
+message pipe: the second receiver got its part: 0x00000000
+message pipe: the free size when full: 0x00000000
+message pipe: the waiting senders with 2 of them: 0x00000002
+message pipe: the waiting receivers with them: 0x00000000
+message pipe: the first sender sent: 0x00000000
+message pipe: the second sender sent: 0x00000000
+message pipe: the free size after both sent: 0x00000FF0
+message pipe: the reported length of a 31 character name: 0x0000001F
+message pipe: it is the start of the 31 character name: 0x00000001
+message pipe: the reported length of a 32 character name: 0x0000001F
+message pipe: it is the start of the 32 character name: 0x00000001
+message pipe: the reported length of a 40 character name: 0x0000001F
+message pipe: it is the start of the 40 character name: 0x00000001
+message pipe: info with a size of 0: 0x00000000
+message pipe: the end of what it writes with a size of 0: 0x00000000
+message pipe: info with a size of 4: 0x00000000
+message pipe: the end of what it writes with a size of 4: 0x00000000
+message pipe: info with a size of 8: 0x00000000
+message pipe: the end of what it writes with a size of 8: 0x00000008
+message pipe: info with a size of 40: 0x00000000
+message pipe: the end of what it writes with a size of 40: 0x00000028
+message pipe: info with a size of 56: 0x00000000
+message pipe: the end of what it writes with a size of 56: 0x00000038
+DONE

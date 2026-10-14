@@ -1,0 +1,17 @@
+a reader behind a waiting writer while a read lock is held: it got the lock: 0x00000000
+a reader behind a waiting writer: the writer's result after the read unlock: 0x00000000
+the writer times out: its result: 0x80028005
+the writer times out: the reader got its lock after it: 0x00000001
+the writer times out: the reader's result: 0x00000000
+priority queue, the writer drops below the reader: change its priority: 0x00000000
+priority queue, the writer drops below the reader: the reader got its lock: 0x00000000
+priority queue, the writer drops below the reader: the writer is done: 0x00000000
+priority queue, the writer drops below the reader: the writer's result: 0x00000000
+priority queue, the writer drops below the reader: the reader's result: 0x00000000
+the writer runs a callback: notify it: 0x00000000
+the writer runs a callback: it ran: 0x00000001
+while the writer runs a callback: the reader got its lock: 0x00000001
+after the callback: the reader is done: 0x00000001
+the writer runs a callback: the writer's result: 0x00000000
+the writer runs a callback: the reader's result: 0x00000000
+DONE

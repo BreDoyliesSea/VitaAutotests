@@ -46,7 +46,7 @@ int main(void) {
     sema = sceKernelCreateSema("sema", 0, 0, 2, NULL);
 
     print_info("running", sceKernelGetThreadId());
-    target = sceKernelCreateThread("target", blocked_thread, 0x10000100, 0x4000, 0, 0, NULL);
+    target = sceKernelCreateThread("target", blocked_thread, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, 0, 0, NULL);
     print_info("new", target);
     sceKernelStartThread(target, 0, NULL);
     test_wait_until_waiting(target);
@@ -68,7 +68,7 @@ int main(void) {
     sceKernelDeleteThread(target);
 
     // Waiting for a thread that never started
-    target = sceKernelCreateThread("dormant", blocked_thread, 0x10000100, 0x4000, 0, 0, NULL);
+    target = sceKernelCreateThread("dormant", blocked_thread, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, 0, 0, NULL);
     SceUInt timeout = 1000;
     int status = 0xDEAD;
     PRINT("wait for the end of a thread that never started", sceKernelWaitThreadEnd(target, &status, &timeout));
@@ -76,7 +76,7 @@ int main(void) {
     sceKernelDeleteThread(target);
 
     // Starting with no argument block
-    const SceUID thread = sceKernelCreateThread("args", args_thread, 0x10000100, 0x4000, 0, 0, NULL);
+    const SceUID thread = sceKernelCreateThread("args", args_thread, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, 0, 0, NULL);
     PRINT("start with no argument block", sceKernelStartThread(thread, 0, NULL));
     sceKernelWaitThreadEnd(thread, NULL, NULL);
     PRINT("the argument size", arg_size);
@@ -89,7 +89,7 @@ int main(void) {
     const int free_size = sceKernelGetThreadStackFreeSize(0);
     PRINT("the stack free size is positive", free_size > 0);
     PRINT("the CPU affinity of the running thread", sceKernelGetThreadCpuAffinityMask(0));
-    PRINT("change the affinity to core 0", sceKernelChangeThreadCpuAffinityMask(0, CPU_MASK_USER_0));
+    PRINT("change the affinity to core 0", sceKernelChangeThreadCpuAffinityMask(0, SCE_KERNEL_CPU_MASK_USER_0));
     PRINT("the affinity after the change", sceKernelGetThreadCpuAffinityMask(0));
     PRINT("change the affinity to 0", sceKernelChangeThreadCpuAffinityMask(0, 0));
     PRINT("change the affinity to a core games can't use", sceKernelChangeThreadCpuAffinityMask(0, 0x80000));

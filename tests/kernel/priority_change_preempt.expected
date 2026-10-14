@@ -1,0 +1,42 @@
+the main thread's priority: 0x00000080
+raise a ready thread above the caller: the change's result: 0x00000000
+raise a ready thread above the caller: the current priority right after it: 0x00000080
+raise a ready thread above the caller: step 0: 0x00000000
+raise a ready thread above the caller: step 1: 0x00000001
+raise a ready thread above the caller: step 2: 0x00000002
+raise a ready thread above the caller, the second call: the change's result: 0x000000A0
+raise a ready thread above the caller, the second call: the current priority right after it: 0x00000080
+raise a ready thread above the caller, the second call: step 0: 0x00000000
+raise a ready thread above the caller, the second call: step 1: 0x00000001
+raise a ready thread above the caller, the second call: step 2: 0x00000002
+lower the caller below a ready thread: the change's result: 0x00000000
+lower the caller below a ready thread: the current priority right after it: 0x000000B0
+lower the caller below a ready thread: step 0: 0x00000000
+lower the caller below a ready thread: step 1: 0x00000001
+lower the caller below a ready thread: step 2: 0x00000002
+lower the caller below a ready thread, the second call: the change's result: 0x00000080
+lower the caller below a ready thread, the second call: the current priority right after it: 0x000000B0
+lower the caller below a ready thread, the second call: step 0: 0x00000000
+lower the caller below a ready thread, the second call: step 1: 0x00000001
+lower the caller below a ready thread, the second call: step 2: 0x00000002
+change the caller to a ready thread's priority: the change's result: 0x00000000
+change the caller to a ready thread's priority: the current priority right after it: 0x000000A0
+change the caller to a ready thread's priority: step 0: 0x00000000
+change the caller to a ready thread's priority: step 1: 0x00000002
+change the caller to a ready thread's priority: step 2: 0x00000001
+change the caller to a ready thread's priority, the second call: the change's result: 0x00000080
+change the caller to a ready thread's priority, the second call: the current priority right after it: 0x000000A0
+change the caller to a ready thread's priority, the second call: step 0: 0x00000000
+change the caller to a ready thread's priority, the second call: step 1: 0x00000002
+change the caller to a ready thread's priority, the second call: step 2: 0x00000001
+change the caller to its own priority, with a ready thread at it: the change's result: 0x00000000
+change the caller to its own priority, with a ready thread at it: the current priority right after it: 0x00000080
+change the caller to its own priority, with a ready thread at it: step 0: 0x00000000
+change the caller to its own priority, with a ready thread at it: step 1: 0x00000002
+change the caller to its own priority, with a ready thread at it: step 2: 0x00000001
+change the caller to its own priority, with a ready thread at it, the second call: the change's result: 0x00000080
+change the caller to its own priority, with a ready thread at it, the second call: the current priority right after it: 0x00000080
+change the caller to its own priority, with a ready thread at it, the second call: step 0: 0x00000000
+change the caller to its own priority, with a ready thread at it, the second call: step 1: 0x00000002
+change the caller to its own priority, with a ready thread at it, the second call: step 2: 0x00000001
+DONE

@@ -43,10 +43,10 @@ int main(void) {
     // Creation
     PRINT("create with an empty name", test_created(sceKernelCreateMutex("", 0, 0, NULL)));
     PRINT("create with attribute 0x80000000", test_created(sceKernelCreateMutex("m", 0x80000000, 0, NULL)));
-    PRINT("create recursive with the largest count", test_created(sceKernelCreateMutex("m", MUTEX_ATTR_RECURSIVE, 0x7FFFFFFF, NULL)));
+    PRINT("create recursive with the largest count", test_created(sceKernelCreateMutex("m", SCE_KERNEL_MUTEX_ATTR_RECURSIVE, 0x7FFFFFFF, NULL)));
 
     // Counts on a recursive mutex this thread holds once
-    mutex = sceKernelCreateMutex("mutex", MUTEX_ATTR_RECURSIVE, 1, NULL);
+    mutex = sceKernelCreateMutex("mutex", SCE_KERNEL_MUTEX_ATTR_RECURSIVE, 1, NULL);
     PRINT("unlock 0", sceKernelUnlockMutex(mutex, 0));
     PRINT("unlock -1", sceKernelUnlockMutex(mutex, -1));
     PRINT("unlock 2 of 1", sceKernelUnlockMutex(mutex, 2));

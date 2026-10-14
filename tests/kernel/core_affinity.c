@@ -92,8 +92,8 @@ static int run_together(const int masks[WORKERS]) {
 static void run_after(int first_priority, int second_priority, int tenths) {
     log_count = 0;
     progress[0] = 0;
-    const SceUID first = start_worker(0, first_priority, CPU_MASK_USER_1);
-    const SceUID second = start_worker(1, second_priority, CPU_MASK_USER_1);
+    const SceUID first = start_worker(0, first_priority, SCE_KERNEL_CPU_MASK_USER_1);
+    const SceUID second = start_worker(1, second_priority, SCE_KERNEL_CPU_MASK_USER_1);
     sceKernelSignalSema(go[0], 1);
     const SceUInt64 deadline = sceKernelGetProcessTimeWide() + DEADLINE_US;
     while (progress[0] < SPINS / 10 * tenths && sceKernelGetProcessTimeWide() < deadline)
@@ -115,14 +115,14 @@ int main(void) {
 
     const SceUID unpinned = sceKernelCreateThread("unpinned", worker, PRIO_HIGH, 0x4000, 0, 0, NULL);
     PRINT("the affinity of a thread created with mask 0", sceKernelGetThreadCpuAffinityMask(unpinned));
-    PRINT("change the affinity of a thread created with mask 0", sceKernelChangeThreadCpuAffinityMask(unpinned, CPU_MASK_USER_1));
+    PRINT("change the affinity of a thread created with mask 0", sceKernelChangeThreadCpuAffinityMask(unpinned, SCE_KERNEL_CPU_MASK_USER_1));
     sceKernelDeleteThread(unpinned);
 
     // Keeps the main thread off core 1, where the workers run
-    PRINT("change the affinity of the main thread", sceKernelChangeThreadCpuAffinityMask(0, CPU_MASK_USER_0));
+    PRINT("change the affinity of the main thread", sceKernelChangeThreadCpuAffinityMask(0, SCE_KERNEL_CPU_MASK_USER_0));
 
-    const int one_core[WORKERS] = { CPU_MASK_USER_1, CPU_MASK_USER_1, CPU_MASK_USER_1 };
-    const int own_cores[WORKERS] = { CPU_MASK_USER_0, CPU_MASK_USER_1, CPU_MASK_USER_2 };
+    const int one_core[WORKERS] = { SCE_KERNEL_CPU_MASK_USER_1, SCE_KERNEL_CPU_MASK_USER_1, SCE_KERNEL_CPU_MASK_USER_1 };
+    const int own_cores[WORKERS] = { SCE_KERNEL_CPU_MASK_USER_0, SCE_KERNEL_CPU_MASK_USER_1, SCE_KERNEL_CPU_MASK_USER_2 };
     PRINT("same priority threads on one core run one after another", run_together(one_core));
     with_syscalls = 1;
     PRINT("they do with syscalls too", run_together(one_core));

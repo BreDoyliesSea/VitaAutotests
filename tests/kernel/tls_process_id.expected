@@ -1,0 +1,15 @@
+the process ID is 0: 0x00000000
+the process ID is positive: 0x00000001
+main thread: slot 0 before reading the process ID is 0: 0x00000001
+main thread: slot 0 before reading the process ID is the process ID: 0x00000000
+main thread: slot 0 after reading the process ID is the process ID: 0x00000000
+main thread: thread info reports the process ID: 0x00000001
+a thread created before the process ID was read: slot 0 at its start is 0: 0x00000001
+a thread created before the process ID was read: slot 0 at its start is the process ID: 0x00000000
+a thread created before the process ID was read: slot 0 after it read the process ID is the process ID: 0x00000000
+a thread created before the process ID was read: it reads the same process ID: 0x00000001
+a thread created after it was read: slot 0 at its start is 0: 0x00000001
+a thread created after it was read: slot 0 at its start is the process ID: 0x00000000
+a thread created after it was read: slot 0 after it read the process ID is the process ID: 0x00000000
+a thread created after it was read: it reads the same process ID: 0x00000001
+DONE

@@ -1,0 +1,4 @@
+a delay of -1: the wait type: 0x00000001
+a delay of -1: still delaying after 100 ms: 0x00000001
+a delay of -1: it ended: 0x00000000
+DONE

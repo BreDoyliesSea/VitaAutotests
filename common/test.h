@@ -9,6 +9,8 @@
 #include <psp2/kernel/processmgr.h>
 #include <psp2/kernel/threadmgr.h>
 
+#include "threadmgr_extra.h"
+
 // Every output line also goes to ux0:data/vita-autotests/output/<test name>.txt, since a Vita's
 // debug output can drop lines in a burst. main.c sets the path before it runs the test.
 #define TEST_OUTPUT_DIR "ux0:data/vita-autotests/output"
@@ -57,7 +59,7 @@ static inline int test_created(SceUID uid) {
 
 // Starts entry on a new thread, passing it a copy of arg
 static inline SceUID test_start_thread_arg(SceKernelThreadEntry entry, int arg) {
-    const SceUID thread = sceKernelCreateThread("test", entry, 0x10000100, 0x4000, 0, 0, NULL);
+    const SceUID thread = sceKernelCreateThread("test", entry, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, 0, 0, NULL);
     sceKernelStartThread(thread, sizeof(arg), &arg);
     return thread;
 }

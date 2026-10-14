@@ -1,0 +1,71 @@
+semaphore: the accepted bits: 0x00002080
+semaphore: the error of the lowest rejected bit: 0x8002000E
+semaphore: every rejected bit gets that error: 0x00000001
+semaphore: the bits its info reports as given: 0x00002080
+semaphore: every one created deletes: 0x00000001
+semaphore: create with every accepted bit: 0x00000000
+semaphore: the attribute its info reports for them: 0x00002080
+event flag: the accepted bits: 0x00003080
+event flag: the error of the lowest rejected bit: 0x8002000E
+event flag: every rejected bit gets that error: 0x00000001
+event flag: the bits its info reports as given: 0x00003080
+event flag: every one created deletes: 0x00000001
+event flag: create with every accepted bit: 0x00000000
+event flag: the attribute its info reports for them: 0x00003080
+mutex: the accepted bits: 0x00002082
+mutex: the error of the lowest rejected bit: 0x8002000E
+mutex: every rejected bit gets that error: 0x00000000
+mutex: the bits its info reports as given: 0x00002082
+mutex: every one created deletes: 0x00000001
+mutex: create with every accepted bit: 0x00000000
+mutex: the attribute its info reports for them: 0x00002082
+lightweight mutex: the accepted bits: 0x00002002
+lightweight mutex: the error of the lowest rejected bit: 0x8002000E
+lightweight mutex: every rejected bit gets that error: 0x00000001
+lightweight mutex: the bits its info reports as given: 0x00002002
+lightweight mutex: every one created deletes: 0x00000001
+lightweight mutex: create with every accepted bit: 0x00000000
+lightweight mutex: the attribute its info reports for them: 0x00002002
+condition variable: the accepted bits: 0x00002000
+condition variable: the error of the lowest rejected bit: 0x8002000E
+condition variable: every rejected bit gets that error: 0x00000001
+condition variable: the bits its info reports as given: 0x00002000
+condition variable: every one created deletes: 0x00000001
+condition variable: create with every accepted bit: 0x00000000
+condition variable: the attribute its info reports for them: 0x00002000
+lightweight condition variable: the accepted bits: 0x00002000
+lightweight condition variable: the error of the lowest rejected bit: 0x8002000E
+lightweight condition variable: every rejected bit gets that error: 0x00000001
+lightweight condition variable: the bits its info reports as given: 0x00002000
+lightweight condition variable: every one created deletes: 0x00000001
+lightweight condition variable: create with every accepted bit: 0x00000000
+lightweight condition variable: the attribute its info reports for them: 0x00002000
+reader/writer lock: the accepted bits: 0x00002086
+reader/writer lock: the error of the lowest rejected bit: 0x8002000E
+reader/writer lock: every rejected bit gets that error: 0x00000001
+reader/writer lock: the bits its info reports as given: 0x00002086
+reader/writer lock: every one created deletes: 0x00000001
+reader/writer lock: create with every accepted bit: 0x00000000
+reader/writer lock: the attribute its info reports for them: 0x00002086
+message pipe: the accepted bits: 0x0000098F
+message pipe: the error of the lowest rejected bit: 0x8002000E
+message pipe: every rejected bit gets that error: 0x00000001
+message pipe: the bits its info reports as given: 0x0000098F
+message pipe: every one created deletes: 0x00000001
+message pipe: create with every accepted bit: 0x00000000
+message pipe: the attribute its info reports for them: 0x0000098F
+simple event: the accepted bits: 0x00002980
+simple event: the error of the lowest rejected bit: 0x8002000E
+simple event: every rejected bit gets that error: 0x00000001
+simple event: the bits its info reports as given: 0x00002980
+simple event: every one created deletes: 0x00000001
+simple event: create with every accepted bit: 0x00000000
+simple event: the attribute its info reports for them: 0x00002980
+timer: the accepted bits: 0x00002980
+timer: the error of the lowest rejected bit: 0x8002000E
+timer: every rejected bit gets that error: 0x00000001
+timer: the bits its info reports as given: 0x00002980
+timer: every one created deletes: 0x00000001
+timer: create with every accepted bit: 0x00000000
+timer: the attribute its info reports for them: 0x00002980
+DONE

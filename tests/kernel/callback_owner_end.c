@@ -56,7 +56,7 @@ int main(void) {
     sema = sceKernelCreateSema("sema", 0, 0, 1, NULL);
 
     // A thread that ended
-    const SceUID owner = sceKernelCreateThread("owner", owner_thread, 0x10000100, 0x4000, 0, 0, NULL);
+    const SceUID owner = sceKernelCreateThread("owner", owner_thread, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, 0, 0, NULL);
     sceKernelStartThread(owner, 0, NULL);
     sceKernelWaitThreadEnd(owner, NULL, NULL);
     print_callback("ended owner", owner);

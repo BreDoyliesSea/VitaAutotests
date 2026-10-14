@@ -50,7 +50,7 @@ int main(void) {
     // Creation
     PRINT("create with an empty name", test_created(sceKernelCreateRWLock("", 0, NULL)));
     PRINT("create with attribute 0x80000000", test_created(sceKernelCreateRWLock("r", 0x80000000, NULL)));
-    PRINT("create with the recursive attribute", test_created(sceKernelCreateRWLock("r", MUTEX_ATTR_RECURSIVE, NULL)));
+    PRINT("create with the recursive attribute", test_created(sceKernelCreateRWLock("r", RW_LOCK_ATTR_RECURSIVE, NULL)));
 
     // Read locks taken more than once by one thread
     rwlock = sceKernelCreateRWLock("rwlock", 0, NULL);

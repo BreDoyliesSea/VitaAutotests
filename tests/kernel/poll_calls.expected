@@ -1,0 +1,63 @@
+semaphore: poll 1 of 1: 0x00000000
+semaphore: poll 1 of 0: 0x80028102
+semaphore: poll 3 of 2: 0x80028102
+semaphore: the count after the failed poll: 0x00000002
+semaphore: a waiter for 2 still waits with 1 there: 0x00000001
+semaphore: poll 1 with a waiter for 2 queued: 0x80028102
+semaphore: the count after: 0x00000001
+semaphore: the waiter still waits: 0x00000001
+semaphore: the waiter for 2 got it after: 0x00000000
+semaphore: poll right after a signal for a waiter: 0x80028102
+semaphore: the count after: 0x00000000
+semaphore: the waiter: 0x00000000
+event flag: a failed poll that clears: 0x800280E3
+event flag: the bits it reports: 0x00000001
+event flag: the pattern after it: 0x00000001
+event flag: poll while another thread waits: 0x800280E2
+event flag: the bits it reports: 0x00000000
+event flag: poll right after a set for a waiter that clears: 0x800280E3
+event flag: the bits it reports: 0x00000000
+event flag: the pattern after: 0x00000000
+event flag: the waiter: 0x00000000
+mutex: try lock 2 of a free recursive mutex: 0x00000000
+mutex: try lock past the largest count: 0x80028143
+mutex: the count after the failed try lock: 0x00000002
+lightweight mutex: try lock a free one: 0x00000000
+lightweight mutex: try lock it again: 0x80028182
+lightweight mutex: the failed try lock leaves the work area: 0x00000001
+lightweight mutex: try lock one another thread holds: 0x80028185
+lightweight mutex: the failed try lock leaves the work area: 0x00000001
+lightweight mutex: try lock right after an unlock with a waiter: 0x80028185
+lightweight mutex: the waiter: 0x00000000
+reader/writer lock: try write lock right after a write unlock with a waiting reader: 0x800281E6
+reader/writer lock: try read lock right after it: 0x00000000
+reader/writer lock: the reader: 0x00000000
+reader/writer lock: try read lock right after a read unlock with a waiting writer: 0x800281E6
+reader/writer lock: the writer: 0x00000000
+message pipe: try send 4 with a receiver waiting for 8: 0x00000000
+message pipe: the size sent: 0x00000004
+message pipe: the receiver still waits: 0x00000001
+message pipe: try receive 2 with that receiver waiting: 0x80028223
+message pipe: the size received: 0x0000DEAD
+message pipe: what it received: 0x00000000
+message pipe: the receiver after a cancel: 0x80028007
+message pipe: try send 2 with a sender waiting for room: 0x80028222
+message pipe: the size sent: 0x0000DEAD
+message pipe: the sender still waits: 0x00000001
+message pipe: the sender after a cancel: 0x80028007
+message pipe: try receive a vector on an empty pipe: 0x80028223
+message pipe: its size: 0x00000000
+message pipe: try send a vector: 0x00000000
+message pipe: its size: 0x00000008
+message pipe: try receive a vector: 0x00000000
+message pipe: its size: 0x00000008
+message pipe: the data is in order across the parts: 0x00000001
+message pipe: try receive a vector of 8 with 3 there: 0x80028223
+message pipe: its size: 0x0000DEAD
+message pipe: the 3 are still there: 0x00000000
+message pipe: try send a vector on a full pipe: 0x80028222
+message pipe: its size: 0x00000000
+simple event: poll an auto reset event right after a set for a waiter: 0x80028202
+simple event: the pattern it reports: 0x00000000
+simple event: the waiter: 0x00000000
+DONE

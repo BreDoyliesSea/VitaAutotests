@@ -49,7 +49,7 @@ int main(void) {
     sceKernelWaitThreadEnd(thread, NULL, NULL);
     sceKernelDeleteThread(thread);
 
-    sceKernelChangeThreadPriority(0, 0x10000100);
+    sceKernelChangeThreadPriority(0, SCE_KERNEL_DEFAULT_PRIORITY_USER);
     test_exit();
     return 0;
 }

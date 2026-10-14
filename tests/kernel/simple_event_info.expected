@@ -1,0 +1,36 @@
+info: 0x00000000
+the attribute: 0x00002100
+the name: 0x00000001
+the waiting threads: 0x00000000
+the reserved word: 0x00000000
+after create: the pattern: 0x01000004
+after a set: the pattern: 0x03000004
+after a set: the low word of the user data: 0x9ABCDEF0
+after a set: the high word of the user data: 0x12345678
+after a clear: the pattern: 0x01000000
+after a clear: the low word of the user data: 0x9ABCDEF0
+after a clear: the high word of the user data: 0x12345678
+after a pulse with no waiter: the pattern: 0x01000000
+after a pulse with no waiter: the low word of the user data: 0x00000042
+after a pulse with no waiter: the high word of the user data: 0x00000000
+the waiting threads with 2 waiters: 0x00000002
+the waiting threads after they woke: 0x00000000
+the reported length of a 31 character name: 0x0000001F
+it is the start of the 31 character name: 0x00000001
+the reported length of a 32 character name: 0x0000001F
+it is the start of the 32 character name: 0x00000001
+the reported length of a 40 character name: 0x0000001F
+it is the start of the 40 character name: 0x00000001
+info with a size of 0: 0x00000000
+the end of what it writes with a size of 0: 0x00000000
+info with a size of 4: 0x00000000
+the end of what it writes with a size of 4: 0x00000000
+info with a size of 8: 0x00000000
+the end of what it writes with a size of 8: 0x00000008
+info with a size of 40: 0x00000000
+the end of what it writes with a size of 40: 0x00000028
+info with a size of 60: 0x00000000
+the end of what it writes with a size of 60: 0x0000003C
+info with a size of 68: 0x8002710B
+the end of what it writes with a size of 68: 0x00000000
+DONE

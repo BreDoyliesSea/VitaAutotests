@@ -7,8 +7,8 @@
 #include "test.h"
 #include "threadmgr_extra.h"
 
-#define LOW_PRIORITY 0x10000102
-#define MID_PRIORITY 0x10000100
+#define LOW_PRIORITY (SCE_KERNEL_DEFAULT_PRIORITY_USER + 2)
+#define MID_PRIORITY SCE_KERNEL_DEFAULT_PRIORITY_USER
 
 enum Kind { MUTEX, EVENT_FLAG, SIMPLE_EVENT, MSG_PIPE, WRITE_LOCK, LW_MUTEX, COND, COND_MUTEX, KIND_COUNT };
 static const char *const kind_names[] = {
@@ -36,7 +36,7 @@ static int waiter(SceSize args, void *argp) {
         }
         break;
     case EVENT_FLAG:
-        if (sceKernelWaitEventFlag(object, 0x1, EVF_WAITMODE_AND | EVF_WAITMODE_CLEAR_ALL, &bits, &timeout) == 0)
+        if (sceKernelWaitEventFlag(object, 0x1, SCE_EVENT_WAITAND | SCE_EVENT_WAITCLEAR, &bits, &timeout) == 0)
             order[i] = ++woken;
         break;
     case SIMPLE_EVENT:
@@ -79,7 +79,7 @@ static SceUID start(int i, int priority) {
 
 static int in_mutex_wait(SceUID thread) {
     SceKernelThreadInfo info = { .size = sizeof(info) };
-    return sceKernelGetThreadInfo(thread, &info) == 0 && info.waitType != 0 && info.waitType != 0x100;
+    return sceKernelGetThreadInfo(thread, &info) == 0 && info.waitType != 0 && info.waitType != WAIT_TYPE_COND;
 }
 
 static void run(int new_kind) {
@@ -88,23 +88,23 @@ static void run(int new_kind) {
     const char *name = kind_names[new_kind];
     int created = 0;
     switch (new_kind) {
-    case MUTEX: created = object = sceKernelCreateMutex("mutex", ATTR_TH_PRIO, 1, NULL); break;
-    case EVENT_FLAG: created = object = sceKernelCreateEventFlag("flag", ATTR_TH_PRIO | EVF_ATTR_MULTI, 0, NULL); break;
-    case SIMPLE_EVENT: created = object = sceKernelCreateSimpleEvent("event", ATTR_TH_PRIO | EVENT_ATTR_AUTO_RESET, 0, NULL); break;
+    case MUTEX: created = object = sceKernelCreateMutex("mutex", SCE_KERNEL_ATTR_THREAD_PRIO, 1, NULL); break;
+    case EVENT_FLAG: created = object = sceKernelCreateEventFlag("flag", SCE_KERNEL_ATTR_THREAD_PRIO | SCE_EVENT_WAITMULTIPLE, 0, NULL); break;
+    case SIMPLE_EVENT: created = object = sceKernelCreateSimpleEvent("event", SCE_KERNEL_ATTR_THREAD_PRIO | EVENT_ATTR_AUTO_RESET, 0, NULL); break;
     // Attribute 0x2 is the one that orders a message pipe's receivers by priority (queue_order)
-    case MSG_PIPE: created = object = sceKernelCreateMsgPipe("pipe", MSG_PIPE_TYPE_USER, 0x2, 64, NULL); break;
+    case MSG_PIPE: created = object = sceKernelCreateMsgPipe("pipe", MSG_PIPE_TYPE_USER, MSG_PIPE_ATTR_RECEIVE_PRIO, 64, NULL); break;
     case WRITE_LOCK:
-        created = object = sceKernelCreateRWLock("rwlock", ATTR_TH_PRIO, NULL);
+        created = object = sceKernelCreateRWLock("rwlock", SCE_KERNEL_ATTR_THREAD_PRIO, NULL);
         sceKernelLockWriteRWLock(object, NULL);
         break;
-    case LW_MUTEX: created = sceKernelCreateLwMutex(&lw_mutex, "lw mutex", ATTR_TH_PRIO, 1, NULL); break;
+    case LW_MUTEX: created = sceKernelCreateLwMutex(&lw_mutex, "lw mutex", SCE_KERNEL_ATTR_THREAD_PRIO, 1, NULL); break;
     case COND:
         mutex = sceKernelCreateMutex("cond mutex", 0, 0, NULL);
-        created = object = sceKernelCreateCond("cond", ATTR_TH_PRIO, mutex, NULL);
+        created = object = sceKernelCreateCond("cond", SCE_KERNEL_ATTR_THREAD_PRIO, mutex, NULL);
         break;
     case COND_MUTEX:
-        mutex = sceKernelCreateMutex("cond mutex", ATTR_TH_PRIO, 0, NULL);
-        created = object = sceKernelCreateCond("cond", ATTR_TH_PRIO, mutex, NULL);
+        mutex = sceKernelCreateMutex("cond mutex", SCE_KERNEL_ATTR_THREAD_PRIO, 0, NULL);
+        created = object = sceKernelCreateCond("cond", SCE_KERNEL_ATTR_THREAD_PRIO, mutex, NULL);
         break;
     }
     PRINTF(test_created(created), "%s: create it with the priority attribute", name);

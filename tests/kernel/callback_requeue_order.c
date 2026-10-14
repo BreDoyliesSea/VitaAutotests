@@ -32,8 +32,8 @@ static int waiter(SceSize args, void *argp) {
     case SEMA_FIFO:
     case SEMA_PRIO: result[i] = i == 0 ? sceKernelWaitSemaCB(object, 1, &timeout) : sceKernelWaitSema(object, 1, &timeout); break;
     case EVENT_FLAG:
-        result[i] = i == 0 ? sceKernelWaitEventFlagCB(object, 0x1, EVF_WAITMODE_AND | EVF_WAITMODE_CLEAR_ALL, &bits, &timeout)
-                           : sceKernelWaitEventFlag(object, 0x1, EVF_WAITMODE_AND | EVF_WAITMODE_CLEAR_ALL, &bits, &timeout);
+        result[i] = i == 0 ? sceKernelWaitEventFlagCB(object, 0x1, SCE_EVENT_WAITAND | SCE_EVENT_WAITCLEAR, &bits, &timeout)
+                           : sceKernelWaitEventFlag(object, 0x1, SCE_EVENT_WAITAND | SCE_EVENT_WAITCLEAR, &bits, &timeout);
         break;
     }
     if (i == 0)
@@ -61,8 +61,8 @@ static void run(const char *name, int new_kind) {
     kind = new_kind;
     switch (new_kind) {
     case SEMA_FIFO: object = sceKernelCreateSema("fifo", 0, 0, 1, NULL); break;
-    case SEMA_PRIO: object = sceKernelCreateSema("prio", ATTR_TH_PRIO, 0, 1, NULL); break;
-    case EVENT_FLAG: object = sceKernelCreateEventFlag("flag", EVF_ATTR_MULTI, 0, NULL); break;
+    case SEMA_PRIO: object = sceKernelCreateSema("prio", SCE_KERNEL_ATTR_THREAD_PRIO, 0, 1, NULL); break;
+    case EVENT_FLAG: object = sceKernelCreateEventFlag("flag", SCE_EVENT_WAITMULTIPLE, 0, NULL); break;
     }
     callback_done = 0;
     result[0] = result[1] = 0xDEAD;

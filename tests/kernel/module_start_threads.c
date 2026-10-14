@@ -8,9 +8,6 @@
 
 #include "test.h"
 
-#define THREAD_EVENT_START 0x4
-// Stands for every thread of the process, instead of one thread's UID
-#define ALL_USER_THREADS 0x10027
 #define MODULE_PATH "app0:probe_module.suprx"
 #define MAX_STARTS 8
 
@@ -63,7 +60,7 @@ static void sysmodule(const char *name, SceSysmoduleModuleId id) {
 }
 
 int main(void) {
-    const SceUID id = sceKernelRegisterThreadEventHandler("starts", ALL_USER_THREADS, THREAD_EVENT_START, handler, NULL);
+    const SceUID id = sceKernelRegisterThreadEventHandler("starts", SCE_KERNEL_THREAD_ID_PROCESS_ALL_ID, SCE_KERNEL_THREAD_EVENT_TYPE_START, handler, NULL);
     PRINT("register the handler", test_created(id));
 
     int status = 0;
