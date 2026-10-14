@@ -1,0 +1,22 @@
+a thread that isn't suspended: 0x8002802E
+suspend it: 0x00000001
+an unknown thread: 0x80028021
+thread ID 0: 0x80028021
+the calling thread: 0x80028022
+no registers at all: 0x80020006
+VFP registers 4 bytes too small: 0x8002000B
+VFP registers 4 bytes too big: 0x8002710B
+CPU registers 4 bytes too small, with VFP registers: 0x8002000B
+read the context: 0x00000000
+d8 has what the thread set: 0x00000001
+write new d8 and d16: 0x00000000
+read it again: 0x00000000
+the read shows the new d8: 0x00000001
+the read shows the new d16: 0x00000001
+the read shows the d8 the thread set: 0x00000000
+resume it: 0x00000000
+after the wait, the thread has the new d8: 0x00000001
+after the wait, the thread has the d8 it set: 0x00000000
+after the wait, the thread has the new d16: 0x00000000
+after the wait, the thread has the d16 it set: 0x00000000
+DONE

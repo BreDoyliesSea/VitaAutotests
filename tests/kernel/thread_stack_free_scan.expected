@@ -1,0 +1,20 @@
+untouched: more than 16 times the index of the changed word: 0x00000001
+a word changed: the free size of the untouched stack: 0x00000000
+a word changed: 16 times its index: 0x00000001
+byte 0 of the word changed: the free size of the untouched stack: 0x00000000
+byte 0 of the word changed: 16 times the index of its word: 0x00000001
+byte 0 of the word changed: 4 times its offset: 0x00000001
+byte 1 of the word changed: the free size of the untouched stack: 0x00000000
+byte 1 of the word changed: 16 times the index of its word: 0x00000001
+byte 1 of the word changed: 4 times its offset: 0x00000000
+byte 2 of the word changed: the free size of the untouched stack: 0x00000000
+byte 2 of the word changed: 16 times the index of its word: 0x00000001
+byte 2 of the word changed: 4 times its offset: 0x00000000
+byte 3 of the word changed: the free size of the untouched stack: 0x00000000
+byte 3 of the word changed: 16 times the index of its word: 0x00000001
+byte 3 of the word changed: 4 times its offset: 0x00000000
+a word set to 0xFFFFFFFF: the free size of the untouched stack: 0x00000001
+the word above the lowest changed: the free size: 0x00000010
+the lowest word set to 0xFFFFFFFF: the free size of the untouched stack: 0x00000001
+the lowest word set to 0xFFFFFFFF: 4 times the stack size: 0x00000000
+DONE
