@@ -1,0 +1,25 @@
+one shot: set the event: 0x00000000
+one shot: the first wait: 0x00000000
+one shot: a second wait: 0x80028005
+repeating: set the event: 0x00000000
+repeating: the first wait: 0x00000000
+repeating: the second wait: 0x00000000
+repeating: the third wait: 0x00000000
+repeating: a poll after 100 ms stopped: 0x80028202
+repeating: a wait after starting again: 0x00000000
+stopped: get the time: 0x00000000
+stopped: a new timer is at 0: 0x00000001
+stopped: set the time: 0x00000000
+stopped: the clock struct after the set: 0x00000000
+stopped: the wide time is the one set: 0x00000001
+running: get the time: 0x00000000
+running: it counted the delay from the time set: 0x00000001
+running: and not much more: 0x00000001
+running: setting the wide time returns the old time: 0x00000001
+running: it counts from the time set: 0x00000001
+running: set the time by the clock struct: 0x00000000
+running: the clock struct after the set is the old time: 0x00000001
+running: it counts from 0: 0x00000001
+stopped again: it keeps its time: 0x00000001
+started again: it goes on from that time: 0x00000001
+DONE

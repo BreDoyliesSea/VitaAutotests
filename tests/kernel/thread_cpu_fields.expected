@@ -1,0 +1,56 @@
+core 0: the CPU it reads for itself: 0x00000000
+core 0: the current CPU in its own info: 0x00000000
+core 0: the last CPU in its own info: 0x00000000
+core 0, spinning: the status: 0x00000001
+core 0, spinning: the current CPU: 0x00000000
+core 0, spinning: the last CPU: 0x00000000
+core 0, waiting: the status: 0x00000008
+core 0, waiting: the current CPU: 0xFFFFFFFF
+core 0, waiting: the last CPU: 0x00000000
+core 0, ended: the status: 0x00000010
+core 0, ended: the current CPU: 0xFFFFFFFF
+core 0, ended: the last CPU: 0x00000000
+core 1: the CPU it reads for itself: 0x00000001
+core 1: the current CPU in its own info: 0x00000001
+core 1: the last CPU in its own info: 0x00000001
+core 1, spinning: the status: 0x00000001
+core 1, spinning: the current CPU: 0x00000001
+core 1, spinning: the last CPU: 0x00000001
+core 1, waiting: the status: 0x00000008
+core 1, waiting: the current CPU: 0xFFFFFFFF
+core 1, waiting: the last CPU: 0x00000001
+core 1, ended: the status: 0x00000010
+core 1, ended: the current CPU: 0xFFFFFFFF
+core 1, ended: the last CPU: 0x00000001
+core 2: the CPU it reads for itself: 0x00000002
+core 2: the current CPU in its own info: 0x00000002
+core 2: the last CPU in its own info: 0x00000002
+core 2, spinning: the status: 0x00000001
+core 2, spinning: the current CPU: 0x00000002
+core 2, spinning: the last CPU: 0x00000002
+core 2, waiting: the status: 0x00000008
+core 2, waiting: the current CPU: 0xFFFFFFFF
+core 2, waiting: the last CPU: 0x00000002
+core 2, ended: the status: 0x00000010
+core 2, ended: the current CPU: 0xFFFFFFFF
+core 2, ended: the last CPU: 0x00000002
+move a spinning thread: the change: 0x00020000
+move a spinning thread: its affinity after it: 0x00040000
+move a spinning thread: it runs on core 2 while it spins: 0x00000001
+move a spinning thread: the current affinity in its info: 0x00040000
+move a spinning thread: the initial affinity in its info: 0x00020000
+move a spinning thread: the last CPU once it waits: 0x00000002
+the main thread's affinity by UID 0: 0x00010000
+the main thread's affinity by its UID: 0x00010000
+GetThreadCpuAffinityMask2 by UID 0: 0x00010000
+GetThreadCpuAffinityMask2 by its UID: 0x00010000
+created with 0x0: the affinity: 0x00000000
+created with 0x0: GetThreadCpuAffinityMask2: 0x00000000
+created with 0x20000: the affinity: 0x00020000
+created with 0x20000: GetThreadCpuAffinityMask2: 0x00020000
+created with 0x50000: the affinity: 0x00050000
+created with 0x50000: GetThreadCpuAffinityMask2: 0x00050000
+created with 0x70000: the affinity: 0x00070000
+created with 0x70000: GetThreadCpuAffinityMask2: 0x00070000
+GetThreadCpuAffinityMask2 for an unknown UID: 0x80028021
+DONE

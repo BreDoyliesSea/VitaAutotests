@@ -1,0 +1,84 @@
+return 0x00000000: the end wait: 0x00000000
+return 0x00000000: the status it gets: 0x00000000
+return 0x00000000: get the exit status: 0x00000000
+return 0x00000000: the exit status: 0x00000000
+return 0x00000000: the exit status in its info: 0x00000000
+return 0xFFFFFFFF: the end wait: 0x00000000
+return 0xFFFFFFFF: the status it gets: 0xFFFFFFFF
+return 0xFFFFFFFF: get the exit status: 0x00000000
+return 0xFFFFFFFF: the exit status: 0xFFFFFFFF
+return 0xFFFFFFFF: the exit status in its info: 0xFFFFFFFF
+return 0x7FFFFFFF: the end wait: 0x00000000
+return 0x7FFFFFFF: the status it gets: 0x7FFFFFFF
+return 0x7FFFFFFF: get the exit status: 0x00000000
+return 0x7FFFFFFF: the exit status: 0x7FFFFFFF
+return 0x7FFFFFFF: the exit status in its info: 0x7FFFFFFF
+return 0x80000000: the end wait: 0x00000000
+return 0x80000000: the status it gets: 0x80000000
+return 0x80000000: get the exit status: 0x00000000
+return 0x80000000: the exit status: 0x80000000
+return 0x80000000: the exit status in its info: 0x80000000
+return 0x80028027: the end wait: 0x00000000
+return 0x80028027: the status it gets: 0x80028027
+return 0x80028027: get the exit status: 0x80028027
+return 0x80028027: the exit status: 0x0000DEAD
+return 0x80028027: the exit status in its info: 0x80028027
+return 0x80028028: the end wait: 0x00000000
+return 0x80028028: the status it gets: 0x80028028
+return 0x80028028: get the exit status: 0x00000000
+return 0x80028028: the exit status: 0x80028028
+return 0x80028028: the exit status in its info: 0x80028028
+exit 0x00000000: the end wait: 0x00000000
+exit 0x00000000: the status it gets: 0x00000000
+exit 0x00000000: get the exit status: 0x00000000
+exit 0x00000000: the exit status: 0x00000000
+exit 0x00000000: the exit status in its info: 0x00000000
+exit 0xFFFFFFFF: the end wait: 0x00000000
+exit 0xFFFFFFFF: the status it gets: 0xFFFFFFFF
+exit 0xFFFFFFFF: get the exit status: 0x00000000
+exit 0xFFFFFFFF: the exit status: 0xFFFFFFFF
+exit 0xFFFFFFFF: the exit status in its info: 0xFFFFFFFF
+exit 0x7FFFFFFF: the end wait: 0x00000000
+exit 0x7FFFFFFF: the status it gets: 0x7FFFFFFF
+exit 0x7FFFFFFF: get the exit status: 0x00000000
+exit 0x7FFFFFFF: the exit status: 0x7FFFFFFF
+exit 0x7FFFFFFF: the exit status in its info: 0x7FFFFFFF
+exit 0x80000000: the end wait: 0x00000000
+exit 0x80000000: the status it gets: 0x80000000
+exit 0x80000000: get the exit status: 0x00000000
+exit 0x80000000: the exit status: 0x80000000
+exit 0x80000000: the exit status in its info: 0x80000000
+exit 0x80028027: the end wait: 0x00000000
+exit 0x80028027: the status it gets: 0x80028027
+exit 0x80028027: get the exit status: 0x80028027
+exit 0x80028027: the exit status: 0x0000DEAD
+exit 0x80028027: the exit status in its info: 0x80028027
+exit 0x80028028: the end wait: 0x00000000
+exit 0x80028028: the status it gets: 0x80028028
+exit 0x80028028: get the exit status: 0x00000000
+exit 0x80028028: the exit status: 0x80028028
+exit 0x80028028: the exit status in its info: 0x80028028
+exit and delete 0xFFFFFFFF: the end wait: 0x00000000
+exit and delete 0xFFFFFFFF: the status it gets: 0xFFFFFFFF
+exit and delete 0x80000000: the end wait: 0x00000000
+exit and delete 0x80000000: the status it gets: 0x80000000
+exit and delete 0x80028027: the end wait: 0x00000000
+exit and delete 0x80028027: the status it gets: 0x80028027
+an end wait that times out: 0x80028005
+its time left: 0x00000000
+its status is untouched: 0x00000001
+an end wait with callbacks that times out: 0x80028005
+its time left: 0x00000000
+its status is untouched: 0x00000001
+two waiters: the one without callbacks: 0x00000000
+two waiters: its status: 0x00000005
+two waiters: the one with callbacks: 0x00000000
+two waiters: its status: 0x00000005
+an end wait for an ended thread: 0x00000000
+its status: 0x00000005
+its time left: 0x00000002
+an end wait with callbacks for an ended thread: 0x00000000
+its status: 0x00000005
+its time left: 0x00000002
+an end wait for an ended thread with no status pointer: 0x00000000
+DONE

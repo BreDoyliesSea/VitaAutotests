@@ -311,6 +311,13 @@ typedef struct ThreadVfpRegisters {
     SceUInt32 reg[64];
 } ThreadVfpRegisters;
 
+// Variants of sceKernelDelayThread and sceKernelDelayThreadCB with 200 in their names
+int sceKernelDelayThread200(SceUInt32 delay);
+int sceKernelDelayThreadCB200(SceUInt32 delay);
+
+// Another call that returns a thread's CPU affinity mask
+SceInt32 sceKernelGetThreadCpuAffinityMask2(SceUID thid);
+
 // Reads the registers of a thread that isn't running
 int sceKernelGetThreadContextForVM(SceUID thid, ThreadCpuRegisters *cpu, ThreadVfpRegisters *vfp);
 

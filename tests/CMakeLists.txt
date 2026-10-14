@@ -120,6 +120,15 @@ vita_test(thread_signal_wait_id kernel/thread_signal_wait_id.c)
 vita_test(thread_context_for_vm kernel/thread_context_for_vm.c)
 vita_test(tls_start_slots kernel/tls_start_slots.c)
 
+vita_test(thread_limits kernel/thread_limits.c)
+vita_test(thread_names kernel/thread_names.c)
+vita_test(thread_opt_param kernel/thread_opt_param.c)
+vita_test(thread_exit_status kernel/thread_exit_status.c)
+vita_test(thread_cpu_fields kernel/thread_cpu_fields.c)
+vita_test(delay_variants kernel/delay_variants.c)
+vita_test(delay_negative kernel/delay_negative.c)
+vita_test(timer_modes kernel/timer_modes.c)
+
 # The module module_start_thread and module_start_vfp load. vita_create_self runs in a function, since it adds its flags
 # to the scope it runs in, where they would also apply to the test vpk's self.
 add_executable(probe_module kernel/probe_module/probe_module.c)
