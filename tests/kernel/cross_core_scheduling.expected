@@ -1,0 +1,48 @@
+T at 0x90 woken while spinner 0 runs at 0xB0 and spinner 1 at 0xA0: what ran before: 0x00000003
+T at 0x90 woken while spinner 0 runs at 0xB0 and spinner 1 at 0xA0: what ran after: 0x00000006
+T at 0x90 woken while spinner 0 runs at 0xA0 and spinner 1 at 0xB0: what ran before: 0x00000003
+T at 0x90 woken while spinner 0 runs at 0xA0 and spinner 1 at 0xB0: what ran after: 0x00000005
+T at 0x90 woken while spinner 0 runs at 0xA0 and spinner 1 at 0xA0: what ran before: 0x00000003
+T at 0x90 woken while both spinners run at 0xA0: T and one spinner ran after: 0x00000001
+T at 0x70 woken while spinner 0 runs at 0xB0 and spinner 1 at 0xA0: what ran before: 0x00000003
+T at 0x70 woken while spinner 0 runs at 0xB0 and spinner 1 at 0xA0: what ran after: 0x00000006
+T at 0x70 woken while spinner 0 runs at 0xA0 and spinner 1 at 0xB0: what ran before: 0x00000003
+T at 0x70 woken while spinner 0 runs at 0xA0 and spinner 1 at 0xB0: what ran after: 0x00000005
+T at 0x70 woken while spinner 0 runs at 0xA0 and spinner 1 at 0xA0: what ran before: 0x00000003
+T at 0x70 woken while both spinners run at 0xA0: T and one spinner ran after: 0x00000001
+T at 0x70 woken while spinner 0 runs at 0x78 and spinner 1 at 0xA0: what ran before: 0x00000003
+T at 0x70 woken while spinner 0 runs at 0x78 and spinner 1 at 0xA0: what ran after: 0x00000005
+T at 0x70 woken while spinner 0 runs at 0xA0 and spinner 1 at 0x78: what ran before: 0x00000003
+T at 0x70 woken while spinner 0 runs at 0xA0 and spinner 1 at 0x78: what ran after: 0x00000006
+the default mask, cores 0 and 1 busy: what ran: 0x00000007
+the default mask, cores 0 and 1 busy: T's last core is core 2: 0x00000001
+no change: T last ran on core 0 or 1: 0x00000001
+no change: T's status while both cores are busy: 0x00000004
+no change: the change succeeds: 0x00000001
+no change: T's status after the change: 0x00000004
+no change: the core T didn't last run on frees up: T runs: 0x00000000
+no change: then its last core frees up too: T runs: 0x00000001
+priority changed to 0xA0: T last ran on core 0 or 1: 0x00000001
+priority changed to 0xA0: T's status while both cores are busy: 0x00000004
+priority changed to 0xA0: the change succeeds: 0x00000001
+priority changed to 0xA0: T's status after the change: 0x00000002
+priority changed to 0xA0: the core T didn't last run on frees up: T runs: 0x00000001
+priority changed to 0xA0: then its last core frees up too: T runs: 0x00000001
+mask changed to the other core: T last ran on core 0 or 1: 0x00000001
+mask changed to the other core: T's status while both cores are busy: 0x00000004
+mask changed to the other core: the change succeeds: 0x00000001
+mask changed to the other core: T's status after the change: 0x00000004
+mask changed to the other core: the core T didn't last run on frees up: T runs: 0x00000001
+mask changed to the other core: then its last core frees up too: T runs: 0x00000001
+T at 0x70 started while both its cores are busy: its status: 0x00000004
+T at 0x70 started while both its cores are busy, then the other core too: T runs: 0x00000001
+T at 0x70 started while both its cores are busy: its status: 0x00000004
+T at 0x70 started while both its cores are busy, then the other core too: T runs: 0x00000001
+T at 0xA0 started while both its cores are busy: its status: 0x00000002
+T at 0xA0 started while both its cores are busy, then core 0 frees up: T runs: 0x00000001
+T at 0xA0 started while both its cores are busy, then the other core too: T runs: 0x00000001
+T at 0xA0 started while both its cores are busy: its status: 0x00000002
+T at 0xA0 started while both its cores are busy, then core 1 frees up: T runs: 0x00000001
+T at 0xA0 started while both its cores are busy, then the other core too: T runs: 0x00000001
+three threads at 0xA0 started while both cores are busy, then core 0 frees up: run order: 0x00000012
+DONE

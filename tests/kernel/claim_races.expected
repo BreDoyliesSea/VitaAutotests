@@ -1,0 +1,39 @@
+timeout then signal: W's status once the timeout passed: 0x00000002
+timeout then signal: the signal: 0x00000000
+timeout then signal: the count after the signal: 0x00000001
+timeout then signal: W's result: 0x80028005
+timeout then signal: the count after W ran: 0x00000001
+timeout then signal: W's callback ran: 0x00000000
+signal then delete: W's status after the signal: 0x00000002
+signal then delete: the delete: 0x00000000
+signal then delete: W's result: 0x00000000
+signal then delete: the count after W ran: 0xFFFFFFFF
+signal then delete: W's callback ran: 0x00000000
+signal then cancel: the cancel: 0x00000000
+signal then cancel: the waiters it counts: 0x00000000
+signal then cancel: W's result: 0x00000000
+signal then cancel: the count after W ran: 0x00000000
+signal then cancel: W's callback ran: 0x00000000
+signal then the timeout passes: W's status: 0x00000002
+signal then the timeout passes: W's result: 0x00000000
+signal then the timeout passes: the count after W ran: 0x00000000
+signal then the timeout passes: W's callback ran: 0x00000000
+with callbacks, signal then notify: the notify: 0x00000000
+with callbacks, signal then notify: W's status: 0x00000002
+with callbacks, signal then notify: W's result: 0x00000000
+with callbacks, signal then notify: the count after W ran: 0x00000000
+with callbacks, signal then notify: W's callback ran: 0x00000001
+with callbacks, notify then signal: the notify: 0x00000000
+with callbacks, notify then signal: W's status after the notify: 0x00000002
+with callbacks, notify then signal: the signal: 0x00000000
+with callbacks, notify then signal: the count after the signal: 0x00000001
+with callbacks, notify then signal: W's result: 0x00000000
+with callbacks, notify then signal: the count after W ran: 0x00000000
+with callbacks, notify then signal: W's callback ran: 0x00000001
+mutex unlock then delete: the unlock: 0x00000000
+mutex unlock then delete: W's status after the unlock: 0x00000002
+mutex unlock then delete: the delete: 0x00000000
+mutex unlock then delete: W's result: 0x00000000
+mutex unlock then delete: the count after W ran: 0x00000000
+mutex unlock then delete: W's callback ran: 0x00000000
+DONE

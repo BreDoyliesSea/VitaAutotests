@@ -1,0 +1,26 @@
+mutex: the owner's current priority while the waiter waits: 0x000000B0
+mutex: the waiter's result: 0x00000000
+mutex: step 0: 0x00000002
+mutex: step 1: 0x00000001
+mutex: step 2: 0x00000003
+priority mutex: the owner's current priority while the waiter waits: 0x000000B0
+priority mutex: the waiter's result: 0x00000000
+priority mutex: step 0: 0x00000002
+priority mutex: step 1: 0x00000001
+priority mutex: step 2: 0x00000003
+lightweight mutex: the owner's current priority while the waiter waits: 0x000000B0
+lightweight mutex: the waiter's result: 0x00000000
+lightweight mutex: step 0: 0x00000002
+lightweight mutex: step 1: 0x00000001
+lightweight mutex: step 2: 0x00000003
+priority lightweight mutex: the owner's current priority while the waiter waits: 0x000000B0
+priority lightweight mutex: the waiter's result: 0x00000000
+priority lightweight mutex: step 0: 0x00000002
+priority lightweight mutex: step 1: 0x00000001
+priority lightweight mutex: step 2: 0x00000003
+rwlock write lock: the owner's current priority while the waiter waits: 0x000000B0
+rwlock write lock: the waiter's result: 0x00000000
+rwlock write lock: step 0: 0x00000002
+rwlock write lock: step 1: 0x00000001
+rwlock write lock: step 2: 0x00000003
+DONE

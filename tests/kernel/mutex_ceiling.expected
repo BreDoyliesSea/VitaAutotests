@@ -1,0 +1,56 @@
+create with the attribute and no option struct: 0x80020005
+create with an option struct of size 4: 0x00000000
+create without the attribute but with a ceiling: 0x00000000
+without the attribute: the ceiling in its info: 0x00000000
+create with the ceiling 0x0: 0x00000000
+the ceiling 0x0: the ceiling in its info: 0x000000A0
+create with the ceiling 0x3F: 0x80028023
+create with the ceiling 0x40: 0x00000000
+the ceiling 0x40: the ceiling in its info: 0x00000040
+create with the ceiling 0x7F: 0x00000000
+the ceiling 0x7F: the ceiling in its info: 0x0000007F
+create with the ceiling 0x80: 0x00000000
+the ceiling 0x80: the ceiling in its info: 0x00000080
+create with the ceiling 0xBF: 0x00000000
+the ceiling 0xBF: the ceiling in its info: 0x000000BF
+create with the ceiling 0xC0: 0x80028023
+create with the ceiling 0x10000100: 0x00000000
+the ceiling 0x10000100: the ceiling in its info: 0x000000A0
+create with the ceiling 0x100000E0: 0x00000000
+the ceiling 0x100000E0: the ceiling in its info: 0x00000080
+an owner below the ceiling: the priority before the lock: 0x000000B0
+an owner below the ceiling: the lock: 0x00000000
+an owner below the ceiling: the priority while it holds it: 0x00000080
+an owner below the ceiling: the priority after the unlock: 0x000000B0
+an owner above the ceiling: the priority before the lock: 0x00000070
+an owner above the ceiling: the lock: 0x00000000
+an owner above the ceiling: the priority while it holds it: 0x00000070
+an owner above the ceiling: the priority after the unlock: 0x00000070
+nested ceilings 0x90 then 0x80: the priority before the lock: 0x000000B0
+nested ceilings 0x90 then 0x80: the lock: 0x00000000
+nested ceilings 0x90 then 0x80: the priority while it holds it: 0x00000090
+nested ceilings 0x90 then 0x80: the priority while it holds both: 0x00000080
+nested ceilings 0x90 then 0x80: the priority after unlocking the inner one: 0x00000090
+nested ceilings 0x90 then 0x80: the priority after the unlock: 0x000000B0
+nested ceilings 0x80 then 0x90: the priority before the lock: 0x000000B0
+nested ceilings 0x80 then 0x90: the lock: 0x00000000
+nested ceilings 0x80 then 0x90: the priority while it holds it: 0x00000080
+nested ceilings 0x80 then 0x90: the priority while it holds both: 0x00000080
+nested ceilings 0x80 then 0x90: the priority after unlocking the inner one: 0x00000080
+nested ceilings 0x80 then 0x90: the priority after the unlock: 0x000000B0
+a ceiling of 0x70 for an owner at 0xB0: the priority before the lock: 0x000000B0
+a ceiling of 0x70 for an owner at 0xB0: the lock: 0x00000000
+a ceiling of 0x70 for an owner at 0xB0: the priority while it holds it: 0x00000070
+a ceiling of 0x70 for an owner at 0xB0: the priority after the unlock: 0x000000B0
+a priority change while it holds the mutex: the change: 0x00000000
+a priority change while it holds the mutex: the priority after it: 0x00000080
+a priority change while it holds the mutex: the priority after the unlock: 0x000000A8
+a mutex with a ceiling of 0x80, a middle priority thread on the owner's core: the owner's current priority in its info: 0x00000080
+a mutex with a ceiling of 0x80, a middle priority thread on the owner's core: the owner's initial priority in its info: 0x000000B0
+a mutex with a ceiling of 0x80, a middle priority thread on the owner's core: step 0: 0x00000001
+a mutex with a ceiling of 0x80, a middle priority thread on the owner's core: step 1: 0x00000002
+a rwlock with the bit 0x4, a middle priority thread on the owner's core: the owner's current priority in its info: 0x000000B0
+a rwlock with the bit 0x4, a middle priority thread on the owner's core: the owner's initial priority in its info: 0x000000B0
+a rwlock with the bit 0x4, a middle priority thread on the owner's core: step 0: 0x00000002
+a rwlock with the bit 0x4, a middle priority thread on the owner's core: step 1: 0x00000001
+DONE

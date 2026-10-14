@@ -1,0 +1,55 @@
+semaphore signal of 3: the call: 0x00000000
+semaphore signal of 3: the first waiter's result: 0x00000000
+semaphore signal of 3: run order: 0x00000012
+semaphore cancel: the call: 0x00000000
+semaphore cancel: the first waiter's result: 0x80028007
+semaphore cancel: run order: 0x00000012
+semaphore delete: the call: 0x00000000
+semaphore delete: the first waiter's result: 0x80028006
+semaphore delete: run order: 0x00000012
+event flag set: the call: 0x00000000
+event flag set: the first waiter's result: 0x00000000
+event flag set: run order: 0x00000012
+event flag cancel: the call: 0x00000000
+event flag cancel: the first waiter's result: 0x80028007
+event flag cancel: run order: 0x00000012
+event flag delete: the call: 0x00000000
+event flag delete: the first waiter's result: 0x80028006
+event flag delete: run order: 0x00000012
+mutex cancel: the call: 0x00000000
+mutex cancel: the first waiter's result: 0x80028007
+mutex cancel: run order: 0x00000012
+mutex delete: the call: 0x00000000
+mutex delete: the first waiter's result: 0x80028006
+mutex delete: run order: 0x00000012
+rwlock write unlock with three readers: the call: 0x00000000
+rwlock write unlock with three readers: the first waiter's result: 0x00000000
+rwlock write unlock with three readers: run order: 0x00000012
+rwlock cancel: the call: 0x00000000
+rwlock cancel: the first waiter's result: 0x80028007
+rwlock cancel: run order: 0x00000012
+rwlock delete: the call: 0x00000000
+rwlock delete: the first waiter's result: 0x80028006
+rwlock delete: run order: 0x00000012
+manual reset simple event set: the call: 0x00000000
+manual reset simple event set: the first waiter's result: 0x00000000
+manual reset simple event set: run order: 0x00000012
+simple event cancel: the call: 0x00000000
+simple event cancel: the first waiter's result: 0x80028007
+simple event cancel: run order: 0x00000012
+simple event delete: the call: 0x00000000
+simple event delete: the first waiter's result: 0x80028006
+simple event delete: run order: 0x00000012
+message pipe cancel with three receivers: the call: 0x00000000
+message pipe cancel with three receivers: the first waiter's result: 0x80028007
+message pipe cancel with three receivers: run order: 0x00000012
+message pipe delete with three receivers: the call: 0x00000000
+message pipe delete with three receivers: the first waiter's result: 0x80028006
+message pipe delete with three receivers: run order: 0x00000012
+lightweight mutex delete: the call: 0x00000000
+lightweight mutex delete: the first waiter's result: 0x80028006
+lightweight mutex delete: run order: 0x00000012
+the end of a thread three threads wait for: the call: 0x00000000
+the end of a thread three threads wait for: the first waiter's result: 0x00000000
+the end of a thread three threads wait for: run order: 0x00000012
+DONE

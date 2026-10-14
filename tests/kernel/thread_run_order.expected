@@ -1,0 +1,37 @@
+same priority, started in the order 2, 0, 1: steps recorded: 0x00000003
+same priority, started in the order 2, 0, 1: step 0: 0x00000002
+same priority, started in the order 2, 0, 1: step 1: 0x00000000
+same priority, started in the order 2, 0, 1: step 2: 0x00000001
+same priority, woken in the order 1, 2, 0: steps recorded: 0x00000003
+same priority, woken in the order 1, 2, 0: step 0: 0x00000001
+same priority, woken in the order 1, 2, 0: step 1: 0x00000002
+same priority, woken in the order 1, 2, 0: step 2: 0x00000000
+started at a low, a high and a middle priority: steps recorded: 0x00000003
+started at a low, a high and a middle priority: step 0: 0x00000001
+started at a low, a high and a middle priority: step 1: 0x00000002
+started at a low, a high and a middle priority: step 2: 0x00000000
+a running thread wakes a higher priority one: steps recorded: 0x00000004
+a running thread wakes a higher priority one: step 0: 0x00000000
+a running thread wakes a higher priority one: step 1: 0x00000002
+a running thread wakes a higher priority one: step 2: 0x00000001
+a running thread wakes a higher priority one: step 3: 0x00000003
+a running thread starts a higher priority one: steps recorded: 0x00000004
+a running thread starts a higher priority one: step 0: 0x00000000
+a running thread starts a higher priority one: step 1: 0x00000001
+a running thread starts a higher priority one: step 2: 0x00000002
+a running thread starts a higher priority one: step 3: 0x00000003
+a delay of 0: its result: 0x80020005
+a delay of 0: steps recorded: 0x00000003
+a delay of 0: step 0: 0x00000000
+a delay of 0: step 1: 0x00000001
+a delay of 0: step 2: 0x00000002
+a delay of 1: its result: 0x00000000
+a delay of 1: steps recorded: 0x00000003
+a delay of 1: step 0: 0x00000000
+a delay of 1: step 1: 0x00000002
+a delay of 1: step 2: 0x00000001
+a higher priority thread spins: steps recorded: 0x00000003
+a higher priority thread spins: step 0: 0x00000000
+a higher priority thread spins: step 1: 0x00000001
+a higher priority thread spins: step 2: 0x00000002
+DONE

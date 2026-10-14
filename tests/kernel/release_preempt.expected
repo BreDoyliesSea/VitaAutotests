@@ -1,0 +1,68 @@
+semaphore signal: the call: 0x00000000
+semaphore signal: the waiter's result: 0x00000000
+semaphore signal: step 0: 0x00000000
+semaphore signal: step 1: 0x00000001
+semaphore signal: step 2: 0x00000002
+mutex unlock: the call: 0x00000000
+mutex unlock: the waiter's result: 0x00000000
+mutex unlock: step 0: 0x00000000
+mutex unlock: step 1: 0x00000001
+mutex unlock: step 2: 0x00000002
+lightweight mutex unlock: the call: 0x00000000
+lightweight mutex unlock: the waiter's result: 0x00000000
+lightweight mutex unlock: step 0: 0x00000000
+lightweight mutex unlock: step 1: 0x00000001
+lightweight mutex unlock: step 2: 0x00000002
+event flag set: the call: 0x00000000
+event flag set: the waiter's result: 0x00000000
+event flag set: step 0: 0x00000000
+event flag set: step 1: 0x00000001
+event flag set: step 2: 0x00000002
+simple event set: the call: 0x00000000
+simple event set: the waiter's result: 0x00000000
+simple event set: step 0: 0x00000000
+simple event set: step 1: 0x00000001
+simple event set: step 2: 0x00000002
+rwlock write unlock: the call: 0x00000000
+rwlock write unlock: the waiter's result: 0x00000000
+rwlock write unlock: step 0: 0x00000000
+rwlock write unlock: step 1: 0x00000001
+rwlock write unlock: step 2: 0x00000002
+message pipe send: the call: 0x00000000
+message pipe send: the waiter's result: 0x00000000
+message pipe send: step 0: 0x00000000
+message pipe send: step 1: 0x00000001
+message pipe send: step 2: 0x00000002
+thread signal: the call: 0x00000000
+thread signal: the waiter's result: 0x00000000
+thread signal: step 0: 0x00000000
+thread signal: step 1: 0x00000001
+thread signal: step 2: 0x00000002
+semaphore cancel: the call: 0x00000000
+semaphore cancel: the waiter's result: 0x80028007
+semaphore cancel: step 0: 0x00000000
+semaphore cancel: step 1: 0x00000001
+semaphore cancel: step 2: 0x00000002
+semaphore delete: the call: 0x00000000
+semaphore delete: the waiter's result: 0x80028006
+semaphore delete: step 0: 0x00000000
+semaphore delete: step 1: 0x00000001
+semaphore delete: step 2: 0x00000002
+condition signal, then the mutex unlock: the call: 0x00000000
+condition signal, then the mutex unlock: the waiter's result: 0x00000000
+condition signal, then the mutex unlock: step 0: 0x00000000
+condition signal, then the mutex unlock: step 1: 0x00000002
+condition signal, then the mutex unlock: step 2: 0x00000001
+condition signal, then the mutex unlock: step 3: 0x00000003
+lightweight condition signal, then the mutex unlock: the call: 0x00000000
+lightweight condition signal, then the mutex unlock: the waiter's result: 0x00000000
+lightweight condition signal, then the mutex unlock: step 0: 0x00000000
+lightweight condition signal, then the mutex unlock: step 1: 0x00000002
+lightweight condition signal, then the mutex unlock: step 2: 0x00000001
+lightweight condition signal, then the mutex unlock: step 3: 0x00000003
+callback notify to a thread in a delay with callbacks: the call: 0x00000000
+callback notify to a thread in a delay with callbacks: the waiter's result: 0x00000000
+callback notify to a thread in a delay with callbacks: step 0: 0x00000000
+callback notify to a thread in a delay with callbacks: step 1: 0x00000001
+callback notify to a thread in a delay with callbacks: step 2: 0x00000002
+DONE

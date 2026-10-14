@@ -1,0 +1,27 @@
+timeout, after a send of 4: the bytes in the pipe: 0x00000000
+timeout: the result: 0x80028005
+timeout: the size it reports: 0x00000004
+timeout: its buffer holds "abcd": 0x00000004
+timeout, after it: the bytes in the pipe: 0x00000000
+timeout: the pipe still holds "": 0x00000000
+cancel, after a send of 4: 0x00000000
+cancel: the waiting receivers it counts: 0x00000001
+cancel: the result: 0x80028007
+cancel: the size it reports: 0x00000004
+cancel: its buffer holds "efgh": 0x00000004
+cancel, after it: the bytes in the pipe: 0x00000000
+cancel: the pipe still holds "": 0x00000000
+delete, after a send of 4: 0x00000000
+delete: the result: 0x80028006
+delete: the size it reports: 0x00000004
+delete: its buffer holds "ijkl": 0x00000004
+an ASAP receive behind it: it was done before the timeout: 0x00000000
+an ASAP receive behind it: it was done after the timeout: 0x00000000
+an ASAP receive behind it, the FULL receive: the result: 0x80028005
+an ASAP receive behind it, the FULL receive: the size it reports: 0x00000004
+an ASAP receive behind it, the FULL receive: its buffer holds "mnop": 0x00000004
+an ASAP receive behind it, the ASAP receive: the result: 0x80028007
+an ASAP receive behind it, the ASAP receive: the size it reports: 0x00000000
+an ASAP receive behind it, the ASAP receive: its buffer holds "": 0x00000000
+an ASAP receive behind it: the pipe still holds "": 0x00000000
+DONE

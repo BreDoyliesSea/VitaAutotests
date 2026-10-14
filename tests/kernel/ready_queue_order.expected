@@ -1,0 +1,27 @@
+thread 0 started, then thread 1 woken: steps recorded: 0x00000002
+thread 0 started, then thread 1 woken: step 0: 0x00000000
+thread 0 started, then thread 1 woken: step 1: 0x00000001
+thread 1 woken, then thread 0 started: steps recorded: 0x00000002
+thread 1 woken, then thread 0 started: step 0: 0x00000001
+thread 1 woken, then thread 0 started: step 1: 0x00000000
+thread 0 changed to its own priority: the changes: 0x00000000
+thread 0 changed to its own priority: steps recorded: 0x00000003
+thread 0 changed to its own priority: step 0: 0x00000001
+thread 0 changed to its own priority: step 1: 0x00000002
+thread 0 changed to its own priority: step 2: 0x00000000
+thread 0 raised and lowered back: the changes: 0x00000000
+thread 0 raised and lowered back: steps recorded: 0x00000003
+thread 0 raised and lowered back: step 0: 0x00000001
+thread 0 raised and lowered back: step 1: 0x00000002
+thread 0 raised and lowered back: step 2: 0x00000000
+thread 0 lowered and raised back: the changes: 0x00000000
+thread 0 lowered and raised back: steps recorded: 0x00000003
+thread 0 lowered and raised back: step 0: 0x00000001
+thread 0 lowered and raised back: step 1: 0x00000002
+thread 0 lowered and raised back: step 2: 0x00000000
+a preempted thread against one ready behind it: steps recorded: 0x00000004
+a preempted thread against one ready behind it: step 0: 0x00000000
+a preempted thread against one ready behind it: step 1: 0x00000001
+a preempted thread against one ready behind it: step 2: 0x00000002
+a preempted thread against one ready behind it: step 3: 0x00000003
+DONE

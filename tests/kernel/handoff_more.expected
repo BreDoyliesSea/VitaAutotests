@@ -1,0 +1,27 @@
+recursive mutex, a waiter for a count of 2: it still reports its wait: 0x00000000
+recursive mutex, a waiter for a count of 2: the unlocker's try lock: 0x80028145
+recursive mutex, a waiter for a count of 2: the waiter owns it: 0x00000001
+recursive mutex, a waiter for a count of 2: the count: 0x00000002
+recursive mutex, a waiter for a count of 2: the waiter's result: 0x00000000
+condition: the waiter still reports a wait after the signal: 0x00000000
+condition: the waiter still reports a wait after the unlock: 0x00000000
+condition: the signaler's try lock after the unlock: 0x00000000
+condition: the waiter owns the mutex: 0x00000000
+condition: the waiter's result: 0x00000000
+lightweight condition: the waiter still reports a wait after the signal: 0x00000000
+lightweight condition: the waiter still reports a wait after the unlock: 0x00000000
+lightweight condition: the signaler's try lock after the unlock: 0x00000000
+lightweight condition: the waiter owns the mutex: 0x00000000
+lightweight condition: the waiter's result: 0x00000000
+write unlock with two readers waiting: the first still reports its wait: 0x00000000
+write unlock with two readers waiting: the second still reports its wait: 0x00000000
+write unlock with two readers waiting: the unlocker's try write lock: 0x800281E6
+write unlock with two readers waiting: the unlocker's try read lock: 0x00000000
+write unlock with two readers waiting: the first reader's result: 0x00000000
+write unlock with two readers waiting: the second reader's result: 0x00000000
+auto reset event set with two waiters: the first still reports its wait: 0x00000000
+auto reset event set with two waiters: the second still reports its wait: 0x00000001
+auto reset event set with two waiters: the bit after the set: 0x00000000
+auto reset event set with two waiters: the first's result: 0x00000000
+auto reset event set with two waiters: the second's result: 0x00000000
+DONE

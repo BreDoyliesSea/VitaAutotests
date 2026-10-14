@@ -1,0 +1,70 @@
+dormant: info: 0x00000000
+dormant: the status: 0x00000010
+dormant: the wait type: 0x00000000
+dormant: the current CPU is -1: 0x00000001
+ready behind the gate: info: 0x00000000
+ready behind the gate: the status: 0x00000002
+ready behind the gate: the wait type: 0x00000000
+ready behind the gate: the current CPU is -1: 0x00000000
+ready behind the gate: it ran: 0x00000000
+suspend it while ready: 0x00000001
+ready and suspended: info: 0x00000000
+ready and suspended: the status: 0x00000100
+ready and suspended: the wait type: 0x00000000
+ready and suspended: the current CPU is -1: 0x00000001
+ready and suspended, after the gate: it ran: 0x00000000
+suspended after the gate: info: 0x00000000
+suspended after the gate: the status: 0x00000100
+suspended after the gate: the wait type: 0x00000000
+suspended after the gate: the current CPU is -1: 0x00000001
+resume it: 0x00000000
+after the resume: it ran: 0x00000001
+waiting: info: 0x00000000
+waiting: the status: 0x00000008
+waiting: the wait type: 0x00000020
+waiting: the current CPU is -1: 0x00000001
+suspend it while waiting: 0x00000001
+waiting and suspended: info: 0x00000000
+waiting and suspended: the status: 0x00000008
+waiting and suspended: the wait type: 0x00000020
+waiting and suspended: the current CPU is -1: 0x00000001
+signal while it is suspended: 0x00000000
+signaled while suspended: info: 0x00000000
+signaled while suspended: the status: 0x00000100
+signaled while suspended: the wait type: 0x00000000
+signaled while suspended: the current CPU is -1: 0x00000001
+signaled while suspended: it woke: 0x00000000
+signaled while suspended: the count: 0x00000000
+signaled while suspended: the waiters: 0x00000000
+resume it: 0x00000000
+after the resume: its wait: 0x00000000
+running: it progresses: 0x00000001
+running on core 0: info: 0x00000000
+running on core 0: the status: 0x00000001
+running on core 0: the wait type: 0x00000000
+running on core 0: the current CPU is -1: 0x00000000
+suspend it while running: 0x00000001
+running and suspended: it progresses: 0x00000000
+running and suspended: info: 0x00000000
+running and suspended: the status: 0x00000100
+running and suspended: the wait type: 0x00000000
+running and suspended: the current CPU is -1: 0x00000001
+resume it: 0x00000000
+after the resume: it progresses: 0x00000001
+ended: info: 0x00000000
+ended: the status: 0x00000010
+ended: the wait type: 0x00000000
+ended: the current CPU is -1: 0x00000001
+suspend a thread in a wait with a 100 ms timeout: 0x00000001
+its timeout passed while suspended: info: 0x00000000
+its timeout passed while suspended: the status: 0x00000100
+its timeout passed while suspended: the wait type: 0x00000000
+its timeout passed while suspended: the current CPU is -1: 0x00000001
+its timeout passed while suspended: it woke: 0x00000000
+resume it: 0x00000000
+after the resume: its wait: 0x80028005
+delaying: info: 0x00000000
+delaying: the status: 0x00000008
+delaying: the wait type: 0x00000001
+delaying: the current CPU is -1: 0x00000001
+DONE
