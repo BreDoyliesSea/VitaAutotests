@@ -11,6 +11,14 @@ waiting, after the reader used VFP: the d registers with the thread's value, one
 waiting, after the reader used VFP: the d registers that share the other value: 0xFFFF00FF
 waiting, after the reader used VFP: that value's high word: 0x7FF8DEAD
 waiting, after the reader used VFP: that value's low word: 0x7F80DEAD
+waiting: signal it while it is suspended: 0x00000000
+woken while suspended: the status: 0x00000100
+woken while suspended: the read: 0x00000000
+woken while suspended: the FPSCR control bits: 0x03000000
+woken while suspended: the d registers with the thread's value, one bit each: 0x0000FF00
+woken while suspended: the d registers that share the other value: 0xFFFF00FF
+woken while suspended: that value's high word: 0x7FF8DEAD
+woken while suspended: that value's low word: 0x7F80DEAD
 waiting: resume it: 0x00000000
 running: suspend it: 0x00000001
 running, suspended: the read: 0x00000000
