@@ -1,0 +1,43 @@
+three waiters: the condition's waiters: 0x00000003
+signal one while holding the mutex: 0x00000000
+the signaled waiter waits for the mutex: 0x00000001
+the condition's waiters after it: 0x00000002
+the mutex's waiters after it: 0x00000001
+signal that waiter again: 0x80028022
+signal all: 0x00000000
+the condition's waiters after signal all: 0x00000000
+the mutex's waiters after signal all: 0x00000003
+signal all with every waiter on the mutex: 0x00000000
+no waiter is done while the mutex is held: 0x00000000
+each waiter's wait: 0x00000000
+each waiter owns the mutex after it: 0x00000000
+signal to a thread that waits on another condition: 0x80028022
+it still waits on the other condition: 0x00000001
+signal all of this condition: 0x00000000
+it still waits after that too: 0x00000001
+signal it on its own condition: 0x00000000
+its wait: 0x00000000
+signal to a thread that waits to lock the mutex: 0x80028022
+it still waits for the mutex: 0x00000001
+its lock: 0x00000000
+a wait while another thread holds the mutex: 0x80028146
+that thread's unlock after it: 0x80028146
+this thread still holds the mutex: 0x00000001
+a wait with a thread waiting to lock the mutex: 0x00000000
+that thread got the mutex during the wait: 0x00000000
+this thread owns the mutex after the wait: 0x00000000
+recursive mutex locked twice: the count during the wait: 0x00000001
+recursive mutex locked twice: the waiter owns it during the wait: 0x00000001
+recursive mutex locked twice: the condition's waiters: 0x00000001
+recursive mutex locked twice: the wait: 0x00000000
+timeout with the mutex held: the waiter's wait type after it: 0x00000200
+timeout with the mutex held: the waiter is done before the mutex is free: 0x00000000
+timeout with the mutex held: the wait: 0x80028005
+timeout with the mutex held: the time left is 0: 0x00000001
+timeout with the mutex held: the waiter owns the mutex after it: 0x00000000
+signal then timeout: the waiter still waits for the mutex long after its timeout: 0x00000001
+signal then timeout: the waiter is done before the mutex is free: 0x00000000
+signal then timeout: the wait: 0x00000000
+signal then timeout: the time left is 0: 0x00000000
+signal then timeout: the waiter owns the mutex after it: 0x00000000
+DONE

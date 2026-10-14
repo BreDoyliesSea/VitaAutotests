@@ -1,0 +1,61 @@
+attr 0x0, receives FULL 3 and FULL 2, send 5: receiver 1, low priority, gets "ABC", size: 0x00000003
+attr 0x0, receives FULL 3 and FULL 2, send 5: receiver 2, high priority, gets "DE", size: 0x00000002
+attr 0x0, receives FULL 3 and FULL 2, send 5: the pipe still holds "": 0x00000000
+attr 0x0, receives ASAP 4 and FULL 2, send 5: receiver 1, low priority, gets "ABCD", size: 0x00000004
+attr 0x0, receives ASAP 4 and FULL 2, send 5: receiver 2, high priority, still waits: 0x00000001
+attr 0x0, receives ASAP 4 and FULL 2, send 5: the pipe still holds "": 0x00000000
+attr 0x0, receives FULL 3 and FULL 3, sends 4 and 2: receiver 1, low priority, gets "ABC", size: 0x00000003
+attr 0x0, receives FULL 3 and FULL 3, sends 4 and 2: receiver 2, high priority, gets "DEF", size: 0x00000003
+attr 0x0, receives FULL 3 and FULL 3, sends 4 and 2: the pipe still holds "": 0x00000000
+attr 0x0, sends FULL 3 and FULL 2: with room for 4096 sender 1, low priority, is done: 0x00000001
+attr 0x0, sends FULL 3 and FULL 2: with room for 4096 sender 2, high priority, is done: 0x00000001
+attr 0x0, sends FULL 3 and FULL 2: the pipe gave back "abcde": 0x00000005
+attr 0x1, receives FULL 3 and FULL 2, send 5: receiver 1, low priority, gets "ABC", size: 0x00000003
+attr 0x1, receives FULL 3 and FULL 2, send 5: receiver 2, high priority, gets "DE", size: 0x00000002
+attr 0x1, receives FULL 3 and FULL 2, send 5: the pipe still holds "": 0x00000000
+attr 0x1, receives ASAP 4 and FULL 2, send 5: receiver 1, low priority, gets "ABCD", size: 0x00000004
+attr 0x1, receives ASAP 4 and FULL 2, send 5: receiver 2, high priority, still waits: 0x00000001
+attr 0x1, receives ASAP 4 and FULL 2, send 5: the pipe still holds "": 0x00000000
+attr 0x1, receives FULL 3 and FULL 3, sends 4 and 2: receiver 1, low priority, gets "ABC", size: 0x00000003
+attr 0x1, receives FULL 3 and FULL 3, sends 4 and 2: receiver 2, high priority, gets "DEF", size: 0x00000003
+attr 0x1, receives FULL 3 and FULL 3, sends 4 and 2: the pipe still holds "": 0x00000000
+attr 0x1, sends FULL 3 and FULL 2: with room for 4096 sender 1, low priority, is done: 0x00000001
+attr 0x1, sends FULL 3 and FULL 2: with room for 4096 sender 2, high priority, is done: 0x00000001
+attr 0x1, sends FULL 3 and FULL 2: the pipe gave back "deabc": 0x00000005
+attr 0x2, receives FULL 3 and FULL 2, send 5: receiver 1, low priority, gets "CDE", size: 0x00000003
+attr 0x2, receives FULL 3 and FULL 2, send 5: receiver 2, high priority, gets "AB", size: 0x00000002
+attr 0x2, receives FULL 3 and FULL 2, send 5: the pipe still holds "": 0x00000000
+attr 0x2, receives ASAP 4 and FULL 2, send 5: receiver 1, low priority, gets "CDE", size: 0x00000003
+attr 0x2, receives ASAP 4 and FULL 2, send 5: receiver 2, high priority, gets "AB", size: 0x00000002
+attr 0x2, receives ASAP 4 and FULL 2, send 5: the pipe still holds "": 0x00000000
+attr 0x2, receives FULL 3 and FULL 3, sends 4 and 2: receiver 1, low priority, gets "DEF", size: 0x00000003
+attr 0x2, receives FULL 3 and FULL 3, sends 4 and 2: receiver 2, high priority, gets "ABC", size: 0x00000003
+attr 0x2, receives FULL 3 and FULL 3, sends 4 and 2: the pipe still holds "": 0x00000000
+attr 0x2, sends FULL 3 and FULL 2: with room for 4096 sender 1, low priority, is done: 0x00000001
+attr 0x2, sends FULL 3 and FULL 2: with room for 4096 sender 2, high priority, is done: 0x00000001
+attr 0x2, sends FULL 3 and FULL 2: the pipe gave back "abcde": 0x00000005
+attr 0x4, receives FULL 3 and FULL 2, send 5: receiver 1, low priority, gets "ABC", size: 0x00000003
+attr 0x4, receives FULL 3 and FULL 2, send 5: receiver 2, high priority, gets "DE", size: 0x00000002
+attr 0x4, receives FULL 3 and FULL 2, send 5: the pipe still holds "": 0x00000000
+attr 0x4, receives ASAP 4 and FULL 2, send 5: receiver 1, low priority, gets "ABCD", size: 0x00000004
+attr 0x4, receives ASAP 4 and FULL 2, send 5: receiver 2, high priority, still waits: 0x00000001
+attr 0x4, receives ASAP 4 and FULL 2, send 5: the pipe still holds "": 0x00000000
+attr 0x4, receives FULL 3 and FULL 3, sends 4 and 2: receiver 1, low priority, gets "ABC", size: 0x00000003
+attr 0x4, receives FULL 3 and FULL 3, sends 4 and 2: receiver 2, high priority, gets "DEF", size: 0x00000003
+attr 0x4, receives FULL 3 and FULL 3, sends 4 and 2: the pipe still holds "": 0x00000000
+attr 0x4, sends FULL 3 and FULL 2: with room for 4096 sender 1, low priority, is done: 0x00000001
+attr 0x4, sends FULL 3 and FULL 2: with room for 4096 sender 2, high priority, is done: 0x00000001
+attr 0x4, sends FULL 3 and FULL 2: the pipe gave back "abcde": 0x00000005
+attr 0x8, receives FULL 3 and FULL 2, send 5: receiver 1, low priority, gets "ABC", size: 0x00000003
+attr 0x8, receives FULL 3 and FULL 2, send 5: receiver 2, high priority, gets "DE", size: 0x00000002
+attr 0x8, receives FULL 3 and FULL 2, send 5: the pipe still holds "": 0x00000000
+attr 0x8, receives ASAP 4 and FULL 2, send 5: receiver 1, low priority, gets "ABCD", size: 0x00000004
+attr 0x8, receives ASAP 4 and FULL 2, send 5: receiver 2, high priority, still waits: 0x00000001
+attr 0x8, receives ASAP 4 and FULL 2, send 5: the pipe still holds "": 0x00000000
+attr 0x8, receives FULL 3 and FULL 3, sends 4 and 2: receiver 1, low priority, gets "ABC", size: 0x00000003
+attr 0x8, receives FULL 3 and FULL 3, sends 4 and 2: receiver 2, high priority, gets "DEF", size: 0x00000003
+attr 0x8, receives FULL 3 and FULL 3, sends 4 and 2: the pipe still holds "": 0x00000000
+attr 0x8, sends FULL 3 and FULL 2: with room for 4096 sender 1, low priority, is done: 0x00000001
+attr 0x8, sends FULL 3 and FULL 2: with room for 4096 sender 2, high priority, is done: 0x00000001
+attr 0x8, sends FULL 3 and FULL 2: the pipe gave back "abcde": 0x00000005
+DONE

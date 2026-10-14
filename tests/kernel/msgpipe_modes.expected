@@ -1,0 +1,50 @@
+FULL receive of 8: send 4: 0x00000000
+FULL receive of 8: it still waits after 4: 0x00000001
+FULL receive of 8: the free size after 4: 0x00001000
+FULL receive of 8: the waiting receivers after 4: 0x00000001
+FULL receive of 8: send 4 more: 0x00000000
+FULL receive of 8: its result: 0x00000000
+FULL receive of 8: the size it got: 0x00000008
+FULL receive of 8: it got "abcdefgh": 0x00000008
+FULL receive of 8: the free size at the end: 0x00001000
+ASAP receive of 8, send of 3: its result: 0x00000000
+ASAP receive of 8, send of 3: the size it got: 0x00000003
+ASAP receive of 8, send of 3: it got "xyz": 0x00000003
+ASAP receive of 2, send of 5: the send: 0x00000000
+ASAP receive of 2, send of 5: the receive's result: 0x00000000
+ASAP receive of 2, send of 5: the size it got: 0x00000002
+ASAP receive of 2, send of 5: it got "vw": 0x00000002
+ASAP receive of 2, send of 5: the free size after it: 0x00000FFD
+ASAP receive of 2, send of 5: what is left: 0x00000003
+ASAP receive of 2, send of 5: the pipe holds "xyz": 0x00000003
+ASAP send of 8 with room for 3: it is done: 0x00000001
+ASAP send of 8 with room for 3: its result: 0x00000000
+ASAP send of 8 with room for 3: the size it sent: 0x00000003
+ASAP send of 8 with room for 3: the free size after it: 0x00000000
+ASAP send of 8 with room for 3: the pipe gave back "ABC": 0x00000003
+timed out FULL send of 8 with room for 4: 0x80028005
+its size: 0x00000000
+the free size after it: 0x00000004
+timed out ASAP send of 8 to a full pipe: 0x80028005
+its size: 0x00000000
+timed out FULL receive of 8 with 3 in the pipe: 0x80028005
+its size: 0x00000003
+the free size after it: 0x00001000
+the pipe still holds "": 0x00000000
+FULL receive of 4096 with 4092 and a sender waiting: 0x00000000
+its size: 0x00001000
+the sender is done after it: 0x00000001
+the free size after it: 0x00000FFC
+the receive and the pipe gave back "ABCDEFGH": 0x00000008
+the sender's result: 0x00000000
+peek then receive: the peek is done: 0x00000001
+peek then receive: the peek got "pqrs": 0x00000004
+peek then receive: the receive is done: 0x00000001
+peek then receive: the receive got "pqrs": 0x00000004
+peek then receive: the free size after the send: 0x00001000
+send of 0 bytes to a waiting receive: 0x00000000
+its size: 0x00000000
+the receive still waits: 0x00000000
+a send of 1 after it: the receive's size: 0x00000000
+a send of 1 after it: the receive got "": 0x00000000
+DONE

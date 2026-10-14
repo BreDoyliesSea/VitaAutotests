@@ -1,0 +1,51 @@
+FIFO, write unlock, writer first: waiting readers: 0x00000003
+FIFO, write unlock, writer first: waiting writers: 0x00000002
+FIFO, write unlock, writer first: waiter 1, a writer, gets the lock in round: 0x00000001
+FIFO, write unlock, writer first: waiter 2, a reader, gets the lock in round: 0x00000003
+FIFO, write unlock, writer first: waiter 3, a reader, gets the lock in round: 0x00000003
+FIFO, write unlock, writer first: waiter 4, a writer, gets the lock in round: 0x00000002
+FIFO, write unlock, writer first: waiter 5, a reader, gets the lock in round: 0x00000003
+FIFO, read unlock, writer first: waiting readers: 0x00000003
+FIFO, read unlock, writer first: waiting writers: 0x00000002
+FIFO, read unlock, writer first: waiter 1, a writer, gets the lock in round: 0x00000001
+FIFO, read unlock, writer first: waiter 2, a reader, gets the lock in round: 0x00000003
+FIFO, read unlock, writer first: waiter 3, a reader, gets the lock in round: 0x00000003
+FIFO, read unlock, writer first: waiter 4, a writer, gets the lock in round: 0x00000002
+FIFO, read unlock, writer first: waiter 5, a reader, gets the lock in round: 0x00000003
+FIFO, write unlock, reader first: waiting readers: 0x00000002
+FIFO, write unlock, reader first: waiting writers: 0x00000002
+FIFO, write unlock, reader first: waiter 1, a reader, gets the lock in round: 0x00000003
+FIFO, write unlock, reader first: waiter 2, a writer, gets the lock in round: 0x00000001
+FIFO, write unlock, reader first: waiter 3, a reader, gets the lock in round: 0x00000003
+FIFO, write unlock, reader first: waiter 4, a writer, gets the lock in round: 0x00000002
+FIFO, write unlock, only writers: waiting readers: 0x00000000
+FIFO, write unlock, only writers: waiting writers: 0x00000003
+FIFO, write unlock, only writers: waiter 1, a writer, gets the lock in round: 0x00000001
+FIFO, write unlock, only writers: waiter 2, a writer, gets the lock in round: 0x00000002
+FIFO, write unlock, only writers: waiter 3, a writer, gets the lock in round: 0x00000003
+priority, write unlock, high writer queued third: waiting readers: 0x00000003
+priority, write unlock, high writer queued third: waiting writers: 0x00000002
+priority, write unlock, high writer queued third: waiter 1, a writer, gets the lock in round: 0x00000002
+priority, write unlock, high writer queued third: waiter 2, a reader, gets the lock in round: 0x00000003
+priority, write unlock, high writer queued third: waiter 3, a writer, gets the lock in round: 0x00000001
+priority, write unlock, high writer queued third: waiter 4, a reader, gets the lock in round: 0x00000003
+priority, write unlock, high writer queued third: waiter 5, a reader, gets the lock in round: 0x00000003
+priority, read unlock, high writer queued third: waiting readers: 0x00000003
+priority, read unlock, high writer queued third: waiting writers: 0x00000002
+priority, read unlock, high writer queued third: waiter 1, a writer, gets the lock in round: 0x00000002
+priority, read unlock, high writer queued third: waiter 2, a reader, gets the lock in round: 0x00000003
+priority, read unlock, high writer queued third: waiter 3, a writer, gets the lock in round: 0x00000001
+priority, read unlock, high writer queued third: waiter 4, a reader, gets the lock in round: 0x00000003
+priority, read unlock, high writer queued third: waiter 5, a reader, gets the lock in round: 0x00000003
+priority, write unlock, high reader behind a writer: waiting readers: 0x00000002
+priority, write unlock, high reader behind a writer: waiting writers: 0x00000002
+priority, write unlock, high reader behind a writer: waiter 1, a writer, gets the lock in round: 0x00000001
+priority, write unlock, high reader behind a writer: waiter 2, a reader, gets the lock in round: 0x00000003
+priority, write unlock, high reader behind a writer: waiter 3, a writer, gets the lock in round: 0x00000002
+priority, write unlock, high reader behind a writer: waiter 4, a reader, gets the lock in round: 0x00000003
+priority, write unlock, only writers: waiting readers: 0x00000000
+priority, write unlock, only writers: waiting writers: 0x00000003
+priority, write unlock, only writers: waiter 1, a writer, gets the lock in round: 0x00000003
+priority, write unlock, only writers: waiter 2, a writer, gets the lock in round: 0x00000002
+priority, write unlock, only writers: waiter 3, a writer, gets the lock in round: 0x00000001
+DONE
