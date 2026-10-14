@@ -15,9 +15,30 @@ receive FULL from an empty pipe: 0x80028005
 the size received: 0x00000000
 send to an unknown UID: 0x80028221
 receive from an unknown UID: 0x80028221
-send a list of 1000 pieces: 0x8002000B
 send with mode 0x200: 0x80020010
+send a list of 1000 empty pieces: 0x00000000
+receive into a list of 1000 empty pieces: 0x00000000
+send a list of 4096 empty pieces: 0x00000000
+receive into a list of 4096 empty pieces: 0x00000000
+send a list of 8192 empty pieces: 0x00000000
+receive into a list of 8192 empty pieces: 0x00000000
+send pieces that add up to more than the pipe holds: 0x8002000B
+receive into pieces that add up to more than the pipe holds: 0x8002000B
+send one piece larger than the pipe: 0x8002000B
+send pieces that add up to what the pipe holds, FULL: 0x00000000
+the size sent: 0x00001000
+receive it all into two pieces, FULL: 0x00000000
+the size received: 0x00001000
+send two empty pieces ASAP: 0x00000000
+send two empty pieces ASAP: the size sent: 0x00000000
+receive into two empty pieces ASAP: 0x00000000
+receive into two empty pieces ASAP: the size received: 0x00000000
+send two empty pieces FULL: 0x00000000
+send two empty pieces FULL: the size sent: 0x00000000
+receive into two empty pieces FULL: 0x00000000
+receive into two empty pieces FULL: the size received: 0x00000000
 send a NULL list: 0x80020006
 send a piece with a NULL buffer: 0x80020006
+send an empty piece with a NULL buffer: 0x80020006
 receive into a NULL list: 0x80020006
 DONE
