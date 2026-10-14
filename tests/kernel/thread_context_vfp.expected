@@ -1,0 +1,23 @@
+waiting: suspend it: 0x00000001
+waiting, right after the suspend: the read: 0x00000000
+waiting, right after the suspend: the FPSCR control bits: 0x03000000
+waiting, right after the suspend: the d registers with the thread's value, one bit each: 0x0000FF00
+waiting, right after the suspend: the d registers that share the other value: 0xFFFF00FF
+waiting, right after the suspend: that value's high word: 0x7FF8DEAD
+waiting, right after the suspend: that value's low word: 0x7F80DEAD
+waiting, after the reader used VFP: the read: 0x00000000
+waiting, after the reader used VFP: the FPSCR control bits: 0x03000000
+waiting, after the reader used VFP: the d registers with the thread's value, one bit each: 0x0000FF00
+waiting, after the reader used VFP: the d registers that share the other value: 0xFFFF00FF
+waiting, after the reader used VFP: that value's high word: 0x7FF8DEAD
+waiting, after the reader used VFP: that value's low word: 0x7F80DEAD
+waiting: resume it: 0x00000000
+running: suspend it: 0x00000001
+running, suspended: the read: 0x00000000
+running, suspended: the FPSCR control bits: 0x03800000
+running, suspended: the d registers with the thread's value, one bit each: 0xFFFFFFFF
+running, suspended: the d registers that share the other value: 0x00000000
+running, suspended: that value's high word: 0x00000000
+running, suspended: that value's low word: 0x00000000
+running: resume it: 0x00000000
+DONE
