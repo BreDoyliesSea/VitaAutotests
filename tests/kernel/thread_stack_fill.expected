@@ -1,0 +1,23 @@
+before it starts: the lowest word is 0: 0x00000000
+before it starts: the lowest word is 0xFFFFFFFF: 0x00000000
+before it starts: words that are 0xFFFFFFFF: 0x00000FFF
+before it starts: the free size is the stack size: 0x00000000
+before it starts: the free size is 4 times the stack size: 0x00000001
+before it starts: the free size is 16 times the index of the lowest used word: 0x00000001
+while it waits: the lowest word is what it was before the start: 0x00000001
+while it waits: the lowest word is TLS slot 6: 0x00000000
+while it waits: the lowest word is TLS slot 7: 0x00000000
+while it waits: the lowest used word is over 1 KiB above the low end: 0x00000001
+while it waits: the free size is 16 times the index of the lowest used word: 0x00000001
+after it ended: the lowest used word is the one it was while it waited: 0x00000001
+after it ended: the free size is 16 times the index of the lowest used word: 0x00000001
+after it ended: the lowest word is what it was before the start: 0x00000001
+second run: the lowest word is what it was in the first run: 0x00000001
+second run: the lowest used word is the one from the first run: 0x00000001
+second run: the free size is 16 times the index of the lowest used word: 0x00000001
+another thread: its lowest word is different: 0x00000001
+main thread: its stack size is the default for a main thread: 0x00000001
+main thread: the lowest word is 0xFFFFFFFF: 0x00000000
+main thread: words above the lowest one are 0xFFFFFFFF: 0x00000001
+main thread: the free size is 16 times the index of the lowest used word: 0x00000001
+DONE
