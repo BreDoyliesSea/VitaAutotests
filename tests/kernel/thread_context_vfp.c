@@ -81,14 +81,15 @@ static void report(const char *when) {
     PRINTF(vfp.fpscr & FPSCR_CONTROL, "%s: the FPSCR control bits", when);
     // The value the first register without the thread's value has, and the registers that share it
     unsigned long long other = 0;
-    int kept = 0, shared = 0, others = 0;
+    unsigned int kept = 0, shared = 0;
+    int others = 0;
     for (int d = 0; d < 32; d++) {
         const unsigned long long got = (unsigned long long)vfp.reg[2 * d + 1] << 32 | vfp.reg[2 * d];
         if (got == values[d]) {
-            kept |= 1 << d;
+            kept |= 1U << d;
         } else if (!others || got == other) {
             other = got;
-            shared |= 1 << d;
+            shared |= 1U << d;
             others++;
         }
     }
