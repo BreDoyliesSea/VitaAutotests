@@ -48,13 +48,17 @@ static void run_case(const char *name, SceKernelThreadEntry entry) {
     sceKernelStartThread(thread, 0, NULL);
     TEST_WAIT_FOR(counter > 0);
 
-    PRINTF(sceKernelSuspendThreadForVM(thread), "%s: suspend it", name);
+    // Printing waits, so everything is read before it
+    const int suspended = sceKernelSuspendThreadForVM(thread);
     const unsigned int first = counter;
     ThreadCpuRegisters before, after;
-    PRINTF(read_cpu(thread, &before), "%s: read its registers", name);
+    const int read_before = read_cpu(thread, &before);
     sceKernelDelayThread(20000);
     const unsigned int second = counter;
-    PRINTF(read_cpu(thread, &after), "%s: read them again 20 ms later", name);
+    const int read_after = read_cpu(thread, &after);
+    PRINTF(suspended, "%s: suspend it", name);
+    PRINTF(read_before, "%s: read its registers", name);
+    PRINTF(read_after, "%s: read them again 20 ms later", name);
     PRINTF(second == first, "%s: the count stays as it was right after the suspend", name);
     PRINTF(memcmp(before.reg, after.reg, sizeof(before.reg)) == 0 && before.cpsr == after.cpsr, "%s: both reads show the same registers", name);
 
