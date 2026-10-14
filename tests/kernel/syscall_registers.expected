@@ -1,0 +1,24 @@
+sceKernelDelayThread(1): r0, the result: 0x00000000
+sceKernelDelayThread(1): r1 after it: 0xDEADBEEF
+sceKernelDelayThread(1): r1 still holds its marker: 0x00000000
+sceKernelDelayThread(1): r2 after it: 0xDEADBEEF
+sceKernelDelayThread(1): r2 still holds its marker: 0x00000000
+sceKernelDelayThread(1): r3 after it: 0xDEADBEEF
+sceKernelDelayThread(1): r3 still holds its marker: 0x00000000
+sceKernelDelayThread(1): r12 after it: 0xDEADBEEF
+sceKernelDelayThread(1): r12 still holds its marker: 0x00000000
+sceKernelPollSema with a count there: r0, the result: 0x00000000
+sceKernelPollSema with a count there: r2 after it: 0xDEADBEEF
+sceKernelPollSema with a count there: r2 still holds its marker: 0x00000000
+sceKernelPollSema with a count there: r3 after it: 0xDEADBEEF
+sceKernelPollSema with a count there: r3 still holds its marker: 0x00000000
+sceKernelPollSema with a count there: r12 after it: 0xDEADBEEF
+sceKernelPollSema with a count there: r12 still holds its marker: 0x00000000
+sceKernelPollSema with no count there: r0, the result: 0x80028102
+sceKernelPollSema with no count there: r2 after it: 0xDEADBEEF
+sceKernelPollSema with no count there: r2 still holds its marker: 0x00000000
+sceKernelPollSema with no count there: r3 after it: 0xDEADBEEF
+sceKernelPollSema with no count there: r3 still holds its marker: 0x00000000
+sceKernelPollSema with no count there: r12 after it: 0xDEADBEEF
+sceKernelPollSema with no count there: r12 still holds its marker: 0x00000000
+DONE
