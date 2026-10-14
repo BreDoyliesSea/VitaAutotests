@@ -74,7 +74,7 @@ static void run(const char *name, int new_kind) {
 int main(void) {
     go = sceKernelCreateSema("go", 0, 0, 1, NULL);
 
-    mutex = sceKernelCreateMutex("recursive", MUTEX_ATTR_RECURSIVE, 0, NULL);
+    mutex = sceKernelCreateMutex("recursive", SCE_KERNEL_MUTEX_ATTR_RECURSIVE, 0, NULL);
     run("recursive mutex locked 3 times", MUTEX_RECURSIVE);
     MutexInfo info = { .size = sizeof(info) };
     sceKernelGetMutexInfo(mutex, (SceKernelMutexInfo *)&info);

@@ -7,11 +7,6 @@
 
 #include "test.h"
 
-#define THREAD_EVENT_START 0x4
-#define THREAD_EVENT_EXIT 0x8
-// Stands for every thread of the process, instead of one thread's UID
-#define ALL_USER_THREADS 0x10027
-
 enum Entry { RETURNS, EXIT_DELETES, WAITS };
 
 static SceUID target, go, self_handler;
@@ -33,9 +28,9 @@ static int handler(SceInt32 type, SceUID thread_id, SceInt32 arg, void *common) 
         log_exit_status[i] = info.exitStatus;
         log_entry_runs[i] = entry_runs;
     }
-    if (unregister_self && type == THREAD_EVENT_START)
+    if (unregister_self && type == SCE_KERNEL_THREAD_EVENT_TYPE_START)
         sceKernelUnregisterThreadEventHandler(self_handler);
-    return type == THREAD_EVENT_START ? handler_return : 0;
+    return type == SCE_KERNEL_THREAD_EVENT_TYPE_START ? handler_return : 0;
 }
 
 static int target_thread(SceSize args, void *argp) {
@@ -53,7 +48,7 @@ static int target_thread(SceSize args, void *argp) {
 }
 
 static SceUID create_target(void) {
-    target = sceKernelCreateThread("target", target_thread, 0x10000100, 0x4000, 0, 0, NULL);
+    target = sceKernelCreateThread("target", target_thread, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, 0, 0, NULL);
     return target;
 }
 
@@ -100,7 +95,7 @@ int main(void) {
     // A thread that exits and deletes itself
     reset();
     create_target();
-    id = add(target, THREAD_EVENT_START | THREAD_EVENT_EXIT, 1);
+    id = add(target, SCE_KERNEL_THREAD_EVENT_TYPE_START | SCE_KERNEL_THREAD_EVENT_TYPE_EXIT, 1);
     PRINT("exit and delete: register", test_created(id));
     start_target(EXIT_DELETES);
     TEST_WAIT_FOR(thread_gone(target));
@@ -109,7 +104,7 @@ int main(void) {
 
     // A handler for every thread, registered before the thread is created
     reset();
-    id = add(ALL_USER_THREADS, THREAD_EVENT_START | THREAD_EVENT_EXIT, 1);
+    id = add(SCE_KERNEL_THREAD_ID_PROCESS_ALL_ID, SCE_KERNEL_THREAD_EVENT_TYPE_START | SCE_KERNEL_THREAD_EVENT_TYPE_EXIT, 1);
     PRINT("every thread, created after: register", test_created(id));
     create_target();
     start_target(RETURNS);
@@ -123,7 +118,7 @@ int main(void) {
     create_target();
     start_target(WAITS);
     test_wait_until_waiting(target);
-    id = add(target, THREAD_EVENT_START | THREAD_EVENT_EXIT, 1);
+    id = add(target, SCE_KERNEL_THREAD_EVENT_TYPE_START | SCE_KERNEL_THREAD_EVENT_TYPE_EXIT, 1);
     PRINT("registered after the start: register", test_created(id));
     sceKernelSignalSema(go, 1);
     end_status("registered after the start");
@@ -134,8 +129,8 @@ int main(void) {
     // Two handlers on one thread
     reset();
     create_target();
-    const SceUID first = add(target, THREAD_EVENT_START | THREAD_EVENT_EXIT, 1);
-    const SceUID second = add(target, THREAD_EVENT_START | THREAD_EVENT_EXIT, 2);
+    const SceUID first = add(target, SCE_KERNEL_THREAD_EVENT_TYPE_START | SCE_KERNEL_THREAD_EVENT_TYPE_EXIT, 1);
+    const SceUID second = add(target, SCE_KERNEL_THREAD_EVENT_TYPE_START | SCE_KERNEL_THREAD_EVENT_TYPE_EXIT, 2);
     PRINT("two handlers: register the first", test_created(first));
     PRINT("two handlers: register the second", test_created(second));
     start_target(RETURNS);
@@ -153,7 +148,7 @@ int main(void) {
         reset();
         handler_return = returns[r];
         create_target();
-        id = add(target, THREAD_EVENT_START | THREAD_EVENT_EXIT, 1);
+        id = add(target, SCE_KERNEL_THREAD_EVENT_TYPE_START | SCE_KERNEL_THREAD_EVENT_TYPE_EXIT, 1);
         start_target(RETURNS);
         end_status(name);
         print_log(name);
@@ -165,7 +160,7 @@ int main(void) {
     reset();
     unregister_self = 1;
     create_target();
-    self_handler = add(target, THREAD_EVENT_START | THREAD_EVENT_EXIT, 1);
+    self_handler = add(target, SCE_KERNEL_THREAD_EVENT_TYPE_START | SCE_KERNEL_THREAD_EVENT_TYPE_EXIT, 1);
     start_target(RETURNS);
     end_status("unregistered in the start handler");
     print_log("unregistered in the start handler");
@@ -175,7 +170,7 @@ int main(void) {
     // Only the start event in the mask
     reset();
     create_target();
-    id = add(target, THREAD_EVENT_START, 1);
+    id = add(target, SCE_KERNEL_THREAD_EVENT_TYPE_START, 1);
     start_target(RETURNS);
     end_status("start only");
     print_log("start only");
@@ -185,7 +180,7 @@ int main(void) {
     // A thread started twice
     reset();
     create_target();
-    id = add(target, THREAD_EVENT_START | THREAD_EVENT_EXIT, 1);
+    id = add(target, SCE_KERNEL_THREAD_EVENT_TYPE_START | SCE_KERNEL_THREAD_EVENT_TYPE_EXIT, 1);
     start_target(RETURNS);
     end_status("started twice, first run");
     start_target(RETURNS);

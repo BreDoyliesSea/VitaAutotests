@@ -10,7 +10,7 @@ static int entry(SceSize args, void *argp) {
 }
 
 int main(void) {
-    PRINT("create a thread with a stack of 0", test_created(sceKernelCreateThread("t", entry, 0x10000100, 0, 0, 0, NULL)));
+    PRINT("create a thread with a stack of 0", test_created(sceKernelCreateThread("t", entry, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0, 0, 0, NULL)));
 
     test_exit();
     return 0;

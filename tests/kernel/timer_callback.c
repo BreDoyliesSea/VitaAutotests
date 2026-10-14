@@ -26,7 +26,7 @@ int main(void) {
     timer = sceKernelCreateTimer("once", EVENT_ATTR_NOTIFY_CB_ALL, NULL);
     PRINT("register", sceKernelRegisterCallbackToEvent(timer, cb));
     SceUInt64 interval = 20000;
-    PRINT("set the event", sceKernelSetTimerEvent(timer, 0, &interval, 0));
+    PRINT("set the event", sceKernelSetTimerEvent(timer, TIMER_TYPE_SET_EVENT, &interval, 0));
     PRINT("start", sceKernelStartTimer(timer));
     sceKernelDelayThreadCB(200000);
     PRINT("one event: runs of the callback", calls);
@@ -37,12 +37,12 @@ int main(void) {
     }
     SceUInt32 result = 0;
     SceUInt64 user_data = 0;
-    PRINT("one event: poll the timer's event", sceKernelPollEvent(timer, TIMER_EVENT_BIT, &result, &user_data));
+    PRINT("one event: poll the timer's event", sceKernelPollEvent(timer, EVENT_TIMER, &result, &user_data));
     sceKernelStopTimer(timer);
 
     // A repeating event every 20 ms for 300 ms, with callbacks only checked once the timer stopped
     calls = 0;
-    sceKernelSetTimerEvent(timer, 0, &interval, 1);
+    sceKernelSetTimerEvent(timer, TIMER_TYPE_SET_EVENT, &interval, 1);
     const SceUInt64 timer_before = sceKernelGetTimerTimeWide(timer);
     sceKernelStartTimer(timer);
     sceKernelDelayThread(300000);
@@ -67,7 +67,7 @@ int main(void) {
     calls = 0;
     timer = sceKernelCreateTimer("woken", EVENT_ATTR_NOTIFY_CB_WAKEUP_ONLY, NULL);
     sceKernelRegisterCallbackToEvent(timer, cb);
-    sceKernelSetTimerEvent(timer, 0, &interval, 0);
+    sceKernelSetTimerEvent(timer, TIMER_TYPE_SET_EVENT, &interval, 0);
     sceKernelStartTimer(timer);
     sceKernelDelayThreadCB(200000);
     PRINT("notify the woken only: runs of the callback", calls);

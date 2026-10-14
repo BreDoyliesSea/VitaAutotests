@@ -67,7 +67,7 @@ static int thread_entry(SceSize args, void *argp) {
 
 int main(void) {
     sema = sceKernelCreateSema("sema", 0, 0, 1, NULL);
-    const SceUID thread = sceKernelCreateThread("stack", thread_entry, 0x10000100, STACK_SIZE, 0, 0, NULL);
+    const SceUID thread = sceKernelCreateThread("stack", thread_entry, SCE_KERNEL_DEFAULT_PRIORITY_USER, STACK_SIZE, 0, 0, NULL);
     const int never_started = sceKernelGetThreadStackFreeSize(thread);
     PRINT("a thread not started yet: its free size is its stack size", never_started == STACK_SIZE);
     PRINT("a thread not started yet: its free size is within 1 KiB of its stack size", STACK_SIZE - never_started < 0x400);

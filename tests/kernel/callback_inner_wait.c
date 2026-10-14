@@ -36,7 +36,7 @@ static int inner_wait_callback(int notify_id, int count, int arg, void *common) 
         break;
     case SINGLE_FLAG:
         timeout = 1000;
-        inner_result = sceKernelWaitEventFlag(flag, 0x2, EVF_WAITMODE_AND, &bits, &timeout);
+        inner_result = sceKernelWaitEventFlag(flag, 0x2, SCE_EVENT_WAITAND, &bits, &timeout);
         break;
     case INNER_TIMEOUT:
         timeout = 1000;
@@ -58,7 +58,7 @@ static int outer_thread(SceSize args, void *argp) {
         if (outer_result == 0)
             sceKernelUnlockMutex(mutex, 1);
         break;
-    case SINGLE_FLAG: outer_result = sceKernelWaitEventFlagCB(flag, 0x1, EVF_WAITMODE_AND, &bits, &timeout); break;
+    case SINGLE_FLAG: outer_result = sceKernelWaitEventFlagCB(flag, 0x1, SCE_EVENT_WAITAND, &bits, &timeout); break;
     default: outer_result = sceKernelWaitSemaCB(outer, 1, &timeout); break;
     }
     sceKernelDeleteCallback(cb);

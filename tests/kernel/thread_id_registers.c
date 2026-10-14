@@ -42,8 +42,8 @@ static int id_thread(SceSize args, void *argp) {
     }
     new_rw = get_tpidrurw();
     thread_ro = get_tpidruro();
-    first_slot_matches = (SceUIntPtr)sceKernelGetTLSAddr(0) == thread_ro - 0x800;
-    last_slot_matches = (SceUIntPtr)sceKernelGetTLSAddr(255) == thread_ro - 0x800 + 4 * 255;
+    first_slot_matches = (SceUIntPtr)sceKernelGetTLSAddr(0) == thread_ro - SCE_KERNEL_TLS_SIZE;
+    last_slot_matches = (SceUIntPtr)sceKernelGetTLSAddr(255) == thread_ro - SCE_KERNEL_TLS_SIZE + 4 * 255;
 
     set_tpidrurw(0x1111);
     sceKernelDelayThread(1000);
@@ -91,14 +91,14 @@ static int other_thread(SceSize args, void *argp) {
 int main(void) {
     sema = sceKernelCreateSema("sema", 0, 0, 1, NULL);
     const unsigned int main_ro = get_tpidruro();
-    PRINT("the main thread's TPIDRURO is 0x800 past its first TLS slot", (SceUIntPtr)sceKernelGetTLSAddr(0) == main_ro - 0x800);
+    PRINT("the main thread's TPIDRURO is 0x800 past its first TLS slot", (SceUIntPtr)sceKernelGetTLSAddr(0) == main_ro - SCE_KERNEL_TLS_SIZE);
     PRINT("the main thread's TPIDRURW", get_tpidrurw());
 
     // Both threads on core 1, so the other one runs on the core the first one waits on
-    const SceUID thread = sceKernelCreateThread("ids", id_thread, 0x10000100, 0x4000, 0, CPU_MASK_USER_1, NULL);
+    const SceUID thread = sceKernelCreateThread("ids", id_thread, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, 0, SCE_KERNEL_CPU_MASK_USER_1, NULL);
     sceKernelStartThread(thread, 0, NULL);
     TEST_WAIT_FOR(test_in_wait(thread, WAIT_TYPE_SEMA, sema));
-    const SceUID other = sceKernelCreateThread("other", other_thread, 0x10000100, 0x4000, 0, CPU_MASK_USER_1, NULL);
+    const SceUID other = sceKernelCreateThread("other", other_thread, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, 0, SCE_KERNEL_CPU_MASK_USER_1, NULL);
     sceKernelStartThread(other, 0, NULL);
     test_join_thread(other);
     sceKernelWaitThreadEnd(thread, NULL, NULL);

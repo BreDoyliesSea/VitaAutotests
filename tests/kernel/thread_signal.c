@@ -83,7 +83,7 @@ int main(void) {
     PRINT("its wait", wait_result);
 
     // UIDs that aren't running threads, last, so an implementation that crashes on them loses nothing else
-    const SceUID dormant = sceKernelCreateThread("dormant", dormant_entry, 0x10000100, 0x4000, 0, 0, NULL);
+    const SceUID dormant = sceKernelCreateThread("dormant", dormant_entry, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, 0, 0, NULL);
     PRINT("send a signal to a thread that never started", sceKernelSendSignal(dormant));
     sceKernelDeleteThread(dormant);
     const SceUID sema = sceKernelCreateSema("sema", 0, 0, 1, NULL);

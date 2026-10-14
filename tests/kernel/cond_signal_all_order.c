@@ -7,9 +7,9 @@
 #include "test.h"
 #include "threadmgr_extra.h"
 
-#define LOW_PRIORITY 0x10000102
-#define MID_PRIORITY 0x10000100
-#define HIGH_PRIORITY 0x100000FE
+#define LOW_PRIORITY (SCE_KERNEL_DEFAULT_PRIORITY_USER + 2)
+#define MID_PRIORITY SCE_KERNEL_DEFAULT_PRIORITY_USER
+#define HIGH_PRIORITY (SCE_KERNEL_DEFAULT_PRIORITY_USER - 2)
 
 static SceUID cond, mutex;
 static SceKernelLwMutexWork lw_mutex;
@@ -101,10 +101,10 @@ static void run(const char *name, int lw, SceUInt32 cond_attr, SceUInt32 mutex_a
 
 int main(void) {
     static const int rising[3] = { LOW_PRIORITY, MID_PRIORITY, HIGH_PRIORITY };
-    run("priority condition and mutex", 0, ATTR_TH_PRIO, ATTR_TH_PRIO, rising);
-    run("FIFO condition, priority mutex", 0, 0, ATTR_TH_PRIO, rising);
-    run("lightweight, priority condition and mutex", 1, ATTR_TH_PRIO, ATTR_TH_PRIO, rising);
-    run("lightweight, FIFO condition, priority mutex", 1, 0, ATTR_TH_PRIO, rising);
+    run("priority condition and mutex", 0, SCE_KERNEL_ATTR_THREAD_PRIO, SCE_KERNEL_ATTR_THREAD_PRIO, rising);
+    run("FIFO condition, priority mutex", 0, 0, SCE_KERNEL_ATTR_THREAD_PRIO, rising);
+    run("lightweight, priority condition and mutex", 1, SCE_KERNEL_ATTR_THREAD_PRIO, SCE_KERNEL_ATTR_THREAD_PRIO, rising);
+    run("lightweight, FIFO condition, priority mutex", 1, 0, SCE_KERNEL_ATTR_THREAD_PRIO, rising);
 
     test_exit();
     return 0;

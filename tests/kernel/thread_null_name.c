@@ -10,7 +10,7 @@ static int entry(SceSize args, void *argp) {
 }
 
 int main(void) {
-    PRINT("create a thread with a NULL name", test_created(sceKernelCreateThread(NULL, entry, 0x10000100, 0x4000, 0, 0, NULL)));
+    PRINT("create a thread with a NULL name", test_created(sceKernelCreateThread(NULL, entry, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, 0, 0, NULL)));
 
     test_exit();
     return 0;

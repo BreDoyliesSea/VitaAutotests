@@ -12,7 +12,7 @@ static int entry(SceSize args, void *argp) {
 }
 
 int main(void) {
-    const SceUID deleted = sceKernelCreateThread("deleted", entry, 0x10000100, 0x4000, 0, 0, NULL);
+    const SceUID deleted = sceKernelCreateThread("deleted", entry, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, 0, 0, NULL);
     sceKernelDeleteThread(deleted);
     const SceUID sema = sceKernelCreateSema("sema", 0, 1, 1, NULL);
     const SceUID ids[] = { 0x12345, deleted, sema };
@@ -28,30 +28,30 @@ int main(void) {
         PRINTF(sceKernelWaitThreadEndCB(ids[i], &status, &timeout), "wait with callbacks for the end of %s", names[i]);
         PRINTF(sceKernelGetThreadExitStatus(ids[i], &status), "the exit status of %s", names[i]);
         PRINTF(sceKernelGetThreadInfo(ids[i], &info), "info of %s", names[i]);
-        PRINTF(sceKernelChangeThreadPriority(ids[i], 0x10000100), "change the priority of %s", names[i]);
+        PRINTF(sceKernelChangeThreadPriority(ids[i], SCE_KERNEL_DEFAULT_PRIORITY_USER), "change the priority of %s", names[i]);
         PRINTF(sceKernelGetThreadStackFreeSize(ids[i]), "the stack free size of %s", names[i]);
         PRINTF(sceKernelGetThreadCpuAffinityMask(ids[i]), "the affinity of %s", names[i]);
-        PRINTF(sceKernelChangeThreadCpuAffinityMask(ids[i], CPU_MASK_USER_0), "change the affinity of %s", names[i]);
+        PRINTF(sceKernelChangeThreadCpuAffinityMask(ids[i], SCE_KERNEL_CPU_MASK_USER_0), "change the affinity of %s", names[i]);
         PRINTF(sceKernelDeleteThread(ids[i]), "delete %s", names[i]);
     }
     PRINT("the semaphore survives the thread calls", sceKernelPollSema(sema, 1));
 
     // Creation
-    PRINT("create with an empty name", test_created(sceKernelCreateThread("", entry, 0x10000100, 0x4000, 0, 0, NULL)));
-    PRINT("create with attribute 0x80000000", test_created(sceKernelCreateThread("t", entry, 0x10000100, 0x4000, 0x80000000, 0, NULL)));
-    PRINT("create with a stack of 4 KiB", test_created(sceKernelCreateThread("t", entry, 0x10000100, 0x1000, 0, 0, NULL)));
-    PRINT("create with a stack of 4 KiB minus 1", test_created(sceKernelCreateThread("t", entry, 0x10000100, 0xFFF, 0, 0, NULL)));
-    PRINT("create with a stack of 1 KiB", test_created(sceKernelCreateThread("t", entry, 0x10000100, 0x400, 0, 0, NULL)));
-    PRINT("create with a 4 KiB plus 1 stack", test_created(sceKernelCreateThread("t", entry, 0x10000100, 0x1001, 0, 0, NULL)));
-    PRINT("create with every user core", test_created(sceKernelCreateThread("t", entry, 0x10000100, 0x4000, 0, 0x70000, NULL)));
-    PRINT("create with a core games can't use", test_created(sceKernelCreateThread("t", entry, 0x10000100, 0x4000, 0, 0x80000, NULL)));
-    PRINT("create with affinity bit 0", test_created(sceKernelCreateThread("t", entry, 0x10000100, 0x4000, 0, 0x1, NULL)));
+    PRINT("create with an empty name", test_created(sceKernelCreateThread("", entry, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, 0, 0, NULL)));
+    PRINT("create with attribute 0x80000000", test_created(sceKernelCreateThread("t", entry, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, 0x80000000, 0, NULL)));
+    PRINT("create with a stack of 4 KiB", test_created(sceKernelCreateThread("t", entry, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x1000, 0, 0, NULL)));
+    PRINT("create with a stack of 4 KiB minus 1", test_created(sceKernelCreateThread("t", entry, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0xFFF, 0, 0, NULL)));
+    PRINT("create with a stack of 1 KiB", test_created(sceKernelCreateThread("t", entry, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x400, 0, 0, NULL)));
+    PRINT("create with a 4 KiB plus 1 stack", test_created(sceKernelCreateThread("t", entry, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x1001, 0, 0, NULL)));
+    PRINT("create with every user core", test_created(sceKernelCreateThread("t", entry, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, 0, 0x70000, NULL)));
+    PRINT("create with a core games can't use", test_created(sceKernelCreateThread("t", entry, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, 0, 0x80000, NULL)));
+    PRINT("create with affinity bit 0", test_created(sceKernelCreateThread("t", entry, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, 0, 0x1, NULL)));
 
     // A dormant thread
-    const SceUID dormant = sceKernelCreateThread("dormant", entry, 0x10000100, 0x4000, 0, 0, NULL);
-    PRINT("change the priority of a dormant thread", sceKernelChangeThreadPriority(dormant, 0x10000101));
+    const SceUID dormant = sceKernelCreateThread("dormant", entry, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, 0, 0, NULL);
+    PRINT("change the priority of a dormant thread", sceKernelChangeThreadPriority(dormant, SCE_KERNEL_DEFAULT_PRIORITY_USER + 1));
     PRINT("change it to priority 0", sceKernelChangeThreadPriority(dormant, 0));
-    PRINT("change its affinity", sceKernelChangeThreadCpuAffinityMask(dormant, CPU_MASK_USER_1));
+    PRINT("change its affinity", sceKernelChangeThreadCpuAffinityMask(dormant, SCE_KERNEL_CPU_MASK_USER_1));
     PRINT("its affinity after it", sceKernelGetThreadCpuAffinityMask(dormant));
     PRINT("its stack free size is positive", sceKernelGetThreadStackFreeSize(dormant) > 0);
     sceKernelDeleteThread(dormant);
@@ -80,11 +80,11 @@ int main(void) {
 
     // NULL pointers last, so an implementation that crashes on them loses nothing else
     PRINT("info with a NULL pointer", sceKernelGetThreadInfo(0, NULL));
-    const SceUID unstarted = sceKernelCreateThread("unstarted", entry, 0x10000100, 0x4000, 0, 0, NULL);
+    const SceUID unstarted = sceKernelCreateThread("unstarted", entry, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, 0, 0, NULL);
     PRINT("start with an argument size but no argument", sceKernelStartThread(unstarted, 4, NULL));
     SceUInt timeout = TEST_WAIT_US;
     PRINT("wait for its end", sceKernelWaitThreadEnd(unstarted, NULL, &timeout));
-    PRINT("the exit status into a NULL pointer", sceKernelGetThreadExitStatus(sceKernelCreateThread("t", entry, 0x10000100, 0x4000, 0, 0, NULL), NULL));
+    PRINT("the exit status into a NULL pointer", sceKernelGetThreadExitStatus(sceKernelCreateThread("t", entry, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, 0, 0, NULL), NULL));
 
     test_exit();
     return 0;

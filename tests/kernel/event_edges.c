@@ -14,20 +14,20 @@ int main(void) {
 
     // Event flags: pattern 0 and wait modes that aren't documented
     const SceUID flag = sceKernelCreateEventFlag("flag", 0, 0x1, NULL);
-    PRINT("poll for pattern 0", sceKernelPollEventFlag(flag, 0, EVF_WAITMODE_OR, &bits));
+    PRINT("poll for pattern 0", sceKernelPollEventFlag(flag, 0, SCE_EVENT_WAITOR, &bits));
     timeout = 1000;
-    PRINT("wait for pattern 0", sceKernelWaitEventFlag(flag, 0, EVF_WAITMODE_OR, &bits, &timeout));
-    PRINT("poll with both clear modes", sceKernelPollEventFlag(flag, 0x1, EVF_WAITMODE_OR | EVF_WAITMODE_CLEAR_ALL | EVF_WAITMODE_CLEAR_PAT, &bits));
+    PRINT("wait for pattern 0", sceKernelWaitEventFlag(flag, 0, SCE_EVENT_WAITOR, &bits, &timeout));
+    PRINT("poll with both clear modes", sceKernelPollEventFlag(flag, 0x1, SCE_EVENT_WAITOR | SCE_EVENT_WAITCLEAR | SCE_EVENT_WAITCLEAR_PAT, &bits));
     sceKernelSetEventFlag(flag, 0x1);
     PRINT("poll with mode 0x8", sceKernelPollEventFlag(flag, 0x1, 0x8, &bits));
     PRINT("poll with mode 0x100", sceKernelPollEventFlag(flag, 0x1, 0x100, &bits));
-    PRINT("poll without a result pointer", sceKernelPollEventFlag(flag, 0x1, EVF_WAITMODE_OR, NULL));
+    PRINT("poll without a result pointer", sceKernelPollEventFlag(flag, 0x1, SCE_EVENT_WAITOR, NULL));
     timeout = 0;
-    PRINT("wait with a timeout of 0 that isn't met", sceKernelWaitEventFlag(flag, 0x2, EVF_WAITMODE_AND, &bits, &timeout));
+    PRINT("wait with a timeout of 0 that isn't met", sceKernelWaitEventFlag(flag, 0x2, SCE_EVENT_WAITAND, &bits, &timeout));
     SceUInt32 waiting = 0xDEAD;
     PRINT("cancel with no waiters", sceKernelCancelEventFlag(flag, 0x6, &waiting));
     PRINT("it counts no waiters", waiting);
-    PRINT("the pattern after the cancel", sceKernelPollEventFlag(flag, 0xFFFFFFFF, EVF_WAITMODE_OR, &bits) == 0 ? bits : 0);
+    PRINT("the pattern after the cancel", sceKernelPollEventFlag(flag, 0xFFFFFFFF, SCE_EVENT_WAITOR, &bits) == 0 ? bits : 0);
     PRINT("create with attribute 0xFFFF", test_created(sceKernelCreateEventFlag("attrs", 0xFFFF, 0, NULL)));
 
     // Simple events: pattern 0 and the high bits

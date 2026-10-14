@@ -36,9 +36,9 @@ int main(void) {
     // Creation
     PRINT("create with an empty name", test_created(sceKernelCreateSimpleEvent("", 0, 0, NULL)));
     PRINT("create with attribute 0x80000000", test_created(sceKernelCreateSimpleEvent("e", 0x80000000, 0, NULL)));
-    PRINT("create with the openable attribute", test_created(sceKernelCreateSimpleEvent("e", ATTR_OPENABLE, 0, NULL)));
-    PRINT("create with the priority attribute", test_created(sceKernelCreateSimpleEvent("e", ATTR_TH_PRIO, 0, NULL)));
-    PRINT("create with the multi attribute", test_created(sceKernelCreateSimpleEvent("e", EVF_ATTR_MULTI, 0, NULL)));
+    PRINT("create with the openable attribute", test_created(sceKernelCreateSimpleEvent("e", SCE_KERNEL_ATTR_OPENABLE, 0, NULL)));
+    PRINT("create with the priority attribute", test_created(sceKernelCreateSimpleEvent("e", SCE_KERNEL_ATTR_THREAD_PRIO, 0, NULL)));
+    PRINT("create with the multi attribute", test_created(sceKernelCreateSimpleEvent("e", SCE_EVENT_WAITMULTIPLE, 0, NULL)));
 
     test_exit();
     return 0;

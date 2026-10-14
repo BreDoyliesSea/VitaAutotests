@@ -21,7 +21,7 @@ int main(void) {
         PRINTF(sceKernelGetTimerTime(ids[i], &clock), "get the time of %s", names[i]);
         PRINTF(sceKernelSetTimerTime(ids[i], &clock), "set the time of %s", names[i]);
         PRINTF(sceKernelGetTimerBase(ids[i], &clock), "get the base of %s", names[i]);
-        PRINTF(sceKernelSetTimerEvent(ids[i], 1, &interval, 0), "set an event on %s", names[i]);
+        PRINTF(sceKernelSetTimerEvent(ids[i], TIMER_TYPE_PULSE_EVENT, &interval, 0), "set an event on %s", names[i]);
         PRINTF(sceKernelCancelTimer(ids[i], &waiting), "cancel %s", names[i]);
         PRINTF(sceKernelGetTimerInfo(ids[i], &info), "info of %s", names[i]);
         PRINTF(sceKernelCloseTimer(ids[i]), "close %s", names[i]);
@@ -32,8 +32,8 @@ int main(void) {
     // Creation
     PRINT("create with an empty name", test_created(sceKernelCreateTimer("", 0, NULL)));
     PRINT("create with attribute 0x80000000", test_created(sceKernelCreateTimer("t", 0x80000000, NULL)));
-    PRINT("create with the openable attribute", test_created(sceKernelCreateTimer("t", ATTR_OPENABLE, NULL)));
-    PRINT("create with the priority attribute", test_created(sceKernelCreateTimer("t", ATTR_TH_PRIO, NULL)));
+    PRINT("create with the openable attribute", test_created(sceKernelCreateTimer("t", SCE_KERNEL_ATTR_OPENABLE, NULL)));
+    PRINT("create with the priority attribute", test_created(sceKernelCreateTimer("t", SCE_KERNEL_ATTR_THREAD_PRIO, NULL)));
 
     const SceUID timer = sceKernelCreateTimer("timer", 0, NULL);
 

@@ -200,10 +200,10 @@ int main(void) {
     b = timer;
     a_set_at_create = b_set_at_create = 0;
     events[0] = (WaitEvent){ a, EVENT_BIT_A };
-    events[1] = (WaitEvent){ timer, TIMER_EVENT_BIT };
+    events[1] = (WaitEvent){ timer, EVENT_TIMER };
     sceClibMemset(results, 0xAA, sizeof(results));
     SceUInt64 interval = 20000;
-    sceKernelSetTimerEvent(timer, 0, &interval, 0);
+    sceKernelSetTimerEvent(timer, TIMER_TYPE_SET_EVENT, &interval, 0);
     sceKernelStartTimer(timer);
     timeout = 500000;
     count = sceKernelWaitMultipleEvents(events, 2, EVENT_WAIT_MODE_OR, results, &timeout);

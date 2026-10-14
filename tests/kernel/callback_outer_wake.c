@@ -41,7 +41,7 @@ static int outer_thread(SceSize args, void *argp) {
         if (outer_result == 0)
             sceKernelUnlockMutex(mutex, 1);
         break;
-    case EVENT_FLAG: outer_result = sceKernelWaitEventFlagCB(flag, 0x1, EVF_WAITMODE_AND | EVF_WAITMODE_CLEAR_ALL, &outer_bits, &outer_left); break;
+    case EVENT_FLAG: outer_result = sceKernelWaitEventFlagCB(flag, 0x1, SCE_EVENT_WAITAND | SCE_EVENT_WAITCLEAR, &outer_bits, &outer_left); break;
     case SIMPLE_EVENT: outer_result = sceKernelWaitEventCB(event, EVENT_BIT_A, &result, &user_data, &outer_left); break;
     case MSG_PIPE: outer_result = sceKernelReceiveMsgPipeCB(pipe, outer_message, sizeof(outer_message), MSG_PIPE_MODE_FULL, NULL, &outer_left); break;
     }

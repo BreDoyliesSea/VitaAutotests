@@ -29,17 +29,17 @@ static volatile unsigned int attr_fpscr, set_works;
 static int set_attr_thread(SceSize args, void *argp) {
     (void)args;
     (void)argp;
-    set_result = sceKernelChangeCurrentThreadAttr(0, 0x01000000);
+    set_result = sceKernelChangeCurrentThreadAttr(0, THREAD_ATTR_NOUSE_VFP);
     attr_fpscr = get_fpscr() & FPSCR_CONTROL;
     set_works = vfp_works();
-    clear_result = sceKernelChangeCurrentThreadAttr(0x01000000, 0);
+    clear_result = sceKernelChangeCurrentThreadAttr(THREAD_ATTR_NOUSE_VFP, 0);
     return 0;
 }
 
 int main(void) {
     for (int bit = 0; bit < 32; bit++) {
         const SceUInt32 attr = 1u << bit;
-        const SceUID thread = sceKernelCreateThread("attr", report_thread, 0x10000100, 0x4000, attr, 0, NULL);
+        const SceUID thread = sceKernelCreateThread("attr", report_thread, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, attr, 0, NULL);
         PRINTF(test_created(thread), "create with 0x%08X", (unsigned)attr);
         if (thread < 0)
             continue;

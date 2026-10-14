@@ -7,7 +7,7 @@
 int main(void) {
     const SceUID timer = sceKernelCreateTimer("timer", 0, NULL);
     SceUInt64 interval = 0;
-    PRINT("set an event with an interval of 0", sceKernelSetTimerEvent(timer, 1, &interval, 0));
+    PRINT("set an event with an interval of 0", sceKernelSetTimerEvent(timer, TIMER_TYPE_PULSE_EVENT, &interval, 0));
 
     test_exit();
     return 0;

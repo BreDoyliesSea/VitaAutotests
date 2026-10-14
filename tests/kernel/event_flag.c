@@ -11,7 +11,7 @@ static unsigned int wait_bits[2];
 static int wait_thread(SceSize args, void *argp) {
     (void)args;
     const int i = *(const int *)argp;
-    wait_result[i] = sceKernelWaitEventFlag(flag, 0x8, EVF_WAITMODE_AND, &wait_bits[i], NULL);
+    wait_result[i] = sceKernelWaitEventFlag(flag, 0x8, SCE_EVENT_WAITAND, &wait_bits[i], NULL);
     return 0;
 }
 
@@ -28,26 +28,26 @@ int main(void) {
     unsigned int bits = 0;
     flag = sceKernelCreateEventFlag("flag", 0, 0x3, NULL);
 
-    PRINT("poll AND with a bit missing", sceKernelPollEventFlag(flag, 0x7, EVF_WAITMODE_AND, &bits));
-    PRINT("poll OR with one bit set", sceKernelPollEventFlag(flag, 0x5, EVF_WAITMODE_OR, &bits));
+    PRINT("poll AND with a bit missing", sceKernelPollEventFlag(flag, 0x7, SCE_EVENT_WAITAND, &bits));
+    PRINT("poll OR with one bit set", sceKernelPollEventFlag(flag, 0x5, SCE_EVENT_WAITOR, &bits));
     PRINT("poll gives the bits", bits);
-    PRINT("poll that clears its pattern", sceKernelPollEventFlag(flag, 0x1, EVF_WAITMODE_AND | EVF_WAITMODE_CLEAR_PAT, &bits));
+    PRINT("poll that clears its pattern", sceKernelPollEventFlag(flag, 0x1, SCE_EVENT_WAITAND | SCE_EVENT_WAITCLEAR_PAT, &bits));
     PRINT("poll gives the bits from before clearing", bits);
-    sceKernelPollEventFlag(flag, 0x2, EVF_WAITMODE_OR, &bits);
+    sceKernelPollEventFlag(flag, 0x2, SCE_EVENT_WAITOR, &bits);
     PRINT("clearing the pattern clears only it", bits);
-    sceKernelPollEventFlag(flag, 0x2, EVF_WAITMODE_OR | EVF_WAITMODE_CLEAR_ALL, &bits);
-    PRINT("clearing all clears every bit", sceKernelPollEventFlag(flag, 0xFF, EVF_WAITMODE_OR, &bits));
+    sceKernelPollEventFlag(flag, 0x2, SCE_EVENT_WAITOR | SCE_EVENT_WAITCLEAR, &bits);
+    PRINT("clearing all clears every bit", sceKernelPollEventFlag(flag, 0xFF, SCE_EVENT_WAITOR, &bits));
 
     sceKernelSetEventFlag(flag, 0x4);
     SceUInt timeout = 1000;
-    PRINT("wait times out", sceKernelWaitEventFlag(flag, 0x1, EVF_WAITMODE_AND, &bits, &timeout));
+    PRINT("wait times out", sceKernelWaitEventFlag(flag, 0x1, SCE_EVENT_WAITAND, &bits, &timeout));
     PRINT("a timed out wait gives the bits", bits);
-    sceKernelPollEventFlag(flag, 0x4, EVF_WAITMODE_OR | EVF_WAITMODE_CLEAR_ALL, &bits);
+    sceKernelPollEventFlag(flag, 0x4, SCE_EVENT_WAITOR | SCE_EVENT_WAITCLEAR, &bits);
 
     // Without the multi attribute, only one thread may wait
     SceUID waiter = start_waiter(0);
     timeout = 1000;
-    PRINT("a second waiter without the multi attribute", sceKernelWaitEventFlag(flag, 0x1, EVF_WAITMODE_AND, &bits, &timeout));
+    PRINT("a second waiter without the multi attribute", sceKernelWaitEventFlag(flag, 0x1, SCE_EVENT_WAITAND, &bits, &timeout));
     SceUInt32 waiting = 0;
     PRINT("cancel", sceKernelCancelEventFlag(flag, 0x5, &waiting));
     test_join_thread(waiter);
@@ -61,7 +61,7 @@ int main(void) {
     PRINT("a wait on a deleted flag", wait_result[0]);
 
     // With the multi attribute, setting the bit ends every wait
-    flag = sceKernelCreateEventFlag("multi", EVF_ATTR_MULTI, 0, NULL);
+    flag = sceKernelCreateEventFlag("multi", SCE_EVENT_WAITMULTIPLE, 0, NULL);
     const SceUID first = start_waiter(0);
     const SceUID second = start_waiter(1);
     sceKernelSetEventFlag(flag, 0x8);

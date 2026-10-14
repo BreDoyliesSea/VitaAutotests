@@ -22,7 +22,7 @@ int main(void) {
     PRINT("create with a negative count", sceKernelCreateLwMutex(&work, "m", 0, -1, NULL));
     PRINT("create non-recursive with a count of 2", sceKernelCreateLwMutex(&work, "m", 0, 2, NULL));
     SceKernelLwMutexWork recursive_held;
-    PRINT("create recursive with a count of 2", sceKernelCreateLwMutex(&recursive_held, "m", MUTEX_ATTR_RECURSIVE, 2, NULL));
+    PRINT("create recursive with a count of 2", sceKernelCreateLwMutex(&recursive_held, "m", LW_MUTEX_ATTR_RECURSIVE, 2, NULL));
 
     SceKernelLwMutexWork mutex;
     sceKernelCreateLwMutex(&mutex, "m", 0, 0, NULL);
@@ -38,7 +38,7 @@ int main(void) {
     PRINT("unlock", sceKernelUnlockLwMutex(&mutex, 1));
 
     SceKernelLwMutexWork recursive;
-    sceKernelCreateLwMutex(&recursive, "m", MUTEX_ATTR_RECURSIVE, 0, NULL);
+    sceKernelCreateLwMutex(&recursive, "m", LW_MUTEX_ATTR_RECURSIVE, 0, NULL);
     PRINT("lock recursive with a count of 2", sceKernelLockLwMutex(&recursive, 2, NULL));
     PRINT("lock recursive again", sceKernelLockLwMutex(&recursive, 1, NULL));
     PRINT("lock recursive past the maximum count", sceKernelLockLwMutex(&recursive, 0x7FFFFFFF, NULL));

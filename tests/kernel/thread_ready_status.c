@@ -38,14 +38,14 @@ static int status_of(SceUID thread) {
 }
 
 int main(void) {
-    sceKernelChangeThreadCpuAffinityMask(0, CPU_MASK_USER_0);
+    sceKernelChangeThreadCpuAffinityMask(0, SCE_KERNEL_CPU_MASK_USER_0);
     // The main thread only moves to core 0 when it is next scheduled
     sceKernelDelayThread(1000);
     sema = sceKernelCreateSema("sema", 0, 0, 1, NULL);
 
     // Started, and ready but not running. Nothing blocks the main thread until the read is done.
     release = 0;
-    const SceUID started_thread = sceKernelCreateThread("started", spinning_thread, LOW_PRIORITY, 0x4000, 0, CPU_MASK_USER_0, NULL);
+    const SceUID started_thread = sceKernelCreateThread("started", spinning_thread, LOW_PRIORITY, 0x4000, 0, SCE_KERNEL_CPU_MASK_USER_0, NULL);
     sceKernelStartThread(started_thread, 0, NULL);
     TEST_WAIT_FOR(status_of(started_thread) != 0x10);
     SceKernelThreadInfo started_info = { .size = sizeof(started_info) };
@@ -55,7 +55,7 @@ int main(void) {
 
     // A waiter whose wait just ended
     release = 0;
-    const SceUID waiter = sceKernelCreateThread("waiter", waiting_thread, LOW_PRIORITY, 0x4000, 0, CPU_MASK_USER_0, NULL);
+    const SceUID waiter = sceKernelCreateThread("waiter", waiting_thread, LOW_PRIORITY, 0x4000, 0, SCE_KERNEL_CPU_MASK_USER_0, NULL);
     sceKernelStartThread(waiter, 0, NULL);
     test_wait_until_waiting(waiter);
     SceKernelThreadInfo waiting_info = { .size = sizeof(waiting_info) };

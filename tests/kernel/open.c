@@ -8,7 +8,7 @@
 #define LONG_NAME "abcdefghijklmnopqrstuvwxyz012345"
 
 int main(void) {
-    const SceUID sema = sceKernelCreateSema("open_me", ATTR_OPENABLE, 0, 1, NULL);
+    const SceUID sema = sceKernelCreateSema("open_me", SCE_KERNEL_ATTR_OPENABLE, 0, 1, NULL);
     const SceUID opened = sceKernelOpenSema("open_me");
     PRINT("open an openable semaphore", test_created(opened));
     sceKernelSignalSema(opened, 1);
@@ -21,7 +21,7 @@ int main(void) {
     PRINT("open a name nothing has", sceKernelOpenSema("nothing") < 0);
 
     // Whether a name past 31 characters is an error for objects that are openable or not
-    PRINT("a long name on an openable semaphore", test_created(sceKernelCreateSema(LONG_NAME, ATTR_OPENABLE, 0, 1, NULL)));
+    PRINT("a long name on an openable semaphore", test_created(sceKernelCreateSema(LONG_NAME, SCE_KERNEL_ATTR_OPENABLE, 0, 1, NULL)));
     PRINT("a long name on a semaphore that isn't openable", test_created(sceKernelCreateSema(LONG_NAME, 0, 0, 1, NULL)));
 
     test_exit();

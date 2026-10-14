@@ -12,14 +12,14 @@ int main(void) {
     SceUInt64 interval = 1000;
     SceUID timer = sceKernelCreateTimer("timer", 0, NULL);
 
-    sceKernelSetTimerEvent(timer, 0, &interval, 0);
+    sceKernelSetTimerEvent(timer, TIMER_TYPE_SET_EVENT, &interval, 0);
     sceKernelStartTimer(timer);
     sceKernelDelayThread(100000);
-    PRINT("the timer event fires", sceKernelPollEvent(timer, TIMER_EVENT_BIT, &result, &user_data));
+    PRINT("the timer event fires", sceKernelPollEvent(timer, EVENT_TIMER, &result, &user_data));
 
     interval = 10000000;
-    sceKernelSetTimerEvent(timer, 0, &interval, 0);
-    PRINT("setting a new event clears the fired one", sceKernelPollEvent(timer, TIMER_EVENT_BIT, &result, &user_data));
+    sceKernelSetTimerEvent(timer, TIMER_TYPE_SET_EVENT, &interval, 0);
+    PRINT("setting a new event clears the fired one", sceKernelPollEvent(timer, EVENT_TIMER, &result, &user_data));
 
     // Counting: start returns 1 if already started, stop returns 1 if it stopped the timer
     timer = sceKernelCreateTimer("count", 0, NULL);
@@ -41,12 +41,12 @@ int main(void) {
     // A repeating event fires every interval
     timer = sceKernelCreateTimer("repeat", 0, NULL);
     interval = 10000;
-    sceKernelSetTimerEvent(timer, 0, &interval, 1);
+    sceKernelSetTimerEvent(timer, TIMER_TYPE_SET_EVENT, &interval, 1);
     sceKernelStartTimer(timer);
     SceUInt32 timeout = 200000;
-    PRINT("the first repeat", sceKernelWaitEvent(timer, TIMER_EVENT_BIT, &result, &user_data, &timeout));
+    PRINT("the first repeat", sceKernelWaitEvent(timer, EVENT_TIMER, &result, &user_data, &timeout));
     timeout = 200000;
-    PRINT("the second repeat", sceKernelWaitEvent(timer, TIMER_EVENT_BIT, &result, &user_data, &timeout));
+    PRINT("the second repeat", sceKernelWaitEvent(timer, EVENT_TIMER, &result, &user_data, &timeout));
     PRINT("a timer event has no user data", user_data);
 
     test_exit();

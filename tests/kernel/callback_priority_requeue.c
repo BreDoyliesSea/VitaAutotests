@@ -45,8 +45,8 @@ static SceUID start(SceKernelThreadEntry entry, int priority, int arg) {
 }
 
 int main(void) {
-    outer = sceKernelCreateSema("outer", ATTR_TH_PRIO, 0, 2, NULL);
-    inner = sceKernelCreateSema("inner", ATTR_TH_PRIO, 0, 2, NULL);
+    outer = sceKernelCreateSema("outer", SCE_KERNEL_ATTR_THREAD_PRIO, 0, 2, NULL);
+    inner = sceKernelCreateSema("inner", SCE_KERNEL_ATTR_THREAD_PRIO, 0, 2, NULL);
     outer_result = inner_result = other_result[0] = other_result[1] = 0xDEAD;
 
     // The thread at 0x80 in both waits, and another thread at 0x70 behind it in each queue

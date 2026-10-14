@@ -25,7 +25,7 @@ static int restart_thread(SceSize args, void *argp) {
 
 int main(void) {
     go = sceKernelCreateSema("go", 0, 0, 1, NULL);
-    const SceUID thread = sceKernelCreateThread("restart", restart_thread, 0x10000100, 0x4000, 0, 0, NULL);
+    const SceUID thread = sceKernelCreateThread("restart", restart_thread, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, 0, 0, NULL);
     int arg = 0x11;
     sceKernelStartThread(thread, sizeof(arg), &arg);
     test_wait_until_waiting(thread);

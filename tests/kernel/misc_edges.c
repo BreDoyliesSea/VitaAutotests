@@ -23,8 +23,8 @@ int main(void) {
     // Names
     PRINT("a NULL name", test_created(sceKernelCreateSema(NULL, 0, 0, 1, NULL)));
     PRINT("an empty name", test_created(sceKernelCreateSema("", 0, 0, 1, NULL)));
-    PRINT("a 31 character name on an openable object", test_created(sceKernelCreateSema(NAME_31, ATTR_OPENABLE, 0, 1, NULL)));
-    PRINT("two openable objects with the same name", test_created(sceKernelCreateSema(NAME_31, ATTR_OPENABLE, 0, 1, NULL)));
+    PRINT("a 31 character name on an openable object", test_created(sceKernelCreateSema(NAME_31, SCE_KERNEL_ATTR_OPENABLE, 0, 1, NULL)));
+    PRINT("two openable objects with the same name", test_created(sceKernelCreateSema(NAME_31, SCE_KERNEL_ATTR_OPENABLE, 0, 1, NULL)));
 
     // Info sizes
     const SceUID sema = sceKernelCreateSema("sema", 0, 1, 4, NULL);
@@ -51,9 +51,9 @@ int main(void) {
     // Timers
     const SceUID timer = sceKernelCreateTimer("timer", 0, NULL);
     SceUInt64 interval = 0;
-    PRINT("set an event with an interval of 0", sceKernelSetTimerEvent(timer, 0, &interval, 0));
+    PRINT("set an event with an interval of 0", sceKernelSetTimerEvent(timer, TIMER_TYPE_SET_EVENT, &interval, 0));
     PRINT("set an event of type 2", sceKernelSetTimerEvent(timer, 2, &interval, 0));
-    PRINT("set an event without an interval", sceKernelSetTimerEvent(timer, 0, NULL, 0));
+    PRINT("set an event without an interval", sceKernelSetTimerEvent(timer, TIMER_TYPE_SET_EVENT, NULL, 0));
     PRINT("the time of an unknown timer", (int)sceKernelGetTimerTimeWide(0x12345));
     PRINT("start an unknown timer", sceKernelStartTimer(0x12345));
 

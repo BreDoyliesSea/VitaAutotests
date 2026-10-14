@@ -41,7 +41,7 @@ static int checks_args(SceSize args, void *argp) {
 
 // Starts entry, waits for its end and returns the status it reports, or the error
 static int end_status(SceKernelThreadEntry entry, SceUID *thread) {
-    *thread = sceKernelCreateThread("t", entry, 0x10000100, 0x4000, 0, 0, NULL);
+    *thread = sceKernelCreateThread("t", entry, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, 0, 0, NULL);
     sceKernelStartThread(*thread, 0, NULL);
     int status = 0xDEAD;
     SceUInt timeout = TEST_WAIT_US;
@@ -76,7 +76,7 @@ int main(void) {
         sent[i] = (char)i;
     static const SceSize sizes[] = { 0, 1, 4, 13, 0x100, 0x800 };
     for (unsigned int i = 0; i < sizeof(sizes) / sizeof(sizes[0]); i++) {
-        thread = sceKernelCreateThread("args", checks_args, 0x10000100, 0x4000, 0, 0, NULL);
+        thread = sceKernelCreateThread("args", checks_args, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, 0, 0, NULL);
         expected_id = thread;
         arg_size = arg_copied = arg_matches = arg_null = own_id_matches = 0xDEAD;
         PRINTF(sceKernelStartThread(thread, sizes[i], sent), "start with 0x%X bytes of arguments", sizes[i]);
@@ -87,7 +87,7 @@ int main(void) {
         PRINTF(arg_matches, "0x%X bytes: the copy matches", sizes[i]);
         PRINTF(own_id_matches, "0x%X bytes: its thread ID is the created one", sizes[i]);
     }
-    thread = sceKernelCreateThread("args", checks_args, 0x10000100, 0x4000, 0, 0, NULL);
+    thread = sceKernelCreateThread("args", checks_args, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, 0, 0, NULL);
     PRINT("start with more arguments than the stack holds", sceKernelStartThread(thread, 0x8000, sent));
     timeout = TEST_WAIT_US;
     sceKernelWaitThreadEnd(thread, NULL, &timeout);

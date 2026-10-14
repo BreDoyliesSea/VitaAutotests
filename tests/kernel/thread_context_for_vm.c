@@ -11,7 +11,6 @@
 #include "test.h"
 #include "threadmgr_extra.h"
 
-#define VM 0x04000000
 static const unsigned long long target_regs[2] = { 0x1122334455667788ULL, 0x0123456789ABCDEFULL };
 
 static SceUID sema, target;
@@ -94,7 +93,7 @@ static int caller_entry(SceSize args, void *argp) {
 
 static void run(int index, SceUInt target_attr, SceUInt caller_attr) {
     sema = sceKernelCreateSema("sema", 0, 0, 1, NULL);
-    target = sceKernelCreateThread("target", target_entry, 0x10000100, 0x4000, target_attr, CPU_MASK_USER_1, NULL);
+    target = sceKernelCreateThread("target", target_entry, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, target_attr, SCE_KERNEL_CPU_MASK_USER_1, NULL);
     SceKernelThreadInfo info = { .size = sizeof(info) };
     sceKernelGetThreadInfo(target, &info);
     target_stack_low = (SceUIntPtr)info.stack;
@@ -102,7 +101,7 @@ static void run(int index, SceUInt target_attr, SceUInt caller_attr) {
     sceKernelStartThread(target, 0, NULL);
     TEST_WAIT_FOR(test_in_wait(target, WAIT_TYPE_SEMA, sema));
     which = index;
-    const SceUID caller = sceKernelCreateThread("caller", caller_entry, 0x10000100, 0x4000, caller_attr, CPU_MASK_USER_1, NULL);
+    const SceUID caller = sceKernelCreateThread("caller", caller_entry, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, caller_attr, SCE_KERNEL_CPU_MASK_USER_1, NULL);
     sceKernelStartThread(caller, 0, NULL);
     test_join_thread(caller);
     sceKernelSignalSema(sema, 1);
@@ -113,9 +112,9 @@ static void run(int index, SceUInt target_attr, SceUInt caller_attr) {
 int main(void) {
     static const char *names[4] = { "neither has the attribute", "the target has it", "the caller has it", "both have it" };
     run(0, 0, 0);
-    run(1, VM, 0);
-    run(2, 0, VM);
-    run(3, VM, VM);
+    run(1, THREAD_ATTR_VM, 0);
+    run(2, 0, THREAD_ATTR_VM);
+    run(3, THREAD_ATTR_VM, THREAD_ATTR_VM);
     for (int i = 0; i < 4; i++) {
         const Read *r = &reads[i];
         PRINTF(r->unsuspended, "%s: read the waiting thread", names[i]);

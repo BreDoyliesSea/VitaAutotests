@@ -61,7 +61,7 @@ int main(void) {
     PRINT("kinds: 1 other, 2 the thread's UID, 3 its stack's low end, 4 its high end, 5 on its stack, 6 its priority, 7 its affinity, 8 the process ID", 0);
     read_slots();
     print_slots("the main thread", sceKernelGetThreadId());
-    const SceUID thread = sceKernelCreateThread("slots", thread_entry, 0x10000100, 0x4000, 0, 0, NULL);
+    const SceUID thread = sceKernelCreateThread("slots", thread_entry, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, 0, 0, NULL);
     sceKernelStartThread(thread, 0, NULL);
     sceKernelWaitThreadEnd(thread, NULL, NULL);
     print_slots("a new thread", thread);

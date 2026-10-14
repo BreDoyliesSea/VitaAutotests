@@ -4,8 +4,8 @@
 #include "test.h"
 #include "threadmgr_extra.h"
 
-#define LOW_PRIORITY 0x10000102
-#define HIGH_PRIORITY 0x100000FE
+#define LOW_PRIORITY (SCE_KERNEL_DEFAULT_PRIORITY_USER + 2)
+#define HIGH_PRIORITY (SCE_KERNEL_DEFAULT_PRIORITY_USER - 2)
 
 static SceUID sema, mutex, rwlock, pipe;
 static int need[3];
@@ -88,8 +88,8 @@ int main(void) {
     reset_order();
     need[0] = 3;
     need[1] = 1;
-    threads[0] = start(sema_thread, 0, 0x10000100);
-    threads[1] = start(sema_thread, 1, 0x10000100);
+    threads[0] = start(sema_thread, 0, SCE_KERNEL_DEFAULT_PRIORITY_USER);
+    threads[1] = start(sema_thread, 1, SCE_KERNEL_DEFAULT_PRIORITY_USER);
     sceKernelSignalSema(sema, 1);
     // Until the small request has seen its wake, or the count shows the signal woke nobody
     TEST_WAIT_FOR(order[1] != 0 || sema_count() != 0);
@@ -102,12 +102,12 @@ int main(void) {
     sceKernelDeleteSema(sema);
 
     // A priority semaphore where the waiting thread's priority changes while it waits
-    sema = sceKernelCreateSema("prio", ATTR_TH_PRIO, 0, 5, NULL);
+    sema = sceKernelCreateSema("prio", SCE_KERNEL_ATTR_THREAD_PRIO, 0, 5, NULL);
     reset_order();
     need[0] = need[1] = 1;
     threads[0] = start(sema_thread, 0, LOW_PRIORITY);
     threads[1] = start(sema_thread, 1, HIGH_PRIORITY);
-    sceKernelChangeThreadPriority(threads[0], 0x100000F0);
+    sceKernelChangeThreadPriority(threads[0], SCE_KERNEL_DEFAULT_PRIORITY_USER - 0x10);
     sceKernelSignalSema(sema, 1);
     TEST_WAIT_FOR(woken == 1);
     PRINT("the waiter raised above the other while waiting wakes first", order[0]);
@@ -118,7 +118,7 @@ int main(void) {
     // Unlocking a FIFO mutex with a waiter, then trying to take it back right away
     mutex = sceKernelCreateMutex("mutex", 0, 1, NULL);
     reset_order();
-    threads[0] = start(mutex_thread, 0, 0x10000100);
+    threads[0] = start(mutex_thread, 0, SCE_KERNEL_DEFAULT_PRIORITY_USER);
     sceKernelUnlockMutex(mutex, 1);
     PRINT("try lock right after unlocking to a waiter", sceKernelTryLockMutex(mutex, 1));
     sceKernelUnlockMutex(mutex, 1);
@@ -130,7 +130,7 @@ int main(void) {
     sceKernelLockWriteRWLock(rwlock, NULL);
     reset_order();
     for (int i = 0; i < 3; i++)
-        threads[i] = start(rwlock_thread, i, 0x10000100);
+        threads[i] = start(rwlock_thread, i, SCE_KERNEL_DEFAULT_PRIORITY_USER);
     sceKernelUnlockWriteRWLock(rwlock);
     join_all(threads, 3);
     PRINT("the first waiting reader goes before the writer", order[0] < order[1]);

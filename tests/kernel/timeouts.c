@@ -65,7 +65,7 @@ int main(void) {
     const SceUID flag = sceKernelCreateEventFlag("flag", 0, 0, NULL);
     unsigned int bits;
     timeout = 1000;
-    PRINT("an event flag wait that times out", sceKernelWaitEventFlag(flag, 1, EVF_WAITMODE_AND, &bits, &timeout));
+    PRINT("an event flag wait that times out", sceKernelWaitEventFlag(flag, 1, SCE_EVENT_WAITAND, &bits, &timeout));
     PRINT("its time left", left(timeout));
     const SceUID mutex = sceKernelCreateMutex("mutex", 0, 0, NULL);
     const SceUID cond = sceKernelCreateCond("cond", 0, mutex, NULL);

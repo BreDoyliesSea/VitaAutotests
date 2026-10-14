@@ -21,15 +21,15 @@ static int create_with(int priority) {
 }
 
 int main(void) {
-    PRINT("the highest game priority", create_with(0x40));
-    PRINT("the lowest game priority", create_with(0xBF));
-    PRINT("above the highest game priority", create_with(0x3F));
-    PRINT("below the lowest game priority", create_with(0xC0));
-    PRINT("the default priority", create_with(0x10000100));
-    PRINT("the highest relative priority", create_with(0x100000E0));
-    PRINT("the lowest relative priority", create_with(0x1000011F));
-    PRINT("above the highest relative priority", create_with(0x100000DF));
-    PRINT("below the lowest relative priority", create_with(0x10000120));
+    PRINT("the highest game priority", create_with(SCE_KERNEL_HIGHEST_PRIORITY_USER));
+    PRINT("the lowest game priority", create_with(SCE_KERNEL_LOWEST_PRIORITY_USER));
+    PRINT("above the highest game priority", create_with(SCE_KERNEL_HIGHEST_PRIORITY_USER - 1));
+    PRINT("below the lowest game priority", create_with(SCE_KERNEL_LOWEST_PRIORITY_USER + 1));
+    PRINT("the default priority", create_with(SCE_KERNEL_DEFAULT_PRIORITY_USER));
+    PRINT("the highest relative priority", create_with(SCE_KERNEL_DEFAULT_PRIORITY_USER - 0x20));
+    PRINT("the lowest relative priority", create_with(SCE_KERNEL_DEFAULT_PRIORITY_USER + 0x1F));
+    PRINT("above the highest relative priority", create_with(SCE_KERNEL_DEFAULT_PRIORITY_USER - 0x21));
+    PRINT("below the lowest relative priority", create_with(SCE_KERNEL_DEFAULT_PRIORITY_USER + 0x20));
 
     test_exit();
     return 0;

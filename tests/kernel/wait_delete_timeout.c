@@ -13,7 +13,7 @@ static int timer_waiter(SceSize args, void *argp) {
     (void)argp;
     SceUInt32 result, timeout = TEST_WAIT_US;
     SceUInt64 user_data;
-    wait_result = sceKernelWaitEvent(timer, TIMER_EVENT_BIT, &result, &user_data, &timeout);
+    wait_result = sceKernelWaitEvent(timer, EVENT_TIMER, &result, &user_data, &timeout);
     timeout_left = timeout;
     return 0;
 }

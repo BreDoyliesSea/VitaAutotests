@@ -59,7 +59,7 @@ static SceUInt32 event_pattern(void) {
 // Returns the bits of the event flag, without changing them
 static unsigned int flag_pattern(void) {
     unsigned int bits = 0;
-    if (sceKernelPollEventFlag(flag, 0xFFFFFFFF, EVF_WAITMODE_OR, &bits) < 0)
+    if (sceKernelPollEventFlag(flag, 0xFFFFFFFF, SCE_EVENT_WAITOR, &bits) < 0)
         return 0;
     return bits;
 }
@@ -130,7 +130,7 @@ int main(void) {
     sceKernelClearEventFlag(flag, 0);
 
     // An AND wait needs every bit, even when they come from separate sets
-    waiter = start_flag_waiter(0x3, EVF_WAITMODE_AND);
+    waiter = start_flag_waiter(0x3, SCE_EVENT_WAITAND);
     sceKernelSetEventFlag(flag, 0x1);
     PRINT("an AND wait goes on with one of its bits", wait_result == -1);
     sceKernelSetEventFlag(flag, 0x2);
@@ -139,24 +139,24 @@ int main(void) {
     PRINT("and gets both", flag_bits);
 
     // An OR wait ends with any of its bits
-    waiter = start_flag_waiter(0xC, EVF_WAITMODE_OR);
+    waiter = start_flag_waiter(0xC, SCE_EVENT_WAITOR);
     sceKernelSetEventFlag(flag, 0x4);
     test_join_thread(waiter);
     PRINT("an OR wait ends with one of its bits", wait_result);
     PRINT("and gets every bit of the flag", flag_bits);
 
     // Waits that clear: the result is from before the clear
-    waiter = start_flag_waiter(0x1, EVF_WAITMODE_AND | EVF_WAITMODE_CLEAR_PAT);
+    waiter = start_flag_waiter(0x1, SCE_EVENT_WAITAND | SCE_EVENT_WAITCLEAR_PAT);
     test_join_thread(waiter);
     PRINT("a wait that clears its pattern", wait_result);
     PRINT("gets the bits from before clearing", flag_bits);
     PRINT("and clears only its pattern", flag_pattern());
-    waiter = start_flag_waiter(0x2, EVF_WAITMODE_OR | EVF_WAITMODE_CLEAR_ALL);
+    waiter = start_flag_waiter(0x2, SCE_EVENT_WAITOR | SCE_EVENT_WAITCLEAR);
     test_join_thread(waiter);
     PRINT("a wait that clears every bit", wait_result);
     PRINT("gets the bits from before clearing", flag_bits);
     PRINT("and clears them all", flag_pattern());
-    waiter = start_flag_waiter(0x8, EVF_WAITMODE_AND | EVF_WAITMODE_CLEAR_PAT);
+    waiter = start_flag_waiter(0x8, SCE_EVENT_WAITAND | SCE_EVENT_WAITCLEAR_PAT);
     sceKernelSetEventFlag(flag, 0x9);
     test_join_thread(waiter);
     PRINT("a set ends a wait that clears its pattern", wait_result);

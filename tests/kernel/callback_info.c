@@ -141,10 +141,10 @@ int main(void) {
     test_join_thread(plain);
 
     // A callback running on another core, seen from here
-    sceKernelChangeThreadCpuAffinityMask(0, CPU_MASK_USER_0);
+    sceKernelChangeThreadCpuAffinityMask(0, SCE_KERNEL_CPU_MASK_USER_0);
     busy_sema = sceKernelCreateSema("busy", 0, 0, 1, NULL);
     busy_result = 0xDEAD;
-    const SceUID busy = sceKernelCreateThread("busy", busy_thread, 0x10000100, 0x4000, 0, CPU_MASK_USER_1, NULL);
+    const SceUID busy = sceKernelCreateThread("busy", busy_thread, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, 0, SCE_KERNEL_CPU_MASK_USER_1, NULL);
     sceKernelStartThread(busy, 0, NULL);
     test_wait_until_waiting(busy);
     sceKernelNotifyCallback(busy_cb, 1);

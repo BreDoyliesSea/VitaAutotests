@@ -40,10 +40,10 @@ static int waiter(SceSize args, void *argp) {
     const SceUInt64 start = sceKernelGetProcessTimeWide();
     switch (kind) {
     case SEMA: wait_result = sceKernelWaitSemaCB(object, 1, &timeout); break;
-    case EVENT_FLAG: wait_result = sceKernelWaitEventFlagCB(object, 0x1, EVF_WAITMODE_AND, &bits, &timeout); break;
+    case EVENT_FLAG: wait_result = sceKernelWaitEventFlagCB(object, 0x1, SCE_EVENT_WAITAND, &bits, &timeout); break;
     case SIMPLE_EVENT:
     case SET_IN_CALLBACK: wait_result = sceKernelWaitEventCB(object, EVENT_BIT_A, &pattern, &user_data, &timeout); break;
-    case TIMER: wait_result = sceKernelWaitEventCB(object, TIMER_EVENT_BIT, &pattern, &user_data, &timeout); break;
+    case TIMER: wait_result = sceKernelWaitEventCB(object, EVENT_TIMER, &pattern, &user_data, &timeout); break;
     case MSG_PIPE: wait_result = sceKernelReceiveMsgPipeCB(object, buf, sizeof(buf), MSG_PIPE_MODE_FULL, NULL, &timeout); break;
     case DELAY: wait_result = sceKernelDelayThreadCB(WAIT_US); break;
     }

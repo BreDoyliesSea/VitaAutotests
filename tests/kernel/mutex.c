@@ -35,7 +35,7 @@ static int other_thread(SceSize args, void *argp) {
 int main(void) {
     PRINT("create with a negative count", test_created(sceKernelCreateMutex("m", 0, -1, NULL)));
     PRINT("create non-recursive with a count of 2", test_created(sceKernelCreateMutex("m", 0, 2, NULL)));
-    const SceUID recursive_held = sceKernelCreateMutex("m", MUTEX_ATTR_RECURSIVE, 2, NULL);
+    const SceUID recursive_held = sceKernelCreateMutex("m", SCE_KERNEL_MUTEX_ATTR_RECURSIVE, 2, NULL);
     PRINT("create recursive with a count of 2", recursive_held > 0);
 
     const SceUID mutex = sceKernelCreateMutex("m", 0, 0, NULL);
@@ -50,7 +50,7 @@ int main(void) {
     PRINT("unlock non-recursive with a count of 2", sceKernelUnlockMutex(mutex, 2));
     PRINT("unlock", sceKernelUnlockMutex(mutex, 1));
 
-    const SceUID recursive = sceKernelCreateMutex("m", MUTEX_ATTR_RECURSIVE, 0, NULL);
+    const SceUID recursive = sceKernelCreateMutex("m", SCE_KERNEL_MUTEX_ATTR_RECURSIVE, 0, NULL);
     PRINT("lock recursive with a count of 2", sceKernelLockMutex(recursive, 2, NULL));
     PRINT("lock recursive again", sceKernelLockMutex(recursive, 1, NULL));
     PRINT("lock recursive past the maximum count", sceKernelLockMutex(recursive, 0x7FFFFFFF, NULL));

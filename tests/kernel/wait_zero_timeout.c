@@ -51,7 +51,7 @@ static int do_wait(int kind, int ready, SceUInt *timeout) {
     case THREAD_END: return sceKernelWaitThreadEnd(ready ? ended : holder, NULL, timeout);
     case EVENT_FLAG:
         id = sceKernelCreateEventFlag("flag", 0, ready, NULL);
-        result = sceKernelWaitEventFlag(id, 0x1, EVF_WAITMODE_AND, &bits, timeout);
+        result = sceKernelWaitEventFlag(id, 0x1, SCE_EVENT_WAITAND, &bits, timeout);
         sceKernelDeleteEventFlag(id);
         return result;
     case SEMA:

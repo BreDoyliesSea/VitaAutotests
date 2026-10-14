@@ -32,7 +32,7 @@ static int waiter(SceSize args, void *argp) {
     SceUInt timeout = TEST_WAIT_US;
     SceUInt32 pattern = 0xDEAD;
     SceUInt64 user_data;
-    const SceUInt32 bit = kind == TIMER ? TIMER_EVENT_BIT : kind == PIPE_EVENT ? EVENT_OUT : EVENT_BIT_A;
+    const SceUInt32 bit = kind == TIMER ? EVENT_TIMER : kind == PIPE_EVENT ? EVENT_OUT : EVENT_BIT_A;
     wait_result = sceKernelWaitEventCB(object, bit, &pattern, &user_data, &timeout);
     wait_pattern = pattern;
     time_left = timeout;
@@ -64,7 +64,7 @@ static void run(const char *name, int new_kind) {
     char message[4] = { 1, 2, 3, 4 };
     switch (new_kind) {
     case TIMER:
-        sceKernelSetTimerEvent(object, 0, &interval, 0);
+        sceKernelSetTimerEvent(object, TIMER_TYPE_SET_EVENT, &interval, 0);
         sceKernelStartTimer(object);
         break;
     case PULSE: sceKernelPulseEvent(object, EVENT_BIT_A, 0); break;
