@@ -1,0 +1,168 @@
+semaphore: create an openable object: 0x00000000
+semaphore: open it by its name: 0x00000000
+semaphore: the opened UID is the object's own: 0x00000000
+semaphore: close it: 0x00000000
+semaphore: open a name that differs in case: 0x8002450A
+semaphore: open the start of the name: 0x8002450A
+semaphore: open the name with more after it: 0x8002450A
+semaphore: open the empty name: 0x8002450A
+semaphore: open a name nothing has: 0x8002450A
+semaphore: open its name with the event flag open call: 0x80028002
+semaphore: create a second openable object with the name: 0x80024E02
+semaphore: delete the openable object: 0x00000000
+semaphore: open the name of the deleted object: 0x8002450A
+semaphore: create an object that isn't openable: 0x00000000
+semaphore: open an object that isn't openable: 0x8002450A
+semaphore: create a second one with the same name: 0x00000000
+semaphore: create an openable one with that name too: 0x00000000
+semaphore: open the name the openable one shares: 0x00000000
+semaphore: create an openable object with the empty name: 0x00000000
+semaphore: open the empty name of an openable object: 0x00000000
+event flag: create an openable object: 0x00000000
+event flag: open it by its name: 0x00000000
+event flag: the opened UID is the object's own: 0x00000000
+event flag: close it: 0x00000000
+event flag: open a name that differs in case: 0x8002450A
+event flag: open the start of the name: 0x8002450A
+event flag: open the name with more after it: 0x8002450A
+event flag: open the empty name: 0x8002450A
+event flag: open a name nothing has: 0x8002450A
+event flag: open its name with the mutex open call: 0x80028002
+event flag: create a second openable object with the name: 0x80024E02
+event flag: delete the openable object: 0x00000000
+event flag: open the name of the deleted object: 0x8002450A
+event flag: create an object that isn't openable: 0x00000000
+event flag: open an object that isn't openable: 0x8002450A
+event flag: create a second one with the same name: 0x00000000
+event flag: create an openable one with that name too: 0x00000000
+event flag: open the name the openable one shares: 0x00000000
+event flag: create an openable object with the empty name: 0x00000000
+event flag: open the empty name of an openable object: 0x00000000
+mutex: create an openable object: 0x00000000
+mutex: open it by its name: 0x00000000
+mutex: the opened UID is the object's own: 0x00000000
+mutex: close it: 0x00000000
+mutex: open a name that differs in case: 0x8002450A
+mutex: open the start of the name: 0x8002450A
+mutex: open the name with more after it: 0x8002450A
+mutex: open the empty name: 0x8002450A
+mutex: open a name nothing has: 0x8002450A
+mutex: open its name with the condition variable open call: 0x80028002
+mutex: create a second openable object with the name: 0x80024E02
+mutex: delete the openable object: 0x00000000
+mutex: open the name of the deleted object: 0x8002450A
+mutex: create an object that isn't openable: 0x00000000
+mutex: open an object that isn't openable: 0x8002450A
+mutex: create a second one with the same name: 0x00000000
+mutex: create an openable one with that name too: 0x00000000
+mutex: open the name the openable one shares: 0x00000000
+mutex: create an openable object with the empty name: 0x00000000
+mutex: open the empty name of an openable object: 0x00000000
+condition variable: create an openable object: 0x8002000E
+condition variable: open it by its name: 0x8002450A
+condition variable: the opened UID is the object's own: 0x00000000
+condition variable: open a name that differs in case: 0x8002450A
+condition variable: open the start of the name: 0x8002450A
+condition variable: open the name with more after it: 0x8002450A
+condition variable: open the empty name: 0x8002450A
+condition variable: open a name nothing has: 0x8002450A
+condition variable: open its name with the reader/writer lock open call: 0x8002450A
+condition variable: create a second openable object with the name: 0x8002000E
+condition variable: delete the openable object: 0x800281A1
+condition variable: open the name of the deleted object: 0x8002450A
+condition variable: create an object that isn't openable: 0x00000000
+condition variable: open an object that isn't openable: 0x8002450A
+condition variable: create a second one with the same name: 0x00000000
+condition variable: create an openable one with that name too: 0x8002000E
+condition variable: open the name the openable one shares: 0x8002450A
+condition variable: create an openable object with the empty name: 0x8002000E
+condition variable: open the empty name of an openable object: 0x8002450A
+reader/writer lock: create an openable object: 0x00000000
+reader/writer lock: open it by its name: 0x00000000
+reader/writer lock: the opened UID is the object's own: 0x00000000
+reader/writer lock: close it: 0x00000000
+reader/writer lock: open a name that differs in case: 0x8002450A
+reader/writer lock: open the start of the name: 0x8002450A
+reader/writer lock: open the name with more after it: 0x8002450A
+reader/writer lock: open the empty name: 0x8002450A
+reader/writer lock: open a name nothing has: 0x8002450A
+reader/writer lock: open its name with the message pipe open call: 0x80024508
+reader/writer lock: create a second openable object with the name: 0x80024E02
+reader/writer lock: delete the openable object: 0x00000000
+reader/writer lock: open the name of the deleted object: 0x8002450A
+reader/writer lock: create an object that isn't openable: 0x00000000
+reader/writer lock: open an object that isn't openable: 0x8002450A
+reader/writer lock: create a second one with the same name: 0x00000000
+reader/writer lock: create an openable one with that name too: 0x00000000
+reader/writer lock: open the name the openable one shares: 0x00000000
+reader/writer lock: create an openable object with the empty name: 0x00000000
+reader/writer lock: open the empty name of an openable object: 0x00000000
+message pipe: create an openable object: 0x00000000
+message pipe: open it by its name: 0x00000000
+message pipe: the opened UID is the object's own: 0x00000000
+message pipe: close it: 0x00000000
+message pipe: open a name that differs in case: 0x8002450A
+message pipe: open the start of the name: 0x8002450A
+message pipe: open the name with more after it: 0x8002450A
+message pipe: open the empty name: 0x8002450A
+message pipe: open a name nothing has: 0x8002450A
+message pipe: open its name with the simple event open call: 0x80024508
+message pipe: create a second openable object with the name: 0x80024E02
+message pipe: delete the openable object: 0x00000000
+message pipe: open the name of the deleted object: 0x8002450A
+message pipe: create an object that isn't openable: 0x00000000
+message pipe: open an object that isn't openable: 0x8002450A
+message pipe: create a second one with the same name: 0x00000000
+message pipe: create an openable one with that name too: 0x00000000
+message pipe: open the name the openable one shares: 0x00000000
+message pipe: create an openable object with the empty name: 0x00000000
+message pipe: open the empty name of an openable object: 0x00000000
+simple event: create an openable object: 0x00000000
+simple event: open it by its name: 0x00000000
+simple event: the opened UID is the object's own: 0x00000000
+simple event: close it: 0x00000000
+simple event: open a name that differs in case: 0x8002450A
+simple event: open the start of the name: 0x8002450A
+simple event: open the name with more after it: 0x8002450A
+simple event: open the empty name: 0x8002450A
+simple event: open a name nothing has: 0x8002450A
+simple event: open its name with the timer open call: 0x80024508
+simple event: create a second openable object with the name: 0x80024E02
+simple event: delete the openable object: 0x00000000
+simple event: open the name of the deleted object: 0x8002450A
+simple event: create an object that isn't openable: 0x00000000
+simple event: open an object that isn't openable: 0x8002450A
+simple event: create a second one with the same name: 0x00000000
+simple event: create an openable one with that name too: 0x00000000
+simple event: open the name the openable one shares: 0x00000000
+simple event: create an openable object with the empty name: 0x00000000
+simple event: open the empty name of an openable object: 0x00000000
+timer: create an openable object: 0x00000000
+timer: open it by its name: 0x00000000
+timer: the opened UID is the object's own: 0x00000000
+timer: close it: 0x00000000
+timer: open a name that differs in case: 0x8002450A
+timer: open the start of the name: 0x8002450A
+timer: open the name with more after it: 0x8002450A
+timer: open the empty name: 0x8002450A
+timer: open a name nothing has: 0x8002450A
+timer: open its name with the semaphore open call: 0x80028002
+timer: create a second openable object with the name: 0x80024E02
+timer: delete the openable object: 0x00000000
+timer: open the name of the deleted object: 0x8002450A
+timer: create an object that isn't openable: 0x00000000
+timer: open an object that isn't openable: 0x8002450A
+timer: create a second one with the same name: 0x00000000
+timer: create an openable one with that name too: 0x00000000
+timer: open the name the openable one shares: 0x00000000
+timer: create an openable object with the empty name: 0x00000000
+timer: open the empty name of an openable object: 0x00000000
+event flag: create an openable object with the name of an openable semaphore: 0x80024E02
+mutex: create an openable object with the name of an openable semaphore: 0x80024E02
+condition variable: create an openable object with the name of an openable semaphore: 0x8002000E
+reader/writer lock: create an openable object with the name of an openable semaphore: 0x80024E02
+message pipe: create an openable object with the name of an openable semaphore: 0x80024E02
+simple event: create an openable object with the name of an openable semaphore: 0x80024E02
+timer: create an openable object with the name of an openable semaphore: 0x80024E02
+simple event: open a NULL name: 0x80020006
+DONE

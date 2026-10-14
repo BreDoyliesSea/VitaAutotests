@@ -1,0 +1,55 @@
+semaphore: delete with 2 waiters: 0x00000000
+semaphore: the plain waiter: 0x80028006
+semaphore: the time left of the plain waiter: 0x00000001
+semaphore: the waiter with callbacks: 0x80028006
+semaphore: the time left of the waiter with callbacks: 0x00000001
+event flag: delete with 2 waiters: 0x00000000
+event flag: the plain waiter: 0x80028006
+event flag: the time left of the plain waiter: 0x00000001
+event flag: the waiter with callbacks: 0x80028006
+event flag: the time left of the waiter with callbacks: 0x00000001
+mutex: delete with 2 waiters: 0x00000000
+mutex: the plain waiter: 0x80028006
+mutex: the time left of the plain waiter: 0x00000001
+mutex: the waiter with callbacks: 0x80028006
+mutex: the time left of the waiter with callbacks: 0x00000001
+condition variable: delete with 2 waiters: 0x00000000
+condition variable: the plain waiter: 0x800281A4
+condition variable: the time left of the plain waiter: 0x00000001
+condition variable: the plain waiter unlocks the mutex after: 0x80028146
+condition variable: the waiter with callbacks: 0x800281A4
+condition variable: the time left of the waiter with callbacks: 0x00000001
+condition variable: the waiter with callbacks unlocks the mutex after: 0x80028146
+lightweight mutex: delete with 2 waiters: 0x00000000
+lightweight mutex: the plain waiter: 0x80028006
+lightweight mutex: the time left of the plain waiter: 0x00000001
+lightweight mutex: the waiter with callbacks: 0x80028006
+lightweight mutex: the time left of the waiter with callbacks: 0x00000001
+lightweight condition variable: delete with 2 waiters: 0x00000000
+lightweight condition variable: the plain waiter: 0x800281C3
+lightweight condition variable: the time left of the plain waiter: 0x00000001
+lightweight condition variable: the plain waiter unlocks the mutex after: 0x80028186
+lightweight condition variable: the waiter with callbacks: 0x800281C3
+lightweight condition variable: the time left of the waiter with callbacks: 0x00000001
+lightweight condition variable: the waiter with callbacks unlocks the mutex after: 0x80028186
+reader/writer lock: delete with 2 waiters: 0x00000000
+reader/writer lock: the plain waiter: 0x80028006
+reader/writer lock: the time left of the plain waiter: 0x00000001
+reader/writer lock: the waiter with callbacks: 0x80028006
+reader/writer lock: the time left of the waiter with callbacks: 0x00000001
+message pipe: delete with 2 waiters: 0x00000000
+message pipe: the plain waiter: 0x80028006
+message pipe: the time left of the plain waiter: 0x00000001
+message pipe: the waiter with callbacks: 0x80028006
+message pipe: the time left of the waiter with callbacks: 0x00000001
+simple event: delete with 2 waiters: 0x00000000
+simple event: the plain waiter: 0x80028006
+simple event: the time left of the plain waiter: 0x00000001
+simple event: the waiter with callbacks: 0x80028006
+simple event: the time left of the waiter with callbacks: 0x00000001
+timer: delete with 2 waiters: 0x00000000
+timer: the plain waiter: 0x80028006
+timer: the time left of the plain waiter: 0x00000001
+timer: the waiter with callbacks: 0x80028006
+timer: the time left of the waiter with callbacks: 0x00000001
+DONE

@@ -1,0 +1,84 @@
+semaphore: cancel to 2 with 2 waiters: 0x00000000
+semaphore: the waiting count: 0x00000002
+semaphore: the first waiter: 0x80028007
+semaphore: the second waiter: 0x80028007
+semaphore: the count after: 0x00000002
+semaphore: the initial count after: 0x00000000
+semaphore: cancel to 3 without a count pointer with a waiter: 0x00000000
+semaphore: the waiter: 0x80028007
+semaphore: the count after: 0x00000003
+semaphore: cancel past the maximum with a waiter: 0x8002000F
+semaphore: the waiting count: 0x00000000
+semaphore: the waiter still waits: 0x00000001
+semaphore: the count after: 0x00000000
+semaphore: cancel to -2 with a waiter: 0x00000000
+semaphore: the waiter: 0x80028007
+semaphore: the count after: 0x00000000
+event flag: cancel to 0x36 with 2 waiters: 0x00000000
+event flag: the waiting count: 0x00000002
+event flag: the AND waiter: 0x80028007
+event flag: the bits it got: 0x00000036
+event flag: the OR waiter that clears: 0x80028007
+event flag: the bits it got: 0x00000036
+event flag: the pattern after: 0x00000036
+event flag: the initial pattern after: 0x00000001
+event flag: cancel to 0 without a count pointer with a waiter: 0x00000000
+event flag: the waiter: 0x80028007
+event flag: the bits it got: 0x00000000
+event flag: the pattern after: 0x00000000
+mutex: cancel to 0 with 2 waiters: 0x00000000
+mutex: the waiting count: 0x00000002
+mutex: the first waiter: 0x80028007
+mutex: the second waiter: 0x80028007
+mutex: the count after: 0x00000000
+mutex: the owner after: 0x00000000
+mutex: cancel to 1 while another thread holds it: 0x00000000
+mutex: the count after: 0x00000001
+mutex: the owner after: 0x00000001
+mutex: the other thread unlocks it after: 0x80028146
+mutex: the owner after that: 0x00000001
+mutex: unlock it: 0x00000000
+mutex: cancel to -1: 0x00000000
+mutex: the count after: 0x00000001
+mutex: the owner after: 0x00000001
+mutex: cancel to 1 without a count pointer with a waiter: 0x00000000
+mutex: the waiter: 0x80028007
+mutex: the owner after: 0x00000001
+recursive mutex: cancel to 0x7FFFFFFF: 0x00000000
+recursive mutex: the count after: 0x7FFFFFFF
+recursive mutex: the owner after: 0x00000001
+recursive mutex: lock it once more: 0x80028143
+reader/writer lock: cancel with 2 waiting readers and a writer: 0x00000000
+reader/writer lock: the waiting readers: 0x00000002
+reader/writer lock: the waiting writers: 0x00000001
+reader/writer lock: the first reader: 0x80028007
+reader/writer lock: the second reader: 0x80028007
+reader/writer lock: the writer: 0x80028007
+reader/writer lock: the lock count after: 0x00000000
+reader/writer lock: the writer after: 0x00000000
+reader/writer lock: cancel with flag 1 while another thread reads: 0x00000000
+reader/writer lock: the lock count after: 0x00000001
+reader/writer lock: the writer after: 0x00000001
+reader/writer lock: the other thread's read unlock after: 0x800281E7
+reader/writer lock: write unlock: 0x00000000
+reader/writer lock: cancel with flag -1: 0x8002000A
+reader/writer lock: cancel with flag 0x100: 0x8002000A
+reader/writer lock: the lock count after: 0x00000000
+reader/writer lock: the writer after: 0x00000000
+reader/writer lock: cancel with only a writer count pointer: 0x00000000
+reader/writer lock: the waiting writers: 0x00000001
+reader/writer lock: the writer: 0x80028007
+reader/writer lock: read unlock after: 0x800281E5
+message pipe: cancel with 2 receivers: 0x00000000
+message pipe: the waiting senders: 0x00000000
+message pipe: the waiting receivers: 0x00000002
+message pipe: the first receiver: 0x80028007
+message pipe: the size it got: 0x00000000
+message pipe: the second receiver: 0x80028007
+message pipe: the size it got: 0x00000000
+message pipe: cancel with only a receiver count pointer: 0x00000000
+message pipe: the waiting receivers: 0x00000001
+message pipe: the receiver that had part of its data: 0x80028007
+message pipe: the size it got: 0x00000003
+message pipe: try receive the data after: 0x80028223
+DONE

@@ -1,0 +1,30 @@
+info: 0x00000000
+the attribute: 0x00000100
+it is active: 0x00000000
+the base time is 0: 0x00000001
+the current time is 0: 0x00000001
+the schedule is 0: 0x00000001
+the interval is 0: 0x00000001
+the type: 0x00000000
+the repeat setting: 0x00000000
+the waiting threads: 0x00000000
+set a repeating pulse event: 0x00000000
+the type after it: 0x00000001
+the repeat setting after it: 0x00000001
+the interval after it is the one set: 0x00000001
+the schedule after it is the interval: 0x00000001
+it is active after it: 0x00000000
+it is active after starting: 0x00000001
+the base time is set after starting: 0x00000001
+the current time is below the interval: 0x00000001
+the schedule is still the interval: 0x00000001
+the waiting threads with 2 waiters: 0x00000002
+cancel with 2 waiters: 0x00000000
+the waiting count: 0x00000002
+the first waiter: 0x80028007
+the second waiter: 0x80028007
+it is active after the cancel: 0x00000001
+the interval after the cancel is the one set: 0x00000001
+cancel without a count pointer with a waiter: 0x00000000
+the waiter: 0x80028007
+DONE

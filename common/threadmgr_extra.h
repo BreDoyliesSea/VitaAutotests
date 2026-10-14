@@ -287,6 +287,13 @@ SceInt32 sceKernelUnregisterCallbackFromEventAll(SceUID event_id);
 #define EVENT_IN 0x1
 #define EVENT_OUT 0x2
 
+// Cancels the waits on a simple event, then sets set_pattern on it with user_data
+SceInt32 sceKernelCancelEventWithSetPattern(SceUID id, SceUInt32 set_pattern, SceUInt64 user_data, SceUInt32 *num_wait_threads);
+
+// Send and receive a message pipe vector without waiting
+SceInt32 sceKernelTrySendMsgPipeVector(SceUID id, const MsgPipeVector *vectors, SceUInt32 count, SceUInt32 mode, SceSize *result);
+SceInt32 sceKernelTryReceiveMsgPipeVector(SceUID id, const MsgPipeVector *vectors, SceUInt32 count, SceUInt32 mode, SceSize *result);
+
 // Returns the VFP exception setting of the calling thread, which sceKernelChangeThreadVfpException changes
 SceInt32 sceKernelGetCurrentThreadVfpException(void);
 

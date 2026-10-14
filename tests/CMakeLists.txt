@@ -137,6 +137,17 @@ vita_test(lw_mutex_semantics kernel/lw_mutex_semantics.c)
 vita_test(msgpipe_modes kernel/msgpipe_modes.c)
 vita_test(msgpipe_order kernel/msgpipe_order.c)
 
+vita_test(create_attrs kernel/create_attrs.c)
+vita_test(info_fields kernel/info_fields.c)
+vita_test(simple_event_info kernel/simple_event_info.c)
+vita_test(cancel_calls kernel/cancel_calls.c)
+vita_test(simple_event_cancel kernel/simple_event_cancel.c)
+vita_test(timer_info_cancel kernel/timer_info_cancel.c)
+vita_test(delete_with_waiters kernel/delete_with_waiters.c)
+vita_test(name_lookup kernel/name_lookup.c)
+vita_test(object_limits kernel/object_limits.c)
+vita_test(poll_calls kernel/poll_calls.c)
+
 # The module module_start_thread and module_start_vfp load. vita_create_self runs in a function, since it adds its flags
 # to the scope it runs in, where they would also apply to the test vpk's self.
 add_executable(probe_module kernel/probe_module/probe_module.c)
