@@ -1,0 +1,15 @@
+running its own code: suspend it: 0x00000001
+running its own code: read its registers: 0x00000000
+running its own code: read them again 20 ms later: 0x00000000
+running its own code: the count stays as it was right after the suspend: 0x00000001
+running its own code: both reads show the same registers: 0x00000001
+running its own code: resume it: 0x00000000
+running its own code: it runs again after the resume: 0x00000001
+calling a syscall that doesn't wait: suspend it: 0x00000001
+calling a syscall that doesn't wait: read its registers: 0x00000000
+calling a syscall that doesn't wait: read them again 20 ms later: 0x00000000
+calling a syscall that doesn't wait: the count stays as it was right after the suspend: 0x00000001
+calling a syscall that doesn't wait: both reads show the same registers: 0x00000001
+calling a syscall that doesn't wait: resume it: 0x00000000
+calling a syscall that doesn't wait: it runs again after the resume: 0x00000001
+DONE

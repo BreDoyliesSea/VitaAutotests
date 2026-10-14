@@ -1,16 +1,17 @@
 // Which VFP registers sceKernelGetThreadContextForVM reports as the thread left them: for a thread
-// that waits in a syscall, read right after the suspend and again after the reading thread used
-// VFP on the same core, and for a thread suspended while it runs its own code. Each thread sets d0
-// to d31 to values of its own and a rounding mode first. For each read the test prints which d
-// registers have the thread's value, which read the other value they all share and what that is,
-// and the FPSCR control bits.
+// that waits in a syscall, read right after the suspend, again after the reading thread used VFP on
+// the same core and once more after a signal woke it while it was suspended, and for a thread
+// suspended while it runs its own code. Each thread sets d0 to d31 to values of its own and a
+// rounding mode first. For each read the test prints which d registers have the thread's value,
+// which read the other value they all share and what that is, and the FPSCR control bits.
 //
 // On a PS Vita TV on firmware 3.65, a thread waiting in a syscall shows only d8 to d15 as it left
 // them, the registers the ARM calling convention has a called function preserve. d0 to d7 and d16
 // to d31, which a called function may change, all read 0x7FF8DEAD7F80DEAD, a NaN as a double whose
 // halves 0x7F80DEAD and 0x7FF8DEAD are NaNs as floats too. Its FPSCR reads 0x03000000 instead of
-// its own. Both reads show the same. A thread suspended while it runs its own code shows all of d0
-// to d31 and its own FPSCR.
+// its own. Every read shows the same, also once the signal woke it, while it reports SUSPENDED and
+// stays in the syscall until the resume. A thread suspended while it runs its own code shows all of
+// d0 to d31 and its own FPSCR.
 #include <psp2/kernel/cpu.h>
 #include <psp2/kernel/threadmgr.h>
 
@@ -99,6 +100,12 @@ static void report(const char *when) {
     PRINTF((unsigned int)other, "%s: that value's low word", when);
 }
 
+static SceUInt32 thread_status(SceUID thread) {
+    SceKernelThreadInfo info = { .size = sizeof(info) };
+    sceKernelGetThreadInfo(thread, &info);
+    return info.status;
+}
+
 static SceUID start(SceKernelThreadEntry entry) {
     const SceUID thread = sceKernelCreateThread("target", entry, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, THREAD_ATTR_VM, SCE_KERNEL_CPU_MASK_USER_1, NULL);
     sceKernelStartThread(thread, 0, NULL);
@@ -123,8 +130,12 @@ int main(void) {
     volatile double z = x * y;
     (void)z;
     report("waiting, after the reader used VFP");
+    // Woken while suspended, the thread stays in the syscall until the resume
+    PRINT("waiting: signal it while it is suspended", sceKernelSignalSema(sema, 1));
+    TEST_WAIT_FOR(thread_status(target) == SCE_THREAD_SUSPENDED);
+    PRINT("woken while suspended: the status", thread_status(target));
+    report("woken while suspended");
     PRINT("waiting: resume it", sceKernelResumeThreadForVM(target));
-    sceKernelSignalSema(sema, 1);
     test_join_thread(target);
 
     // A thread suspended while it runs its own code on core 1, read from core 2
