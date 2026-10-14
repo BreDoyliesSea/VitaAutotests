@@ -1,0 +1,37 @@
+neither has it: the waiter's rounding mode after: 0x00000001
+neither has it: the waiter's d8 is its own after: 0x00000001
+neither has it: the waiter's d8 is the other thread's after: 0x00000000
+neither has it: the waiter's d8 is 0 after: 0x00000000
+neither has it: the waiter's d16 is its own after: 0x00000000
+neither has it: the waiter's d16 is the other thread's after: 0x00000000
+neither has it: the waiter's d16 is 0 after: 0x00000000
+the waiter has it: the waiter's rounding mode after: 0x00000001
+the waiter has it: the waiter's d8 is its own after: 0x00000001
+the waiter has it: the waiter's d8 is the other thread's after: 0x00000000
+the waiter has it: the waiter's d8 is 0 after: 0x00000000
+the waiter has it: the waiter's d16 is its own after: 0x00000000
+the waiter has it: the waiter's d16 is the other thread's after: 0x00000000
+the waiter has it: the waiter's d16 is 0 after: 0x00000000
+the other thread has it: the waiter's rounding mode after: 0x00000001
+the other thread has it: the waiter's d8 is its own after: 0x00000001
+the other thread has it: the waiter's d8 is the other thread's after: 0x00000000
+the other thread has it: the waiter's d8 is 0 after: 0x00000000
+the other thread has it: the waiter's d16 is its own after: 0x00000000
+the other thread has it: the waiter's d16 is the other thread's after: 0x00000000
+the other thread has it: the waiter's d16 is 0 after: 0x00000000
+both have it: the waiter's rounding mode after: 0x00000001
+both have it: the waiter's d8 is its own after: 0x00000001
+both have it: the waiter's d8 is the other thread's after: 0x00000000
+both have it: the waiter's d8 is 0 after: 0x00000000
+both have it: the waiter's d16 is its own after: 0x00000000
+both have it: the waiter's d16 is the other thread's after: 0x00000000
+both have it: the waiter's d16 is 0 after: 0x00000000
+the waiter sets it on itself: set the attribute: 0x00000000
+the waiter sets it on itself: the waiter's rounding mode after: 0x00000001
+the waiter sets it on itself: the waiter's d8 is its own after: 0x00000001
+the waiter sets it on itself: the waiter's d8 is the other thread's after: 0x00000000
+the waiter sets it on itself: the waiter's d8 is 0 after: 0x00000000
+the waiter sets it on itself: the waiter's d16 is its own after: 0x00000000
+the waiter sets it on itself: the waiter's d16 is the other thread's after: 0x00000000
+the waiter sets it on itself: the waiter's d16 is 0 after: 0x00000000
+DONE

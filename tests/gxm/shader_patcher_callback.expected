@@ -1,0 +1,13 @@
+initialize libgxm: 0x00000000
+create a shader patcher: 0x00000000
+the host allocation callback ran: 0x00000001
+it runs on the creating thread: 0x00000001
+it sees the FPSCR control bits: 0x03400000
+it sees the VFP exception setting: 0x08000000
+it sees TPIDRURW: 0x00001111
+after the create: the creating thread's rounding mode: 0x00000003
+after the create: its VFP exception setting: 0x08000000
+after the create: its TPIDRURW: 0x00002222
+destroy the shader patcher: 0x00000000
+terminate libgxm: 0x00000000
+DONE

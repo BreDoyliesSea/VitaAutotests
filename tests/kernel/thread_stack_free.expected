@@ -1,0 +1,28 @@
+a thread not started yet: its free size is its stack size: 0x00000000
+a thread not started yet: its free size is within 1 KiB of its stack size: 0x00000001
+the bottom 256 bytes of a new stack hold one value: 0x00000000
+that value: 0x00000000
+first run: the free size at the start is the room below the stack pointer: 0x00000000
+first run: the free size at the start is over 1 KiB less than that room: 0x00000000
+first run: the free size at the start is more than the stack size: 0x00000001
+first run: after using 4 KiB more, the free size went down by that: 0x00000001
+first run: after using 4 KiB more, the free size went down by over 12 KiB: 0x00000001
+first run: after using 4 KiB more, it is the room below the stack pointer: 0x00000000
+first run: CheckThreadStack is the room below the stack pointer: 0x00000001
+first run: CheckThreadStack is near the free size: 0x00000000
+second run: the free size at the start is the room below the stack pointer: 0x00000000
+second run: the free size at the start is over 1 KiB less than that room: 0x00000000
+second run: the free size at the start is more than the stack size: 0x00000001
+second run: after using 4 KiB more, the free size went down by that: 0x00000000
+second run: after using 4 KiB more, the free size went down by over 12 KiB: 0x00000000
+second run: after using 4 KiB more, it is the room below the stack pointer: 0x00000000
+second run: CheckThreadStack is the room below the stack pointer: 0x00000001
+second run: CheckThreadStack is near the free size: 0x00000000
+the second run starts with the free size the first one started with: 0x00000000
+the second run starts with the free size the first one ended with: 0x00000001
+while it waits: another thread sees the free size it had: 0x00000001
+after it ended: the free size is its stack size: 0x00000000
+after it ended: the free size is what it had: 0x00000001
+after the second run: the free size is its stack size: 0x00000000
+after the second run: the free size is what it had: 0x00000001
+DONE

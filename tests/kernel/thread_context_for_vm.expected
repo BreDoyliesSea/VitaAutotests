@@ -1,0 +1,40 @@
+neither has the attribute: read the waiting thread: 0x80020008
+neither has the attribute: suspend it: 0x80020008
+neither has the attribute: read it suspended: 0x80020008
+neither has the attribute: resume it: 0x80020008
+the target has it: read the waiting thread: 0x8002802E
+the target has it: suspend it: 0x00000001
+the target has it: read it suspended: 0x00000000
+the target has it: its mode: 0x00000010
+the target has it: its Thumb bit: 0x00000000
+the target has it: its stack pointer is on its stack: 0x00000001
+the target has it: its TPIDRURW: 0x00005555
+the target has it: its FPSCR control bits: 0x03000000
+the target has it: its d8 is the value it set: 0x00000001
+the target has it: its d16 is the value it set: 0x00000000
+the target has it: resume it: 0x00000000
+the caller has it: read the waiting thread: 0x80020008
+the caller has it: suspend it: 0x80020008
+the caller has it: read it suspended: 0x80020008
+the caller has it: resume it: 0x80020008
+both have it: read the waiting thread: 0x8002802E
+both have it: suspend it: 0x00000001
+both have it: read it suspended: 0x00000000
+both have it: its mode: 0x00000010
+both have it: its Thumb bit: 0x00000000
+both have it: its stack pointer is on its stack: 0x00000001
+both have it: its TPIDRURW: 0x00005555
+both have it: its FPSCR control bits: 0x03000000
+both have it: its d8 is the value it set: 0x00000001
+both have it: its d16 is the value it set: 0x00000000
+both have it: resume it: 0x00000000
+suspended target: an unknown UID: 0x80028021
+suspended target: no CPU registers: 0x00000000
+suspended target: no VFP registers: 0x00000000
+suspended target: neither: 0x00000000
+suspended target: a CPU size of 0: 0x8002000B
+suspended target: a CPU size 4 too big: 0x8002710B
+suspended target: a VFP size 4 too small: 0x8002000B
+suspended target: UID 0: 0x80028021
+suspended target: the calling thread itself: 0x80028022
+DONE

@@ -1,0 +1,29 @@
+register the handler: 0x00000000
+first run: the start handler: the FPSCR control bits: 0x03000000
+first run: the start handler: the VFP exception setting: 0x00000000
+first run: the start handler: TPIDRURW: 0x00000000
+first run: the start handler: runs on the target: 0x00000001
+first run: the entry: the FPSCR control bits: 0x03000000
+first run: the entry: the VFP exception setting: 0x00000000
+first run: the entry: TPIDRURW: 0x00000000
+first run: the entry: runs on the target: 0x00000001
+first run: the end handler: the FPSCR control bits: 0x03000000
+first run: the end handler: the VFP exception setting: 0x00000000
+first run: the end handler: TPIDRURW: 0x00001001
+first run: the end handler: runs on the target: 0x00000001
+started again: the start handler: the FPSCR control bits: 0x03000000
+started again: the start handler: the VFP exception setting: 0x00000000
+started again: the start handler: TPIDRURW: 0x00000000
+started again: the start handler: runs on the target: 0x00000001
+started again: the entry: the FPSCR control bits: 0x03000000
+started again: the entry: the VFP exception setting: 0x00000002
+started again: the entry: TPIDRURW: 0x00000000
+started again: the entry: runs on the target: 0x00000001
+started again: the end handler: the FPSCR control bits: 0x03000000
+started again: the end handler: the VFP exception setting: 0x00000000
+started again: the end handler: TPIDRURW: 0x00001001
+started again: the end handler: runs on the target: 0x00000001
+the main thread's rounding mode after: 0x00000003
+the main thread's VFP exception setting after: 0x08000000
+the main thread's TPIDRURW after: 0x00007777
+DONE

@@ -1,4 +1,5 @@
-// What probe_module's start and stop functions record, through a pointer in their arguments
+// What probe_module's start and stop functions record, through a pointer in their arguments. They
+// also leave a rounding mode, a VFP exception setting and TPIDRURW of their own on their thread.
 #pragma once
 
 #include <psp2/types.h>
@@ -14,6 +15,9 @@ typedef struct ModuleProbe {
     SceUIntPtr argp;
     SceSize args;
     int runs;
+    unsigned int fpscr;
+    unsigned int vfp_setting;
+    unsigned int tpidrurw;
 } ModuleProbe;
 
 typedef struct ModuleArgs {
