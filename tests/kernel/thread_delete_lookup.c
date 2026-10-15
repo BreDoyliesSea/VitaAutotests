@@ -39,7 +39,8 @@ static int exit_deletes_entry(SceSize args, void *argp) {
     SceUInt timeout = TEST_WAIT_US;
     if (sceKernelWaitSema(go, 1, &timeout) != 0)
         __atomic_fetch_add(&missed_go, 1, __ATOMIC_SEQ_CST);
-    return sceKernelExitDeleteThread(7);
+    sceKernelExitDeleteThread(7);
+    return 0;
 }
 
 static SceUID create(SceKernelThreadEntry entry, SceUInt32 mask) {
@@ -134,6 +135,8 @@ int main(void) {
         test_wait_until_waiting(thread);
         int read = 0, released = 0, dormant = 0;
         const SceUInt64 end = sceKernelGetProcessTimeWide() + TEST_WAIT_US;
+        // Reads as fast as it can, with no pause, since a state on the way to deletion may only last
+        // an instant
         while (sceKernelGetProcessTimeWide() < end) {
             SceKernelThreadInfo info = { .size = sizeof(info) };
             read = sceKernelGetThreadInfo(thread, &info);
@@ -160,7 +163,7 @@ int main(void) {
     PRINT("10 read loops while a thread exits and deletes itself: how many found it alive first", saw_alive_first);
     PRINT("10 read loops while a thread exits and deletes itself: the last read", last);
     PRINT("10 read loops while a thread exits and deletes itself: how many saw it DORMANT", saw_dormant);
-    PRINT("every thread that waited for go got it", missed_go == 0);
+    PRINT("every thread that waited for go got it", __atomic_load_n(&missed_go, __ATOMIC_SEQ_CST) == 0);
 
     sceKernelDeleteSema(go);
     test_exit();
