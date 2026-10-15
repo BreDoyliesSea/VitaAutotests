@@ -1,0 +1,13 @@
+both idle, last on core 0, T at 0x70: the core T ran on: 0x00000000
+both idle, last on core 1, T at 0x70: the core T ran on: 0x00000001
+one lower, one idle, last on core 0, T at 0x70: the core T ran on: 0x00000001
+one lower, one higher, last on core 1, T at 0x70: the core T ran on: 0x00000000
+both lower, last on core 0, T at 0x70: the core T ran on: 0x00000001
+both lower, last on core 1, T at 0x70: the core T ran on: 0x00000001
+both idle, last on core 0, T at 0xA0: the core T ran on: 0x00000000
+both idle, last on core 1, T at 0xA0: the core T ran on: 0x00000001
+one lower, one idle, last on core 0, T at 0xA0: the core T ran on: 0x00000001
+one lower, one higher, last on core 1, T at 0xA0: the core T ran on: 0x00000000
+both lower, last on core 0, T at 0xA0: the core T ran on: 0x00000001
+both lower, last on core 1, T at 0xA0: the core T ran on: 0x00000001
+DONE
