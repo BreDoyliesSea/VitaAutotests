@@ -1,0 +1,27 @@
+two started, then a timeout: U1's status before the gate lifts: 0x00000004
+two started, then a timeout: U2's status before the gate lifts: 0x00000004
+two started, then a timeout: T's status before the gate lifts: 0x00000002
+two started, then a timeout: run 1, by step: 0x00000003
+two started, then a timeout: run 2, by step: 0x00000001
+two started, then a timeout: run 3, by step: 0x00000002
+a higher priority started, then a timeout: V's status before the gate lifts: 0x00000004
+a higher priority started, then a timeout: T's status before the gate lifts: 0x00000002
+a higher priority started, then a timeout: run 1, by step: 0x00000001
+a higher priority started, then a timeout: run 2, by step: 0x00000002
+two timeouts: U's status before the gate lifts: 0x00000004
+two timeouts: T1's status before the gate lifts: 0x00000002
+two timeouts: T2's status before the gate lifts: 0x00000002
+two timeouts: run 1, by step: 0x00000002
+two timeouts: run 2, by step: 0x00000003
+two timeouts: run 3, by step: 0x00000001
+a delay end, then a start: U's status before the gate lifts: 0x00000004
+a delay end, then a start: T's status before the gate lifts: 0x00000002
+a delay end, then a start: W's status before the gate lifts: 0x00000004
+a delay end, then a start: run 1, by step: 0x00000002
+a delay end, then a start: run 2, by step: 0x00000001
+a delay end, then a start: run 3, by step: 0x00000003
+a timeout, then a higher priority start: T's status before the gate lifts: 0x00000002
+a timeout, then a higher priority start: V's status before the gate lifts: 0x00000004
+a timeout, then a higher priority start: run 1, by step: 0x00000002
+a timeout, then a higher priority start: run 2, by step: 0x00000001
+DONE
