@@ -1,0 +1,11 @@
+a period of 100: every wait got its event: 0x00000001
+a period of 100: the 20 events took within 0.5 ms of 20 periods: 0x00000000
+a period of 100: they took at least 4 ms: 0x00000001
+a period of 100: every wait took less than 2 periods and 1 ms: 0x00000001
+a period of 1000: every wait got its event: 0x00000001
+a period of 1000: the 20 events took within 0.5 ms of 20 periods: 0x00000001
+a period of 1000: every wait took less than 2 periods and 1 ms: 0x00000001
+a period of 10000: every wait got its event: 0x00000001
+a period of 10000: the 20 events took within 0.5 ms of 20 periods: 0x00000001
+a period of 10000: every wait took less than 2 periods and 1 ms: 0x00000001
+DONE

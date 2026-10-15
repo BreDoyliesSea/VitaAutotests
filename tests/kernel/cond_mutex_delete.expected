@@ -1,0 +1,17 @@
+heavy, signaled, waiting for the mutex: W's wait type: 0x00000200
+heavy, signaled, waiting for the mutex: delete the mutex: 0x00000000
+heavy, signaled, waiting for the mutex: W's wait: 0x800281A2
+heavy, signaled, waiting for the mutex: W's unlock after it: 0x80028141
+heavy, waiting on the condition: W's wait type: 0x00000100
+heavy, waiting on the condition: delete the mutex: 0x00000000
+heavy, waiting on the condition: W's wait: 0x800281A2
+heavy, waiting on the condition: W's unlock after it: 0x80028141
+lightweight, signaled, waiting for the mutex: W's wait type: 0x00400000
+lightweight, signaled, waiting for the mutex: delete the mutex: 0x00000000
+lightweight, signaled, waiting for the mutex: W's wait: 0x800281C2
+lightweight, signaled, waiting for the mutex: W's unlock after it: 0x80028186
+lightweight, waiting on the condition: W's wait type: 0x00200000
+lightweight, waiting on the condition: delete the mutex: 0x00000000
+lightweight, waiting on the condition: W's wait: 0x800281C2
+lightweight, waiting on the condition: W's unlock after it: 0x80028186
+DONE

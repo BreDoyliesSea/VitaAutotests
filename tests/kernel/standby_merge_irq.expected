@@ -1,0 +1,6 @@
+S's status before W's timeout: 0x00000004
+W's status before its timeout: 0x00000008
+S's status after W's timeout: 0x00000004
+W left its wait, READY or STANDBY, before L stopped: 0x00000001
+the first to run once L stops, 1 for S and 2 for W: 0x00000001
+DONE
