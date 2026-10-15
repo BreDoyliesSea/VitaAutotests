@@ -1,0 +1,21 @@
+never ran: delete it: 0x00000000
+never ran: its info right after: 0x80028021
+never ran: its exit status right after: 0x80028021
+never ran: delete it again right after: 0x80028021
+ran and ended: delete it: 0x00000000
+ran and ended: its info right after: 0x80028021
+ran and ended: its exit status right after: 0x80028021
+ran and ended: delete it again right after: 0x80028021
+exits and deletes itself: the end wait: 0x00000000
+exits and deletes itself: the status it gets: 0x00000007
+exits and deletes itself: its info right after: 0x80028021
+exits and deletes itself: its exit status right after: 0x80028021
+exits and deletes itself: delete it again right after: 0x80028021
+20 that exit and delete themselves: how many end waits returned 0: 0x00000014
+20 that exit and delete themselves: how many are found right after their end waits: 0x00000000
+10 read loops while a thread exits and deletes itself: how many ended on a failed read: 0x0000000A
+10 read loops while a thread exits and deletes itself: how many found it alive first: 0x0000000A
+10 read loops while a thread exits and deletes itself: the last read: 0x80028021
+10 read loops while a thread exits and deletes itself: how many saw it DORMANT: 0x00000000
+every thread that waited for go got it: 0x00000001
+DONE
