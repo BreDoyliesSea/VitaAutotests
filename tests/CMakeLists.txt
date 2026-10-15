@@ -148,6 +148,8 @@ vita_test(handoff_more kernel/handoff_more.c)
 vita_test(ready_queue_order kernel/ready_queue_order.c)
 vita_test(suspend_ready_order kernel/suspend_ready_order.c)
 vita_test(wake_ready_areas kernel/wake_ready_areas.c)
+vita_test(timer_wake_order kernel/timer_wake_order.c)
+vita_test(wake_kinds_order kernel/wake_kinds_order.c)
 vita_test(release_preempt kernel/release_preempt.c)
 vita_test(nonblocking_wait_preempt kernel/nonblocking_wait_preempt.c)
 
