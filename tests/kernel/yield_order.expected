@@ -1,0 +1,31 @@
+a delay of 1, priority 0x70: R's status before Y gave up the core: 0x00000002
+a delay of 1, priority 0x70: S's status before Y gave up the core: 0x00000004
+a delay of 1, priority 0x70: run 1, 1 for R, 2 for S and 3 for Y: 0x00000001
+a delay of 1, priority 0x70: run 2, 1 for R, 2 for S and 3 for Y: 0x00000002
+a delay of 1, priority 0x70: run 3, 1 for R, 2 for S and 3 for Y: 0x00000003
+its own priority, priority 0x70: R's status before Y gave up the core: 0x00000002
+its own priority, priority 0x70: S's status before Y gave up the core: 0x00000004
+its own priority, priority 0x70: run 1, 1 for R, 2 for S and 3 for Y: 0x00000003
+its own priority, priority 0x70: run 2, 1 for R, 2 for S and 3 for Y: 0x00000001
+its own priority, priority 0x70: run 3, 1 for R, 2 for S and 3 for Y: 0x00000002
+a wait ended from core 1, priority 0x70: R's status before Y gave up the core: 0x00000002
+a wait ended from core 1, priority 0x70: S's status before Y gave up the core: 0x00000004
+a wait ended from core 1, priority 0x70: run 1, 1 for R, 2 for S and 3 for Y: 0x00000001
+a wait ended from core 1, priority 0x70: run 2, 1 for R, 2 for S and 3 for Y: 0x00000002
+a wait ended from core 1, priority 0x70: run 3, 1 for R, 2 for S and 3 for Y: 0x00000003
+a delay of 1, priority 0xA0: R's status before Y gave up the core: 0x00000002
+a delay of 1, priority 0xA0: S's status before Y gave up the core: 0x00000002
+a delay of 1, priority 0xA0: run 1, 1 for R, 2 for S and 3 for Y: 0x00000002
+a delay of 1, priority 0xA0: run 2, 1 for R, 2 for S and 3 for Y: 0x00000001
+a delay of 1, priority 0xA0: run 3, 1 for R, 2 for S and 3 for Y: 0x00000003
+its own priority, priority 0xA0: R's status before Y gave up the core: 0x00000002
+its own priority, priority 0xA0: S's status before Y gave up the core: 0x00000002
+its own priority, priority 0xA0: run 1, 1 for R, 2 for S and 3 for Y: 0x00000003
+its own priority, priority 0xA0: run 2, 1 for R, 2 for S and 3 for Y: 0x00000002
+its own priority, priority 0xA0: run 3, 1 for R, 2 for S and 3 for Y: 0x00000001
+a wait ended from core 1, priority 0xA0: R's status before Y gave up the core: 0x00000002
+a wait ended from core 1, priority 0xA0: S's status before Y gave up the core: 0x00000002
+a wait ended from core 1, priority 0xA0: run 1, 1 for R, 2 for S and 3 for Y: 0x00000002
+a wait ended from core 1, priority 0xA0: run 2, 1 for R, 2 for S and 3 for Y: 0x00000001
+a wait ended from core 1, priority 0xA0: run 3, 1 for R, 2 for S and 3 for Y: 0x00000003
+DONE
