@@ -1,0 +1,18 @@
+mutex, no waiter: its count after: 0x00000000
+mutex, no waiter: it has an owner after: 0x00000000
+mutex, no waiter: try to lock it: 0x00000000
+mutex whose owner calls sceKernelExitThread: the waiter's lock: 0x00000000
+write lock, no waiter: its count after: 0x00000000
+write lock, no waiter: it has a write owner after: 0x00000000
+write lock, no waiter: try to lock it for writing: 0x00000000
+write lock held twice: the waiter's lock: 0x00000000
+write lock held twice: the count while the waiter holds it: 0x00000001
+write lock whose owner exits and deletes itself: the waiter's lock: 0x00000000
+write lock, a reader waits: the reader's lock: 0x00000000
+read lock, no waiter: its count after: 0x00000001
+read lock, no waiter: it has a write owner after: 0x00000000
+read lock, no waiter: try to lock it for writing: 0x800281E6
+lightweight mutex whose owner exits and deletes itself: the waiter's lock: 0x80028005
+lightweight mutex whose owner exits and deletes itself: its count after: 0x00000001
+lightweight mutex whose owner exits and deletes itself: its owner is the ended thread: 0x00000001
+DONE
