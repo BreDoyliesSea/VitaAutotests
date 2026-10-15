@@ -55,11 +55,13 @@ static const char *const case_names[CASE_COUNT] = {
     "thread signal", "callback notify", "thread end", "lightweight mutex unlock",
 };
 
+// T runs its callback as soon as it runs, and goes back to the rest of its delay after it
 static int callback_entry(int notify_id, int count, int arg, void *common) {
     (void)notify_id;
     (void)count;
     (void)arg;
     (void)common;
+    record(1);
     return 0;
 }
 
@@ -101,7 +103,9 @@ static int t_entry(SceSize args, void *argp) {
         sceKernelUnlockLwMutex(&lw_mutex, 1);
         break;
     }
-    record(1);
+    // The callback already recorded that T ran
+    if (c != CALLBACK_NOTIFY)
+        record(1);
     return 0;
 }
 
