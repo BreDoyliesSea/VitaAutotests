@@ -1,15 +1,15 @@
-// How one set of an event flag with several waiters is handed out: which waiters wake, which bits
-// each one gets, and what the clears of earlier waiters leave for later ones, in a FIFO queue and
-// in a priority queue where the last waiter to queue has the highest priority. Also a waiter whose
-// bits came in two sets with a clear by another waiter in between, and a clear while waiters wait.
-// A waiter that doesn't wake times out after 300 ms.
+// How one set of an event flag with several waiters is handed out: which waiters wake, which
+// bits each one gets, and what the clears of earlier waiters leave for later ones, in a FIFO
+// queue and in a priority queue where the last waiter to queue has the highest priority. Also a
+// waiter whose bits came in two sets with a clear by another waiter in between, and a clear
+// while waiters wait. A waiter that doesn't wake times out after TEST_WAIT_US, far past the
+// checks that expect it to wait.
 #include <psp2/kernel/threadmgr.h>
 
 #include "test.h"
 #include "threadmgr_extra.h"
 
 #define MAX_WAITERS 3
-#define SHORT_TIMEOUT 300000
 
 typedef struct Waiter {
     SceUInt32 pattern, mode;
@@ -25,7 +25,7 @@ static SceUInt32 bits[MAX_WAITERS];
 static int waiter_entry(SceSize args, void *argp) {
     (void)args;
     const int i = *(const int *)argp;
-    SceUInt timeout = SHORT_TIMEOUT;
+    SceUInt timeout = TEST_WAIT_US;
     result[i] = sceKernelWaitEventFlag(flag, waiters[i].pattern, waiters[i].mode, &bits[i], &timeout);
     done[i] = 1;
     return 0;
