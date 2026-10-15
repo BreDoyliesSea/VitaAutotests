@@ -1,0 +1,7 @@
+started from core 1 at 0x70: T's status: 0x00000004
+started from core 1 at 0x70: T's current CPU: 0x00000000
+woken by its timeout at 0x70: T's status: 0x00000002
+woken by its timeout at 0x70: T's current CPU: 0x00000000
+started from core 1 at 0xA0: T's status: 0x00000002
+started from core 1 at 0xA0: T's current CPU: 0x00007FFF
+DONE
