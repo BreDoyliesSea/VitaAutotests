@@ -16,9 +16,9 @@
 // On a PS Vita TV on firmware 3.65 a thread made ready by a timer reports READY and runs before
 // every STANDBY thread of its priority, whether they were ready before it or after, and threads
 // made ready by timers run in the order their timers ended. A STANDBY thread of a higher
-// priority still runs first. That fits a timer putting the thread in the ready queue the cores
-// share, and a core taking that queue before its own one when their best threads have the same
-// priority.
+// priority still runs first. The timer wakes the thread on its own core, which puts it straight
+// into that core's ready queue as READY, while threads made ready from another core wait there
+// as STANDBY (wake_core_origin), and it stays on that core (timer_wake_cores).
 #include <psp2/kernel/threadmgr.h>
 
 #include "test.h"

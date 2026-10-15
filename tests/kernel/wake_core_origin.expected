@@ -1,0 +1,25 @@
+signal from core 1, priority 0x70: U's status before the gate lifts: 0x00000004
+signal from core 1, priority 0x70: T's status before the gate lifts: 0x00000004
+signal from core 1, priority 0x70: the first to run, 1 for T and 2 for U: 0x00000002
+signal from core 2, priority 0x70: U's status before the gate lifts: 0x00000004
+signal from core 2, priority 0x70: T's status before the gate lifts: 0x00000004
+signal from core 2, priority 0x70: the first to run, 1 for T and 2 for U: 0x00000002
+signal from core 0, priority 0x70: U's status before the gate lifts: 0x00000004
+signal from core 0, priority 0x70: T's status before the gate lifts: 0x00000002
+signal from core 0, priority 0x70: the first to run, 1 for T and 2 for U: 0x00000001
+start from core 0, priority 0x70: U's status before the gate lifts: 0x00000004
+start from core 0, priority 0x70: T's status before the gate lifts: 0x00000002
+start from core 0, priority 0x70: the first to run, 1 for T and 2 for U: 0x00000001
+signal from core 1, priority 0xA0: U's status before the gate lifts: 0x00000002
+signal from core 1, priority 0xA0: T's status before the gate lifts: 0x00000002
+signal from core 1, priority 0xA0: the first to run, 1 for T and 2 for U: 0x00000002
+signal from core 2, priority 0xA0: U's status before the gate lifts: 0x00000002
+signal from core 2, priority 0xA0: T's status before the gate lifts: 0x00000002
+signal from core 2, priority 0xA0: the first to run, 1 for T and 2 for U: 0x00000002
+signal from core 0, priority 0xA0: U's status before the gate lifts: 0x00000002
+signal from core 0, priority 0xA0: T's status before the gate lifts: 0x00000002
+signal from core 0, priority 0xA0: the first to run, 1 for T and 2 for U: 0x00000002
+start from core 0, priority 0xA0: U's status before the gate lifts: 0x00000002
+start from core 0, priority 0xA0: T's status before the gate lifts: 0x00000002
+start from core 0, priority 0xA0: the first to run, 1 for T and 2 for U: 0x00000002
+DONE
