@@ -162,6 +162,7 @@ vita_test(preempt_latency kernel/preempt_latency.c)
 vita_test(queue_area_bounds kernel/queue_area_bounds.c)
 vita_test(standby_handover_order kernel/standby_handover_order.c)
 vita_test(affinity_migrate kernel/affinity_migrate.c)
+vita_test(delay_precision kernel/delay_precision.c)
 vita_test(release_preempt kernel/release_preempt.c)
 vita_test(nonblocking_wait_preempt kernel/nonblocking_wait_preempt.c)
 

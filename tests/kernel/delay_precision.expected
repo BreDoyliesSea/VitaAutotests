@@ -1,0 +1,27 @@
+a delay of 1: every one took at least that long: 0x00000001
+a delay of 1: every one ended within 1 ms after that: 0x00000001
+a delay of 1: every one took at least 150 microseconds: 0x00000001
+a delay of 50: every one took at least that long: 0x00000001
+a delay of 50: every one ended within 1 ms after that: 0x00000001
+a delay of 50: every one took at least 150 microseconds: 0x00000001
+a delay of 100: every one took at least that long: 0x00000001
+a delay of 100: every one ended within 1 ms after that: 0x00000001
+a delay of 100: every one took at least 150 microseconds: 0x00000001
+a delay of 1000: every one took at least that long: 0x00000001
+a delay of 1000: every one ended within 1 ms after that: 0x00000001
+a delay of 10000: every one took at least that long: 0x00000001
+a delay of 10000: every one ended within 1 ms after that: 0x00000001
+a wait with a timeout of 1: every one took at least that long: 0x00000001
+a wait with a timeout of 1: every one ended within 1 ms after that: 0x00000001
+a wait with a timeout of 1: every one took at least 150 microseconds: 0x00000000
+a wait with a timeout of 50: every one took at least that long: 0x00000001
+a wait with a timeout of 50: every one ended within 1 ms after that: 0x00000001
+a wait with a timeout of 50: every one took at least 150 microseconds: 0x00000001
+a wait with a timeout of 100: every one took at least that long: 0x00000001
+a wait with a timeout of 100: every one ended within 1 ms after that: 0x00000001
+a wait with a timeout of 100: every one took at least 150 microseconds: 0x00000001
+a wait with a timeout of 1000: every one took at least that long: 0x00000001
+a wait with a timeout of 1000: every one ended within 1 ms after that: 0x00000001
+a wait with a timeout of 10000: every one took at least that long: 0x00000001
+a wait with a timeout of 10000: every one ended within 1 ms after that: 0x00000001
+DONE
