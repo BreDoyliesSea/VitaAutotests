@@ -1,0 +1,22 @@
+create a thread with the system core alone: 0x80028025
+create a thread with the user cores and the system core: 0x80028025
+dormant: start it: 0x00000000
+dormant: the change to the system core, the old mask or an error: 0x80028025
+dormant: its status after: 0x00000001
+dormant: it makes progress after: 0x00000001
+dormant: the change back to core 0, the old mask or an error: 0x00010000
+dormant: it makes progress after that: 0x00000001
+dormant: its end: 0x00000000
+waiting: the change to the system core, the old mask or an error: 0x80028025
+waiting: its status after: 0x00000001
+waiting: it makes progress after: 0x00000001
+waiting: the change back to core 0, the old mask or an error: 0x00010000
+waiting: it makes progress after that: 0x00000001
+waiting: its end: 0x00000000
+running: the change to the system core, the old mask or an error: 0x80028025
+running: its status after: 0x00000001
+running: it makes progress after: 0x00000001
+running: the change back to core 0, the old mask or an error: 0x00010000
+running: it makes progress after that: 0x00000001
+running: its end: 0x00000000
+DONE
