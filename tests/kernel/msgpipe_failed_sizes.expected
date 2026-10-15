@@ -1,0 +1,146 @@
+a pipe created with 16 bytes: its free size: 0x00001000
+try receive ASAP, empty pipe: the free size before: 0x00001000
+try receive ASAP, empty pipe: the result: 0x80028223
+try receive ASAP, empty pipe: the size: 0x00000000
+try receive FULL, empty pipe: the free size before: 0x00001000
+try receive FULL, empty pipe: the result: 0x80028223
+try receive FULL, empty pipe: the size: 0x0000DEAD
+try receive ASAP, 3 bytes there: the free size before: 0x00000FFD
+try receive ASAP, 3 bytes there: the result: 0x00000000
+try receive ASAP, 3 bytes there: the size: 0x00000003
+try receive FULL, 3 bytes there: the free size before: 0x00000FFD
+try receive FULL, 3 bytes there: the result: 0x80028223
+try receive FULL, 3 bytes there: the size: 0x0000DEAD
+try receive ASAP, empty pipe with a receiver waiting: the free size before: 0x00001000
+try receive ASAP, empty pipe with a receiver waiting: the result: 0x80028223
+try receive ASAP, empty pipe with a receiver waiting: the size: 0x0000DEAD
+try receive FULL, empty pipe with a receiver waiting: the free size before: 0x00001000
+try receive FULL, empty pipe with a receiver waiting: the result: 0x80028223
+try receive FULL, empty pipe with a receiver waiting: the size: 0x0000DEAD
+try send ASAP, full pipe: the free size before: 0x00000000
+try send ASAP, full pipe: the result: 0x80028222
+try send ASAP, full pipe: the size: 0x00000000
+try send FULL, full pipe: the free size before: 0x00000000
+try send FULL, full pipe: the result: 0x80028222
+try send FULL, full pipe: the size: 0x0000DEAD
+try send ASAP, room for 4: the free size before: 0x00000004
+try send ASAP, room for 4: the result: 0x00000000
+try send ASAP, room for 4: the size: 0x00000004
+try send FULL, room for 4: the free size before: 0x00000004
+try send FULL, room for 4: the result: 0x80028222
+try send FULL, room for 4: the size: 0x0000DEAD
+try send ASAP, full pipe with a sender waiting: the free size before: 0x00000000
+try send ASAP, full pipe with a sender waiting: the result: 0x80028222
+try send ASAP, full pipe with a sender waiting: the size: 0x0000DEAD
+try send FULL, full pipe with a sender waiting: the free size before: 0x00000000
+try send FULL, full pipe with a sender waiting: the result: 0x80028222
+try send FULL, full pipe with a sender waiting: the size: 0x0000DEAD
+try vector receive ASAP, empty pipe: the free size before: 0x00001000
+try vector receive ASAP, empty pipe: the result: 0x80028223
+try vector receive ASAP, empty pipe: the size: 0x00000000
+try vector receive FULL, empty pipe: the free size before: 0x00001000
+try vector receive FULL, empty pipe: the result: 0x80028223
+try vector receive FULL, empty pipe: the size: 0x0000DEAD
+try vector receive ASAP, 3 bytes there: the free size before: 0x00000FFD
+try vector receive ASAP, 3 bytes there: the result: 0x00000000
+try vector receive ASAP, 3 bytes there: the size: 0x00000003
+try vector receive FULL, 3 bytes there: the free size before: 0x00000FFD
+try vector receive FULL, 3 bytes there: the result: 0x80028223
+try vector receive FULL, 3 bytes there: the size: 0x0000DEAD
+try vector receive ASAP, empty pipe with a receiver waiting: the free size before: 0x00001000
+try vector receive ASAP, empty pipe with a receiver waiting: the result: 0x80028223
+try vector receive ASAP, empty pipe with a receiver waiting: the size: 0x0000DEAD
+try vector receive FULL, empty pipe with a receiver waiting: the free size before: 0x00001000
+try vector receive FULL, empty pipe with a receiver waiting: the result: 0x80028223
+try vector receive FULL, empty pipe with a receiver waiting: the size: 0x0000DEAD
+try vector send ASAP, full pipe: the free size before: 0x00000000
+try vector send ASAP, full pipe: the result: 0x80028222
+try vector send ASAP, full pipe: the size: 0x00000000
+try vector send FULL, full pipe: the free size before: 0x00000000
+try vector send FULL, full pipe: the result: 0x80028222
+try vector send FULL, full pipe: the size: 0x0000DEAD
+try vector send ASAP, room for 4: the free size before: 0x00000004
+try vector send ASAP, room for 4: the result: 0x00000000
+try vector send ASAP, room for 4: the size: 0x00000004
+try vector send FULL, room for 4: the free size before: 0x00000004
+try vector send FULL, room for 4: the result: 0x80028222
+try vector send FULL, room for 4: the size: 0x0000DEAD
+try vector send ASAP, full pipe with a sender waiting: the free size before: 0x00000000
+try vector send ASAP, full pipe with a sender waiting: the result: 0x80028222
+try vector send ASAP, full pipe with a sender waiting: the size: 0x0000DEAD
+try vector send FULL, full pipe with a sender waiting: the free size before: 0x00000000
+try vector send FULL, full pipe with a sender waiting: the result: 0x80028222
+try vector send FULL, full pipe with a sender waiting: the size: 0x0000DEAD
+timeout 0 receive ASAP, empty pipe: the free size before: 0x00001000
+timeout 0 receive ASAP, empty pipe: the result: 0x80028005
+timeout 0 receive ASAP, empty pipe: the size: 0x00000000
+timeout 0 receive FULL, empty pipe: the free size before: 0x00001000
+timeout 0 receive FULL, empty pipe: the result: 0x80028005
+timeout 0 receive FULL, empty pipe: the size: 0x00000000
+timeout 0 receive ASAP, 3 bytes there: the free size before: 0x00000FFD
+timeout 0 receive ASAP, 3 bytes there: the result: 0x00000000
+timeout 0 receive ASAP, 3 bytes there: the size: 0x00000003
+timeout 0 receive FULL, 3 bytes there: the free size before: 0x00000FFD
+timeout 0 receive FULL, 3 bytes there: the result: 0x80028005
+timeout 0 receive FULL, 3 bytes there: the size: 0x00000003
+timeout 0 receive ASAP, empty pipe with a receiver waiting: the free size before: 0x00001000
+timeout 0 receive ASAP, empty pipe with a receiver waiting: the result: 0x80028005
+timeout 0 receive ASAP, empty pipe with a receiver waiting: the size: 0x00000000
+timeout 0 receive FULL, empty pipe with a receiver waiting: the free size before: 0x00001000
+timeout 0 receive FULL, empty pipe with a receiver waiting: the result: 0x80028005
+timeout 0 receive FULL, empty pipe with a receiver waiting: the size: 0x00000000
+timeout 0 send ASAP, full pipe: the free size before: 0x00000000
+timeout 0 send ASAP, full pipe: the result: 0x80028005
+timeout 0 send ASAP, full pipe: the size: 0x00000000
+timeout 0 send FULL, full pipe: the free size before: 0x00000000
+timeout 0 send FULL, full pipe: the result: 0x80028005
+timeout 0 send FULL, full pipe: the size: 0x00000000
+timeout 0 send ASAP, room for 4: the free size before: 0x00000004
+timeout 0 send ASAP, room for 4: the result: 0x00000000
+timeout 0 send ASAP, room for 4: the size: 0x00000004
+timeout 0 send FULL, room for 4: the free size before: 0x00000004
+timeout 0 send FULL, room for 4: the result: 0x80028005
+timeout 0 send FULL, room for 4: the size: 0x00000000
+timeout 0 send ASAP, full pipe with a sender waiting: the free size before: 0x00000000
+timeout 0 send ASAP, full pipe with a sender waiting: the result: 0x80028005
+timeout 0 send ASAP, full pipe with a sender waiting: the size: 0x00000000
+timeout 0 send FULL, full pipe with a sender waiting: the free size before: 0x00000000
+timeout 0 send FULL, full pipe with a sender waiting: the result: 0x80028005
+timeout 0 send FULL, full pipe with a sender waiting: the size: 0x00000000
+timeout 0 vector receive ASAP, empty pipe: the free size before: 0x00001000
+timeout 0 vector receive ASAP, empty pipe: the result: 0x80028005
+timeout 0 vector receive ASAP, empty pipe: the size: 0x00000000
+timeout 0 vector receive FULL, empty pipe: the free size before: 0x00001000
+timeout 0 vector receive FULL, empty pipe: the result: 0x80028005
+timeout 0 vector receive FULL, empty pipe: the size: 0x00000000
+timeout 0 vector receive ASAP, 3 bytes there: the free size before: 0x00000FFD
+timeout 0 vector receive ASAP, 3 bytes there: the result: 0x00000000
+timeout 0 vector receive ASAP, 3 bytes there: the size: 0x00000003
+timeout 0 vector receive FULL, 3 bytes there: the free size before: 0x00000FFD
+timeout 0 vector receive FULL, 3 bytes there: the result: 0x80028005
+timeout 0 vector receive FULL, 3 bytes there: the size: 0x00000003
+timeout 0 vector receive ASAP, empty pipe with a receiver waiting: the free size before: 0x00001000
+timeout 0 vector receive ASAP, empty pipe with a receiver waiting: the result: 0x80028005
+timeout 0 vector receive ASAP, empty pipe with a receiver waiting: the size: 0x00000000
+timeout 0 vector receive FULL, empty pipe with a receiver waiting: the free size before: 0x00001000
+timeout 0 vector receive FULL, empty pipe with a receiver waiting: the result: 0x80028005
+timeout 0 vector receive FULL, empty pipe with a receiver waiting: the size: 0x00000000
+timeout 0 vector send ASAP, full pipe: the free size before: 0x00000000
+timeout 0 vector send ASAP, full pipe: the result: 0x80028005
+timeout 0 vector send ASAP, full pipe: the size: 0x00000000
+timeout 0 vector send FULL, full pipe: the free size before: 0x00000000
+timeout 0 vector send FULL, full pipe: the result: 0x80028005
+timeout 0 vector send FULL, full pipe: the size: 0x00000000
+timeout 0 vector send ASAP, room for 4: the free size before: 0x00000004
+timeout 0 vector send ASAP, room for 4: the result: 0x00000000
+timeout 0 vector send ASAP, room for 4: the size: 0x00000004
+timeout 0 vector send FULL, room for 4: the free size before: 0x00000004
+timeout 0 vector send FULL, room for 4: the result: 0x80028005
+timeout 0 vector send FULL, room for 4: the size: 0x00000000
+timeout 0 vector send ASAP, full pipe with a sender waiting: the free size before: 0x00000000
+timeout 0 vector send ASAP, full pipe with a sender waiting: the result: 0x80028005
+timeout 0 vector send ASAP, full pipe with a sender waiting: the size: 0x00000000
+timeout 0 vector send FULL, full pipe with a sender waiting: the free size before: 0x00000000
+timeout 0 vector send FULL, full pipe with a sender waiting: the result: 0x80028005
+timeout 0 vector send FULL, full pipe with a sender waiting: the size: 0x00000000
+DONE
