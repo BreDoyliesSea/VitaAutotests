@@ -1,0 +1,29 @@
+a wait with a timeout of 1: every one ended within 100 microseconds: 0x00000001
+a wait with a timeout of 1: every one took at least 100 microseconds: 0x00000000
+a wait with a timeout of 4: every one ended within 100 microseconds: 0x00000000
+a wait with a timeout of 4: every one took at least 100 microseconds: 0x00000001
+a wait with a timeout of 8: every one ended within 100 microseconds: 0x00000000
+a wait with a timeout of 8: every one took at least 100 microseconds: 0x00000001
+a wait with a timeout of 16: every one ended within 100 microseconds: 0x00000000
+a wait with a timeout of 16: every one took at least 100 microseconds: 0x00000001
+a wait with a timeout of 32: every one ended within 100 microseconds: 0x00000000
+a wait with a timeout of 32: every one took at least 100 microseconds: 0x00000001
+a wait with a timeout of 64: every one ended within 100 microseconds: 0x00000000
+a wait with a timeout of 64: every one took at least 100 microseconds: 0x00000001
+a wait with a timeout of 100: every one ended within 100 microseconds: 0x00000000
+a wait with a timeout of 100: every one took at least 100 microseconds: 0x00000001
+a delay of 1: every one ended within 100 microseconds: 0x00000000
+a delay of 1: every one took at least 100 microseconds: 0x00000001
+a delay of 4: every one ended within 100 microseconds: 0x00000000
+a delay of 4: every one took at least 100 microseconds: 0x00000001
+a delay of 8: every one ended within 100 microseconds: 0x00000000
+a delay of 8: every one took at least 100 microseconds: 0x00000001
+a delay of 16: every one ended within 100 microseconds: 0x00000000
+a delay of 16: every one took at least 100 microseconds: 0x00000001
+a delay of 32: every one ended within 100 microseconds: 0x00000000
+a delay of 32: every one took at least 100 microseconds: 0x00000001
+a delay of 64: every one ended within 100 microseconds: 0x00000000
+a delay of 64: every one took at least 100 microseconds: 0x00000001
+a delay of 100: every one ended within 100 microseconds: 0x00000000
+a delay of 100: every one took at least 100 microseconds: 0x00000001
+DONE
