@@ -156,6 +156,7 @@ vita_test(core_choice kernel/core_choice.c)
 vita_test(ready_changes kernel/ready_changes.c)
 vita_test(preempt_status kernel/preempt_status.c)
 vita_test(yield_order kernel/yield_order.c)
+vita_test(standby_merge kernel/standby_merge.c)
 vita_test(release_preempt kernel/release_preempt.c)
 vita_test(nonblocking_wait_preempt kernel/nonblocking_wait_preempt.c)
 
