@@ -1,0 +1,15 @@
+STANDBY, same priority: T's status after the change: 0x00000004
+STANDBY, same priority: T ran before the gate lifted: 0x00000000
+STANDBY, same priority: the core T ran on: 0x00000000
+STANDBY, same priority: the first to run, 1 for T and 2 for U: 0x00000001
+STANDBY, higher priority: T's status after the change: 0x00000004
+STANDBY, higher priority: T ran before the gate lifted: 0x00000000
+STANDBY, higher priority: the core T ran on: 0x00000000
+STANDBY, higher priority: the first to run, 1 for T and 2 for U: 0x00000001
+STANDBY, moved to core 1: T ran before the gate lifted: 0x00000001
+STANDBY, moved to core 1: the core T ran on: 0x00000001
+STANDBY, moved to core 1: the first to run, 1 for T and 2 for U: 0x00000001
+READY, moved to core 1: T ran before the gate lifted: 0x00000001
+READY, moved to core 1: the core T ran on: 0x00000001
+READY, moved to core 1: the first to run, 1 for T and 2 for U: 0x00000001
+DONE
