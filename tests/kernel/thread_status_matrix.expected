@@ -63,6 +63,12 @@ its timeout passed while suspended: the current CPU is -1: 0x00000001
 its timeout passed while suspended: it woke: 0x00000000
 resume it: 0x00000000
 after the resume: its wait: 0x80028005
+suspend another thread in a wait with a 100 ms timeout: 0x00000001
+signal after its timeout passed while suspended: 0x00000000
+signaled after its timeout passed: the count: 0x00000001
+resume it: 0x00000000
+signaled after its timeout passed: its wait: 0x80028005
+signaled after its timeout passed: the count after the resume: 0x00000001
 delaying: info: 0x00000000
 delaying: the status: 0x00000008
 delaying: the wait type: 0x00000001

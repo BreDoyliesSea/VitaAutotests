@@ -1,7 +1,8 @@
 // What thread info reports for a thread in each state, and what a ForVM suspend changes on top of
 // each: dormant, ready behind a higher priority thread on its core, ready and suspended, waiting on
 // a semaphore, waiting and suspended, woken while suspended, running on another core, running and
-// suspended, delaying, and ended. Also a wait whose timeout passes while the thread is suspended.
+// suspended, delaying, and ended. Also a wait whose timeout passes while the thread is suspended,
+// alone and with a signal after it and before the resume.
 // The main thread runs on core 1 and the test thread T on core 0, where a high priority gate thread
 // spins without syscalls whenever T must stay ready. For each state the test prints the status,
 // the wait type, whether the current CPU is -1, and whether T made progress.
@@ -152,6 +153,26 @@ int main(void) {
     TEST_WAIT_FOR(woke);
     PRINT("after the resume: its wait", wait_result);
     test_join_thread(timed);
+
+    // The same, with a signal after its timeout passed and before the resume
+    woke = 0;
+    wait_result = 0xDEAD;
+    const SceUID late = sceKernelCreateThread("late", timed_entry, T_PRIORITY, 0x4000, THREAD_ATTR_VM, SCE_KERNEL_CPU_MASK_USER_0, NULL);
+    sceKernelStartThread(late, 0, NULL);
+    TEST_WAIT_FOR(test_in_wait(late, WAIT_TYPE_SEMA, sema));
+    PRINT("suspend another thread in a wait with a 100 ms timeout", sceKernelSuspendThreadForVM(late));
+    sceKernelDelayThread(300000);
+    PRINT("signal after its timeout passed while suspended", sceKernelSignalSema(sema, 1));
+    SceKernelSemaInfo late_info = { .size = sizeof(late_info) };
+    sceKernelGetSemaInfo(sema, &late_info);
+    PRINT("signaled after its timeout passed: the count", late_info.currentCount);
+    PRINT("resume it", sceKernelResumeThreadForVM(late));
+    TEST_WAIT_FOR(woke);
+    PRINT("signaled after its timeout passed: its wait", wait_result);
+    sceKernelGetSemaInfo(sema, &late_info);
+    PRINT("signaled after its timeout passed: the count after the resume", late_info.currentCount);
+    test_join_thread(late);
+    sceKernelPollSema(sema, 1);
 
     const SceUID delaying = sceKernelCreateThread("delay", delay_entry, T_PRIORITY, 0x4000, 0, SCE_KERNEL_CPU_MASK_USER_0, NULL);
     sceKernelStartThread(delaying, 0, NULL);
