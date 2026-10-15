@@ -1,0 +1,67 @@
+suspended twice: the first suspend: 0x00000001
+suspended twice: the second suspend: 0x00000002
+suspended twice: it makes progress: 0x00000000
+suspended twice: the first resume: 0x00000001
+suspended twice: it makes progress after one resume: 0x00000000
+suspended twice: its status after one resume: 0x00000100
+suspended twice: the second resume: 0x00000000
+suspended twice: it makes progress after both: 0x00000001
+suspended twice: a third resume: 0x80028033
+dormant: suspend it: 0x80028027
+dormant: its status after: 0x00000010
+dormant: start it: 0x00000000
+dormant: it ran within 50 ms of the start: 0x00000001
+dormant: resume it: 0x80028033
+dormant: it ran after the resume: 0x00000001
+suspends itself: the call returned before a resume: 0x00000001
+suspends itself: its result: 0x80028022
+suspends itself: its status then: 0x00000001
+suspends itself: a resume: 0x80028033
+in a callback: suspend it: 0x00000001
+in a callback: the callback makes progress: 0x00000000
+in a callback: its status: 0x00000100
+in a callback: its wait type: 0x00000000
+in a callback: resume it: 0x00000000
+in a callback: the callback makes progress after the resume: 0x00000001
+in a callback: its status once the callback returned: 0x00000008
+in a callback: its wait's result: 0x00000000
+notified while suspended: suspend it: 0x00000001
+notified while suspended: the callback ran while suspended: 0x00000000
+notified while suspended: its status: 0x00000100
+notified while suspended: its wait type: 0x00000000
+notified while suspended: resume it: 0x00000000
+notified while suspended: the callback ran after the resume: 0x00000001
+notified while suspended: its status after the callback: 0x00000008
+notified while suspended: its wait's result: 0x00000000
+delete while suspended: suspend it: 0x00000001
+delete while suspended: the delete: 0x00000000
+delete while suspended: it woke before the resume: 0x00000000
+delete while suspended: its status: 0x00000100
+delete while suspended: its wait type: 0x00000000
+delete while suspended: resume it: 0x00000000
+delete while suspended: its wait's result: 0x80028006
+cancel while suspended: suspend it: 0x00000001
+cancel while suspended: the cancel: 0x00000000
+cancel while suspended: it woke before the resume: 0x00000000
+cancel while suspended: its status: 0x00000100
+cancel while suspended: its wait type: 0x00000000
+cancel while suspended: resume it: 0x00000000
+cancel while suspended: its wait's result: 0x80028007
+a delay that passes while suspended: suspend it: 0x00000001
+a delay that passes while suspended: it went on before the resume: 0x00000000
+a delay that passes while suspended: its status: 0x00000100
+a delay that passes while suspended: its wait type: 0x00000000
+a delay that passes while suspended: resume it: 0x00000000
+a delay that passes while suspended: it went on after the resume: 0x00000001
+delete it while suspended: suspend it: 0x00000001
+delete it while suspended: the delete: 0x80028028
+delete it while suspended: resume it: 0x00000000
+waiting, suspended twice: the first suspend: 0x00000001
+waiting, suspended twice: the second suspend: 0x00000002
+waiting, suspended twice, signaled: its status 50 ms later: 0x00000100
+waiting, suspended twice, signaled: the first resume: 0x00000001
+waiting, suspended twice, signaled: it woke after one resume: 0x00000000
+waiting, suspended twice, signaled: its status after one resume: 0x00000100
+waiting, suspended twice, signaled: the second resume: 0x00000000
+waiting, suspended twice, signaled: its wait's result: 0x00000000
+DONE
