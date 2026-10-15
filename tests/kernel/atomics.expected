@@ -1,0 +1,282 @@
+8 bits: Set from 0x11 with 0x22: the value after: 0x00000022
+8 bits: CompareAndSet from 0x11 with 0x11, 0x33: the result: 0x00000011
+8 bits: CompareAndSet from 0x11 with 0x11, 0x33: the value after: 0x00000033
+8 bits: CompareAndSet from 0x11 with 0x12, 0x33: the result: 0x00000011
+8 bits: CompareAndSet from 0x11 with 0x12, 0x33: the value after: 0x00000011
+8 bits: AddAndGet from 5 with 3: the result: 0x00000008
+8 bits: AddAndGet from 5 with 3: the value after: 0x00000008
+8 bits: AddAndGet from 0x7F with 1: the result: 0xFFFFFF80
+8 bits: AddAndGet from 0x7F with 1: the value after: 0xFFFFFF80
+8 bits: AddUnless from 5 with 3, 100: the result: 0x00000000
+8 bits: AddUnless from 5 with 3, 100: the value after: 0x00000008
+8 bits: AddUnless from 5 with 3, 8: the result: 0x00000001
+8 bits: AddUnless from 5 with 3, 8: the value after: 0x00000008
+8 bits: AddUnless from 5 with 3, 7: the result: 0x00000001
+8 bits: AddUnless from 5 with 3, 7: the value after: 0x00000007
+8 bits: AddUnless from 100 with 3, 7: the result: 0x00000001
+8 bits: AddUnless from 100 with 3, 7: the value after: 0x00000007
+8 bits: AddUnless from 0 with -1, 5: the result: 0x00000000
+8 bits: AddUnless from 0 with -1, 5: the value after: 0xFFFFFFFF
+8 bits: AddUnless from -10 with 3, -8: the result: 0x00000001
+8 bits: AddUnless from -10 with 3, -8: the value after: 0xFFFFFFF8
+8 bits: AddUnless from 0x7F with 1, 0x7F: the result: 0x00000001
+8 bits: AddUnless from 0x7F with 1, 0x7F: the value after: 0x0000007F
+8 bits: SubAndGet from 5 with 3: the result: 0x00000002
+8 bits: SubAndGet from 5 with 3: the value after: 0x00000002
+8 bits: AndAndGet from 0x5C with 0x36: the result: 0x00000014
+8 bits: AndAndGet from 0x5C with 0x36: the value after: 0x00000014
+8 bits: OrAndGet from 0x5C with 0x36: the result: 0x0000007E
+8 bits: OrAndGet from 0x5C with 0x36: the value after: 0x0000007E
+8 bits: XorAndGet from 0x5C with 0x36: the result: 0x0000006A
+8 bits: XorAndGet from 0x5C with 0x36: the value after: 0x0000006A
+8 bits: ClearAndGet from 0x5C with 0x36: the result: 0x00000048
+8 bits: ClearAndGet from 0x5C with 0x36: the value after: 0x00000048
+8 bits: GetAndSet from 0x5C with 0x36: the result: 0x0000005C
+8 bits: GetAndSet from 0x5C with 0x36: the value after: 0x00000036
+8 bits: GetAndAdd from 0x5C with 0x36: the result: 0x0000005C
+8 bits: GetAndAdd from 0x5C with 0x36: the value after: 0xFFFFFF92
+8 bits: GetAndSub from 0x5C with 0x36: the result: 0x0000005C
+8 bits: GetAndSub from 0x5C with 0x36: the value after: 0x00000026
+8 bits: GetAndAnd from 0x5C with 0x36: the result: 0x0000005C
+8 bits: GetAndAnd from 0x5C with 0x36: the value after: 0x00000014
+8 bits: GetAndOr from 0x5C with 0x36: the result: 0x0000005C
+8 bits: GetAndOr from 0x5C with 0x36: the value after: 0x0000007E
+8 bits: GetAndXor from 0x5C with 0x36: the result: 0x0000005C
+8 bits: GetAndXor from 0x5C with 0x36: the value after: 0x0000006A
+8 bits: GetAndClear from 0x5C with 0x36: the result: 0x0000005C
+8 bits: GetAndClear from 0x5C with 0x36: the value after: 0x00000048
+8 bits: ClearMask from 0x5C with 0x36: the value after: 0x00000048
+8 bits: DecIfPositive from 2: the result: 0x00000002
+8 bits: DecIfPositive from 2: the value after: 0x00000001
+8 bits: DecIfPositive from 1: the result: 0x00000001
+8 bits: DecIfPositive from 1: the value after: 0x00000000
+8 bits: DecIfPositive from 0: the result: 0x00000000
+8 bits: DecIfPositive from 0: the value after: 0xFFFFFFFF
+8 bits: DecIfPositive from -1: the result: 0xFFFFFFFF
+8 bits: DecIfPositive from -1: the value after: 0xFFFFFFFF
+16 bits: Set from 0x11 with 0x22: the value after: 0x00000022
+16 bits: CompareAndSet from 0x11 with 0x11, 0x33: the result: 0x00000011
+16 bits: CompareAndSet from 0x11 with 0x11, 0x33: the value after: 0x00000033
+16 bits: CompareAndSet from 0x11 with 0x12, 0x33: the result: 0x00000011
+16 bits: CompareAndSet from 0x11 with 0x12, 0x33: the value after: 0x00000011
+16 bits: AddAndGet from 5 with 3: the result: 0x00000008
+16 bits: AddAndGet from 5 with 3: the value after: 0x00000008
+16 bits: AddAndGet from 0x7FFF with 1: the result: 0xFFFF8000
+16 bits: AddAndGet from 0x7FFF with 1: the value after: 0xFFFF8000
+16 bits: AddUnless from 5 with 3, 100: the result: 0x00000000
+16 bits: AddUnless from 5 with 3, 100: the value after: 0x00000008
+16 bits: AddUnless from 5 with 3, 8: the result: 0x00000001
+16 bits: AddUnless from 5 with 3, 8: the value after: 0x00000008
+16 bits: AddUnless from 5 with 3, 7: the result: 0x00000001
+16 bits: AddUnless from 5 with 3, 7: the value after: 0x00000007
+16 bits: AddUnless from 100 with 3, 7: the result: 0x00000001
+16 bits: AddUnless from 100 with 3, 7: the value after: 0x00000007
+16 bits: AddUnless from 0 with -1, 5: the result: 0x00000000
+16 bits: AddUnless from 0 with -1, 5: the value after: 0xFFFFFFFF
+16 bits: AddUnless from -10 with 3, -8: the result: 0x00000001
+16 bits: AddUnless from -10 with 3, -8: the value after: 0xFFFFFFF8
+16 bits: AddUnless from 0x7FFF with 1, 0x7FFF: the result: 0x00000001
+16 bits: AddUnless from 0x7FFF with 1, 0x7FFF: the value after: 0x00007FFF
+16 bits: SubAndGet from 5 with 3: the result: 0x00000002
+16 bits: SubAndGet from 5 with 3: the value after: 0x00000002
+16 bits: AndAndGet from 0x5C with 0x36: the result: 0x00000014
+16 bits: AndAndGet from 0x5C with 0x36: the value after: 0x00000014
+16 bits: OrAndGet from 0x5C with 0x36: the result: 0x0000007E
+16 bits: OrAndGet from 0x5C with 0x36: the value after: 0x0000007E
+16 bits: XorAndGet from 0x5C with 0x36: the result: 0x0000006A
+16 bits: XorAndGet from 0x5C with 0x36: the value after: 0x0000006A
+16 bits: ClearAndGet from 0x5C with 0x36: the result: 0x00000048
+16 bits: ClearAndGet from 0x5C with 0x36: the value after: 0x00000048
+16 bits: GetAndSet from 0x5C with 0x36: the result: 0x0000005C
+16 bits: GetAndSet from 0x5C with 0x36: the value after: 0x00000036
+16 bits: GetAndAdd from 0x5C with 0x36: the result: 0x0000005C
+16 bits: GetAndAdd from 0x5C with 0x36: the value after: 0x00000092
+16 bits: GetAndSub from 0x5C with 0x36: the result: 0x0000005C
+16 bits: GetAndSub from 0x5C with 0x36: the value after: 0x00000026
+16 bits: GetAndAnd from 0x5C with 0x36: the result: 0x0000005C
+16 bits: GetAndAnd from 0x5C with 0x36: the value after: 0x00000014
+16 bits: GetAndOr from 0x5C with 0x36: the result: 0x0000005C
+16 bits: GetAndOr from 0x5C with 0x36: the value after: 0x0000007E
+16 bits: GetAndXor from 0x5C with 0x36: the result: 0x0000005C
+16 bits: GetAndXor from 0x5C with 0x36: the value after: 0x0000006A
+16 bits: GetAndClear from 0x5C with 0x36: the result: 0x0000005C
+16 bits: GetAndClear from 0x5C with 0x36: the value after: 0x00000048
+16 bits: ClearMask from 0x5C with 0x36: the value after: 0x00000048
+16 bits: DecIfPositive from 2: the result: 0x00000002
+16 bits: DecIfPositive from 2: the value after: 0x00000001
+16 bits: DecIfPositive from 1: the result: 0x00000001
+16 bits: DecIfPositive from 1: the value after: 0x00000000
+16 bits: DecIfPositive from 0: the result: 0x00000000
+16 bits: DecIfPositive from 0: the value after: 0xFFFFFFFF
+16 bits: DecIfPositive from -1: the result: 0xFFFFFFFF
+16 bits: DecIfPositive from -1: the value after: 0xFFFFFFFF
+32 bits: Set from 0x11 with 0x22: the value after: 0x00000022
+32 bits: CompareAndSet from 0x11 with 0x11, 0x33: the result: 0x00000011
+32 bits: CompareAndSet from 0x11 with 0x11, 0x33: the value after: 0x00000033
+32 bits: CompareAndSet from 0x11 with 0x12, 0x33: the result: 0x00000011
+32 bits: CompareAndSet from 0x11 with 0x12, 0x33: the value after: 0x00000011
+32 bits: AddAndGet from 5 with 3: the result: 0x00000008
+32 bits: AddAndGet from 5 with 3: the value after: 0x00000008
+32 bits: AddAndGet from 0x7FFFFFFF with 1: the result: 0x80000000
+32 bits: AddAndGet from 0x7FFFFFFF with 1: the value after: 0x80000000
+32 bits: AddUnless from 5 with 3, 100: the result: 0x00000000
+32 bits: AddUnless from 5 with 3, 100: the value after: 0x00000008
+32 bits: AddUnless from 5 with 3, 8: the result: 0x00000001
+32 bits: AddUnless from 5 with 3, 8: the value after: 0x00000008
+32 bits: AddUnless from 5 with 3, 7: the result: 0x00000001
+32 bits: AddUnless from 5 with 3, 7: the value after: 0x00000007
+32 bits: AddUnless from 100 with 3, 7: the result: 0x00000001
+32 bits: AddUnless from 100 with 3, 7: the value after: 0x00000007
+32 bits: AddUnless from 0 with -1, 5: the result: 0x00000000
+32 bits: AddUnless from 0 with -1, 5: the value after: 0xFFFFFFFF
+32 bits: AddUnless from -10 with 3, -8: the result: 0x00000001
+32 bits: AddUnless from -10 with 3, -8: the value after: 0xFFFFFFF8
+32 bits: AddUnless from 0x7FFFFFFF with 1, 0x7FFFFFFF: the result: 0x00000000
+32 bits: AddUnless from 0x7FFFFFFF with 1, 0x7FFFFFFF: the value after: 0x80000000
+32 bits: SubAndGet from 5 with 3: the result: 0x00000002
+32 bits: SubAndGet from 5 with 3: the value after: 0x00000002
+32 bits: AndAndGet from 0x5C with 0x36: the result: 0x00000014
+32 bits: AndAndGet from 0x5C with 0x36: the value after: 0x00000014
+32 bits: OrAndGet from 0x5C with 0x36: the result: 0x0000007E
+32 bits: OrAndGet from 0x5C with 0x36: the value after: 0x0000007E
+32 bits: XorAndGet from 0x5C with 0x36: the result: 0x0000006A
+32 bits: XorAndGet from 0x5C with 0x36: the value after: 0x0000006A
+32 bits: ClearAndGet from 0x5C with 0x36: the result: 0x00000048
+32 bits: ClearAndGet from 0x5C with 0x36: the value after: 0x00000048
+32 bits: GetAndSet from 0x5C with 0x36: the result: 0x0000005C
+32 bits: GetAndSet from 0x5C with 0x36: the value after: 0x00000036
+32 bits: GetAndAdd from 0x5C with 0x36: the result: 0x0000005C
+32 bits: GetAndAdd from 0x5C with 0x36: the value after: 0x00000092
+32 bits: GetAndSub from 0x5C with 0x36: the result: 0x0000005C
+32 bits: GetAndSub from 0x5C with 0x36: the value after: 0x00000026
+32 bits: GetAndAnd from 0x5C with 0x36: the result: 0x0000005C
+32 bits: GetAndAnd from 0x5C with 0x36: the value after: 0x00000014
+32 bits: GetAndOr from 0x5C with 0x36: the result: 0x0000005C
+32 bits: GetAndOr from 0x5C with 0x36: the value after: 0x0000007E
+32 bits: GetAndXor from 0x5C with 0x36: the result: 0x0000005C
+32 bits: GetAndXor from 0x5C with 0x36: the value after: 0x0000006A
+32 bits: GetAndClear from 0x5C with 0x36: the result: 0x0000005C
+32 bits: GetAndClear from 0x5C with 0x36: the value after: 0x00000048
+32 bits: ClearMask from 0x5C with 0x36: the value after: 0x00000048
+32 bits: DecIfPositive from 2: the result: 0x00000002
+32 bits: DecIfPositive from 2: the value after: 0x00000001
+32 bits: DecIfPositive from 1: the result: 0x00000001
+32 bits: DecIfPositive from 1: the value after: 0x00000000
+32 bits: DecIfPositive from 0: the result: 0x00000000
+32 bits: DecIfPositive from 0: the value after: 0x00000000
+32 bits: DecIfPositive from -1: the result: 0xFFFFFFFF
+32 bits: DecIfPositive from -1: the value after: 0xFFFFFFFF
+64 bits: Set from 0x11 with 0x22: the value after, high word: 0x00000000
+64 bits: Set from 0x11 with 0x22: the value after, low word: 0x00000022
+64 bits: CompareAndSet from 0x11 with 0x11, 0x33: the result, high word: 0x00000000
+64 bits: CompareAndSet from 0x11 with 0x11, 0x33: the result, low word: 0x00000011
+64 bits: CompareAndSet from 0x11 with 0x11, 0x33: the value after, high word: 0x00000000
+64 bits: CompareAndSet from 0x11 with 0x11, 0x33: the value after, low word: 0x00000033
+64 bits: CompareAndSet from 0x11 with 0x12, 0x33: the result, high word: 0x00000000
+64 bits: CompareAndSet from 0x11 with 0x12, 0x33: the result, low word: 0x00000011
+64 bits: CompareAndSet from 0x11 with 0x12, 0x33: the value after, high word: 0x00000000
+64 bits: CompareAndSet from 0x11 with 0x12, 0x33: the value after, low word: 0x00000011
+64 bits: AddAndGet from 5 with 3: the result, high word: 0x00000000
+64 bits: AddAndGet from 5 with 3: the result, low word: 0x00000008
+64 bits: AddAndGet from 5 with 3: the value after, high word: 0x00000000
+64 bits: AddAndGet from 5 with 3: the value after, low word: 0x00000008
+64 bits: AddAndGet from 0x7FFFFFFFFFFFFFFFLL with 1: the result, high word: 0x80000000
+64 bits: AddAndGet from 0x7FFFFFFFFFFFFFFFLL with 1: the result, low word: 0x00000000
+64 bits: AddAndGet from 0x7FFFFFFFFFFFFFFFLL with 1: the value after, high word: 0x80000000
+64 bits: AddAndGet from 0x7FFFFFFFFFFFFFFFLL with 1: the value after, low word: 0x00000000
+64 bits: AddUnless from 5 with 3, 100: the result, high word: 0x00000000
+64 bits: AddUnless from 5 with 3, 100: the result, low word: 0x00000000
+64 bits: AddUnless from 5 with 3, 100: the value after, high word: 0x00000000
+64 bits: AddUnless from 5 with 3, 100: the value after, low word: 0x00000008
+64 bits: AddUnless from 5 with 3, 8: the result, high word: 0x00000000
+64 bits: AddUnless from 5 with 3, 8: the result, low word: 0x00000001
+64 bits: AddUnless from 5 with 3, 8: the value after, high word: 0x00000000
+64 bits: AddUnless from 5 with 3, 8: the value after, low word: 0x00000008
+64 bits: AddUnless from 5 with 3, 7: the result, high word: 0x00000000
+64 bits: AddUnless from 5 with 3, 7: the result, low word: 0x00000001
+64 bits: AddUnless from 5 with 3, 7: the value after, high word: 0x00000000
+64 bits: AddUnless from 5 with 3, 7: the value after, low word: 0x00000007
+64 bits: AddUnless from 100 with 3, 7: the result, high word: 0x00000000
+64 bits: AddUnless from 100 with 3, 7: the result, low word: 0x00000001
+64 bits: AddUnless from 100 with 3, 7: the value after, high word: 0x00000000
+64 bits: AddUnless from 100 with 3, 7: the value after, low word: 0x00000007
+64 bits: AddUnless from 0 with -1, 5: the result, high word: 0x00000000
+64 bits: AddUnless from 0 with -1, 5: the result, low word: 0x00000000
+64 bits: AddUnless from 0 with -1, 5: the value after, high word: 0xFFFFFFFF
+64 bits: AddUnless from 0 with -1, 5: the value after, low word: 0xFFFFFFFF
+64 bits: AddUnless from -10 with 3, -8: the result, high word: 0x00000000
+64 bits: AddUnless from -10 with 3, -8: the result, low word: 0x00000001
+64 bits: AddUnless from -10 with 3, -8: the value after, high word: 0xFFFFFFFF
+64 bits: AddUnless from -10 with 3, -8: the value after, low word: 0xFFFFFFF8
+64 bits: AddUnless from 0x7FFFFFFFFFFFFFFFLL with 1, 0x7FFFFFFFFFFFFFFFLL: the result, high word: 0x00000000
+64 bits: AddUnless from 0x7FFFFFFFFFFFFFFFLL with 1, 0x7FFFFFFFFFFFFFFFLL: the result, low word: 0x00000000
+64 bits: AddUnless from 0x7FFFFFFFFFFFFFFFLL with 1, 0x7FFFFFFFFFFFFFFFLL: the value after, high word: 0x80000000
+64 bits: AddUnless from 0x7FFFFFFFFFFFFFFFLL with 1, 0x7FFFFFFFFFFFFFFFLL: the value after, low word: 0x00000000
+64 bits: SubAndGet from 5 with 3: the result, high word: 0x00000000
+64 bits: SubAndGet from 5 with 3: the result, low word: 0x00000002
+64 bits: SubAndGet from 5 with 3: the value after, high word: 0x00000000
+64 bits: SubAndGet from 5 with 3: the value after, low word: 0x00000002
+64 bits: AndAndGet from 0x5C with 0x36: the result, high word: 0x00000000
+64 bits: AndAndGet from 0x5C with 0x36: the result, low word: 0x00000014
+64 bits: AndAndGet from 0x5C with 0x36: the value after, high word: 0x00000000
+64 bits: AndAndGet from 0x5C with 0x36: the value after, low word: 0x00000014
+64 bits: OrAndGet from 0x5C with 0x36: the result, high word: 0x00000000
+64 bits: OrAndGet from 0x5C with 0x36: the result, low word: 0x0000007E
+64 bits: OrAndGet from 0x5C with 0x36: the value after, high word: 0x00000000
+64 bits: OrAndGet from 0x5C with 0x36: the value after, low word: 0x0000007E
+64 bits: XorAndGet from 0x5C with 0x36: the result, high word: 0x00000000
+64 bits: XorAndGet from 0x5C with 0x36: the result, low word: 0x0000006A
+64 bits: XorAndGet from 0x5C with 0x36: the value after, high word: 0x00000000
+64 bits: XorAndGet from 0x5C with 0x36: the value after, low word: 0x0000006A
+64 bits: ClearAndGet from 0x5C with 0x36: the result, high word: 0x00000000
+64 bits: ClearAndGet from 0x5C with 0x36: the result, low word: 0x00000048
+64 bits: ClearAndGet from 0x5C with 0x36: the value after, high word: 0x00000000
+64 bits: ClearAndGet from 0x5C with 0x36: the value after, low word: 0x00000048
+64 bits: GetAndSet from 0x5C with 0x36: the result, high word: 0x00000000
+64 bits: GetAndSet from 0x5C with 0x36: the result, low word: 0x0000005C
+64 bits: GetAndSet from 0x5C with 0x36: the value after, high word: 0x00000000
+64 bits: GetAndSet from 0x5C with 0x36: the value after, low word: 0x00000036
+64 bits: GetAndAdd from 0x5C with 0x36: the result, high word: 0x00000000
+64 bits: GetAndAdd from 0x5C with 0x36: the result, low word: 0x0000005C
+64 bits: GetAndAdd from 0x5C with 0x36: the value after, high word: 0x00000000
+64 bits: GetAndAdd from 0x5C with 0x36: the value after, low word: 0x00000092
+64 bits: GetAndSub from 0x5C with 0x36: the result, high word: 0x00000000
+64 bits: GetAndSub from 0x5C with 0x36: the result, low word: 0x0000005C
+64 bits: GetAndSub from 0x5C with 0x36: the value after, high word: 0x00000000
+64 bits: GetAndSub from 0x5C with 0x36: the value after, low word: 0x00000026
+64 bits: GetAndAnd from 0x5C with 0x36: the result, high word: 0x00000000
+64 bits: GetAndAnd from 0x5C with 0x36: the result, low word: 0x0000005C
+64 bits: GetAndAnd from 0x5C with 0x36: the value after, high word: 0x00000000
+64 bits: GetAndAnd from 0x5C with 0x36: the value after, low word: 0x00000014
+64 bits: GetAndOr from 0x5C with 0x36: the result, high word: 0x00000000
+64 bits: GetAndOr from 0x5C with 0x36: the result, low word: 0x0000005C
+64 bits: GetAndOr from 0x5C with 0x36: the value after, high word: 0x00000000
+64 bits: GetAndOr from 0x5C with 0x36: the value after, low word: 0x0000007E
+64 bits: GetAndXor from 0x5C with 0x36: the result, high word: 0x00000000
+64 bits: GetAndXor from 0x5C with 0x36: the result, low word: 0x0000005C
+64 bits: GetAndXor from 0x5C with 0x36: the value after, high word: 0x00000000
+64 bits: GetAndXor from 0x5C with 0x36: the value after, low word: 0x0000006A
+64 bits: GetAndClear from 0x5C with 0x36: the result, high word: 0x00000000
+64 bits: GetAndClear from 0x5C with 0x36: the result, low word: 0x0000005C
+64 bits: GetAndClear from 0x5C with 0x36: the value after, high word: 0x00000000
+64 bits: GetAndClear from 0x5C with 0x36: the value after, low word: 0x00000048
+64 bits: ClearMask from 0x5C with 0x36: the value after, high word: 0x00000000
+64 bits: ClearMask from 0x5C with 0x36: the value after, low word: 0x00000048
+64 bits: DecIfPositive from 2: the result, high word: 0x00000000
+64 bits: DecIfPositive from 2: the result, low word: 0x00000002
+64 bits: DecIfPositive from 2: the value after, high word: 0x00000000
+64 bits: DecIfPositive from 2: the value after, low word: 0x00000001
+64 bits: DecIfPositive from 1: the result, high word: 0x00000000
+64 bits: DecIfPositive from 1: the result, low word: 0x00000001
+64 bits: DecIfPositive from 1: the value after, high word: 0x00000000
+64 bits: DecIfPositive from 1: the value after, low word: 0x00000000
+64 bits: DecIfPositive from 0: the result, high word: 0x00000000
+64 bits: DecIfPositive from 0: the result, low word: 0x00000000
+64 bits: DecIfPositive from 0: the value after, high word: 0x00000000
+64 bits: DecIfPositive from 0: the value after, low word: 0x00000000
+64 bits: DecIfPositive from -1: the result, high word: 0xFFFFFFFF
+64 bits: DecIfPositive from -1: the result, low word: 0xFFFFFFFF
+64 bits: DecIfPositive from -1: the value after, high word: 0xFFFFFFFF
+64 bits: DecIfPositive from -1: the value after, low word: 0xFFFFFFFF
+three cores adding 100000 each: the counter ends at 300000: 0x00000001
+DONE
