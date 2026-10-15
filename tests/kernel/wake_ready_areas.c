@@ -104,11 +104,12 @@ static void run_case(int c, int priority) {
     const SceUInt32 t_status = status_of(t), u_status = status_of(u);
     gate_lift();
     TEST_WAIT_FOR(ran == 2);
+    // Joined first, so every record the threads made is complete
+    test_join_thread(t);
+    test_join_thread(u);
     PRINTF(u_status, "%s, priority 0x%X: U's status before the gate lifts", case_names[c], priority);
     PRINTF(t_status, "%s, priority 0x%X: T's status before the gate lifts", case_names[c], priority);
     PRINTF(order[0], "%s, priority 0x%X: the first to run, 1 for T and 2 for U", case_names[c], priority);
-    test_join_thread(t);
-    test_join_thread(u);
     sceKernelDeleteSema(sema);
 }
 

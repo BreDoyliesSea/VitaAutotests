@@ -146,12 +146,13 @@ static void run_case(const struct Case *c) {
         statuses[i] = status_of(threads[i]);
     gate_lift();
     TEST_WAIT_FOR(ran == c->count);
+    // Joined first, so every record the threads made is complete
+    for (int i = 0; i < c->count; i++)
+        test_join_thread(threads[i]);
     for (int i = 0; i < c->count; i++)
         PRINTF(statuses[i], "%s: %s's status before the gate lifts", c->name, c->steps[i].name);
     for (int i = 0; i < c->count; i++)
         PRINTF(order[i], "%s: run %d, by step", c->name, i + 1);
-    for (int i = 0; i < c->count; i++)
-        test_join_thread(threads[i]);
     sceKernelDeleteSema(sema);
 }
 

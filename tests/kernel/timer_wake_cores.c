@@ -83,11 +83,12 @@ static void run_case(int timeout, int priority) {
     const int ran_on_core_1 = t_ran;
     gate_lift(0);
     TEST_WAIT_FOR(t_ran);
+    // Joined first, so every record the threads made is complete
+    test_join_thread(t);
     const char *const name = timeout ? "timeout" : "signal";
     PRINTF(status, "%s, priority 0x%X: T's status before a gate lifts", name, priority);
     PRINTF(ran_on_core_1, "%s, priority 0x%X: T ran while core 0 was still busy", name, priority);
     PRINTF(t_cpu, "%s, priority 0x%X: the core T ran on", name, priority);
-    test_join_thread(t);
     sceKernelDeleteSema(sema);
 }
 

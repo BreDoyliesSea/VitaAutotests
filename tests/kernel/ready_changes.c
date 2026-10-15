@@ -128,14 +128,15 @@ static void run_case(const struct Case *c) {
     const int ran_before_lift = ran > 0 && order[0] == 1;
     gate_lift();
     TEST_WAIT_FOR(ran == 2);
+    // Joined first, so every record the threads made is complete
+    test_join_thread(t);
+    test_join_thread(u);
     // A moved thread may already run on core 1, so its status then depends on timing
     if (c->change != MOVE_TO_CORE_1)
         PRINTF(status, "%s: T's status after the change", c->name);
     PRINTF(ran_before_lift, "%s: T ran before the gate lifted", c->name);
     PRINTF(t_cpu, "%s: the core T ran on", c->name);
     PRINTF(order[0], "%s: the first to run, 1 for T and 2 for U", c->name);
-    test_join_thread(t);
-    test_join_thread(u);
     sceKernelDeleteSema(sema);
 }
 
