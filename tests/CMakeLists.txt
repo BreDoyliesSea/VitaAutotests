@@ -167,6 +167,7 @@ vita_test(timeout_threshold kernel/timeout_threshold.c)
 vita_test(timer_period kernel/timer_period.c)
 vita_test(remote_priority_change kernel/remote_priority_change.c)
 vita_test(self_priority_drop kernel/self_priority_drop.c)
+vita_test(standby_merge_irq kernel/standby_merge_irq.c)
 vita_test(release_preempt kernel/release_preempt.c)
 vita_test(nonblocking_wait_preempt kernel/nonblocking_wait_preempt.c)
 
