@@ -1,0 +1,4 @@
+R started from core 1, at 0x70: the first to record, 1 for L and 2 for R: 0x00000001
+R woken by L, at 0x70: the first to record, 1 for L and 2 for R: 0x00000002
+R started from core 1, at 0xA0: the first to record, 1 for L and 2 for R: 0x00000002
+DONE
