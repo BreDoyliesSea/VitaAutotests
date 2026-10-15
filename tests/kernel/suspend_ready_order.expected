@@ -1,0 +1,47 @@
+control, priority 0xA0: T's status before the gate lifts: 0x00000002
+control, priority 0xA0: the first to run, 1 for T and 2 for U: 0x00000001
+timeout while suspended, priority 0xA0: the suspend: 0x00000001
+timeout while suspended, priority 0xA0: T's status before the gate lifts: 0x00000002
+timeout while suspended, priority 0xA0: the first to run, 1 for T and 2 for U: 0x00000001
+signal while suspended, priority 0xA0: the suspend: 0x00000001
+signal while suspended, priority 0xA0: T's status before the gate lifts: 0x00000002
+signal while suspended, priority 0xA0: the first to run, 1 for T and 2 for U: 0x00000001
+timeout while suspended, U first, priority 0xA0: the suspend: 0x00000001
+timeout while suspended, U first, priority 0xA0: T's status before the gate lifts: 0x00000002
+timeout while suspended, U first, priority 0xA0: the first to run, 1 for T and 2 for U: 0x00000002
+signal while suspended, U first, priority 0xA0: the suspend: 0x00000001
+signal while suspended, U first, priority 0xA0: T's status before the gate lifts: 0x00000002
+signal while suspended, U first, priority 0xA0: the first to run, 1 for T and 2 for U: 0x00000002
+suspended while ready, before U, priority 0xA0: the suspend: 0x00000001
+suspended while ready, before U, priority 0xA0: T's status before the gate lifts: 0x00000002
+suspended while ready, before U, priority 0xA0: the first to run, 1 for T and 2 for U: 0x00000002
+suspended while ready, after U, priority 0xA0: the suspend: 0x00000001
+suspended while ready, after U, priority 0xA0: T's status before the gate lifts: 0x00000002
+suspended while ready, after U, priority 0xA0: the first to run, 1 for T and 2 for U: 0x00000002
+priority change while suspended, priority 0xA0: the suspend: 0x00000001
+priority change while suspended, priority 0xA0: T's status before the gate lifts: 0x00000002
+priority change while suspended, priority 0xA0: the first to run, 1 for T and 2 for U: 0x00000002
+control, priority 0x70: T's status before the gate lifts: 0x00000004
+control, priority 0x70: the first to run, 1 for T and 2 for U: 0x00000001
+timeout while suspended, priority 0x70: the suspend: 0x00000001
+timeout while suspended, priority 0x70: T's status before the gate lifts: 0x00000002
+timeout while suspended, priority 0x70: the first to run, 1 for T and 2 for U: 0x00000001
+signal while suspended, priority 0x70: the suspend: 0x00000001
+signal while suspended, priority 0x70: T's status before the gate lifts: 0x00000004
+signal while suspended, priority 0x70: the first to run, 1 for T and 2 for U: 0x00000001
+timeout while suspended, U first, priority 0x70: the suspend: 0x00000001
+timeout while suspended, U first, priority 0x70: T's status before the gate lifts: 0x00000002
+timeout while suspended, U first, priority 0x70: the first to run, 1 for T and 2 for U: 0x00000001
+signal while suspended, U first, priority 0x70: the suspend: 0x00000001
+signal while suspended, U first, priority 0x70: T's status before the gate lifts: 0x00000004
+signal while suspended, U first, priority 0x70: the first to run, 1 for T and 2 for U: 0x00000002
+suspended while ready, before U, priority 0x70: the suspend: 0x00000001
+suspended while ready, before U, priority 0x70: T's status before the gate lifts: 0x00000004
+suspended while ready, before U, priority 0x70: the first to run, 1 for T and 2 for U: 0x00000002
+suspended while ready, after U, priority 0x70: the suspend: 0x00000001
+suspended while ready, after U, priority 0x70: T's status before the gate lifts: 0x00000004
+suspended while ready, after U, priority 0x70: the first to run, 1 for T and 2 for U: 0x00000002
+priority change while suspended, priority 0x70: the suspend: 0x00000001
+priority change while suspended, priority 0x70: T's status before the gate lifts: 0x00000004
+priority change while suspended, priority 0x70: the first to run, 1 for T and 2 for U: 0x00000002
+DONE
