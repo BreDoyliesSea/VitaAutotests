@@ -1,0 +1,12 @@
+the right size: 0x00000000
+the active CPU mask: 0x000F0000
+a size of 0: 0x00000000
+4 bytes short: 0x00000000
+4 bytes over: 0x8002710B
+core 0: its thread switch count grew by at least 10: 0x00000001
+core 0: its idle clock grew: 0x00000001
+core 1: its thread switch count grew by at least 10: 0x00000001
+core 1: its idle clock grew: 0x00000001
+core 2: its thread switch count grew by at least 10: 0x00000001
+core 2: its idle clock grew: 0x00000001
+DONE

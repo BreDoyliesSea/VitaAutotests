@@ -1,0 +1,11 @@
+create with mask 0x0: 0x00000000
+created with mask 0x0: the mask it reports: 0x00000000
+create with mask 0x1: 0x80028025
+create with mask 0x8000: 0x80028025
+create with mask 0x100000: 0x80028025
+create with mask 0x170000: 0x80028025
+change a waiting thread's mask to 0: 0x00010000
+the mask it reports after: 0x00000000
+with mask 0 and cores 0 and 1 busy, it ran: 0x00000001
+the core it ran on: 0x00000002
+DONE
