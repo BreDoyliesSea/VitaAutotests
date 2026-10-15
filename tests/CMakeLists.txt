@@ -165,6 +165,7 @@ vita_test(affinity_migrate kernel/affinity_migrate.c)
 vita_test(delay_precision kernel/delay_precision.c)
 vita_test(timeout_threshold kernel/timeout_threshold.c)
 vita_test(timer_period kernel/timer_period.c)
+vita_test(remote_priority_change kernel/remote_priority_change.c)
 vita_test(release_preempt kernel/release_preempt.c)
 vita_test(nonblocking_wait_preempt kernel/nonblocking_wait_preempt.c)
 

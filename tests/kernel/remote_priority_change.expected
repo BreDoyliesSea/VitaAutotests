@@ -1,0 +1,19 @@
+L at 0x70, L lowered below R: R ran before the change: 0x00000000
+L at 0x70, L lowered below R: R ran within 10 ms of the change: 0x00000000
+L at 0x70, L lowered below R: L's status then: 0x00000001
+L at 0x70, L, making syscalls, lowered below R: R ran before the change: 0x00000000
+L at 0x70, L, making syscalls, lowered below R: R ran within 10 ms of the change: 0x00000000
+L at 0x70, L, making syscalls, lowered below R: L's status then: 0x00000001
+L at 0x70, R raised above L: R ran before the change: 0x00000000
+L at 0x70, R raised above L: R ran within 10 ms of the change: 0x00000001
+L at 0x70, R raised above L: L's status then: 0x00000001
+L at 0xA0, L lowered below R: R ran before the change: 0x00000000
+L at 0xA0, L lowered below R: R ran within 10 ms of the change: 0x00000001
+L at 0xA0, L lowered below R: L's status then: 0x00000001
+L at 0xA0, L, making syscalls, lowered below R: R ran before the change: 0x00000000
+L at 0xA0, L, making syscalls, lowered below R: R ran within 10 ms of the change: 0x00000001
+L at 0xA0, L, making syscalls, lowered below R: L's status then: 0x00000001
+L at 0xA0, R raised above L: R ran before the change: 0x00000000
+L at 0xA0, R raised above L: R ran within 10 ms of the change: 0x00000001
+L at 0xA0, R raised above L: L's status then: 0x00000001
+DONE
