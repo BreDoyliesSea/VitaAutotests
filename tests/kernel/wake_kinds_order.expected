@@ -1,0 +1,25 @@
+semaphore signal: U's status before the gate lifts: 0x00000004
+semaphore signal: T's status before the gate lifts: 0x00000004
+semaphore signal: the first to run, 1 for T and 2 for U: 0x00000002
+semaphore cancel: U's status before the gate lifts: 0x00000004
+semaphore cancel: T's status before the gate lifts: 0x00000004
+semaphore cancel: the first to run, 1 for T and 2 for U: 0x00000002
+semaphore delete: U's status before the gate lifts: 0x00000004
+semaphore delete: T's status before the gate lifts: 0x00000004
+semaphore delete: the first to run, 1 for T and 2 for U: 0x00000002
+event flag set: U's status before the gate lifts: 0x00000004
+event flag set: T's status before the gate lifts: 0x00000004
+event flag set: the first to run, 1 for T and 2 for U: 0x00000002
+thread signal: U's status before the gate lifts: 0x00000004
+thread signal: T's status before the gate lifts: 0x00000004
+thread signal: the first to run, 1 for T and 2 for U: 0x00000002
+callback notify: U's status before the gate lifts: 0x00000004
+callback notify: T's status before the gate lifts: 0x00000004
+callback notify: the first to run, 1 for T and 2 for U: 0x00000002
+thread end: U's status before the gate lifts: 0x00000004
+thread end: T's status before the gate lifts: 0x00000004
+thread end: the first to run, 1 for T and 2 for U: 0x00000002
+lightweight mutex unlock: U's status before the gate lifts: 0x00000004
+lightweight mutex unlock: T's status before the gate lifts: 0x00000004
+lightweight mutex unlock: the first to run, 1 for T and 2 for U: 0x00000002
+DONE
