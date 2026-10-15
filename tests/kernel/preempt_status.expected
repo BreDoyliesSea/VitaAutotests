@@ -1,0 +1,9 @@
+L and M at 0xB0: M's status behind the running L: 0x00000002
+L and M at 0xB0: L's status while T runs: 0x00000002
+L and M at 0xB0: M's status while T runs: 0x00000002
+L and M at 0xB0: M ran before L got the core back: 0x00000000
+L and M at 0x78: M's status behind the running L: 0x00000004
+L and M at 0x78: L's status while T runs: 0x00000002
+L and M at 0x78: M's status while T runs: 0x00000002
+L and M at 0x78: M ran before L got the core back: 0x00000000
+DONE
