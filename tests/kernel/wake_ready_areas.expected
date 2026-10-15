@@ -1,0 +1,25 @@
+started, priority 0xA0: U's status before the gate lifts: 0x00000002
+started, priority 0xA0: T's status before the gate lifts: 0x00000002
+started, priority 0xA0: the first to run, 1 for T and 2 for U: 0x00000002
+signal, priority 0xA0: U's status before the gate lifts: 0x00000002
+signal, priority 0xA0: T's status before the gate lifts: 0x00000002
+signal, priority 0xA0: the first to run, 1 for T and 2 for U: 0x00000002
+timeout, priority 0xA0: U's status before the gate lifts: 0x00000002
+timeout, priority 0xA0: T's status before the gate lifts: 0x00000002
+timeout, priority 0xA0: the first to run, 1 for T and 2 for U: 0x00000002
+delay end, priority 0xA0: U's status before the gate lifts: 0x00000002
+delay end, priority 0xA0: T's status before the gate lifts: 0x00000002
+delay end, priority 0xA0: the first to run, 1 for T and 2 for U: 0x00000002
+started, priority 0x70: U's status before the gate lifts: 0x00000004
+started, priority 0x70: T's status before the gate lifts: 0x00000004
+started, priority 0x70: the first to run, 1 for T and 2 for U: 0x00000002
+signal, priority 0x70: U's status before the gate lifts: 0x00000004
+signal, priority 0x70: T's status before the gate lifts: 0x00000004
+signal, priority 0x70: the first to run, 1 for T and 2 for U: 0x00000002
+timeout, priority 0x70: U's status before the gate lifts: 0x00000004
+timeout, priority 0x70: T's status before the gate lifts: 0x00000002
+timeout, priority 0x70: the first to run, 1 for T and 2 for U: 0x00000001
+delay end, priority 0x70: U's status before the gate lifts: 0x00000004
+delay end, priority 0x70: T's status before the gate lifts: 0x00000002
+delay end, priority 0x70: the first to run, 1 for T and 2 for U: 0x00000001
+DONE
