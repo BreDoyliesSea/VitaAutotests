@@ -171,6 +171,7 @@ vita_test(standby_merge_irq kernel/standby_merge_irq.c)
 vita_test(cond_mutex_delete kernel/cond_mutex_delete.c)
 vita_test(stagnant_mask kernel/stagnant_mask.c)
 vita_test(ready_cpu_field kernel/ready_cpu_field.c)
+vita_test(affinity_mask_values kernel/affinity_mask_values.c)
 vita_test(release_preempt kernel/release_preempt.c)
 vita_test(nonblocking_wait_preempt kernel/nonblocking_wait_preempt.c)
 
