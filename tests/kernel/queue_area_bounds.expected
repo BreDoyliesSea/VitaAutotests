@@ -1,0 +1,5 @@
+T at 0x40: its status before the gate lifts: 0x00000004
+T at 0x7F: its status before the gate lifts: 0x00000004
+T at 0x80: its status before the gate lifts: 0x00000002
+T at 0xBF: its status before the gate lifts: 0x00000002
+DONE
