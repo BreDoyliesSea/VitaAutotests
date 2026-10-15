@@ -151,6 +151,7 @@ vita_test(wake_ready_areas kernel/wake_ready_areas.c)
 vita_test(timer_wake_order kernel/timer_wake_order.c)
 vita_test(wake_kinds_order kernel/wake_kinds_order.c)
 vita_test(timer_wake_cores kernel/timer_wake_cores.c)
+vita_test(wake_core_origin kernel/wake_core_origin.c)
 vita_test(release_preempt kernel/release_preempt.c)
 vita_test(nonblocking_wait_preempt kernel/nonblocking_wait_preempt.c)
 
