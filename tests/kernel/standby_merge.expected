@@ -1,0 +1,13 @@
+alternating: S1's status before the gate lifts: 0x00000004
+alternating: R1's status before the gate lifts: 0x00000002
+alternating: S2's status before the gate lifts: 0x00000004
+alternating: R2's status before the gate lifts: 0x00000002
+alternating: run 1, by the order of the names above: 0x00000002
+alternating: run 2, by the order of the names above: 0x00000004
+alternating: run 3, by the order of the names above: 0x00000001
+alternating: run 4, by the order of the names above: 0x00000003
+a syscall in between: S1's status before the gate lifts: 0x00000004
+a syscall in between: R1's status before the gate lifts: 0x00000002
+a syscall in between: run 1, by the order of the names above: 0x00000002
+a syscall in between: run 2, by the order of the names above: 0x00000001
+DONE

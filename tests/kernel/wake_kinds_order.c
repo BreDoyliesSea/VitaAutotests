@@ -176,11 +176,12 @@ static void run_case(int c) {
     const SceUInt32 t_status = status_of(t), u_status = status_of(u);
     gate_lift();
     TEST_WAIT_FOR(ran == 2);
+    // Joined first, so every record the threads made is complete
+    test_join_thread(t);
+    test_join_thread(u);
     PRINTF(u_status, "%s: U's status before the gate lifts", case_names[c]);
     PRINTF(t_status, "%s: T's status before the gate lifts", case_names[c]);
     PRINTF(order[0], "%s: the first to run, 1 for T and 2 for U", case_names[c]);
-    test_join_thread(t);
-    test_join_thread(u);
     if (c == THREAD_END)
         test_join_thread(ender);
     if (c == CALLBACK_NOTIFY)

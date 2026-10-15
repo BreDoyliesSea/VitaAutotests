@@ -1,0 +1,7 @@
+on core 0: U's status before the gate lifts: 0x00000004
+on core 0: T's status before the gate lifts: 0x00000002
+on core 0: the first to run, 1 for T and 2 for U: 0x00000001
+on core 1: U's status before the gate lifts: 0x00000004
+on core 1: T's status before the gate lifts: 0x00000002
+on core 1: the first to run, 1 for T and 2 for U: 0x00000001
+DONE

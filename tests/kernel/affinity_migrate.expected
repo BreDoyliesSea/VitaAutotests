@@ -1,0 +1,9 @@
+L at 0x70: its core before the change: 0x00000000
+L at 0x70: the change: 0x00000001
+L at 0x70: its core 20 ms after the change: 0x00000002
+L at 0x70: it still runs: 0x00000001
+L at 0xB0: its core before the change: 0x00000000
+L at 0xB0: the change: 0x00000001
+L at 0xB0: its core 20 ms after the change: 0x00000002
+L at 0xB0: it still runs: 0x00000001
+DONE

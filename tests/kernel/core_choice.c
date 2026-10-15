@@ -92,10 +92,11 @@ static void run_case(const struct Case *c, int priority) {
     spinner_start(1, c->priority_1);
     sceKernelSignalSema(sema, 1);
     TEST_WAIT_FOR(t_ran);
+    // Joined first, so every record the threads made is complete
+    test_join_thread(t);
     PRINTF(t_cpu, "%s, T at 0x%X: the core T ran on", c->name, priority);
     spinner_end(0);
     spinner_end(1);
-    test_join_thread(t);
     sceKernelDeleteSema(sema);
 }
 

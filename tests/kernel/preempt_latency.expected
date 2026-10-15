@@ -1,0 +1,4 @@
+a signal from core 1, T at 0x70: T ran within 1 ms: 0x00000001
+T's own timeout, T at 0x70: T ran within 1 ms: 0x00000001
+a signal from core 1, T at L's priority: T ran within 50 ms, while L spun: 0x00000000
+DONE
