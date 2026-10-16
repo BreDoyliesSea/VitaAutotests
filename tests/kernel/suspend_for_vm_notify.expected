@@ -1,0 +1,23 @@
+one notify: suspend it: 0x00000001
+one notify: the lowest notify count while suspended: 0x00000000
+one notify: its pc while suspended is the one from before the notify: 0x00000001
+one notify: the callback's calls while suspended: 0x00000000
+one notify: resume it: 0x00000000
+one notify: the callback's calls after the resume: 0x00000001
+one notify: the count the callback got: 0x00000001
+one notify: the notify count once it waits again: 0x00000000
+one notify: its wait's result: 0x00000000
+two notifies: suspend it: 0x00000001
+two notifies: the lowest notify count while suspended: 0x00000001
+two notifies: resume it: 0x00000000
+two notifies: the callback's calls after the resume: 0x00000002
+two notifies: the count the callback got last: 0x00000001
+two notifies: its wait's result: 0x00000000
+cancel while suspended: suspend it: 0x00000001
+cancel while suspended: cancel the callback: 0x00000000
+cancel while suspended: the notify count after the cancel: 0x00000000
+cancel while suspended: resume it: 0x00000000
+cancel while suspended: the callback's calls after the resume: 0x00000001
+cancel while suspended: its status after the resume: 0x00000008
+cancel while suspended: its wait's result: 0x00000000
+DONE
