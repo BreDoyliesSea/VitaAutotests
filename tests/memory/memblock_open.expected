@@ -1,0 +1,50 @@
+allocate an openable USER_RW block: 0x00000000
+flags 0x1: 0x80020005
+flags 0x2: 0x80020005
+flags 0x4: 0x80020005
+flags 0x8: 0x80020005
+flags 0x10: 0x00000000
+flags 0x10: its access: 0x00000004
+flags 0x10: its memory type: 0x000000D0
+flags 0x10: its type: 0x0C20D040
+flags 0x10: its mapped size is the original's: 0x00000001
+flags 0x10: close it: 0x00000000
+flags 0x20: 0x80020005
+flags 0x30: 0x00000000
+flags 0x30: its access: 0x00000006
+flags 0x30: its memory type: 0x000000D0
+flags 0x30: its type: 0x0C20D060
+flags 0x30: its mapped size is the original's: 0x00000001
+flags 0x30: close it: 0x00000000
+flags 0x40: 0x80020005
+flags 0x80: 0x80020005
+flags 0x100: 0x80020005
+flags 0x110: 0x80020005
+flags 0x1000: 0x80020005
+flags 0x10000: 0x80020005
+flags 0x80000000: 0x80020005
+open it with 0x30: 0x00000000
+the main memory opening it takes: 0x00000000
+its region: 0x00000008
+find the original's base: 0x00000001
+find the opened block's base: 0x00000001
+a write through it shows in the original: 0x00000001
+open it a second time: 0x00000000
+the second one gives another UID: 0x00000001
+the second one maps at another address: 0x00000001
+close the second one: 0x00000000
+close the second one again: 0x80024501
+free the opened block with the usual free: 0x00000000
+close the opened block after that: 0x80024501
+allocate an openable CDRAM block: 0x00000000
+open it with 0x30: 0x80024804
+allocate another openable block: 0x00000000
+close it: 0x00000000
+find it after the close: 0x00000000
+free it after the close: 0x80024501
+open the block once more: 0x00000000
+free the original while it's open: 0x00000000
+find the original's base after that: 0x00000000
+find the opened block's base after that: 0x00000000
+close the opened block after that: 0x00000000
+DONE

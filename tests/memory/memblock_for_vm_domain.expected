@@ -1,0 +1,21 @@
+allocate with a NULL name: 0x80020006
+allocate a block for code: 0x00000000
+open the domain: 0x00000000
+allocate another with the domain open: 0x00000000
+free the block with the domain open: 0x00000000
+close the domain: 0x00000000
+free the block with the domain closed: 0x80020005
+open the domain for the other threads: 0x00000000
+a thread started before the open: allocate a block for code: 0x00000000
+a thread started before the open: open the domain: 0x80010058
+a thread started after the open: allocate a block for code: 0x00000000
+a thread started after the open: open the domain: 0x80010058
+allocate with the domain open after them: 0x00000000
+close the domain after them: 0x00000000
+open the domain again: 0x00000000
+another thread: close the domain: 0x00000000
+allocate after another thread closed it: 0x00000000
+open the domain after that: 0x00000000
+close the domain after that: 0x00000000
+close it again: 0x80010058
+DONE
