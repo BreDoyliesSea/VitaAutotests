@@ -1,0 +1,48 @@
+allocate 0x0 bytes: 0x80020005
+allocate 0x1000 bytes: 0x80024B05
+allocate 0x10000 bytes: 0x80024B05
+allocate 0x80000 bytes: 0x80024B05
+allocate 0xFF000 bytes: 0x80024B05
+allocate 0x100000 bytes: 0x00000000
+allocate 0x101000 bytes: 0x80024B05
+allocate 0x100001 bytes: 0x80024B05
+allocate 0x200000 bytes: 0x00000000
+allocate 0x1100000 bytes: 0x80024B0B
+allocate 0x2000000 bytes: 0x80024B0B
+allocate 1 MiB: 0x00000000
+main memory it takes: 0x00100000
+CDRAM it takes: 0x00000000
+physically contiguous memory it takes: 0x00000000
+get the base: 0x00000000
+its region: 0x00000008
+the base is aligned to 4 KiB: 0x00000001
+find it by its base: 0x00000001
+its mapped base is the base: 0x00000001
+its mapped size: 0x00100000
+its memory type: 0x000000D0
+its access: 0x00000004
+its type: 0x0C20D050
+allocate a second one while it lives: 0x00000000
+sync it with the domain closed: 0x00000000
+sync a range past its end: 0x80024B09
+sync a data block: 0x00000000
+close the domain before opening it: 0x80010058
+open the domain: 0x00000000
+its access with the domain open: 0x00000004
+open the domain again: 0x80010058
+close the domain: 0x00000000
+its access with the domain closed: 0x00000004
+close the domain again: 0x80010058
+open the domain to write code: 0x00000000
+the code reads back: 0x00000001
+close the domain to run it: 0x00000000
+sync the code: 0x00000000
+run the code: 0x0000002A
+free it with the call for code: 0x00000000
+find it after the free: 0x00000000
+the free gives it all back: 0x00000001
+free it again: 0x80024501
+free it again with the call for code: 0x80020005
+free a data block with the call for code: 0x80020005
+free the data block with the usual call afterwards: 0x00000000
+DONE
