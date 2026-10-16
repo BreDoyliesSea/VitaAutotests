@@ -9,10 +9,14 @@ suspended twice: it makes progress after both: 0x00000001
 suspended twice: a third resume: 0x80028033
 dormant: suspend it: 0x80028027
 dormant: its status after: 0x00000010
+dormant: resume it before the start: 0x80028027
 dormant: start it: 0x00000000
 dormant: it ran within 50 ms of the start: 0x00000001
 dormant: resume it: 0x80028033
 dormant: it ran after the resume: 0x00000001
+ended: its status: 0x00000010
+ended: suspend it: 0x80028027
+ended: resume it: 0x80028027
 suspends itself: the call returned before a resume: 0x00000001
 suspends itself: its result: 0x80028022
 suspends itself: its status then: 0x00000001

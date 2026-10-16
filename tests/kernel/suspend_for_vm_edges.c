@@ -4,30 +4,31 @@
 // checks progress over 50 ms:
 // - T spinning, suspended twice, then resumed three times: each call's result, whether T makes
 //   progress after each, and its status while one suspend is left
-// - T dormant: the suspend's result and T's status, then whether T runs once started, and after
-//   a resume
+// - T dormant: the suspend's result and T's status, a resume's result, then whether T runs once
+//   started, and after a resume
+// - T dormant again after it ended: its status, and a suspend's and a resume's result
 // - T suspending itself: whether the call returns before a resume, its result, and T's status
-// - T running a callback that spins in a wait with callbacks: the suspend stops the callback,
-//   with T's status and wait type while it holds, the callback goes on after the resume, and T's
-//   wait ends normally after the callback returns
+// - T running a callback that spins in a wait with callbacks: the suspend stops the callback, with
+//   T's status and wait type while it holds, the callback goes on after the resume, and T's wait
+//   ends normally after the callback returns
 // - T waiting with callbacks, suspended, then its callback notified: whether the callback runs
 //   while T is suspended, T's status and wait type, and whether it runs after the resume
-// - T waiting on a semaphore that's deleted, or whose waiters are cancelled, while T is
-//   suspended: T's status and wait type, whether it woke, and its wait's result after the resume
-// - T delaying 100 ms, suspended for 500 ms: T's status after the delay passed, and whether it
-//   goes on only after the resume
+// - T waiting on a semaphore that's deleted, or whose waiters are cancelled, while T is suspended:
+//   T's status and wait type, whether it woke, and its wait's result after the resume
+// - T delaying 100 ms, suspended for 500 ms: T's status after the delay passed, and whether it goes
+//   on only after the resume
 // - a delete of T while it's suspended
 // - T waiting, suspended twice, then signaled: T's status, whether one resume wakes it, and its
 //   wait's result after the second
 //
 // On a PS Vita TV on firmware 3.65 each suspend returns the count of suspends so far and each
 // resume the count left, and a resume of a thread that isn't suspended fails with 0x80028033. A
-// dormant thread can't be suspended (0x80028027), nor can a thread suspend itself (0x80028022),
-// nor be deleted while suspended (0x80028028). A suspend stops a running callback, and a thread
-// whose wait ends while suspended, by a signal, a delete (0x80028006), a cancel (0x80028007),
-// the end of a delay or a callback notify, shows as SUSPENDED with no wait type, and goes on
-// only after the last resume. The notified callback runs only then, and its thread goes back to
-// WAITING after it.
+// dormant thread, never started or ended, can't be suspended or resumed (0x80028027, which a resume
+// checks before the count), nor can a thread suspend itself (0x80028022), nor be deleted while
+// suspended (0x80028028). A suspend stops a running callback, and a thread whose wait ends while
+// suspended, by a signal, a delete (0x80028006), a cancel (0x80028007), the end of a delay or a
+// callback notify, shows as SUSPENDED with no wait type, and goes on only after the last resume.
+// The notified callback runs only then, and its thread goes back to WAITING after it.
 #include <psp2/kernel/threadmgr.h>
 
 #include "test.h"
@@ -149,6 +150,7 @@ static void dormant(void) {
     const SceUID t = sceKernelCreateThread("t", t_entry, T_PRIORITY, 0x4000, THREAD_ATTR_VM, SCE_KERNEL_CPU_MASK_USER_0, NULL);
     const int suspended = sceKernelSuspendThreadForVM(t);
     const SceUInt32 status = status_of(t);
+    const int resumed_dormant = sceKernelResumeThreadForVM(t);
     const int started = sceKernelStartThread(t, 0, NULL);
     sceKernelDelayThread(50000);
     const int ran_started = ran;
@@ -158,10 +160,26 @@ static void dormant(void) {
     end_t(t);
     PRINT("dormant: suspend it", suspended);
     PRINT("dormant: its status after", status);
+    PRINT("dormant: resume it before the start", resumed_dormant);
     PRINT("dormant: start it", started);
     PRINT("dormant: it ran within 50 ms of the start", ran_started);
     PRINT("dormant: resume it", resumed);
     PRINT("dormant: it ran after the resume", ran_resumed);
+}
+
+static void ended(void) {
+    const SceUID t = start_t(SPIN);
+    TEST_WAIT_FOR(ran);
+    stop = 1;
+    sceKernelWaitThreadEnd(t, NULL, NULL);
+    const SceUInt32 status = status_of(t);
+    const int suspended = sceKernelSuspendThreadForVM(t);
+    const int resumed = sceKernelResumeThreadForVM(t);
+    sceKernelDeleteThread(t);
+    sceKernelDeleteSema(sema);
+    PRINT("ended: its status", status);
+    PRINT("ended: suspend it", suspended);
+    PRINT("ended: resume it", resumed);
 }
 
 static void self_suspend(void) {
@@ -319,6 +337,7 @@ int main(void) {
     sceKernelDelayThread(1000);
     counts();
     dormant();
+    ended();
     self_suspend();
     in_callback();
     notified_while_suspended();
