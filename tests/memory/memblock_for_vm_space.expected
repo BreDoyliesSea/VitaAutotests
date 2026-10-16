@@ -1,0 +1,11 @@
+allocate 16 MiB: 0x00000000
+free it with the call for code: 0x00000000
+allocate 16 MiB again: 0x00000000
+free it with the call for code: 0x00000000
+1 MiB blocks that fit at once: 0x00000010
+the error for the next one: 0x80024B0B
+allocate 16 MiB after freeing them: 0x00000000
+free it with the usual call: 0x00000000
+the usual free gives back its main memory: 0x00000001
+allocate 1 MiB after that: 0x80024B0B
+DONE

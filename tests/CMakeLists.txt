@@ -233,6 +233,8 @@ vita_test(memblock_neighbors memory/memblock_neighbors.c)
 vita_test(memblock_alignment memory/memblock_alignment.c)
 vita_test(memblock_types_all memory/memblock_types_all.c)
 vita_test(memblock_free_sizes memory/memblock_free_sizes.c)
+vita_test(memblock_for_vm memory/memblock_for_vm.c)
+vita_test(memblock_for_vm_space memory/memblock_for_vm_space.c)
 vita_test(address_ranges memory/address_ranges.c)
 vita_test(system_font_blocks memory/system_font_blocks.c)
 
