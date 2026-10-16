@@ -1,0 +1,81 @@
+type 0x09404060: allocate 1 MiB: 0x00000000
+type 0x09404060: main memory it takes: 0x00000000
+type 0x09404060: CDRAM it takes: 0x00100000
+type 0x09404060: physically contiguous memory it takes: 0x00000000
+type 0x09404060: freeing it gives it all back: 0x00000001
+type 0x09408040: allocate 1 MiB: 0x00000000
+type 0x09408040: main memory it takes: 0x00000000
+type 0x09408040: CDRAM it takes: 0x00100000
+type 0x09408040: physically contiguous memory it takes: 0x00000000
+type 0x09408040: freeing it gives it all back: 0x00000001
+type 0x09408060: allocate 1 MiB: 0x00000000
+type 0x09408060: main memory it takes: 0x00000000
+type 0x09408060: CDRAM it takes: 0x00100000
+type 0x09408060: physically contiguous memory it takes: 0x00000000
+type 0x09408060: freeing it gives it all back: 0x00000001
+type 0x0C200860: allocate 1 MiB: 0x00000000
+type 0x0C200860: main memory it takes: 0x00100000
+type 0x0C200860: CDRAM it takes: 0x00000000
+type 0x0C200860: physically contiguous memory it takes: 0x00000000
+type 0x0C200860: freeing it gives it all back: 0x00000001
+type 0x0C20D040: allocate 1 MiB: 0x00000000
+type 0x0C20D040: main memory it takes: 0x00100000
+type 0x0C20D040: CDRAM it takes: 0x00000000
+type 0x0C20D040: physically contiguous memory it takes: 0x00000000
+type 0x0C20D040: freeing it gives it all back: 0x00000001
+type 0x0C20D060: allocate 1 MiB: 0x00000000
+type 0x0C20D060: main memory it takes: 0x00100000
+type 0x0C20D060: CDRAM it takes: 0x00000000
+type 0x0C20D060: physically contiguous memory it takes: 0x00000000
+type 0x0C20D060: freeing it gives it all back: 0x00000001
+type 0x0C208060: allocate 1 MiB: 0x00000000
+type 0x0C208060: main memory it takes: 0x00100000
+type 0x0C208060: CDRAM it takes: 0x00000000
+type 0x0C208060: physically contiguous memory it takes: 0x00000000
+type 0x0C208060: freeing it gives it all back: 0x00000001
+type 0x0C50D060: allocate 1 MiB: 0x00000000
+type 0x0C50D060: main memory it takes: 0x00100000
+type 0x0C50D060: CDRAM it takes: 0x00000000
+type 0x0C50D060: physically contiguous memory it takes: 0x00000000
+type 0x0C50D060: freeing it gives it all back: 0x00000001
+type 0x0C80D060: allocate 1 MiB: 0x00000000
+type 0x0C80D060: main memory it takes: 0x00000000
+type 0x0C80D060: CDRAM it takes: 0x00000000
+type 0x0C80D060: physically contiguous memory it takes: 0x00100000
+type 0x0C80D060: freeing it gives it all back: 0x00000001
+type 0x0D808060: allocate 1 MiB: 0x00000000
+type 0x0D808060: main memory it takes: 0x00000000
+type 0x0D808060: CDRAM it takes: 0x00000000
+type 0x0D808060: physically contiguous memory it takes: 0x00100000
+type 0x0D808060: freeing it gives it all back: 0x00000001
+type 0x0CA0D060: allocate 1 MiB: 0x00000000
+type 0x0CA0D060: main memory it takes: 0x00000000
+type 0x0CA0D060: CDRAM it takes: 0x00000000
+type 0x0CA0D060: physically contiguous memory it takes: 0x00000000
+type 0x0CA0D060: freeing it gives it all back: 0x00000001
+type 0x0CA08060: allocate 1 MiB: 0x00000000
+type 0x0CA08060: main memory it takes: 0x00000000
+type 0x0CA08060: CDRAM it takes: 0x00000000
+type 0x0CA08060: physically contiguous memory it takes: 0x00000000
+type 0x0CA08060: freeing it gives it all back: 0x00000001
+type 0x0E20D040: allocate 1 MiB: 0x00000000
+type 0x0E20D040: main memory it takes: 0x00000000
+type 0x0E20D040: CDRAM it takes: 0x00000000
+type 0x0E20D040: physically contiguous memory it takes: 0x00000000
+type 0x0E20D040: freeing it gives it all back: 0x00000001
+type 0x0E20D060: allocate 1 MiB: 0x00000000
+type 0x0E20D060: main memory it takes: 0x00000000
+type 0x0E20D060: CDRAM it takes: 0x00000000
+type 0x0E20D060: physically contiguous memory it takes: 0x00000000
+type 0x0E20D060: freeing it gives it all back: 0x00000001
+type 0x0E208040: allocate 1 MiB: 0x00000000
+type 0x0E208040: main memory it takes: 0x00000000
+type 0x0E208040: CDRAM it takes: 0x00000000
+type 0x0E208040: physically contiguous memory it takes: 0x00000000
+type 0x0E208040: freeing it gives it all back: 0x00000001
+type 0x0E208060: allocate 1 MiB: 0x00000000
+type 0x0E208060: main memory it takes: 0x00000000
+type 0x0E208060: CDRAM it takes: 0x00000000
+type 0x0E208060: physically contiguous memory it takes: 0x00000000
+type 0x0E208060: freeing it gives it all back: 0x00000001
+DONE
