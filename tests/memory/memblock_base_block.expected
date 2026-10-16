@@ -1,0 +1,21 @@
+allocate the base block: 0x00000000
+by UID: 0x80020005
+by name: 0x80020005
+by UID, sharing the address: 0x80020005
+by name, sharing the address: 0x80020005
+by UID, sharing the pages: 0x80020005
+by name, sharing the pages: 0x80020005
+by UID, sharing both: 0x80020005
+by name, sharing both: 0x80020005
+uncached by UID, sharing the pages: 0x80020005
+twice the size by UID, sharing the pages: 0x80020005
+half the size by UID, sharing the pages: 0x80020005
+an unknown UID: 0x80020005
+an unknown name: 0x80020005
+sharing the pages with no base: 0x80020005
+sharing the address with no base: 0x80020005
+CDRAM by UID, sharing the pages: 0x80020005
+a block from the base exists to free the base under: 0x00000000
+free the base block: 0x00000000
+a NULL name: 0x80020005
+DONE

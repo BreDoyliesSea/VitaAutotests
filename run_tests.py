@@ -300,6 +300,7 @@ def main():
         sys.exit(f"can't reach {where}\n{error}")
 
     failed = []
+    skipped = []
     for name in names:
         expected_path = tests[name]
         try:
@@ -307,6 +308,13 @@ def main():
         except OSError as error:
             sys.exit(f"{name}: lost the Vita: {error}")
         relative = expected_path.relative_to(ROOT).with_suffix("").as_posix()
+
+        # A test whose precondition didn't hold ends with test_skip(), which prints its reason and DONE
+        lines = normalize(output).splitlines()
+        if status == "exited" and len(lines) == 2 and lines[0].startswith("SKIP: ") and lines[1] == "DONE":
+            skipped.append(name)
+            print(f"SKIP  {relative} ({lines[0][len('SKIP: '):]})")
+            continue
 
         if args.generate:
             if status == "exited" and output:
@@ -330,7 +338,7 @@ def main():
             for line in diff:
                 print("      " + line)
 
-    print(f"{len(names) - len(failed)}/{len(names)} passed")
+    print(f"{len(names) - len(failed) - len(skipped)}/{len(names)} passed, {len(skipped)} skipped")
     return 1 if failed else 0
 
 

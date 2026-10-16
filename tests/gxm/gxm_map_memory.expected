@@ -1,0 +1,72 @@
+map before initializing: 0x805B0000
+initialize libgxm: 0x00000000
+a whole uncached block, attributes 0x0: 0x805B0017
+a whole uncached block, attributes 0x1: 0x00000000
+a whole uncached block, attributes 0x1: unmap it: 0x00000000
+a whole uncached block, attributes 0x2: 0x00000000
+a whole uncached block, attributes 0x2: unmap it: 0x00000000
+a whole uncached block, attributes 0x3: 0x00000000
+a whole uncached block, attributes 0x3: unmap it: 0x00000000
+a whole uncached block, attributes 0x4: 0x805B0017
+a whole uncached block, attributes 0xFFFFFFFF: 0x805B0017
+a base 2 KiB into the block: 0x805B0017
+a size of 6 KiB: 0x805B0017
+a size of 0: 0x00000000
+a size of 0: unmap it: 0x00000000
+64 KiB that ends 32 KiB past the block: 0x805B0017
+a whole CDRAM block: 0x00000000
+a whole CDRAM block: unmap it: 0x00000000
+a whole cached block: 0x00000000
+a whole cached block: unmap it: 0x00000000
+a read only block with READ: 0x00000000
+a read only block with READ: unmap it: 0x00000000
+a read only block with WRITE: 0x805B0017
+a read only block with READ and WRITE: 0x805B0017
+the main thread's stack page: 0x00000000
+the main thread's stack page: unmap it: 0x00000000
+map the first half of the block: 0x00000000
+map it again: 0x805B0017
+map 64 KiB inside it: 0x805B0017
+map 64 KiB over its end: 0x805B0017
+unmap the middle of it: 0x805B0017
+unmap it: 0x00000000
+unmap it again: 0x805B0017
+unmap an address that isn't mapped: 0x805B0017
+map the first half: 0x00000000
+map the second half: 0x00000000
+unmap the second half: 0x00000000
+unmap the first half: 0x00000000
+map it before freeing it: 0x00000000
+free the mapped block: 0x80024703
+after the free: the base by its UID: 0x80024501
+after the free: find by its address: 0x80024501
+unmap it after the free: 0x00000000
+after the unmap: the base by its UID: 0x80024501
+after the unmap: find by its address: 0x80024501
+free it after the unmap: 0x80024501
+vertex USSE: 4 KiB: 0x00000000
+vertex USSE: another 4 KiB: 0x00000000
+vertex USSE: the offsets differ: 0x00000001
+vertex USSE: unmap the first: 0x00000000
+vertex USSE: unmap the second: 0x00000000
+vertex USSE: unmap again: 0x805B0017
+vertex USSE: 8 MiB and 4 KiB: 0x805B0003
+vertex USSE: 8 MiB: 0x00000000
+vertex USSE: an unaligned base: 0x805B0017
+fragment USSE: 4 KiB: 0x00000000
+fragment USSE: another 4 KiB: 0x00000000
+fragment USSE: the offsets differ: 0x00000001
+fragment USSE: unmap the first: 0x00000000
+fragment USSE: unmap the second: 0x00000000
+fragment USSE: 8 MiB and 4 KiB: 0x805B0003
+map memory then vertex USSE over it: 0x00000000
+map memory then vertex USSE over it: the USSE map: 0x00000000
+map a block to leave mapped: 0x00000000
+terminate libgxm with it mapped: 0x00000000
+map after terminating: 0x805B0000
+initialize libgxm again: 0x00000000
+a NULL base: 0x805B0004
+vertex USSE: a NULL offset: 0x805B0004
+fragment USSE: a NULL offset: 0x805B0004
+terminate libgxm again: 0x00000000
+DONE

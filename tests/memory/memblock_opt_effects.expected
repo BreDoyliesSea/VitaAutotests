@@ -1,0 +1,148 @@
+option size 0x38, the marker in words 5 to 13: 0x00000000
+option size 0x38, the marker in words 5 to 13: the first five words are unchanged: 0x00000001
+option size 0x38, the marker in words 5 to 13: word 5: 0x00000000
+option size 0x38, the marker in words 5 to 13: word 6: 0x00000000
+option size 0x38, the marker in words 5 to 13: word 7: 0x00000000
+option size 0x38, the marker in words 5 to 13: word 8: 0x00000000
+option size 0x38, the marker in words 5 to 13: word 9: 0x00000000
+option size 0x38, the marker in words 5 to 13: word 10: 0x00000000
+option size 0x38, the marker in words 5 to 13: word 11: 0x00000000
+option size 0x38, the marker in words 5 to 13: word 12: 0x00000000
+option size 0x38, the marker in words 5 to 13: word 13: 0x00000000
+option size 0x3C, the marker in words 5 to 14: 0x00000000
+option size 0x3C, the marker in words 5 to 14: the first five words are unchanged: 0x00000001
+option size 0x3C, the marker in words 5 to 14: word 5: 0x00000000
+option size 0x3C, the marker in words 5 to 14: word 6: 0x00000000
+option size 0x3C, the marker in words 5 to 14: word 7: 0x00000000
+option size 0x3C, the marker in words 5 to 14: word 8: 0x00000000
+option size 0x3C, the marker in words 5 to 14: word 9: 0x00000000
+option size 0x3C, the marker in words 5 to 14: word 10: 0x00000000
+option size 0x3C, the marker in words 5 to 14: word 11: 0x00000000
+option size 0x3C, the marker in words 5 to 14: word 12: 0x00000000
+option size 0x3C, the marker in words 5 to 14: word 13: 0x00000000
+option size 0x3C, the marker in words 5 to 14: word 14: 0x00000000
+option size 0x40, the marker in words 5 to 15: 0x80020005
+option size 0x40, the marker in words 5 to 14: 0x00000000
+option size 0x40, the marker in words 5 to 14: the first five words are unchanged: 0x00000001
+option size 0x40, the marker in words 5 to 14: word 5: 0x00000000
+option size 0x40, the marker in words 5 to 14: word 6: 0x00000000
+option size 0x40, the marker in words 5 to 14: word 7: 0x00000000
+option size 0x40, the marker in words 5 to 14: word 8: 0x00000000
+option size 0x40, the marker in words 5 to 14: word 9: 0x00000000
+option size 0x40, the marker in words 5 to 14: word 10: 0x00000000
+option size 0x40, the marker in words 5 to 14: word 11: 0x00000000
+option size 0x40, the marker in words 5 to 14: word 12: 0x00000000
+option size 0x40, the marker in words 5 to 14: word 13: 0x00000000
+option size 0x40, the marker in words 5 to 14: word 14: 0x00000000
+option size 0x40, the marker in words 15 to 15: 0x80020005
+a plain block's UID has bit 30 set: 0x00000001
+ENABLE_OPEN: 0x00000000
+ENABLE_OPEN: its UID has bit 30 set: 0x00000001
+ENABLE_OPEN: get the base: 0x00000000
+ENABLE_OPEN: info by address: 0x00000000
+ENABLE_OPEN: find gives its UID: 0x00000001
+ENABLE_OPEN: free: 0x00000000
+allocate an ENABLE_OPEN block: 0x00000000
+open the ENABLE_OPEN block, flags 0x0: 0x80020005
+open a block without it, flags 0x0: 0x80020005
+open the ENABLE_OPEN block, flags 0x10: 0x00000000
+open the ENABLE_OPEN block, flags 0x10: it gives the same UID: 0x00000000
+open the ENABLE_OPEN block, flags 0x10: it maps at the same address: 0x00000000
+open the ENABLE_OPEN block, flags 0x10: it sees a write through the block: 0x00000001
+open the ENABLE_OPEN block, flags 0x10: close it: 0x00000000
+open a block without it, flags 0x10: 0x8002450A
+open the ENABLE_OPEN block, flags 0x30: 0x00000000
+open the ENABLE_OPEN block, flags 0x30: it gives the same UID: 0x00000000
+open the ENABLE_OPEN block, flags 0x30: it maps at the same address: 0x00000000
+open the ENABLE_OPEN block, flags 0x30: it sees a write through the block: 0x00000001
+open the ENABLE_OPEN block, flags 0x30: close it: 0x00000000
+open a block without it, flags 0x30: 0x8002450A
+open a name no block has, flags 0x10: 0x8002450A
+ENABLE_OPEN and HAS_OPEN_RESTRICTIONS, word 5 0x0: 0x00000000
+ENABLE_OPEN and HAS_OPEN_RESTRICTIONS, word 5 0x10: 0x00000000
+ENABLE_OPEN and HAS_OPEN_RESTRICTIONS, word 5 0x30: 0x00000000
+no attr, USER_RW, 4 KiB: 0x00000000
+no attr, USER_RW, 4 KiB: KiB taken from main: 0x00000000
+no attr, USER_RW, 4 KiB: KiB taken from CDRAM: 0x00000000
+no attr, USER_RW, 4 KiB: KiB taken from phycont: 0x00000000
+no attr, USER_RW, 4 KiB: its type: 0x0C20D060
+no attr, USER_RW, 4 KiB: its memory type: 0x000000D0
+no attr, USER_RW, 64 KiB: 0x00000000
+no attr, USER_RW, 64 KiB: KiB taken from main: 0x00000000
+no attr, USER_RW, 64 KiB: KiB taken from CDRAM: 0x00000000
+no attr, USER_RW, 64 KiB: KiB taken from phycont: 0x00000000
+no attr, USER_RW, 64 KiB: its type: 0x0C20D060
+no attr, USER_RW, 64 KiB: its memory type: 0x000000D0
+no attr, USER_RW, 1 MiB: 0x00000000
+no attr, USER_RW, 1 MiB: KiB taken from main: 0x00000400
+no attr, USER_RW, 1 MiB: KiB taken from CDRAM: 0x00000000
+no attr, USER_RW, 1 MiB: KiB taken from phycont: 0x00000000
+no attr, USER_RW, 1 MiB: its type: 0x0C20D060
+no attr, USER_RW, 1 MiB: its memory type: 0x000000D0
+no attr, USER_RW, 1 MiB and 4 KiB: 0x00000000
+no attr, USER_RW, 1 MiB and 4 KiB: KiB taken from main: 0x00000400
+no attr, USER_RW, 1 MiB and 4 KiB: KiB taken from CDRAM: 0x00000000
+no attr, USER_RW, 1 MiB and 4 KiB: KiB taken from phycont: 0x00000000
+no attr, USER_RW, 1 MiB and 4 KiB: its type: 0x0C20D060
+no attr, USER_RW, 1 MiB and 4 KiB: its memory type: 0x000000D0
+no attr, USER_CDRAM_RW, 256 KiB: 0x00000000
+no attr, USER_CDRAM_RW, 256 KiB: KiB taken from main: 0x00000000
+no attr, USER_CDRAM_RW, 256 KiB: KiB taken from CDRAM: 0x00000400
+no attr, USER_CDRAM_RW, 256 KiB: KiB taken from phycont: 0x00000000
+no attr, USER_CDRAM_RW, 256 KiB: its type: 0x09408060
+no attr, USER_CDRAM_RW, 256 KiB: its memory type: 0x00000080
+PHYCONT, USER_RW, 4 KiB: 0x00000000
+PHYCONT, USER_RW, 4 KiB: KiB taken from main: 0x00000000
+PHYCONT, USER_RW, 4 KiB: KiB taken from CDRAM: 0x00000000
+PHYCONT, USER_RW, 4 KiB: KiB taken from phycont: 0x00000000
+PHYCONT, USER_RW, 4 KiB: its type: 0x0C20D060
+PHYCONT, USER_RW, 4 KiB: its memory type: 0x000000D0
+PHYCONT, USER_RW, 64 KiB: 0x00000000
+PHYCONT, USER_RW, 64 KiB: KiB taken from main: 0x00000000
+PHYCONT, USER_RW, 64 KiB: KiB taken from CDRAM: 0x00000000
+PHYCONT, USER_RW, 64 KiB: KiB taken from phycont: 0x00000000
+PHYCONT, USER_RW, 64 KiB: its type: 0x0C20D060
+PHYCONT, USER_RW, 64 KiB: its memory type: 0x000000D0
+PHYCONT, USER_RW, 1 MiB: 0x00000000
+PHYCONT, USER_RW, 1 MiB: KiB taken from main: 0x00000400
+PHYCONT, USER_RW, 1 MiB: KiB taken from CDRAM: 0x00000000
+PHYCONT, USER_RW, 1 MiB: KiB taken from phycont: 0x00000000
+PHYCONT, USER_RW, 1 MiB: its type: 0x0C20D060
+PHYCONT, USER_RW, 1 MiB: its memory type: 0x000000D0
+PHYCONT, USER_RW, 1 MiB and 4 KiB: 0x00000000
+PHYCONT, USER_RW, 1 MiB and 4 KiB: KiB taken from main: 0x00000800
+PHYCONT, USER_RW, 1 MiB and 4 KiB: KiB taken from CDRAM: 0x00000000
+PHYCONT, USER_RW, 1 MiB and 4 KiB: KiB taken from phycont: 0x00000000
+PHYCONT, USER_RW, 1 MiB and 4 KiB: its type: 0x0C20D060
+PHYCONT, USER_RW, 1 MiB and 4 KiB: its memory type: 0x000000D0
+PHYCONT, USER_RW_UNCACHE, 64 KiB: 0x00000000
+PHYCONT, USER_RW_UNCACHE, 64 KiB: KiB taken from main: 0x00000000
+PHYCONT, USER_RW_UNCACHE, 64 KiB: KiB taken from CDRAM: 0x00000000
+PHYCONT, USER_RW_UNCACHE, 64 KiB: KiB taken from phycont: 0x00000000
+PHYCONT, USER_RW_UNCACHE, 64 KiB: its type: 0x0C208060
+PHYCONT, USER_RW_UNCACHE, 64 KiB: its memory type: 0x00000080
+PHYCONT, USER_CDRAM_RW, 256 KiB: 0x00000000
+PHYCONT, USER_CDRAM_RW, 256 KiB: KiB taken from main: 0x00000000
+PHYCONT, USER_CDRAM_RW, 256 KiB: KiB taken from CDRAM: 0x00000400
+PHYCONT, USER_CDRAM_RW, 256 KiB: KiB taken from phycont: 0x00000000
+PHYCONT, USER_CDRAM_RW, 256 KiB: its type: 0x09408060
+PHYCONT, USER_CDRAM_RW, 256 KiB: its memory type: 0x00000080
+PHYCONT, USER_MAIN_PHYCONT_RW, 1 MiB: 0x00000000
+PHYCONT, USER_MAIN_PHYCONT_RW, 1 MiB: KiB taken from main: 0x00000000
+PHYCONT, USER_MAIN_PHYCONT_RW, 1 MiB: KiB taken from CDRAM: 0x00000000
+PHYCONT, USER_MAIN_PHYCONT_RW, 1 MiB: KiB taken from phycont: 0x00000400
+PHYCONT, USER_MAIN_PHYCONT_RW, 1 MiB: its type: 0x0C80D060
+PHYCONT, USER_MAIN_PHYCONT_RW, 1 MiB: its memory type: 0x000000D0
+PHYCONT and HAS_ALIGNMENT 64 KiB, USER_RW, 64 KiB: 0x00000000
+PHYCONT and HAS_ALIGNMENT 64 KiB, USER_RW, 64 KiB: KiB taken from main: 0x00000000
+PHYCONT and HAS_ALIGNMENT 64 KiB, USER_RW, 64 KiB: KiB taken from CDRAM: 0x00000000
+PHYCONT and HAS_ALIGNMENT 64 KiB, USER_RW, 64 KiB: KiB taken from phycont: 0x00000000
+PHYCONT and HAS_ALIGNMENT 64 KiB, USER_RW, 64 KiB: its type: 0x0C20D060
+PHYCONT and HAS_ALIGNMENT 64 KiB, USER_RW, 64 KiB: its memory type: 0x000000D0
+all three bits, USER_RW, 64 KiB: 0x00000000
+all three bits, USER_RW, 64 KiB: KiB taken from main: 0x00000000
+all three bits, USER_RW, 64 KiB: KiB taken from CDRAM: 0x00000000
+all three bits, USER_RW, 64 KiB: KiB taken from phycont: 0x00000000
+all three bits, USER_RW, 64 KiB: its type: 0x0C20D060
+all three bits, USER_RW, 64 KiB: its memory type: 0x000000D0
+DONE

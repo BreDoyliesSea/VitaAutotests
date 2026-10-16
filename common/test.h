@@ -108,3 +108,13 @@ static inline void test_exit(void) {
     test_output("DONE\n", 5);
     sceKernelExitProcess(0);
 }
+
+// Ends a test whose precondition, one a Vita doesn't promise, doesn't hold. The runner reports it as
+// skipped instead of comparing its output.
+static inline void test_skip(const char *reason) {
+    char line[160];
+    // The reason is cut short so the line keeps its newline, and DONE stays on a line of its own
+    const int len = sceClibSnprintf(line, sizeof(line), "SKIP: %.140s\n", reason);
+    test_output(line, len);
+    test_exit();
+}
