@@ -224,6 +224,14 @@ probe_module_self()
 vita_test_file(${CMAKE_CURRENT_BINARY_DIR}/probe_module.suprx probe_module.suprx)
 
 vita_test(memblock memory/memblock.c)
+vita_test(memblock_opt_attrs memory/memblock_opt_attrs.c)
+vita_test(memblock_opt_effects memory/memblock_opt_effects.c)
+vita_test(memblock_base_block memory/memblock_base_block.c)
+vita_test(memblock_vaddr_paddr memory/memblock_vaddr_paddr.c)
+vita_test(memblock_placement memory/memblock_placement.c)
+vita_test(memblock_neighbors memory/memblock_neighbors.c)
+vita_test(memblock_alignment memory/memblock_alignment.c)
+vita_test(memblock_types_all memory/memblock_types_all.c)
 vita_test(address_ranges memory/address_ranges.c)
 vita_test(system_font_blocks memory/system_font_blocks.c)
 
@@ -236,6 +244,8 @@ vita_test(fiber_entry_returns fiber/fiber_entry_returns.c)
 vita_test(fiber_vfp fiber/fiber_vfp.c)
 
 vita_test(shader_patcher_callback gxm/shader_patcher_callback.c)
+vita_test(gxm_map_memory gxm/gxm_map_memory.c)
+vita_test(gxm_map_no_block gxm/gxm_map_no_block.c)
 
 vita_test(rtc rtc/rtc.c)
 

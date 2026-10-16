@@ -1,0 +1,36 @@
+ten blocks of every type are made: 0x00000001
+two of them share an address: 0x00000000
+find a range that ends past a block: it fails: 0x00000001
+info for a range that ends past a block: it fails: 0x00000001
+find an address in no block: 0x80022007
+info for an address in no block: 0x80022007
+USER_RW, 1 MiB: KiB taken from main: 0x00000400
+USER_RW, 1 MiB: KiB taken from CDRAM: 0x00000000
+USER_RW, 1 MiB: KiB taken from phycont: 0x00000000
+USER_RW, 1 MiB: freeing it gives it all back: 0x00000001
+USER_RW_UNCACHE, 1 MiB: KiB taken from main: 0x00000400
+USER_RW_UNCACHE, 1 MiB: KiB taken from CDRAM: 0x00000000
+USER_RW_UNCACHE, 1 MiB: KiB taken from phycont: 0x00000000
+USER_RW_UNCACHE, 1 MiB: freeing it gives it all back: 0x00000001
+USER_CDRAM_RW, 1 MiB: KiB taken from main: 0x00000000
+USER_CDRAM_RW, 1 MiB: KiB taken from CDRAM: 0x00000400
+USER_CDRAM_RW, 1 MiB: KiB taken from phycont: 0x00000000
+USER_CDRAM_RW, 1 MiB: freeing it gives it all back: 0x00000001
+USER_MAIN_PHYCONT_RW, 1 MiB: KiB taken from main: 0x00000000
+USER_MAIN_PHYCONT_RW, 1 MiB: KiB taken from CDRAM: 0x00000000
+USER_MAIN_PHYCONT_RW, 1 MiB: KiB taken from phycont: 0x00000400
+USER_MAIN_PHYCONT_RW, 1 MiB: freeing it gives it all back: 0x00000001
+USER_MAIN_PHYCONT_NC_RW, 1 MiB: KiB taken from main: 0x00000000
+USER_MAIN_PHYCONT_NC_RW, 1 MiB: KiB taken from CDRAM: 0x00000000
+USER_MAIN_PHYCONT_NC_RW, 1 MiB: KiB taken from phycont: 0x00000400
+USER_MAIN_PHYCONT_NC_RW, 1 MiB: freeing it gives it all back: 0x00000001
+16 MiB of USER_RW: the error when it's full: 0x80024302
+16 MiB of USER_RW: at least 4 fit: 0x00000001
+16 MiB of USER_RW: one fits again after freeing them: 0x00000000
+16 MiB of CDRAM: the error when it's full: 0x80024309
+16 MiB of CDRAM: at least 2 fit: 0x00000001
+16 MiB of CDRAM: one fits again after freeing them: 0x00000000
+1 MiB of physically contiguous memory: the error when it's full: 0x80024302
+1 MiB of physically contiguous memory: at least 4 fit: 0x00000001
+1 MiB of physically contiguous memory: one fits again after freeing them: 0x00000000
+DONE

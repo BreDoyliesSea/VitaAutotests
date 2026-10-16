@@ -1,0 +1,10 @@
+two blocks are next to each other: 0x00000001
+find the range over both: 0x80020001
+find the range over both: the first: 0x00000000
+find the range over both: the second: 0x00000000
+find 8 KiB over the boundary: 0x80020001
+info for the range over both: 0x80024B09
+initialize libgxm: 0x00000000
+map the range over both: 0x805B0017
+terminate libgxm: 0x00000000
+DONE

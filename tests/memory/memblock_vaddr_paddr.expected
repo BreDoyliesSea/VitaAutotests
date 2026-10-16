@@ -1,0 +1,8 @@
+a plain block: 0x00000000
+a plain block: it lands at the requested address: 0x00000000
+attr 0x1, option size 0x14: 0x80020005
+attr 0x1, the address in words 5 to 14: 0x80020005
+attr 0x1, an address inside a live block: 0x80020005
+HAS_PADDR, option size 0x14: 0x80020005
+HAS_PADDR, a physical address in words 5 to 14: 0x80020005
+DONE

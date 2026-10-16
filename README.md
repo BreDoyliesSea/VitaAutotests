@@ -96,6 +96,8 @@ Cases that pass NULL pointers or huge sizes go at the end of a test, so an imple
 
 A case that a wrong implementation may crash or hang on, like `wait_own_end`, goes in a test of its own, so it doesn't lose the output of the checks after it.
 
+A case that needs something a Vita doesn't promise, like two memory blocks next to each other in `memblock_neighbors`, goes in a test of its own too. When that doesn't hold, the test ends with `test_skip()`, and the runner reports it as skipped instead of failed.
+
 The output must not depend on timing, so it is the same however many times the test runs:
 
 - A test never sleeps a fixed time to let another thread get somewhere. It waits for what that thread records, or for its end, with `TEST_WAIT_FOR()` or a join.
