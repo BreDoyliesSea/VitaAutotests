@@ -1,0 +1,6 @@
+create the thread: 0x00000000
+the stack base: find: 0x80024501
+the whole stack: find: 0x80020001
+TLS slot 0: find: 0x80024501
+delete the thread: 0x00000000
+DONE

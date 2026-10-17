@@ -1,0 +1,29 @@
+initialize libgxm: 0x00000000
+opened mapped: allocate an openable block: 0x00000000
+opened mapped: open it with 0x30: 0x00000000
+opened mapped: map the opened block: 0x00000000
+opened mapped: free the original: 0x00000000
+opened mapped: the original's base by its UID: 0x80024501
+opened mapped: find the original by its address: 0x80022007
+opened mapped: the opened block's base by its UID: 0x00000000
+opened mapped: find the opened block by its address: 0x80022007
+opened mapped: map the original's range: 0x805B0017
+original mapped: allocate an openable block: 0x00000000
+original mapped: open it with 0x30: 0x00000000
+original mapped: map the original: 0x00000000
+original mapped: free the original: 0x80024703
+original mapped: the original's base by its UID: 0x80024501
+original mapped: find the original by its address: 0x80024501
+original mapped: the opened block's base by its UID: 0x00000000
+original mapped: find the opened block by its address: 0x80022007
+original mapped: map the opened block: 0x805B0017
+opened mapped: unmap the opened block: 0x00000000
+opened mapped: close the opened block: 0x00000000
+opened mapped: free the original again: 0x80024501
+original mapped: unmap the original: 0x00000000
+original mapped: close the opened block: 0x00000000
+original mapped: free the original again: 0x80024501
+original mapped, after the clean up: find the original by its address: 0x80024501
+original mapped, after the clean up: allocate a block with the original's name: 0x80024E02
+terminate libgxm: 0x00000000
+DONE

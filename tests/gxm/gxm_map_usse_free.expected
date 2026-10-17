@@ -1,0 +1,50 @@
+initialize libgxm: 0x00000000
+mapped at the terminate: allocate it: 0x00000000
+mapped at the terminate: map it: 0x00000000
+mapped at the terminate: terminate libgxm: 0x00000000
+mapped at the terminate: initialize libgxm again: 0x00000000
+mapped at the terminate, before the free: its base by its UID: 0x00000000
+mapped at the terminate, before the free: find by its base: 0x00000000
+mapped at the terminate, before the free: info by its base: 0x00000000
+mapped at the terminate, before the free: KiB of main memory it takes: 0x00000040
+mapped at the terminate: free it: 0x00000000
+mapped at the terminate, after the free: its base by its UID: 0x80024501
+mapped at the terminate, after the free: find by its base: 0x80022007
+mapped at the terminate, after the free: info by its base: 0x80022007
+mapped at the terminate, after the free: KiB of main memory it takes: 0x00000000
+vertex USSE: allocate it: 0x00000000
+vertex USSE: map 4 KiB of it: 0x00000000
+vertex USSE, while it's mapped: its base by its UID: 0x00000000
+vertex USSE, while it's mapped: find by its base: 0x00000000
+vertex USSE, while it's mapped: info by its base: 0x00000000
+vertex USSE, while it's mapped: KiB of main memory it takes: 0x00000040
+vertex USSE: free it: 0x80024703
+vertex USSE, after the free: its base by its UID: 0x80024501
+vertex USSE, after the free: find by its base: 0x80024501
+vertex USSE, after the free: info by its base: 0x00000000
+vertex USSE, after the free: KiB of main memory it takes: 0x00000040
+vertex USSE: unmap it: 0x00000000
+vertex USSE, after the unmap: its base by its UID: 0x80024501
+vertex USSE, after the unmap: find by its base: 0x80024501
+vertex USSE, after the unmap: info by its base: 0x00000000
+vertex USSE, after the unmap: KiB of main memory it takes: 0x00000040
+vertex USSE: free it again: 0x80024501
+fragment USSE: allocate it: 0x00000000
+fragment USSE: map 4 KiB of it: 0x00000000
+fragment USSE, while it's mapped: its base by its UID: 0x00000000
+fragment USSE, while it's mapped: find by its base: 0x00000000
+fragment USSE, while it's mapped: info by its base: 0x00000000
+fragment USSE, while it's mapped: KiB of main memory it takes: 0x00000040
+fragment USSE: free it: 0x80024703
+fragment USSE, after the free: its base by its UID: 0x80024501
+fragment USSE, after the free: find by its base: 0x80024501
+fragment USSE, after the free: info by its base: 0x00000000
+fragment USSE, after the free: KiB of main memory it takes: 0x00000040
+fragment USSE: unmap it: 0x00000000
+fragment USSE, after the unmap: its base by its UID: 0x80024501
+fragment USSE, after the unmap: find by its base: 0x80024501
+fragment USSE, after the unmap: info by its base: 0x00000000
+fragment USSE, after the unmap: KiB of main memory it takes: 0x00000040
+fragment USSE: free it again: 0x80024501
+terminate libgxm: 0x00000000
+DONE

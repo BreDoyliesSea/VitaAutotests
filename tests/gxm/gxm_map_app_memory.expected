@@ -1,0 +1,44 @@
+initialize libgxm: 0x00000000
+the page of main with READ: 0x805B0017
+the page of main with READ and WRITE: 0x805B0017
+the page of a const string with READ: 0x805B0017
+the page of a const string with READ and WRITE: 0x805B0017
+the page of an initialized global with READ: 0x00000000
+the page of an initialized global with READ: unmap it: 0x00000000
+the page of an initialized global with READ and WRITE: 0x00000000
+the page of an initialized global with READ and WRITE: unmap it: 0x00000000
+the page of a zero initialized global with READ: 0x00000000
+the page of a zero initialized global with READ: unmap it: 0x00000000
+the page of a zero initialized global with READ and WRITE: 0x00000000
+the page of a zero initialized global with READ and WRITE: unmap it: 0x00000000
+the lowest page of a new thread's stack with READ: 0x00000000
+the lowest page of a new thread's stack with READ: unmap it: 0x00000000
+the lowest page of a new thread's stack with READ and WRITE: 0x00000000
+the lowest page of a new thread's stack with READ and WRITE: unmap it: 0x00000000
+the page of TLS slot 0 with READ: 0x00000000
+the page of TLS slot 0 with READ: unmap it: 0x00000000
+the page of TLS slot 0 with READ and WRITE: 0x00000000
+the page of TLS slot 0 with READ and WRITE: unmap it: 0x00000000
+a page from malloc with READ: 0x00000000
+a page from malloc with READ: unmap it: 0x00000000
+a page from malloc with READ and WRITE: 0x00000000
+a page from malloc with READ and WRITE: unmap it: 0x00000000
+the block of main: info: 0x00000000
+the block of main with READ: 0x805B0017
+the block of main with READ and WRITE: 0x805B0017
+the block of a global: info: 0x00000000
+the block of a global with READ: 0x00000000
+the block of a global with READ: unmap it: 0x00000000
+the block of a global with READ and WRITE: 0x00000000
+the block of a global with READ and WRITE: unmap it: 0x00000000
+the block of a new thread's stack: info: 0x00000000
+the block of a new thread's stack with READ: 0x00000000
+the block of a new thread's stack with READ: unmap it: 0x00000000
+the block of a new thread's stack with READ and WRITE: 0x00000000
+the block of a new thread's stack with READ and WRITE: unmap it: 0x00000000
+1 MiB from malloc with READ: 0x00000000
+1 MiB from malloc with READ: unmap it: 0x00000000
+1 MiB from malloc with READ and WRITE: 0x00000000
+1 MiB from malloc with READ and WRITE: unmap it: 0x00000000
+terminate libgxm: 0x00000000
+DONE

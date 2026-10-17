@@ -1,0 +1,15 @@
+the lowest on core 0, the waker on core 1, last on core 2, T at 0x70: the core T ran on: 0x00000000
+the lowest on core 0, the waker on core 2, last on core 1, T at 0x70: the core T ran on: 0x00000000
+the lowest on core 1, the waker on core 0, last on core 2, T at 0x70: the core T ran on: 0x00000001
+the lowest on core 1, the waker on core 2, last on core 0, T at 0x70: the core T ran on: 0x00000001
+the lowest on core 2, the waker on core 0, last on core 1, T at 0x70: the core T ran on: 0x00000002
+the lowest on core 2, the waker on core 1, last on core 0, T at 0x70: the core T ran on: 0x00000002
+cores 0 and 1 alone, the waker on core 2 the lowest, last on core 0, T at 0x70: the core T ran on: 0x00000001
+the lowest on core 0, the waker on core 1, last on core 2, T at 0xA0: the core T ran on: 0x00000000
+the lowest on core 0, the waker on core 2, last on core 1, T at 0xA0: the core T ran on: 0x00000000
+the lowest on core 1, the waker on core 0, last on core 2, T at 0xA0: the core T ran on: 0x00000001
+the lowest on core 1, the waker on core 2, last on core 0, T at 0xA0: the core T ran on: 0x00000001
+the lowest on core 2, the waker on core 0, last on core 1, T at 0xA0: the core T ran on: 0x00000002
+the lowest on core 2, the waker on core 1, last on core 0, T at 0xA0: the core T ran on: 0x00000002
+cores 0 and 1 alone, the waker on core 2 the lowest, last on core 0, T at 0xA0: the core T ran on: 0x00000001
+DONE

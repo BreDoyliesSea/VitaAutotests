@@ -1,0 +1,45 @@
+semaphore signal, core 1 idle, last on core 1, T at 0x70: the core T ran on: 0x00000001
+semaphore signal, core 1 idle, last on core 0, T at 0x70: the core T ran on: 0x00000001
+semaphore signal, core 1 below the waker, last on core 0, T at 0x70: the core T ran on: 0x00000001
+semaphore signal, core 1 above the waker, last on core 1, T at 0x70: the core T ran on: 0x00000000
+semaphore signal, core 1 above the waker, last on core 1, T at 0x70: T ran before the call returned: 0x00000001
+semaphore signal, core 1 at the waker's priority, last on core 0, T at 0x70: the core T ran on: 0x00000000
+semaphore signal, core 1 at the waker's priority, last on core 0, T at 0x70: T ran before the call returned: 0x00000001
+semaphore signal, core 1 at the waker's priority, last on core 1, T at 0x70: the core T ran on: 0x00000001
+semaphore signal, core 1 above T, last on core 1, T at 0x70: the core T ran on: 0x00000000
+semaphore signal, core 1 above T, last on core 1, T at 0x70: T ran before the call returned: 0x00000001
+semaphore signal, core 1 idle, last on core 1, T at 0x90: the core T ran on: 0x00000001
+semaphore signal, core 1 idle, last on core 0, T at 0x90: the core T ran on: 0x00000001
+semaphore signal, core 1 below the waker, last on core 0, T at 0x90: the core T ran on: 0x00000001
+semaphore signal, core 1 above the waker, last on core 1, T at 0x90: the core T ran on: 0x00000000
+semaphore signal, core 1 above the waker, last on core 1, T at 0x90: T ran before the call returned: 0x00000001
+semaphore signal, core 1 at the waker's priority, last on core 0, T at 0x90: the core T ran on: 0x00000000
+semaphore signal, core 1 at the waker's priority, last on core 0, T at 0x90: T ran before the call returned: 0x00000001
+semaphore signal, core 1 at the waker's priority, last on core 1, T at 0x90: the core T ran on: 0x00000001
+semaphore signal, core 1 above T, last on core 1, T at 0x90: the core T ran on: 0x00000000
+semaphore signal, core 1 above T, last on core 1, T at 0x90: T ran before the call returned: 0x00000001
+mutex unlock, core 1 idle, last on core 0, T at 0x70: the core T ran on: 0x00000001
+mutex unlock, core 1 above the waker, last on core 1, T at 0x70: the core T ran on: 0x00000000
+mutex unlock, core 1 above the waker, last on core 1, T at 0x70: T ran before the call returned: 0x00000001
+mutex unlock, core 1 idle, last on core 0, T at 0x90: the core T ran on: 0x00000001
+mutex unlock, core 1 above the waker, last on core 1, T at 0x90: the core T ran on: 0x00000000
+mutex unlock, core 1 above the waker, last on core 1, T at 0x90: T ran before the call returned: 0x00000001
+lightweight mutex unlock, core 1 idle, last on core 0, T at 0x70: the core T ran on: 0x00000001
+lightweight mutex unlock, core 1 above the waker, last on core 1, T at 0x70: the core T ran on: 0x00000000
+lightweight mutex unlock, core 1 above the waker, last on core 1, T at 0x70: T ran before the call returned: 0x00000001
+lightweight mutex unlock, core 1 idle, last on core 0, T at 0x90: the core T ran on: 0x00000001
+lightweight mutex unlock, core 1 above the waker, last on core 1, T at 0x90: the core T ran on: 0x00000000
+lightweight mutex unlock, core 1 above the waker, last on core 1, T at 0x90: T ran before the call returned: 0x00000001
+event flag set, core 1 idle, last on core 0, T at 0x70: the core T ran on: 0x00000001
+event flag set, core 1 above the waker, last on core 1, T at 0x70: the core T ran on: 0x00000000
+event flag set, core 1 above the waker, last on core 1, T at 0x70: T ran before the call returned: 0x00000001
+event flag set, core 1 idle, last on core 0, T at 0x90: the core T ran on: 0x00000001
+event flag set, core 1 above the waker, last on core 1, T at 0x90: the core T ran on: 0x00000000
+event flag set, core 1 above the waker, last on core 1, T at 0x90: T ran before the call returned: 0x00000001
+simple event set, core 1 idle, last on core 0, T at 0x70: the core T ran on: 0x00000001
+simple event set, core 1 above the waker, last on core 1, T at 0x70: the core T ran on: 0x00000000
+simple event set, core 1 above the waker, last on core 1, T at 0x70: T ran before the call returned: 0x00000001
+simple event set, core 1 idle, last on core 0, T at 0x90: the core T ran on: 0x00000001
+simple event set, core 1 above the waker, last on core 1, T at 0x90: the core T ran on: 0x00000000
+simple event set, core 1 above the waker, last on core 1, T at 0x90: T ran before the call returned: 0x00000001
+DONE

@@ -1,0 +1,42 @@
+maximum 1, a waiter for 1, signal 2: the call: 0x80028103
+maximum 1, a waiter for 1, signal 2: waiter 0 still waits right after it: 0x00000001
+maximum 1, a waiter for 1, signal 2: the count after it: 0x00000000
+maximum 1, a waiter for 1, signal 2: waiter 0's result: 0x80028006
+maximum 2 and a count of 1, a waiter for 2, signal 2: the call: 0x80028103
+maximum 2 and a count of 1, a waiter for 2, signal 2: waiter 0 still waits right after it: 0x00000001
+maximum 2 and a count of 1, a waiter for 2, signal 2: the count after it: 0x00000001
+maximum 2 and a count of 1, a waiter for 2, signal 2: waiter 0's result: 0x80028006
+maximum 1, two waiters for 1, signal 2: the call: 0x80028103
+maximum 1, two waiters for 1, signal 2: waiter 0 still waits right after it: 0x00000001
+maximum 1, two waiters for 1, signal 2: waiter 1 still waits right after it: 0x00000001
+maximum 1, two waiters for 1, signal 2: the count after it: 0x00000000
+maximum 1, two waiters for 1, signal 2: waiter 0's result: 0x80028006
+maximum 1, two waiters for 1, signal 2: waiter 1's result: 0x80028006
+cancel to 3 with a maximum of 2: the call: 0x8002000F
+cancel to 3 with a maximum of 2: waiter 0 still waits right after it: 0x00000001
+cancel to 3 with a maximum of 2: waiter 1 still waits right after it: 0x00000001
+cancel to 3 with a maximum of 2: the count after it: 0x00000000
+cancel to 3 with a maximum of 2: the waiters it counted: 0x00000000
+cancel to 3 with a maximum of 2: waiter 0's result: 0x80028006
+cancel to 3 with a maximum of 2: waiter 1's result: 0x80028006
+recursive mutex held once, unlock of 2: the call: 0x80028144
+recursive mutex held once, unlock of 2: waiter 0 still waits right after it: 0x00000001
+recursive mutex held once, unlock of 2: the count after it: 0x00000001
+recursive mutex held once, unlock of 2: waiter 0's result: 0x80028006
+mutex held by another thread, unlock: the call: 0x80028146
+mutex held by another thread, unlock: waiter 0 still waits right after it: 0x00000001
+mutex held by another thread, unlock: the count after it: 0x00000001
+mutex held by another thread, unlock: waiter 0's result: 0x80028006
+recursive lightweight mutex held once, unlock of 2: the call: 0x80028184
+recursive lightweight mutex held once, unlock of 2: waiter 0 still waits right after it: 0x00000001
+recursive lightweight mutex held once, unlock of 2: the count after it: 0x00000001
+recursive lightweight mutex held once, unlock of 2: waiter 0's result: 0x80028006
+lightweight mutex held by another thread, unlock: the call: 0x80028186
+lightweight mutex held by another thread, unlock: waiter 0 still waits right after it: 0x00000001
+lightweight mutex held by another thread, unlock: the count after it: 0x00000001
+lightweight mutex held by another thread, unlock: waiter 0's result: 0x80028006
+read lock held by another thread, read unlock: the call: 0x00000000
+read lock held by another thread, read unlock: waiter 0 still waits right after it: 0x00000000
+read lock held by another thread, read unlock: the lock count after it: 0x00000001
+read lock held by another thread, read unlock: waiter 0's result: 0x00000000
+DONE

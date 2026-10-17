@@ -1,0 +1,15 @@
+allocate the original: 0x00000000
+flags 0x10: opens that work: 0x00000080
+flags 0x10: the error of the one that fails: 0x00000000
+flags 0x10: each has its own UID: 0x00000001
+flags 0x10: each has its own address: 0x00000001
+flags 0x10: each reads the word: 0x00000001
+flags 0x10: each closes: 0x00000001
+flags 0x30: opens that work: 0x00000080
+flags 0x30: the error of the one that fails: 0x00000000
+flags 0x30: each has its own UID: 0x00000001
+flags 0x30: each has its own address: 0x00000001
+flags 0x30: each reads the word: 0x00000001
+flags 0x30: each closes: 0x00000001
+free the original: 0x00000000
+DONE

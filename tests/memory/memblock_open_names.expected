@@ -1,0 +1,39 @@
+both with ENABLE_OPEN: make the first: 0x00000000
+both with ENABLE_OPEN: make the second: 0x80024E02
+both with ENABLE_OPEN: open the name: 0x00000000
+both with ENABLE_OPEN: open the name: the block it maps: 0x00000001
+both with ENABLE_OPEN: open the name once the first is freed: 0x8002450A
+both with ENABLE_OPEN: open the name once both are freed: 0x8002450A
+the first without ENABLE_OPEN: make the first: 0x00000000
+the first without ENABLE_OPEN: make the second: 0x00000000
+the first without ENABLE_OPEN: open the name: 0x00000000
+the first without ENABLE_OPEN: open the name: the block it maps: 0x00000002
+the first without ENABLE_OPEN: open the name once the first is freed: 0x00000000
+the first without ENABLE_OPEN: open the name once the first is freed: the block it maps: 0x00000002
+the first without ENABLE_OPEN: open the name once both are freed: 0x8002450A
+the second without ENABLE_OPEN: make the first: 0x00000000
+the second without ENABLE_OPEN: make the second: 0x00000000
+the second without ENABLE_OPEN: open the name: 0x00000000
+the second without ENABLE_OPEN: open the name: the block it maps: 0x00000001
+the second without ENABLE_OPEN: open the name once the first is freed: 0x8002450A
+the second without ENABLE_OPEN: open the name once both are freed: 0x8002450A
+31 characters: make it: 0x00000000
+31 characters: open it by its name: 0x00000000
+31 characters: open it by its name: the block it maps: 0x00000001
+31 characters: open it by its name and one more character: 0x00000000
+31 characters: open it by its name and one more character: the block it maps: 0x00000001
+31 characters: open it by its first 30 characters: 0x8002450A
+32 characters: make it: 0x00000000
+32 characters: open it by its name: 0x00000000
+32 characters: open it by its name: the block it maps: 0x00000001
+32 characters: open it by its first 31 characters: 0x00000000
+32 characters: open it by its first 31 characters: the block it maps: 0x00000001
+32 characters: open it by its name and one more character: 0x00000000
+32 characters: open it by its name and one more character: the block it maps: 0x00000001
+an empty name: make it: 0x00000000
+an empty name: open it: 0x00000000
+an empty name: open it: the block it maps: 0x00000001
+an opened block's name: make the original: 0x00000000
+an opened block's name: open it: 0x00000000
+an opened block's name: open SceClient:client: 0x8002450A
+DONE

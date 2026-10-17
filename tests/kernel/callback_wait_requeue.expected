@@ -1,0 +1,23 @@
+A above B, no change: A's priority at the end of the callback: 0x00000080
+A above B, no change: A waits on the semaphore again: 0x00000001
+A above B, no change: waits the cancel ended: 0x00000001
+A above B, no change: A's result: 0x00000000
+A above B, no change: B's result: 0x80028007
+A above B, A dropped to B's priority: the change: 0x00000000
+A above B, A dropped to B's priority: A's priority at the end of the callback: 0x00000088
+A above B, A dropped to B's priority: A waits on the semaphore again: 0x00000001
+A above B, A dropped to B's priority: waits the cancel ended: 0x00000001
+A above B, A dropped to B's priority: A's result: 0x80028007
+A above B, A dropped to B's priority: B's result: 0x00000000
+A and B level, A raised: the change: 0x00000000
+A and B level, A raised: A's priority at the end of the callback: 0x00000080
+A and B level, A raised: A waits on the semaphore again: 0x00000001
+A and B level, A raised: waits the cancel ended: 0x00000001
+A and B level, A raised: A's result: 0x00000000
+A and B level, A raised: B's result: 0x80028007
+A and B level, A raises itself: A's priority at the end of the callback: 0x00000080
+A and B level, A raises itself: A waits on the semaphore again: 0x00000001
+A and B level, A raises itself: waits the cancel ended: 0x00000001
+A and B level, A raises itself: A's result: 0x00000000
+A and B level, A raises itself: B's result: 0x80028007
+DONE

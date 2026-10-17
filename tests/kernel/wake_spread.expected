@@ -1,0 +1,16 @@
+two other cores, at 0x70: W0's status after the signal: 0x00000001
+two other cores, at 0x70: W0's current CPU after the signal: 0x00000001
+two other cores, at 0x70: the core W0 ran on: 0x00000001
+three cores, the waker's the lowest, at 0x70: the core W0 ran on: 0x00000002
+three cores, the waker's the lowest, at 0x70: the core W1 ran on: 0x00000002
+three cores, the waker's the lowest, at 0x70: the core W2 ran on: 0x00000002
+two other cores, at 0xA0: W0's status after the signal: 0x00000001
+two other cores, at 0xA0: W0's current CPU after the signal: 0x00000001
+two other cores, at 0xA0: W1's status after the signal: 0x00000001
+two other cores, at 0xA0: W1's current CPU after the signal: 0x00000000
+two other cores, at 0xA0: the core W0 ran on: 0x00000001
+two other cores, at 0xA0: the core W1 ran on: 0x00000000
+three cores, the waker's the lowest, at 0xA0: the core W0 ran on: 0x00000002
+three cores, the waker's the lowest, at 0xA0: the core W1 ran on: 0x00000001
+three cores, the waker's the lowest, at 0xA0: the core W2 ran on: 0x00000000
+DONE

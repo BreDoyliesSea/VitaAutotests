@@ -1,0 +1,43 @@
+allocate the original: 0x00000000
+open it with 0x30: 0x00000000
+open it with 0x10: 0x00000000
+open it with 0x30 again: 0x00000000
+a write through the first shows through the second: 0x00000001
+and through the third: 0x00000001
+and in the original: 0x00000001
+close the first: 0x00000000
+find the first after that: 0x80022007
+find the second after that: 0x00000000
+the second reads the original after that: 0x00000001
+free the third with the usual free: 0x00000000
+find the third after that: 0x80022007
+find the second after that: 0x00000000
+find the original after that: 0x00000000
+the second reads the original after that: 0x00000001
+open the original again: 0x00000000
+the new one reads the original: 0x00000001
+closed: allocate the original: 0x00000000
+closed: open it: 0x00000000
+closed: KiB of main memory taken while both live: 0x00000400
+closed: end the original: 0x00000000
+closed: KiB of main memory taken after that: 0x00000000
+closed: get the opened one's base after that: 0x00000000
+closed: it's the same base: 0x00000001
+closed: find the opened block after that: 0x80022007
+closed: info for the opened block after that: 0x80022007
+closed: open the original's name after that: 0x8002450A
+closed: close the opened block: 0x00000000
+closed: KiB of main memory taken after that: 0x00000000
+freed: allocate the original: 0x00000000
+freed: open it: 0x00000000
+freed: KiB of main memory taken while both live: 0x00000400
+freed: end the original: 0x00000000
+freed: KiB of main memory taken after that: 0x00000000
+freed: get the opened one's base after that: 0x00000000
+freed: it's the same base: 0x00000001
+freed: find the opened block after that: 0x80022007
+freed: info for the opened block after that: 0x80022007
+freed: open the original's name after that: 0x8002450A
+freed: close the opened block: 0x00000000
+freed: KiB of main memory taken after that: 0x00000000
+DONE

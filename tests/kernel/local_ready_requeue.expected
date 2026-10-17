@@ -1,0 +1,31 @@
+READY, no change: T's status before the gate lifts: 0x00000002
+READY, no change: U's status before the gate lifts: 0x00000002
+READY, no change: the first to run, 1 for T and 2 for U: 0x00000001
+READY, T set to the 0x70 it has: the changes: 0x00000000
+READY, T set to the 0x70 it has: T's status before the gate lifts: 0x00000002
+READY, T set to the 0x70 it has: U's status before the gate lifts: 0x00000002
+READY, T set to the 0x70 it has: the first to run, 1 for T and 2 for U: 0x00000002
+READY, T raised to 0x6F and back: the changes: 0x00000000
+READY, T raised to 0x6F and back: T's status before the gate lifts: 0x00000002
+READY, T raised to 0x6F and back: U's status before the gate lifts: 0x00000002
+READY, T raised to 0x6F and back: the first to run, 1 for T and 2 for U: 0x00000002
+READY, T lowered to 0x71 and back: the changes: 0x00000000
+READY, T lowered to 0x71 and back: T's status before the gate lifts: 0x00000002
+READY, T lowered to 0x71 and back: U's status before the gate lifts: 0x00000002
+READY, T lowered to 0x71 and back: the first to run, 1 for T and 2 for U: 0x00000002
+STANDBY, no change: T's status before the gate lifts: 0x00000004
+STANDBY, no change: U's status before the gate lifts: 0x00000004
+STANDBY, no change: the first to run, 1 for T and 2 for U: 0x00000001
+STANDBY, T set to the 0x70 it has: the changes: 0x00000000
+STANDBY, T set to the 0x70 it has: T's status before the gate lifts: 0x00000004
+STANDBY, T set to the 0x70 it has: U's status before the gate lifts: 0x00000004
+STANDBY, T set to the 0x70 it has: the first to run, 1 for T and 2 for U: 0x00000001
+STANDBY, T raised to 0x6F and back: the changes: 0x00000000
+STANDBY, T raised to 0x6F and back: T's status before the gate lifts: 0x00000004
+STANDBY, T raised to 0x6F and back: U's status before the gate lifts: 0x00000004
+STANDBY, T raised to 0x6F and back: the first to run, 1 for T and 2 for U: 0x00000001
+STANDBY, T lowered to 0x71 and back: the changes: 0x00000000
+STANDBY, T lowered to 0x71 and back: T's status before the gate lifts: 0x00000004
+STANDBY, T lowered to 0x71 and back: U's status before the gate lifts: 0x00000004
+STANDBY, T lowered to 0x71 and back: the first to run, 1 for T and 2 for U: 0x00000001
+DONE

@@ -1,0 +1,21 @@
+A waits: P's wait: 0x800280E2
+A waits: A's result: 0x80028007
+A woken by a set: the wake: 0x00000000
+A woken by a set: P's wait: 0x80028005
+A woken by a set: A's result: 0x00000000
+A woken by a cancel: the wake: 0x00000000
+A woken by a cancel: P's wait: 0x80028005
+A woken by a cancel: A's result: 0x80028007
+A suspended: P's wait: 0x800280E2
+A suspended: A's result: 0x80028007
+A in its callback: P's wait: 0x800280E2
+A in its callback: A's result: 0x80028007
+A waits for another bit: the main thread's poll: 0x800280E2
+A waits for another bit: A's result: 0x80028007
+B waits while A is in its callback: B waits: 0x00000000
+B waits while A is in its callback: A waits on the flag again after its callback: 0x00000001
+B waits while A is in its callback: B still waits then: 0x00000000
+B waits while A is in its callback: the set: 0x00000000
+B waits while A is in its callback: A's result: 0x00000000
+B waits while A is in its callback: B's result: 0x800280E2
+DONE

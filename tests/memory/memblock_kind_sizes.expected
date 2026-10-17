@@ -1,0 +1,96 @@
+USER_RW, 4 KiB: make it: 0x00000000
+USER_RW, 4 KiB: KiB of main memory it takes: 0x00000004
+USER_RW, 4 KiB: KiB of CDRAM it takes: 0x00000000
+USER_RW, 4 KiB: KiB of physically contiguous memory it takes: 0x00000000
+USER_RW, 4 KiB: the free sizes are back once it ends: 0x00000001
+USER_RW, 12 KiB: make it: 0x00000000
+USER_RW, 12 KiB: KiB of main memory it takes: 0x0000000C
+USER_RW, 12 KiB: KiB of CDRAM it takes: 0x00000000
+USER_RW, 12 KiB: KiB of physically contiguous memory it takes: 0x00000000
+USER_RW, 12 KiB: the free sizes are back once it ends: 0x00000001
+USER_RW, 4 KiB aligned to 1 MiB: make it: 0x00000000
+USER_RW, 4 KiB aligned to 1 MiB: KiB of main memory it takes: 0x00000004
+USER_RW, 4 KiB aligned to 1 MiB: KiB of CDRAM it takes: 0x00000000
+USER_RW, 4 KiB aligned to 1 MiB: KiB of physically contiguous memory it takes: 0x00000000
+USER_RW, 4 KiB aligned to 1 MiB: the free sizes are back once it ends: 0x00000001
+USER_RW, 4 KiB with PHYCONT: make it: 0x00000000
+USER_RW, 4 KiB with PHYCONT: KiB of main memory it takes: 0x00000004
+USER_RW, 4 KiB with PHYCONT: KiB of CDRAM it takes: 0x00000000
+USER_RW, 4 KiB with PHYCONT: KiB of physically contiguous memory it takes: 0x00000000
+USER_RW, 4 KiB with PHYCONT: the free sizes are back once it ends: 0x00000001
+USER_RW, 64 KiB with PHYCONT: make it: 0x00000000
+USER_RW, 64 KiB with PHYCONT: KiB of main memory it takes: 0x00000040
+USER_RW, 64 KiB with PHYCONT: KiB of CDRAM it takes: 0x00000000
+USER_RW, 64 KiB with PHYCONT: KiB of physically contiguous memory it takes: 0x00000000
+USER_RW, 64 KiB with PHYCONT: the free sizes are back once it ends: 0x00000001
+USER_RW_UNCACHE, 4 KiB: make it: 0x00000000
+USER_RW_UNCACHE, 4 KiB: KiB of main memory it takes: 0x00000004
+USER_RW_UNCACHE, 4 KiB: KiB of CDRAM it takes: 0x00000000
+USER_RW_UNCACHE, 4 KiB: KiB of physically contiguous memory it takes: 0x00000000
+USER_RW_UNCACHE, 4 KiB: the free sizes are back once it ends: 0x00000001
+USER_MAIN_GAME_RW, 4 KiB: make it: 0x00000000
+USER_MAIN_GAME_RW, 4 KiB: KiB of main memory it takes: 0x00000004
+USER_MAIN_GAME_RW, 4 KiB: KiB of CDRAM it takes: 0x00000000
+USER_MAIN_GAME_RW, 4 KiB: KiB of physically contiguous memory it takes: 0x00000000
+USER_MAIN_GAME_RW, 4 KiB: the free sizes are back once it ends: 0x00000001
+USER_MAIN_DEVICE_RW, 4 KiB: make it: 0x00000000
+USER_MAIN_DEVICE_RW, 4 KiB: KiB of main memory it takes: 0x00000004
+USER_MAIN_DEVICE_RW, 4 KiB: KiB of CDRAM it takes: 0x00000000
+USER_MAIN_DEVICE_RW, 4 KiB: KiB of physically contiguous memory it takes: 0x00000000
+USER_MAIN_DEVICE_RW, 4 KiB: the free sizes are back once it ends: 0x00000001
+USER_MAIN_R, 4 KiB: make it: 0x00000000
+USER_MAIN_R, 4 KiB: KiB of main memory it takes: 0x00000004
+USER_MAIN_R, 4 KiB: KiB of CDRAM it takes: 0x00000000
+USER_MAIN_R, 4 KiB: KiB of physically contiguous memory it takes: 0x00000000
+USER_MAIN_R, 4 KiB: the free sizes are back once it ends: 0x00000001
+USER_CDRAM_RW, 256 KiB: make it: 0x00000000
+USER_CDRAM_RW, 256 KiB: KiB of main memory it takes: 0x00000000
+USER_CDRAM_RW, 256 KiB: KiB of CDRAM it takes: 0x00000100
+USER_CDRAM_RW, 256 KiB: KiB of physically contiguous memory it takes: 0x00000000
+USER_CDRAM_RW, 256 KiB: the free sizes are back once it ends: 0x00000001
+USER_CDRAM_L1WBWA_RW, 256 KiB: make it: 0x00000000
+USER_CDRAM_L1WBWA_RW, 256 KiB: KiB of main memory it takes: 0x00000000
+USER_CDRAM_L1WBWA_RW, 256 KiB: KiB of CDRAM it takes: 0x00000100
+USER_CDRAM_L1WBWA_RW, 256 KiB: KiB of physically contiguous memory it takes: 0x00000000
+USER_CDRAM_L1WBWA_RW, 256 KiB: the free sizes are back once it ends: 0x00000001
+USER_MAIN_PHYCONT_RW, 1 MiB: make it: 0x00000000
+USER_MAIN_PHYCONT_RW, 1 MiB: KiB of main memory it takes: 0x00000000
+USER_MAIN_PHYCONT_RW, 1 MiB: KiB of CDRAM it takes: 0x00000000
+USER_MAIN_PHYCONT_RW, 1 MiB: KiB of physically contiguous memory it takes: 0x00000400
+USER_MAIN_PHYCONT_RW, 1 MiB: the free sizes are back once it ends: 0x00000001
+USER_MAIN_CDIALOG_RW, 64 KiB: make it: 0x00000000
+USER_MAIN_CDIALOG_RW, 64 KiB: KiB of main memory it takes: 0x00000000
+USER_MAIN_CDIALOG_RW, 64 KiB: KiB of CDRAM it takes: 0x00000000
+USER_MAIN_CDIALOG_RW, 64 KiB: KiB of physically contiguous memory it takes: 0x00000000
+USER_MAIN_CDIALOG_RW, 64 KiB: the free sizes are back once it ends: 0x00000001
+USER_CDIALOG_RW, 64 KiB: make it: 0x00000000
+USER_CDIALOG_RW, 64 KiB: KiB of main memory it takes: 0x00000000
+USER_CDIALOG_RW, 64 KiB: KiB of CDRAM it takes: 0x00000000
+USER_CDIALOG_RW, 64 KiB: KiB of physically contiguous memory it takes: 0x00000000
+USER_CDIALOG_RW, 64 KiB: the free sizes are back once it ends: 0x00000001
+opened with 0x10 from 64 KiB: make it: 0x00000000
+opened with 0x10 from 64 KiB: KiB of main memory it takes: 0x00000000
+opened with 0x10 from 64 KiB: KiB of CDRAM it takes: 0x00000000
+opened with 0x10 from 64 KiB: KiB of physically contiguous memory it takes: 0x00000000
+opened with 0x10 from 64 KiB: the free sizes are back once it ends: 0x00000001
+opened with 0x30 from 64 KiB: make it: 0x00000000
+opened with 0x30 from 64 KiB: KiB of main memory it takes: 0x00000000
+opened with 0x30 from 64 KiB: KiB of CDRAM it takes: 0x00000000
+opened with 0x30 from 64 KiB: KiB of physically contiguous memory it takes: 0x00000000
+opened with 0x30 from 64 KiB: the free sizes are back once it ends: 0x00000001
+for code, 1 MiB: make it: 0x00000000
+for code, 1 MiB: KiB of main memory it takes: 0x00000400
+for code, 1 MiB: KiB of CDRAM it takes: 0x00000000
+for code, 1 MiB: KiB of physically contiguous memory it takes: 0x00000000
+for code, 1 MiB: the free sizes are back once it ends: 0x00000001
+a thread with a stack of 0x1234: make it: 0x00000000
+a thread with a stack of 0x1234: KiB of main memory it takes: 0x00000010
+a thread with a stack of 0x1234: KiB of CDRAM it takes: 0x00000000
+a thread with a stack of 0x1234: KiB of physically contiguous memory it takes: 0x00000000
+a thread with a stack of 0x1234: the free sizes are back once it ends: 0x00000001
+a thread with a stack of 0x4000: make it: 0x00000000
+a thread with a stack of 0x4000: KiB of main memory it takes: 0x00000018
+a thread with a stack of 0x4000: KiB of CDRAM it takes: 0x00000000
+a thread with a stack of 0x4000: KiB of physically contiguous memory it takes: 0x00000000
+a thread with a stack of 0x4000: the free sizes are back once it ends: 0x00000001
+DONE

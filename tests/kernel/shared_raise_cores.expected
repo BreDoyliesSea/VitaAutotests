@@ -1,0 +1,45 @@
+raised from core 2: the change: 0x00000000
+raised from core 2: T's status 10 ms after the change: 0x00000002
+raised from core 2: T's current CPU 10 ms after the change: 0x00000002
+raised from core 2: T ran while the spinners held their cores: 0x00000001
+raised from core 2: T only ran once given every core and its priority back: 0x00000000
+raised from core 2: the core T ran on: 0x00000002
+raised from core 2: the priority T ran at: 0x00000060
+raised by the spinner of core 0: the change: 0x00000000
+raised by the spinner of core 0: T's status 10 ms after the change: 0x00000002
+raised by the spinner of core 0: T's current CPU 10 ms after the change: 0x00000000
+raised by the spinner of core 0: T ran while the spinners held their cores: 0x00000000
+raised by the spinner of core 0: T only ran once given every core and its priority back: 0x00000000
+raised by the spinner of core 0: the core T ran on: 0x00000000
+raised by the spinner of core 0: the priority T ran at: 0x00000060
+on cores 0 and 2, raised from core 1: the change: 0x00000000
+on cores 0 and 2, raised from core 1: T's status 10 ms after the change: 0x00000002
+on cores 0 and 2, raised from core 1: T's current CPU 10 ms after the change: 0x00000001
+on cores 0 and 2, raised from core 1: T ran while the spinners held their cores: 0x00000001
+on cores 0 and 2, raised from core 1: T only ran once given every core and its priority back: 0x00000000
+on cores 0 and 2, raised from core 1: the core T ran on: 0x00000001
+on cores 0 and 2, raised from core 1: the priority T ran at: 0x00000060
+suspended, raised and resumed from core 1: the suspend: 0x00000001
+suspended, raised and resumed from core 1: the change: 0x00000000
+suspended, raised and resumed from core 1: the resume: 0x00000000
+suspended, raised and resumed from core 1: T's status 10 ms after the change: 0x00000004
+suspended, raised and resumed from core 1: T's current CPU 10 ms after the change: 0x00000000
+suspended, raised and resumed from core 1: T ran while the spinners held their cores: 0x00000000
+suspended, raised and resumed from core 1: T only ran once given every core and its priority back: 0x00000000
+suspended, raised and resumed from core 1: the core T ran on: 0x00000000
+suspended, raised and resumed from core 1: the priority T ran at: 0x00000060
+READY at 0x70 on core 0, changed to 0x68 from core 1: the change: 0x00000000
+READY at 0x70 on core 0, changed to 0x68 from core 1: T's status 10 ms after the change: 0x00000002
+READY at 0x70 on core 0, changed to 0x68 from core 1: T's current CPU 10 ms after the change: 0x00000000
+READY at 0x70 on core 0, changed to 0x68 from core 1: T ran while the spinners held their cores: 0x00000000
+READY at 0x70 on core 0, changed to 0x68 from core 1: T only ran once given every core and its priority back: 0x00000000
+READY at 0x70 on core 0, changed to 0x68 from core 1: the core T ran on: 0x00000000
+READY at 0x70 on core 0, changed to 0x68 from core 1: the priority T ran at: 0x00000068
+READY at 0x70 on core 0, changed to 0xA0 and back from core 1: the change: 0x00000000
+READY at 0x70 on core 0, changed to 0xA0 and back from core 1: T's status 10 ms after the change: 0x00000002
+READY at 0x70 on core 0, changed to 0xA0 and back from core 1: T's current CPU 10 ms after the change: 0x00000001
+READY at 0x70 on core 0, changed to 0xA0 and back from core 1: T ran while the spinners held their cores: 0x00000001
+READY at 0x70 on core 0, changed to 0xA0 and back from core 1: T only ran once given every core and its priority back: 0x00000000
+READY at 0x70 on core 0, changed to 0xA0 and back from core 1: the core T ran on: 0x00000001
+READY at 0x70 on core 0, changed to 0xA0 and back from core 1: the priority T ran at: 0x00000070
+DONE

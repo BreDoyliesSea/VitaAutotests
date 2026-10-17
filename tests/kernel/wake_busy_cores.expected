@@ -1,0 +1,17 @@
+the gate of core 0 signals, priority 0x70: T's status: 0x00000002
+the gate of core 0 signals, priority 0x70: T's current CPU: 0x00000000
+the gate of core 0 signals, priority 0x70: T ran while core 0 was still busy: 0x00000000
+the gate of core 0 signals, priority 0x70: the core T ran on: 0x00000000
+the gate of core 1 signals, priority 0x70: T's status: 0x00000004
+the gate of core 1 signals, priority 0x70: T's current CPU: 0x00000000
+the gate of core 1 signals, priority 0x70: T ran while core 0 was still busy: 0x00000000
+the gate of core 1 signals, priority 0x70: the core T ran on: 0x00000000
+the gate of core 0 signals, priority 0xA0: T's status: 0x00000002
+the gate of core 0 signals, priority 0xA0: T's current CPU: 0x00007FFF
+the gate of core 0 signals, priority 0xA0: T ran while core 0 was still busy: 0x00000001
+the gate of core 0 signals, priority 0xA0: the core T ran on: 0x00000001
+the gate of core 1 signals, priority 0xA0: T's status: 0x00000002
+the gate of core 1 signals, priority 0xA0: T's current CPU: 0x00007FFF
+the gate of core 1 signals, priority 0xA0: T ran while core 0 was still busy: 0x00000001
+the gate of core 1 signals, priority 0xA0: the core T ran on: 0x00000001
+DONE

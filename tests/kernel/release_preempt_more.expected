@@ -1,0 +1,101 @@
+event flag cancel: the call: 0x00000000
+event flag cancel: the waiter's result: 0x80028007
+event flag cancel: step 0: 0x00000000
+event flag cancel: step 1: 0x00000001
+event flag cancel: step 2: 0x00000002
+event flag delete: the call: 0x00000000
+event flag delete: the waiter's result: 0x80028006
+event flag delete: step 0: 0x00000000
+event flag delete: step 1: 0x00000001
+event flag delete: step 2: 0x00000002
+mutex cancel: the call: 0x00000000
+mutex cancel: the waiter's result: 0x80028007
+mutex cancel: step 0: 0x00000000
+mutex cancel: step 1: 0x00000001
+mutex cancel: step 2: 0x00000002
+mutex delete: the call: 0x00000000
+mutex delete: the waiter's result: 0x80028006
+mutex delete: step 0: 0x00000000
+mutex delete: step 1: 0x00000001
+mutex delete: step 2: 0x00000002
+rwlock cancel: the call: 0x00000000
+rwlock cancel: the waiter's result: 0x80028007
+rwlock cancel: step 0: 0x00000000
+rwlock cancel: step 1: 0x00000001
+rwlock cancel: step 2: 0x00000002
+rwlock delete: the call: 0x00000000
+rwlock delete: the waiter's result: 0x80028006
+rwlock delete: step 0: 0x00000000
+rwlock delete: step 1: 0x00000001
+rwlock delete: step 2: 0x00000002
+read unlock to a writer: the call: 0x00000000
+read unlock to a writer: the waiter's result: 0x00000000
+read unlock to a writer: step 0: 0x00000000
+read unlock to a writer: step 1: 0x00000001
+read unlock to a writer: step 2: 0x00000002
+message pipe cancel: the call: 0x00000000
+message pipe cancel: the waiter's result: 0x80028007
+message pipe cancel: step 0: 0x00000000
+message pipe cancel: step 1: 0x00000001
+message pipe cancel: step 2: 0x00000002
+message pipe delete: the call: 0x00000000
+message pipe delete: the waiter's result: 0x80028006
+message pipe delete: step 0: 0x00000000
+message pipe delete: step 1: 0x00000001
+message pipe delete: step 2: 0x00000002
+simple event pulse: the call: 0x00000000
+simple event pulse: the waiter's result: 0x00000000
+simple event pulse: step 0: 0x00000000
+simple event pulse: step 1: 0x00000001
+simple event pulse: step 2: 0x00000002
+simple event cancel: the call: 0x00000000
+simple event cancel: the waiter's result: 0x80028007
+simple event cancel: step 0: 0x00000000
+simple event cancel: step 1: 0x00000001
+simple event cancel: step 2: 0x00000002
+simple event set with notify callback: the call: 0x00000000
+simple event set with notify callback: the waiter's result: 0x00000000
+simple event set with notify callback: step 0: 0x00000000
+simple event set with notify callback: step 1: 0x00000001
+simple event set with notify callback: step 2: 0x00000002
+simple event set to a wait on several events: the call: 0x00000000
+simple event set to a wait on several events: the waiter's result: 0x00000001
+simple event set to a wait on several events: step 0: 0x00000000
+simple event set to a wait on several events: step 1: 0x00000001
+simple event set to a wait on several events: step 2: 0x00000002
+condition signal all: the call: 0x00000000
+condition signal all: the waiter's result: 0x00000000
+condition signal all: step 0: 0x00000000
+condition signal all: step 1: 0x00000001
+condition signal all: step 2: 0x00000002
+condition signal to: the call: 0x00000000
+condition signal to: the waiter's result: 0x00000000
+condition signal to: step 0: 0x00000000
+condition signal to: step 1: 0x00000001
+condition signal to: step 2: 0x00000002
+lightweight condition signal all: the call: 0x00000000
+lightweight condition signal all: the waiter's result: 0x00000000
+lightweight condition signal all: step 0: 0x00000000
+lightweight condition signal all: step 1: 0x00000001
+lightweight condition signal all: step 2: 0x00000002
+lightweight condition signal to: the call: 0x00000000
+lightweight condition signal to: the waiter's result: 0x00000000
+lightweight condition signal to: step 0: 0x00000000
+lightweight condition signal to: step 1: 0x00000001
+lightweight condition signal to: step 2: 0x00000002
+lightweight mutex delete: the call: 0x00000000
+lightweight mutex delete: the waiter's result: 0x80028006
+lightweight mutex delete: step 0: 0x00000000
+lightweight mutex delete: step 1: 0x00000001
+lightweight mutex delete: step 2: 0x00000002
+timer cancel: the call: 0x00000000
+timer cancel: the waiter's result: 0x80028007
+timer cancel: step 0: 0x00000000
+timer cancel: step 1: 0x00000001
+timer cancel: step 2: 0x00000002
+ForVM resume of a woken waiter: the call: 0x00000000
+ForVM resume of a woken waiter: the waiter's result: 0x00000000
+ForVM resume of a woken waiter: step 0: 0x00000000
+ForVM resume of a woken waiter: step 1: 0x00000001
+ForVM resume of a woken waiter: step 2: 0x00000002
+DONE

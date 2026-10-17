@@ -1,0 +1,38 @@
+pulse of A, both waiting for A: the call: 0x00000000
+pulse of A, both waiting for A: the bits left: 0x00000000
+pulse of A, both waiting for A: the waiters the cancel counted: 0x00000001
+pulse of A, both waiting for A: waiter 0's result: 0x00000000
+pulse of A, both waiting for A: the bits waiter 0 got: 0x01000000
+pulse of A, both waiting for A: waiter 1's result: 0x80028007
+set of A and B, waiter 0 for A or B, waiter 1 for B: the call: 0x00000000
+set of A and B, waiter 0 for A or B, waiter 1 for B: the bits left: 0x00000000
+set of A and B, waiter 0 for A or B, waiter 1 for B: the waiters the cancel counted: 0x00000001
+set of A and B, waiter 0 for A or B, waiter 1 for B: waiter 0's result: 0x00000000
+set of A and B, waiter 0 for A or B, waiter 1 for B: the bits waiter 0 got: 0x03000000
+set of A and B, waiter 0 for A or B, waiter 1 for B: waiter 1's result: 0x80028007
+set of A and B, waiter 0 for A, waiter 1 for A or B: the call: 0x00000000
+set of A and B, waiter 0 for A, waiter 1 for A or B: the bits left: 0x00000000
+set of A and B, waiter 0 for A, waiter 1 for A or B: the waiters the cancel counted: 0x00000000
+set of A and B, waiter 0 for A, waiter 1 for A or B: waiter 0's result: 0x00000000
+set of A and B, waiter 0 for A, waiter 1 for A or B: the bits waiter 0 got: 0x01000000
+set of A and B, waiter 0 for A, waiter 1 for A or B: waiter 1's result: 0x00000000
+set of A and B, waiter 0 for A, waiter 1 for A or B: the bits waiter 1 got: 0x02000000
+set of A while B is set, a waiter for A: the call: 0x00000000
+set of A while B is set, a waiter for A: the bits left: 0x02000000
+set of A while B is set, a waiter for A: the waiters the cancel counted: 0x00000000
+set of A while B is set, a waiter for A: waiter 0's result: 0x00000000
+set of A while B is set, a waiter for A: the bits waiter 0 got: 0x01000000
+pulse of A and B, waiter 0 for A, waiter 1 for B: the call: 0x00000000
+pulse of A and B, waiter 0 for A, waiter 1 for B: the bits left: 0x00000000
+pulse of A and B, waiter 0 for A, waiter 1 for B: the waiters the cancel counted: 0x00000000
+pulse of A and B, waiter 0 for A, waiter 1 for B: waiter 0's result: 0x00000000
+pulse of A and B, waiter 0 for A, waiter 1 for B: the bits waiter 0 got: 0x01000000
+pulse of A and B, waiter 0 for A, waiter 1 for B: waiter 1's result: 0x00000000
+pulse of A and B, waiter 0 for A, waiter 1 for B: the bits waiter 1 got: 0x02000000
+two sets of A before any waiter: the call: 0x00000000
+two sets of A before any waiter: the bits left: 0x00000000
+two sets of A before any waiter: the waiters the cancel counted: 0x00000001
+two sets of A before any waiter: waiter 0's result: 0x00000000
+two sets of A before any waiter: the bits waiter 0 got: 0x01000000
+two sets of A before any waiter: waiter 1's result: 0x80028007
+DONE

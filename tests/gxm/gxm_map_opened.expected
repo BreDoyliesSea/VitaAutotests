@@ -1,0 +1,49 @@
+initialize libgxm: 0x00000000
+allocate an openable USER_RW block: 0x00000000
+open it with 0x30: 0x00000000
+open it with 0x10: 0x00000000
+the 0x30 block with READ: 0x00000000
+the 0x30 block with READ: unmap it: 0x00000000
+the 0x30 block with WRITE: 0x00000000
+the 0x30 block with WRITE: unmap it: 0x00000000
+the 0x30 block with READ and WRITE: 0x00000000
+the 0x30 block with READ and WRITE: unmap it: 0x00000000
+the original, then the 0x30 block: map the first: 0x00000000
+the original, then the 0x30 block: map the second: 0x00000000
+the original, then the 0x30 block: unmap the second: 0x00000000
+the original, then the 0x30 block: unmap the first: 0x00000000
+the 0x30 block, then the original: map the first: 0x00000000
+the 0x30 block, then the original: map the second: 0x00000000
+the 0x30 block, then the original: unmap the second: 0x00000000
+the 0x30 block, then the original: unmap the first: 0x00000000
+only the original mapped: map: 0x00000000
+only the original mapped: unmap the other one's base: 0x805B0017
+only the original mapped: unmap its own base: 0x00000000
+only the 0x30 block mapped: map: 0x00000000
+only the 0x30 block mapped: unmap the other one's base: 0x805B0017
+only the 0x30 block mapped: unmap its own base: 0x00000000
+vertex USSE: 4 KiB of the 0x30 block: 0x00000000
+vertex USSE: unmap it: 0x00000000
+the 0x10 block with READ: 0x00000000
+the 0x10 block with READ: unmap it: 0x00000000
+the 0x10 block with WRITE: 0x805B0017
+the 0x10 block with READ and WRITE: 0x805B0017
+the original, then the 0x10 block with READ: map the first: 0x00000000
+the original, then the 0x10 block with READ: map the second: 0x00000000
+the original, then the 0x10 block with READ: unmap the second: 0x00000000
+the original, then the 0x10 block with READ: unmap the first: 0x00000000
+fragment USSE: 4 KiB of the 0x10 block: 0x00000000
+fragment USSE: unmap it: 0x00000000
+close the 0x10 block: 0x00000000
+close the 0x30 block: 0x00000000
+free the original: 0x00000000
+USER_RW_UNCACHE: allocate it: 0x00000000
+USER_RW_UNCACHE: open it with 0x30: 0x00000000
+USER_RW_UNCACHE: map the opened block: 0x00000000
+USER_RW_UNCACHE: map the opened block: unmap it: 0x00000000
+USER_CDIALOG_RW: allocate it: 0x00000000
+USER_CDIALOG_RW: open it with 0x30: 0x00000000
+USER_CDIALOG_RW: map the opened block: 0x00000000
+USER_CDIALOG_RW: map the opened block: unmap it: 0x00000000
+terminate libgxm: 0x00000000
+DONE

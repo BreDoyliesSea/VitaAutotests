@@ -1,0 +1,23 @@
+main: measuring twice in a row gives the same size: 0x00000001
+main: what a 1 MiB block takes: 0x00100000
+main: freeing it gives that back: 0x00000001
+main: what a 64 KiB block takes: 0x00010000
+main: freeing it gives that back: 0x00000001
+CDRAM at the start, as reported: 0x07000000
+CDRAM at the start, as measured: 0x07000000
+physically contiguous memory at the start: 0x01A00000
+main: the blocks of the app's code, data, heap, stack and TLS are found: 0x00000001
+load the fiber module: 0x00000000
+the fiber module: it takes more than 64 KiB of main memory: 0x00000001
+the fiber module: it takes less than 128 KiB of main memory: 0x00000001
+the fiber module: the CDRAM it takes: 0x00000000
+the fiber module: the physically contiguous memory it takes: 0x00000000
+unload it: 0x00000000
+after the unload: the free sizes are back: 0x00000001
+initialize libgxm: 0x00000000
+libgxm: the main memory it takes: 0x00203000
+libgxm: the CDRAM it takes: 0x01000000
+libgxm: the physically contiguous memory it takes: 0x00000000
+terminate it: 0x00000000
+after terminating it: the free sizes are back: 0x00000001
+DONE

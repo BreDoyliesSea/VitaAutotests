@@ -1,0 +1,35 @@
+lookups: allocate 1 MiB: 0x00000000
+lookups: find the middle: 0x00000000
+lookups: find a byte in the middle: 0x80020001
+lookups: find the whole block: 0x00000000
+lookups: find the last page: 0x80020001
+lookups: info for the whole block: 0x00000000
+lookups: its type: 0x0C20D050
+lookups: info for a page in the middle: 0x00000000
+lookups: open it by its name: 0x8002450A
+lookups: free it with the call for code: 0x00000000
+freed with the usual free: allocate 1 MiB: 0x00000000
+freed with the usual free: end it: 0x00000000
+freed with the usual free: get its base after that: 0x80024501
+freed with the usual free: find by its base after that: 0x80022007
+freed with the usual free: free it with the call for code after that: 0x80024501
+freed with the usual free: allocate 16 MiB after that: 0x00000000
+freed with the usual free: free it with the call for code again: 0x80020005
+freed with the usual free: allocate 16 MiB after that: 0x00000000
+closed: allocate 1 MiB: 0x00000000
+closed: end it: 0x00000000
+closed: get its base after that: 0x80024501
+closed: find by its base after that: 0x80022007
+closed: free it with the call for code after that: 0x80024501
+closed: allocate 16 MiB after that: 0x00000000
+closed: free it with the call for code again: 0x80020005
+closed: allocate 16 MiB after that: 0x00000000
+allocate with an empty name: 0x00000000
+allocate with a 31 character name: 0x00000000
+allocate with a 32 character name: 0x00000000
+allocate with a 64 character name: 0x00000000
+allocate 2 GiB: 0x80024B0B
+allocate 4095 MiB: 0x80024B0B
+allocate 1 MiB to keep: 0x00000000
+allocate 4095 MiB with it live: 0x80024B0B
+DONE

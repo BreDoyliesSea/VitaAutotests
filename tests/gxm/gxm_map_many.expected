@@ -1,0 +1,16 @@
+initialize libgxm: 0x00000000
+allocate a 16 MiB block: 0x00000000
+4 KiB maps: at least 64 work: 0x00000001
+4 KiB maps: at least 256 work: 0x00000001
+4 KiB maps: at least 1024 work: 0x00000001
+4 KiB maps: all 4096 work: 0x00000001
+4 KiB maps: the error of the one that fails: 0x00000000
+4 KiB maps: unmaps that fail: 0x00000000
+allocate a 32 MiB block: 0x00000000
+1 MiB pieces: maps that fail: 0x00000000
+1 MiB pieces: the whole block over them: 0x805B0017
+1 MiB pieces: unmaps in reverse that fail: 0x00000000
+1 MiB pieces: the whole block once they're unmapped: 0x00000000
+1 MiB pieces: unmap the whole block: 0x00000000
+terminate libgxm: 0x00000000
+DONE

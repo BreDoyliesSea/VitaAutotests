@@ -1,0 +1,73 @@
+main: info by address: 0x00000000
+main, the whole block: find: 0x80020001
+main, the whole block: info by range: 0x00000000
+main, its first page: find: 0x80020001
+main, its first page: info by range: 0x00000000
+main, its last page: find: 0x80020001
+main, its last page: info by range: 0x00000000
+main, from it to the block's end: find: 0x80020001
+main, from it to the block's end: info by range: 0x00000000
+main, 4 bytes at it: find: 0x80020001
+main, 4 bytes at it: info by range: 0x00000000
+a global: info by address: 0x00000000
+a global, the whole block: find: 0x80024501
+a global, the whole block: info by range: 0x00000000
+a global, its first page: find: 0x80020001
+a global, its first page: info by range: 0x00000000
+a global, its last page: find: 0x80020001
+a global, its last page: info by range: 0x00000000
+a global, from it to the block's end: find: 0x80020001
+a global, from it to the block's end: info by range: 0x00000000
+a global, 4 bytes at it: find: 0x80020001
+a global, 4 bytes at it: info by range: 0x00000000
+the main thread's stack: info by address: 0x00000000
+the main thread's stack, the whole block: find: 0x80020001
+the main thread's stack, the whole block: info by range: 0x00000000
+the main thread's stack, its first page: find: 0x80020001
+the main thread's stack, its first page: info by range: 0x00000000
+the main thread's stack, its last page: find: 0x80020001
+the main thread's stack, its last page: info by range: 0x00000000
+the main thread's stack, from it to the block's end: find: 0x80020001
+the main thread's stack, from it to the block's end: info by range: 0x00000000
+the main thread's stack, 4 bytes at it: find: 0x80020001
+the main thread's stack, 4 bytes at it: info by range: 0x00000000
+the main thread's stack, the stack: find: 0x80020001
+the main thread's stack, the stack: info by range: 0x00000000
+the main thread's TLS: info by address: 0x00000000
+the main thread's TLS, the whole block: find: 0x80024501
+the main thread's TLS, the whole block: info by range: 0x00000000
+the main thread's TLS, its first page: find: 0x80024501
+the main thread's TLS, its first page: info by range: 0x00000000
+the main thread's TLS, its last page: find: 0x80024501
+the main thread's TLS, its last page: info by range: 0x00000000
+the main thread's TLS, from it to the block's end: find: 0x80024501
+the main thread's TLS, from it to the block's end: info by range: 0x00000000
+the main thread's TLS, 4 bytes at it: find: 0x80020001
+the main thread's TLS, 4 bytes at it: info by range: 0x00000000
+memory from malloc: info by address: 0x00000000
+memory from malloc, the whole block: find: 0x00000000
+memory from malloc, the whole block: info by range: 0x00000000
+memory from malloc, its first page: find: 0x80020001
+memory from malloc, its first page: info by range: 0x00000000
+memory from malloc, its last page: find: 0x80020001
+memory from malloc, its last page: info by range: 0x00000000
+memory from malloc, from it to the block's end: find: 0x80020001
+memory from malloc, from it to the block's end: info by range: 0x00000000
+memory from malloc, 4 bytes at it: find: 0x80020001
+memory from malloc, 4 bytes at it: info by range: 0x00000000
+a new thread's stack: info by address: 0x00000000
+a new thread's stack, the whole block: find: 0x80020001
+a new thread's stack, the whole block: info by range: 0x00000000
+a new thread's stack, its first page: find: 0x80020001
+a new thread's stack, its first page: info by range: 0x00000000
+a new thread's stack, its last page: find: 0x80020001
+a new thread's stack, its last page: info by range: 0x00000000
+a new thread's stack, from it to the block's end: find: 0x80020001
+a new thread's stack, from it to the block's end: info by range: 0x00000000
+a new thread's stack, 4 bytes at it: find: 0x80020001
+a new thread's stack, 4 bytes at it: info by range: 0x00000000
+a new thread's stack, the stack: find: 0x80020001
+a new thread's stack, the stack: info by range: 0x00000000
+open the thread's name: 0x8002450A
+open Newlib heap: 0x8002450A
+DONE

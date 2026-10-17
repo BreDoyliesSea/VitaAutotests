@@ -1,0 +1,99 @@
+mutex unlock: suspend W: 0x00000001
+mutex unlock: the wake: 0x00000000
+mutex unlock: W's status after it: 0x00000100
+mutex unlock: W's wait type after it: 0x00000000
+mutex unlock: W owns the mutex: 0x00000001
+mutex unlock: the mutex's count: 0x00000001
+mutex unlock: the mutex's waiters: 0x00000000
+mutex unlock: try lock the mutex: 0x80028145
+mutex unlock: resume W: 0x00000000
+mutex unlock: W's result: 0x00000000
+mutex unlock: W's release after it: 0x00000000
+lightweight mutex unlock: suspend W: 0x00000001
+lightweight mutex unlock: the wake: 0x00000000
+lightweight mutex unlock: W's status after it: 0x00000100
+lightweight mutex unlock: W's wait type after it: 0x00000000
+lightweight mutex unlock: W owns the lightweight mutex: 0x00000001
+lightweight mutex unlock: its count: 0x00000001
+lightweight mutex unlock: its waiters: 0x00000000
+lightweight mutex unlock: try lock it: 0x80028185
+lightweight mutex unlock: resume W: 0x00000000
+lightweight mutex unlock: W's result: 0x00000000
+lightweight mutex unlock: W's release after it: 0x00000000
+event flag set: suspend W: 0x00000001
+event flag set: the wake: 0x00000000
+event flag set: W's status after it: 0x00000100
+event flag set: W's wait type after it: 0x00000000
+event flag set: the pattern: 0x00000000
+event flag set: the waiters: 0x00000000
+event flag set: resume W: 0x00000000
+event flag set: W's result: 0x00000000
+read unlock to a writer: suspend W: 0x00000001
+read unlock to a writer: the wake: 0x00000000
+read unlock to a writer: W's status after it: 0x00000100
+read unlock to a writer: W's wait type after it: 0x00000000
+read unlock to a writer: the lock count: 0x00000001
+read unlock to a writer: W is the write owner: 0x00000001
+read unlock to a writer: the waiters: 0x00000000
+read unlock to a writer: try read lock: 0x800281E6
+read unlock to a writer: resume W: 0x00000000
+read unlock to a writer: W's result: 0x00000000
+read unlock to a writer: W's release after it: 0x00000000
+write unlock to a reader: suspend W: 0x00000001
+write unlock to a reader: the wake: 0x00000000
+write unlock to a reader: W's status after it: 0x00000100
+write unlock to a reader: W's wait type after it: 0x00000000
+write unlock to a reader: the lock count: 0x00000001
+write unlock to a reader: W is the write owner: 0x00000000
+write unlock to a reader: the waiters: 0x00000000
+write unlock to a reader: try write lock: 0x800281E6
+write unlock to a reader: resume W: 0x00000000
+write unlock to a reader: W's result: 0x00000000
+write unlock to a reader: W's release after it: 0x00000000
+message pipe send: suspend W: 0x00000001
+message pipe send: the wake: 0x00000000
+message pipe send: W's status after it: 0x00000100
+message pipe send: W's wait type after it: 0x00000000
+message pipe send: the free size: 0x00001000
+message pipe send: the receivers: 0x00000000
+message pipe send: resume W: 0x00000000
+message pipe send: W's result: 0x00000000
+condition signal: suspend W: 0x00000001
+condition signal: the wake: 0x00000000
+condition signal: W's status after it: 0x00000100
+condition signal: W's wait type after it: 0x00000000
+condition signal: W owns the mutex: 0x00000001
+condition signal: the mutex's count: 0x00000001
+condition signal: the mutex's waiters: 0x00000000
+condition signal: try lock the mutex: 0x80028145
+condition signal: resume W: 0x00000000
+condition signal: W's result: 0x00000000
+condition signal: W's release after it: 0x00000000
+lightweight condition signal: suspend W: 0x00000001
+lightweight condition signal: the wake: 0x00000000
+lightweight condition signal: W's status after it: 0x00000100
+lightweight condition signal: W's wait type after it: 0x00000000
+lightweight condition signal: W owns the lightweight mutex: 0x00000001
+lightweight condition signal: its count: 0x00000001
+lightweight condition signal: its waiters: 0x00000000
+lightweight condition signal: try lock it: 0x80028185
+lightweight condition signal: resume W: 0x00000000
+lightweight condition signal: W's result: 0x00000000
+lightweight condition signal: W's release after it: 0x00000000
+simple event set: suspend W: 0x00000001
+simple event set: the wake: 0x00000000
+simple event set: W's status after it: 0x00000100
+simple event set: W's wait type after it: 0x00000000
+simple event set: the bit after the set: 0x00000000
+simple event set: the waiters: 0x00000000
+simple event set: resume W: 0x00000000
+simple event set: W's result: 0x00000000
+thread signal: suspend W: 0x00000001
+thread signal: the wake: 0x00000000
+thread signal: W's status after it: 0x00000100
+thread signal: W's wait type after it: 0x00000000
+thread signal: a second signal: 0x00000000
+thread signal: resume W: 0x00000000
+thread signal: W's result: 0x00000000
+thread signal: W's wait for a second signal: 0x00000000
+DONE

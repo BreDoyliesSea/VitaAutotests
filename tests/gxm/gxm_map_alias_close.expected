@@ -1,0 +1,35 @@
+initialize libgxm: 0x00000000
+close: allocate an openable block: 0x00000000
+close: open it with 0x30: 0x00000000
+close: map the opened block: 0x00000000
+close: end the mapped opened block: 0x80024703
+close: the opened block's base by its UID: 0x80024501
+close: find the opened block by its address: 0x80024501
+close: find the original by its address: 0x00000000
+close: map the opened block's range again: 0x805B0017
+close: map the original: 0x00000000
+close: unmap the original: 0x00000000
+close: unmap the opened block: 0x00000000
+close, after the unmap: the opened block's base by its UID: 0x80024501
+close, after the unmap: find the opened block by its address: 0x80024501
+close, after the unmap: find the original by its address: 0x00000000
+close: end the opened block again: 0x80024501
+close: free the original: 0x00000000
+free: allocate an openable block: 0x00000000
+free: open it with 0x30: 0x00000000
+free: map the opened block: 0x00000000
+free: end the mapped opened block: 0x80024703
+free: the opened block's base by its UID: 0x80024501
+free: find the opened block by its address: 0x80024501
+free: find the original by its address: 0x00000000
+free: map the opened block's range again: 0x805B0017
+free: map the original: 0x00000000
+free: unmap the original: 0x00000000
+free: unmap the opened block: 0x00000000
+free, after the unmap: the opened block's base by its UID: 0x80024501
+free, after the unmap: find the opened block by its address: 0x80024501
+free, after the unmap: find the original by its address: 0x00000000
+free: end the opened block again: 0x80024501
+free: free the original: 0x00000000
+terminate libgxm: 0x00000000
+DONE

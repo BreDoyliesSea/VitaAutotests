@@ -1,0 +1,94 @@
+initialize libgxm: 0x00000000
+type 0x09404060: allocate it: 0x00000000
+type 0x09404060 with READ: 0x00000000
+type 0x09404060 with READ: unmap it: 0x00000000
+type 0x09404060 with WRITE: 0x00000000
+type 0x09404060 with WRITE: unmap it: 0x00000000
+type 0x09404060 with READ and WRITE: 0x00000000
+type 0x09404060 with READ and WRITE: unmap it: 0x00000000
+type 0x09408040: allocate it: 0x00000000
+type 0x09408040 with READ: 0x00000000
+type 0x09408040 with READ: unmap it: 0x00000000
+type 0x09408040 with WRITE: 0x805B0017
+type 0x09408040 with READ and WRITE: 0x805B0017
+type 0x0C200860: allocate it: 0x00000000
+type 0x0C200860 with READ: 0x805B0017
+type 0x0C200860 with WRITE: 0x805B0017
+type 0x0C200860 with READ and WRITE: 0x805B0017
+type 0x0C50D060: allocate it: 0x00000000
+type 0x0C50D060 with READ: 0x00000000
+type 0x0C50D060 with READ: unmap it: 0x00000000
+type 0x0C50D060 with WRITE: 0x00000000
+type 0x0C50D060 with WRITE: unmap it: 0x00000000
+type 0x0C50D060 with READ and WRITE: 0x00000000
+type 0x0C50D060 with READ and WRITE: unmap it: 0x00000000
+type 0x0C80D060: allocate it: 0x00000000
+type 0x0C80D060 with READ: 0x00000000
+type 0x0C80D060 with READ: unmap it: 0x00000000
+type 0x0C80D060 with WRITE: 0x00000000
+type 0x0C80D060 with WRITE: unmap it: 0x00000000
+type 0x0C80D060 with READ and WRITE: 0x00000000
+type 0x0C80D060 with READ and WRITE: unmap it: 0x00000000
+type 0x0D808060: allocate it: 0x00000000
+type 0x0D808060 with READ: 0x00000000
+type 0x0D808060 with READ: unmap it: 0x00000000
+type 0x0D808060 with WRITE: 0x00000000
+type 0x0D808060 with WRITE: unmap it: 0x00000000
+type 0x0D808060 with READ and WRITE: 0x00000000
+type 0x0D808060 with READ and WRITE: unmap it: 0x00000000
+type 0x0CA0D060: allocate it: 0x00000000
+type 0x0CA0D060 with READ: 0x00000000
+type 0x0CA0D060 with READ: unmap it: 0x00000000
+type 0x0CA0D060 with WRITE: 0x00000000
+type 0x0CA0D060 with WRITE: unmap it: 0x00000000
+type 0x0CA0D060 with READ and WRITE: 0x00000000
+type 0x0CA0D060 with READ and WRITE: unmap it: 0x00000000
+type 0x0CA08060: allocate it: 0x00000000
+type 0x0CA08060 with READ: 0x00000000
+type 0x0CA08060 with READ: unmap it: 0x00000000
+type 0x0CA08060 with WRITE: 0x00000000
+type 0x0CA08060 with WRITE: unmap it: 0x00000000
+type 0x0CA08060 with READ and WRITE: 0x00000000
+type 0x0CA08060 with READ and WRITE: unmap it: 0x00000000
+type 0x0E20D040: allocate it: 0x00000000
+type 0x0E20D040 with READ: 0x00000000
+type 0x0E20D040 with READ: unmap it: 0x00000000
+type 0x0E20D040 with WRITE: 0x805B0017
+type 0x0E20D040 with READ and WRITE: 0x805B0017
+type 0x0E20D060: allocate it: 0x00000000
+type 0x0E20D060 with READ: 0x00000000
+type 0x0E20D060 with READ: unmap it: 0x00000000
+type 0x0E20D060 with WRITE: 0x00000000
+type 0x0E20D060 with WRITE: unmap it: 0x00000000
+type 0x0E20D060 with READ and WRITE: 0x00000000
+type 0x0E20D060 with READ and WRITE: unmap it: 0x00000000
+type 0x0E208040: allocate it: 0x00000000
+type 0x0E208040 with READ: 0x00000000
+type 0x0E208040 with READ: unmap it: 0x00000000
+type 0x0E208040 with WRITE: 0x805B0017
+type 0x0E208040 with READ and WRITE: 0x805B0017
+type 0x0E208060: allocate it: 0x00000000
+type 0x0E208060 with READ: 0x00000000
+type 0x0E208060 with READ: unmap it: 0x00000000
+type 0x0E208060 with WRITE: 0x00000000
+type 0x0E208060 with WRITE: unmap it: 0x00000000
+type 0x0E208060 with READ and WRITE: 0x00000000
+type 0x0E208060 with READ and WRITE: unmap it: 0x00000000
+allocate a block for code: 0x00000000
+a block for code, the domain closed with READ: 0x805B0017
+a block for code, the domain closed with WRITE: 0x805B0017
+a block for code, the domain closed with READ and WRITE: 0x805B0017
+open the domain: 0x00000000
+a block for code, the domain open with READ: 0x805B0017
+a block for code, the domain open with WRITE: 0x805B0017
+a block for code, the domain open with READ and WRITE: 0x805B0017
+close the domain: 0x00000000
+map it with READ to keep it mapped: 0x805B0017
+open the domain while it's mapped: 0x00000000
+close the domain while it's mapped: 0x00000000
+map it with READ before freeing it: 0x805B0017
+free it with the call for code while it's mapped: 0x00000000
+find it by its address after the free: 0x80022007
+free it with the call for code after the unmap: 0x80020005
+terminate libgxm: 0x00000000
+DONE

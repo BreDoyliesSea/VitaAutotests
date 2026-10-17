@@ -1,0 +1,53 @@
+ceilings 0x80 then 0x70, unlocked in that order, step 1, lock 0x80: the result: 0x00000000
+ceilings 0x80 then 0x70, unlocked in that order, step 1, lock 0x80: the priority after it: 0x00000080
+ceilings 0x80 then 0x70, unlocked in that order, step 2, lock 0x70: the result: 0x00000000
+ceilings 0x80 then 0x70, unlocked in that order, step 2, lock 0x70: the priority after it: 0x00000070
+ceilings 0x80 then 0x70, unlocked in that order, step 3, unlock 0x80: the result: 0x00000000
+ceilings 0x80 then 0x70, unlocked in that order, step 3, unlock 0x80: the priority after it: 0x00000070
+ceilings 0x80 then 0x70, unlocked in that order, step 4, unlock 0x70: the result: 0x00000000
+ceilings 0x80 then 0x70, unlocked in that order, step 4, unlock 0x70: the priority after it: 0x000000B0
+ceilings 0x70 then 0x80, unlocked in that order, step 1, lock 0x70: the result: 0x00000000
+ceilings 0x70 then 0x80, unlocked in that order, step 1, lock 0x70: the priority after it: 0x00000070
+ceilings 0x70 then 0x80, unlocked in that order, step 2, lock 0x80: the result: 0x00000000
+ceilings 0x70 then 0x80, unlocked in that order, step 2, lock 0x80: the priority after it: 0x00000070
+ceilings 0x70 then 0x80, unlocked in that order, step 3, unlock 0x70: the result: 0x00000000
+ceilings 0x70 then 0x80, unlocked in that order, step 3, unlock 0x70: the priority after it: 0x00000080
+ceilings 0x70 then 0x80, unlocked in that order, step 4, unlock 0x80: the result: 0x00000000
+ceilings 0x70 then 0x80, unlocked in that order, step 4, unlock 0x80: the priority after it: 0x000000B0
+two ceilings 0x80, step 1, lock 0x80: the result: 0x00000000
+two ceilings 0x80, step 1, lock 0x80: the priority after it: 0x00000080
+two ceilings 0x80, step 2, lock 0x80: the result: 0x00000000
+two ceilings 0x80, step 2, lock 0x80: the priority after it: 0x00000080
+two ceilings 0x80, step 3, unlock 0x80: the result: 0x00000000
+two ceilings 0x80, step 3, unlock 0x80: the priority after it: 0x00000080
+two ceilings 0x80, step 4, unlock 0x80: the result: 0x00000000
+two ceilings 0x80, step 4, unlock 0x80: the priority after it: 0x000000B0
+a recursive ceiling 0x80, locked twice, step 1, lock 0x80: the result: 0x00000000
+a recursive ceiling 0x80, locked twice, step 1, lock 0x80: the priority after it: 0x00000080
+a recursive ceiling 0x80, locked twice, step 2, lock 0x80: the result: 0x00000000
+a recursive ceiling 0x80, locked twice, step 2, lock 0x80: the priority after it: 0x00000080
+a recursive ceiling 0x80, locked twice, step 3, unlock 0x80: the result: 0x00000000
+a recursive ceiling 0x80, locked twice, step 3, unlock 0x80: the priority after it: 0x00000080
+a recursive ceiling 0x80, locked twice, step 4, unlock 0x80: the result: 0x00000000
+a recursive ceiling 0x80, locked twice, step 4, unlock 0x80: the priority after it: 0x000000B0
+a recursive ceiling 0x80, locked with a count of 2, step 1, lock 0x80 with a count of 2: the result: 0x00000000
+a recursive ceiling 0x80, locked with a count of 2, step 1, lock 0x80 with a count of 2: the priority after it: 0x00000080
+a recursive ceiling 0x80, locked with a count of 2, step 2, unlock 0x80: the result: 0x00000000
+a recursive ceiling 0x80, locked with a count of 2, step 2, unlock 0x80: the priority after it: 0x00000080
+a recursive ceiling 0x80, locked with a count of 2, step 3, unlock 0x80: the result: 0x00000000
+a recursive ceiling 0x80, locked with a count of 2, step 3, unlock 0x80: the priority after it: 0x000000B0
+a try lock of a ceiling 0x80, step 1, try lock 0x80: the result: 0x00000000
+a try lock of a ceiling 0x80, step 1, try lock 0x80: the priority after it: 0x00000080
+a try lock of a ceiling 0x80, step 2, unlock 0x80: the result: 0x00000000
+a try lock of a ceiling 0x80, step 2, unlock 0x80: the priority after it: 0x000000B0
+O deletes a ceiling 0x80 it holds, step 1, lock 0x80: the result: 0x00000000
+O deletes a ceiling 0x80 it holds, step 1, lock 0x80: the priority after it: 0x00000080
+O deletes a ceiling 0x80 it holds, step 2, delete 0x80: the result: 0x00000000
+O deletes a ceiling 0x80 it holds, step 2, delete 0x80: the priority after it: 0x000000B0
+O at 0x70 holds a ceiling 0x80, lowers itself to 0xB0, step 1, lock 0x80: the result: 0x00000000
+O at 0x70 holds a ceiling 0x80, lowers itself to 0xB0, step 1, lock 0x80: the priority after it: 0x00000070
+O at 0x70 holds a ceiling 0x80, lowers itself to 0xB0, step 2, set its priority to 0xB0: the result: 0x00000000
+O at 0x70 holds a ceiling 0x80, lowers itself to 0xB0, step 2, set its priority to 0xB0: the priority after it: 0x00000070
+O at 0x70 holds a ceiling 0x80, lowers itself to 0xB0, step 3, unlock 0x80: the result: 0x00000000
+O at 0x70 holds a ceiling 0x80, lowers itself to 0xB0, step 3, unlock 0x80: the priority after it: 0x000000B0
+DONE

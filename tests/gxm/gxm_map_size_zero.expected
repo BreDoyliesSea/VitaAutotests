@@ -1,0 +1,35 @@
+initialize libgxm: 0x00000000
+64 KiB to unmap: 0x00000000
+unmap 1 byte past its base: 0x805B0017
+unmap 4 KiB less 1 byte past its base: 0x805B0017
+64 KiB to unmap: unmap it, try 1: 0x00000000
+64 KiB to unmap: unmap it, try 2: 0x805B0017
+size 0 at an unaligned base: 0x805B0017
+size 0 at an unaligned base: unmap it, try 1: 0x805B0017
+size 0 twice: the first: 0x00000000
+size 0 twice: the second: 0x00000000
+size 0 twice: then 64 KiB at the base: 0x00000000
+size 0 twice: unmap it, try 1: 0x00000000
+size 0 twice: unmap it, try 2: 0x00000000
+size 0 twice: unmap it, try 3: 0x00000000
+size 0 twice: unmap it, try 4: 0x805B0017
+64 KiB, then size 0: the 64 KiB: 0x00000000
+64 KiB, then size 0: at its base: 0x00000000
+64 KiB, then size 0: 16 KiB into it: 0x805B0017
+64 KiB, then size 0: at its end: 0x00000000
+64 KiB, then size 0: at its end: unmap it, try 1: 0x00000000
+64 KiB, then size 0: at its end: unmap it, try 2: 0x805B0017
+64 KiB, then size 0: 16 KiB into it: unmap it, try 1: 0x805B0017
+64 KiB, then size 0: the base: unmap it, try 1: 0x00000000
+64 KiB, then size 0: the base: unmap it, try 2: 0x00000000
+64 KiB, then size 0: the base: unmap it, try 3: 0x805B0017
+size 0, then a free: size 0 at the base: 0x00000000
+size 0, then a free: free the block: 0x80024703
+size 0, then a free: the base by its UID: 0x80024501
+size 0, then a free: unmap it, try 1: 0x00000000
+size 0, then a free: unmap it, try 2: 0x805B0017
+size 0, then a free: free it after the unmap: 0x80024501
+size 0 in no block: 0x805B0017
+unmap a NULL base: 0x805B0004
+terminate libgxm: 0x00000000
+DONE

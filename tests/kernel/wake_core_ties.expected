@@ -1,0 +1,9 @@
+T at 0x70, both cores at 0xB0, last on core 0: the core T ran on: 0x00000000
+T at 0x70, both cores at 0xB0, last on core 1: the core T ran on: 0x00000001
+T at 0x70, core 0 at its priority, core 1 higher: T's status: 0x00000004
+T at 0x70, core 0 at its priority, core 1 higher: T ran once core 0 was free: 0x00000000
+T at 0x70, core 0 at its priority, core 1 higher: the core T ran on: 0x00000001
+T at 0xA0, core 0 at its priority, core 1 higher: T's status: 0x00000002
+T at 0xA0, core 0 at its priority, core 1 higher: T ran once core 0 was free: 0x00000001
+T at 0xA0, core 0 at its priority, core 1 higher: the core T ran on: 0x00000000
+DONE
