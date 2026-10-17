@@ -1,0 +1,62 @@
+before initializing: 0x00000000
+before initializing: buffer allocations: 0x00000000
+before initializing: USSE allocations: 0x00000000
+before initializing: destroy it: 0x00000000
+initialize libgxm: 0x00000000
+callbacks for everything: 0x00000000
+callbacks for everything: buffer allocations: 0x00000000
+callbacks for everything: USSE allocations: 0x00000000
+callbacks for everything: destroy it: 0x00000000
+all three static regions: 0x00000000
+all three static regions: destroy it: 0x00000000
+a static buffer region mapped with READ and WRITE: 0x00000000
+a static buffer region mapped with READ and WRITE: destroy it: 0x00000000
+a static buffer region in a block that isn't mapped: 0x00000000
+a static buffer region in a block that isn't mapped: destroy it: 0x00000000
+a static buffer region mapped with READ only: 0x00000000
+a static buffer region mapped with READ only: destroy it: 0x00000000
+a static buffer region of size 0: 0x805B0003
+a static buffer region of 64 KiB less 2 bytes: 0x00000000
+a static buffer region of 64 KiB less 2 bytes: destroy it: 0x00000000
+a static buffer region 2 bytes in: 0x00000000
+a static buffer region 2 bytes in: destroy it: 0x00000000
+a static buffer region 4 bytes in: 0x00000000
+a static buffer region 4 bytes in: destroy it: 0x00000000
+a static buffer region 16 bytes in: 0x00000000
+a static buffer region 16 bytes in: destroy it: 0x00000000
+a static buffer region and buffer callbacks: 0x805B0003
+no buffer region and no buffer callbacks: 0x805B0003
+a static vertex USSE region mapped as its kind: 0x00000000
+a static vertex USSE region mapped as its kind: destroy it: 0x00000000
+a static vertex USSE region in a block that isn't mapped: 0x00000000
+a static vertex USSE region in a block that isn't mapped: destroy it: 0x00000000
+a static vertex USSE region mapped as the other kind: 0x00000000
+a static vertex USSE region mapped as the other kind: destroy it: 0x00000000
+a static vertex USSE region mapped with sceGxmMapMemory: 0x00000000
+a static vertex USSE region mapped with sceGxmMapMemory: destroy it: 0x00000000
+a static vertex USSE region 4 bytes in: 0x00000000
+a static vertex USSE region 4 bytes in: destroy it: 0x00000000
+a static vertex USSE region 16 bytes in: 0x00000000
+a static vertex USSE region 16 bytes in: destroy it: 0x00000000
+a static fragment USSE region mapped as its kind: 0x00000000
+a static fragment USSE region mapped as its kind: destroy it: 0x00000000
+a static fragment USSE region in a block that isn't mapped: 0x00000000
+a static fragment USSE region in a block that isn't mapped: destroy it: 0x00000000
+a static fragment USSE region mapped as the other kind: 0x00000000
+a static fragment USSE region mapped as the other kind: destroy it: 0x00000000
+a static fragment USSE region mapped with sceGxmMapMemory: 0x00000000
+a static fragment USSE region mapped with sceGxmMapMemory: destroy it: 0x00000000
+a static fragment USSE region 4 bytes in: 0x00000000
+a static fragment USSE region 4 bytes in: destroy it: 0x00000000
+a static fragment USSE region 16 bytes in: 0x00000000
+a static fragment USSE region 16 bytes in: destroy it: 0x00000000
+a shared USSE region mapped as both kinds: 0x00000000
+a shared USSE region mapped as both kinds: destroy it: 0x00000000
+a shared USSE region mapped only as vertex USSE code: 0x00000000
+a shared USSE region mapped only as vertex USSE code: destroy it: 0x00000000
+a host allocation callback that returns NULL: 0x805B0021
+NULL parameters: 0x805B0004
+a NULL patcher pointer: 0x805B0004
+a NULL host allocation callback: 0x805B0004
+terminate libgxm: 0x00000000
+DONE

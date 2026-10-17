@@ -1,0 +1,63 @@
+find the base of a freed spacer: 0x80022007
+semaphore info, all of it fits: 0x00000000
+semaphore info, all of it fits: the words it changed: 0x00007FFE
+thread info, all of it fits: 0x00000000
+thread info, all of it fits: the words it changed: 0xFFFFFFFE
+mutex info, all of it fits: 0x00000000
+mutex info, all of it fits: the words it changed: 0x0000FFFE
+block info, all of it fits: 0x00000000
+block info, all of it fits: the words it changed: 0x0000003E
+free memory size, all of it fits: 0x00000000
+free memory size, all of it fits: the words it changed: 0x0000000E
+block base, all of it fits: 0x00000000
+block base, all of it fits: the words it changed: 0x00000001
+process time, all of it fits: 0x00000000
+process time, all of it fits: the words it changed: 0x00000003
+timer time, all of it fits: 0x00000000
+timer time, all of it fits: the words it changed: 0x00000003
+exit status, all of it fits: 0x00000000
+exit status, all of it fits: the words it changed: 0x00000001
+semaphore info of size 0x20, 0x20 bytes before the end: 0x00000000
+semaphore info of size 0x20, 0x20 bytes before the end: the words it changed: 0x000000FF
+semaphore info of size 4, 4 bytes before the end: 0x00000000
+semaphore info of size 4, 4 bytes before the end: the words it changed: 0x00000001
+semaphore info of size 0, 4 bytes before the end: 0x00000000
+semaphore info of size 0, 4 bytes before the end: the words it changed: 0x00000000
+thread info of size 0x40, 0x40 bytes before the end: 0x00000000
+thread info of size 0x40, 0x40 bytes before the end: the words it changed: 0x0000FFFF
+mutex info of size 0x20, 0x20 bytes before the end: 0x00000000
+mutex info of size 0x20, 0x20 bytes before the end: the words it changed: 0x000000FF
+semaphore info of size 0x40, 0x3C bytes before the end: 0x8002710B
+semaphore info of size 0x40, 0x3C bytes before the end: the words it changed: 0x00000000
+semaphore info of size 0x100, 4 bytes before the end: 0x8002710B
+semaphore info of size 0x100, 4 bytes before the end: the words it changed: 0x00000000
+block info of size 0x20, 0x18 bytes before the end: 0x80020005
+block info of size 0x20, 0x18 bytes before the end: the words it changed: 0x00000000
+semaphore info, 0x20 bytes before the end: 0x80022005
+semaphore info, 0x20 bytes before the end: the words it changed: 0x00000000
+thread info, 0x40 bytes before the end: 0x80022005
+thread info, 0x40 bytes before the end: the words it changed: 0x00000000
+mutex info, 0x20 bytes before the end: 0x80022005
+mutex info, 0x20 bytes before the end: the words it changed: 0x00000000
+block info, 0x10 bytes before the end: 0x80022005
+block info, 0x10 bytes before the end: the words it changed: 0x00000000
+block info, 4 bytes before the end: 0x80022005
+block info, 4 bytes before the end: the words it changed: 0x00000000
+free memory size, 8 bytes before the end: 0x80020005
+free memory size, 8 bytes before the end: the words it changed: 0x00000000
+timer time, 4 bytes before the end: 0x80022005
+timer time, 4 bytes before the end: the words it changed: 0x00000001
+block base, 2 bytes before the end: 0x80022005
+block base, 2 bytes before the end: the bytes it changed: 0x00000003
+exit status, 2 bytes before the end: 0x80022005
+exit status, 2 bytes before the end: the bytes it changed: 0x00000003
+event flag poll with clear, the bits 2 bytes before the end: 0x80022005
+event flag poll with clear, the bits 2 bytes before the end: the bytes it changed: 0x00000003
+event flag poll with clear, the bits 2 bytes before the end: what it did: 0x00000000
+semaphore cancel to 3, the count 2 bytes before the end: 0x80022005
+semaphore cancel to 3, the count 2 bytes before the end: the bytes it changed: 0x00000003
+semaphore cancel to 3, the count 2 bytes before the end: what it did: 0x00000003
+message pipe receive of 16 bytes, 8 bytes before the end: 0x80022005
+message pipe receive of 16 bytes, 8 bytes before the end: the words it changed: 0x00000003
+message pipe receive of 16 bytes, 8 bytes before the end: what it did: 0x00000010
+DONE

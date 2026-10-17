@@ -1,0 +1,162 @@
+semaphore: create an openable object and open it twice: 0x00000000
+semaphore: a change through the creating UID: 0x00000000
+semaphore: delete the creating UID: 0x00000000
+semaphore: the class of the deleted UID: 0x80024501
+semaphore: info through it: 0x80028101
+semaphore: delete it again: 0x80028101
+semaphore: info through the first opened UID: 0x00000000
+semaphore: the UID it reports: 0x00000000
+semaphore: the state through it: 0x00000001
+semaphore: a wait through it that can end at once: 0x00000000
+semaphore: a change through it: 0x00000000
+semaphore: the state through the second opened UID after: 0x00000001
+semaphore: open the name: 0x00000000
+semaphore: create another openable object with the name: 0x80024E02
+semaphore: create an openable event flag with the name: 0x80024E02
+semaphore: create one that isn't openable with the name: 0x00000000
+semaphore: close the first opened UID: 0x00000000
+semaphore: info through the second opened UID: 0x00000000
+semaphore: the state through it: 0x00000001
+semaphore: close it, the object's last UID: 0x00000000
+semaphore: info through it after: 0x80028101
+semaphore: open the name after the last close: 0x8002450A
+semaphore: create an openable object with the name after it: 0x00000000
+event flag: create an openable object and open it twice: 0x00000000
+event flag: a change through the creating UID: 0x00000000
+event flag: delete the creating UID: 0x00000000
+event flag: the class of the deleted UID: 0x80024501
+event flag: info through it: 0x800280E1
+event flag: delete it again: 0x800280E1
+event flag: info through the first opened UID: 0x00000000
+event flag: the UID it reports: 0x00000000
+event flag: the state through it: 0x00000002
+event flag: a wait through it that can end at once: 0x00000000
+event flag: a change through it: 0x00000000
+event flag: the state through the second opened UID after: 0x00000006
+event flag: open the name: 0x00000000
+event flag: create another openable object with the name: 0x80024E02
+event flag: create an openable mutex with the name: 0x80024E02
+event flag: create one that isn't openable with the name: 0x00000000
+event flag: close the first opened UID: 0x00000000
+event flag: info through the second opened UID: 0x00000000
+event flag: the state through it: 0x00000006
+event flag: close it, the object's last UID: 0x00000000
+event flag: info through it after: 0x800280E1
+event flag: open the name after the last close: 0x8002450A
+event flag: create an openable object with the name after it: 0x00000000
+mutex: create an openable object and open it twice: 0x00000000
+mutex: a change through the creating UID: 0x00000000
+mutex: delete the creating UID: 0x00000000
+mutex: the class of the deleted UID: 0x80024501
+mutex: info through it: 0x80028141
+mutex: delete it again: 0x80028141
+mutex: info through the first opened UID: 0x00000000
+mutex: the UID it reports: 0x00000000
+mutex: the state through it: 0x00000001
+mutex: a wait through it that can end at once: 0x00000000
+mutex: a change through it: 0x00000000
+mutex: the state through the second opened UID after: 0x00000003
+mutex: open the name: 0x00000000
+mutex: create another openable object with the name: 0x80024E02
+mutex: create an openable reader/writer lock with the name: 0x80024E02
+mutex: create one that isn't openable with the name: 0x00000000
+mutex: close the first opened UID: 0x00000000
+mutex: info through the second opened UID: 0x00000000
+mutex: the state through it: 0x00000003
+mutex: close it, the object's last UID: 0x00000000
+mutex: info through it after: 0x80028141
+mutex: open the name after the last close: 0x8002450A
+mutex: create an openable object with the name after it: 0x00000000
+reader/writer lock: create an openable object and open it twice: 0x00000000
+reader/writer lock: a change through the creating UID: 0x00000000
+reader/writer lock: delete the creating UID: 0x00000000
+reader/writer lock: the class of the deleted UID: 0x80024501
+reader/writer lock: info through it: 0x800281E1
+reader/writer lock: delete it again: 0x800281E1
+reader/writer lock: info through the first opened UID: 0x00000000
+reader/writer lock: the UID it reports: 0x00000000
+reader/writer lock: the state through it: 0x00000001
+reader/writer lock: a wait through it that can end at once: 0x00000000
+reader/writer lock: a change through it: 0x00000000
+reader/writer lock: the state through the second opened UID after: 0x00000003
+reader/writer lock: open the name: 0x00000000
+reader/writer lock: create another openable object with the name: 0x80024E02
+reader/writer lock: create an openable message pipe with the name: 0x80024E02
+reader/writer lock: create one that isn't openable with the name: 0x00000000
+reader/writer lock: close the first opened UID: 0x00000000
+reader/writer lock: info through the second opened UID: 0x00000000
+reader/writer lock: the state through it: 0x00000003
+reader/writer lock: close it, the object's last UID: 0x00000000
+reader/writer lock: info through it after: 0x800281E1
+reader/writer lock: open the name after the last close: 0x8002450A
+reader/writer lock: create an openable object with the name after it: 0x00000000
+message pipe: create an openable object and open it twice: 0x00000000
+message pipe: a change through the creating UID: 0x00000000
+message pipe: delete the creating UID: 0x00000000
+message pipe: the class of the deleted UID: 0x80024501
+message pipe: info through it: 0x80028221
+message pipe: delete it again: 0x80028221
+message pipe: info through the first opened UID: 0x00000000
+message pipe: the UID it reports: 0x00000000
+message pipe: the state through it: 0x00000004
+message pipe: a wait through it that can end at once: 0x00000000
+message pipe: a change through it: 0x00000000
+message pipe: the state through the second opened UID after: 0x00000004
+message pipe: open the name: 0x00000000
+message pipe: create another openable object with the name: 0x80024E02
+message pipe: create an openable simple event with the name: 0x80024E02
+message pipe: create one that isn't openable with the name: 0x00000000
+message pipe: close the first opened UID: 0x00000000
+message pipe: info through the second opened UID: 0x00000000
+message pipe: the state through it: 0x00000004
+message pipe: close it, the object's last UID: 0x00000000
+message pipe: info through it after: 0x80028221
+message pipe: open the name after the last close: 0x8002450A
+message pipe: create an openable object with the name after it: 0x00000000
+simple event: create an openable object and open it twice: 0x00000000
+simple event: a change through the creating UID: 0x00000000
+simple event: delete the creating UID: 0x00000000
+simple event: the class of the deleted UID: 0x80024501
+simple event: info through it: 0x80028201
+simple event: delete it again: 0x80028261
+simple event: info through the first opened UID: 0x00000000
+simple event: the UID it reports: 0x00000000
+simple event: the state through it: 0x0100010C
+simple event: a wait through it that can end at once: 0x00000000
+simple event: a change through it: 0x00000000
+simple event: the state through the second opened UID after: 0x0300010C
+simple event: open the name: 0x00000000
+simple event: create another openable object with the name: 0x80024E02
+simple event: create an openable timer with the name: 0x80024E02
+simple event: create one that isn't openable with the name: 0x00000000
+simple event: close the first opened UID: 0x00000000
+simple event: info through the second opened UID: 0x00000000
+simple event: the state through it: 0x0300030C
+simple event: close it, the object's last UID: 0x00000000
+simple event: info through it after: 0x80028201
+simple event: open the name after the last close: 0x8002450A
+simple event: create an openable object with the name after it: 0x00000000
+timer: create an openable object and open it twice: 0x00000000
+timer: a change through the creating UID: 0x00000000
+timer: delete the creating UID: 0x00000000
+timer: the class of the deleted UID: 0x80024501
+timer: info through it: 0x80028241
+timer: delete it again: 0x80028241
+timer: info through the first opened UID: 0x80028241
+timer: the UID it reports: 0x00000003
+timer: the state through it: 0x80028241
+timer: a wait through it that can end at once: 0x80028241
+timer: a change through it: 0x80028241
+timer: the state through the second opened UID after: 0x80028241
+timer: open the name: 0x00000000
+timer: create another openable object with the name: 0x80024E02
+timer: create an openable semaphore with the name: 0x80024E02
+timer: create one that isn't openable with the name: 0x00000000
+timer: close the first opened UID: 0x80028241
+timer: info through the second opened UID: 0x80028241
+timer: the state through it: 0x80028241
+timer: close it, the object's last UID: 0x80028241
+timer: info through it after: 0x80028241
+timer: open the name after the last close: 0x00000000
+timer: create an openable object with the name after it: 0x80024E02
+DONE

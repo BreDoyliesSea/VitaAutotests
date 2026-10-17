@@ -1,0 +1,263 @@
+semaphore: create an openable object: 0x00000000
+semaphore: open it: 0x00000000
+semaphore: open it again: 0x00000000
+semaphore: neither opened UID is the creating UID: 0x00000001
+semaphore: the opened UIDs differ: 0x00000001
+semaphore: the opened UIDs are odd: 0x00000001
+semaphore: the class of the first opened UID: 0x00000002
+semaphore: the second has the creating UID's class: 0x00000001
+semaphore: info through the creating UID: 0x00000000
+semaphore: the UID the info through the creating UID reports: 0x00000000
+semaphore: the info through the creating UID has the name: 0x00000001
+semaphore: info through the first opened UID: 0x00000000
+semaphore: the UID the info through the first opened UID reports: 0x00000000
+semaphore: the info through the first opened UID has the name: 0x00000001
+semaphore: info through the second opened UID: 0x00000000
+semaphore: the UID the info through the second opened UID reports: 0x00000000
+semaphore: the info through the second opened UID has the name: 0x00000001
+semaphore: a change through the first opened UID: 0x00000000
+semaphore: the state through the creating UID after it: 0x00000001
+semaphore: the state through the first opened UID after it: 0x00000001
+semaphore: the state through the second opened UID after it: 0x00000001
+semaphore: a change through the creating UID: 0x00000000
+semaphore: the state through the first opened UID after it: 0x00000002
+semaphore: the state through the second opened UID after it: 0x00000002
+semaphore: close the creating UID: 0x80028101
+semaphore: info through the creating UID after: 0x00000000
+semaphore: delete through the first opened UID: 0x80028101
+semaphore: info through the first opened UID after: 0x00000000
+semaphore: close the second opened UID: 0x00000000
+semaphore: close it again: 0x80028101
+semaphore: info through it after: 0x80028101
+semaphore: its class after: 0x80024501
+semaphore: a change through the first opened UID after: 0x00000000
+semaphore: the state through the creating UID after it: 0x00000003
+semaphore: close the first opened UID: 0x00000000
+semaphore: delete the creating UID: 0x00000000
+semaphore: info through it after: 0x80028101
+event flag: create an openable object: 0x00000000
+event flag: open it: 0x00000000
+event flag: open it again: 0x00000000
+event flag: neither opened UID is the creating UID: 0x00000001
+event flag: the opened UIDs differ: 0x00000001
+event flag: the opened UIDs are odd: 0x00000001
+event flag: the class of the first opened UID: 0x00000003
+event flag: the second has the creating UID's class: 0x00000001
+event flag: info through the creating UID: 0x00000000
+event flag: the UID the info through the creating UID reports: 0x00000000
+event flag: the info through the creating UID has the name: 0x00000001
+event flag: info through the first opened UID: 0x00000000
+event flag: the UID the info through the first opened UID reports: 0x00000000
+event flag: the info through the first opened UID has the name: 0x00000001
+event flag: info through the second opened UID: 0x00000000
+event flag: the UID the info through the second opened UID reports: 0x00000000
+event flag: the info through the second opened UID has the name: 0x00000001
+event flag: a change through the first opened UID: 0x00000000
+event flag: the state through the creating UID after it: 0x00000002
+event flag: the state through the first opened UID after it: 0x00000002
+event flag: the state through the second opened UID after it: 0x00000002
+event flag: a change through the creating UID: 0x00000000
+event flag: the state through the first opened UID after it: 0x00000006
+event flag: the state through the second opened UID after it: 0x00000006
+event flag: close the creating UID: 0x800280E1
+event flag: info through the creating UID after: 0x00000000
+event flag: delete through the first opened UID: 0x800280E1
+event flag: info through the first opened UID after: 0x00000000
+event flag: close the second opened UID: 0x00000000
+event flag: close it again: 0x800280E1
+event flag: info through it after: 0x800280E1
+event flag: its class after: 0x80024501
+event flag: a change through the first opened UID after: 0x00000000
+event flag: the state through the creating UID after it: 0x0000000E
+event flag: close the first opened UID: 0x00000000
+event flag: delete the creating UID: 0x00000000
+event flag: info through it after: 0x800280E1
+mutex: create an openable object: 0x00000000
+mutex: open it: 0x00000000
+mutex: open it again: 0x00000000
+mutex: neither opened UID is the creating UID: 0x00000001
+mutex: the opened UIDs differ: 0x00000001
+mutex: the opened UIDs are odd: 0x00000001
+mutex: the class of the first opened UID: 0x00000004
+mutex: the second has the creating UID's class: 0x00000001
+mutex: info through the creating UID: 0x00000000
+mutex: the UID the info through the creating UID reports: 0x00000000
+mutex: the info through the creating UID has the name: 0x00000001
+mutex: info through the first opened UID: 0x00000000
+mutex: the UID the info through the first opened UID reports: 0x00000000
+mutex: the info through the first opened UID has the name: 0x00000001
+mutex: info through the second opened UID: 0x00000000
+mutex: the UID the info through the second opened UID reports: 0x00000000
+mutex: the info through the second opened UID has the name: 0x00000001
+mutex: a change through the first opened UID: 0x00000000
+mutex: the state through the creating UID after it: 0x00000001
+mutex: the state through the first opened UID after it: 0x00000001
+mutex: the state through the second opened UID after it: 0x00000001
+mutex: a change through the creating UID: 0x00000000
+mutex: the state through the first opened UID after it: 0x00000002
+mutex: the state through the second opened UID after it: 0x00000002
+mutex: close the creating UID: 0x80028141
+mutex: info through the creating UID after: 0x00000000
+mutex: delete through the first opened UID: 0x80028141
+mutex: info through the first opened UID after: 0x00000000
+mutex: close the second opened UID: 0x00000000
+mutex: close it again: 0x80028141
+mutex: info through it after: 0x80028141
+mutex: its class after: 0x80024501
+mutex: a change through the first opened UID after: 0x00000000
+mutex: the state through the creating UID after it: 0x00000003
+mutex: close the first opened UID: 0x00000000
+mutex: delete the creating UID: 0x00000000
+mutex: info through it after: 0x80028141
+reader/writer lock: create an openable object: 0x00000000
+reader/writer lock: open it: 0x00000000
+reader/writer lock: open it again: 0x00000000
+reader/writer lock: neither opened UID is the creating UID: 0x00000001
+reader/writer lock: the opened UIDs differ: 0x00000001
+reader/writer lock: the opened UIDs are odd: 0x00000001
+reader/writer lock: the class of the first opened UID: 0x0000000C
+reader/writer lock: the second has the creating UID's class: 0x00000001
+reader/writer lock: info through the creating UID: 0x00000000
+reader/writer lock: the UID the info through the creating UID reports: 0x00000000
+reader/writer lock: the info through the creating UID has the name: 0x00000001
+reader/writer lock: info through the first opened UID: 0x00000000
+reader/writer lock: the UID the info through the first opened UID reports: 0x00000000
+reader/writer lock: the info through the first opened UID has the name: 0x00000001
+reader/writer lock: info through the second opened UID: 0x00000000
+reader/writer lock: the UID the info through the second opened UID reports: 0x00000000
+reader/writer lock: the info through the second opened UID has the name: 0x00000001
+reader/writer lock: a change through the first opened UID: 0x00000000
+reader/writer lock: the state through the creating UID after it: 0x00000001
+reader/writer lock: the state through the first opened UID after it: 0x00000001
+reader/writer lock: the state through the second opened UID after it: 0x00000001
+reader/writer lock: a change through the creating UID: 0x00000000
+reader/writer lock: the state through the first opened UID after it: 0x00000002
+reader/writer lock: the state through the second opened UID after it: 0x00000002
+reader/writer lock: close the creating UID: 0x800281E1
+reader/writer lock: info through the creating UID after: 0x00000000
+reader/writer lock: delete through the first opened UID: 0x800281E1
+reader/writer lock: info through the first opened UID after: 0x00000000
+reader/writer lock: close the second opened UID: 0x00000000
+reader/writer lock: close it again: 0x800281E1
+reader/writer lock: info through it after: 0x800281E1
+reader/writer lock: its class after: 0x80024501
+reader/writer lock: a change through the first opened UID after: 0x00000000
+reader/writer lock: the state through the creating UID after it: 0x00000003
+reader/writer lock: close the first opened UID: 0x00000000
+reader/writer lock: delete the creating UID: 0x00000000
+reader/writer lock: info through it after: 0x800281E1
+message pipe: create an openable object: 0x00000000
+message pipe: open it: 0x00000000
+message pipe: open it again: 0x00000000
+message pipe: neither opened UID is the creating UID: 0x00000001
+message pipe: the opened UIDs differ: 0x00000001
+message pipe: the opened UIDs are odd: 0x00000001
+message pipe: the class of the first opened UID: 0x00000007
+message pipe: the second has the creating UID's class: 0x00000001
+message pipe: info through the creating UID: 0x00000000
+message pipe: the UID the info through the creating UID reports: 0x00000000
+message pipe: the info through the creating UID has the name: 0x00000001
+message pipe: info through the first opened UID: 0x00000000
+message pipe: the UID the info through the first opened UID reports: 0x00000000
+message pipe: the info through the first opened UID has the name: 0x00000001
+message pipe: info through the second opened UID: 0x00000000
+message pipe: the UID the info through the second opened UID reports: 0x00000000
+message pipe: the info through the second opened UID has the name: 0x00000001
+message pipe: a change through the first opened UID: 0x00000000
+message pipe: the state through the creating UID after it: 0x00000004
+message pipe: the state through the first opened UID after it: 0x00000004
+message pipe: the state through the second opened UID after it: 0x00000004
+message pipe: a change through the creating UID: 0x00000000
+message pipe: the state through the first opened UID after it: 0x00000008
+message pipe: the state through the second opened UID after it: 0x00000008
+message pipe: close the creating UID: 0x80028221
+message pipe: info through the creating UID after: 0x00000000
+message pipe: delete through the first opened UID: 0x80028221
+message pipe: info through the first opened UID after: 0x00000000
+message pipe: close the second opened UID: 0x00000000
+message pipe: close it again: 0x80028221
+message pipe: info through it after: 0x80028221
+message pipe: its class after: 0x80024501
+message pipe: a change through the first opened UID after: 0x00000000
+message pipe: the state through the creating UID after it: 0x0000000C
+message pipe: close the first opened UID: 0x00000000
+message pipe: delete the creating UID: 0x00000000
+message pipe: info through it after: 0x80028221
+simple event: create an openable object: 0x00000000
+simple event: open it: 0x00000000
+simple event: open it again: 0x00000000
+simple event: neither opened UID is the creating UID: 0x00000001
+simple event: the opened UIDs differ: 0x00000001
+simple event: the opened UIDs are odd: 0x00000001
+simple event: the class of the first opened UID: 0x0000000D
+simple event: the second has the creating UID's class: 0x00000001
+simple event: info through the creating UID: 0x00000000
+simple event: the UID the info through the creating UID reports: 0x00000000
+simple event: the info through the creating UID has the name: 0x00000001
+simple event: info through the first opened UID: 0x00000000
+simple event: the UID the info through the first opened UID reports: 0x00000000
+simple event: the info through the first opened UID has the name: 0x00000001
+simple event: info through the second opened UID: 0x00000000
+simple event: the UID the info through the second opened UID reports: 0x00000000
+simple event: the info through the second opened UID has the name: 0x00000001
+simple event: a change through the first opened UID: 0x00000000
+simple event: the state through the creating UID after it: 0x01000104
+simple event: the state through the first opened UID after it: 0x01000104
+simple event: the state through the second opened UID after it: 0x01000104
+simple event: a change through the creating UID: 0x00000000
+simple event: the state through the first opened UID after it: 0x03000104
+simple event: the state through the second opened UID after it: 0x03000104
+simple event: close the creating UID: 0x80028261
+simple event: info through the creating UID after: 0x00000000
+simple event: delete through the first opened UID: 0x80028261
+simple event: info through the first opened UID after: 0x00000000
+simple event: close the second opened UID: 0x00000000
+simple event: close it again: 0x80028261
+simple event: info through it after: 0x80028201
+simple event: its class after: 0x80024501
+simple event: a change through the first opened UID after: 0x00000000
+simple event: the state through the creating UID after it: 0x07000304
+simple event: close the first opened UID: 0x00000000
+simple event: delete the creating UID: 0x00000000
+simple event: info through it after: 0x80028201
+timer: create an openable object: 0x00000000
+timer: open it: 0x00000000
+timer: open it again: 0x00000000
+timer: neither opened UID is the creating UID: 0x00000001
+timer: the opened UIDs differ: 0x00000001
+timer: the opened UIDs are odd: 0x00000001
+timer: the class of the first opened UID: 0x00000006
+timer: the second has the creating UID's class: 0x00000001
+timer: info through the creating UID: 0x00000000
+timer: the UID the info through the creating UID reports: 0x00000000
+timer: the info through the creating UID has the name: 0x00000001
+timer: info through the first opened UID: 0x00000000
+timer: the UID the info through the first opened UID reports: 0x00000000
+timer: the info through the first opened UID has the name: 0x00000001
+timer: info through the second opened UID: 0x00000000
+timer: the UID the info through the second opened UID reports: 0x00000000
+timer: the info through the second opened UID has the name: 0x00000001
+timer: a change through the first opened UID: 0x00000000
+timer: the state through the creating UID after it: 0x00000001
+timer: the state through the first opened UID after it: 0x00000001
+timer: the state through the second opened UID after it: 0x00000001
+timer: a change through the creating UID: 0x00000000
+timer: the state through the first opened UID after it: 0x00000002
+timer: the state through the second opened UID after it: 0x00000002
+timer: close the creating UID: 0x80028241
+timer: info through the creating UID after: 0x00000000
+timer: delete through the first opened UID: 0x80028241
+timer: info through the first opened UID after: 0x00000000
+timer: close the second opened UID: 0x00000000
+timer: close it again: 0x80028241
+timer: info through it after: 0x80028241
+timer: its class after: 0x80024501
+timer: a change through the first opened UID after: 0x00000000
+timer: the state through the creating UID after it: 0x00000003
+timer: close the first opened UID: 0x00000000
+timer: delete the creating UID: 0x00000000
+timer: info through it after: 0x80028241
+condition variable: close the creating UID: 0x00000000
+condition variable: info through it after: 0x800281A1
+condition variable: delete it: 0x800281A1
+DONE

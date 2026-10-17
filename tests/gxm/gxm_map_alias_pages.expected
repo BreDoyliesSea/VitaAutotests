@@ -1,0 +1,96 @@
+initialize libgxm: 0x00000000
+opened block mapped: allocate the original: 0x00000000
+opened block mapped: open it with 0x30: 0x00000000
+opened block mapped: KiB of main memory the two take: 0x00000040
+both mapped: allocate the original: 0x00000000
+both mapped: open it with 0x30: 0x00000000
+both mapped: KiB of main memory the two take: 0x00000040
+opened block closed first: allocate the original: 0x00000000
+opened block closed first: open it with 0x30: 0x00000000
+opened block closed first: KiB of main memory the two take: 0x00000040
+nothing mapped: allocate the original: 0x00000000
+nothing mapped: open it with 0x30: 0x00000000
+nothing mapped: KiB of main memory the two take: 0x00000040
+opened block mapped: map the opened block: 0x00000000
+opened block mapped: free the original: 0x00000000
+opened block mapped, after the free: the original's base by its UID: 0x80024501
+opened block mapped, after the free: find the original by its address: 0x80022007
+opened block mapped, after the free: the opened block's base by its UID: 0x00000000
+opened block mapped, after the free: find the opened block by its address: 0x80022007
+opened block mapped, after the free: KiB of main memory it gives back: 0x00000040
+opened block mapped: close the opened block: 0x80024703
+opened block mapped, after the close: the original's base by its UID: 0x80024501
+opened block mapped, after the close: find the original by its address: 0x80022007
+opened block mapped, after the close: the opened block's base by its UID: 0x80024501
+opened block mapped, after the close: find the opened block by its address: 0x80022007
+opened block mapped, after the close: KiB of main memory it gives back: 0x00000000
+both mapped: map the original: 0x00000000
+both mapped: map the opened block: 0x00000000
+both mapped: free the original: 0x80024703
+both mapped, after the free: the original's base by its UID: 0x80024501
+both mapped, after the free: find the original by its address: 0x80024501
+both mapped, after the free: the opened block's base by its UID: 0x00000000
+both mapped, after the free: find the opened block by its address: 0x80022007
+both mapped, after the free: KiB of main memory it gives back: 0x00000000
+both mapped: close the opened block: 0x80024703
+both mapped, after the close: the original's base by its UID: 0x80024501
+both mapped, after the close: find the original by its address: 0x80024501
+both mapped, after the close: the opened block's base by its UID: 0x80024501
+both mapped, after the close: find the opened block by its address: 0x80022007
+both mapped, after the close: KiB of main memory it gives back: 0x00000000
+opened block closed first: map the opened block: 0x00000000
+opened block closed first: close the opened block: 0x80024703
+opened block closed first, after the close: the original's base by its UID: 0x00000000
+opened block closed first, after the close: find the original by its address: 0x00000000
+opened block closed first, after the close: the opened block's base by its UID: 0x80024501
+opened block closed first, after the close: find the opened block by its address: 0x80024501
+opened block closed first, after the close: KiB of main memory it gives back: 0x00000000
+opened block closed first: free the original: 0x00000000
+opened block closed first, after the free: the original's base by its UID: 0x80024501
+opened block closed first, after the free: find the original by its address: 0x80022007
+opened block closed first, after the free: the opened block's base by its UID: 0x80024501
+opened block closed first, after the free: find the opened block by its address: 0x80022007
+opened block closed first, after the free: KiB of main memory it gives back: 0x00000040
+opened block mapped: unmap the opened block: 0x00000000
+opened block mapped, after the opened block's unmap: the original's base by its UID: 0x80024501
+opened block mapped, after the opened block's unmap: find the original by its address: 0x80022007
+opened block mapped, after the opened block's unmap: the opened block's base by its UID: 0x80024501
+opened block mapped, after the opened block's unmap: find the opened block by its address: 0x80022007
+opened block mapped, after the opened block's unmap: KiB of main memory it gives back: 0x00000000
+opened block mapped: allocate a block with the original's name: 0x00000000
+both mapped: unmap the opened block: 0x00000000
+both mapped, after the opened block's unmap: the original's base by its UID: 0x80024501
+both mapped, after the opened block's unmap: find the original by its address: 0x80024501
+both mapped, after the opened block's unmap: the opened block's base by its UID: 0x80024501
+both mapped, after the opened block's unmap: find the opened block by its address: 0x80022007
+both mapped, after the opened block's unmap: KiB of main memory it gives back: 0x00000000
+both mapped: unmap the original: 0x00000000
+both mapped, after the original's unmap: the original's base by its UID: 0x80024501
+both mapped, after the original's unmap: find the original by its address: 0x80024501
+both mapped, after the original's unmap: the opened block's base by its UID: 0x80024501
+both mapped, after the original's unmap: find the opened block by its address: 0x80022007
+both mapped, after the original's unmap: KiB of main memory it gives back: 0x00000000
+both mapped: allocate a block with the original's name: 0x80024E02
+opened block closed first: unmap the opened block: 0x00000000
+opened block closed first, after the opened block's unmap: the original's base by its UID: 0x80024501
+opened block closed first, after the opened block's unmap: find the original by its address: 0x80022007
+opened block closed first, after the opened block's unmap: the opened block's base by its UID: 0x80024501
+opened block closed first, after the opened block's unmap: find the opened block by its address: 0x80022007
+opened block closed first, after the opened block's unmap: KiB of main memory it gives back: 0x00000000
+opened block closed first: allocate a block with the original's name: 0x00000000
+nothing mapped: free the original: 0x00000000
+nothing mapped, after the free: the original's base by its UID: 0x80024501
+nothing mapped, after the free: find the original by its address: 0x80022007
+nothing mapped, after the free: the opened block's base by its UID: 0x00000000
+nothing mapped, after the free: find the opened block by its address: 0x80022007
+nothing mapped, after the free: KiB of main memory it gives back: 0x00000040
+nothing mapped: map the opened block's range: 0x805B0017
+nothing mapped: close the opened block: 0x00000000
+nothing mapped, after the close: the original's base by its UID: 0x80024501
+nothing mapped, after the close: find the original by its address: 0x80022007
+nothing mapped, after the close: the opened block's base by its UID: 0x80024501
+nothing mapped, after the close: find the opened block by its address: 0x80022007
+nothing mapped, after the close: KiB of main memory it gives back: 0x00000000
+nothing mapped: allocate a block with the original's name: 0x00000000
+terminate libgxm: 0x00000000
+DONE

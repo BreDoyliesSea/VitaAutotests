@@ -1,0 +1,205 @@
+initialize libgxm: 0x00000000
+map the block: 0x00000000
+linear texture: the valid texture: 0x00000000
+linear texture: the valid texture: it keeps the data: 0x00000001
+linear texture: the valid texture: validate it: 0x00000000
+strided texture: the valid texture: 0x00000000
+strided texture: the valid texture: it keeps the data: 0x00000001
+strided texture: the valid texture: it keeps the stride: 0x00000001
+strided texture: the valid texture: validate it: 0x00000000
+swizzled texture: the valid texture: 0x00000000
+swizzled texture: the valid texture: it keeps the data: 0x00000001
+swizzled texture: the valid texture: validate it: 0x00000000
+tiled texture: the valid texture: 0x00000000
+tiled texture: the valid texture: it keeps the data: 0x00000001
+tiled texture: the valid texture: validate it: 0x00000000
+cube texture: the valid texture: 0x00000000
+cube texture: the valid texture: it keeps the data: 0x00000001
+cube texture: the valid texture: validate it: 0x00000000
+linear texture: in a block that isn't mapped: 0x00000000
+linear texture: in a block that isn't mapped: it keeps the data: 0x00000001
+linear texture: in a block that isn't mapped: validate it: 0x00000000
+linear texture: in a USER_MAIN_R block: 0x00000000
+linear texture: in a USER_MAIN_R block: it keeps the data: 0x00000001
+linear texture: in a USER_MAIN_R block: validate it: 0x00000000
+linear texture: in a block for code: 0x00000000
+linear texture: in a block for code: it keeps the data: 0x00000001
+linear texture: in a block for code: validate it: 0x00000000
+linear texture: on the stack: 0x00000000
+linear texture: on the stack: it keeps the data: 0x00000001
+linear texture: on the stack: validate it: 0x00000000
+linear texture: data 1 bytes in: 0x805B0005
+linear texture: data 2 bytes in: 0x805B0005
+linear texture: data 4 bytes in: 0x00000000
+linear texture: data 4 bytes in: it keeps the data: 0x00000001
+linear texture: data 4 bytes in: validate it: 0x00000000
+linear texture: data 8 bytes in: 0x00000000
+linear texture: data 8 bytes in: it keeps the data: 0x00000001
+linear texture: data 8 bytes in: validate it: 0x00000000
+linear texture: data 16 bytes in: 0x00000000
+linear texture: data 16 bytes in: it keeps the data: 0x00000001
+linear texture: data 16 bytes in: validate it: 0x00000000
+linear texture: data 32 bytes in: 0x00000000
+linear texture: data 32 bytes in: it keeps the data: 0x00000001
+linear texture: data 32 bytes in: validate it: 0x00000000
+linear texture: data 64 bytes in: 0x00000000
+linear texture: data 64 bytes in: it keeps the data: 0x00000001
+linear texture: data 64 bytes in: validate it: 0x00000000
+strided texture: data 1 bytes in: 0x805B0005
+strided texture: data 2 bytes in: 0x805B0005
+strided texture: data 4 bytes in: 0x00000000
+strided texture: data 4 bytes in: it keeps the data: 0x00000001
+strided texture: data 4 bytes in: it keeps the stride: 0x00000001
+strided texture: data 4 bytes in: validate it: 0x00000000
+strided texture: data 8 bytes in: 0x00000000
+strided texture: data 8 bytes in: it keeps the data: 0x00000001
+strided texture: data 8 bytes in: it keeps the stride: 0x00000001
+strided texture: data 8 bytes in: validate it: 0x00000000
+strided texture: data 16 bytes in: 0x00000000
+strided texture: data 16 bytes in: it keeps the data: 0x00000001
+strided texture: data 16 bytes in: it keeps the stride: 0x00000001
+strided texture: data 16 bytes in: validate it: 0x00000000
+strided texture: data 32 bytes in: 0x00000000
+strided texture: data 32 bytes in: it keeps the data: 0x00000001
+strided texture: data 32 bytes in: it keeps the stride: 0x00000001
+strided texture: data 32 bytes in: validate it: 0x00000000
+strided texture: data 64 bytes in: 0x00000000
+strided texture: data 64 bytes in: it keeps the data: 0x00000001
+strided texture: data 64 bytes in: it keeps the stride: 0x00000001
+strided texture: data 64 bytes in: validate it: 0x00000000
+swizzled texture: data 1 bytes in: 0x805B0005
+swizzled texture: data 2 bytes in: 0x805B0005
+swizzled texture: data 4 bytes in: 0x00000000
+swizzled texture: data 4 bytes in: it keeps the data: 0x00000001
+swizzled texture: data 4 bytes in: validate it: 0x00000000
+swizzled texture: data 8 bytes in: 0x00000000
+swizzled texture: data 8 bytes in: it keeps the data: 0x00000001
+swizzled texture: data 8 bytes in: validate it: 0x00000000
+swizzled texture: data 16 bytes in: 0x00000000
+swizzled texture: data 16 bytes in: it keeps the data: 0x00000001
+swizzled texture: data 16 bytes in: validate it: 0x00000000
+swizzled texture: data 32 bytes in: 0x00000000
+swizzled texture: data 32 bytes in: it keeps the data: 0x00000001
+swizzled texture: data 32 bytes in: validate it: 0x00000000
+swizzled texture: data 64 bytes in: 0x00000000
+swizzled texture: data 64 bytes in: it keeps the data: 0x00000001
+swizzled texture: data 64 bytes in: validate it: 0x00000000
+tiled texture: data 1 bytes in: 0x805B0005
+tiled texture: data 2 bytes in: 0x805B0005
+tiled texture: data 4 bytes in: 0x00000000
+tiled texture: data 4 bytes in: it keeps the data: 0x00000001
+tiled texture: data 4 bytes in: validate it: 0x00000000
+tiled texture: data 8 bytes in: 0x00000000
+tiled texture: data 8 bytes in: it keeps the data: 0x00000001
+tiled texture: data 8 bytes in: validate it: 0x00000000
+tiled texture: data 16 bytes in: 0x00000000
+tiled texture: data 16 bytes in: it keeps the data: 0x00000001
+tiled texture: data 16 bytes in: validate it: 0x00000000
+tiled texture: data 32 bytes in: 0x00000000
+tiled texture: data 32 bytes in: it keeps the data: 0x00000001
+tiled texture: data 32 bytes in: validate it: 0x00000000
+tiled texture: data 64 bytes in: 0x00000000
+tiled texture: data 64 bytes in: it keeps the data: 0x00000001
+tiled texture: data 64 bytes in: validate it: 0x00000000
+cube texture: data 1 bytes in: 0x805B0005
+cube texture: data 2 bytes in: 0x805B0005
+cube texture: data 4 bytes in: 0x00000000
+cube texture: data 4 bytes in: it keeps the data: 0x00000001
+cube texture: data 4 bytes in: validate it: 0x00000000
+cube texture: data 8 bytes in: 0x00000000
+cube texture: data 8 bytes in: it keeps the data: 0x00000001
+cube texture: data 8 bytes in: validate it: 0x00000000
+cube texture: data 16 bytes in: 0x00000000
+cube texture: data 16 bytes in: it keeps the data: 0x00000001
+cube texture: data 16 bytes in: validate it: 0x00000000
+cube texture: data 32 bytes in: 0x00000000
+cube texture: data 32 bytes in: it keeps the data: 0x00000001
+cube texture: data 32 bytes in: validate it: 0x00000000
+cube texture: data 64 bytes in: 0x00000000
+cube texture: data 64 bytes in: it keeps the data: 0x00000001
+cube texture: data 64 bytes in: validate it: 0x00000000
+linear texture: in the block's last 4 KiB: 0x00000000
+linear texture: in the block's last 4 KiB: it keeps the data: 0x00000001
+linear texture: in the block's last 4 KiB: validate it: 0x00000000
+linear texture: 4096 by 4096 in the 4 MiB block: 0x00000000
+linear texture: 4096 by 4096 in the 4 MiB block: it keeps the data: 0x00000001
+linear texture: 4096 by 4096 in the 4 MiB block: validate it: 0x00000000
+linear texture: 0 by 256: 0x805B0003
+linear texture: 256 by 0: 0x805B0003
+linear texture: 1 by 1: 0x00000000
+linear texture: 1 by 1: it keeps the data: 0x00000001
+linear texture: 1 by 1: validate it: 0x00000000
+linear texture: 3 by 3: 0x00000000
+linear texture: 3 by 3: it keeps the data: 0x00000001
+linear texture: 3 by 3: validate it: 0x00000000
+linear texture: 4097 by 256: 0x805B0003
+linear texture: 256 by 4097: 0x805B0003
+linear texture: 0 mip levels: 0x00000000
+linear texture: 0 mip levels: it keeps the data: 0x00000001
+linear texture: 0 mip levels: validate it: 0x00000000
+linear texture: 9 mip levels: 0x00000000
+linear texture: 9 mip levels: it keeps the data: 0x00000001
+linear texture: 9 mip levels: validate it: 0x00000000
+linear texture: 10 mip levels: 0x00000000
+linear texture: 10 mip levels: it keeps the data: 0x00000001
+linear texture: 10 mip levels: validate it: 0x00000000
+linear texture: 13 mip levels: 0x00000000
+linear texture: 13 mip levels: it keeps the data: 0x00000001
+linear texture: 13 mip levels: validate it: 0x00000000
+linear texture: 14 mip levels: 0x805B0003
+linear texture: 16 mip levels: 0x805B0003
+strided texture: a stride of 0 bytes: 0x805B0003
+strided texture: a stride of 2 bytes: 0x805B0005
+strided texture: a stride of 4 bytes: 0x00000000
+strided texture: a stride of 4 bytes: it keeps the data: 0x00000001
+strided texture: a stride of 4 bytes: it keeps the stride: 0x00000001
+strided texture: a stride of 4 bytes: validate it: 0x00000000
+strided texture: a stride of 6 bytes: 0x805B0005
+strided texture: a stride of 1028 bytes: 0x00000000
+strided texture: a stride of 1028 bytes: it keeps the data: 0x00000001
+strided texture: a stride of 1028 bytes: it keeps the stride: 0x00000001
+strided texture: a stride of 1028 bytes: validate it: 0x00000000
+strided texture: a stride of 512 bytes: 0x00000000
+strided texture: a stride of 512 bytes: it keeps the data: 0x00000001
+strided texture: a stride of 512 bytes: it keeps the stride: 0x00000001
+strided texture: a stride of 512 bytes: validate it: 0x00000000
+strided texture: a stride of 131072 bytes: 0x00000000
+strided texture: a stride of 131072 bytes: it keeps the data: 0x00000001
+strided texture: a stride of 131072 bytes: it keeps the stride: 0x00000001
+strided texture: a stride of 131072 bytes: validate it: 0x00000000
+strided texture: a stride of 131076 bytes: 0x805B0003
+swizzled texture: 255 by 256: 0x805B0005
+swizzled texture: 4096 by 4096: 0x00000000
+swizzled texture: 4096 by 4096: it keeps the data: 0x00000001
+swizzled texture: 4096 by 4096: validate it: 0x00000000
+tiled texture: 33 by 32: 0x00000000
+tiled texture: 33 by 32: it keeps the data: 0x00000001
+tiled texture: 33 by 32: validate it: 0x00000000
+tiled texture: 1 by 1: 0x805B0003
+cube texture: 255 by 256: 0x805B0005
+set data 2 bytes in: 0x805B0005
+set data 4 bytes in: 0x00000000
+set data 4 bytes in: it keeps it: 0x00000001
+set data 16 bytes in: 0x00000000
+set data 16 bytes in: it keeps it: 0x00000001
+init a P8 texture: 0x00000000
+set a palette at the block's base: 0x00000000
+set a palette at the block's base: it keeps it: 0x00000001
+set a palette 16 bytes in: 0x805B0005
+set a palette 32 bytes in: 0x805B0005
+set a palette 64 bytes in: 0x00000000
+set a palette 64 bytes in: it keeps it: 0x00000001
+set a palette in a block that isn't mapped: 0x00000000
+set a palette in a block that isn't mapped: it keeps it: 0x00000001
+linear texture: where a block was freed: 0x00000000
+linear texture: where a block was freed: it keeps the data: 0x00000001
+linear texture: where a block was freed: validate it: 0x00000000
+set a palette where a block was freed: 0x00000000
+set a palette where a block was freed: it keeps it: 0x00000001
+linear texture: NULL data: 0x00000000
+linear texture: NULL data: it keeps the data: 0x00000001
+linear texture: NULL data: validate it: 0x805B0019
+set a palette NULL: 0x805B0004
+linear texture: a NULL texture: 0x805B0004
+terminate libgxm: 0x00000000
+DONE

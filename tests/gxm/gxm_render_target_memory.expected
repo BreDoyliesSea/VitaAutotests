@@ -1,0 +1,93 @@
+initialize libgxm: 0x00000000
+size for the valid parameters: 0x00000000
+size for the valid parameters: the size: 0x0002D000
+size for 4X multisampling: 0x00000000
+size for 4X multisampling: the size: 0x0008D000
+size for 2X multisampling: 0x00000000
+size for 2X multisampling: the size: 0x0005D000
+size for 2 scenes per frame: 0x00000000
+size for 2 scenes per frame: the size: 0x00047000
+size for 8 scenes per frame: 0x00000000
+size for 8 scenes per frame: the size: 0x000EC000
+size for 480 by 272: 0x00000000
+size for 480 by 272: the size: 0x00015000
+size for 1920 by 1088: 0x00000000
+size for 1920 by 1088: the size: 0x00075000
+size for 4096 by 4096: 0x00000000
+size for 4096 by 4096: the size: 0x00213000
+size for 32 by 32: 0x00000000
+size for 32 by 32: the size: 0x00015000
+size for 1 by 1: 0x00000000
+size for 1 by 1: the size: 0x00015000
+create with driverMemBlock -1: 0x00000000
+create with driverMemBlock -1: get its block: 0x00000000
+create with driverMemBlock -1: its block is -1: 0x00000001
+create with driverMemBlock -1: its block is a UID: 0x00000000
+create with driverMemBlock -1: destroy it: 0x00000000
+an uncached block of the size: allocate it: 0x00000000
+an uncached block of the size: create: 0x00000000
+an uncached block of the size: it reports the block: 0x00000001
+an uncached block of the size: map the block while it lives: 0x805B0017
+an uncached block of the size: destroy it: 0x00000000
+an uncached block of the size: map the block after the destroy: 0x00000000
+an uncached block of the size: free the block: 0x00000000
+an uncached block 4 KiB bigger: allocate it: 0x00000000
+an uncached block 4 KiB bigger: create: 0x00000000
+an uncached block 4 KiB bigger: it reports the block: 0x00000001
+an uncached block 4 KiB bigger: map the block while it lives: 0x805B0017
+an uncached block 4 KiB bigger: destroy it: 0x00000000
+an uncached block 4 KiB bigger: map the block after the destroy: 0x00000000
+an uncached block 4 KiB bigger: free the block: 0x00000000
+a cached block: allocate it: 0x00000000
+a cached block: create: 0x805B0017
+a cached block: free the block: 0x00000000
+a CDRAM block: allocate it: 0x00000000
+a CDRAM block: create: 0x805B0017
+a CDRAM block: free the block: 0x00000000
+a physically contiguous block: allocate it: 0x00000000
+a physically contiguous block: create: 0x00000000
+a physically contiguous block: it reports the block: 0x00000001
+a physically contiguous block: map the block while it lives: 0x805B0017
+a physically contiguous block: destroy it: 0x00000000
+a physically contiguous block: map the block after the destroy: 0x00000000
+a physically contiguous block: free the block: 0x00000000
+a block the app mapped: map it: 0x00000000
+create with a block the app mapped: 0x805B0017
+a block the app mapped: unmap it: 0x00000000
+a block the app mapped: free it: 0x00000000
+one block for two: the first: 0x00000000
+one block for two: the second: 0x805B0003
+one block for two: destroy the first: 0x00000000
+one block for two: free it: 0x00000000
+create with the UID of a freed block: 0x805B0003
+create with the UID of a semaphore: 0x805B0003
+size for 9 scenes per frame: 0x805B0003
+create with 9 scenes per frame: 0x805B0003
+size for 0 scenes per frame: 0x805B0003
+create with 0 scenes per frame: 0x805B0003
+size for multisample mode 3: 0x805B0003
+create with multisample mode 3: 0x805B0003
+size for flags 0x4: 0x805B0003
+create with flags 0x4: 0x805B0003
+size for flags 0x10000: 0x805B0003
+create with flags 0x10000: 0x805B0003
+size for a width of 4097: 0x805B0003
+create with a width of 4097: 0x805B0003
+size for a height of 4097: 0x805B0003
+create with a height of 4097: 0x805B0003
+size for a width of 0: 0x805B0003
+size for a height of 0: 0x805B0003
+a block for code: allocate it: 0x00000000
+a block for code: create: 0x805B0017
+a block for code: free the block: 0x00000000
+an uncached block 4 KiB smaller: allocate it: 0x00000000
+an uncached block 4 KiB smaller: create: 0x805B0003
+an uncached block 4 KiB smaller: free the block: 0x00000000
+create with NULL parameters: 0x805B0004
+create with a NULL render target pointer: 0x805B0004
+size with NULL parameters: 0x805B0004
+size with a NULL size pointer: 0x805B0004
+destroy NULL: 0x805B0004
+create with a width of 0: 0x805B0003
+terminate libgxm: 0x00000000
+DONE

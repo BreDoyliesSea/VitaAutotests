@@ -1,0 +1,26 @@
+a 31 character name: create: 0x00000000
+a 31 character name: open by it: 0x00000001
+a 31 character name: open by it and one more character: 0x80024002
+openable first: create the one that isn't openable: 0x00000000
+openable first: the semaphore an open gives: 0x00000001
+openable first: an open once the openable one is deleted: 0x8002450A
+the empty name: create a second openable semaphore with it: 0x80024E02
+the empty name: the semaphore an open gives: 0x00000001
+a thread: make it: 0x00000000
+a thread: create an openable semaphore with its name: 0x00000000
+a thread: the semaphore an open gives: 0x00000001
+a callback: make it: 0x00000000
+a callback: create an openable semaphore with its name: 0x00000000
+a callback: the semaphore an open gives: 0x00000001
+a lightweight mutex: make it: 0x00000000
+a lightweight mutex: create an openable semaphore with its name: 0x00000000
+a lightweight mutex: the semaphore an open gives: 0x00000001
+a memory block: make it: 0x00000000
+a memory block: create an openable semaphore with its name: 0x80024E02
+a memory block: the semaphore an open gives: 0x80028002
+a memory block: an open of the block after: 0x00000001
+a block after a semaphore: create the semaphore: 0x00000000
+a block after a semaphore: make a block with its name: 0x80024E02
+a block after a semaphore: an open of the block: 0x80024508
+a block after a semaphore: the semaphore an open gives: 0x00000001
+DONE

@@ -1,0 +1,44 @@
+allocate the original: 0x00000000
+open it read only: 0x00000000
+semaphore wait that can end at once: 0x80022005
+semaphore wait that can end at once: the words changed: 0x00000000
+semaphore wait that can end at once: the count after: 0x00000000
+mutex lock that can end at once: 0x80022005
+mutex lock that can end at once: the words changed: 0x00000000
+mutex lock that can end at once: its lock count after: 0x00000001
+event flag wait with clear that can end at once: 0x80022005
+event flag wait with clear that can end at once: the words changed: 0x00000000
+event flag wait with clear that can end at once: the pattern after: 0x00000000
+event flag wait with clear that can end at once: the bits it wrote: 0x00000003
+message pipe receive that can end at once: 0x00000000
+message pipe receive that can end at once: the words changed: 0x00000000
+message pipe receive that can end at once: the bytes left in the pipe: 0x00000000
+message pipe send that can end at once: 0x00000000
+message pipe send that can end at once: the words changed: 0x00000000
+message pipe send that can end at once: the bytes in the pipe: 0x00000008
+read lock that can end at once: 0x80022005
+read lock that can end at once: the words changed: 0x00000000
+read lock that can end at once: its lock count after: 0x00000001
+thread end wait that can end at once: 0x80022005
+thread end wait that can end at once: the words changed: 0x00000000
+thread end wait that can end at once: the status it wrote: 0x00000000
+auto reset event wait that can end at once: 0x80022005
+auto reset event wait that can end at once: the words changed: 0x00000000
+auto reset event wait that can end at once: its pattern after: 0x00000004
+wait on several events that can end at once: 0x80022005
+wait on several events that can end at once: the words changed: 0x00000000
+semaphore wait that times out: it ended by itself: 0x00000001
+semaphore wait that times out: 0x80022005
+semaphore wait that times out: the words changed: 0x00000000
+semaphore wait woken by a signal: it ended by itself: 0x00000001
+semaphore wait woken by a signal: 0x80022005
+semaphore wait woken by a signal: the words changed: 0x00000000
+semaphore wait woken by a signal: the count after: 0x00000000
+condition wait that times out: it ended by itself: 0x00000001
+condition wait that times out: 0x80022005
+condition wait that times out: the words changed: 0x00000000
+condition wait that times out: the waiter holds the mutex after: 0x00000001
+lightweight mutex lock that can end at once: 0x00000000
+lightweight mutex lock that can end at once: the words changed: 0x00000000
+lightweight mutex lock that can end at once: its lock count after: 0x00000001
+DONE

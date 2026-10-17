@@ -1,0 +1,163 @@
+initialize libgxm: 0x00000000
+map the block: 0x00000000
+color surface: the valid surface: 0x00000000
+color surface: the valid surface: it keeps the data: 0x00000001
+color surface: the valid surface: it keeps the stride: 0x00000001
+depth stencil surface: the valid surface: 0x00000000
+depth stencil surface: the valid surface: it keeps the data: 0x00000001
+depth stencil surface: the valid surface: it keeps the stride: 0x00000001
+color surface: in a block that isn't mapped: 0x00000000
+color surface: in a block that isn't mapped: it keeps the data: 0x00000001
+color surface: in a block that isn't mapped: it keeps the stride: 0x00000001
+depth stencil surface: in a block that isn't mapped: 0x00000000
+depth stencil surface: in a block that isn't mapped: it keeps the data: 0x00000001
+depth stencil surface: in a block that isn't mapped: it keeps the stride: 0x00000001
+color surface: in a block mapped with READ only: 0x00000000
+color surface: in a block mapped with READ only: it keeps the data: 0x00000001
+color surface: in a block mapped with READ only: it keeps the stride: 0x00000001
+depth stencil surface: in a block mapped with READ only: 0x00000000
+depth stencil surface: in a block mapped with READ only: it keeps the data: 0x00000001
+depth stencil surface: in a block mapped with READ only: it keeps the stride: 0x00000001
+color surface: in a USER_MAIN_R block: 0x00000000
+color surface: in a USER_MAIN_R block: it keeps the data: 0x00000001
+color surface: in a USER_MAIN_R block: it keeps the stride: 0x00000001
+depth stencil surface: in a USER_MAIN_R block: 0x00000000
+depth stencil surface: in a USER_MAIN_R block: it keeps the data: 0x00000001
+depth stencil surface: in a USER_MAIN_R block: it keeps the stride: 0x00000001
+color surface: in a block for code: 0x00000000
+color surface: in a block for code: it keeps the data: 0x00000001
+color surface: in a block for code: it keeps the stride: 0x00000001
+depth stencil surface: in a block for code: 0x00000000
+depth stencil surface: in a block for code: it keeps the data: 0x00000001
+depth stencil surface: in a block for code: it keeps the stride: 0x00000001
+color surface: on the stack: 0x00000000
+color surface: on the stack: it keeps the data: 0x00000001
+color surface: on the stack: it keeps the stride: 0x00000001
+depth stencil surface: on the stack: 0x00000000
+depth stencil surface: on the stack: it keeps the data: 0x00000001
+depth stencil surface: on the stack: it keeps the stride: 0x00000001
+color surface: data 1 bytes in: 0x805B0003
+depth stencil surface: data 1 bytes in: 0x805B0005
+color surface: data 2 bytes in: 0x805B0003
+depth stencil surface: data 2 bytes in: 0x805B0005
+color surface: data 4 bytes in: 0x00000000
+color surface: data 4 bytes in: it keeps the data: 0x00000001
+color surface: data 4 bytes in: it keeps the stride: 0x00000001
+depth stencil surface: data 4 bytes in: 0x805B0005
+color surface: data 8 bytes in: 0x00000000
+color surface: data 8 bytes in: it keeps the data: 0x00000001
+color surface: data 8 bytes in: it keeps the stride: 0x00000001
+depth stencil surface: data 8 bytes in: 0x805B0005
+color surface: data 16 bytes in: 0x00000000
+color surface: data 16 bytes in: it keeps the data: 0x00000001
+color surface: data 16 bytes in: it keeps the stride: 0x00000001
+depth stencil surface: data 16 bytes in: 0x00000000
+depth stencil surface: data 16 bytes in: it keeps the data: 0x00000001
+depth stencil surface: data 16 bytes in: it keeps the stride: 0x00000001
+color surface: data 32 bytes in: 0x00000000
+color surface: data 32 bytes in: it keeps the data: 0x00000001
+color surface: data 32 bytes in: it keeps the stride: 0x00000001
+depth stencil surface: data 32 bytes in: 0x00000000
+depth stencil surface: data 32 bytes in: it keeps the data: 0x00000001
+depth stencil surface: data 32 bytes in: it keeps the stride: 0x00000001
+color surface: data 64 bytes in: 0x00000000
+color surface: data 64 bytes in: it keeps the data: 0x00000001
+color surface: data 64 bytes in: it keeps the stride: 0x00000001
+depth stencil surface: data 64 bytes in: 0x00000000
+depth stencil surface: data 64 bytes in: it keeps the data: 0x00000001
+depth stencil surface: data 64 bytes in: it keeps the stride: 0x00000001
+depth stencil surface: stencil data 1 bytes past its place: 0x805B0005
+depth stencil surface: stencil data 4 bytes past its place: 0x805B0005
+depth stencil surface: stencil data 16 bytes past its place: 0x00000000
+depth stencil surface: stencil data 16 bytes past its place: it keeps the data: 0x00000001
+depth stencil surface: stencil data 16 bytes past its place: it keeps the stride: 0x00000001
+color surface: in the block's last 4 KiB: 0x00000000
+color surface: in the block's last 4 KiB: it keeps the data: 0x00000001
+color surface: in the block's last 4 KiB: it keeps the stride: 0x00000001
+depth stencil surface: in the block's last 4 KiB: 0x00000000
+depth stencil surface: in the block's last 4 KiB: it keeps the data: 0x00000001
+depth stencil surface: in the block's last 4 KiB: it keeps the stride: 0x00000001
+color surface: stride 961: 0x805B0005
+color surface: stride 962: 0x00000000
+color surface: stride 962: it keeps the data: 0x00000001
+color surface: stride 962: it keeps the stride: 0x00000001
+color surface: stride 964: 0x00000000
+color surface: stride 964: it keeps the data: 0x00000001
+color surface: stride 964: it keeps the stride: 0x00000001
+color surface: stride 968: 0x00000000
+color surface: stride 968: it keeps the data: 0x00000001
+color surface: stride 968: it keeps the stride: 0x00000001
+color surface: stride 1024: 0x00000000
+color surface: stride 1024: it keeps the data: 0x00000001
+color surface: stride 1024: it keeps the stride: 0x00000001
+color surface: stride 959: 0x805B0005
+color surface: stride 0: 0x805B0003
+color surface: 0 by 544: 0x805B0003
+color surface: 960 by 0: 0x805B0003
+color surface: 4096 by 4096 in the 4 MiB block: 0x00000000
+color surface: 4096 by 4096 in the 4 MiB block: it keeps the data: 0x00000001
+color surface: 4096 by 4096 in the 4 MiB block: it keeps the stride: 0x00000001
+color surface: 4097 by 544: 0x805B0003
+color surface: 960 by 544 swizzled: 0x805B0003
+color surface: 512 by 512 swizzled: 0x00000000
+color surface: 512 by 512 swizzled: it keeps the data: 0x00000001
+color surface: 512 by 512 swizzled: it keeps the stride: 0x00000001
+color surface: 960 by 544 tiled: 0x00000000
+color surface: 960 by 544 tiled: it keeps the data: 0x00000001
+color surface: 960 by 544 tiled: it keeps the stride: 0x00000001
+color surface: 961 by 544 tiled: 0x00000000
+color surface: 961 by 544 tiled: it keeps the data: 0x00000001
+color surface: 961 by 544 tiled: it keeps the stride: 0x00000001
+color surface: init one to set its data: 0x00000000
+color surface: set data 2 bytes in: 0x805B0003
+color surface: set data 4 bytes in: 0x00000000
+color surface: set data 4 bytes in: it keeps the data: 0x00000001
+color surface: set data 16 bytes in: 0x00000000
+color surface: set data 16 bytes in: it keeps the data: 0x00000001
+depth stencil surface: stride 0: 0x805B0003
+depth stencil surface: stride 16: 0x805B0003
+depth stencil surface: stride 31: 0x805B0003
+depth stencil surface: stride 32: 0x00000000
+depth stencil surface: stride 32: it keeps the data: 0x00000001
+depth stencil surface: stride 32: it keeps the stride: 0x00000001
+depth stencil surface: stride 48: 0x805B0003
+depth stencil surface: stride 64: 0x00000000
+depth stencil surface: stride 64: it keeps the data: 0x00000001
+depth stencil surface: stride 64: it keeps the stride: 0x00000001
+depth stencil surface: stride 961: 0x805B0003
+depth stencil surface: stride 992: 0x00000000
+depth stencil surface: stride 992: it keeps the data: 0x00000001
+depth stencil surface: stride 992: it keeps the stride: 0x00000001
+depth stencil surface: stride 4096: 0x00000000
+depth stencil surface: stride 4096: it keeps the data: 0x00000001
+depth stencil surface: stride 4096: it keeps the stride: 0x00000001
+depth stencil surface: D16: 0x00000000
+depth stencil surface: D16: it keeps the data: 0x00000001
+depth stencil surface: D16: it keeps the stride: 0x00000001
+depth stencil surface: DF32: 0x00000000
+depth stencil surface: DF32: it keeps the data: 0x00000001
+depth stencil surface: DF32: it keeps the stride: 0x00000001
+depth stencil surface: S8 with NULL depth data: 0x00000000
+depth stencil surface: S8 with NULL depth data: it keeps the data: 0x00000001
+depth stencil surface: S8 with NULL depth data: it keeps the stride: 0x00000001
+depth stencil surface: DF32_S8 with NULL stencil data: 0x805B0003
+depth stencil surface: S8D24 with NULL stencil data: 0x00000000
+depth stencil surface: S8D24 with NULL stencil data: it keeps the data: 0x00000001
+depth stencil surface: S8D24 with NULL stencil data: it keeps the stride: 0x00000001
+depth stencil surface: linear: 0x00000000
+depth stencil surface: linear: it keeps the data: 0x00000001
+depth stencil surface: linear: it keeps the stride: 0x00000001
+color surface: where a block was freed: 0x00000000
+color surface: where a block was freed: it keeps the data: 0x00000001
+color surface: where a block was freed: it keeps the stride: 0x00000001
+depth stencil surface: where a block was freed: 0x00000000
+depth stencil surface: where a block was freed: it keeps the data: 0x00000001
+depth stencil surface: where a block was freed: it keeps the stride: 0x00000001
+color surface: NULL data: 0x00000000
+color surface: NULL data: it keeps the data: 0x00000001
+color surface: NULL data: it keeps the stride: 0x00000001
+depth stencil surface: NULL depth and stencil data: 0x805B0003
+color surface: a NULL surface: 0x805B0004
+depth stencil surface: a NULL surface: 0x805B0004
+terminate libgxm: 0x00000000
+DONE

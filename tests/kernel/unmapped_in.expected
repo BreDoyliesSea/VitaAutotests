@@ -1,0 +1,50 @@
+find the base of a freed block: 0x80022007
+allocate a block with its name there: 0x80022005
+allocate a block with its option struct there: 0x80022005
+open a block by a name there: 0x80022005
+semaphore: create with the name there: 0x80022005
+mutex: create with the name there: 0x80022005
+event flag: create with the name there: 0x80022005
+condition variable: create with the name there: 0x80022005
+reader/writer lock: create with the name there: 0x80022005
+message pipe: create with the name there: 0x80022005
+thread: create with the name there: 0x80022005
+timer: create with the name there: 0x80022005
+simple event: create with the name there: 0x80022005
+callback: create with the name there: 0x80022005
+semaphore: open by a name there: 0x80022005
+semaphore: create with the option struct there: 0x80022005
+mutex: create with the option struct there: 0x80022005
+event flag: create with the option struct there: 0x80022005
+condition variable: create with the option struct there: 0x80022005
+reader/writer lock: create with the option struct there: 0x80022005
+message pipe: create with the option struct there: 0x80022005
+thread: create with the option struct there: 0x80022005
+send a message from there: 0x80022005
+send a message from there: the size it sent: 0x0000DEAD
+send a message from there: the bytes in the pipe: 0x00000000
+try send a message from there: 0x80022005
+try send a message from there: the bytes in the pipe: 0x00000000
+send a vector from there: 0x80022005
+send a vector from there: the size it sent: 0x0000DEAD
+send a vector from there: the bytes in the pipe: 0x00000000
+start a thread with its arguments there: 0x80022005
+create a thread with its entry there: 0x80020006
+set the timer's time from there: 0x80022005
+set a timer event with the interval there: 0x80022005
+wait on several events listed there: 0x80022005
+semaphore wait that can end at once, the timeout there: 0x80022005
+semaphore wait that can end at once, the timeout there: the count after: 0x00000001
+mutex lock that can end at once, the timeout there: 0x80022005
+mutex lock that can end at once, the timeout there: its lock count after: 0x00000000
+event flag wait with clear that can end at once, the timeout there: 0x80022005
+event flag wait with clear that can end at once, the timeout there: the pattern after: 0x00000003
+message pipe receive that can end at once, the timeout there: 0x80022005
+message pipe receive that can end at once, the timeout there: the bytes left: 0x00000008
+thread end wait that can end at once, the timeout there: 0x80022005
+semaphore wait that can't end at once, the timeout there: it ended by itself: 0x00000001
+semaphore wait that can't end at once, the timeout there: 0x80022005
+lightweight mutex lock that can end at once, the timeout there: 0x00000000
+lightweight mutex lock that can end at once, the timeout there: its lock count after: 0x00000001
+lightweight mutex: create with the name there: 0x80022005
+DONE

@@ -1,0 +1,28 @@
+a thread before its start: 0x00000001
+a thread while it waits: 0x00000001
+a thread after it ended: 0x00000001
+a thread after it was deleted: 0x80024501
+a new thread gets the deleted thread's UID: 0x00000000
+a thread that ended with sceKernelExitDeleteThread: 0x80024501
+a memory block: allocate it: 0x00000000
+a memory block: 0x80020005
+an opened memory block: open it: 0x00000000
+an opened memory block: 0x80020005
+an opened memory block after it is closed: 0x80024501
+a memory block after it is freed: 0x80024501
+a callback after it is deleted: 0x80024501
+a callback whose thread ended: it was made: 0x00000000
+a callback whose thread ended: 0x80024501
+a semaphore a deleted thread made: it was made: 0x00000000
+a semaphore a deleted thread made: its class: 0x00000002
+a semaphore a deleted thread made: signal through it: 0x00000000
+a semaphore a deleted thread made: poll through it: 0x00000000
+an openable semaphore a deleted thread made: it was made: 0x00000000
+an openable semaphore a deleted thread made: its class: 0x00000002
+an openable semaphore a deleted thread made: signal through it: 0x00000000
+an openable semaphore a deleted thread made: poll through it: 0x00000000
+a UID a deleted thread opened: it was made: 0x00000000
+a UID a deleted thread opened: its class: 0x00000002
+a UID a deleted thread opened: signal through it: 0x00000000
+a UID a deleted thread opened: poll through it: 0x00000000
+DONE

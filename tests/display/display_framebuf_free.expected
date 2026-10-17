@@ -1,0 +1,12 @@
+set the valid framebuffer: 0x00000000
+wait for it: 0x00000000
+allocate another block: 0x00000000
+set a framebuffer in it: 0x00000000
+wait for it: 0x00000000
+the display reports it: 0x00000001
+free its block while the display shows it: 0x00000000
+after the free: the display still reports it: 0x00000001
+set the valid framebuffer again: 0x00000000
+wait for it: 0x00000000
+the display reports the valid framebuffer: 0x00000001
+DONE

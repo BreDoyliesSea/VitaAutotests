@@ -1,0 +1,59 @@
+allocate the original: 0x00000000
+open it read only: 0x00000000
+thread: make it: 0x00000000
+thread: info into it: 0x80022005
+thread: info into it: the words changed: 0x00000000
+thread: it still works after: 0x00000000
+semaphore: make it: 0x00000000
+semaphore: info into it: 0x80022005
+semaphore: info into it: the words changed: 0x00000000
+semaphore: it still works after: 0x00000000
+mutex: make it: 0x00000000
+mutex: info into it: 0x80022005
+mutex: info into it: the words changed: 0x00000000
+mutex: it still works after: 0x00000000
+event flag: make it: 0x00000000
+event flag: info into it: 0x80022005
+event flag: info into it: the words changed: 0x00000000
+event flag: it still works after: 0x00000000
+condition variable: make it: 0x00000000
+condition variable: info into it: 0x80022005
+condition variable: info into it: the words changed: 0x00000000
+condition variable: it still works after: 0x00000000
+reader/writer lock: make it: 0x00000000
+reader/writer lock: info into it: 0x80022005
+reader/writer lock: info into it: the words changed: 0x00000000
+reader/writer lock: it still works after: 0x00000000
+message pipe: make it: 0x00000000
+message pipe: info into it: 0x80022005
+message pipe: info into it: the words changed: 0x00000000
+message pipe: it still works after: 0x00000000
+callback: make it: 0x00000000
+callback: info into it: 0x80022005
+callback: info into it: the words changed: 0x00000000
+callback: it still works after: 0x00000000
+simple event: make it: 0x00000000
+simple event: info into it: 0x80022005
+simple event: info into it: the words changed: 0x00000000
+simple event: it still works after: 0x00000000
+timer: make it: 0x00000000
+timer: info into it: 0x80022005
+timer: info into it: the words changed: 0x00000000
+timer: it still works after: 0x00000000
+lightweight mutex: make it: 0x00000000
+lightweight mutex: info into it: 0x80022005
+lightweight mutex: info into it: the words changed: 0x00000000
+lightweight mutex: it still works after: 0x00000000
+lightweight condition variable: make it: 0x00000000
+lightweight condition variable: info into it: 0x80022005
+lightweight condition variable: info into it: the words changed: 0x00000000
+lightweight condition variable: it still works after: 0x00000000
+run status into it: 0x80020006
+run status into it: the words changed: 0x00000000
+system info into it: 0x80022005
+system info into it: the words changed: 0x00000000
+semaphore, size 0x0: info into it: 0x00000000
+semaphore, size 0x0: info into it: the words changed: 0x00000000
+semaphore, size 0x4: info into it: 0x80022005
+semaphore, size 0x4: info into it: the words changed: 0x00000000
+DONE
