@@ -1,0 +1,15 @@
+control: W's result: 0x00000000
+control: the status W got: 0x00000111
+started again: W's result: 0x00000000
+started again: the status W got: 0x00000111
+started again and ended again: W's result: 0x00000000
+started again and ended again: the status W got: 0x00000111
+deleted: delete T: 0x00000000
+deleted: W's result: 0x00000000
+deleted: the status W got: 0x00000111
+W2 waits again after a start: W2's first result: 0x00000000
+W2 waits again after a start: the status it got: 0x00000111
+W2 waits again after a start: W2 waits again for the second run: 0x00000001
+W2 waits again after a start: W2's second result: 0x00000000
+W2 waits again after a start: the status it got: 0x00000222
+DONE

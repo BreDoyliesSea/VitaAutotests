@@ -1,0 +1,190 @@
+main: find: 0x80024501
+main: info: 0x00000000
+main: the block holds it: 0x00000001
+main: its type: 0x0C20D050
+main: its memory type: 0x000000D0
+main: its access: 0x00000004
+main: the region of its base: 0x00000008
+main: its base is 4 KiB aligned: 0x00000001
+main: its size is a multiple of 4 KiB: 0x00000001
+another function: find: 0x80024501
+another function: info: 0x00000000
+another function: the block holds it: 0x00000001
+another function: its type: 0x0C20D050
+another function: its memory type: 0x000000D0
+another function: its access: 0x00000004
+another function: the region of its base: 0x00000008
+another function: its base is 4 KiB aligned: 0x00000001
+another function: its size is a multiple of 4 KiB: 0x00000001
+malloc: find: 0x80024501
+malloc: info: 0x00000000
+malloc: the block holds it: 0x00000001
+malloc: its type: 0x0C20D050
+malloc: its memory type: 0x000000D0
+malloc: its access: 0x00000004
+malloc: the region of its base: 0x00000008
+malloc: its base is 4 KiB aligned: 0x00000001
+malloc: its size is a multiple of 4 KiB: 0x00000001
+_init: find: 0x80024501
+_init: info: 0x00000000
+_init: the block holds it: 0x00000001
+_init: its type: 0x0C20D050
+_init: its memory type: 0x000000D0
+_init: its access: 0x00000004
+_init: the region of its base: 0x00000008
+_init: its base is 4 KiB aligned: 0x00000001
+_init: its size is a multiple of 4 KiB: 0x00000001
+a const string: find: 0x80024501
+a const string: info: 0x00000000
+a const string: the block holds it: 0x00000001
+a const string: its type: 0x0C20D050
+a const string: its memory type: 0x000000D0
+a const string: its access: 0x00000004
+a const string: the region of its base: 0x00000008
+a const string: its base is 4 KiB aligned: 0x00000001
+a const string: its size is a multiple of 4 KiB: 0x00000001
+another const string: find: 0x80024501
+another const string: info: 0x00000000
+another const string: the block holds it: 0x00000001
+another const string: its type: 0x0C20D050
+another const string: its memory type: 0x000000D0
+another const string: its access: 0x00000004
+another const string: the region of its base: 0x00000008
+another const string: its base is 4 KiB aligned: 0x00000001
+another const string: its size is a multiple of 4 KiB: 0x00000001
+the stub of sceKernelGetTLSAddr: find: 0x80024501
+the stub of sceKernelGetTLSAddr: info: 0x00000000
+the stub of sceKernelGetTLSAddr: the block holds it: 0x00000001
+the stub of sceKernelGetTLSAddr: its type: 0x0C20D050
+the stub of sceKernelGetTLSAddr: its memory type: 0x000000D0
+the stub of sceKernelGetTLSAddr: its access: 0x00000004
+the stub of sceKernelGetTLSAddr: the region of its base: 0x00000008
+the stub of sceKernelGetTLSAddr: its base is 4 KiB aligned: 0x00000001
+the stub of sceKernelGetTLSAddr: its size is a multiple of 4 KiB: 0x00000001
+the stub of sceKernelFindMemBlockByAddr: find: 0x80024501
+the stub of sceKernelFindMemBlockByAddr: info: 0x00000000
+the stub of sceKernelFindMemBlockByAddr: the block holds it: 0x00000001
+the stub of sceKernelFindMemBlockByAddr: its type: 0x0C20D050
+the stub of sceKernelFindMemBlockByAddr: its memory type: 0x000000D0
+the stub of sceKernelFindMemBlockByAddr: its access: 0x00000004
+the stub of sceKernelFindMemBlockByAddr: the region of its base: 0x00000008
+the stub of sceKernelFindMemBlockByAddr: its base is 4 KiB aligned: 0x00000001
+the stub of sceKernelFindMemBlockByAddr: its size is a multiple of 4 KiB: 0x00000001
+an initialized global: find: 0x80024501
+an initialized global: info: 0x00000000
+an initialized global: the block holds it: 0x00000001
+an initialized global: its type: 0x0C20D060
+an initialized global: its memory type: 0x000000D0
+an initialized global: its access: 0x00000006
+an initialized global: the region of its base: 0x00000008
+an initialized global: its base is 4 KiB aligned: 0x00000001
+an initialized global: its size is a multiple of 4 KiB: 0x00000001
+another initialized global: find: 0x80024501
+another initialized global: info: 0x00000000
+another initialized global: the block holds it: 0x00000001
+another initialized global: its type: 0x0C20D060
+another initialized global: its memory type: 0x000000D0
+another initialized global: its access: 0x00000006
+another initialized global: the region of its base: 0x00000008
+another initialized global: its base is 4 KiB aligned: 0x00000001
+another initialized global: its size is a multiple of 4 KiB: 0x00000001
+a zero initialized global: find: 0x80024501
+a zero initialized global: info: 0x00000000
+a zero initialized global: the block holds it: 0x00000001
+a zero initialized global: its type: 0x0C20D060
+a zero initialized global: its memory type: 0x000000D0
+a zero initialized global: its access: 0x00000006
+a zero initialized global: the region of its base: 0x00000008
+a zero initialized global: its base is 4 KiB aligned: 0x00000001
+a zero initialized global: its size is a multiple of 4 KiB: 0x00000001
+another zero initialized global: find: 0x80024501
+another zero initialized global: info: 0x00000000
+another zero initialized global: the block holds it: 0x00000001
+another zero initialized global: its type: 0x0C20D060
+another zero initialized global: its memory type: 0x000000D0
+another zero initialized global: its access: 0x00000006
+another zero initialized global: the region of its base: 0x00000008
+another zero initialized global: its base is 4 KiB aligned: 0x00000001
+another zero initialized global: its size is a multiple of 4 KiB: 0x00000001
+a local on the main thread's stack: find: 0x80024501
+a local on the main thread's stack: info: 0x00000000
+a local on the main thread's stack: the block holds it: 0x00000001
+a local on the main thread's stack: its type: 0x0C20D060
+a local on the main thread's stack: its memory type: 0x000000D0
+a local on the main thread's stack: its access: 0x00000006
+a local on the main thread's stack: the region of its base: 0x00000008
+a local on the main thread's stack: its base is 4 KiB aligned: 0x00000001
+a local on the main thread's stack: its size is a multiple of 4 KiB: 0x00000001
+a local on a new thread's stack: find: 0x80024501
+a local on a new thread's stack: info: 0x00000000
+a local on a new thread's stack: the block holds it: 0x00000001
+a local on a new thread's stack: its type: 0x0C20D060
+a local on a new thread's stack: its memory type: 0x000000D0
+a local on a new thread's stack: its access: 0x00000006
+a local on a new thread's stack: the region of its base: 0x00000008
+a local on a new thread's stack: its base is 4 KiB aligned: 0x00000001
+a local on a new thread's stack: its size is a multiple of 4 KiB: 0x00000001
+TLS slot 0 of the main thread: find: 0x80024501
+TLS slot 0 of the main thread: info: 0x00000000
+TLS slot 0 of the main thread: the block holds it: 0x00000001
+TLS slot 0 of the main thread: its type: 0x0C20D060
+TLS slot 0 of the main thread: its memory type: 0x000000D0
+TLS slot 0 of the main thread: its access: 0x00000006
+TLS slot 0 of the main thread: the region of its base: 0x00000008
+TLS slot 0 of the main thread: its base is 4 KiB aligned: 0x00000001
+TLS slot 0 of the main thread: its size is a multiple of 4 KiB: 0x00000001
+memory from malloc: find: 0x00000000
+memory from malloc: the base of the UID: 0x00000000
+memory from malloc: that base is the mapped base: 0x00000001
+memory from malloc: info: 0x00000000
+memory from malloc: the block holds it: 0x00000001
+memory from malloc: its type: 0x0C20D060
+memory from malloc: its memory type: 0x000000D0
+memory from malloc: its access: 0x00000006
+memory from malloc: the region of its base: 0x00000008
+memory from malloc: its base is 4 KiB aligned: 0x00000001
+memory from malloc: its size is a multiple of 4 KiB: 0x00000001
+another allocation from malloc: find: 0x00000000
+another allocation from malloc: the base of the UID: 0x00000000
+another allocation from malloc: that base is the mapped base: 0x00000001
+another allocation from malloc: info: 0x00000000
+another allocation from malloc: the block holds it: 0x00000001
+another allocation from malloc: its type: 0x0C20D060
+another allocation from malloc: its memory type: 0x000000D0
+another allocation from malloc: its access: 0x00000006
+another allocation from malloc: the region of its base: 0x00000008
+another allocation from malloc: its base is 4 KiB aligned: 0x00000001
+another allocation from malloc: its size is a multiple of 4 KiB: 0x00000001
+memory from malloc: its block's size is a whole number of MiB: 0x00000001
+main and another function share a block: 0x00000001
+main and malloc share a block: 0x00000001
+main and _init share a block: 0x00000001
+main and a const string share a block: 0x00000001
+the two const strings share a block: 0x00000001
+main and the stubs share a block: 0x00000001
+the two initialized globals share a block: 0x00000001
+the two zero initialized globals share a block: 0x00000001
+an initialized and a zero initialized global share a block: 0x00000001
+main and a global share a block: 0x00000000
+the two allocations from malloc share a block: 0x00000001
+an allocation from malloc and a global share a block: 0x00000000
+the main thread's local and the TLS share a block: 0x00000000
+the main thread's local is in the block of its stack base: 0x00000001
+the new thread's local is in the block of its stack base: 0x00000001
+the two threads' locals share a block: 0x00000000
+the code block starts at _init: 0x00000001
+the data's first byte is in the block of a global: 0x00000001
+the data block starts at the data's first byte: 0x00000001
+sceKernelGetTLSAddr: what the stub holds: 0x00000001
+sceKernelGetTLSAddr: the function the stub jumps to: find: 0x80024501
+sceKernelGetTLSAddr: the function the stub jumps to: info: 0x00000000
+sceKernelGetTLSAddr: the function the stub jumps to: the block holds it: 0x00000001
+sceKernelGetTLSAddr: the function the stub jumps to: its type: 0x0320D050
+sceKernelGetTLSAddr: the function the stub jumps to: its memory type: 0x000000D0
+sceKernelGetTLSAddr: the function the stub jumps to: its access: 0x00000004
+sceKernelGetTLSAddr: the function the stub jumps to: the region of its base: 0x0000000E
+sceKernelGetTLSAddr: the function the stub jumps to: its base is 4 KiB aligned: 0x00000001
+sceKernelGetTLSAddr: the function the stub jumps to: its size is a multiple of 4 KiB: 0x00000001
+sceKernelGetTLSAddr: the function the stub jumps to: in the code block: 0x00000000
+sceKernelFindMemBlockByAddr: what the stub holds: 0x00000002
+DONE

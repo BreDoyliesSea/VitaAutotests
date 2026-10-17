@@ -1,0 +1,16 @@
+4 KiB blocks: at least 64 are made: 0x00000001
+4 KiB blocks: at least 256 are made: 0x00000001
+4 KiB blocks: all 512 are made: 0x00000001
+4 KiB blocks: the error of the one that fails: 0x00000000
+4 KiB blocks: each has a UID of its own: 0x00000001
+4 KiB blocks: each has a base of its own and no two overlap: 0x00000001
+4 KiB blocks: the measure finds room with them all made: 0x00000001
+4 KiB blocks: they take 4 KiB of main memory each: 0x00000000
+4 KiB blocks: every free works: 0x00000001
+4 KiB blocks: the main free size is back after the frees: 0x00000000
+named blocks: every block is made: 0x00000001
+named blocks: every name opens: 0x00000001
+named blocks: each opened block reads the index of its name: 0x00000001
+named blocks: every close works: 0x00000001
+named blocks: every free works: 0x00000001
+DONE

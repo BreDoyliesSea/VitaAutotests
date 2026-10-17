@@ -1,0 +1,57 @@
+priority queue, B raised above A: waiters done before the change: 0x00000000
+priority queue, B raised above A: the change: 0x00000000
+priority queue, B raised above A: the count right after the change: 0x00000001
+priority queue, B raised above A, after the change: A got its count: 0x00000000
+priority queue, B raised above A, after the change: B got its count: 0x00000001
+priority queue, B raised above A: A's result: 0x80028006
+priority queue, B raised above A: B's result: 0x00000000
+priority queue, A set to its own priority: waiters done before the change: 0x00000000
+priority queue, A set to its own priority: the change: 0x00000000
+priority queue, A set to its own priority: the count right after the change: 0x00000001
+priority queue, A set to its own priority, after the change: A got its count: 0x00000000
+priority queue, A set to its own priority, after the change: B got its count: 0x00000001
+priority queue, A set to its own priority: A's result: 0x80028006
+priority queue, A set to its own priority: B's result: 0x00000000
+priority queue, A drops below B and C: waiters done before the change: 0x00000000
+priority queue, A drops below B and C: the change: 0x00000000
+priority queue, A drops below B and C: the count right after the change: 0x00000000
+priority queue, A drops below B and C, after the change: A got its count: 0x00000000
+priority queue, A drops below B and C, after the change: B got its count: 0x00000001
+priority queue, A drops below B and C, after the change: C got its count: 0x00000001
+priority queue, A drops below B and C: A's result: 0x80028006
+priority queue, A drops below B and C: B's result: 0x00000000
+priority queue, A drops below B and C: C's result: 0x00000000
+FIFO queue, A drops below B: waiters done before the change: 0x00000000
+FIFO queue, A drops below B: the change: 0x00000000
+FIFO queue, A drops below B: the count right after the change: 0x00000002
+FIFO queue, A drops below B, after the change: A got its count: 0x00000000
+FIFO queue, A drops below B, after the change: B got its count: 0x00000000
+FIFO queue, A drops below B: A's result: 0x80028006
+FIFO queue, A drops below B: B's result: 0x80028006
+FIFO queue, B raised above A: waiters done before the change: 0x00000000
+FIFO queue, B raised above A: the change: 0x00000000
+FIFO queue, B raised above A: the count right after the change: 0x00000002
+FIFO queue, B raised above A, after the change: A got its count: 0x00000000
+FIFO queue, B raised above A, after the change: B got its count: 0x00000000
+FIFO queue, B raised above A: A's result: 0x80028006
+FIFO queue, B raised above A: B's result: 0x80028006
+FIFO queue, A set to its own priority: waiters done before the change: 0x00000000
+FIFO queue, A set to its own priority: the change: 0x00000000
+FIFO queue, A set to its own priority: the count right after the change: 0x00000002
+FIFO queue, A set to its own priority, after the change: A got its count: 0x00000000
+FIFO queue, A set to its own priority, after the change: B got its count: 0x00000000
+FIFO queue, A set to its own priority: A's result: 0x80028006
+FIFO queue, A set to its own priority: B's result: 0x80028006
+priority queue, A drops below B that needs 3: waiters done before the change: 0x00000000
+priority queue, A drops below B that needs 3: the count right after the change: 0x00000002
+priority queue, A drops below B that needs 3, after the change: A got its count: 0x00000000
+priority queue, A drops below B that needs 3, after the change: B got its count: 0x00000000
+priority queue, A drops below B that needs 3, after the change: C got its count: 0x00000000
+priority queue, then C raised above B: the count right after the change: 0x00000001
+priority queue, then C raised above B, after the change: A got its count: 0x00000000
+priority queue, then C raised above B, after the change: B got its count: 0x00000000
+priority queue, then C raised above B, after the change: C got its count: 0x00000001
+priority queue, then C raised above B: A's result: 0x80028006
+priority queue, then C raised above B: B's result: 0x80028006
+priority queue, then C raised above B: C's result: 0x00000000
+DONE

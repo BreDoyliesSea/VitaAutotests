@@ -1,0 +1,38 @@
+U at 0x78, T lowered to 0x78: the change: 0x00000000
+U at 0x78, T lowered to 0x78: T's status: 0x00000004
+U at 0x78, T lowered to 0x78: T's current CPU: 0x00000000
+U at 0x78, T lowered to 0x78: U's status: 0x00000004
+U at 0x78, T lowered to 0x78: U's current CPU: 0x00000000
+U at 0x78, T lowered to 0x78: the first to run, 1 for T and 2 for U: 0x00000001
+U at 0x78, T lowered to 0x78: the core T ran on: 0x00000000
+U at 0x68, T raised to 0x68: the change: 0x00000000
+U at 0x68, T raised to 0x68: T's status: 0x00000004
+U at 0x68, T raised to 0x68: T's current CPU: 0x00000000
+U at 0x68, T raised to 0x68: U's status: 0x00000004
+U at 0x68, T raised to 0x68: U's current CPU: 0x00000000
+U at 0x68, T raised to 0x68: the first to run, 1 for T and 2 for U: 0x00000001
+U at 0x68, T raised to 0x68: the core T ran on: 0x00000000
+U at 0x70, T lowered to 0x78 and back: the change: 0x00000000
+U at 0x70, T lowered to 0x78 and back: T's status: 0x00000004
+U at 0x70, T lowered to 0x78 and back: T's current CPU: 0x00000000
+U at 0x70, T lowered to 0x78 and back: U's status: 0x00000004
+U at 0x70, T lowered to 0x78 and back: U's current CPU: 0x00000000
+U at 0x70, T lowered to 0x78 and back: the first to run, 1 for T and 2 for U: 0x00000001
+U at 0x70, T lowered to 0x78 and back: the core T ran on: 0x00000000
+U at 0xA0, T lowered to 0xA0: the change: 0x00000000
+U at 0xA0, T lowered to 0xA0: T's status: 0x00000002
+U at 0xA0, T lowered to 0xA0: T's current CPU: 0x00007FFF
+U at 0xA0, T lowered to 0xA0: U's status: 0x00000002
+U at 0xA0, T lowered to 0xA0: U's current CPU: 0x00007FFF
+U at 0xA0, T lowered to 0xA0: the first to run, 1 for T and 2 for U: 0x00000002
+U at 0xA0, T lowered to 0xA0: the core T ran on: 0x00000000
+U at 0x70 on core 2, T moved to core 2: the change: 0x00010000
+U at 0x70 on core 2, T moved to core 2: T's status: 0x00000004
+U at 0x70 on core 2, T moved to core 2: T's current CPU: 0x00000002
+U at 0x70 on core 2, T moved to core 2: U's status: 0x00000004
+U at 0x70 on core 2, T moved to core 2: U's current CPU: 0x00000002
+U at 0x70 on core 2, T moved to core 2: T ran while the gate of core 0 held it: 0x00000001
+U at 0x70 on core 2, T moved to core 2: T only ran once given every core: 0x00000000
+U at 0x70 on core 2, T moved to core 2: the first to run, 1 for T and 2 for U: 0x00000002
+U at 0x70 on core 2, T moved to core 2: the core T ran on: 0x00000002
+DONE

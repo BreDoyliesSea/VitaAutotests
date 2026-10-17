@@ -1,0 +1,39 @@
+one waiter, waiting on the condition: A's wait type: 0x00000100
+one waiter, waiting on the condition: A's wait ID is the condition: 0x00000001
+one waiter, waiting on the condition: A's wait ID is the mutex: 0x00000000
+one waiter, waiting on the condition: the mutex's waiters: 0x00000000
+one waiter, waiting on the condition: the condition's waiters: 0x00000001
+one waiter, signaled: A's wait type: 0x00000200
+one waiter, signaled: A's wait ID is the condition: 0x00000000
+one waiter, signaled: A's wait ID is the mutex: 0x00000001
+one waiter, signaled: the mutex's waiters: 0x00000001
+one waiter, signaled: the condition's waiters: 0x00000000
+one waiter: A drops: 0x00000000
+one waiter, after the drop: A's wait type: 0x00000200
+one waiter, after the drop: A's wait ID is the condition: 0x00000000
+one waiter, after the drop: A's wait ID is the mutex: 0x00000001
+one waiter, after the drop: the mutex's waiters: 0x00000001
+one waiter, after the drop: the condition's waiters: 0x00000000
+one waiter: A's turn: 0x00000001
+one waiter: A's result: 0x00000000
+A, B and C: A drops below C: 0x00000000
+A, B and C: A's turn: 0x00000003
+A, B and C: A's result: 0x00000000
+A, B and C: B's turn: 0x00000001
+A, B and C: B's result: 0x00000000
+A, B and C: C's turn: 0x00000002
+A, B and C: C's result: 0x00000000
+A and a plain locker L: the mutex's waiters: 0x00000002
+A and a plain locker L: A drops below L: 0x00000000
+A and a plain locker L: A's turn: 0x00000002
+A and a plain locker L: A's result: 0x00000000
+A and a plain locker L: L's turn: 0x00000001
+A and a plain locker L: L's result: 0x00000000
+FIFO mutex, A, B and C: A drops below C: 0x00000000
+FIFO mutex, A, B and C: A's turn: 0x00000001
+FIFO mutex, A, B and C: A's result: 0x00000000
+FIFO mutex, A, B and C: B's turn: 0x00000002
+FIFO mutex, A, B and C: B's result: 0x00000000
+FIFO mutex, A, B and C: C's turn: 0x00000003
+FIFO mutex, A, B and C: C's result: 0x00000000
+DONE

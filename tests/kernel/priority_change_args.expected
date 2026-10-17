@@ -1,0 +1,101 @@
+the main thread's priority: 0x000000A0
+change W to 0x0: 0x00000000
+W's priority after the change to 0x0: 0x000000A0
+change W to 0x0 with the second call: 0x00000090
+W's priority after the second call with 0x0: 0x000000A0
+change W to 0x3F: 0x80028023
+W's priority after the change to 0x3F: 0x00000090
+change W to 0x3F with the second call: 0x80028023
+W's priority after the second call with 0x3F: 0x00000090
+change W to 0x40: 0x00000000
+W's priority after the change to 0x40: 0x00000040
+change W to 0x40 with the second call: 0x00000090
+W's priority after the second call with 0x40: 0x00000040
+change W to 0xBF: 0x00000000
+W's priority after the change to 0xBF: 0x000000BF
+change W to 0xBF with the second call: 0x00000090
+W's priority after the second call with 0xBF: 0x000000BF
+change W to 0xC0: 0x80028023
+W's priority after the change to 0xC0: 0x00000090
+change W to 0xC0 with the second call: 0x80028023
+W's priority after the second call with 0xC0: 0x00000090
+change W to 0xFB: 0x80028023
+W's priority after the change to 0xFB: 0x00000090
+change W to 0xFB with the second call: 0x80028023
+W's priority after the second call with 0xFB: 0x00000090
+change W to 0xFC: 0x80028023
+W's priority after the change to 0xFC: 0x00000090
+change W to 0xFC with the second call: 0x80028023
+W's priority after the second call with 0xFC: 0x00000090
+change W to 0xFF: 0x80028023
+W's priority after the change to 0xFF: 0x00000090
+change W to 0xFF with the second call: 0x80028023
+W's priority after the second call with 0xFF: 0x00000090
+change W to 0x100: 0x80028023
+W's priority after the change to 0x100: 0x00000090
+change W to 0x100 with the second call: 0x80028023
+W's priority after the second call with 0x100: 0x00000090
+change W to 0xFFFFFFFF: 0x80028023
+W's priority after the change to 0xFFFFFFFF: 0x00000090
+change W to 0xFFFFFFFF with the second call: 0x80028023
+W's priority after the second call with 0xFFFFFFFF: 0x00000090
+change W to 0xFFFFFFC0: 0x80028023
+W's priority after the change to 0xFFFFFFC0: 0x00000090
+change W to 0xFFFFFFC0 with the second call: 0x80028023
+W's priority after the second call with 0xFFFFFFC0: 0x00000090
+change W to 0x80000000: 0x80028023
+W's priority after the change to 0x80000000: 0x00000090
+change W to 0x80000000 with the second call: 0x80028023
+W's priority after the second call with 0x80000000: 0x00000090
+change W to 0x7FFFFFFF: 0x80028023
+W's priority after the change to 0x7FFFFFFF: 0x00000090
+change W to 0x7FFFFFFF with the second call: 0x80028023
+W's priority after the second call with 0x7FFFFFFF: 0x00000090
+change W to 0x10000100: 0x00000000
+W's priority after the change to 0x10000100: 0x000000A0
+change W to 0x10000100 with the second call: 0x00000090
+W's priority after the second call with 0x10000100: 0x000000A0
+change W to 0x100000E0: 0x00000000
+W's priority after the change to 0x100000E0: 0x00000080
+change W to 0x100000E0 with the second call: 0x00000090
+W's priority after the second call with 0x100000E0: 0x00000080
+change W to 0x100000DF: 0x80028023
+W's priority after the change to 0x100000DF: 0x00000090
+change W to 0x100000DF with the second call: 0x80028023
+W's priority after the second call with 0x100000DF: 0x00000090
+change W to 0x1000011F: 0x00000000
+W's priority after the change to 0x1000011F: 0x000000BF
+change W to 0x1000011F with the second call: 0x00000090
+W's priority after the second call with 0x1000011F: 0x000000BF
+change W to 0x10000120: 0x80028023
+W's priority after the change to 0x10000120: 0x00000090
+change W to 0x10000120 with the second call: 0x80028023
+W's priority after the second call with 0x10000120: 0x00000090
+change W to 0x10000000: 0x80028023
+W's priority after the change to 0x10000000: 0x00000090
+change W to 0x10000000 with the second call: 0x80028023
+W's priority after the second call with 0x10000000: 0x00000090
+change W to 0xFFFFFFF: 0x80028023
+W's priority after the change to 0xFFFFFFF: 0x00000090
+change W to 0xFFFFFFF with the second call: 0x80028023
+W's priority after the second call with 0xFFFFFFF: 0x00000090
+the second call with thread ID 0 and 0xA0: 0x000000A0
+the second call with thread ID 0 and 0: 0x000000A0
+the main thread's priority after them: 0x000000A0
+the second call on an unknown UID: 0x80028021
+the second call on a deleted thread: 0x80028021
+the second call on a semaphore: 0x80028021
+the second call on an unknown UID with 0xC0: 0x80028021
+the second call on a thread that never ran, to 0x70: 0x00000060
+then to 0x78: 0x00000070
+then to 0xC0: 0x80028023
+its initial priority: 0x00000060
+its current priority: 0x00000078
+the priority its first run starts at: 0x00000060
+its current priority after it ended: 0x00000060
+the second call on it ended, to 0x68: 0x00000060
+its current priority after it: 0x00000068
+the second call on it ended, to 0: 0x00000068
+its current priority after it: 0x000000A0
+the priority its second run starts at: 0x00000060
+DONE

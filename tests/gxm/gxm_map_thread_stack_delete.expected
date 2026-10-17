@@ -1,0 +1,17 @@
+initialize libgxm: 0x00000000
+unmapped before the delete: create: 0x00000000
+unmapped before the delete: map the stack: 0x00000000
+unmapped before the delete: unmap it: 0x00000000
+unmapped before the delete: delete: 0x00000000
+unmapped before the delete: after the delete: info by the old stack base: 0x80022007
+unmapped before the delete: after the delete: find by the old stack base: 0x80022007
+mapped at the delete: create: 0x00000000
+mapped at the delete: map the stack: 0x00000000
+mapped at the delete: delete: 0x00000000
+mapped at the delete: after the delete: info by the old stack base: 0x00000000
+mapped at the delete: after the delete: find by the old stack base: 0x80024501
+mapped at the delete: unmap it: 0x00000000
+mapped at the delete: after the unmap: info by the old stack base: 0x00000000
+mapped at the delete: after the unmap: find by the old stack base: 0x80024501
+terminate libgxm: 0x00000000
+DONE

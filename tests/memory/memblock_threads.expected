@@ -1,0 +1,39 @@
+allocated by a thread that ended: the thread's allocation: 0x00000000
+allocated by a thread that ended: KiB of main memory taken once it ended: 0x00000058
+allocated by a thread that ended: delete the thread: 0x00000000
+allocated by a thread that ended: KiB of main memory taken after that: 0x00000040
+allocated by a thread that ended: the block's base by its UID: 0x00000000
+allocated by a thread that ended: it's the base it had: 0x00000001
+allocated by a thread that ended: find the block by its base: 0x00000000
+allocated by a thread that ended: the word is there: 0x00000001
+allocated by a thread that ended: free it from the main thread: 0x00000000
+allocated by a thread that ended: KiB of main memory taken after that: 0x00000000
+allocated by a thread that exited and deleted itself: the thread's allocation: 0x00000000
+allocated by a thread that exited and deleted itself: the block's base by its UID: 0x00000000
+allocated by a thread that exited and deleted itself: it's the base it had: 0x00000001
+allocated by a thread that exited and deleted itself: find the block by its base: 0x00000000
+allocated by a thread that exited and deleted itself: the word is there: 0x00000001
+allocated by a thread that exited and deleted itself: free it from the main thread: 0x00000000
+opened by a thread that ended: the thread's allocation: 0x00000000
+opened by a thread that ended: the thread's open: 0x00000000
+opened by a thread that ended: find the opened block by its base: 0x00000000
+opened by a thread that ended: the word is there: 0x00000001
+opened by a thread that ended: close the opened block: 0x00000000
+opened by a thread that ended: free the original: 0x00000000
+ended by another thread: allocate the original: 0x00000000
+ended by another thread: open it: 0x00000000
+ended by another thread: the thread's close of the opened block: 0x00000000
+ended by another thread: the thread's free of the original: 0x00000000
+ended by another thread: the opened block's base by its UID: 0x80024501
+ended by another thread: the original's base by its UID: 0x80024501
+freed while another thread holds it: allocate it: 0x00000000
+freed while another thread holds it: free it: 0x00000000
+freed while another thread holds it: the thread's base by the UID: 0x80024501
+freed while another thread holds it: the thread's find by the base: 0x80022007
+freed while another thread holds it: the thread's free: 0x80024501
+freed while another thread holds it: the thread's close: 0x80024501
+two threads at once: every block is made: 0x00000001
+two threads at once: each has a UID of its own: 0x00000001
+two threads at once: no two overlap: 0x00000001
+two threads at once: the main thread frees them all: 0x00000001
+DONE

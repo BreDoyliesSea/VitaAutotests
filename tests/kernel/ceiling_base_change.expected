@@ -1,0 +1,65 @@
+the main thread's priority: 0x000000A0
+no change: O's priority once it holds the mutex: 0x00000080
+no change: O's current priority in its info while it waits: 0x00000080
+no change: O's initial priority in its info while it waits: 0x000000B0
+no change: O's priority after its wait: 0x00000080
+no change: step 0: 0x00000001
+no change: step 1: 0x00000002
+no change: step 2: 0x00000003
+no change: O's priority after the unlock: 0x000000B0
+O lowered to 0xB8: the change: 0x00000000
+O lowered to 0xB8: O's priority once it holds the mutex: 0x00000080
+O lowered to 0xB8: O's current priority in its info while it waits: 0x00000080
+O lowered to 0xB8: O's initial priority in its info while it waits: 0x000000B0
+O lowered to 0xB8: O's priority after its wait: 0x00000080
+O lowered to 0xB8: step 0: 0x00000001
+O lowered to 0xB8: step 1: 0x00000002
+O lowered to 0xB8: step 2: 0x00000003
+O lowered to 0xB8: O's priority after the unlock: 0x000000B8
+O raised to 0x70: the change: 0x00000000
+O raised to 0x70: O's priority once it holds the mutex: 0x00000080
+O raised to 0x70: O's current priority in its info while it waits: 0x00000070
+O raised to 0x70: O's initial priority in its info while it waits: 0x000000B0
+O raised to 0x70: O's priority after its wait: 0x00000070
+O raised to 0x70: step 0: 0x00000001
+O raised to 0x70: step 1: 0x00000003
+O raised to 0x70: step 2: 0x00000002
+O raised to 0x70: O's priority after the unlock: 0x00000070
+O set to 0: the change: 0x00000000
+O set to 0: O's priority once it holds the mutex: 0x00000080
+O set to 0: O's current priority in its info while it waits: 0x00000080
+O set to 0: O's initial priority in its info while it waits: 0x000000B0
+O set to 0: O's priority after its wait: 0x00000080
+O set to 0: step 0: 0x00000001
+O set to 0: step 1: 0x00000002
+O set to 0: step 2: 0x00000003
+O set to 0: O's priority after the unlock: 0x000000A0
+O sets itself to 0x70: O's priority once it holds the mutex: 0x00000080
+O sets itself to 0x70: the change: 0x00000000
+O sets itself to 0x70: O's current priority in its info while it waits: 0x00000070
+O sets itself to 0x70: O's initial priority in its info while it waits: 0x000000B0
+O sets itself to 0x70: O's priority after its wait: 0x00000070
+O sets itself to 0x70: step 0: 0x00000001
+O sets itself to 0x70: step 1: 0x00000003
+O sets itself to 0x70: step 2: 0x00000002
+O sets itself to 0x70: O's priority after the unlock: 0x00000070
+O sets itself to 0: O's priority once it holds the mutex: 0x00000080
+O sets itself to 0: the change: 0x00000000
+O sets itself to 0: O's current priority in its info while it waits: 0x00000080
+O sets itself to 0: O's initial priority in its info while it waits: 0x000000B0
+O sets itself to 0: O's priority after its wait: 0x00000080
+O sets itself to 0: step 0: 0x00000001
+O sets itself to 0: step 1: 0x00000003
+O sets itself to 0: step 2: 0x00000002
+O sets itself to 0: O's priority after the unlock: 0x00000080
+the main thread locks a mutex with the ceiling 0x80: 0x00000000
+the main thread's priority: 0x00000080
+the main thread's current priority in its info: 0x00000080
+the main thread's initial priority in its info: 0x000000A0
+create a thread with priority 0: 0x00000000
+its initial priority: 0x00000080
+set the priority of a dormant thread to 0: 0x00000000
+its current priority: 0x00000080
+the main thread unlocks: 0x00000000
+the main thread's priority after the unlock: 0x000000A0
+DONE

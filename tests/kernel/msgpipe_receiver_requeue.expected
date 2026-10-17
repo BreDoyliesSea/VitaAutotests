@@ -1,0 +1,28 @@
+attr 0x2, A drops below B: receivers done after "abcd": 0x00000000
+attr 0x2, A drops below B: the change: 0x00000000
+attr 0x2, A drops below B: receivers done after the change: 0x00000000
+attr 0x2, A drops below B: the receiver "efgh" woke: 0x0000000B
+attr 0x2, A drops below B: the receiver "ijkl" woke: 0x0000000A
+attr 0x2, A drops below B: A's result: 0x00000000
+attr 0x2, A drops below B: A got "abcdijkl", size: 0x00000008
+attr 0x2, A drops below B: B's result: 0x00000000
+attr 0x2, A drops below B: B got "efgh", size: 0x00000004
+attr 0x2, B raised above A: receivers done after "abcd": 0x00000000
+attr 0x2, B raised above A: the change: 0x00000000
+attr 0x2, B raised above A: receivers done after the change: 0x00000000
+attr 0x2, B raised above A: the receiver "efgh" woke: 0x0000000A
+attr 0x2, B raised above A: the receiver "ijkl" woke: 0x0000000B
+attr 0x2, B raised above A: A's result: 0x00000000
+attr 0x2, B raised above A: A got "abcdefgh", size: 0x00000008
+attr 0x2, B raised above A: B's result: 0x00000000
+attr 0x2, B raised above A: B got "ijkl", size: 0x00000004
+attr 0x0, A drops below B: receivers done after "abcd": 0x00000000
+attr 0x0, A drops below B: the change: 0x00000000
+attr 0x0, A drops below B: receivers done after the change: 0x00000000
+attr 0x0, A drops below B: the receiver "efgh" woke: 0x0000000A
+attr 0x0, A drops below B: the receiver "ijkl" woke: 0x0000000B
+attr 0x0, A drops below B: A's result: 0x00000000
+attr 0x0, A drops below B: A got "abcdefgh", size: 0x00000008
+attr 0x0, A drops below B: B's result: 0x00000000
+attr 0x0, A drops below B: B got "ijkl", size: 0x00000004
+DONE

@@ -1,0 +1,77 @@
+allocate the block: 0x00000000
+info by address, size 0x0: 0x80020005
+info by address, size 0x0: the words it changed: 0x00000000
+info by address, size 0x4: 0x80020005
+info by address, size 0x4: the words it changed: 0x00000000
+info by address, size 0x14: 0x80020005
+info by address, size 0x14: the words it changed: 0x00000000
+info by address, size 0x17: 0x80020005
+info by address, size 0x17: the words it changed: 0x00000000
+info by address, size 0x18: 0x00000000
+info by address, size 0x18: the words it changed: 0x0000003E
+info by address, size 0x19: 0x80020005
+info by address, size 0x19: the words it changed: 0x00000000
+info by address, size 0x1C: 0x80020005
+info by address, size 0x1C: the words it changed: 0x00000000
+info by address, size 0x20: 0x80020005
+info by address, size 0x20: the words it changed: 0x00000000
+info by address, size 0x40: 0x80020005
+info by address, size 0x40: the words it changed: 0x00000000
+info by address, size 0x100: 0x80020005
+info by address, size 0x100: the words it changed: 0x00000000
+info by range, size 0x0: 0x80020005
+info by range, size 0x0: the words it changed: 0x00000000
+info by range, size 0x4: 0x80020005
+info by range, size 0x4: the words it changed: 0x00000000
+info by range, size 0x14: 0x80020005
+info by range, size 0x14: the words it changed: 0x00000000
+info by range, size 0x17: 0x80020005
+info by range, size 0x17: the words it changed: 0x00000000
+info by range, size 0x18: 0x00000000
+info by range, size 0x18: the words it changed: 0x0000003E
+info by range, size 0x19: 0x80020005
+info by range, size 0x19: the words it changed: 0x00000000
+info by range, size 0x1C: 0x80020005
+info by range, size 0x1C: the words it changed: 0x00000000
+info by range, size 0x20: 0x80020005
+info by range, size 0x20: the words it changed: 0x00000000
+info by range, size 0x40: 0x80020005
+info by range, size 0x40: the words it changed: 0x00000000
+info by range, size 0x100: 0x80020005
+info by range, size 0x100: the words it changed: 0x00000000
+free memory size, size 0x0: 0x80020005
+free memory size, size 0x0: the words it changed: 0x00000000
+free memory size, size 0x4: 0x80020005
+free memory size, size 0x4: the words it changed: 0x00000000
+free memory size, size 0xC: 0x80020005
+free memory size, size 0xC: the words it changed: 0x00000000
+free memory size, size 0xF: 0x80020005
+free memory size, size 0xF: the words it changed: 0x00000000
+free memory size, size 0x10: 0x00000000
+free memory size, size 0x10: the words it changed: 0x0000000E
+free memory size, size 0x11: 0x80020005
+free memory size, size 0x11: the words it changed: 0x00000000
+free memory size, size 0x14: 0x80020005
+free memory size, size 0x14: the words it changed: 0x00000000
+free memory size, size 0x18: 0x80020005
+free memory size, size 0x18: the words it changed: 0x00000000
+free memory size, size 0x20: 0x80020005
+free memory size, size 0x20: the words it changed: 0x00000000
+free memory size, size 0x100: 0x80020005
+free memory size, size 0x100: the words it changed: 0x00000000
+info by address in no block, size 0x18: 0x80022007
+info by address in no block, size 0x18: the words it changed: 0x00000000
+info by address in no block, size 0x14: 0x80022007
+info by address in no block, size 0x14: the words it changed: 0x00000000
+info by range in no block, size 0x18: 0x80022007
+info by range in no block, size 0x18: the words it changed: 0x00000000
+info by range in no block, size 0x14: 0x80022007
+info by range in no block, size 0x14: the words it changed: 0x00000000
+info by address, size 0xFFFFFFFF: 0x80020005
+info by address, size 0xFFFFFFFF: the words it changed: 0x00000000
+info by range, size 0xFFFFFFFF: 0x80020005
+info by range, size 0xFFFFFFFF: the words it changed: 0x00000000
+free memory size, size 0xFFFFFFFF: 0x80020005
+free memory size, size 0xFFFFFFFF: the words it changed: 0x00000000
+info by range into NULL: 0x80022005
+DONE

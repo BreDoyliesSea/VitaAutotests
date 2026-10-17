@@ -1,0 +1,146 @@
+the main thread: its stack base is 4 KiB aligned: 0x00000001
+the main thread: find by the stack base: 0x80024501
+the main thread: info by the stack base: 0x00000000
+the main thread: the block starts at the stack base: 0x00000001
+the main thread: bytes the block has over the stack size: 0x00000000
+the main thread: its type: 0x0C20D060
+the main thread: its memory type: 0x000000D0
+the main thread: its access: 0x00000006
+the main thread: the stack's last byte is in the block: 0x00000001
+the main thread: the byte at the stack's top is in the block: 0x00000000
+the main thread: the byte below the stack base is in the block: 0x00000000
+the main thread: info by range over the stack: 0x00000000
+the main thread: info by range reports the same block: 0x00000001
+a stack of 0x100: create: 0x00000000
+a stack of 0x100: the stack size it reports: 0x00001000
+a stack of 0x100: its stack base is 4 KiB aligned: 0x00000001
+a stack of 0x100: find by the stack base: 0x80024501
+a stack of 0x100: info by the stack base: 0x00000000
+a stack of 0x100: the block starts at the stack base: 0x00000001
+a stack of 0x100: bytes the block has over the stack size: 0x00000000
+a stack of 0x100: its type: 0x0C20D060
+a stack of 0x100: its memory type: 0x000000D0
+a stack of 0x100: its access: 0x00000006
+a stack of 0x100: the stack's last byte is in the block: 0x00000001
+a stack of 0x100: the byte at the stack's top is in the block: 0x00000000
+a stack of 0x100: the byte below the stack base is in the block: 0x00000000
+a stack of 0x100: info by range over the stack: 0x00000000
+a stack of 0x100: info by range reports the same block: 0x00000001
+a stack of 0x100: delete: 0x00000000
+a stack of 0x100: info by the old stack base after the delete: 0x80022007
+a stack of 0x1000: create: 0x00000000
+a stack of 0x1000: the stack size it reports: 0x00001000
+a stack of 0x1000: its stack base is 4 KiB aligned: 0x00000001
+a stack of 0x1000: find by the stack base: 0x80024501
+a stack of 0x1000: info by the stack base: 0x00000000
+a stack of 0x1000: the block starts at the stack base: 0x00000001
+a stack of 0x1000: bytes the block has over the stack size: 0x00000000
+a stack of 0x1000: its type: 0x0C20D060
+a stack of 0x1000: its memory type: 0x000000D0
+a stack of 0x1000: its access: 0x00000006
+a stack of 0x1000: the stack's last byte is in the block: 0x00000001
+a stack of 0x1000: the byte at the stack's top is in the block: 0x00000000
+a stack of 0x1000: the byte below the stack base is in the block: 0x00000000
+a stack of 0x1000: info by range over the stack: 0x00000000
+a stack of 0x1000: info by range reports the same block: 0x00000001
+a stack of 0x1000: delete: 0x00000000
+a stack of 0x1000: info by the old stack base after the delete: 0x80022007
+a stack of 0x1234: create: 0x00000000
+a stack of 0x1234: the stack size it reports: 0x00002000
+a stack of 0x1234: its stack base is 4 KiB aligned: 0x00000001
+a stack of 0x1234: find by the stack base: 0x80024501
+a stack of 0x1234: info by the stack base: 0x00000000
+a stack of 0x1234: the block starts at the stack base: 0x00000001
+a stack of 0x1234: bytes the block has over the stack size: 0x00000000
+a stack of 0x1234: its type: 0x0C20D060
+a stack of 0x1234: its memory type: 0x000000D0
+a stack of 0x1234: its access: 0x00000006
+a stack of 0x1234: the stack's last byte is in the block: 0x00000001
+a stack of 0x1234: the byte at the stack's top is in the block: 0x00000000
+a stack of 0x1234: the byte below the stack base is in the block: 0x00000000
+a stack of 0x1234: info by range over the stack: 0x00000000
+a stack of 0x1234: info by range reports the same block: 0x00000001
+a stack of 0x1234: delete: 0x00000000
+a stack of 0x1234: info by the old stack base after the delete: 0x80022007
+a stack of 0x4000: create: 0x00000000
+a stack of 0x4000: the stack size it reports: 0x00004000
+a stack of 0x4000: its stack base is 4 KiB aligned: 0x00000001
+a stack of 0x4000: find by the stack base: 0x80024501
+a stack of 0x4000: info by the stack base: 0x00000000
+a stack of 0x4000: the block starts at the stack base: 0x00000001
+a stack of 0x4000: bytes the block has over the stack size: 0x00000000
+a stack of 0x4000: its type: 0x0C20D060
+a stack of 0x4000: its memory type: 0x000000D0
+a stack of 0x4000: its access: 0x00000006
+a stack of 0x4000: the stack's last byte is in the block: 0x00000001
+a stack of 0x4000: the byte at the stack's top is in the block: 0x00000000
+a stack of 0x4000: the byte below the stack base is in the block: 0x00000000
+a stack of 0x4000: info by range over the stack: 0x00000000
+a stack of 0x4000: info by range reports the same block: 0x00000001
+a stack of 0x4000: delete: 0x00000000
+a stack of 0x4000: info by the old stack base after the delete: 0x80022007
+a stack of 0x10000: create: 0x00000000
+a stack of 0x10000: the stack size it reports: 0x00010000
+a stack of 0x10000: its stack base is 4 KiB aligned: 0x00000001
+a stack of 0x10000: find by the stack base: 0x80024501
+a stack of 0x10000: info by the stack base: 0x00000000
+a stack of 0x10000: the block starts at the stack base: 0x00000001
+a stack of 0x10000: bytes the block has over the stack size: 0x00000000
+a stack of 0x10000: its type: 0x0C20D060
+a stack of 0x10000: its memory type: 0x000000D0
+a stack of 0x10000: its access: 0x00000006
+a stack of 0x10000: the stack's last byte is in the block: 0x00000001
+a stack of 0x10000: the byte at the stack's top is in the block: 0x00000000
+a stack of 0x10000: the byte below the stack base is in the block: 0x00000000
+a stack of 0x10000: info by range over the stack: 0x00000000
+a stack of 0x10000: info by range reports the same block: 0x00000001
+a stack of 0x10000: delete: 0x00000000
+a stack of 0x10000: info by the old stack base after the delete: 0x80022007
+a stack of 0x100000: create: 0x00000000
+a stack of 0x100000: the stack size it reports: 0x00100000
+a stack of 0x100000: its stack base is 4 KiB aligned: 0x00000001
+a stack of 0x100000: find by the stack base: 0x80024501
+a stack of 0x100000: info by the stack base: 0x00000000
+a stack of 0x100000: the block starts at the stack base: 0x00000001
+a stack of 0x100000: bytes the block has over the stack size: 0x00000000
+a stack of 0x100000: its type: 0x0C20D060
+a stack of 0x100000: its memory type: 0x000000D0
+a stack of 0x100000: its access: 0x00000006
+a stack of 0x100000: the stack's last byte is in the block: 0x00000001
+a stack of 0x100000: the byte at the stack's top is in the block: 0x00000000
+a stack of 0x100000: the byte below the stack base is in the block: 0x00000000
+a stack of 0x100000: info by range over the stack: 0x00000000
+a stack of 0x100000: info by range reports the same block: 0x00000001
+a stack of 0x100000: delete: 0x00000000
+a stack of 0x100000: info by the old stack base after the delete: 0x80022007
+a stack of 0x101000: create: 0x00000000
+a stack of 0x101000: the stack size it reports: 0x00101000
+a stack of 0x101000: its stack base is 4 KiB aligned: 0x00000001
+a stack of 0x101000: find by the stack base: 0x80024501
+a stack of 0x101000: info by the stack base: 0x00000000
+a stack of 0x101000: the block starts at the stack base: 0x00000001
+a stack of 0x101000: bytes the block has over the stack size: 0x00000000
+a stack of 0x101000: its type: 0x0C20D060
+a stack of 0x101000: its memory type: 0x000000D0
+a stack of 0x101000: its access: 0x00000006
+a stack of 0x101000: the stack's last byte is in the block: 0x00000001
+a stack of 0x101000: the byte at the stack's top is in the block: 0x00000000
+a stack of 0x101000: the byte below the stack base is in the block: 0x00000000
+a stack of 0x101000: info by range over the stack: 0x00000000
+a stack of 0x101000: info by range reports the same block: 0x00000001
+a stack of 0x101000: delete: 0x00000000
+a stack of 0x101000: info by the old stack base after the delete: 0x80022007
+a thread that runs: its stack base is the one it had before it started: 0x00000001
+a thread that runs: its local is in the block found before it started: 0x00000001
+a thread that ended: info by the stack base: 0x00000000
+a thread that ended: the same block as before it started: 0x00000001
+a thread that ended: delete: 0x00000000
+a thread that ended: info by the old stack base after the delete: 0x80022007
+an 8 MiB stack: create: 0x00000000
+an 8 MiB stack: it takes at least 8 MiB of main memory: 0x00000001
+an 8 MiB stack: it takes at most 9 MiB of main memory: 0x00000001
+an 8 MiB stack: it takes no CDRAM: 0x00000001
+an 8 MiB stack: it takes no physically contiguous memory: 0x00000001
+an 8 MiB stack: delete: 0x00000000
+an 8 MiB stack: the free sizes are back after the delete: 0x00000001
+DONE

@@ -1,0 +1,25 @@
+the spinner at 0x40, T raised to 0x90: the change: 0x00000000
+the spinner at 0x40, T raised to 0x90: T's status after the change: 0x00000002
+the spinner at 0x40, T raised to 0x90: T's current CPU after the change: 0x00007FFF
+the spinner at 0x40, T raised to 0x90: T ran before the spinner stopped: 0x00000000
+the spinner at 0x40, T raised to 0x90: T only ran once given every core and its priority back: 0x00000000
+the spinner at 0x40, T raised to 0x90: the core T ran on: 0x00000000
+the spinner at 0x40, T raised to 0x90: the priority T ran at: 0x00000090
+the spinner at 0x98, T raised to 0x90: the change: 0x00000000
+the spinner at 0x98, T raised to 0x90: T ran before the spinner stopped: 0x00000001
+the spinner at 0x98, T raised to 0x90: T only ran once given every core and its priority back: 0x00000000
+the spinner at 0x98, T raised to 0x90: the core T ran on: 0x00000000
+the spinner at 0x98, T raised to 0x90: the priority T ran at: 0x00000090
+the spinner at 0x98, T raised to 0x60: the change: 0x00000000
+the spinner at 0x98, T raised to 0x60: T ran before the spinner stopped: 0x00000001
+the spinner at 0x98, T raised to 0x60: T only ran once given every core and its priority back: 0x00000000
+the spinner at 0x98, T raised to 0x60: the core T ran on: 0x00000001
+the spinner at 0x98, T raised to 0x60: the priority T ran at: 0x00000060
+the spinner at 0x40, T raised to 0x60: the change: 0x00000000
+the spinner at 0x40, T raised to 0x60: T's status after the change: 0x00000002
+the spinner at 0x40, T raised to 0x60: T's current CPU after the change: 0x00000001
+the spinner at 0x40, T raised to 0x60: T ran before the spinner stopped: 0x00000001
+the spinner at 0x40, T raised to 0x60: T only ran once given every core and its priority back: 0x00000000
+the spinner at 0x40, T raised to 0x60: the core T ran on: 0x00000001
+the spinner at 0x40, T raised to 0x60: the priority T ran at: 0x00000060
+DONE

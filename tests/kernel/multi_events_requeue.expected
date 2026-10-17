@@ -1,0 +1,20 @@
+no change, a set twice: the waiter the first set woke: 0x0000000A
+no change, a set twice: the waiter the second set woke: 0x0000000C
+no change, a set twice: M's result: 0x00000001
+no change, a set twice: the event M's first result is for, 0xA for a and 0xB for b: 0x0000000A
+M raised, a set twice: raise M: 0x00000000
+M raised, a set twice: the waiter the first set woke: 0x0000000C
+M raised, a set twice: the waiter the second set woke: 0x0000000A
+M raised, a set twice: M's result: 0x00000001
+M raised, a set twice: the event M's first result is for, 0xA for a and 0xB for b: 0x0000000A
+M raised, b set twice: raise M: 0x00000000
+M raised, b set twice: the waiter the first set woke: 0x0000000C
+M raised, b set twice: the waiter the second set woke: 0x0000000B
+M raised, b set twice: M's result: 0x00000001
+M raised, b set twice: the event M's first result is for, 0xA for a and 0xB for b: 0x0000000B
+FIFO events, M raised, a set twice: raise M: 0x00000000
+FIFO events, M raised, a set twice: the waiter the first set woke: 0x0000000A
+FIFO events, M raised, a set twice: the waiter the second set woke: 0x0000000C
+FIFO events, M raised, a set twice: M's result: 0x00000001
+FIFO events, M raised, a set twice: the event M's first result is for, 0xA for a and 0xB for b: 0x0000000A
+DONE

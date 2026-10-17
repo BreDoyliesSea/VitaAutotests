@@ -1,0 +1,49 @@
+a lone waiter, at 0x70: W0's status after the wake: 0x00000001
+a lone waiter, at 0x70: W0's current CPU after the wake: 0x00000001
+a lone waiter, at 0x70: the core W0 ran on: 0x00000001
+one signal of 3, at 0x70: W0's status after the wake: 0x00000001
+one signal of 3, at 0x70: W0's current CPU after the wake: 0x00000001
+one signal of 3, at 0x70: the core W0 ran on: 0x00000001
+three signals of 1, at 0x70: W0's status after the wake: 0x00000001
+three signals of 1, at 0x70: W0's current CPU after the wake: 0x00000001
+three signals of 1, at 0x70: W1's status after the wake: 0x00000001
+three signals of 1, at 0x70: W1's current CPU after the wake: 0x00000000
+three signals of 1, at 0x70: W2's status after the wake: 0x00000002
+three signals of 1, at 0x70: W2's current CPU after the wake: 0x00000000
+three signals of 1, at 0x70: the core W0 ran on: 0x00000001
+three signals of 1, at 0x70: the core W1 ran on: 0x00000000
+three signals of 1, at 0x70: the core W2 ran on: 0x00000000
+one event flag set, at 0x70: W0's status after the wake: 0x00000001
+one event flag set, at 0x70: W0's current CPU after the wake: 0x00000001
+one event flag set, at 0x70: the core W0 ran on: 0x00000001
+a lone waiter, at 0xA0: W0's status after the wake: 0x00000001
+a lone waiter, at 0xA0: W0's current CPU after the wake: 0x00000001
+a lone waiter, at 0xA0: the core W0 ran on: 0x00000001
+one signal of 3, at 0xA0: W0's status after the wake: 0x00000001
+one signal of 3, at 0xA0: W0's current CPU after the wake: 0x00000001
+one signal of 3, at 0xA0: W1's status after the wake: 0x00000001
+one signal of 3, at 0xA0: W1's current CPU after the wake: 0x00000000
+one signal of 3, at 0xA0: W2's status after the wake: 0x00000002
+one signal of 3, at 0xA0: W2's current CPU after the wake: 0x00007FFF
+one signal of 3, at 0xA0: the core W0 ran on: 0x00000001
+one signal of 3, at 0xA0: the core W1 ran on: 0x00000000
+one signal of 3, at 0xA0: the core W2 ran on: 0x00000001
+three signals of 1, at 0xA0: W0's status after the wake: 0x00000001
+three signals of 1, at 0xA0: W0's current CPU after the wake: 0x00000001
+three signals of 1, at 0xA0: W1's status after the wake: 0x00000001
+three signals of 1, at 0xA0: W1's current CPU after the wake: 0x00000000
+three signals of 1, at 0xA0: W2's status after the wake: 0x00000002
+three signals of 1, at 0xA0: W2's current CPU after the wake: 0x00007FFF
+three signals of 1, at 0xA0: the core W0 ran on: 0x00000001
+three signals of 1, at 0xA0: the core W1 ran on: 0x00000000
+three signals of 1, at 0xA0: the core W2 ran on: 0x00000001
+one event flag set, at 0xA0: W0's status after the wake: 0x00000001
+one event flag set, at 0xA0: W0's current CPU after the wake: 0x00000001
+one event flag set, at 0xA0: W1's status after the wake: 0x00000001
+one event flag set, at 0xA0: W1's current CPU after the wake: 0x00000000
+one event flag set, at 0xA0: W2's status after the wake: 0x00000002
+one event flag set, at 0xA0: W2's current CPU after the wake: 0x00007FFF
+one event flag set, at 0xA0: the core W0 ran on: 0x00000001
+one event flag set, at 0xA0: the core W1 ran on: 0x00000000
+one event flag set, at 0xA0: the core W2 ran on: 0x00000001
+DONE

@@ -1,0 +1,16 @@
+allocate the original: 0x00000000
+open it read only: 0x00000000
+the opened block's access: 0x00000004
+get the base into it: 0x80022005
+get the base into it: the words changed: 0x00000000
+info by address into it: 0x80022005
+info by address into it: the words changed: 0x00000000
+info by range into it: 0x80022005
+info by range into it: the words changed: 0x00000000
+free memory size into it: 0x80022005
+free memory size into it: the words changed: 0x00000000
+USER_MAIN_R: allocate a block: 0x00000000
+USER_MAIN_R: get the base into it: 0x80022005
+USER_MAIN_R: its first word changed: 0x00000000
+USER_MAIN_R: its first word is the base: 0x00000000
+DONE

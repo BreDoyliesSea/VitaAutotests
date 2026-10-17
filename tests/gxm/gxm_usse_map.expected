@@ -1,0 +1,91 @@
+initialize libgxm: 0x00000000
+allocate a 16 MiB block: 0x00000000
+vertex USSE: size 0: 0x805B0017
+vertex USSE: 6 KiB: 0x805B0017
+vertex USSE: 1 MiB: 0x00000000
+vertex USSE: 1 MiB: unmap it: 0x00000000
+vertex USSE: the same 4 KiB twice: the first: 0x00000000
+vertex USSE: the same 4 KiB twice: the second: 0x805B0017
+vertex USSE: the same 4 KiB twice: unmap the first: 0x00000000
+vertex USSE: 64 KiB overlapping 64 KiB by half: the first: 0x00000000
+vertex USSE: 64 KiB overlapping 64 KiB by half: the second: 0x805B0017
+vertex USSE: 64 KiB overlapping 64 KiB by half: unmap the first: 0x00000000
+vertex USSE: 8 MiB, then another 4 KiB: the first: 0x00000000
+vertex USSE: 8 MiB, then another 4 KiB: the second: 0x00000000
+vertex USSE: 8 MiB, then another 4 KiB: unmap the second: 0x00000000
+vertex USSE: 8 MiB, then another 4 KiB: unmap the first: 0x00000000
+vertex USSE: 4 MiB: 0x00000000
+vertex USSE: another 4 MiB after it: 0x00000000
+vertex USSE: 4 KiB more after the two: 0x00000000
+vertex USSE: 4 KiB more after the two: unmap it: 0x00000000
+fragment USSE: size 0: 0x805B0017
+fragment USSE: 6 KiB: 0x805B0017
+fragment USSE: 1 MiB: 0x00000000
+fragment USSE: 1 MiB: unmap it: 0x00000000
+fragment USSE: 8 MiB: 0x00000000
+fragment USSE: 8 MiB: unmap it: 0x00000000
+fragment USSE: an unaligned base: 0x805B0017
+fragment USSE: the same 4 KiB twice: the first: 0x00000000
+fragment USSE: the same 4 KiB twice: the second: 0x805B0017
+fragment USSE: the same 4 KiB twice: unmap the first: 0x00000000
+fragment USSE: 64 KiB overlapping 64 KiB by half: the first: 0x00000000
+fragment USSE: 64 KiB overlapping 64 KiB by half: the second: 0x805B0017
+fragment USSE: 64 KiB overlapping 64 KiB by half: unmap the first: 0x00000000
+fragment USSE: 8 MiB, then another 4 KiB: the first: 0x00000000
+fragment USSE: 8 MiB, then another 4 KiB: the second: 0x00000000
+fragment USSE: 8 MiB, then another 4 KiB: unmap the second: 0x00000000
+fragment USSE: 8 MiB, then another 4 KiB: unmap the first: 0x00000000
+fragment USSE: 4 MiB: 0x00000000
+fragment USSE: another 4 MiB after it: 0x00000000
+fragment USSE: 4 KiB more after the two: 0x00000000
+fragment USSE: 4 KiB more after the two: unmap it: 0x00000000
+vertex USSE: a whole USER_MAIN_R block: 0x00000000
+vertex USSE: a whole USER_MAIN_R block: unmap it: 0x00000000
+vertex USSE: a whole USER_CDRAM_RW block: 0x00000000
+vertex USSE: a whole USER_CDRAM_RW block: unmap it: 0x00000000
+vertex USSE: a whole block for code: 0x805B0017
+fragment USSE: a whole USER_MAIN_R block: 0x00000000
+fragment USSE: a whole USER_MAIN_R block: unmap it: 0x00000000
+fragment USSE: a whole USER_CDRAM_RW block: 0x00000000
+fragment USSE: a whole USER_CDRAM_RW block: unmap it: 0x00000000
+fragment USSE: a whole block for code: 0x805B0017
+vertex USSE: map 64 KiB to unmap: 0x00000000
+vertex USSE: unmap 4 KiB into it: 0x805B0017
+vertex USSE: unmap 1 byte past its base: 0x805B0017
+vertex USSE: unmap its base as fragment USSE: 0x805B0017
+vertex USSE: unmap its base with sceGxmUnmapMemory: 0x805B0017
+vertex USSE: unmap its base: 0x00000000
+vertex USSE: map 64 KiB with sceGxmMapMemory: 0x00000000
+vertex USSE: unmap that as vertex USSE: 0x805B0017
+fragment USSE: map 64 KiB to unmap: 0x00000000
+fragment USSE: unmap 4 KiB into it: 0x805B0017
+fragment USSE: unmap 1 byte past its base: 0x805B0017
+fragment USSE: unmap its base as vertex USSE: 0x805B0017
+fragment USSE: unmap its base with sceGxmUnmapMemory: 0x805B0017
+fragment USSE: unmap its base: 0x00000000
+fragment USSE: map 64 KiB with sceGxmMapMemory: 0x00000000
+fragment USSE: unmap that as fragment USSE: 0x805B0017
+vertex USSE, then fragment USSE over the same range: the vertex map: 0x00000000
+vertex USSE, then fragment USSE over the same range: the fragment map: 0x00000000
+unmap the fragment USSE mapping: 0x00000000
+unmap the vertex USSE mapping: 0x00000000
+vertex USSE, then sceGxmMapMemory over it: the USSE map: 0x00000000
+vertex USSE, then sceGxmMapMemory over it: the memory map: 0x00000000
+unmap the memory mapping: 0x00000000
+unmap the USSE mapping after it: 0x00000000
+vertex USSE offsets: two maps in a row work: 0x00000001
+vertex USSE offsets: both are 4 KiB aligned: 0x00000001
+vertex USSE offsets: the second is 4 KiB past the first: 0x00000001
+vertex USSE offsets: they're as far apart as the bases: 0x00000000
+vertex USSE offsets: mapping the first again after its unmap gives its offset: 0x00000000
+fragment USSE offsets: two maps in a row work: 0x00000001
+fragment USSE offsets: both are 4 KiB aligned: 0x00000001
+fragment USSE offsets: the second is 4 KiB past the first: 0x00000001
+fragment USSE offsets: they're as far apart as the bases: 0x00000000
+fragment USSE offsets: mapping the first again after its unmap gives its offset: 0x00000000
+vertex USSE: a NULL base: 0x805B0004
+fragment USSE: a NULL base: 0x805B0004
+vertex USSE: unmap a NULL base: 0x805B0004
+fragment USSE: unmap a NULL base: 0x805B0004
+terminate libgxm: 0x00000000
+DONE

@@ -1,0 +1,31 @@
+the main thread: find by slot 0: 0x80024501
+the main thread: info by slot 0: 0x00000000
+the main thread: its size: 0x00001000
+the main thread: its type: 0x0C20D060
+the main thread: its memory type: 0x000000D0
+the main thread: its access: 0x00000006
+the main thread: the region of its base: 0x00000008
+the main thread: the offset of slot 0 into it: 0x00000000
+the main thread: the offset TPIDRURO points to: 0x00000800
+the main thread: slot 255 is in the block of slot 0: 0x00000001
+the main thread: TPIDRURO is in the block of slot 0: 0x00000001
+the main thread: the stack base is in the block of slot 0: 0x00000000
+the main thread: a local is in the block of slot 0: 0x00000000
+a new thread before it starts: slot 0 has an address: 0x00000001
+a new thread before it starts: find by slot 0: 0x80024501
+a new thread before it starts: info by slot 0: 0x00000000
+a new thread before it starts: its size: 0x00001000
+a new thread before it starts: its type: 0x0C20D060
+a new thread before it starts: its memory type: 0x000000D0
+a new thread before it starts: its access: 0x00000006
+a new thread before it starts: the region of its base: 0x00000008
+a new thread before it starts: the offset of slot 0 into it: 0x00000000
+a new thread before it starts: slot 255 is in the block of slot 0: 0x00000001
+a new thread before it starts: the stack base is in the block of slot 0: 0x00000000
+a new thread before it starts: its TLS block is the main thread's: 0x00000000
+the new thread while it waits: its slot 0 is the one it had before it started: 0x00000001
+the new thread while it waits: TPIDRURO is 0x800 past it: 0x00000001
+the new thread once it ended: info by its old slot 0: 0x00000000
+the new thread: delete: 0x00000000
+the new thread: info by its old slot 0 after the delete: 0x80022007
+DONE

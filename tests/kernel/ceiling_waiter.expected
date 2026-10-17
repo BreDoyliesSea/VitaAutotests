@@ -1,0 +1,45 @@
+W at 0xB8: O's priority while W waits: 0x00000080
+W at 0xB8: W's priority while it waits: 0x000000B8
+W at 0xB8: W's lock: 0x00000000
+W at 0xB8: W's priority after its lock: 0x00000080
+W at 0xB8: W's priority after its unlock: 0x000000B8
+W at 0xB8: O's priority after its unlock: 0x000000B0
+W at 0xB8: step 0: 0x00000001
+W at 0xB8: step 1: 0x00000002
+W at 0xB8: step 2: 0x00000003
+W at 0x90: O's priority while W waits: 0x00000080
+W at 0x90: W's priority while it waits: 0x00000090
+W at 0x90: W's lock: 0x00000000
+W at 0x90: W's priority after its lock: 0x00000080
+W at 0x90: W's priority after its unlock: 0x00000090
+W at 0x90: O's priority after its unlock: 0x000000B0
+W at 0x90: step 0: 0x00000001
+W at 0x90: step 1: 0x00000002
+W at 0x90: step 2: 0x00000003
+W at 0x60: O's priority while W waits: 0x00000080
+W at 0x60: W's priority while it waits: 0x00000060
+W at 0x60: W's lock: 0x00000000
+W at 0x60: W's priority after its lock: 0x00000060
+W at 0x60: W's priority after its unlock: 0x00000060
+W at 0x60: O's priority after its unlock: 0x000000B0
+W at 0x60: step 0: 0x00000001
+W at 0x60: step 1: 0x00000002
+W at 0x60: step 2: 0x00000003
+W at 0xB8 set to 0x90 while it waits: the change: 0x00000000
+W at 0xB8 set to 0x90 while it waits: O's priority while W waits: 0x00000080
+W at 0xB8 set to 0x90 while it waits: W's priority while it waits: 0x00000090
+W at 0xB8 set to 0x90 while it waits: W's lock: 0x00000000
+W at 0xB8 set to 0x90 while it waits: W's priority after its lock: 0x00000080
+W at 0xB8 set to 0x90 while it waits: W's priority after its unlock: 0x00000090
+W at 0xB8 set to 0x90 while it waits: O's priority after its unlock: 0x000000B0
+W at 0xB8 set to 0x90 while it waits: step 0: 0x00000001
+W at 0xB8 set to 0x90 while it waits: step 1: 0x00000002
+W at 0xB8 set to 0x90 while it waits: step 2: 0x00000003
+W at 0xB8 with a timeout of 100 ms: O's priority while W waits: 0x00000080
+W at 0xB8 with a timeout of 100 ms: W's priority while it waits: 0x000000B8
+W at 0xB8 with a timeout of 100 ms: W's lock: 0x80028005
+W at 0xB8 with a timeout of 100 ms: W's priority after its lock: 0x000000B8
+W at 0xB8 with a timeout of 100 ms: O's priority after its unlock: 0x000000B0
+W at 0xB8 with a timeout of 100 ms: step 0: 0x00000001
+W at 0xB8 with a timeout of 100 ms: step 1: 0x00000003
+DONE

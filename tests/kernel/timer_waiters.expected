@@ -1,0 +1,46 @@
+manual reset, set event: the timer's bit after a wait returned: 0x00008000
+manual reset, set event: the cancel: 0x00000000
+manual reset, set event: the waiters it counted: 0x00000000
+manual reset, set event: waiter 0's result: 0x00000000
+manual reset, set event: the pattern waiter 0 got: 0x00008000
+manual reset, set event: waiter 1's result: 0x00000000
+manual reset, set event: the pattern waiter 1 got: 0x00008000
+manual reset, set event: waiter 2's result: 0x00000000
+manual reset, set event: the pattern waiter 2 got: 0x00008000
+auto reset, set event, FIFO: the timer's bit after a wait returned: 0x00000000
+auto reset, set event, FIFO: the cancel: 0x00000000
+auto reset, set event, FIFO: the waiters it counted: 0x00000002
+auto reset, set event, FIFO: waiter 0's result: 0x00000000
+auto reset, set event, FIFO: the pattern waiter 0 got: 0x00008000
+auto reset, set event, FIFO: waiter 1's result: 0x80028007
+auto reset, set event, FIFO: waiter 2's result: 0x80028007
+auto reset, set event, priority: the timer's bit after a wait returned: 0x00000000
+auto reset, set event, priority: the cancel: 0x00000000
+auto reset, set event, priority: the waiters it counted: 0x00000002
+auto reset, set event, priority: waiter 0's result: 0x80028007
+auto reset, set event, priority: waiter 1's result: 0x00000000
+auto reset, set event, priority: the pattern waiter 1 got: 0x00008000
+auto reset, set event, priority: waiter 2's result: 0x80028007
+manual reset, pulse event: the timer's bit after a wait returned: 0x00000000
+manual reset, pulse event: the cancel: 0x00000000
+manual reset, pulse event: the waiters it counted: 0x00000000
+manual reset, pulse event: waiter 0's result: 0x00000000
+manual reset, pulse event: the pattern waiter 0 got: 0x00008000
+manual reset, pulse event: waiter 1's result: 0x00000000
+manual reset, pulse event: the pattern waiter 1 got: 0x00008000
+manual reset, pulse event: waiter 2's result: 0x00000000
+manual reset, pulse event: the pattern waiter 2 got: 0x00008000
+auto reset, pulse event: the timer's bit after a wait returned: 0x00000000
+auto reset, pulse event: the cancel: 0x00000000
+auto reset, pulse event: the waiters it counted: 0x00000002
+auto reset, pulse event: waiter 0's result: 0x00000000
+auto reset, pulse event: the pattern waiter 0 got: 0x00008000
+auto reset, pulse event: waiter 1's result: 0x80028007
+auto reset, pulse event: waiter 2's result: 0x80028007
+auto reset, repeating set event, FIFO: the waits that returned: 0x00000003
+auto reset, repeating set event, FIFO: the order they returned in: 0x00000012
+auto reset, repeating set event, FIFO: their results: 0x00000000
+auto reset, repeating set event, priority: the waits that returned: 0x00000003
+auto reset, repeating set event, priority: the order they returned in: 0x00000120
+auto reset, repeating set event, priority: their results: 0x00000000
+DONE

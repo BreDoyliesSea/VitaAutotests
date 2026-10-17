@@ -1,0 +1,22 @@
+STANDBY at 0x70, core 1 idle: T's status before the change: 0x00000004
+STANDBY at 0x70, core 1 idle: T ran while the gate held core 0: 0x00000000
+STANDBY at 0x70, core 1 idle: the core T ran on: 0x00000000
+READY at 0x70, core 1 idle: T's status before the change: 0x00000002
+READY at 0x70, core 1 idle: T ran while the gate held core 0: 0x00000000
+READY at 0x70, core 1 idle: the core T ran on: 0x00000000
+READY at 0xA0, core 1 idle: T's status before the change: 0x00000002
+READY at 0xA0, core 1 idle: T ran while the gate held core 0: 0x00000001
+READY at 0xA0, core 1 idle: the core T ran on: 0x00000001
+STANDBY at 0x70, core 1 busy at 0xB0: T's status before the change: 0x00000004
+STANDBY at 0x70, core 1 busy at 0xB0: T ran while the gate held core 0: 0x00000000
+STANDBY at 0x70, core 1 busy at 0xB0: the core T ran on: 0x00000000
+READY at 0x70, core 1 busy at 0xB0: T's status before the change: 0x00000002
+READY at 0x70, core 1 busy at 0xB0: T ran while the gate held core 0: 0x00000000
+READY at 0x70, core 1 busy at 0xB0: the core T ran on: 0x00000000
+READY at 0xA0, core 1 busy at 0xB0: T's status before the change: 0x00000002
+READY at 0xA0, core 1 busy at 0xB0: T ran while the gate held core 0: 0x00000001
+READY at 0xA0, core 1 busy at 0xB0: the core T ran on: 0x00000001
+READY at 0xA0, moved to core 1 alone, core 1 idle: T's status before the change: 0x00000002
+READY at 0xA0, moved to core 1 alone, core 1 idle: T ran while the gate held core 0: 0x00000001
+READY at 0xA0, moved to core 1 alone, core 1 idle: the core T ran on: 0x00000001
+DONE

@@ -1,0 +1,21 @@
+T at 0x70, S at 0xB0: the core T ran on before B: 0x00000000
+T at 0x70, S at 0xB0: T's status once B runs: 0x00000001
+T at 0x70, S at 0xB0: T's current CPU once B runs: 0x00000001
+T at 0x70, S at 0xB0: T counted on while B ran: 0x00000001
+T at 0x70, S at 0xB0: S counted on while B ran: 0x00000000
+T at 0x70, S at 0x70: the core T ran on before B: 0x00000000
+T at 0x70, S at 0x70: T's status once B runs: 0x00000002
+T at 0x70, S at 0x70: T's current CPU once B runs: 0x00000000
+T at 0x70, S at 0x70: T counted on while B ran: 0x00000000
+T at 0x70, S at 0x70: S counted on while B ran: 0x00000001
+T at 0xA0, S at 0xB0: the core T ran on before B: 0x00000000
+T at 0xA0, S at 0xB0: T's status once B runs: 0x00000001
+T at 0xA0, S at 0xB0: T's current CPU once B runs: 0x00000001
+T at 0xA0, S at 0xB0: T counted on while B ran: 0x00000001
+T at 0xA0, S at 0xB0: S counted on while B ran: 0x00000000
+T at 0xA0, S at 0xA0: the core T ran on before B: 0x00000000
+T at 0xA0, S at 0xA0: T's status once B runs: 0x00000002
+T at 0xA0, S at 0xA0: T's current CPU once B runs: 0x00007FFF
+T at 0xA0, S at 0xA0: T counted on while B ran: 0x00000000
+T at 0xA0, S at 0xA0: S counted on while B ran: 0x00000001
+DONE

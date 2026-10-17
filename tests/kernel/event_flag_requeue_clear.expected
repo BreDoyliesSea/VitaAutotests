@@ -1,0 +1,60 @@
+priority queue, no change: A is done after the change: 0x00000000
+priority queue, no change: B is done after the change: 0x00000000
+priority queue, no change: A is done after the set: 0x00000001
+priority queue, no change: B is done after the set: 0x00000000
+priority queue, no change: the bits after the set: 0x00000000
+priority queue, no change: A's result: 0x00000000
+priority queue, no change: A's bits: 0x00000001
+priority queue, no change: B's result: 0x80028006
+priority queue, no change: B's bits: 0x00000000
+priority queue, A drops below B: the change: 0x00000000
+priority queue, A drops below B: A is done after the change: 0x00000000
+priority queue, A drops below B: B is done after the change: 0x00000000
+priority queue, A drops below B: A is done after the set: 0x00000001
+priority queue, A drops below B: B is done after the set: 0x00000001
+priority queue, A drops below B: the bits after the set: 0x00000000
+priority queue, A drops below B: A's result: 0x00000000
+priority queue, A drops below B: A's bits: 0x00000001
+priority queue, A drops below B: B's result: 0x00000000
+priority queue, A drops below B: B's bits: 0x00000001
+priority queue, B raised above A: the change: 0x00000000
+priority queue, B raised above A: A is done after the change: 0x00000000
+priority queue, B raised above A: B is done after the change: 0x00000000
+priority queue, B raised above A: A is done after the set: 0x00000001
+priority queue, B raised above A: B is done after the set: 0x00000001
+priority queue, B raised above A: the bits after the set: 0x00000000
+priority queue, B raised above A: A's result: 0x00000000
+priority queue, B raised above A: A's bits: 0x00000001
+priority queue, B raised above A: B's result: 0x00000000
+priority queue, B raised above A: B's bits: 0x00000001
+priority queue, A set to its own priority: the change: 0x00000000
+priority queue, A set to its own priority: A is done after the change: 0x00000000
+priority queue, A set to its own priority: B is done after the change: 0x00000000
+priority queue, A set to its own priority: A is done after the set: 0x00000001
+priority queue, A set to its own priority: B is done after the set: 0x00000001
+priority queue, A set to its own priority: the bits after the set: 0x00000000
+priority queue, A set to its own priority: A's result: 0x00000000
+priority queue, A set to its own priority: A's bits: 0x00000001
+priority queue, A set to its own priority: B's result: 0x00000000
+priority queue, A set to its own priority: B's bits: 0x00000001
+FIFO queue, A drops below B: the change: 0x00000000
+FIFO queue, A drops below B: A is done after the change: 0x00000000
+FIFO queue, A drops below B: B is done after the change: 0x00000000
+FIFO queue, A drops below B: A is done after the set: 0x00000001
+FIFO queue, A drops below B: B is done after the set: 0x00000000
+FIFO queue, A drops below B: the bits after the set: 0x00000000
+FIFO queue, A drops below B: A's result: 0x00000000
+FIFO queue, A drops below B: A's bits: 0x00000001
+FIFO queue, A drops below B: B's result: 0x80028006
+FIFO queue, A drops below B: B's bits: 0x00000000
+FIFO queue, A set to its own priority: the change: 0x00000000
+FIFO queue, A set to its own priority: A is done after the change: 0x00000000
+FIFO queue, A set to its own priority: B is done after the change: 0x00000000
+FIFO queue, A set to its own priority: A is done after the set: 0x00000001
+FIFO queue, A set to its own priority: B is done after the set: 0x00000000
+FIFO queue, A set to its own priority: the bits after the set: 0x00000000
+FIFO queue, A set to its own priority: A's result: 0x00000000
+FIFO queue, A set to its own priority: A's bits: 0x00000001
+FIFO queue, A set to its own priority: B's result: 0x80028006
+FIFO queue, A set to its own priority: B's bits: 0x00000000
+DONE

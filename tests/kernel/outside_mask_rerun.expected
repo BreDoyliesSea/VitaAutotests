@@ -1,0 +1,41 @@
+signaled while core 0 is held: T ran within 200 ms of the raise: 0x00000001
+signaled while core 0 is held: the core T ran on: 0x00000001
+signaled while core 0 is held: the mask T read then: 0x00010000
+signaled while core 0 is held: T's status in its wait: 0x00000008
+signaled while core 0 is held: T's current CPU in its wait: 0xFFFFFFFF
+signaled while core 0 is held: T's last CPU in its wait: 0x00000001
+signaled while core 0 is held: T's mask in its info in its wait: 0x00010000
+signaled while core 0 is held: T's mask from the main thread in its wait: 0x00010000
+signaled while core 0 is held: T's priority in its wait: 0x00000060
+signaled while core 0 is held: T's status 10 ms after the signal: 0x00000004
+signaled while core 0 is held: T's current CPU 10 ms after the signal: 0x00000000
+signaled while core 0 is held: T went on within 200 ms: 0x00000000
+signaled while core 0 is held: T only went on once given every core: 0x00000000
+signaled while core 0 is held: the core T went on on: 0x00000000
+signaled once core 0 is free: T ran within 200 ms of the raise: 0x00000001
+signaled once core 0 is free: the core T ran on: 0x00000001
+signaled once core 0 is free: the mask T read then: 0x00010000
+signaled once core 0 is free: T's status in its wait: 0x00000008
+signaled once core 0 is free: T's current CPU in its wait: 0xFFFFFFFF
+signaled once core 0 is free: T's last CPU in its wait: 0x00000001
+signaled once core 0 is free: T's mask in its info in its wait: 0x00010000
+signaled once core 0 is free: T's mask from the main thread in its wait: 0x00010000
+signaled once core 0 is free: T's priority in its wait: 0x00000060
+signaled once core 0 is free: T's status 10 ms after the signal: 0x00000010
+signaled once core 0 is free: T's current CPU 10 ms after the signal: 0xFFFFFFFF
+signaled once core 0 is free: T went on within 200 ms: 0x00000001
+signaled once core 0 is free: T only went on once given every core: 0x00000000
+signaled once core 0 is free: the core T went on on: 0x00000000
+a 10 ms delay while core 0 is held: T ran within 200 ms of the raise: 0x00000001
+a 10 ms delay while core 0 is held: the core T ran on: 0x00000001
+a 10 ms delay while core 0 is held: the mask T read then: 0x00010000
+a 10 ms delay while core 0 is held: T went on within 200 ms: 0x00000000
+a 10 ms delay while core 0 is held: T only went on once given every core: 0x00000000
+a 10 ms delay while core 0 is held: the core T went on on: 0x00000000
+lowered by itself to 0xA0 while core 0 is held: T ran within 200 ms of the raise: 0x00000001
+lowered by itself to 0xA0 while core 0 is held: the core T ran on: 0x00000001
+lowered by itself to 0xA0 while core 0 is held: the mask T read then: 0x00010000
+lowered by itself to 0xA0 while core 0 is held: T went on within 200 ms: 0x00000001
+lowered by itself to 0xA0 while core 0 is held: T only went on once given every core: 0x00000000
+lowered by itself to 0xA0 while core 0 is held: the core T went on on: 0x00000001
+DONE

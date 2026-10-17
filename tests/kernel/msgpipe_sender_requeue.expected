@@ -1,0 +1,91 @@
+attr 0x1, A drops below B and C: the free size before the change: 0x00000008
+attr 0x1, A drops below B and C: the waiting senders before the change: 0x00000003
+attr 0x1, A drops below B and C: the change: 0x00000000
+attr 0x1, A drops below B and C: the free size right after the change: 0x00000004
+attr 0x1, A drops below B and C: the waiting senders right after the change: 0x00000001
+attr 0x1, A drops below B and C: A is done after the change: 0x00000000
+attr 0x1, A drops below B and C: B is done after the change: 0x00000001
+attr 0x1, A drops below B and C: C is done after the change: 0x00000001
+attr 0x1, A drops below B and C: cancel the pipe: 0x00000000
+attr 0x1, A drops below B and C: the senders the cancel ended: 0x00000001
+attr 0x1, A drops below B and C: A's result: 0x80028007
+attr 0x1, A drops below B and C: A's size sent: 0x00000000
+attr 0x1, A drops below B and C: B's result: 0x00000000
+attr 0x1, A drops below B and C: B's size sent: 0x00000002
+attr 0x1, A drops below B and C: C's result: 0x00000000
+attr 0x1, A drops below B and C: C's size sent: 0x00000002
+attr 0x1, A drops below B and C: receive what the pipe holds: 0x80028223
+attr 0x1, A drops below B and C: the pipe held "" past the '.' bytes: 0x00000000
+attr 0x1, C raised above A: the free size before the change: 0x00000008
+attr 0x1, C raised above A: the waiting senders before the change: 0x00000003
+attr 0x1, C raised above A: the change: 0x00000000
+attr 0x1, C raised above A: the free size right after the change: 0x00000006
+attr 0x1, C raised above A: the waiting senders right after the change: 0x00000002
+attr 0x1, C raised above A: A is done after the change: 0x00000000
+attr 0x1, C raised above A: B is done after the change: 0x00000000
+attr 0x1, C raised above A: C is done after the change: 0x00000001
+attr 0x1, C raised above A: cancel the pipe: 0x00000000
+attr 0x1, C raised above A: the senders the cancel ended: 0x00000002
+attr 0x1, C raised above A: A's result: 0x80028007
+attr 0x1, C raised above A: A's size sent: 0x00000000
+attr 0x1, C raised above A: B's result: 0x80028007
+attr 0x1, C raised above A: B's size sent: 0x00000000
+attr 0x1, C raised above A: C's result: 0x00000000
+attr 0x1, C raised above A: C's size sent: 0x00000002
+attr 0x1, C raised above A: receive what the pipe holds: 0x80028223
+attr 0x1, C raised above A: the pipe held "" past the '.' bytes: 0x00000000
+attr 0x1, A set to its own priority: the free size before the change: 0x00000008
+attr 0x1, A set to its own priority: the waiting senders before the change: 0x00000003
+attr 0x1, A set to its own priority: the change: 0x00000000
+attr 0x1, A set to its own priority: the free size right after the change: 0x00000006
+attr 0x1, A set to its own priority: the waiting senders right after the change: 0x00000002
+attr 0x1, A set to its own priority: A is done after the change: 0x00000000
+attr 0x1, A set to its own priority: B is done after the change: 0x00000001
+attr 0x1, A set to its own priority: C is done after the change: 0x00000000
+attr 0x1, A set to its own priority: cancel the pipe: 0x00000000
+attr 0x1, A set to its own priority: the senders the cancel ended: 0x00000002
+attr 0x1, A set to its own priority: A's result: 0x80028007
+attr 0x1, A set to its own priority: A's size sent: 0x00000000
+attr 0x1, A set to its own priority: B's result: 0x00000000
+attr 0x1, A set to its own priority: B's size sent: 0x00000002
+attr 0x1, A set to its own priority: C's result: 0x80028007
+attr 0x1, A set to its own priority: C's size sent: 0x00000000
+attr 0x1, A set to its own priority: receive what the pipe holds: 0x80028223
+attr 0x1, A set to its own priority: the pipe held "" past the '.' bytes: 0x00000000
+attr 0x0, A drops below B and C: the free size before the change: 0x00000008
+attr 0x0, A drops below B and C: the waiting senders before the change: 0x00000003
+attr 0x0, A drops below B and C: the change: 0x00000000
+attr 0x0, A drops below B and C: the free size right after the change: 0x00000008
+attr 0x0, A drops below B and C: the waiting senders right after the change: 0x00000003
+attr 0x0, A drops below B and C: A is done after the change: 0x00000000
+attr 0x0, A drops below B and C: B is done after the change: 0x00000000
+attr 0x0, A drops below B and C: C is done after the change: 0x00000000
+attr 0x0, A drops below B and C: cancel the pipe: 0x00000000
+attr 0x0, A drops below B and C: the senders the cancel ended: 0x00000003
+attr 0x0, A drops below B and C: A's result: 0x80028007
+attr 0x0, A drops below B and C: A's size sent: 0x00000000
+attr 0x0, A drops below B and C: B's result: 0x80028007
+attr 0x0, A drops below B and C: B's size sent: 0x00000000
+attr 0x0, A drops below B and C: C's result: 0x80028007
+attr 0x0, A drops below B and C: C's size sent: 0x00000000
+attr 0x0, A drops below B and C: receive what the pipe holds: 0x80028223
+attr 0x0, A drops below B and C: the pipe held "" past the '.' bytes: 0x00000000
+attr 0x2, A drops below B and C: the free size before the change: 0x00000008
+attr 0x2, A drops below B and C: the waiting senders before the change: 0x00000003
+attr 0x2, A drops below B and C: the change: 0x00000000
+attr 0x2, A drops below B and C: the free size right after the change: 0x00000008
+attr 0x2, A drops below B and C: the waiting senders right after the change: 0x00000003
+attr 0x2, A drops below B and C: A is done after the change: 0x00000000
+attr 0x2, A drops below B and C: B is done after the change: 0x00000000
+attr 0x2, A drops below B and C: C is done after the change: 0x00000000
+attr 0x2, A drops below B and C: cancel the pipe: 0x00000000
+attr 0x2, A drops below B and C: the senders the cancel ended: 0x00000003
+attr 0x2, A drops below B and C: A's result: 0x80028007
+attr 0x2, A drops below B and C: A's size sent: 0x00000000
+attr 0x2, A drops below B and C: B's result: 0x80028007
+attr 0x2, A drops below B and C: B's size sent: 0x00000000
+attr 0x2, A drops below B and C: C's result: 0x80028007
+attr 0x2, A drops below B and C: C's size sent: 0x00000000
+attr 0x2, A drops below B and C: receive what the pipe holds: 0x80028223
+attr 0x2, A drops below B and C: the pipe held "" past the '.' bytes: 0x00000000
+DONE

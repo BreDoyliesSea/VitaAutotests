@@ -1,0 +1,13 @@
+L at 0x70 lowered to 0xA0, R at 0x78, core 1 idle: the core L ran on before the change: 0x00000000
+L at 0x70 lowered to 0xA0, R at 0x78, core 1 idle: L ran again within 200 ms: 0x00000001
+L at 0x70 lowered to 0xA0, R at 0x78, core 1 idle: the core L ran on: 0x00000001
+L at 0x70 lowered to 0x7C, R at 0x78, core 1 idle: the core L ran on before the change: 0x00000000
+L at 0x70 lowered to 0x7C, R at 0x78, core 1 idle: L ran again within 200 ms: 0x00000001
+L at 0x70 lowered to 0x7C, R at 0x78, core 1 idle: the core L ran on: 0x00000001
+L at 0xA0 lowered to 0xAC, R at 0xA8, core 1 idle: the core L ran on before the change: 0x00000000
+L at 0xA0 lowered to 0xAC, R at 0xA8, core 1 idle: L ran again within 200 ms: 0x00000001
+L at 0xA0 lowered to 0xAC, R at 0xA8, core 1 idle: the core L ran on: 0x00000001
+L at 0x70 lowered to 0xA0, R at 0x78, core 1 busy at 0xB0: the core L ran on before the change: 0x00000000
+L at 0x70 lowered to 0xA0, R at 0x78, core 1 busy at 0xB0: L ran again within 200 ms: 0x00000001
+L at 0x70 lowered to 0xA0, R at 0x78, core 1 busy at 0xB0: the core L ran on: 0x00000001
+DONE

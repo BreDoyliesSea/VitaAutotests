@@ -1,0 +1,21 @@
+write lock held, priority queue: W1 drops below W2: 0x00000000
+write lock held, priority queue: W1's turn: 0x00000002
+write lock held, priority queue: W1's result: 0x00000000
+write lock held, priority queue: R's turn: 0x00000003
+write lock held, priority queue: R's result: 0x00000000
+write lock held, priority queue: W2's turn: 0x00000001
+write lock held, priority queue: W2's result: 0x00000000
+write lock held, FIFO queue: W1 drops below W2: 0x00000000
+write lock held, FIFO queue: W1's turn: 0x00000001
+write lock held, FIFO queue: W1's result: 0x00000000
+write lock held, FIFO queue: R's turn: 0x00000003
+write lock held, FIFO queue: R's result: 0x00000000
+write lock held, FIFO queue: W2's turn: 0x00000002
+write lock held, FIFO queue: W2's result: 0x00000000
+read lock held, priority queue: R raised above W: 0x00000000
+read lock held, priority queue: R got its read lock after the change: 0x00000000
+read lock held, priority queue: W's turn: 0x00000001
+read lock held, priority queue: W's result: 0x00000000
+read lock held, priority queue: R's turn: 0x00000002
+read lock held, priority queue: R's result: 0x00000000
+DONE

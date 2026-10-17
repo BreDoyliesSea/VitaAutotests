@@ -1,0 +1,18 @@
+L at 0x70 lowers itself: step 0: 0x00000000
+L at 0x70 lowers itself: step 1: 0x00000002
+L at 0x70 lowers itself: step 2: 0x00000001
+L at 0x70 lowers itself: step 3: 0x00000003
+L at 0xA0 lowers itself: step 0: 0x00000000
+L at 0xA0 lowers itself: step 1: 0x00000002
+L at 0xA0 lowers itself: step 2: 0x00000001
+L at 0xA0 lowers itself: step 3: 0x00000003
+L at 0x70 lowers itself, B STANDBY: step 0: 0x00000000
+L at 0x70 lowers itself, B STANDBY: step 1: 0x00000002
+L at 0x70 lowers itself, B STANDBY: step 2: 0x00000001
+L at 0x70 lowers itself, B STANDBY: step 3: 0x00000003
+L at 0xA0 lowered from core 1: the change: 0x00000000
+L at 0xA0 lowered from core 1: step 0: 0x00000000
+L at 0xA0 lowered from core 1: step 1: 0x00000002
+L at 0xA0 lowered from core 1: step 2: 0x00000001
+L at 0xA0 lowered from core 1: step 3: 0x00000003
+DONE

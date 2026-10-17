@@ -1,0 +1,144 @@
+USER_RW: make one to close: 0x00000000
+USER_RW: close it: 0x00000000
+USER_RW: the free sizes are back after the close: 0x00000001
+USER_RW: get the base after the close: 0x80024501
+USER_RW: find by its base after the close: 0x80022007
+USER_RW: close it again: 0x80024501
+USER_RW: free it after that: 0x80024501
+USER_RW: make one to free: 0x00000000
+USER_RW: free it: 0x00000000
+USER_RW: the free sizes are back after the free: 0x00000001
+USER_RW: get the base after the free: 0x80024501
+USER_RW: find by its base after the free: 0x80022007
+USER_RW: free it again: 0x80024501
+USER_RW: close it after that: 0x80024501
+USER_RW with ENABLE_OPEN: make one to close: 0x00000000
+USER_RW with ENABLE_OPEN: close it: 0x00000000
+USER_RW with ENABLE_OPEN: the free sizes are back after the close: 0x00000001
+USER_RW with ENABLE_OPEN: get the base after the close: 0x80024501
+USER_RW with ENABLE_OPEN: find by its base after the close: 0x80022007
+USER_RW with ENABLE_OPEN: close it again: 0x80024501
+USER_RW with ENABLE_OPEN: free it after that: 0x80024501
+USER_RW with ENABLE_OPEN: make one to free: 0x00000000
+USER_RW with ENABLE_OPEN: free it: 0x00000000
+USER_RW with ENABLE_OPEN: the free sizes are back after the free: 0x00000001
+USER_RW with ENABLE_OPEN: get the base after the free: 0x80024501
+USER_RW with ENABLE_OPEN: find by its base after the free: 0x80022007
+USER_RW with ENABLE_OPEN: free it again: 0x80024501
+USER_RW with ENABLE_OPEN: close it after that: 0x80024501
+USER_RW_UNCACHE: make one to close: 0x00000000
+USER_RW_UNCACHE: close it: 0x00000000
+USER_RW_UNCACHE: the free sizes are back after the close: 0x00000001
+USER_RW_UNCACHE: get the base after the close: 0x80024501
+USER_RW_UNCACHE: find by its base after the close: 0x80022007
+USER_RW_UNCACHE: close it again: 0x80024501
+USER_RW_UNCACHE: free it after that: 0x80024501
+USER_RW_UNCACHE: make one to free: 0x00000000
+USER_RW_UNCACHE: free it: 0x00000000
+USER_RW_UNCACHE: the free sizes are back after the free: 0x00000001
+USER_RW_UNCACHE: get the base after the free: 0x80024501
+USER_RW_UNCACHE: find by its base after the free: 0x80022007
+USER_RW_UNCACHE: free it again: 0x80024501
+USER_RW_UNCACHE: close it after that: 0x80024501
+USER_CDRAM_RW: make one to close: 0x00000000
+USER_CDRAM_RW: close it: 0x00000000
+USER_CDRAM_RW: the free sizes are back after the close: 0x00000001
+USER_CDRAM_RW: get the base after the close: 0x80024501
+USER_CDRAM_RW: find by its base after the close: 0x80022007
+USER_CDRAM_RW: close it again: 0x80024501
+USER_CDRAM_RW: free it after that: 0x80024501
+USER_CDRAM_RW: make one to free: 0x00000000
+USER_CDRAM_RW: free it: 0x00000000
+USER_CDRAM_RW: the free sizes are back after the free: 0x00000001
+USER_CDRAM_RW: get the base after the free: 0x80024501
+USER_CDRAM_RW: find by its base after the free: 0x80022007
+USER_CDRAM_RW: free it again: 0x80024501
+USER_CDRAM_RW: close it after that: 0x80024501
+USER_MAIN_PHYCONT_RW: make one to close: 0x00000000
+USER_MAIN_PHYCONT_RW: close it: 0x00000000
+USER_MAIN_PHYCONT_RW: the free sizes are back after the close: 0x00000001
+USER_MAIN_PHYCONT_RW: get the base after the close: 0x80024501
+USER_MAIN_PHYCONT_RW: find by its base after the close: 0x80022007
+USER_MAIN_PHYCONT_RW: close it again: 0x80024501
+USER_MAIN_PHYCONT_RW: free it after that: 0x80024501
+USER_MAIN_PHYCONT_RW: make one to free: 0x00000000
+USER_MAIN_PHYCONT_RW: free it: 0x00000000
+USER_MAIN_PHYCONT_RW: the free sizes are back after the free: 0x00000001
+USER_MAIN_PHYCONT_RW: get the base after the free: 0x80024501
+USER_MAIN_PHYCONT_RW: find by its base after the free: 0x80022007
+USER_MAIN_PHYCONT_RW: free it again: 0x80024501
+USER_MAIN_PHYCONT_RW: close it after that: 0x80024501
+USER_MAIN_CDIALOG_RW: make one to close: 0x00000000
+USER_MAIN_CDIALOG_RW: close it: 0x00000000
+USER_MAIN_CDIALOG_RW: the free sizes are back after the close: 0x00000001
+USER_MAIN_CDIALOG_RW: get the base after the close: 0x80024501
+USER_MAIN_CDIALOG_RW: find by its base after the close: 0x80022007
+USER_MAIN_CDIALOG_RW: close it again: 0x80024501
+USER_MAIN_CDIALOG_RW: free it after that: 0x80024501
+USER_MAIN_CDIALOG_RW: make one to free: 0x00000000
+USER_MAIN_CDIALOG_RW: free it: 0x00000000
+USER_MAIN_CDIALOG_RW: the free sizes are back after the free: 0x00000001
+USER_MAIN_CDIALOG_RW: get the base after the free: 0x80024501
+USER_MAIN_CDIALOG_RW: find by its base after the free: 0x80022007
+USER_MAIN_CDIALOG_RW: free it again: 0x80024501
+USER_MAIN_CDIALOG_RW: close it after that: 0x80024501
+opened with 0x10: make one to close: 0x00000000
+opened with 0x10: close it: 0x00000000
+opened with 0x10: find the original after the close: 0x00000000
+opened with 0x10: get the base after the close: 0x80024501
+opened with 0x10: find by its base after the close: 0x80022007
+opened with 0x10: close it again: 0x80024501
+opened with 0x10: free it after that: 0x80024501
+opened with 0x10: make one to free: 0x00000000
+opened with 0x10: free it: 0x00000000
+opened with 0x10: find the original after the free: 0x00000000
+opened with 0x10: get the base after the free: 0x80024501
+opened with 0x10: find by its base after the free: 0x80022007
+opened with 0x10: free it again: 0x80024501
+opened with 0x10: close it after that: 0x80024501
+opened with 0x30: make one to close: 0x00000000
+opened with 0x30: close it: 0x00000000
+opened with 0x30: find the original after the close: 0x00000000
+opened with 0x30: get the base after the close: 0x80024501
+opened with 0x30: find by its base after the close: 0x80022007
+opened with 0x30: close it again: 0x80024501
+opened with 0x30: free it after that: 0x80024501
+opened with 0x30: make one to free: 0x00000000
+opened with 0x30: free it: 0x00000000
+opened with 0x30: find the original after the free: 0x00000000
+opened with 0x30: get the base after the free: 0x80024501
+opened with 0x30: find by its base after the free: 0x80022007
+opened with 0x30: free it again: 0x80024501
+opened with 0x30: close it after that: 0x80024501
+a freed block: get the base: 0x80024501
+a freed block: the out value is left alone: 0x00000001
+a freed block: close: 0x80024501
+a freed block: free: 0x80024501
+an unknown UID: get the base: 0x80024501
+an unknown UID: the out value is left alone: 0x00000001
+an unknown UID: close: 0x80024501
+an unknown UID: free: 0x80024501
+UID 0: get the base: 0x80024501
+UID 0: the out value is left alone: 0x00000001
+UID 0: close: 0x80024501
+UID 0: free: 0x80024501
+UID -1: get the base: 0x80024501
+UID -1: the out value is left alone: 0x00000001
+UID -1: close: 0x80020005
+UID -1: free: 0x80020005
+a semaphore: get the base: 0x80024508
+a semaphore: the out value is left alone: 0x00000001
+a semaphore: close: 0x80024508
+a semaphore: free: 0x80024508
+a mutex: get the base: 0x80024508
+a mutex: the out value is left alone: 0x00000001
+a mutex: close: 0x80024508
+a mutex: free: 0x80024508
+the thread: get the base: 0x80024508
+the thread: the out value is left alone: 0x00000001
+the thread: close: 0x80024508
+the thread: free: 0x80024508
+the semaphore still works after them: 0x00000000
+the mutex still works after them: 0x00000000
+get the base of an unknown UID into a NULL pointer: 0x80020005
+DONE
