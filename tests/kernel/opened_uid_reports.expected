@@ -1,0 +1,49 @@
+condition variable: create the mutex and open it: 0x00000000
+condition variable: create it with the opened mutex UID: 0x00000000
+condition variable: its info: 0x00000000
+condition variable: the mutex UID it reports: 0x00000001
+condition variable: a wait with the mutex locked through the creating UID: 0x80028005
+condition variable: close the opened mutex UID: 0x00000000
+condition variable: its info after: 0x00000000
+condition variable: the mutex UID it reports after: 0x00000001
+condition variable: a wait after: 0x80028005
+condition variable: delete the mutex's creating UID: 0x00000000
+condition variable: its info after the delete: 0x00000000
+condition variable: the mutex UID it reports after the delete: 0x00000002
+condition variable: a signal after the delete: 0x00000000
+condition variable: delete it: 0x00000000
+callback: create the event and open it: 0x00000000
+callback: register through the opened UID: 0x00000000
+callback: set with notification through the creating UID: 0x00000000
+callback: registered through the opened UID: the callback's notifications: 0x00000001
+callback: registered through the opened UID: runs of the callback: 0x00000001
+callback: registered through the opened UID: the notify ID it got: 0x00000000
+callback: unregister through the creating UID: 0x00000000
+callback: unregister through the opened UID: 0x800280A3
+callback: register through the creating UID: 0x00000000
+callback: set with notification through the opened UID: 0x00000000
+callback: registered through the creating UID: the callback's notifications: 0x00000001
+callback: registered through the creating UID: runs of the callback: 0x00000001
+callback: registered through the creating UID: the notify ID it got: 0x00000000
+callback: delete the creating UID: 0x00000000
+callback: after the delete: the callback's notifications: 0x00000001
+callback: after the delete: runs of the callback: 0x00000001
+callback: after the delete: the notify ID it got: 0x00000000
+callback: set with notification through the opened UID after it: 0x00000000
+callback: the set after the delete: the callback's notifications: 0x00000001
+callback: the set after the delete: runs of the callback: 0x00000001
+callback: the set after the delete: the notify ID it got: 0x00000000
+callback: close the opened UID, the last: 0x00000000
+callback: after the close: the callback's notifications: 0x00000001
+callback: after the close: runs of the callback: 0x00000001
+callback: after the close: the notify ID it got: 0x00000000
+several events: create the event and open it: 0x00000000
+several events: wait with the set one given by its opened UID: 0x00000001
+several events: the event UID in the result: 0x00000000
+several events: its result: 0x00000000
+several events: wait on the event through both UIDs: 0x00000002
+several events: result 0: its UID: 0x00000000
+several events: result 0: its result: 0x00000000
+several events: result 1: its UID: 0x00000000
+several events: result 1: its result: 0x00000000
+DONE

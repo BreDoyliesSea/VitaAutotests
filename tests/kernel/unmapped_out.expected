@@ -1,0 +1,31 @@
+find the base of a freed block: 0x80022007
+poll a flag with clear, the bits there: 0x80022005
+poll a flag with clear, the bits there: the pattern after: 0x00000000
+wait on a flag with clear, the bits there: 0x80022005
+wait on a flag with clear, the bits there: the pattern after: 0x00000000
+receive there: 0x80022005
+receive there: the size it wrote back: 0x0000DEAD
+receive there: the bytes left in the pipe: 0x00000008
+try receive there: 0x80022005
+try receive there: the size it wrote back: 0x0000DEAD
+try receive there: the bytes left in the pipe: 0x00000008
+receive with the size there: 0x80022005
+receive with the size there: the bytes left in the pipe: 0x00000000
+system time there: 0x80022005
+timer time there: 0x80022005
+timer base there: 0x80022005
+exit status there: 0x80022005
+cancel a semaphore to 3, the count there: 0x80022005
+cancel a semaphore to 3, the count there: its count after: 0x00000003
+cancel a flag to 0x5, the count there: 0x80022005
+cancel a flag to 0x5, the count there: the pattern after: 0x00000005
+cancel a pipe, the counts there: 0x80022005
+cancel a pipe, the counts there: the bytes left in the pipe: 0x00000000
+event pattern there: 0x80022005
+poll an auto reset event, the pattern there: 0x80022005
+poll an auto reset event, the pattern there: its pattern after: 0x00000004
+wait on several events, the results there: 0x80022005
+block base there: 0x80022005
+block info by address there: 0x80022005
+free memory size there: 0x80020005
+DONE

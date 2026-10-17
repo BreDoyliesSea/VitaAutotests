@@ -1,0 +1,12 @@
+create a semaphore before the others: 0x00000000
+create the openable semaphore: 0x00000000
+the creates less the opens: 0x000006FE
+the opens reached the end of the loop: 0x00000000
+the open that failed: 0x8002450C
+create a mutex while the opened UIDs are there: 0x00000000
+open the semaphore once more: 0x8002450C
+signal through the creating UID: 0x00000000
+every opened UID closes: 0x00000001
+open it after: 0x00000000
+create a semaphore after: 0x00000000
+DONE

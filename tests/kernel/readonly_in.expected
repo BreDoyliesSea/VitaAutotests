@@ -1,0 +1,50 @@
+allocate the original: 0x00000000
+open it read only: 0x00000000
+semaphore: create with the name in it: 0x00000000
+semaphore: its info has the name: 0x00000001
+mutex: create with the name in it: 0x00000000
+mutex: its info has the name: 0x00000001
+event flag: create with the name in it: 0x00000000
+event flag: its info has the name: 0x00000001
+condition variable: create with the name in it: 0x00000000
+condition variable: its info has the name: 0x00000001
+reader/writer lock: create with the name in it: 0x00000000
+reader/writer lock: its info has the name: 0x00000001
+message pipe: create with the name in it: 0x00000000
+message pipe: its info has the name: 0x00000001
+thread: create with the name in it: 0x00000000
+thread: its info has the name: 0x00000001
+timer: create with the name in it: 0x00000000
+timer: its info has the name: 0x00000001
+simple event: create with the name in it: 0x00000000
+simple event: its info has the name: 0x00000001
+callback: create with the name in it: 0x00000000
+callback: its info has the name: 0x00000001
+lightweight mutex: create with the name in it: 0x00000000
+lightweight mutex: its info has the name: 0x00000001
+semaphore: open by the name in it: 0x00000000
+semaphore: create with the option struct in it: 0x00000000
+mutex with a ceiling: create with the option struct in it: 0x00000000
+mutex with a ceiling: the ceiling in its info: 0x00000080
+thread: create with the option struct in it: 0x00000000
+send the message from it: 0x00000000
+send the message from it: the size it sent: 0x00000008
+send the message from it: a receive gets it: 0x00000001
+try send the message from it: 0x00000000
+try send the message from it: a receive gets it: 0x00000001
+send a vector from it: 0x00000000
+send a vector from it: the size it sent: 0x00000008
+send a vector from it: a receive gets it: 0x00000001
+start a thread with its arguments in it: 0x00000000
+start a thread with its arguments in it: its end: 0x00000000
+start a thread with its arguments in it: the size it got: 0x00000008
+start a thread with its arguments in it: it got them: 0x00000001
+set the timer's time from it: 0x80022005
+set the timer's time from it: its time is that: 0x00000001
+set a timer event with the interval in it: 0x00000000
+set a timer event with the interval in it: its interval is that: 0x00000001
+wait on several events listed in it: 0x00000001
+wait on several events listed in it: it reports the set one: 0x00000001
+allocate a block with its name and option struct in it: 0x00000000
+open it by the name in it: 0x00000000
+DONE

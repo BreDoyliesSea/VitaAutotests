@@ -1,0 +1,53 @@
+event flag, woken: the wait: 0x00000000
+event flag, woken: the time left is less than the timeout: 0x00000001
+event flag, woken: the time left is more than half of it: 0x00000001
+condition variable, woken: the wait: 0x00000000
+condition variable, woken: the time left is less than the timeout: 0x00000001
+condition variable, woken: the time left is more than half of it: 0x00000001
+message pipe receive, woken: the wait: 0x00000000
+message pipe receive, woken: the time left is less than the timeout: 0x00000001
+message pipe receive, woken: the time left is more than half of it: 0x00000001
+message pipe send, woken: the wait: 0x00000000
+message pipe send, woken: the time left is less than the timeout: 0x00000001
+message pipe send, woken: the time left is more than half of it: 0x00000001
+read lock, woken: the wait: 0x00000000
+read lock, woken: the time left is less than the timeout: 0x00000001
+read lock, woken: the time left is more than half of it: 0x00000001
+write lock, woken: the wait: 0x00000000
+write lock, woken: the time left is less than the timeout: 0x00000001
+write lock, woken: the time left is more than half of it: 0x00000001
+lightweight mutex, woken: the wait: 0x00000000
+lightweight mutex, woken: the time left is less than the timeout: 0x00000001
+lightweight mutex, woken: the time left is more than half of it: 0x00000001
+lightweight condition variable, woken: the wait: 0x00000000
+lightweight condition variable, woken: the time left is less than the timeout: 0x00000001
+lightweight condition variable, woken: the time left is more than half of it: 0x00000001
+simple event, woken: the wait: 0x00000000
+simple event, woken: the time left is less than the timeout: 0x00000001
+simple event, woken: the time left is more than half of it: 0x00000001
+two events, woken: the wait: 0x00000001
+two events, woken: the time left is less than the timeout: 0x00000001
+two events, woken: the time left is more than half of it: 0x00000001
+thread end, woken: the wait: 0x00000000
+thread end, woken: the time left is less than the timeout: 0x00000001
+thread end, woken: the time left is more than half of it: 0x00000001
+thread signal, woken: the wait: 0x00000000
+thread signal, woken: the time left is less than the timeout: 0x00000001
+thread signal, woken: the time left is more than half of it: 0x00000001
+mutex, timed out: the wait: 0x80028005
+mutex, timed out: the time left is 0: 0x00000001
+read lock, timed out: the wait: 0x80028005
+read lock, timed out: the time left is 0: 0x00000001
+write lock, timed out: the wait: 0x80028005
+write lock, timed out: the time left is 0: 0x00000001
+lightweight mutex, timed out: the wait: 0x80028005
+lightweight mutex, timed out: the time left is 0: 0x00000001
+lightweight condition variable, timed out: the wait: 0x80028005
+lightweight condition variable, timed out: the time left is 0: 0x00000001
+simple event, timed out: the wait: 0x80028005
+simple event, timed out: the time left is 0: 0x00000001
+two events, timed out: the wait: 0x80028005
+two events, timed out: the time left is 0: 0x00000001
+message pipe send, timed out: the wait: 0x80028005
+message pipe send, timed out: the time left is 0: 0x00000001
+DONE

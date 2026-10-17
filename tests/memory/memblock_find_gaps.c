@@ -137,8 +137,8 @@ int main(void) {
         return 0;
     }
     gap_error = sceKernelFindMemBlockByAddr(spacers[0].base, 0);
-    PRINT("find the base of a freed spacer", gap_error);
     if (gap_error >= 0) {
+        PRINT("find the base of a freed spacer", gap_error);
         test_exit();
         return 0;
     }
@@ -156,6 +156,8 @@ int main(void) {
         test_skip("no block has 64 KiB in no block after it, or none before it");
         return 0;
     }
+    // Printed once the test knows it runs, since a skip prints nothing but its own line
+    PRINT("find the base of a freed spacer", gap_error);
 
     check_ranges("after", end_gap, after, COUNT(after));
     SceKernelMemBlockInfo info = { .size = sizeof(info) };

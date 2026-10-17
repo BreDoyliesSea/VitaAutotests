@@ -1,0 +1,85 @@
+semaphore, waiting through the opened UID: create and open the object: 0x00000000
+semaphore, waiting through the opened UID: delete the creating UID: 0x00000000
+semaphore, waiting through the opened UID: waiters through the opened UID after it: 0x00000001
+semaphore, waiting through the opened UID: close the opened UID, the last: 0x00000000
+semaphore, waiting through the opened UID: the wait: 0x80028006
+semaphore, waiting through the opened UID: the time left: 0x00000001
+semaphore, waiting through the creating UID: create and open the object: 0x00000000
+semaphore, waiting through the creating UID: delete the creating UID: 0x00000000
+semaphore, waiting through the creating UID: waiters through the opened UID after it: 0x00000001
+semaphore, waiting through the creating UID: close the opened UID, the last: 0x00000000
+semaphore, waiting through the creating UID: the wait: 0x80028006
+semaphore, waiting through the creating UID: the time left: 0x00000001
+event flag, waiting through the opened UID: create and open the object: 0x00000000
+event flag, waiting through the opened UID: delete the creating UID: 0x00000000
+event flag, waiting through the opened UID: waiters through the opened UID after it: 0x00000001
+event flag, waiting through the opened UID: close the opened UID, the last: 0x00000000
+event flag, waiting through the opened UID: the wait: 0x80028006
+event flag, waiting through the opened UID: the time left: 0x00000001
+event flag, waiting through the creating UID: create and open the object: 0x00000000
+event flag, waiting through the creating UID: delete the creating UID: 0x00000000
+event flag, waiting through the creating UID: waiters through the opened UID after it: 0x00000001
+event flag, waiting through the creating UID: close the opened UID, the last: 0x00000000
+event flag, waiting through the creating UID: the wait: 0x80028006
+event flag, waiting through the creating UID: the time left: 0x00000001
+mutex, waiting through the opened UID: create and open the object: 0x00000000
+mutex, waiting through the opened UID: delete the creating UID: 0x00000000
+mutex, waiting through the opened UID: waiters through the opened UID after it: 0x00000001
+mutex, waiting through the opened UID: close the opened UID, the last: 0x00000000
+mutex, waiting through the opened UID: the wait: 0x80028006
+mutex, waiting through the opened UID: the time left: 0x00000001
+mutex, waiting through the creating UID: create and open the object: 0x00000000
+mutex, waiting through the creating UID: delete the creating UID: 0x00000000
+mutex, waiting through the creating UID: waiters through the opened UID after it: 0x00000001
+mutex, waiting through the creating UID: close the opened UID, the last: 0x00000000
+mutex, waiting through the creating UID: the wait: 0x80028006
+mutex, waiting through the creating UID: the time left: 0x00000001
+reader/writer lock, waiting through the opened UID: create and open the object: 0x00000000
+reader/writer lock, waiting through the opened UID: delete the creating UID: 0x00000000
+reader/writer lock, waiting through the opened UID: waiters through the opened UID after it: 0x00000001
+reader/writer lock, waiting through the opened UID: close the opened UID, the last: 0x00000000
+reader/writer lock, waiting through the opened UID: the wait: 0x80028006
+reader/writer lock, waiting through the opened UID: the time left: 0x00000001
+reader/writer lock, waiting through the creating UID: create and open the object: 0x00000000
+reader/writer lock, waiting through the creating UID: delete the creating UID: 0x00000000
+reader/writer lock, waiting through the creating UID: waiters through the opened UID after it: 0x00000001
+reader/writer lock, waiting through the creating UID: close the opened UID, the last: 0x00000000
+reader/writer lock, waiting through the creating UID: the wait: 0x80028006
+reader/writer lock, waiting through the creating UID: the time left: 0x00000001
+message pipe, waiting through the opened UID: create and open the object: 0x00000000
+message pipe, waiting through the opened UID: delete the creating UID: 0x00000000
+message pipe, waiting through the opened UID: waiters through the opened UID after it: 0x00000001
+message pipe, waiting through the opened UID: close the opened UID, the last: 0x00000000
+message pipe, waiting through the opened UID: the wait: 0x80028006
+message pipe, waiting through the opened UID: the time left: 0x00000001
+message pipe, waiting through the creating UID: create and open the object: 0x00000000
+message pipe, waiting through the creating UID: delete the creating UID: 0x00000000
+message pipe, waiting through the creating UID: waiters through the opened UID after it: 0x00000001
+message pipe, waiting through the creating UID: close the opened UID, the last: 0x00000000
+message pipe, waiting through the creating UID: the wait: 0x80028006
+message pipe, waiting through the creating UID: the time left: 0x00000001
+simple event, waiting through the opened UID: create and open the object: 0x00000000
+simple event, waiting through the opened UID: delete the creating UID: 0x00000000
+simple event, waiting through the opened UID: waiters through the opened UID after it: 0x00000001
+simple event, waiting through the opened UID: close the opened UID, the last: 0x00000000
+simple event, waiting through the opened UID: the wait: 0x80028006
+simple event, waiting through the opened UID: the time left: 0x00000001
+simple event, waiting through the creating UID: create and open the object: 0x00000000
+simple event, waiting through the creating UID: delete the creating UID: 0x00000000
+simple event, waiting through the creating UID: waiters through the opened UID after it: 0x00000001
+simple event, waiting through the creating UID: close the opened UID, the last: 0x00000000
+simple event, waiting through the creating UID: the wait: 0x80028006
+simple event, waiting through the creating UID: the time left: 0x00000001
+timer, waiting through the opened UID: create and open the object: 0x00000000
+timer, waiting through the opened UID: delete the creating UID: 0x00000000
+timer, waiting through the opened UID: waiters through the opened UID after it: 0x80028241
+timer, waiting through the opened UID: close the opened UID, the last: 0x80028241
+timer, waiting through the opened UID: the wait: 0x80028005
+timer, waiting through the opened UID: the time left: 0x00000000
+timer, waiting through the creating UID: create and open the object: 0x00000000
+timer, waiting through the creating UID: delete the creating UID: 0x00000000
+timer, waiting through the creating UID: waiters through the opened UID after it: 0x80028241
+timer, waiting through the creating UID: close the opened UID, the last: 0x80028241
+timer, waiting through the creating UID: the wait: 0x80028005
+timer, waiting through the creating UID: the time left: 0x00000000
+DONE

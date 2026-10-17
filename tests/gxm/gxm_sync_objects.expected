@@ -1,0 +1,22 @@
+create before initializing: 0x805B0000
+initialize libgxm: 0x00000000
+create one: 0x00000000
+create one: destroy it: 0x00000000
+many: at least 16 work: 0x00000001
+many: at least 64 work: 0x00000000
+many: at least 256 work: 0x00000000
+many: at least 1024 work: 0x00000000
+many: all 4096 work: 0x00000000
+many: the error of the one that failed: 0x805B0017
+many: every destroy works: 0x00000001
+create one once they're gone: 0x00000000
+create one once they're gone: destroy it: 0x00000000
+terminate libgxm: 0x00000000
+create after terminating: 0x805B0000
+initialize libgxm again: 0x00000000
+create after initializing again: 0x00000000
+create after initializing again: destroy it: 0x00000000
+destroy NULL: 0x805B0004
+create into a NULL pointer: 0x805B0004
+terminate libgxm again: 0x00000000
+DONE

@@ -1,0 +1,87 @@
+initialize libgxm: 0x00000000
+the valid parameters: 0x00000000
+the valid parameters: destroy it: 0x00000000
+two at once: the first: 0x00000000
+two at once: the second: 0x00000000
+two at once: destroy the second: 0x00000000
+two at once: destroy the first: 0x00000000
+VDM ring buffer: in a block that isn't mapped: 0x00000000
+VDM ring buffer: in a block that isn't mapped: destroy it: 0x00000000
+VDM ring buffer: in a block mapped with WRITE only: 0x00000000
+VDM ring buffer: in a block mapped with WRITE only: destroy it: 0x00000000
+VDM ring buffer: in a CDRAM block: 0x00000000
+VDM ring buffer: in a CDRAM block: destroy it: 0x00000000
+VDM ring buffer: size 4 KiB: 0x00000000
+VDM ring buffer: size 4 KiB: destroy it: 0x00000000
+VDM ring buffer: its default size less 2 bytes: 0x805B0005
+VDM ring buffer: a base 4 bytes in: 0x00000000
+VDM ring buffer: a base 4 bytes in: destroy it: 0x00000000
+vertex ring buffer: in a block that isn't mapped: 0x00000000
+vertex ring buffer: in a block that isn't mapped: destroy it: 0x00000000
+vertex ring buffer: in a block mapped with WRITE only: 0x00000000
+vertex ring buffer: in a block mapped with WRITE only: destroy it: 0x00000000
+vertex ring buffer: in a CDRAM block: 0x00000000
+vertex ring buffer: in a CDRAM block: destroy it: 0x00000000
+vertex ring buffer: size 4 KiB: 0x805B0003
+vertex ring buffer: its default size less 2 bytes: 0x805B0005
+vertex ring buffer: a base 4 bytes in: 0x00000000
+vertex ring buffer: a base 4 bytes in: destroy it: 0x00000000
+fragment ring buffer: in a block that isn't mapped: 0x00000000
+fragment ring buffer: in a block that isn't mapped: destroy it: 0x00000000
+fragment ring buffer: in a block mapped with WRITE only: 0x00000000
+fragment ring buffer: in a block mapped with WRITE only: destroy it: 0x00000000
+fragment ring buffer: in a CDRAM block: 0x00000000
+fragment ring buffer: in a CDRAM block: destroy it: 0x00000000
+fragment ring buffer: size 4 KiB: 0x805B0003
+fragment ring buffer: its default size less 2 bytes: 0x805B0005
+fragment ring buffer: a base 4 bytes in: 0x00000000
+fragment ring buffer: a base 4 bytes in: destroy it: 0x00000000
+fragment USSE ring buffer: in a block that isn't mapped: 0x00000000
+fragment USSE ring buffer: in a block that isn't mapped: destroy it: 0x00000000
+fragment USSE ring buffer: mapped with sceGxmMapMemory, offset 0: 0x805B0004
+fragment USSE ring buffer: mapped as vertex USSE memory: 0x805B0004
+fragment USSE ring buffer: in a CDRAM block: 0x00000000
+fragment USSE ring buffer: in a CDRAM block: destroy it: 0x00000000
+fragment USSE ring buffer: size 4 KiB: 0x00000000
+fragment USSE ring buffer: size 4 KiB: destroy it: 0x00000000
+fragment USSE ring buffer: its default size less 2 bytes: 0x805B0005
+fragment USSE ring buffer: a base 4 bytes in: 0x00000000
+fragment USSE ring buffer: a base 4 bytes in: destroy it: 0x00000000
+host memory: 2 KiB less 4 bytes: 0x805B0003
+host memory: size 0: 0x805B0003
+host memory: 4 bytes into the buffer: 0x00000000
+host memory: 4 bytes into the buffer: destroy it: 0x00000000
+host memory: in a USER_RW_UNCACHE block: 0x00000000
+host memory: in a USER_RW_UNCACHE block: destroy it: 0x00000000
+host memory: in a CDRAM block: 0x00000000
+host memory: in a CDRAM block: destroy it: 0x00000000
+visibility buffer: make a context: 0x00000000
+visibility buffer: in a mapped block: 0x00000000
+visibility buffer: in a block that isn't mapped: 0x00000000
+visibility buffer: a base 4 bytes in: 0x805B0005
+visibility buffer: a base 16 bytes in: 0x00000000
+visibility buffer: a stride of 4 KiB and 4 bytes: 0x805B0005
+visibility buffer: a stride of 0: 0x00000000
+visibility buffer: destroy the context: 0x00000000
+unmap while a context lives: make it: 0x00000000
+unmap while a context lives: the ring buffers: 0x00000000
+unmap while a context lives: the fragment USSE ring buffer: 0x00000000
+unmap while a context lives: destroy it: 0x00000000
+VDM ring buffer: size 0: 0x805B0003
+vertex ring buffer: size 0: 0x805B0003
+fragment ring buffer: size 0: 0x805B0003
+fragment USSE ring buffer: size 0: 0x805B0003
+VDM ring buffer: a base 2 bytes in: 0x805B0005
+vertex ring buffer: a base 2 bytes in: 0x805B0005
+fragment ring buffer: a base 2 bytes in: 0x805B0005
+fragment USSE ring buffer: a base 2 bytes in: 0x805B0005
+host memory: 2 bytes into the buffer: 0x805B0005
+NULL parameters: 0x805B0004
+a NULL context pointer: 0x805B0004
+vertex ring buffer: NULL: 0x805B0004
+fragment ring buffer: NULL: 0x805B0004
+fragment USSE ring buffer: NULL: 0x805B0004
+VDM ring buffer: NULL: 0x805B0004
+host memory: NULL: 0x805B0004
+terminate libgxm: 0x00000000
+DONE

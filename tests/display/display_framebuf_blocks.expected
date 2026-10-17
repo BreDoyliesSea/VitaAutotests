@@ -1,0 +1,75 @@
+set the valid framebuffer: 0x00000000
+initialize libgxm: 0x00000000
+USER_RW: allocate it: 0x00000000
+USER_RW: set it: 0x00000000
+USER_RW: set it: the display reports it: 0x00000001
+USER_RW: map it: 0x00000000
+USER_RW: set it while it's mapped: 0x00000000
+USER_RW: set it while it's mapped: the display reports it: 0x00000001
+USER_RW_UNCACHE: allocate it: 0x00000000
+USER_RW_UNCACHE: set it: 0x00000000
+USER_RW_UNCACHE: set it: the display reports it: 0x00000001
+USER_RW_UNCACHE: map it: 0x00000000
+USER_RW_UNCACHE: set it while it's mapped: 0x00000000
+USER_RW_UNCACHE: set it while it's mapped: the display reports it: 0x00000001
+USER_CDRAM_RW: allocate it: 0x00000000
+USER_CDRAM_RW: set it: 0x00000000
+USER_CDRAM_RW: set it: the display reports it: 0x00000001
+USER_CDRAM_RW: map it: 0x00000000
+USER_CDRAM_RW: set it while it's mapped: 0x00000000
+USER_CDRAM_RW: set it while it's mapped: the display reports it: 0x00000001
+USER_CDRAM_L1WBWA_RW: allocate it: 0x00000000
+USER_CDRAM_L1WBWA_RW: set it: 0x00000000
+USER_CDRAM_L1WBWA_RW: set it: the display reports it: 0x00000001
+USER_CDRAM_L1WBWA_RW: map it: 0x00000000
+USER_CDRAM_L1WBWA_RW: set it while it's mapped: 0x00000000
+USER_CDRAM_L1WBWA_RW: set it while it's mapped: the display reports it: 0x00000001
+USER_CDRAM_R: allocate it: 0x00000000
+USER_CDRAM_R: set it: 0x00000000
+USER_CDRAM_R: set it: the display reports it: 0x00000001
+USER_CDRAM_R: map it: 0x00000000
+USER_CDRAM_R: set it while it's mapped: 0x00000000
+USER_CDRAM_R: set it while it's mapped: the display reports it: 0x00000001
+USER_MAIN_PHYCONT_RW: allocate it: 0x00000000
+USER_MAIN_PHYCONT_RW: set it: 0x00000000
+USER_MAIN_PHYCONT_RW: set it: the display reports it: 0x00000001
+USER_MAIN_PHYCONT_RW: map it: 0x00000000
+USER_MAIN_PHYCONT_RW: set it while it's mapped: 0x00000000
+USER_MAIN_PHYCONT_RW: set it while it's mapped: the display reports it: 0x00000001
+USER_MAIN_PHYCONT_NC_RW: allocate it: 0x00000000
+USER_MAIN_PHYCONT_NC_RW: set it: 0x00000000
+USER_MAIN_PHYCONT_NC_RW: set it: the display reports it: 0x00000001
+USER_MAIN_PHYCONT_NC_RW: map it: 0x00000000
+USER_MAIN_PHYCONT_NC_RW: set it while it's mapped: 0x00000000
+USER_MAIN_PHYCONT_NC_RW: set it while it's mapped: the display reports it: 0x00000001
+USER_MAIN_R: allocate it: 0x00000000
+USER_MAIN_R: set it: 0x00000000
+USER_MAIN_R: set it: the display reports it: 0x00000001
+USER_MAIN_R: map it: 0x00000000
+USER_MAIN_R: set it while it's mapped: 0x00000000
+USER_MAIN_R: set it while it's mapped: the display reports it: 0x00000001
+an opened block: allocate its original: 0x00000000
+an opened block: open it: 0x00000000
+an opened block: set it: 0x00000000
+an opened block: set it: the display reports it: 0x00000001
+an opened block: map it: 0x00000000
+an opened block: set it while it's mapped: 0x00000000
+an opened block: set it while it's mapped: the display reports it: 0x00000001
+a block for code: allocate it: 0x00000000
+a block for code: set it: 0x00000000
+a block for code: set it: the display reports it: 0x00000001
+a block for code: map it: 0x805B0017
+a block for code: set it while it's mapped: 0x00000000
+a block for code: set it while it's mapped: the display reports it: 0x00000001
+a CDRAM framebuffer 16 bytes in: 0x80290002
+a CDRAM framebuffer 64 bytes in: 0x80290002
+a CDRAM framebuffer 128 bytes in: 0x80290002
+a CDRAM framebuffer 512 bytes in: 0x00000000
+a CDRAM framebuffer 512 bytes in: the display reports it: 0x00000001
+a CDRAM framebuffer 4096 bytes in: 0x00000000
+a CDRAM framebuffer 4096 bytes in: the display reports it: 0x00000001
+a CDRAM framebuffer that ends at the block's end: 0x00000000
+a CDRAM framebuffer that ends at the block's end: the display reports it: 0x00000001
+where a block was freed: 0x80022007
+terminate libgxm: 0x00000000
+DONE
