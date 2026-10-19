@@ -1,0 +1,90 @@
+start with an argument: 0x00000000
+restart without an argument: 0x00000000
+restart from C: 0x00000000
+start a new thread from C: 0x00000000
+first start: r0: 0x00000004
+first start: r1, below the stack top by: 0x00000010
+first start: r2: 0xDEADBEEF
+first start: r3: 0xDEADBEEF
+first start: r4: 0xDEADBEEF
+first start: r5: 0xDEADBEEF
+first start: r6: 0xDEADBEEF
+first start: r7: 0xDEADBEEF
+first start: r8: 0xDEADBEEF
+first start: r9: 0xDEADBEEF
+first start: r10: 0xDEADBEEF
+first start: r11: 0xDEADBEEF
+first start: r12: 0xDEADBEEF
+first start: sp, below the stack top by: 0x00000010
+first start: lr is Thumb: 0x00000001
+first start: lr is the first start's: 0x00000001
+first start: cpsr: 0x00000010
+restart: r0: 0x00000000
+restart: r1: 0x00000000
+restart: r2: 0xDEADBEEF
+restart: r3: 0xDEADBEEF
+restart: r4: 0xDEADBEEF
+restart: r5: 0xDEADBEEF
+restart: r6: 0xDEADBEEF
+restart: r7: 0xDEADBEEF
+restart: r8: 0xDEADBEEF
+restart: r9: 0xDEADBEEF
+restart: r10: 0xDEADBEEF
+restart: r11: 0xDEADBEEF
+restart: r12: 0xDEADBEEF
+restart: sp, below the stack top by: 0x00000000
+restart: lr is Thumb: 0x00000001
+restart: lr is the first start's: 0x00000001
+restart: cpsr: 0x00000010
+restart from C: r0: 0x00000000
+restart from C: r1: 0x00000000
+restart from C: r2: 0xDEADBEEF
+restart from C: r3: 0xDEADBEEF
+restart from C: r4: 0xDEADBEEF
+restart from C: r5: 0xDEADBEEF
+restart from C: r6: 0xDEADBEEF
+restart from C: r7: 0xDEADBEEF
+restart from C: r8: 0xDEADBEEF
+restart from C: r9: 0xDEADBEEF
+restart from C: r10: 0xDEADBEEF
+restart from C: r11: 0xDEADBEEF
+restart from C: r12: 0xDEADBEEF
+restart from C: sp, below the stack top by: 0x00000000
+restart from C: lr is Thumb: 0x00000001
+restart from C: lr is the first start's: 0x00000001
+restart from C: cpsr: 0x00000010
+new thread from C: r0: 0x00000000
+new thread from C: r1: 0x00000000
+new thread from C: r2: 0xDEADBEEF
+new thread from C: r3: 0xDEADBEEF
+new thread from C: r4: 0xDEADBEEF
+new thread from C: r5: 0xDEADBEEF
+new thread from C: r6: 0xDEADBEEF
+new thread from C: r7: 0xDEADBEEF
+new thread from C: r8: 0xDEADBEEF
+new thread from C: r9: 0xDEADBEEF
+new thread from C: r10: 0xDEADBEEF
+new thread from C: r11: 0xDEADBEEF
+new thread from C: r12: 0xDEADBEEF
+new thread from C: sp, below the stack top by: 0x00000000
+new thread from C: lr is Thumb: 0x00000001
+new thread from C: lr is the first start's: 0x00000001
+new thread from C: cpsr: 0x00000010
+from another thread: r0: 0x00000004
+from another thread: r1, below the stack top by: 0x00000010
+from another thread: r2: 0xDEADBEEF
+from another thread: r3: 0xDEADBEEF
+from another thread: r4: 0xDEADBEEF
+from another thread: r5: 0xDEADBEEF
+from another thread: r6: 0xDEADBEEF
+from another thread: r7: 0xDEADBEEF
+from another thread: r8: 0xDEADBEEF
+from another thread: r9: 0xDEADBEEF
+from another thread: r10: 0xDEADBEEF
+from another thread: r11: 0xDEADBEEF
+from another thread: r12: 0xDEADBEEF
+from another thread: sp, below the stack top by: 0x00000010
+from another thread: lr is Thumb: 0x00000001
+from another thread: lr is the first start's: 0x00000001
+from another thread: cpsr: 0x00000010
+DONE
