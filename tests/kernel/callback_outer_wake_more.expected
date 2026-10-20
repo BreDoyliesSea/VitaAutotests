@@ -1,0 +1,118 @@
+read lock after a write lock: its lock count while the callback waits: 0x00000001
+read lock after a write lock: the waiting thread holds the write lock while the callback waits: 0x00000000
+read lock after a write lock: its read waiters while the callback waits: 0x00000000
+read lock after a write lock: its write waiters while the callback waits: 0x00000000
+read lock after a write lock: unlock it: 0x00000000
+read lock after a write lock: its lock count after the unlock: 0x00000000
+read lock after a write lock: the waiting thread holds the write lock after the unlock: 0x00000000
+read lock after a write lock: its read waiters after the unlock: 0x00000000
+read lock after a write lock: its write waiters after the unlock: 0x00000000
+read lock after a write lock: try a read lock after the unlock: 0x00000000
+read lock after a write lock: try a write lock after the unlock: 0x00000000
+read lock after a write lock: the callback's wait: 0x00000000
+read lock after a write lock: the inner semaphore's count at the end: 0x00000000
+read lock after a write lock: the outer wait: 0x00000000
+read lock after a write lock: the outer wait has time left: 0x00000001
+read lock after a write lock: its lock count at the end: 0x00000000
+read lock after a write lock: the waiting thread holds the write lock at the end: 0x00000000
+read lock after a write lock: its read waiters at the end: 0x00000000
+read lock after a write lock: its write waiters at the end: 0x00000000
+write lock after a write lock: its lock count while the callback waits: 0x00000001
+write lock after a write lock: the waiting thread holds the write lock while the callback waits: 0x00000000
+write lock after a write lock: its read waiters while the callback waits: 0x00000000
+write lock after a write lock: its write waiters while the callback waits: 0x00000000
+write lock after a write lock: unlock it: 0x00000000
+write lock after a write lock: its lock count after the unlock: 0x00000000
+write lock after a write lock: the waiting thread holds the write lock after the unlock: 0x00000000
+write lock after a write lock: its read waiters after the unlock: 0x00000000
+write lock after a write lock: its write waiters after the unlock: 0x00000000
+write lock after a write lock: try a read lock after the unlock: 0x00000000
+write lock after a write lock: try a write lock after the unlock: 0x00000000
+write lock after a write lock: the callback's wait: 0x00000000
+write lock after a write lock: the inner semaphore's count at the end: 0x00000000
+write lock after a write lock: the outer wait: 0x00000000
+write lock after a write lock: the outer wait has time left: 0x00000001
+write lock after a write lock: its lock count at the end: 0x00000000
+write lock after a write lock: the waiting thread holds the write lock at the end: 0x00000000
+write lock after a write lock: its read waiters at the end: 0x00000000
+write lock after a write lock: its write waiters at the end: 0x00000000
+write lock after a read lock: its lock count while the callback waits: 0x00000001
+write lock after a read lock: the waiting thread holds the write lock while the callback waits: 0x00000000
+write lock after a read lock: its read waiters while the callback waits: 0x00000000
+write lock after a read lock: its write waiters while the callback waits: 0x00000000
+write lock after a read lock: try a second read lock while the callback waits: 0x00000000
+write lock after a read lock: unlock it: 0x00000000
+write lock after a read lock: its lock count after the unlock: 0x00000000
+write lock after a read lock: the waiting thread holds the write lock after the unlock: 0x00000000
+write lock after a read lock: its read waiters after the unlock: 0x00000000
+write lock after a read lock: its write waiters after the unlock: 0x00000000
+write lock after a read lock: try a read lock after the unlock: 0x00000000
+write lock after a read lock: try a write lock after the unlock: 0x00000000
+write lock after a read lock: the callback's wait: 0x00000000
+write lock after a read lock: the inner semaphore's count at the end: 0x00000000
+write lock after a read lock: the outer wait: 0x00000000
+write lock after a read lock: the outer wait has time left: 0x00000001
+write lock after a read lock: its lock count at the end: 0x00000000
+write lock after a read lock: the waiting thread holds the write lock at the end: 0x00000000
+write lock after a read lock: its read waiters at the end: 0x00000000
+write lock after a read lock: its write waiters at the end: 0x00000000
+lightweight mutex: its waiters while the callback waits: 0x00000000
+lightweight mutex: unlock it: 0x00000000
+lightweight mutex: the waiting thread owns it after the unlock: 0x00000000
+lightweight mutex: its count after the unlock: 0x00000000
+lightweight mutex: its waiters after the unlock: 0x00000000
+lightweight mutex: try to lock it: 0x00000000
+lightweight mutex: the callback's wait: 0x00000000
+lightweight mutex: the inner semaphore's count at the end: 0x00000000
+lightweight mutex: the outer wait: 0x00000000
+lightweight mutex: the outer wait has time left: 0x00000001
+condition variable: its waiters while the callback waits: 0x00000000
+condition variable: the waiting thread owns the mutex while the callback waits: 0x00000000
+condition variable: the mutex's count while the callback waits: 0x00000000
+condition variable: try to lock the mutex while the callback waits: 0x00000000
+condition variable: signal it: 0x00000000
+condition variable: its waiters after the signal: 0x00000000
+condition variable: the callback's wait: 0x00000000
+condition variable: the inner semaphore's count at the end: 0x00000000
+condition variable: the outer wait: 0x80028005
+condition variable: the outer wait has time left: 0x00000000
+condition variable: the waiting thread unlocks the mutex after the wait: 0x00000000
+condition variable signal to the thread: its waiters while the callback waits: 0x00000000
+condition variable signal to the thread: the waiting thread owns the mutex while the callback waits: 0x00000000
+condition variable signal to the thread: the mutex's count while the callback waits: 0x00000000
+condition variable signal to the thread: try to lock the mutex while the callback waits: 0x00000000
+condition variable signal to the thread: signal it: 0x80028022
+condition variable signal to the thread: its waiters after the signal: 0x00000000
+condition variable signal to the thread: the callback's wait: 0x00000000
+condition variable signal to the thread: the inner semaphore's count at the end: 0x00000000
+condition variable signal to the thread: the outer wait: 0x80028005
+condition variable signal to the thread: the outer wait has time left: 0x00000000
+condition variable signal to the thread: the waiting thread unlocks the mutex after the wait: 0x00000000
+lightweight condition variable: its waiters while the callback waits: 0x00000000
+lightweight condition variable: the waiting thread owns the mutex while the callback waits: 0x00000000
+lightweight condition variable: the mutex's count while the callback waits: 0x00000000
+lightweight condition variable: try to lock the mutex while the callback waits: 0x00000000
+lightweight condition variable: signal it: 0x00000000
+lightweight condition variable: its waiters after the signal: 0x00000000
+lightweight condition variable: the callback's wait: 0x00000000
+lightweight condition variable: the inner semaphore's count at the end: 0x00000000
+lightweight condition variable: the outer wait: 0x80028005
+lightweight condition variable: the outer wait has time left: 0x00000000
+lightweight condition variable: the waiting thread unlocks the mutex after the wait: 0x00000000
+lightweight condition variable signal to the thread: its waiters while the callback waits: 0x00000000
+lightweight condition variable signal to the thread: the waiting thread owns the mutex while the callback waits: 0x00000000
+lightweight condition variable signal to the thread: the mutex's count while the callback waits: 0x00000000
+lightweight condition variable signal to the thread: try to lock the mutex while the callback waits: 0x00000000
+lightweight condition variable signal to the thread: signal it: 0x80028022
+lightweight condition variable signal to the thread: its waiters after the signal: 0x00000000
+lightweight condition variable signal to the thread: the callback's wait: 0x00000000
+lightweight condition variable signal to the thread: the inner semaphore's count at the end: 0x00000000
+lightweight condition variable signal to the thread: the outer wait: 0x80028005
+lightweight condition variable signal to the thread: the outer wait has time left: 0x00000000
+lightweight condition variable signal to the thread: the waiting thread unlocks the mutex after the wait: 0x00000000
+thread end: the callback's wait: 0x00000000
+thread end: the inner semaphore's count at the end: 0x00000000
+thread end: the outer wait: 0x00000000
+thread end: the outer wait has time left: 0x00000001
+thread end: the exit status the outer wait got: 0x00000005
+DONE
