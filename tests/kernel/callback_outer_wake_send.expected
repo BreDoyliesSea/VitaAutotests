@@ -1,0 +1,12 @@
+fill the pipe: 0x00000000
+its senders while the callback waits: 0x00000000
+empty the pipe: 0x00000000
+the bytes in it after the receive: 0x00000000
+its senders after the receive: 0x00000000
+the callback's wait: 0x00000000
+the inner semaphore's count at the end: 0x00000000
+the outer send: 0x00000000
+the outer send has time left: 0x00000001
+receive the message: 0x00000000
+it is the sent message: 0x00000001
+DONE
