@@ -1,0 +1,61 @@
+FIFO queue, B waits for 1 above A's priority: B waits: 0x00000001
+FIFO queue, B waits for 1 above A's priority: the count: 0x00000002
+FIFO queue, B waits for 1 above A's priority: the waiters: 0x00000002
+FIFO queue, B waits for 1 above A's priority: A's result: 0x80028007
+FIFO queue, B waits for 1 above A's priority: B's result: 0x80028007
+FIFO queue, B waits for 1 at A's priority: B waits: 0x00000001
+FIFO queue, B waits for 1 at A's priority: the count: 0x00000002
+FIFO queue, B waits for 1 at A's priority: the waiters: 0x00000002
+FIFO queue, B waits for 1 at A's priority: A's result: 0x80028007
+FIFO queue, B waits for 1 at A's priority: B's result: 0x80028007
+FIFO queue, B waits for 1 below A's priority: B waits: 0x00000001
+FIFO queue, B waits for 1 below A's priority: the count: 0x00000002
+FIFO queue, B waits for 1 below A's priority: the waiters: 0x00000002
+FIFO queue, B waits for 1 below A's priority: A's result: 0x80028007
+FIFO queue, B waits for 1 below A's priority: B's result: 0x80028007
+FIFO queue, B polls 1 above A's priority: B waits: 0x00000000
+FIFO queue, B polls 1 above A's priority: the count: 0x00000002
+FIFO queue, B polls 1 above A's priority: the waiters: 0x00000001
+FIFO queue, B polls 1 above A's priority: A's result: 0x80028007
+FIFO queue, B polls 1 above A's priority: B's result: 0x80028102
+FIFO queue, B polls 1 at A's priority: B waits: 0x00000000
+FIFO queue, B polls 1 at A's priority: the count: 0x00000002
+FIFO queue, B polls 1 at A's priority: the waiters: 0x00000001
+FIFO queue, B polls 1 at A's priority: A's result: 0x80028007
+FIFO queue, B polls 1 at A's priority: B's result: 0x80028102
+FIFO queue, B polls 1 below A's priority: B waits: 0x00000000
+FIFO queue, B polls 1 below A's priority: the count: 0x00000002
+FIFO queue, B polls 1 below A's priority: the waiters: 0x00000001
+FIFO queue, B polls 1 below A's priority: A's result: 0x80028007
+FIFO queue, B polls 1 below A's priority: B's result: 0x80028102
+priority queue, B waits for 1 above A's priority: B waits: 0x00000000
+priority queue, B waits for 1 above A's priority: the count: 0x00000001
+priority queue, B waits for 1 above A's priority: the waiters: 0x00000001
+priority queue, B waits for 1 above A's priority: A's result: 0x80028007
+priority queue, B waits for 1 above A's priority: B's result: 0x00000000
+priority queue, B waits for 1 at A's priority: B waits: 0x00000001
+priority queue, B waits for 1 at A's priority: the count: 0x00000002
+priority queue, B waits for 1 at A's priority: the waiters: 0x00000002
+priority queue, B waits for 1 at A's priority: A's result: 0x80028007
+priority queue, B waits for 1 at A's priority: B's result: 0x80028007
+priority queue, B waits for 1 below A's priority: B waits: 0x00000001
+priority queue, B waits for 1 below A's priority: the count: 0x00000002
+priority queue, B waits for 1 below A's priority: the waiters: 0x00000002
+priority queue, B waits for 1 below A's priority: A's result: 0x80028007
+priority queue, B waits for 1 below A's priority: B's result: 0x80028007
+priority queue, B polls 1 above A's priority: B waits: 0x00000000
+priority queue, B polls 1 above A's priority: the count: 0x00000001
+priority queue, B polls 1 above A's priority: the waiters: 0x00000001
+priority queue, B polls 1 above A's priority: A's result: 0x80028007
+priority queue, B polls 1 above A's priority: B's result: 0x00000000
+priority queue, B polls 1 at A's priority: B waits: 0x00000000
+priority queue, B polls 1 at A's priority: the count: 0x00000002
+priority queue, B polls 1 at A's priority: the waiters: 0x00000001
+priority queue, B polls 1 at A's priority: A's result: 0x80028007
+priority queue, B polls 1 at A's priority: B's result: 0x80028102
+priority queue, B polls 1 below A's priority: B waits: 0x00000000
+priority queue, B polls 1 below A's priority: the count: 0x00000002
+priority queue, B polls 1 below A's priority: the waiters: 0x00000001
+priority queue, B polls 1 below A's priority: A's result: 0x80028007
+priority queue, B polls 1 below A's priority: B's result: 0x80028102
+DONE
