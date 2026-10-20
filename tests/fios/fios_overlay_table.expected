@@ -1,0 +1,192 @@
+add an overlay: 0x00000000
+its id is positive: 0x00000001
+add the same overlay again: 0x00000000
+second id minus first: 0x00000001
+first overlay: get info: 0x00000000
+first overlay: type: 0x00000000
+first overlay: order: 0x00000000
+first overlay: dst length: 0x0000001F
+first overlay: src length: 0x0000001F
+first overlay: field 0xA: 0x00000000
+first overlay: pid is the process: 0x00000001
+first overlay: id is its id: 0x00000001
+first overlay: dst [D/a]: 0x00000000
+first overlay: src [D/b]: 0x00000000
+remove the first: 0x00000000
+remove the first again: 0x8082001A
+get info of the removed one: 0x8082001A
+add after removing: 0x00000000
+third id minus first: 0x00000002
+remove the second: 0x00000000
+remove the third: 0x00000000
+remove id 0: 0x8082001A
+remove id -1: 0x8082001A
+remove an id never handed out: 0x8082001A
+translucent: add: 0x00000000
+translucent: id written: 0x00000001
+translucent: get info: 0x00000000
+translucent: type: 0x00000001
+translucent: order: 0x00000003
+translucent: dst length: 0x0000001F
+translucent: src length: 0x0000001F
+translucent: field 0xA: 0x00000000
+translucent: pid is the process: 0x00000001
+translucent: id is its id: 0x00000001
+translucent: dst [D/a]: 0x00000000
+translucent: src [D/b]: 0x00000000
+newer: add: 0x00000000
+newer: id written: 0x00000001
+newer: get info: 0x00000000
+newer: type: 0x00000002
+newer: order: 0x00000010
+newer: dst length: 0x0000001F
+newer: src length: 0x0000001F
+newer: field 0xA: 0x00000000
+newer: pid is the process: 0x00000001
+newer: id is its id: 0x00000001
+newer: dst [D/a]: 0x00000000
+newer: src [D/b]: 0x00000000
+writable: add: 0x00000000
+writable: id written: 0x00000001
+writable: get info: 0x00000000
+writable: type: 0x00000003
+writable: order: 0x0000007F
+writable: dst length: 0x0000001F
+writable: src length: 0x0000001F
+writable: field 0xA: 0x00000000
+writable: pid is the process: 0x00000001
+writable: id is its id: 0x00000001
+writable: dst [D/a]: 0x00000000
+writable: src [D/b]: 0x00000000
+dst the same as src: add: 0x00000000
+dst the same as src: id written: 0x00000001
+dst the same as src: get info: 0x00000000
+dst the same as src: type: 0x00000001
+dst the same as src: order: 0x00000000
+dst the same as src: dst length: 0x0000000D
+dst the same as src: src length: 0x0000000D
+dst the same as src: field 0xA: 0x00000000
+dst the same as src: pid is the process: 0x00000001
+dst the same as src: id is its id: 0x00000001
+dst the same as src: dst [app0:/archive]: 0x00000000
+dst the same as src: src [app0:/archive]: 0x00000000
+no slash after the colon: add: 0x00000000
+no slash after the colon: id written: 0x00000001
+no slash after the colon: get info: 0x00000000
+no slash after the colon: type: 0x00000000
+no slash after the colon: order: 0x00000000
+no slash after the colon: dst length: 0x0000000D
+no slash after the colon: src length: 0x00000009
+no slash after the colon: field 0xA: 0x00000000
+no slash after the colon: pid is the process: 0x00000001
+no slash after the colon: id is its id: 0x00000001
+no slash after the colon: dst [app0:/archive]: 0x00000000
+no slash after the colon: src [ux0:/data]: 0x00000000
+no trailing slash: add: 0x00000000
+no trailing slash: id written: 0x00000001
+no trailing slash: get info: 0x00000000
+no trailing slash: type: 0x00000000
+no trailing slash: order: 0x00000000
+no trailing slash: dst length: 0x0000001F
+no trailing slash: src length: 0x0000001F
+no trailing slash: field 0xA: 0x00000000
+no trailing slash: pid is the process: 0x00000001
+no trailing slash: id is its id: 0x00000001
+no trailing slash: dst [D/a]: 0x00000000
+no trailing slash: src [D/b]: 0x00000000
+two slashes: add: 0x00000000
+two slashes: id written: 0x00000001
+two slashes: get info: 0x00000000
+two slashes: type: 0x00000000
+two slashes: order: 0x00000000
+two slashes: dst length: 0x0000001F
+two slashes: src length: 0x0000001F
+two slashes: field 0xA: 0x00000000
+two slashes: pid is the process: 0x00000001
+two slashes: id is its id: 0x00000001
+two slashes: dst [D/a]: 0x00000000
+two slashes: src [D/b]: 0x00000000
+upper case device: add: 0x00000000
+upper case device: id written: 0x00000001
+upper case device: get info: 0x00000000
+upper case device: type: 0x00000000
+upper case device: order: 0x00000000
+upper case device: dst length: 0x0000000B
+upper case device: src length: 0x00000007
+upper case device: field 0xA: 0x00000000
+upper case device: pid is the process: 0x00000001
+upper case device: id is its id: 0x00000001
+upper case device: dst [UX0:/data/a]: 0x00000000
+upper case device: src [APP0:/b]: 0x00000000
+device only: add: 0x80820005
+device only: id written: 0x00000001
+no device: add: 0x00000000
+no device: id written: 0x00000001
+no device: get info: 0x00000000
+no device: type: 0x00000000
+no device: order: 0x00000000
+no device: dst length: 0x00000008
+no device: src length: 0x00000006
+no device: field 0xA: 0x00000000
+no device: pid is the process: 0x00000001
+no device: id is its id: 0x00000001
+no device: dst [/archive]: 0x00000000
+no device: src [/other]: 0x00000000
+wrong lengths, pid and id: add: 0x00000000
+wrong lengths, pid and id: id written: 0x00000001
+wrong lengths, pid and id: get info: 0x00000000
+wrong lengths, pid and id: type: 0x00000000
+wrong lengths, pid and id: order: 0x00000000
+wrong lengths, pid and id: dst length: 0x0000001F
+wrong lengths, pid and id: src length: 0x0000001F
+wrong lengths, pid and id: field 0xA: 0x00000000
+wrong lengths, pid and id: pid is the process: 0x00000001
+wrong lengths, pid and id: id is its id: 0x00000001
+wrong lengths, pid and id: dst [D/a]: 0x00000000
+wrong lengths, pid and id: src [D/b]: 0x00000000
+type 4: add: 0x8082001A
+type 4: id written: 0x00000001
+type 0xFF: add: 0x8082001A
+type 0xFF: id written: 0x00000001
+order 0x80: add: 0x00000000
+order 0x80: id written: 0x00000001
+order 0xFF: add: 0x00000000
+order 0xFF: id written: 0x00000001
+empty dst: add: 0x80820005
+empty dst: id written: 0x00000001
+empty src: add: 0x80820005
+empty src: id written: 0x00000001
+dst of 291 characters: add: 0x00000000
+dst of 291 characters: id written: 0x00000001
+dst without a terminator: add: 0x80820018
+dst without a terminator: id written: 0x00000001
+add for process 0: 0x80820013
+add for a thread's UID: 0x80820013
+add without a process: 0x00000000
+added without a process: get info: 0x00000000
+added without a process: type: 0x00000000
+added without a process: order: 0x00000000
+added without a process: dst length: 0x0000001F
+added without a process: src length: 0x0000001F
+added without a process: field 0xA: 0x00000000
+added without a process: pid is the process: 0x00000001
+added without a process: id is its id: 0x00000001
+added without a process: dst [D/a]: 0x00000000
+added without a process: src [D/b]: 0x00000000
+list every order: 0x00000000
+overlays listed: 0x00000005
+listed 0 is the one added at: 0x00000003
+listed 1 is the one added at: 0x00000001
+listed 2 is the one added at: 0x00000002
+listed 3 is the one added at: 0x00000000
+listed 4 is the one added at: 0x00000004
+list orders 1 to 3: 0x00000000
+overlays listed: 0x00000003
+list with room for 2: 0x00000000
+overlays counted: 0x00000005
+list with min above max: 0x00000000
+overlays counted: 0x00000000
+overlays added before an error: 0x00000040
+the error: 0x80820019
+add with a NULL id: 0x80820006
+DONE
