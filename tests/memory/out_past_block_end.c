@@ -22,6 +22,8 @@
 //   cancel 2 bytes before it, and a message pipe receive of 16 bytes 8 bytes before it. The poll,
 //   the cancel and the receive also print what they did anyway: the pattern left, the count set and
 //   the bytes left in the pipe.
+// - a lightweight condition variable's info by work area and by UID: the whole struct, then size
+//   words of 0x20, 8, 4 and 0 with only that much room, the cases by work area last
 // The app itself never touches the addresses after the block.
 //
 // On a PS Vita TV on firmware 3.65 every call writes its whole struct or value when it fits, and an
@@ -31,7 +33,10 @@
 // the block's end fails with 0x80022005 (INVALID_MEMORY_ACCESS) and writes nothing, so the info
 // calls check their whole struct first. A single value that runs past the end fails the same way,
 // but writes the part that fits, and the calls that change their object still do it: the poll
-// clears the bits, the cancel sets the count and the receive takes all 16 bytes.
+// clears the bits, the cancel sets the count and the receive takes all 16 bytes. The lightweight
+// condition variable info by UID needs only the room its size word asks for, while the info by
+// work area fails with 0x80022005 and writes nothing whenever its whole struct of 0x38 bytes
+// doesn't fit, whatever the size word says.
 #include <psp2/kernel/processmgr.h>
 #include <psp2/kernel/sysmem.h>
 #include <psp2/kernel/threadmgr.h>
@@ -65,6 +70,8 @@ enum Call {
     POLL_FLAG,
     CANCEL_SEMA,
     RECEIVE,
+    LW_COND_INFO,
+    LW_COND_INFO_BY_ID,
 };
 
 typedef struct Case {
@@ -109,9 +116,20 @@ static const Case cases[] = {
     { "event flag poll with clear, the bits 2 bytes before the end", POLL_FLAG, 2, NO_SIZE },
     { "semaphore cancel to 3, the count 2 bytes before the end", CANCEL_SEMA, 2, NO_SIZE },
     { "message pipe receive of 16 bytes, 8 bytes before the end", RECEIVE, 8, NO_SIZE },
+
+    { "lightweight condition variable info, all of it fits", LW_COND_INFO, 0x38, 0x38 },
+    { "lightweight condition variable info by UID, all of it fits", LW_COND_INFO_BY_ID, 0x38, 0x38 },
+    { "lightweight condition variable info by UID of size 0x20, 0x20 bytes before the end", LW_COND_INFO_BY_ID, 0x20, 0x20 },
+    { "lightweight condition variable info by UID of size 4, 4 bytes before the end", LW_COND_INFO_BY_ID, 4, 4 },
+    { "lightweight condition variable info of size 0x20, 0x20 bytes before the end", LW_COND_INFO, 0x20, 0x20 },
+    { "lightweight condition variable info of size 8, 8 bytes before the end", LW_COND_INFO, 8, 8 },
+    { "lightweight condition variable info of size 4, 4 bytes before the end", LW_COND_INFO, 4, 4 },
+    { "lightweight condition variable info of size 0, 4 bytes before the end", LW_COND_INFO, 4, 0 },
 };
 
-static SceUID gap_error, sema, mutex, timer, ended, flag, cancelled, pipe;
+static SceUID gap_error, sema, mutex, timer, ended, flag, cancelled, pipe, lw_cond_id;
+static SceKernelLwMutexWork lw_mutex;
+static SceKernelLwCondWork lw_cond;
 static const Block *block;
 
 static int ends(SceSize args, void *argp) {
@@ -135,6 +153,8 @@ static int call(enum Call c, void *out) {
         return sceKernelPollEventFlag(flag, 0x1, SCE_EVENT_WAITOR | SCE_EVENT_WAITCLEAR, out);
     case CANCEL_SEMA: return sceKernelCancelSema(cancelled, 3, out);
     case RECEIVE: return sceKernelTryReceiveMsgPipe(pipe, out, 16, MSG_PIPE_MODE_FULL, NULL);
+    case LW_COND_INFO: return sceKernelGetLwCondInfo(&lw_cond, out);
+    case LW_COND_INFO_BY_ID: return sceKernelGetLwCondInfoById(lw_cond_id, out);
     }
     return -1;
 }
@@ -218,9 +238,16 @@ static void make_objects(void) {
     pipe = sceKernelCreateMsgPipe("past end", MSG_PIPE_TYPE_USER, 0, 16, NULL);
     static const char message[16] = "sixteen bytes..";
     sceKernelTrySendMsgPipe(pipe, (void *)message, sizeof(message), MSG_PIPE_MODE_FULL, NULL);
+    sceKernelCreateLwMutex(&lw_mutex, "past end", 0, 0, NULL);
+    sceKernelCreateLwCond(&lw_cond, "past end", 0, &lw_mutex, NULL);
+    LwCondInfo info = { .size = sizeof(info) };
+    sceKernelGetLwCondInfo(&lw_cond, &info);
+    lw_cond_id = info.uid;
 }
 
 static void delete_objects(void) {
+    sceKernelDeleteLwCond(&lw_cond);
+    sceKernelDeleteLwMutex(&lw_mutex);
     sceKernelDeleteMsgPipe(pipe);
     sceKernelDeleteSema(cancelled);
     sceKernelDeleteEventFlag(flag);

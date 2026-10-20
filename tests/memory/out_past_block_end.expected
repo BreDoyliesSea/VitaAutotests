@@ -60,4 +60,20 @@ semaphore cancel to 3, the count 2 bytes before the end: what it did: 0x00000003
 message pipe receive of 16 bytes, 8 bytes before the end: 0x80022005
 message pipe receive of 16 bytes, 8 bytes before the end: the words it changed: 0x00000003
 message pipe receive of 16 bytes, 8 bytes before the end: what it did: 0x00000010
+lightweight condition variable info, all of it fits: 0x00000000
+lightweight condition variable info, all of it fits: the words it changed: 0x00003FFE
+lightweight condition variable info by UID, all of it fits: 0x00000000
+lightweight condition variable info by UID, all of it fits: the words it changed: 0x00003FFE
+lightweight condition variable info by UID of size 0x20, 0x20 bytes before the end: 0x00000000
+lightweight condition variable info by UID of size 0x20, 0x20 bytes before the end: the words it changed: 0x000000FF
+lightweight condition variable info by UID of size 4, 4 bytes before the end: 0x00000000
+lightweight condition variable info by UID of size 4, 4 bytes before the end: the words it changed: 0x00000001
+lightweight condition variable info of size 0x20, 0x20 bytes before the end: 0x80022005
+lightweight condition variable info of size 0x20, 0x20 bytes before the end: the words it changed: 0x00000000
+lightweight condition variable info of size 8, 8 bytes before the end: 0x80022005
+lightweight condition variable info of size 8, 8 bytes before the end: the words it changed: 0x00000000
+lightweight condition variable info of size 4, 4 bytes before the end: 0x80022005
+lightweight condition variable info of size 4, 4 bytes before the end: the words it changed: 0x00000000
+lightweight condition variable info of size 0, 4 bytes before the end: 0x80022005
+lightweight condition variable info of size 0, 4 bytes before the end: the words it changed: 0x00000000
 DONE
