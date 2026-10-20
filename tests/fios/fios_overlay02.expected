@@ -1,0 +1,38 @@
+add with the old call: 0x00000000
+add with the 02 call: 0x00000000
+02 id minus old id: 0x00000001
+02 info of the old one: dst [D/r02/a]: 0x00000000
+old info of the 02 one: dst [D/r02/dst]: 0x00000000
+02 list: 0x00000000
+overlays listed: 0x00000002
+02 read D/r02/a/f -> [D/r02/b/f]: 0x00000000
+02 read D/r02/a/f: bytes written: 0x00000100
+02 read D/r02/dst/srconly -> [D/r02/src/srconly]: 0x00000000
+02 read D/r02/dst/srconly: bytes written: 0x00000100
+02 read D/r02/dst/dstonly -> [D/r02/dst/dstonly]: 0x00000000
+02 read D/r02/dst/dstonly: bytes written: 0x00000100
+02 write D/r02/dst/dstonly -> [D/r02/dst/dstonly]: 0x00000000
+02 write D/r02/dst/dstonly: bytes written: 0x00000100
+old read D/r02/dst/srconly -> [D/r02/src/srconly]: 0x00000000
+02 sync read D/r02/a/f -> [D/r02/b/f]: 0x00000000
+02 sync read D/r02/a/f: bytes written: 0x00000100
+02 max path one past the result -> []: 0x80820005
+02 max path one past the result: bytes written: 0x00000025
+02 max path the result's length -> []: 0x80820018
+02 max path the result's length: bytes written: 0x00000025
+02 out size the result's length -> []: 0x00000000
+02 out size the result's length: bytes written: 0x00000024
+02 out size 0 -> []: 0x00000000
+02 out size 0: bytes written: 0x00000000
+02 max path 0 -> []: 0x80820018
+02 max path 0: bytes written: 0x00000100
+02 max path 0x401 -> []: 0x80820008
+02 max path 0x401: bytes written: 0x00000100
+02 out size 0x401 -> []: 0x8002710B
+02 out size 0x401: bytes written: 0x00000000
+02 orders 0x7F-0 -> []: 0x8082001B
+02 orders 0x7F-0: bytes written: 0x00000100
+02 remove of the old one: 0x00000000
+old remove of the 02 one: 0x00000000
+old remove of the old one again: 0x8082001A
+DONE

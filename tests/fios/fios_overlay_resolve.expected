@@ -1,0 +1,168 @@
+no overlay read D/r/dst/both -> [D/r/dst/both]: 0x00000000
+opaque read D/r/dst/both -> [D/r/src/both]: 0x00000000
+opaque read D/r/dst/srconly -> [D/r/src/srconly]: 0x00000000
+opaque read D/r/dst/dstonly -> [D/r/src/dstonly]: 0x00000000
+opaque read D/r/dst/missing -> [D/r/src/missing]: 0x00000000
+opaque read D/r/dst/newer -> [D/r/src/newer]: 0x00000000
+opaque read D/r/dst/older -> [D/r/src/older]: 0x00000000
+opaque read D/r/dst/subdir -> [D/r/src/subdir]: 0x00000000
+opaque read D/r/dst/ -> [D/r/src]: 0x00000000
+opaque read D/r/dst -> [D/r/src]: 0x00000000
+opaque write D/r/dst/both -> [D/r/src/both]: 0x00000000
+opaque write D/r/dst/srconly -> [D/r/src/srconly]: 0x00000000
+opaque write D/r/dst/dstonly -> [D/r/src/dstonly]: 0x00000000
+opaque write D/r/dst/missing -> [D/r/src/missing]: 0x00000000
+opaque write D/r/dst/newer -> [D/r/src/newer]: 0x00000000
+opaque write D/r/dst/older -> [D/r/src/older]: 0x00000000
+opaque write D/r/dst/subdir -> [D/r/src/subdir]: 0x00000000
+opaque write D/r/dst/ -> [D/r/src]: 0x00000000
+opaque write D/r/dst -> [D/r/src]: 0x00000000
+translucent read D/r/dst/both -> [D/r/src/both]: 0x00000000
+translucent read D/r/dst/srconly -> [D/r/src/srconly]: 0x00000000
+translucent read D/r/dst/dstonly -> [D/r/dst/dstonly]: 0x00000000
+translucent read D/r/dst/missing -> [D/r/dst/missing]: 0x00000000
+translucent read D/r/dst/newer -> [D/r/src/newer]: 0x00000000
+translucent read D/r/dst/older -> [D/r/src/older]: 0x00000000
+translucent read D/r/dst/subdir -> [D/r/src/subdir]: 0x00000000
+translucent read D/r/dst/ -> [D/r/src]: 0x00000000
+translucent read D/r/dst -> [D/r/src]: 0x00000000
+translucent write D/r/dst/both -> [D/r/src/both]: 0x00000000
+translucent write D/r/dst/srconly -> [D/r/src/srconly]: 0x00000000
+translucent write D/r/dst/dstonly -> [D/r/dst/dstonly]: 0x00000000
+translucent write D/r/dst/missing -> [D/r/dst/missing]: 0x00000000
+translucent write D/r/dst/newer -> [D/r/src/newer]: 0x00000000
+translucent write D/r/dst/older -> [D/r/src/older]: 0x00000000
+translucent write D/r/dst/subdir -> [D/r/src/subdir]: 0x00000000
+translucent write D/r/dst/ -> [D/r/src]: 0x00000000
+translucent write D/r/dst -> [D/r/src]: 0x00000000
+newer read D/r/dst/both -> [D/r/dst/both]: 0x00000000
+newer read D/r/dst/srconly -> [D/r/src/srconly]: 0x00000000
+newer read D/r/dst/dstonly -> [D/r/dst/dstonly]: 0x00000000
+newer read D/r/dst/missing -> [D/r/dst/missing]: 0x00000000
+newer read D/r/dst/newer -> [D/r/src/newer]: 0x00000000
+newer read D/r/dst/older -> [D/r/dst/older]: 0x00000000
+newer read D/r/dst/subdir -> [D/r/src/subdir]: 0x00000000
+newer read D/r/dst/ -> [D/r/dst]: 0x00000000
+newer read D/r/dst -> [D/r/dst]: 0x00000000
+newer write D/r/dst/both -> [D/r/dst/both]: 0x00000000
+newer write D/r/dst/srconly -> [D/r/src/srconly]: 0x00000000
+newer write D/r/dst/dstonly -> [D/r/dst/dstonly]: 0x00000000
+newer write D/r/dst/missing -> [D/r/dst/missing]: 0x00000000
+newer write D/r/dst/newer -> [D/r/src/newer]: 0x00000000
+newer write D/r/dst/older -> [D/r/dst/older]: 0x00000000
+newer write D/r/dst/subdir -> [D/r/src/subdir]: 0x00000000
+newer write D/r/dst/ -> [D/r/dst]: 0x00000000
+newer write D/r/dst -> [D/r/dst]: 0x00000000
+writable read D/r/dst/both -> [D/r/src/both]: 0x00000000
+writable read D/r/dst/srconly -> [D/r/src/srconly]: 0x00000000
+writable read D/r/dst/dstonly -> [D/r/dst/dstonly]: 0x00000000
+writable read D/r/dst/missing -> [D/r/dst/missing]: 0x00000000
+writable read D/r/dst/newer -> [D/r/src/newer]: 0x00000000
+writable read D/r/dst/older -> [D/r/src/older]: 0x00000000
+writable read D/r/dst/subdir -> [D/r/src/subdir]: 0x00000000
+writable read D/r/dst/ -> [D/r/src]: 0x00000000
+writable read D/r/dst -> [D/r/src]: 0x00000000
+writable write D/r/dst/both -> [D/r/src/both]: 0x00000000
+writable write D/r/dst/srconly -> [D/r/src/srconly]: 0x00000000
+writable write D/r/dst/dstonly -> [D/r/src/dstonly]: 0x00000000
+writable write D/r/dst/missing -> [D/r/src/missing]: 0x00000000
+writable write D/r/dst/newer -> [D/r/src/newer]: 0x00000000
+writable write D/r/dst/older -> [D/r/src/older]: 0x00000000
+writable write D/r/dst/subdir -> [D/r/src/subdir]: 0x00000000
+writable write D/r/dst/ -> [D/r/src]: 0x00000000
+writable write D/r/dst -> [D/r/src]: 0x00000000
+prefix read D/r/dstx/both -> [D/r/dstx/both]: 0x00000000
+prefix read D/r/dst//both -> [D/r/src/both]: 0x00000000
+prefix read D/r/dst/./both -> [D/r/src/both]: 0x00000000
+prefix read D/r/DST/both -> [D/r/DST/both]: 0x00000000
+prefix read UX0:data/vita-autotests/fios/r/dst/both -> [UX0:/data/vita-autotests/fios/r/dst/both]: 0x00000000
+prefix read D/r/src/both -> [D/r/src/both]: 0x00000000
+prefix read D/r/dst/both -> [D/r/src/both]: 0x00000000
+no slash read D/r/dst/both -> [D/r/src/both]: 0x00000000
+no slash read D/r/dstx/both -> [D/r/dstx/both]: 0x00000000
+no slash read D/r/dst -> [D/r/src]: 0x00000000
+app0:archive read app0:archive/a -> [ux0:/data/a]: 0x00000000
+app0:archive read app0:/archive/a -> [ux0:/data/a]: 0x00000000
+app0:/archive/ read app0:archive/a -> [ux0:/data/a]: 0x00000000
+app0:/archive/ read app0:/archive/a -> [ux0:/data/a]: 0x00000000
+same dst and src read app0:/archive/misc/global.not -> [app0:/archive/misc/global.not]: 0x00000000
+same dst and src read app0:/eboot.bin -> [app0:/eboot.bin]: 0x00000000
+chain 0 then 1 read D/r/c1/f -> [D/r/c3/f]: 0x00000000
+chain 0 then 1 read D/r/c2/f -> [D/r/c3/f]: 0x00000000
+chain 1 then 0 read D/r/c1/f -> [D/r/c2/f]: 0x00000000
+same dst orders 0 and 1 read D/r/s/f -> [D/r/sa/f]: 0x00000000
+same dst orders 1 and 0 read D/r/s/f -> [D/r/sb/f]: 0x00000000
+same dst and order read D/r/s/f -> [D/r/sb/f]: 0x00000000
+two translucent read D/r/dst/both -> [D/r/src/both]: 0x00000000
+two translucent read D/r/dst/srconly -> [D/r/src/srconly]: 0x00000000
+two translucent read D/r/dst/src2only -> [D/r/src2/src2only]: 0x00000000
+two translucent read D/r/dst/dstonly -> [D/r/dst/dstonly]: 0x00000000
+opaque into translucent read D/r/a/srconly -> [D/r/src/srconly]: 0x00000000
+opaque into translucent read D/r/a/dstonly -> [D/r/dst/dstonly]: 0x00000000
+orders 0-4 read D/r/g/f -> [D/r/g/f]: 0x00000000
+orders 5-5 read D/r/g/f -> [D/r/h/f]: 0x00000000
+orders 6-0x7F read D/r/g/f -> [D/r/g/f]: 0x00000000
+orders 0-0xFF read D/r/g/f -> [D/r/h/f]: 0x00000000
+orders 0x7F-0 read D/r/g/f -> []: 0x8082001B
+thread overlays disabled: 0x00000000
+disable them for the thread: 0x00000000
+thread overlays disabled: 0x00000001
+disabled read D/r/g/f -> []: 0x8082001B
+enable them again: 0x00000000
+enabled read D/r/g/f -> [D/r/h/f]: 0x00000000
+resolve sync D/r/g/f -> [D/r/h/f]: 0x00000000
+sizes as libfios2 gives them: 0x00000000
+sizes as libfios2 gives them: bytes written: 0x00000100
+sizes as libfios2 gives them: length before a terminator: 0x00000028
+max path one past the result: 0x80820005
+max path one past the result: bytes written: 0x00000028
+max path one past the result: length before a terminator: 0x00000027
+max path the result's length: 0x80820018
+max path the result's length: bytes written: 0x00000028
+max path the result's length: length before a terminator: 0x00000000
+max path one short: 0x80820018
+max path one short: bytes written: 0x00000028
+max path one short: length before a terminator: 0x00000000
+max path shorter than the input: 0x80820018
+max path shorter than the input: bytes written: 0x00000100
+max path shorter than the input: length before a terminator: 0x00000000
+out size the result's length: 0x00000000
+out size the result's length: bytes written: 0x00000027
+out size the result's length: length before a terminator: 0x00000027
+out size 4: 0x00000000
+out size 4: bytes written: 0x00000004
+out size 4: length before a terminator: 0x00000004
+out size 0: 0x00000000
+out size 0: bytes written: 0x00000000
+out size 0: length before a terminator: 0x00000000
+max path 0: 0x80820018
+max path 0: bytes written: 0x00000100
+max path 0: length before a terminator: 0x00000000
+max path 0x400: 0x00000000
+max path 0x400: bytes written: 0x00000400
+max path 0x400: length before a terminator: 0x00000028
+max path 0x401: 0x80820008
+max path 0x401: bytes written: 0x00000100
+max path 0x401: length before a terminator: 0x00000000
+out size 0x401: 0x8002710B
+out size 0x401: bytes written: 0x00000000
+out size 0x401: length before a terminator: 0x00000000
+in size 0: 0x00000000
+in size 0: bytes written: 0x00000100
+in size 0: length before a terminator: 0x00000028
+in size without the terminator: 0x00000000
+in size without the terminator: bytes written: 0x00000100
+in size without the terminator: length before a terminator: 0x00000028
+in size 4: 0x00000000
+in size 4: bytes written: 0x00000100
+in size 4: length before a terminator: 0x00000028
+in size 0x100: 0x00000000
+in size 0x100: bytes written: 0x00000100
+in size 0x100: length before a terminator: 0x00000028
+write flag 2: 0x80820020
+write flag 2: bytes written: 0x00000100
+write flag 2: length before a terminator: 0x00000027
+write flag -1: 0x80820020
+write flag -1: bytes written: 0x00000100
+write flag -1: length before a terminator: 0x00000027
+DONE
