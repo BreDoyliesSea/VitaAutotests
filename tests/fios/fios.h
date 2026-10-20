@@ -2,8 +2,6 @@
 // that older games bundle does, filling the argument blocks the same way.
 #pragma once
 
-#include <psp2/fios2kernel.h>
-#include <psp2/fios2kernel02.h>
 #include <psp2/io/fcntl.h>
 #include <psp2/io/stat.h>
 #include <psp2/kernel/clib.h>
@@ -12,6 +10,31 @@
 #include "test.h"
 
 #define FIOS_DIR "ux0:data/vita-autotests/fios"
+
+// The overlay types and syscalls are declared here and not taken from the vitasdk headers, since the
+// ones in older vitasdk releases lack the 02 calls and their option blocks. A Vita's SceFios2Kernel
+// stub still exports them all.
+typedef int32_t SceFiosOverlayID;
+
+enum {
+    SCE_FIOS_OVERLAY_TYPE_OPAQUE,
+    SCE_FIOS_OVERLAY_TYPE_TRANSLUCENT,
+    SCE_FIOS_OVERLAY_TYPE_NEWER,
+    SCE_FIOS_OVERLAY_TYPE_WRITABLE
+};
+
+typedef struct SceFiosOverlay {
+    SceUInt8 type;
+    SceUInt8 order;
+    SceUInt16 dst_len;
+    SceUInt16 src_len;
+    SceUInt16 unk2;
+    SceUID pid;
+    SceFiosOverlayID id;
+    char dst[292];
+    char src[292];
+} SceFiosOverlay;
+_Static_assert(sizeof(SceFiosOverlay) == 0x258, "overlay size");
 
 // The block _sceFiosKernelOverlayResolveWithRangeSync takes, as that libfios2 fills it
 typedef struct FiosRangeArgs {
@@ -42,6 +65,55 @@ typedef struct FiosListArgs {
     SceSize out_ids_size; // max_ids * 4, or 0x200 past 128 IDs
     SceUInt32 unused[2];
 } FiosListArgs;
+
+typedef SceFiosOverlay SceFiosKernelOverlay;
+typedef FiosRangeArgs SceFiosResolveWithRangeSyncSyscallArgs;
+typedef FiosResolveArgs SceFiosResolveSyncSyscallArgs;
+typedef FiosListArgs SceFiosGetListSyscallArgs;
+
+typedef struct sceFiosKernelOverlayGetList02_opt {
+    SceFiosOverlayID *out_ids;
+    SceSize max_ids;
+    SceSize *actual_ids;
+    SceSize out_ids_buffer_size;
+    SceUInt32 reserved[2];
+} sceFiosKernelOverlayGetList02_opt;
+
+typedef struct sceFiosKernelOverlayResolveSync02_opt {
+    char *out_path;
+    SceSize max_path;
+    SceUInt32 reserved0;
+    SceSize out_path_buffer_size;
+    SceUInt32 reserved1[2];
+} sceFiosKernelOverlayResolveSync02_opt;
+
+typedef struct sceFiosKernelOverlayResolveWithRangeSync02_opt {
+    char *out_path;
+    SceSize max_path;
+    SceUInt8 min_order;
+    SceUInt8 max_order;
+    SceUInt8 reserved0[2];
+    SceUInt32 reserved1;
+    SceSize out_path_buffer_size;
+    SceUInt32 reserved2[2];
+} sceFiosKernelOverlayResolveWithRangeSync02_opt;
+
+int _sceFiosKernelOverlayAdd(const SceFiosKernelOverlay *overlay, SceFiosOverlayID *out_id);
+int _sceFiosKernelOverlayAddForProcess(SceUID pid, const SceFiosKernelOverlay *overlay, SceFiosOverlayID *out_id);
+int _sceFiosKernelOverlayRemoveForProcess(SceUID pid, SceFiosOverlayID id);
+int _sceFiosKernelOverlayGetInfoForProcess(SceUID pid, SceFiosOverlayID id, SceFiosKernelOverlay *out_overlay);
+int _sceFiosKernelOverlayGetList(SceUID pid, SceUInt8 min_order, SceUInt8 max_order, SceFiosGetListSyscallArgs *args);
+int _sceFiosKernelOverlayResolveSync(SceUID pid, int resolve_for_write, const char *in_path, SceFiosResolveSyncSyscallArgs *args);
+int _sceFiosKernelOverlayResolveWithRangeSync(SceUID pid, int resolve_for_write, const char *in_path, SceFiosResolveWithRangeSyncSyscallArgs *args);
+int _sceFiosKernelOverlayThreadIsDisabled(void);
+int _sceFiosKernelOverlayThreadSetDisabled(SceInt32 disabled);
+
+int sceFiosKernelOverlayAddForProcess02(SceUID pid, SceFiosOverlay *overlay, SceFiosOverlayID *out_id);
+int sceFiosKernelOverlayRemoveForProcess02(SceUID pid, SceFiosOverlayID id);
+int sceFiosKernelOverlayGetInfoForProcess02(SceUID pid, SceFiosOverlayID id, SceFiosOverlay *out_overlay);
+int sceFiosKernelOverlayGetList02(SceUID pid, SceUInt8 min_order, SceUInt8 max_order, const sceFiosKernelOverlayGetList02_opt *opt);
+int sceFiosKernelOverlayResolveSync02(SceUID pid, int resolve_for_write, const char *in_path, const sceFiosKernelOverlayResolveSync02_opt *opt);
+int sceFiosKernelOverlayResolveWithRangeSync02(SceUID pid, int resolve_for_write, const char *in_path, const sceFiosKernelOverlayResolveWithRangeSync02_opt *opt);
 
 static SceUID fios_pid;
 
