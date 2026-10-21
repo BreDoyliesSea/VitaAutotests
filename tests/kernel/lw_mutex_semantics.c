@@ -12,6 +12,7 @@
 #define HIGH_PRIORITY (SCE_KERNEL_DEFAULT_PRIORITY_USER - 2)
 
 static SceKernelLwMutexWork mutex;
+static SceUID release;
 static volatile SceUID callback;
 static volatile int lock_result[3], unlock_result[3], count_held[3], order[3], woken, done[3], want[3];
 static volatile int callback_runs, callback_arg;
@@ -44,6 +45,21 @@ static int locker(SceSize args, void *argp) {
         order[i] = ++woken;
         count_held[i] = mutex_info().currentCount;
         unlock_result[i] = sceKernelUnlockLwMutex(&mutex, want[i]);
+    }
+    done[i] = 1;
+    return 0;
+}
+
+// Locks the mutex once, then keeps it until the release semaphore is signaled
+static int holding_locker(SceSize args, void *argp) {
+    (void)args;
+    const int i = *(const int *)argp;
+    SceUInt32 timeout = TEST_WAIT_US;
+    lock_result[i] = sceKernelLockLwMutex(&mutex, 1, &timeout);
+    if (lock_result[i] == 0) {
+        timeout = 3 * TEST_WAIT_US;
+        sceKernelWaitSema(release, 1, &timeout);
+        unlock_result[i] = sceKernelUnlockLwMutex(&mutex, 1);
     }
     done[i] = 1;
     return 0;
@@ -163,11 +179,14 @@ int main(void) {
     sceKernelDeleteLwMutex(&mutex);
 
     // An unlock with a waiter, then a try lock right away by the thread that unlocked. The waiter
-    // has a lower priority and the same core as this thread, so it can't run in between.
+    // has a lower priority and the same core as this thread, so it can't run in between. It also
+    // keeps the mutex until this thread signals the release semaphore, so where it runs at once
+    // the mutex is still its own.
     sceKernelChangeThreadCpuAffinityMask(0, SCE_KERNEL_CPU_MASK_USER_0);
+    release = sceKernelCreateSema("release", 0, 0, 1, NULL);
     for (int a = 0; a < 2; a++) {
         create(attrs[a], 1);
-        threads[0] = start_locker(locker, 0, 1, LOW_PRIORITY, SCE_KERNEL_CPU_MASK_USER_0);
+        threads[0] = start_locker(holding_locker, 0, 1, LOW_PRIORITY, SCE_KERNEL_CPU_MASK_USER_0);
         sceKernelUnlockLwMutex(&mutex, 1);
         info = mutex_info();
         const int try_result = sceKernelTryLockLwMutex(&mutex, 1);
@@ -177,10 +196,12 @@ int main(void) {
         PRINTF(try_result, "%s: try lock right after unlocking to a waiter", names[a]);
         if (try_result == 0)
             sceKernelUnlockLwMutex(&mutex, 1);
+        sceKernelSignalSema(release, 1);
         test_join_thread(threads[0]);
         PRINTF(lock_result[0], "%s: the waiter's lock", names[a]);
         sceKernelDeleteLwMutex(&mutex);
     }
+    sceKernelDeleteSema(release);
 
     test_exit();
     return 0;
