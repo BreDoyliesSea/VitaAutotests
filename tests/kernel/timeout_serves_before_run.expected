@@ -1,0 +1,33 @@
+FIFO semaphore: the count right after A's deadline: 0x00000001
+FIFO semaphore: the waiters right after A's deadline: 0x00000000
+FIFO semaphore: A's status right after its deadline: 0x00000002
+FIFO semaphore: B's status right after A's deadline: 0x00000002
+FIFO semaphore: A's result: 0x80028005
+FIFO semaphore: B's result: 0x00000000
+priority semaphore: the count right after A's deadline: 0x00000001
+priority semaphore: the waiters right after A's deadline: 0x00000000
+priority semaphore: A's status right after its deadline: 0x00000002
+priority semaphore: B's status right after A's deadline: 0x00000002
+priority semaphore: A's result: 0x80028005
+priority semaphore: B's result: 0x00000000
+event flag: the main thread's poll while A waits: 0x800280E2
+event flag: the main thread's poll right after A's deadline: 0x00000000
+event flag: the waiters right after A's deadline: 0x00000000
+event flag: A's status right after its deadline: 0x00000002
+event flag: A's result: 0x80028005
+mutex: the waiters right after A's deadline: 0x00000001
+mutex: the main thread still owns it right after A's deadline: 0x00000001
+mutex: A's status right after its deadline: 0x00000002
+mutex: B's status right after A's deadline: 0x00000008
+mutex: the main thread's unlock: 0x00000000
+mutex: A's result: 0x80028005
+mutex: B's result: 0x00000000
+rwlock: the lock count right after W's deadline: 0x00000002
+rwlock: the waiting readers right after W's deadline: 0x00000000
+rwlock: the waiting writers right after W's deadline: 0x00000000
+rwlock: W's status right after its deadline: 0x00000002
+rwlock: R's status right after W's deadline: 0x00000002
+rwlock: W's result: 0x80028005
+rwlock: R's result: 0x00000000
+rwlock: the main thread's read unlock: 0x00000000
+DONE

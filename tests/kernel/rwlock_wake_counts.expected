@@ -1,0 +1,85 @@
+write unlock, two readers: all waiters wait before the wake: 0x00000001
+write unlock, two readers: the waking call: 0x00000000
+write unlock, two readers: lock count after the wake: 0x00000002
+write unlock, two readers: write owner after the wake (0 none, 1 main, n + 1 waiter n): 0x00000000
+write unlock, two readers: waiting readers after the wake: 0x00000000
+write unlock, two readers: waiting writers after the wake: 0x00000000
+write unlock, two readers: R1's thread status after the wake: 0x00000002
+write unlock, two readers: R2's thread status after the wake: 0x00000002
+write unlock, two readers: try write lock after the wake: 0x800281E6
+write unlock, two readers: try read lock after the wake: 0x00000000
+write unlock, two readers: R1's lock result: 0x00000000
+write unlock, two readers: R2's lock result: 0x00000000
+write unlock, a writer then a reader: all waiters wait before the wake: 0x00000001
+write unlock, a writer then a reader: the waking call: 0x00000000
+write unlock, a writer then a reader: lock count after the wake: 0x00000001
+write unlock, a writer then a reader: write owner after the wake (0 none, 1 main, n + 1 waiter n): 0x00000002
+write unlock, a writer then a reader: waiting readers after the wake: 0x00000001
+write unlock, a writer then a reader: waiting writers after the wake: 0x00000000
+write unlock, a writer then a reader: W1's thread status after the wake: 0x00000002
+write unlock, a writer then a reader: R1's thread status after the wake: 0x00000008
+write unlock, a writer then a reader: try write lock after the wake: 0x800281E6
+write unlock, a writer then a reader: try read lock after the wake: 0x800281E6
+write unlock, a writer then a reader: W1's lock result: 0x00000000
+write unlock, a writer then a reader: R1's lock result: 0x00000000
+write unlock, a reader then a writer: all waiters wait before the wake: 0x00000001
+write unlock, a reader then a writer: the waking call: 0x00000000
+write unlock, a reader then a writer: lock count after the wake: 0x00000001
+write unlock, a reader then a writer: write owner after the wake (0 none, 1 main, n + 1 waiter n): 0x00000003
+write unlock, a reader then a writer: waiting readers after the wake: 0x00000001
+write unlock, a reader then a writer: waiting writers after the wake: 0x00000000
+write unlock, a reader then a writer: R1's thread status after the wake: 0x00000008
+write unlock, a reader then a writer: W1's thread status after the wake: 0x00000002
+write unlock, a reader then a writer: try write lock after the wake: 0x800281E6
+write unlock, a reader then a writer: try read lock after the wake: 0x800281E6
+write unlock, a reader then a writer: R1's lock result: 0x00000000
+write unlock, a reader then a writer: W1's lock result: 0x00000000
+priority queue, write unlock, a writer then a higher reader: all waiters wait before the wake: 0x00000001
+priority queue, write unlock, a writer then a higher reader: the waking call: 0x00000000
+priority queue, write unlock, a writer then a higher reader: lock count after the wake: 0x00000001
+priority queue, write unlock, a writer then a higher reader: write owner after the wake (0 none, 1 main, n + 1 waiter n): 0x00000002
+priority queue, write unlock, a writer then a higher reader: waiting readers after the wake: 0x00000001
+priority queue, write unlock, a writer then a higher reader: waiting writers after the wake: 0x00000000
+priority queue, write unlock, a writer then a higher reader: W1's thread status after the wake: 0x00000002
+priority queue, write unlock, a writer then a higher reader: R1's thread status after the wake: 0x00000008
+priority queue, write unlock, a writer then a higher reader: try write lock after the wake: 0x800281E6
+priority queue, write unlock, a writer then a higher reader: try read lock after the wake: 0x800281E6
+priority queue, write unlock, a writer then a higher reader: W1's lock result: 0x00000000
+priority queue, write unlock, a writer then a higher reader: R1's lock result: 0x00000000
+read unlock, a writer: all waiters wait before the wake: 0x00000001
+read unlock, a writer: the waking call: 0x00000000
+read unlock, a writer: lock count after the wake: 0x00000001
+read unlock, a writer: write owner after the wake (0 none, 1 main, n + 1 waiter n): 0x00000002
+read unlock, a writer: waiting readers after the wake: 0x00000000
+read unlock, a writer: waiting writers after the wake: 0x00000000
+read unlock, a writer: W1's thread status after the wake: 0x00000002
+read unlock, a writer: try write lock after the wake: 0x800281E6
+read unlock, a writer: try read lock after the wake: 0x800281E6
+read unlock, a writer: W1's lock result: 0x00000000
+priority queue, read unlock, a writer then a higher writer: all waiters wait before the wake: 0x00000001
+priority queue, read unlock, a writer then a higher writer: the waking call: 0x00000000
+priority queue, read unlock, a writer then a higher writer: lock count after the wake: 0x00000001
+priority queue, read unlock, a writer then a higher writer: write owner after the wake (0 none, 1 main, n + 1 waiter n): 0x00000003
+priority queue, read unlock, a writer then a higher writer: waiting readers after the wake: 0x00000000
+priority queue, read unlock, a writer then a higher writer: waiting writers after the wake: 0x00000001
+priority queue, read unlock, a writer then a higher writer: W1's thread status after the wake: 0x00000008
+priority queue, read unlock, a writer then a higher writer: W2's thread status after the wake: 0x00000002
+priority queue, read unlock, a writer then a higher writer: try write lock after the wake: 0x800281E6
+priority queue, read unlock, a writer then a higher writer: try read lock after the wake: 0x800281E6
+priority queue, read unlock, a writer then a higher writer: W1's lock result: 0x00000000
+priority queue, read unlock, a writer then a higher writer: W2's lock result: 0x00000000
+cancel, a reader, a writer and a reader: all waiters wait before the wake: 0x00000001
+cancel, a reader, a writer and a reader: the waking call: 0x00000000
+cancel, a reader, a writer and a reader: lock count after the wake: 0x00000000
+cancel, a reader, a writer and a reader: write owner after the wake (0 none, 1 main, n + 1 waiter n): 0x00000000
+cancel, a reader, a writer and a reader: waiting readers after the wake: 0x00000000
+cancel, a reader, a writer and a reader: waiting writers after the wake: 0x00000000
+cancel, a reader, a writer and a reader: R1's thread status after the wake: 0x00000002
+cancel, a reader, a writer and a reader: W1's thread status after the wake: 0x00000002
+cancel, a reader, a writer and a reader: R2's thread status after the wake: 0x00000002
+cancel, a reader, a writer and a reader: try write lock after the wake: 0x00000000
+cancel, a reader, a writer and a reader: try read lock after the wake: 0x00000000
+cancel, a reader, a writer and a reader: R1's lock result: 0x80028007
+cancel, a reader, a writer and a reader: W1's lock result: 0x80028007
+cancel, a reader, a writer and a reader: R2's lock result: 0x80028007
+DONE
