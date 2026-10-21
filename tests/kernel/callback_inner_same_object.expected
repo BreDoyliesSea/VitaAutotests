@@ -1,0 +1,55 @@
+FIFO semaphore: in the callback, the waiting threads before its wait: 0x00000000
+FIFO semaphore: in the callback, the count before its wait: 0x00000001
+FIFO semaphore: the callback's wait: 0x00000000
+FIFO semaphore: in the callback, the waiting threads after its wait: 0x00000000
+FIFO semaphore: in the callback, the count after its wait: 0x00000000
+FIFO semaphore: A waits again after the callback: 0x00000001
+FIFO semaphore: the count then: 0x00000000
+FIFO semaphore: the waiting threads then: 0x00000001
+FIFO semaphore: cancel the semaphore: 0x00000000
+FIFO semaphore: the waiting threads it ended: 0x00000001
+FIFO semaphore: A's wait: 0x80028007
+priority semaphore: in the callback, the waiting threads before its wait: 0x00000000
+priority semaphore: in the callback, the count before its wait: 0x00000001
+priority semaphore: the callback's wait: 0x00000000
+priority semaphore: in the callback, the waiting threads after its wait: 0x00000000
+priority semaphore: in the callback, the count after its wait: 0x00000000
+priority semaphore: A waits again after the callback: 0x00000001
+priority semaphore: the count then: 0x00000000
+priority semaphore: the waiting threads then: 0x00000001
+priority semaphore: cancel the semaphore: 0x00000000
+priority semaphore: the waiting threads it ended: 0x00000001
+priority semaphore: A's wait: 0x80028007
+FIFO semaphore with a waiter behind A: in the callback, the waiting threads before its wait: 0x00000000
+FIFO semaphore with a waiter behind A: in the callback, the count before its wait: 0x00000000
+FIFO semaphore with a waiter behind A: the callback's wait: 0x80028005
+FIFO semaphore with a waiter behind A: in the callback, the waiting threads after its wait: 0x00000000
+FIFO semaphore with a waiter behind A: in the callback, the count after its wait: 0x00000000
+FIFO semaphore with a waiter behind A: B's result once the callback ran: 0x00000000
+FIFO semaphore with a waiter behind A: B still waits then: 0x00000000
+FIFO semaphore with a waiter behind A: A waits again after the callback: 0x00000001
+FIFO semaphore with a waiter behind A: the count then: 0x00000000
+FIFO semaphore with a waiter behind A: the waiting threads then: 0x00000001
+FIFO semaphore with a waiter behind A: cancel the semaphore: 0x00000000
+FIFO semaphore with a waiter behind A: the waiting threads it ended: 0x00000001
+FIFO semaphore with a waiter behind A: A's wait: 0x80028007
+FIFO semaphore with a waiter behind A: B's wait at the end: 0x00000000
+reader/writer lock: the main thread takes a read lock: 0x00000000
+reader/writer lock: in the callback, the read waiters before its wait: 0x00000000
+reader/writer lock: in the callback, the write waiters before its wait: 0x00000000
+reader/writer lock: in the callback, the lock count before its wait: 0x00000001
+reader/writer lock: the callback's read lock: 0x00000000
+reader/writer lock: in the callback, the read waiters after its wait: 0x00000000
+reader/writer lock: in the callback, the write waiters after its wait: 0x00000000
+reader/writer lock: in the callback, the lock count after its wait: 0x00000002
+reader/writer lock: the callback's unlock: 0x00000000
+reader/writer lock: A waits again after the callback: 0x00000001
+reader/writer lock: the lock count then: 0x00000001
+reader/writer lock: the read waiters then: 0x00000000
+reader/writer lock: the write waiters then: 0x00000001
+reader/writer lock: the main thread gives up its read lock: 0x00000000
+reader/writer lock: A still waits after the unlock: 0x00000000
+reader/writer lock: A's wait: 0x00000000
+reader/writer lock: A's unlock after its wait: 0x00000000
+reader/writer lock: the lock count at the end: 0x00000000
+DONE

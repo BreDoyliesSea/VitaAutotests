@@ -1,0 +1,21 @@
+message pipe: send 2 bytes: 0x00000000
+message pipe: the bytes sent: 0x00000002
+message pipe: in the callback, the receivers before its wait: 0x00000000
+message pipe: in the callback, the senders before its wait: 0x00000000
+message pipe: in the callback, the bytes in the pipe before its wait: 0x00000000
+message pipe: the callback's receive: 0x80028005
+message pipe: the callback's receive size: 0x00000000
+message pipe: in the callback, the receivers after its wait: 0x00000000
+message pipe: in the callback, the senders after its wait: 0x00000000
+message pipe: in the callback, the bytes in the pipe after its wait: 0x00000000
+message pipe: A waits again after the callback: 0x00000001
+message pipe: the receivers then: 0x00000001
+message pipe: the senders then: 0x00000000
+message pipe: the bytes in the pipe then: 0x00000000
+message pipe: cancel the pipe: 0x00000000
+message pipe: the senders it ended: 0x00000000
+message pipe: the receivers it ended: 0x00000001
+message pipe: A's receive: 0x80028007
+message pipe: A's receive size: 0x00000002
+message pipe: A's buffer starts with the bytes sent: 0x00000001
+DONE
