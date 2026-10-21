@@ -1,0 +1,146 @@
+AND, an unknown UID and A: the call waits: 0x00000001
+AND, an unknown UID and A: the call still waits after the set of A: 0x00000000
+AND, an unknown UID and A: the call: 0x00000002
+AND, an unknown UID and A: entry 0 is the list's item: 0x00000001
+AND, an unknown UID and A: entry 0 result: 0x80028201
+AND, an unknown UID and A: entry 0 bits: 0x00000010
+AND, an unknown UID and A: entry 0 user data: 0x00000000
+AND, an unknown UID and A: entry 1 is the list's item: 0x00000002
+AND, an unknown UID and A: entry 1 result: 0x00000000
+AND, an unknown UID and A: entry 1 bits: 0x01000000
+AND, an unknown UID and A: entry 1 user data: 0x00000077
+OR, an unknown UID and A: the call waits: 0x00000000
+OR, an unknown UID and A: the call: 0x00000001
+OR, an unknown UID and A: entry 0 is the list's item: 0x00000001
+OR, an unknown UID and A: entry 0 result: 0x80028201
+OR, an unknown UID and A: entry 0 bits: 0x00000010
+OR, an unknown UID and A: entry 0 user data: 0x00000000
+AND, a deleted event and A: the call waits: 0x00000001
+AND, a deleted event and A: the call still waits after the set of A: 0x00000000
+AND, a deleted event and A: the call: 0x00000002
+AND, a deleted event and A: entry 0 is the list's item: 0x00000001
+AND, a deleted event and A: entry 0 result: 0x80028201
+AND, a deleted event and A: entry 0 bits: 0x00000010
+AND, a deleted event and A: entry 0 user data: 0x00000000
+AND, a deleted event and A: entry 1 is the list's item: 0x00000002
+AND, a deleted event and A: entry 1 result: 0x00000000
+AND, a deleted event and A: entry 1 bits: 0x01000000
+AND, a deleted event and A: entry 1 user data: 0x00000077
+AND, a semaphore and A: the call waits: 0x00000001
+AND, a semaphore and A: the call still waits after the set of A: 0x00000000
+AND, a semaphore and A: the call: 0x00000002
+AND, a semaphore and A: entry 0 is the list's item: 0x00000001
+AND, a semaphore and A: entry 0 result: 0x80028201
+AND, a semaphore and A: entry 0 bits: 0x00000010
+AND, a semaphore and A: entry 0 user data: 0x00000000
+AND, a semaphore and A: entry 1 is the list's item: 0x00000002
+AND, a semaphore and A: entry 1 result: 0x00000000
+AND, a semaphore and A: entry 1 bits: 0x01000000
+AND, a semaphore and A: entry 1 user data: 0x00000077
+AND, UID 0 and A: the call waits: 0x00000001
+AND, UID 0 and A: the call still waits after the set of A: 0x00000000
+AND, UID 0 and A: the call: 0x00000002
+AND, UID 0 and A: entry 0 is the list's item: 0x00000001
+AND, UID 0 and A: entry 0 result: 0x80028201
+AND, UID 0 and A: entry 0 bits: 0x00000010
+AND, UID 0 and A: entry 0 user data: 0x00000000
+AND, UID 0 and A: entry 1 is the list's item: 0x00000002
+AND, UID 0 and A: entry 1 result: 0x00000000
+AND, UID 0 and A: entry 1 bits: 0x01000000
+AND, UID 0 and A: entry 1 user data: 0x00000077
+AND, A and an unknown UID: the call waits: 0x00000001
+AND, A and an unknown UID: the call still waits after the set of A: 0x00000000
+AND, A and an unknown UID: the call: 0x00000002
+AND, A and an unknown UID: entry 0 is the list's item: 0x00000002
+AND, A and an unknown UID: entry 0 result: 0x80028201
+AND, A and an unknown UID: entry 0 bits: 0x00000010
+AND, A and an unknown UID: entry 0 user data: 0x00000000
+AND, A and an unknown UID: entry 1 is the list's item: 0x00000001
+AND, A and an unknown UID: entry 1 result: 0x00000000
+AND, A and an unknown UID: entry 1 bits: 0x01000000
+AND, A and an unknown UID: entry 1 user data: 0x00000077
+OR, A and an unknown UID: the call waits: 0x00000000
+OR, A and an unknown UID: the call: 0x00000001
+OR, A and an unknown UID: entry 0 is the list's item: 0x00000002
+OR, A and an unknown UID: entry 0 result: 0x80028201
+OR, A and an unknown UID: entry 0 bits: 0x00000010
+OR, A and an unknown UID: entry 0 user data: 0x00000000
+AND, two unknown UIDs: the call waits: 0x00000000
+AND, two unknown UIDs: the call: 0x00000002
+AND, two unknown UIDs: entry 0 is the list's item: 0x00000001
+AND, two unknown UIDs: entry 0 result: 0x80028201
+AND, two unknown UIDs: entry 0 bits: 0x00000010
+AND, two unknown UIDs: entry 0 user data: 0x00000000
+AND, two unknown UIDs: entry 1 is the list's item: 0x00000001
+AND, two unknown UIDs: entry 1 result: 0x80028201
+AND, two unknown UIDs: entry 1 bits: 0x00000010
+AND, two unknown UIDs: entry 1 user data: 0x00000000
+AND, A twice: the call waits: 0x00000001
+AND, A twice: the call still waits after one set: 0x00000000
+AND, A twice: the call: 0x00000002
+AND, A twice: entry 0 is the list's item: 0x00000001
+AND, A twice: entry 0 result: 0x00000000
+AND, A twice: entry 0 bits: 0x01000000
+AND, A twice: entry 0 user data: 0x00000077
+AND, A twice: entry 1 is the list's item: 0x00000001
+AND, A twice: entry 1 result: 0x00000000
+AND, A twice: entry 1 bits: 0x01000000
+AND, A twice: entry 1 user data: 0x00000077
+AND, A twice: the bits of A after: 0x01000004
+AND, A twice, auto reset: the call waits: 0x00000001
+AND, A twice, auto reset: the call still waits after one set: 0x00000001
+AND, A twice, auto reset: the call: 0x00000002
+AND, A twice, auto reset: entry 0 is the list's item: 0x00000001
+AND, A twice, auto reset: entry 0 result: 0x00000000
+AND, A twice, auto reset: entry 0 bits: 0x01000000
+AND, A twice, auto reset: entry 0 user data: 0x00000077
+AND, A twice, auto reset: entry 1 is the list's item: 0x00000001
+AND, A twice, auto reset: entry 1 result: 0x00000000
+AND, A twice, auto reset: entry 1 bits: 0x01000000
+AND, A twice, auto reset: entry 1 user data: 0x00000088
+AND, A twice, auto reset: the bits of A after: 0x00000004
+OR, A twice: the call waits: 0x00000001
+OR, A twice: the call still waits after one set: 0x00000000
+OR, A twice: the call: 0x00000001
+OR, A twice: entry 0 is the list's item: 0x00000001
+OR, A twice: entry 0 result: 0x00000000
+OR, A twice: entry 0 bits: 0x01000000
+OR, A twice: entry 0 user data: 0x00000077
+OR, A twice: the bits of A after: 0x01000004
+AND, B cancelled then A set: the call waits: 0x00000001
+AND, B cancelled then A set: the cancel of B: 0x00000000
+AND, B cancelled then A set: the waiters the cancel reports: 0x00000001
+AND, B cancelled then A set: the call still waits after the cancel: 0x00000001
+AND, B cancelled then A set: the call: 0x00000002
+AND, B cancelled then A set: entry 0 is the list's item: 0x00000002
+AND, B cancelled then A set: entry 0 result: 0x80028007
+AND, B cancelled then A set: entry 0 bits: 0x00000010
+AND, B cancelled then A set: entry 0 user data: 0x00000000
+AND, B cancelled then A set: entry 1 is the list's item: 0x00000001
+AND, B cancelled then A set: entry 1 result: 0x00000000
+AND, B cancelled then A set: entry 1 bits: 0x01000000
+AND, B cancelled then A set: entry 1 user data: 0x00000077
+AND, A set then B cancelled: the call waits: 0x00000001
+AND, A set then B cancelled: the call still waits after the set of A: 0x00000001
+AND, A set then B cancelled: the cancel of B: 0x00000000
+AND, A set then B cancelled: the waiters the cancel reports: 0x00000001
+AND, A set then B cancelled: the call still waits after the cancel: 0x00000000
+AND, A set then B cancelled: the call: 0x00000002
+AND, A set then B cancelled: entry 0 is the list's item: 0x00000001
+AND, A set then B cancelled: entry 0 result: 0x00000000
+AND, A set then B cancelled: entry 0 bits: 0x01000000
+AND, A set then B cancelled: entry 0 user data: 0x00000077
+AND, A set then B cancelled: entry 1 is the list's item: 0x00000002
+AND, A set then B cancelled: entry 1 result: 0x80028007
+AND, A set then B cancelled: entry 1 bits: 0x00000010
+AND, A set then B cancelled: entry 1 user data: 0x00000000
+OR, B cancelled: the call waits: 0x00000001
+OR, B cancelled: the cancel of B: 0x00000000
+OR, B cancelled: the waiters the cancel reports: 0x00000001
+OR, B cancelled: the call still waits after the cancel: 0x00000000
+OR, B cancelled: the call: 0x00000001
+OR, B cancelled: entry 0 is the list's item: 0x00000002
+OR, B cancelled: entry 0 result: 0x80028007
+OR, B cancelled: entry 0 bits: 0x00000010
+OR, B cancelled: entry 0 user data: 0x00000000
+DONE

@@ -1,0 +1,139 @@
+peek and a receive: receiver 1 waits on the pipe: 0x00000001
+peek and a receive: receiver 2 waits on the pipe: 0x00000001
+peek and a receive: the waiting receivers before the send: 0x00000002
+peek and a receive: send "pqrs": 0x00000000
+peek and a receive: send "pqrs", its size: 0x00000004
+peek and a receive: receiver 1's result: 0x00000000
+peek and a receive: receiver 1 got "pqrs", its size: 0x00000004
+peek and a receive: receiver 2's result: 0x00000000
+peek and a receive: receiver 2 got "pqrs", its size: 0x00000004
+peek and a receive: the waiting receivers after the send: 0x00000000
+peek and a receive: the free size after the receivers ended: 0x00001000
+peek and a receive: send "tu": 0x00000000
+peek and a receive: send "tu", its size: 0x00000002
+peek and a receive: send "tu", the free size after it: 0x00000FFE
+peek and a receive: receive after "tu": 0x00000000
+peek and a receive: receive after "tu", it got "pq", its size: 0x00000002
+peek and a receive: receive after "tu", the free size after it: 0x00001000
+peek and a receive: send "vwx": 0x00000000
+peek and a receive: send "vwx", its size: 0x00000003
+peek and a receive: send "vwx", the free size after it: 0x00000FFD
+peek and a receive: receive after "vwx": 0x00000000
+peek and a receive: receive after "vwx", it got "rst", its size: 0x00000003
+peek and a receive: receive after "vwx", the free size after it: 0x00001000
+peek and a receive: send "yz": 0x00000000
+peek and a receive: send "yz", its size: 0x00000002
+peek and a receive: send "yz", the free size after it: 0x00000FFE
+peek and a receive: receive after "yz": 0x00000000
+peek and a receive: receive after "yz", it got "uv", its size: 0x00000002
+peek and a receive: receive after "yz", the free size after it: 0x00001000
+peek and a receive: receive on the idle pipe: 0x80028005
+peek and a receive: receive on the idle pipe, it got "", its size: 0x00000000
+peek and a receive: receive on the idle pipe, the free size after it: 0x00001000
+peek and a receive: cancel: 0x00000000
+peek and a receive: the free size after the cancel: 0x00001000
+peek and a receive: send "ab": 0x00000000
+peek and a receive: send "ab", its size: 0x00000002
+peek and a receive: send "ab", the free size after it: 0x00000FFE
+peek and a receive: receive after "ab": 0x00000000
+peek and a receive: receive after "ab", it got "ab", its size: 0x00000002
+peek and a receive: receive after "ab", the free size after it: 0x00001000
+peek and a receive: send "cd": 0x00000000
+peek and a receive: send "cd", its size: 0x00000002
+peek and a receive: send "cd", the free size after it: 0x00000FFE
+peek and a receive: receive after "cd": 0x00000000
+peek and a receive: receive after "cd", it got "cd", its size: 0x00000002
+peek and a receive: receive after "cd", the free size after it: 0x00001000
+peek alone: receiver 1 waits on the pipe: 0x00000001
+peek alone: the waiting receivers before the send: 0x00000001
+peek alone: send "pqrs": 0x00000000
+peek alone: send "pqrs", its size: 0x00000004
+peek alone: receiver 1's result: 0x00000000
+peek alone: receiver 1 got "pqrs", its size: 0x00000004
+peek alone: the waiting receivers after the send: 0x00000000
+peek alone: the free size after the receivers ended: 0x00000FFC
+peek alone: receive right after it: 0x00000000
+peek alone: receive right after it, it got "pqrs", its size: 0x00000004
+peek alone: receive right after it, the free size after it: 0x00001000
+peek alone: send "tu": 0x00000000
+peek alone: send "tu", its size: 0x00000002
+peek alone: send "tu", the free size after it: 0x00000FFE
+peek alone: receive after "tu": 0x00000000
+peek alone: receive after "tu", it got "pq", its size: 0x00000002
+peek alone: receive after "tu", the free size after it: 0x00001000
+peek alone: send "vwx": 0x00000000
+peek alone: send "vwx", its size: 0x00000003
+peek alone: send "vwx", the free size after it: 0x00000FFD
+peek alone: receive after "vwx": 0x00000000
+peek alone: receive after "vwx", it got "rst", its size: 0x00000003
+peek alone: receive after "vwx", the free size after it: 0x00001000
+peek alone: send "yz": 0x00000000
+peek alone: send "yz", its size: 0x00000002
+peek alone: send "yz", the free size after it: 0x00000FFE
+peek alone: receive after "yz": 0x00000000
+peek alone: receive after "yz", it got "uv", its size: 0x00000002
+peek alone: receive after "yz", the free size after it: 0x00001000
+peek alone: receive on the idle pipe: 0x80028005
+peek alone: receive on the idle pipe, it got "", its size: 0x00000000
+peek alone: receive on the idle pipe, the free size after it: 0x00001000
+peek alone: cancel: 0x00000000
+peek alone: the free size after the cancel: 0x00001000
+peek alone: send "ab": 0x00000000
+peek alone: send "ab", its size: 0x00000002
+peek alone: send "ab", the free size after it: 0x00000FFE
+peek alone: receive after "ab": 0x00000000
+peek alone: receive after "ab", it got "ab", its size: 0x00000002
+peek alone: receive after "ab", the free size after it: 0x00001000
+peek alone: send "cd": 0x00000000
+peek alone: send "cd", its size: 0x00000002
+peek alone: send "cd", the free size after it: 0x00000FFE
+peek alone: receive after "cd": 0x00000000
+peek alone: receive after "cd", it got "cd", its size: 0x00000002
+peek alone: receive after "cd", the free size after it: 0x00001000
+short peek: receiver 1 waits on the pipe: 0x00000001
+short peek: the waiting receivers before the send: 0x00000001
+short peek: send "abcd": 0x00000000
+short peek: send "abcd", its size: 0x00000004
+short peek: receiver 1's result: 0x00000000
+short peek: receiver 1 got "ab", its size: 0x00000002
+short peek: the waiting receivers after the send: 0x00000000
+short peek: the free size after the receivers ended: 0x00000FFC
+short peek: receive right after it: 0x00000000
+short peek: receive right after it, it got "abab", its size: 0x00000004
+short peek: receive right after it, the free size after it: 0x00001000
+short peek: send "ef": 0x00000000
+short peek: send "ef", its size: 0x00000002
+short peek: send "ef", the free size after it: 0x00000FFE
+short peek: receive after "ef": 0x00000000
+short peek: receive after "ef", it got "cd", its size: 0x00000002
+short peek: receive after "ef", the free size after it: 0x00001000
+short peek: send "ghi": 0x00000000
+short peek: send "ghi", its size: 0x00000003
+short peek: send "ghi", the free size after it: 0x00000FFD
+short peek: receive after "ghi": 0x00000000
+short peek: receive after "ghi", it got "efg", its size: 0x00000003
+short peek: receive after "ghi", the free size after it: 0x00001000
+short peek: send "jk": 0x00000000
+short peek: send "jk", its size: 0x00000002
+short peek: send "jk", the free size after it: 0x00000FFE
+short peek: receive after "jk": 0x00000000
+short peek: receive after "jk", it got "hi", its size: 0x00000002
+short peek: receive after "jk", the free size after it: 0x00001000
+short peek: receive on the idle pipe: 0x80028005
+short peek: receive on the idle pipe, it got "", its size: 0x00000000
+short peek: receive on the idle pipe, the free size after it: 0x00001000
+short peek: cancel: 0x00000000
+short peek: the free size after the cancel: 0x00001000
+short peek: send "ab": 0x00000000
+short peek: send "ab", its size: 0x00000002
+short peek: send "ab", the free size after it: 0x00000FFE
+short peek: receive after "ab": 0x00000000
+short peek: receive after "ab", it got "ab", its size: 0x00000002
+short peek: receive after "ab", the free size after it: 0x00001000
+short peek: send "cd": 0x00000000
+short peek: send "cd", its size: 0x00000002
+short peek: send "cd", the free size after it: 0x00000FFE
+short peek: receive after "cd": 0x00000000
+short peek: receive after "cd", it got "cd", its size: 0x00000002
+short peek: receive after "cd", the free size after it: 0x00001000
+DONE

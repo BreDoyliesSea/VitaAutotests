@@ -1,0 +1,25 @@
+a timeout of 0 on a flag with the multi attribute: A's wait: 0x80028005
+a timeout of 0 on a flag with the multi attribute: the poll: 0x00000000
+a timeout of 0 on a flag with the multi attribute: the poll after A ended: 0x00000000
+a timeout of 0: A's wait: 0x80028005
+a timeout of 0: the poll: 0x800280E2
+a timeout of 0: the poll after A ended: 0x00000000
+a timeout that passes while A sleeps: A's wait: 0x80028005
+a timeout that passes while A sleeps: the poll: 0x00000000
+a timeout that passes while A sleeps: the poll after A ended: 0x00000000
+a wait ended by a set: the poll while A waits: 0x800280E2
+a wait ended by a set: the set: 0x00000000
+a wait ended by a set: A's wait: 0x00000000
+a wait ended by a set: the poll: 0x00000000
+a wait ended by a set: the poll after A ended: 0x00000000
+a timeout of 0, then a wait ended by a set: A's first wait: 0x80028005
+a timeout of 0, then a wait ended by a set: the poll after it: 0x800280E2
+a timeout of 0, then a wait ended by a set: the set: 0x00000000
+a timeout of 0, then a wait ended by a set: A's second wait: 0x00000000
+a timeout of 0, then a wait ended by a set: the poll after it: 0x800280E2
+a timeout of 0, then a wait ended by a set: the poll after A ended: 0x00000000
+a timeout of 0, then the flag is deleted: A's wait: 0x80028005
+a timeout of 0, then the flag is deleted: the poll: 0x800280E2
+a timeout of 0, then the flag is deleted: the delete: 0x00000000
+a timeout of 0, then the flag is deleted: the poll on the deleted flag: 0x800280E1
+DONE

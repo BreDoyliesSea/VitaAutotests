@@ -1,0 +1,69 @@
+wait for pattern 0 with a timeout: 0x80028005
+wait for pattern 0 with a timeout: it took at least 300 ms: 0x00000001
+wait for pattern 0 with a timeout: the result pattern: 0x00000000
+wait for pattern 0 with a timeout: the user data, low word: 0x00000000
+wait for pattern 0 with a timeout: the user data, high word: 0x00000000
+wait for pattern 0 with a timeout of 0: 0x80028005
+wait for pattern 0 with a timeout of 0: the result pattern: 0x00000000
+wait for pattern 0 with a timeout of 0: the user data, low word: 0x00000000
+wait for pattern 0 with a timeout of 0: the user data, high word: 0x00000000
+poll for pattern 0: 0x80020005
+poll for pattern 0: the result pattern: 0x00000000
+poll for pattern 0: the user data, low word: 0x00000000
+poll for pattern 0: the user data, high word: 0x00000000
+wait for pattern 0 and a cancel: the thread waits for the event: 0x00000001
+wait for pattern 0 and a cancel: set of every user bit: 0x00000000
+wait for pattern 0 and a cancel: the thread still waits after the set: 0x00000001
+wait for pattern 0 and a cancel: pulse of every user bit: 0x00000000
+wait for pattern 0 and a cancel: the thread still waits after the pulse: 0x00000001
+wait for pattern 0 and a cancel: the cancel: 0x00000000
+wait for pattern 0 and a cancel: the count the cancel wrote: 0x00000001
+wait for pattern 0 and a cancel: the wait: 0x80028007
+wait for pattern 0 and a cancel: the result pattern: 0x00000010
+wait for pattern 0 and a cancel: the user data, low word: 0x00000000
+wait for pattern 0 and a cancel: the user data, high word: 0x00000000
+wait for pattern 0 and a delete: the thread waits for the event: 0x00000001
+wait for pattern 0 and a delete: the delete: 0x00000000
+wait for pattern 0 and a delete: the wait: 0x80028006
+wait for pattern 0 and a delete: the result pattern: 0x00000010
+wait for pattern 0 and a delete: the user data, low word: 0x00000000
+wait for pattern 0 and a delete: the user data, high word: 0x00000000
+a poll that fails: 0x80028202
+a poll that fails: the user data, low word: 0x00000000
+a poll that fails: the user data, high word: 0x00000000
+a wait that times out: 0x80028005
+a wait that times out: the user data, low word: 0x00000000
+a wait that times out: the user data, high word: 0x00000000
+delete: the delete: 0x00000000
+delete: the wait for a user bit: 0x80028006
+delete: the wait for a user bit: the result pattern: 0x00000010
+delete: the wait for a user bit: the user data, low word: 0x00000000
+delete: the wait for a user bit: the user data, high word: 0x00000000
+delete: the wait for the delete bit: 0x00000000
+delete: the wait for the delete bit: the result pattern: 0x00000008
+delete: the wait for the delete bit: the user data is not 0: 0x00000001
+delete: the wait for the delete bit: the high word is the thread that deleted: 0x00000001
+delete: the wait for the delete bit: the low word is the process ID: 0x00000001
+user data: set of bit A: 0x00000000
+user data: a poll after the set: the user data, low word: 0x00001111
+user data: a poll after the set: the user data, high word: 0x00000000
+user data: pulse of bit B with no waiter: 0x00000000
+user data: a poll of bit A after the pulse: the user data, low word: 0x00002222
+user data: a poll of bit A after the pulse: the user data, high word: 0x00000000
+user data: set of pattern 0: 0x00000000
+user data: a poll after the set of pattern 0: the user data, low word: 0x00002222
+user data: a poll after the set of pattern 0: the user data, high word: 0x00000000
+user data: pulse of pattern 0: 0x00000000
+user data: a poll after the pulse of pattern 0: the user data, low word: 0x00002222
+user data: a poll after the pulse of pattern 0: the user data, high word: 0x00000000
+create with attribute 0x800: the create: 0x00000000
+create with attribute 0x800: the attribute it reports: 0x00000800
+create with attribute 0x800: the first poll: 0x00000000
+create with attribute 0x800: the second poll: 0x00000000
+create with attribute 0x800: the delete: 0x00000000
+create with attribute 0x900: the create: 0x00000000
+create with attribute 0x900: the attribute it reports: 0x00000900
+create with attribute 0x900: the first poll: 0x00000000
+create with attribute 0x900: the second poll: 0x80028202
+create with attribute 0x900: the delete: 0x00000000
+DONE

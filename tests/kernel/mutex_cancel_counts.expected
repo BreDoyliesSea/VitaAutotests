@@ -1,0 +1,103 @@
+cancel to -1: the cancel: 0x00000000
+cancel to -1: the number of waiters it writes: 0x00000001
+cancel to -1: the waiter still waits: 0x00000000
+cancel to -1: the waiter's lock: 0x80028007
+cancel to -1: the count after: 0x00000001
+cancel to -1: the main thread owns it: 0x00000001
+cancel to -1: the waiters after: 0x00000000
+cancel to -2: the cancel: 0x00000000
+cancel to -2: the number of waiters it writes: 0x00000001
+cancel to -2: the waiter still waits: 0x00000000
+cancel to -2: the waiter's lock: 0x80028007
+cancel to -2: the count after: 0x00000001
+cancel to -2: the main thread owns it: 0x00000001
+cancel to -2: the waiters after: 0x00000000
+cancel to -100: the cancel: 0x00000000
+cancel to -100: the number of waiters it writes: 0x00000001
+cancel to -100: the waiter still waits: 0x00000000
+cancel to -100: the waiter's lock: 0x80028007
+cancel to -100: the count after: 0x00000001
+cancel to -100: the main thread owns it: 0x00000001
+cancel to -100: the waiters after: 0x00000000
+cancel to the lowest count: the cancel: 0x00000000
+cancel to the lowest count: the number of waiters it writes: 0x00000001
+cancel to the lowest count: the waiter still waits: 0x00000000
+cancel to the lowest count: the waiter's lock: 0x80028007
+cancel to the lowest count: the count after: 0x00000001
+cancel to the lowest count: the main thread owns it: 0x00000001
+cancel to the lowest count: the waiters after: 0x00000000
+cancel to 0: the cancel: 0x00000000
+cancel to 0: the number of waiters it writes: 0x00000001
+cancel to 0: the waiter still waits: 0x00000000
+cancel to 0: the waiter's lock: 0x80028007
+cancel to 0: the count after: 0x00000000
+cancel to 0: the main thread owns it: 0x00000000
+cancel to 0: the waiters after: 0x00000000
+cancel to 1: the cancel: 0x00000000
+cancel to 1: the number of waiters it writes: 0x00000001
+cancel to 1: the waiter still waits: 0x00000000
+cancel to 1: the waiter's lock: 0x80028007
+cancel to 1: the count after: 0x00000001
+cancel to 1: the main thread owns it: 0x00000001
+cancel to 1: the waiters after: 0x00000000
+cancel to 2: the cancel: 0x8002000F
+cancel to 2: the number of waiters it writes: 0x00000000
+cancel to 2: the waiter still waits: 0x00000001
+cancel to 2: the waiter's lock: 0x00000000
+cancel to 2: the count after: 0x00000001
+cancel to 2: the main thread owns it: 0x00000001
+cancel to 2: the waiters after: 0x00000001
+recursive, cancel to 5: the cancel: 0x00000000
+recursive, cancel to 5: the number of waiters it writes: 0x00000001
+recursive, cancel to 5: the waiter still waits: 0x00000000
+recursive, cancel to 5: the waiter's lock: 0x80028007
+recursive, cancel to 5: the count after: 0x00000005
+recursive, cancel to 5: the main thread owns it: 0x00000001
+recursive, cancel to 5: the waiters after: 0x00000000
+recursive with an init count of 3, cancel to -4: the cancel: 0x00000000
+recursive with an init count of 3, cancel to -4: the number of waiters it writes: 0x00000001
+recursive with an init count of 3, cancel to -4: the waiter still waits: 0x00000000
+recursive with an init count of 3, cancel to -4: the waiter's lock: 0x80028007
+recursive with an init count of 3, cancel to -4: the count after: 0x00000003
+recursive with an init count of 3, cancel to -4: the main thread owns it: 0x00000001
+recursive with an init count of 3, cancel to -4: the waiters after: 0x00000000
+recursive mutex, the owner locks again: the lock: 0x00000000
+recursive mutex, the owner locks again: runs of the pending callback: 0x00000000
+recursive mutex, the owner locks again: the count after: 0x00000002
+recursive mutex, the owner locks again: runs after a check of the callbacks: 0x00000001
+mutex, the owner locks again: the lock: 0x80028142
+mutex, the owner locks again: runs of the pending callback: 0x00000000
+mutex, the owner locks again: the count after: 0x00000001
+mutex, the owner locks again: runs after a check of the callbacks: 0x00000001
+mutex, count 0: the lock: 0x8002000F
+mutex, count 0: runs of the pending callback: 0x00000000
+mutex, count 0: the count after: 0x00000000
+mutex, count 0: runs after a check of the callbacks: 0x00000001
+mutex, count -1: the lock: 0x8002000F
+mutex, count -1: runs of the pending callback: 0x00000000
+mutex, count -1: the count after: 0x00000000
+mutex, count -1: runs after a check of the callbacks: 0x00000001
+mutex, count 2: the lock: 0x8002000F
+mutex, count 2: runs of the pending callback: 0x00000000
+mutex, count 2: the count after: 0x00000000
+mutex, count 2: runs after a check of the callbacks: 0x00000001
+recursive mutex, count 0: the lock: 0x8002000F
+recursive mutex, count 0: runs of the pending callback: 0x00000000
+recursive mutex, count 0: the count after: 0x00000000
+recursive mutex, count 0: runs after a check of the callbacks: 0x00000001
+recursive mutex, count -1: the lock: 0x8002000F
+recursive mutex, count -1: runs of the pending callback: 0x00000000
+recursive mutex, count -1: the count after: 0x00000000
+recursive mutex, count -1: runs after a check of the callbacks: 0x00000001
+mutex the caller owns, count 0: the lock: 0x8002000F
+mutex the caller owns, count 0: runs of the pending callback: 0x00000000
+mutex the caller owns, count 0: the count after: 0x00000001
+mutex the caller owns, count 0: runs after a check of the callbacks: 0x00000001
+mutex another thread holds, count 0: the lock: 0x8002000F
+mutex another thread holds, count 0: runs of the pending callback: 0x00000000
+mutex another thread holds, count 0: the count after: 0x00000001
+mutex another thread holds, count 0: runs after a check of the callbacks: 0x00000001
+unknown UID, count 0: the lock: 0x80028141
+unknown UID, count 0: runs of the pending callback: 0x00000000
+unknown UID, count 0: runs after a check of the callbacks: 0x00000001
+DONE

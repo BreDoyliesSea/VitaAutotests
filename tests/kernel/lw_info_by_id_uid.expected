@@ -1,0 +1,95 @@
+lightweight condition variable, no waiter: info by work area: 0x00000000
+lightweight condition variable, no waiter: the by work area uid is the UID in the work area: 0x00000001
+lightweight condition variable, no waiter: info by UID with the by work area uid: 0x00000000
+lightweight condition variable, no waiter: the uid is the UID it was given: 0x00000000
+lightweight condition variable, no waiter: the uid is 0: 0x00000000
+lightweight condition variable, no waiter: the uid is negative: 0x00000000
+lightweight condition variable, no waiter: the uid has the class of the UID it was given: 0x00000000
+lightweight condition variable, no waiter: the uid is the UID in the work area: 0x00000000
+lightweight condition variable, no waiter: info by UID with the uid it reported: 0x800281C1
+lightweight condition variable, no waiter: that call reports the same uid: 0x00000000
+lightweight condition variable, no waiter: the size is the same by UID: 0x00000001
+lightweight condition variable, no waiter: the name is the same by UID: 0x00000001
+lightweight condition variable, no waiter: the attribute is the same by UID: 0x00000001
+lightweight condition variable, no waiter: the work area pointer is the same by UID: 0x00000001
+lightweight condition variable, no waiter: the mutex pointer is the same by UID: 0x00000001
+lightweight condition variable, no waiter: the waiter count is the same by UID: 0x00000001
+lightweight condition variable, no waiter: the waiters by work area: 0x00000000
+lightweight condition variable, no waiter: the waiters by UID: 0x00000000
+lightweight condition variable with a waiter: the waiter waits on the condition: 0x00000001
+lightweight condition variable with a waiter: info by work area: 0x00000000
+lightweight condition variable with a waiter: the by work area uid is the UID in the work area: 0x00000001
+lightweight condition variable with a waiter: info by UID with the by work area uid: 0x00000000
+lightweight condition variable with a waiter: the uid is the UID it was given: 0x00000000
+lightweight condition variable with a waiter: the uid is 0: 0x00000000
+lightweight condition variable with a waiter: the uid is negative: 0x00000000
+lightweight condition variable with a waiter: the uid has the class of the UID it was given: 0x00000000
+lightweight condition variable with a waiter: the uid is the UID in the work area: 0x00000000
+lightweight condition variable with a waiter: info by UID with the uid it reported: 0x800281C1
+lightweight condition variable with a waiter: that call reports the same uid: 0x00000000
+lightweight condition variable with a waiter: the size is the same by UID: 0x00000001
+lightweight condition variable with a waiter: the name is the same by UID: 0x00000001
+lightweight condition variable with a waiter: the attribute is the same by UID: 0x00000001
+lightweight condition variable with a waiter: the work area pointer is the same by UID: 0x00000001
+lightweight condition variable with a waiter: the mutex pointer is the same by UID: 0x00000001
+lightweight condition variable with a waiter: the waiter count is the same by UID: 0x00000001
+lightweight condition variable with a waiter: the waiters by work area: 0x00000001
+lightweight condition variable with a waiter: the waiters by UID: 0x00000001
+lightweight condition variable with a waiter: the waiter's wait: 0x00000000
+lightweight mutex, no waiter: info by work area: 0x00000000
+lightweight mutex, no waiter: the by work area uid is the UID in the work area: 0x00000001
+lightweight mutex, no waiter: info by UID with the by work area uid: 0x00000000
+lightweight mutex, no waiter: the uid is the UID it was given: 0x00000001
+lightweight mutex, no waiter: the uid is 0: 0x00000000
+lightweight mutex, no waiter: the uid is negative: 0x00000000
+lightweight mutex, no waiter: the uid has the class of the UID it was given: 0x00000001
+lightweight mutex, no waiter: the uid is the UID in the work area: 0x00000001
+lightweight mutex, no waiter: info by UID with the uid it reported: 0x00000000
+lightweight mutex, no waiter: that call reports the same uid: 0x00000001
+lightweight mutex, no waiter: the size is the same by UID: 0x00000001
+lightweight mutex, no waiter: the name is the same by UID: 0x00000001
+lightweight mutex, no waiter: the attribute is the same by UID: 0x00000001
+lightweight mutex, no waiter: the work area pointer is the same by UID: 0x00000001
+lightweight mutex, no waiter: the initial count is the same by UID: 0x00000001
+lightweight mutex, no waiter: the count is the same by UID: 0x00000001
+lightweight mutex, no waiter: the owner is the same by UID: 0x00000001
+lightweight mutex, no waiter: the waiter count is the same by UID: 0x00000001
+lightweight mutex, no waiter: the waiters by work area: 0x00000000
+lightweight mutex, no waiter: the waiters by UID: 0x00000000
+lightweight mutex with a waiter: the waiter waits on the mutex: 0x00000001
+lightweight mutex with a waiter: info by work area: 0x00000000
+lightweight mutex with a waiter: the by work area uid is the UID in the work area: 0x00000001
+lightweight mutex with a waiter: info by UID with the by work area uid: 0x00000000
+lightweight mutex with a waiter: the uid is the UID it was given: 0x00000001
+lightweight mutex with a waiter: the uid is 0: 0x00000000
+lightweight mutex with a waiter: the uid is negative: 0x00000000
+lightweight mutex with a waiter: the uid has the class of the UID it was given: 0x00000001
+lightweight mutex with a waiter: the uid is the UID in the work area: 0x00000001
+lightweight mutex with a waiter: info by UID with the uid it reported: 0x00000000
+lightweight mutex with a waiter: that call reports the same uid: 0x00000001
+lightweight mutex with a waiter: the size is the same by UID: 0x00000001
+lightweight mutex with a waiter: the name is the same by UID: 0x00000001
+lightweight mutex with a waiter: the attribute is the same by UID: 0x00000001
+lightweight mutex with a waiter: the work area pointer is the same by UID: 0x00000001
+lightweight mutex with a waiter: the initial count is the same by UID: 0x00000001
+lightweight mutex with a waiter: the count is the same by UID: 0x00000001
+lightweight mutex with a waiter: the owner is the same by UID: 0x00000001
+lightweight mutex with a waiter: the waiter count is the same by UID: 0x00000001
+lightweight mutex with a waiter: the waiters by work area: 0x00000001
+lightweight mutex with a waiter: the waiters by UID: 0x00000001
+lightweight mutex with a waiter: the waiter's wait: 0x00000000
+heavy condition variable, no waiter: info by UID: 0x00000000
+heavy condition variable, no waiter: the uid is the UID it was given: 0x00000001
+heavy condition variable, no waiter: the uid is 0: 0x00000000
+heavy condition variable, no waiter: the uid is negative: 0x00000000
+heavy condition variable, no waiter: the uid has the class of the UID it was given: 0x00000001
+heavy condition variable, no waiter: the waiters: 0x00000000
+heavy condition variable with a waiter: the waiter waits on the condition: 0x00000001
+heavy condition variable with a waiter: info by UID: 0x00000000
+heavy condition variable with a waiter: the uid is the UID it was given: 0x00000001
+heavy condition variable with a waiter: the uid is 0: 0x00000000
+heavy condition variable with a waiter: the uid is negative: 0x00000000
+heavy condition variable with a waiter: the uid has the class of the UID it was given: 0x00000001
+heavy condition variable with a waiter: the waiters: 0x00000001
+heavy condition variable with a waiter: the waiter's wait: 0x00000000
+DONE

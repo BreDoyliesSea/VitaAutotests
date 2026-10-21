@@ -1,0 +1,53 @@
+FIFO, reader writer reader writer: waiting readers: 0x00000002
+FIFO, reader writer reader writer: waiting writers: 0x00000002
+FIFO, reader writer reader writer: cancel: 0x00000000
+FIFO, reader writer reader writer: the readers the cancel counted: 0x00000002
+FIFO, reader writer reader writer: the writers the cancel counted: 0x00000002
+FIFO, reader writer reader writer: the waiters in the order they ran: 0x00001234
+FIFO, reader writer reader writer: waiter 1, a reader, result: 0x80028007
+FIFO, reader writer reader writer: waiter 2, a writer, result: 0x80028007
+FIFO, reader writer reader writer: waiter 3, a reader, result: 0x80028007
+FIFO, reader writer reader writer: waiter 4, a writer, result: 0x80028007
+FIFO, reader writer reader writer: the lock count after: 0x00000000
+FIFO, reader writer reader writer: the lock has no write owner after: 0x00000001
+FIFO, reader writer reader writer: the main thread's write unlock after: 0x800281E4
+FIFO, writer reader writer reader: waiting readers: 0x00000002
+FIFO, writer reader writer reader: waiting writers: 0x00000002
+FIFO, writer reader writer reader: cancel: 0x00000000
+FIFO, writer reader writer reader: the readers the cancel counted: 0x00000002
+FIFO, writer reader writer reader: the writers the cancel counted: 0x00000002
+FIFO, writer reader writer reader: the waiters in the order they ran: 0x00001234
+FIFO, writer reader writer reader: waiter 1, a writer, result: 0x80028007
+FIFO, writer reader writer reader: waiter 2, a reader, result: 0x80028007
+FIFO, writer reader writer reader: waiter 3, a writer, result: 0x80028007
+FIFO, writer reader writer reader: waiter 4, a reader, result: 0x80028007
+FIFO, writer reader writer reader: the lock count after: 0x00000000
+FIFO, writer reader writer reader: the lock has no write owner after: 0x00000001
+FIFO, writer reader writer reader: the main thread's write unlock after: 0x800281E4
+priority queue, reader writer reader writer: waiting readers: 0x00000002
+priority queue, reader writer reader writer: waiting writers: 0x00000002
+priority queue, reader writer reader writer: cancel: 0x00000000
+priority queue, reader writer reader writer: the readers the cancel counted: 0x00000002
+priority queue, reader writer reader writer: the writers the cancel counted: 0x00000002
+priority queue, reader writer reader writer: the waiters in the order they ran: 0x00001234
+priority queue, reader writer reader writer: waiter 1, a reader, result: 0x80028007
+priority queue, reader writer reader writer: waiter 2, a writer, result: 0x80028007
+priority queue, reader writer reader writer: waiter 3, a reader, result: 0x80028007
+priority queue, reader writer reader writer: waiter 4, a writer, result: 0x80028007
+priority queue, reader writer reader writer: the lock count after: 0x00000000
+priority queue, reader writer reader writer: the lock has no write owner after: 0x00000001
+priority queue, reader writer reader writer: the main thread's write unlock after: 0x800281E4
+priority queue, writer reader writer reader: waiting readers: 0x00000002
+priority queue, writer reader writer reader: waiting writers: 0x00000002
+priority queue, writer reader writer reader: cancel: 0x00000000
+priority queue, writer reader writer reader: the readers the cancel counted: 0x00000002
+priority queue, writer reader writer reader: the writers the cancel counted: 0x00000002
+priority queue, writer reader writer reader: the waiters in the order they ran: 0x00001234
+priority queue, writer reader writer reader: waiter 1, a writer, result: 0x80028007
+priority queue, writer reader writer reader: waiter 2, a reader, result: 0x80028007
+priority queue, writer reader writer reader: waiter 3, a writer, result: 0x80028007
+priority queue, writer reader writer reader: waiter 4, a reader, result: 0x80028007
+priority queue, writer reader writer reader: the lock count after: 0x00000000
+priority queue, writer reader writer reader: the lock has no write owner after: 0x00000001
+priority queue, writer reader writer reader: the main thread's write unlock after: 0x800281E4
+DONE

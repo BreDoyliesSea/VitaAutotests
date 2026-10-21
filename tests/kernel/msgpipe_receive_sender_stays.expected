@@ -1,0 +1,58 @@
+full pipe, FULL sender of 10, receive ASAP 1: the free size before the receive: 0x00000000
+full pipe, FULL sender of 10, receive ASAP 1: the waiting senders before the receive: 0x00000001
+full pipe, FULL sender of 10, receive ASAP 1: the receive: 0x00000000
+full pipe, FULL sender of 10, receive ASAP 1: the receive gets "a", size: 0x00000001
+full pipe, FULL sender of 10, receive ASAP 1: sender 1 still waits: 0x00000001
+full pipe, FULL sender of 10, receive ASAP 1: the free size after the receive: 0x00000001
+full pipe, FULL sender of 10, receive ASAP 1: the waiting senders after the receive: 0x00000001
+full pipe, FULL sender of 10, receive ASAP 1: cancel the pipe: 0x00000000
+full pipe, FULL sender of 10, receive ASAP 1: the senders the cancel ended: 0x00000001
+full pipe, FULL sender of 10, receive ASAP 1: sender 1's result: 0x80028007
+full pipe, FULL sender of 10, receive ASAP 1: sender 1's size sent: 0x00000000
+full pipe, FULL sender of 10, receive ASAP 1: the free size after the cancel: 0x00001000
+full pipe, FULL senders of 4 and 10, receive FULL 8: the free size before the receive: 0x00000000
+full pipe, FULL senders of 4 and 10, receive FULL 8: the waiting senders before the receive: 0x00000002
+full pipe, FULL senders of 4 and 10, receive FULL 8: the receive: 0x00000000
+full pipe, FULL senders of 4 and 10, receive FULL 8: the receive gets "abcdefgh", size: 0x00000008
+full pipe, FULL senders of 4 and 10, receive FULL 8: sender 1 still waits: 0x00000000
+full pipe, FULL senders of 4 and 10, receive FULL 8: sender 2 still waits: 0x00000001
+full pipe, FULL senders of 4 and 10, receive FULL 8: the free size after the receive: 0x00000004
+full pipe, FULL senders of 4 and 10, receive FULL 8: the waiting senders after the receive: 0x00000001
+full pipe, FULL senders of 4 and 10, receive FULL 8: cancel the pipe: 0x00000000
+full pipe, FULL senders of 4 and 10, receive FULL 8: the senders the cancel ended: 0x00000001
+full pipe, FULL senders of 4 and 10, receive FULL 8: sender 1's result: 0x00000000
+full pipe, FULL senders of 4 and 10, receive FULL 8: sender 1's size sent: 0x00000004
+full pipe, FULL senders of 4 and 10, receive FULL 8: sender 2's result: 0x80028007
+full pipe, FULL senders of 4 and 10, receive FULL 8: sender 2's size sent: 0x00000000
+full pipe, FULL senders of 4 and 10, receive FULL 8: the free size after the cancel: 0x00001000
+full pipe, ASAP senders of 1, 1 and 1, receive ASAP 2: the free size before the receive: 0x00000000
+full pipe, ASAP senders of 1, 1 and 1, receive ASAP 2: the waiting senders before the receive: 0x00000003
+full pipe, ASAP senders of 1, 1 and 1, receive ASAP 2: the receive: 0x00000000
+full pipe, ASAP senders of 1, 1 and 1, receive ASAP 2: the receive gets "ab", size: 0x00000002
+full pipe, ASAP senders of 1, 1 and 1, receive ASAP 2: sender 1 still waits: 0x00000000
+full pipe, ASAP senders of 1, 1 and 1, receive ASAP 2: sender 2 still waits: 0x00000000
+full pipe, ASAP senders of 1, 1 and 1, receive ASAP 2: sender 3 still waits: 0x00000001
+full pipe, ASAP senders of 1, 1 and 1, receive ASAP 2: the free size after the receive: 0x00000000
+full pipe, ASAP senders of 1, 1 and 1, receive ASAP 2: the waiting senders after the receive: 0x00000001
+full pipe, ASAP senders of 1, 1 and 1, receive ASAP 2: cancel the pipe: 0x00000000
+full pipe, ASAP senders of 1, 1 and 1, receive ASAP 2: the senders the cancel ended: 0x00000001
+full pipe, ASAP senders of 1, 1 and 1, receive ASAP 2: sender 1's result: 0x00000000
+full pipe, ASAP senders of 1, 1 and 1, receive ASAP 2: sender 1's size sent: 0x00000001
+full pipe, ASAP senders of 1, 1 and 1, receive ASAP 2: sender 2's result: 0x00000000
+full pipe, ASAP senders of 1, 1 and 1, receive ASAP 2: sender 2's size sent: 0x00000001
+full pipe, ASAP senders of 1, 1 and 1, receive ASAP 2: sender 3's result: 0x80028007
+full pipe, ASAP senders of 1, 1 and 1, receive ASAP 2: sender 3's size sent: 0x00000000
+full pipe, ASAP senders of 1, 1 and 1, receive ASAP 2: the free size after the cancel: 0x00001000
+5 bytes of room, FULL sender of 20, receive ASAP 1: the free size before the receive: 0x00000005
+5 bytes of room, FULL sender of 20, receive ASAP 1: the waiting senders before the receive: 0x00000001
+5 bytes of room, FULL sender of 20, receive ASAP 1: the receive: 0x00000000
+5 bytes of room, FULL sender of 20, receive ASAP 1: the receive gets "a", size: 0x00000001
+5 bytes of room, FULL sender of 20, receive ASAP 1: sender 1 still waits: 0x00000001
+5 bytes of room, FULL sender of 20, receive ASAP 1: the free size after the receive: 0x00000006
+5 bytes of room, FULL sender of 20, receive ASAP 1: the waiting senders after the receive: 0x00000001
+5 bytes of room, FULL sender of 20, receive ASAP 1: cancel the pipe: 0x00000000
+5 bytes of room, FULL sender of 20, receive ASAP 1: the senders the cancel ended: 0x00000001
+5 bytes of room, FULL sender of 20, receive ASAP 1: sender 1's result: 0x80028007
+5 bytes of room, FULL sender of 20, receive ASAP 1: sender 1's size sent: 0x00000000
+5 bytes of room, FULL sender of 20, receive ASAP 1: the free size after the cancel: 0x00001000
+DONE

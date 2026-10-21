@@ -1,0 +1,39 @@
+heavy, delete the condition while W waits for the mutex: W waits on the condition: 0x00000001
+heavy, delete the condition while W waits for the mutex: W's wait type for the mutex: 0x00000200
+heavy, delete the condition while W waits for the mutex: the wait UID is the mutex's: 0x00000001
+heavy, delete the condition while W waits for the mutex: delete the condition: 0x00000000
+heavy, delete the condition while W waits for the mutex: W's result: 0x00000000
+heavy, delete the condition while W waits for the mutex: W owns the mutex after it: 0x00000001
+heavy, delete the condition while W waits for the mutex: W's unlock after it: 0x00000000
+lightweight, delete the condition while W waits for the mutex: W waits on the condition: 0x00000001
+lightweight, delete the condition while W waits for the mutex: W's wait type for the mutex: 0x00400000
+lightweight, delete the condition while W waits for the mutex: the wait UID is the mutex's: 0x00000001
+lightweight, delete the condition while W waits for the mutex: delete the condition: 0x00000000
+lightweight, delete the condition while W waits for the mutex: W's result: 0x00000000
+lightweight, delete the condition while W waits for the mutex: W owns the mutex after it: 0x00000001
+lightweight, delete the condition while W waits for the mutex: W's unlock after it: 0x00000000
+heavy, signal, then delete the condition before W runs: W waits on the condition: 0x00000001
+heavy, signal, then delete the condition before W runs: W is still in its wait after the signal: 0x00000001
+heavy, signal, then delete the condition before W runs: the delete: 0x00000000
+heavy, signal, then delete the condition before W runs: W's wait returned within 5 s: 0x00000001
+heavy, signal, then delete the condition before W runs: W's result: 0x00000000
+heavy, signal, then delete the condition before W runs: W owns the mutex after it: 0x00000000
+heavy, signal, then delete the condition before W runs: W's unlock after it: 0x80028146
+lightweight, signal, then delete the condition before W runs: W waits on the condition: 0x00000001
+lightweight, signal, then delete the condition before W runs: W is still in its wait after the signal: 0x00000001
+lightweight, signal, then delete the condition before W runs: the delete: 0x00000000
+lightweight, signal, then delete the condition before W runs: W's wait returned within 5 s: 0x00000001
+lightweight, signal, then delete the condition before W runs: W's result: 0x00000000
+lightweight, signal, then delete the condition before W runs: W owns the mutex after it: 0x00000000
+lightweight, signal, then delete the condition before W runs: W's unlock after it: 0x80028186
+heavy, lock, signal, then delete the mutex before W runs: W waits on the condition: 0x00000001
+heavy, lock, signal, then delete the mutex before W runs: W is still in its wait after the signal: 0x00000001
+heavy, lock, signal, then delete the mutex before W runs: the delete: 0x00000000
+heavy, lock, signal, then delete the mutex before W runs: W's wait returned within 5 s: 0x00000001
+heavy, lock, signal, then delete the mutex before W runs: W's result: 0x80028141
+heavy, lock, signal, then delete the mutex before W runs: W's unlock after it: 0x80028141
+lightweight, lock, signal, then delete the mutex before W runs: W waits on the condition: 0x00000001
+lightweight, lock, signal, then delete the mutex before W runs: W is still in its wait after the signal: 0x00000001
+lightweight, lock, signal, then delete the mutex before W runs: the delete: 0x00000000
+lightweight, lock, signal, then delete the mutex before W runs: W's wait returned within 5 s: 0x00000000
+DONE

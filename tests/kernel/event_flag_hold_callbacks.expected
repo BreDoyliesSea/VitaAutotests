@@ -1,0 +1,15 @@
+hold across a callback: the main thread's poll while A's callback runs: 0x800280E2
+hold across a callback: A's own poll inside its callback: 0x00000000
+hold across a callback: the main thread's poll while A waits again: 0x800280E2
+hold across a callback: A's wait: 0x00000000
+hold across a callback: the poll after A's wait: 0x00000000
+hold across a callback: the poll after A ended: 0x00000000
+deadline passes during a callback: A's wait: 0x80028005
+deadline passes during a callback: the poll after A's wait returned: 0x800280E2
+deadline passes during a callback: the poll after A ended: 0x00000000
+nested waits in a callback: the nested wait with a timeout of 0: 0x80028005
+nested waits in a callback: the nested wait with a timeout of 300 ms: 0x80028005
+nested waits in a callback: A's wait: 0x00000000
+nested waits in a callback: the poll after A's wait: 0x800280E2
+nested waits in a callback: the poll after A ended: 0x00000000
+DONE
