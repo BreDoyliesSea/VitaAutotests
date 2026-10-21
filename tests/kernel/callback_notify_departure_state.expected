@@ -1,0 +1,192 @@
+semaphore: T waits before the notify: 0x00000001
+semaphore: the waiting threads before the notify: 0x00000001
+semaphore: the notify: 0x00000000
+semaphore: the waiting threads after the notify: 0x00000000
+semaphore: T's status after the notify: 0x00000002
+semaphore: T's wait type after the notify: 0x00000000
+semaphore: T's wait UID is the object after the notify: 0x00000000
+semaphore: runs of the callback once T waits again: 0x00000001
+semaphore: the waiting threads after T waits again: 0x00000001
+semaphore: T's status after T waits again: 0x00000008
+semaphore: T's wait type after T waits again: 0x80000020
+semaphore: T's wait UID is the object after T waits again: 0x00000001
+semaphore: the call that ends T's wait: 0x00000000
+semaphore: T's wait result: 0x00000000
+event flag with multiple waiters: T waits before the notify: 0x00000001
+event flag with multiple waiters: the waiting threads before the notify: 0x00000001
+event flag with multiple waiters: the notify: 0x00000000
+event flag with multiple waiters: the waiting threads after the notify: 0x00000000
+event flag with multiple waiters: T's status after the notify: 0x00000002
+event flag with multiple waiters: T's wait type after the notify: 0x00000000
+event flag with multiple waiters: T's wait UID is the object after the notify: 0x00000000
+event flag with multiple waiters: runs of the callback once T waits again: 0x00000001
+event flag with multiple waiters: the waiting threads after T waits again: 0x00000001
+event flag with multiple waiters: T's status after T waits again: 0x00000008
+event flag with multiple waiters: T's wait type after T waits again: 0x80000010
+event flag with multiple waiters: T's wait UID is the object after T waits again: 0x00000001
+event flag with multiple waiters: the call that ends T's wait: 0x00000000
+event flag with multiple waiters: T's wait result: 0x00000000
+event flag with one waiter: T waits before the notify: 0x00000001
+event flag with one waiter: the waiting threads before the notify: 0x00000001
+event flag with one waiter: the notify: 0x00000000
+event flag with one waiter: the waiting threads after the notify: 0x00000000
+event flag with one waiter: T's status after the notify: 0x00000002
+event flag with one waiter: T's wait type after the notify: 0x00000000
+event flag with one waiter: T's wait UID is the object after the notify: 0x00000000
+event flag with one waiter: runs of the callback once T waits again: 0x00000001
+event flag with one waiter: the waiting threads after T waits again: 0x00000001
+event flag with one waiter: T's status after T waits again: 0x00000008
+event flag with one waiter: T's wait type after T waits again: 0x80000010
+event flag with one waiter: T's wait UID is the object after T waits again: 0x00000001
+event flag with one waiter: the call that ends T's wait: 0x00000000
+event flag with one waiter: T's wait result: 0x00000000
+mutex: T waits before the notify: 0x00000001
+mutex: the waiting threads before the notify: 0x00000001
+mutex: the notify: 0x00000000
+mutex: the waiting threads after the notify: 0x00000000
+mutex: T's status after the notify: 0x00000002
+mutex: T's wait type after the notify: 0x00000000
+mutex: T's wait UID is the object after the notify: 0x00000000
+mutex: runs of the callback once T waits again: 0x00000001
+mutex: the waiting threads after T waits again: 0x00000001
+mutex: T's status after T waits again: 0x00000008
+mutex: T's wait type after T waits again: 0x80000040
+mutex: T's wait UID is the object after T waits again: 0x00000001
+mutex: the call that ends T's wait: 0x00000000
+mutex: T's wait result: 0x00000000
+lightweight mutex: T waits before the notify: 0x00000001
+lightweight mutex: the waiting threads before the notify: 0x00000001
+lightweight mutex: the notify: 0x00000000
+lightweight mutex: the waiting threads after the notify: 0x00000000
+lightweight mutex: T's status after the notify: 0x00000002
+lightweight mutex: T's wait type after the notify: 0x00000000
+lightweight mutex: T's wait UID is the object after the notify: 0x00000000
+lightweight mutex: runs of the callback once T waits again: 0x00000001
+lightweight mutex: the waiting threads after T waits again: 0x00000001
+lightweight mutex: T's status after T waits again: 0x00000008
+lightweight mutex: T's wait type after T waits again: 0x80100000
+lightweight mutex: T's wait UID is the object after T waits again: 0x00000001
+lightweight mutex: the call that ends T's wait: 0x00000000
+lightweight mutex: T's wait result: 0x00000000
+rwlock write waiter: T waits before the notify: 0x00000001
+rwlock write waiter: the waiting readers before the notify: 0x00000000
+rwlock write waiter: the waiting writers before the notify: 0x00000001
+rwlock write waiter: the notify: 0x00000000
+rwlock write waiter: the waiting readers after the notify: 0x00000000
+rwlock write waiter: the waiting writers after the notify: 0x00000000
+rwlock write waiter: T's status after the notify: 0x00000002
+rwlock write waiter: T's wait type after the notify: 0x00000000
+rwlock write waiter: T's wait UID is the object after the notify: 0x00000000
+rwlock write waiter: runs of the callback once T waits again: 0x00000001
+rwlock write waiter: the waiting readers after T waits again: 0x00000000
+rwlock write waiter: the waiting writers after T waits again: 0x00000001
+rwlock write waiter: T's status after T waits again: 0x00000008
+rwlock write waiter: T's wait type after T waits again: 0x80000080
+rwlock write waiter: T's wait UID is the object after T waits again: 0x00000001
+rwlock write waiter: the call that ends T's wait: 0x00000000
+rwlock write waiter: T's wait result: 0x00000000
+rwlock read waiter: T waits before the notify: 0x00000001
+rwlock read waiter: the waiting readers before the notify: 0x00000001
+rwlock read waiter: the waiting writers before the notify: 0x00000000
+rwlock read waiter: the notify: 0x00000000
+rwlock read waiter: the waiting readers after the notify: 0x00000000
+rwlock read waiter: the waiting writers after the notify: 0x00000000
+rwlock read waiter: T's status after the notify: 0x00000002
+rwlock read waiter: T's wait type after the notify: 0x00000000
+rwlock read waiter: T's wait UID is the object after the notify: 0x00000000
+rwlock read waiter: runs of the callback once T waits again: 0x00000001
+rwlock read waiter: the waiting readers after T waits again: 0x00000001
+rwlock read waiter: the waiting writers after T waits again: 0x00000000
+rwlock read waiter: T's status after T waits again: 0x00000008
+rwlock read waiter: T's wait type after T waits again: 0x80000080
+rwlock read waiter: T's wait UID is the object after T waits again: 0x00000001
+rwlock read waiter: the call that ends T's wait: 0x00000000
+rwlock read waiter: T's wait result: 0x00000000
+simple event: T waits before the notify: 0x00000001
+simple event: the waiting threads before the notify: 0x00000001
+simple event: the notify: 0x00000000
+simple event: the waiting threads after the notify: 0x00000000
+simple event: T's status after the notify: 0x00000002
+simple event: T's wait type after the notify: 0x00000000
+simple event: T's wait UID is the object after the notify: 0x00000000
+simple event: runs of the callback once T waits again: 0x00000001
+simple event: the waiting threads after T waits again: 0x00000001
+simple event: T's status after T waits again: 0x00000008
+simple event: T's wait type after T waits again: 0x80010000
+simple event: T's wait UID is the object after T waits again: 0x00000001
+simple event: the call that ends T's wait: 0x00000000
+simple event: T's wait result: 0x00000000
+message pipe receive: T waits before the notify: 0x00000001
+message pipe receive: the waiting senders before the notify: 0x00000000
+message pipe receive: the waiting receivers before the notify: 0x00000001
+message pipe receive: the notify: 0x00000000
+message pipe receive: the waiting senders after the notify: 0x00000000
+message pipe receive: the waiting receivers after the notify: 0x00000000
+message pipe receive: T's status after the notify: 0x00000002
+message pipe receive: T's wait type after the notify: 0x00000000
+message pipe receive: T's wait UID is the object after the notify: 0x00000000
+message pipe receive: runs of the callback once T waits again: 0x00000001
+message pipe receive: the waiting senders after T waits again: 0x00000000
+message pipe receive: the waiting receivers after T waits again: 0x00000001
+message pipe receive: T's status after T waits again: 0x00000008
+message pipe receive: T's wait type after T waits again: 0x80040000
+message pipe receive: T's wait UID is the object after T waits again: 0x00000001
+message pipe receive: the call that ends T's wait: 0x00000000
+message pipe receive: T's wait result: 0x00000000
+message pipe send: T waits before the notify: 0x00000001
+message pipe send: the waiting senders before the notify: 0x00000001
+message pipe send: the waiting receivers before the notify: 0x00000000
+message pipe send: the notify: 0x00000000
+message pipe send: the waiting senders after the notify: 0x00000000
+message pipe send: the waiting receivers after the notify: 0x00000000
+message pipe send: T's status after the notify: 0x00000002
+message pipe send: T's wait type after the notify: 0x00000000
+message pipe send: T's wait UID is the object after the notify: 0x00000000
+message pipe send: runs of the callback once T waits again: 0x00000001
+message pipe send: the waiting senders after T waits again: 0x00000001
+message pipe send: the waiting receivers after T waits again: 0x00000000
+message pipe send: T's status after T waits again: 0x00000008
+message pipe send: T's wait type after T waits again: 0x80040000
+message pipe send: T's wait UID is the object after T waits again: 0x00000001
+message pipe send: the call that ends T's wait: 0x00000000
+message pipe send: T's wait result: 0x00000000
+condition: T waits before the notify: 0x00000001
+condition: the waiting threads before the notify: 0x00000001
+condition: the notify: 0x00000000
+condition: the waiting threads after the notify: 0x00000000
+condition: T's status after the notify: 0x00000002
+condition: T's wait type after the notify: 0x00000000
+condition: T's wait UID is the object after the notify: 0x00000000
+condition: runs of the callback once T waits again: 0x00000001
+condition: the waiting threads after T waits again: 0x00000001
+condition: T's status after T waits again: 0x00000008
+condition: T's wait type after T waits again: 0x80000100
+condition: T's wait UID is the object after T waits again: 0x00000001
+condition: the call that ends T's wait: 0x00000000
+condition: T's wait result: 0x00000000
+lightweight condition: T waits before the notify: 0x00000001
+lightweight condition: the waiting threads before the notify: 0x00000001
+lightweight condition: the notify: 0x00000000
+lightweight condition: the waiting threads after the notify: 0x00000000
+lightweight condition: T's status after the notify: 0x00000002
+lightweight condition: T's wait type after the notify: 0x00000000
+lightweight condition: T's wait UID is the object after the notify: 0x00000000
+lightweight condition: runs of the callback once T waits again: 0x00000001
+lightweight condition: the waiting threads after T waits again: 0x00000001
+lightweight condition: T's status after T waits again: 0x00000008
+lightweight condition: T's wait type after T waits again: 0x80200000
+lightweight condition: T's wait UID is the object after T waits again: 0x00000001
+lightweight condition: the call that ends T's wait: 0x00000000
+lightweight condition: T's wait result: 0x00000000
+semaphore without callbacks: T waits before the notify: 0x00000001
+semaphore without callbacks: the waiting threads before the notify: 0x00000001
+semaphore without callbacks: the notify: 0x00000000
+semaphore without callbacks: the waiting threads after the notify: 0x00000001
+semaphore without callbacks: T's status after the notify: 0x00000008
+semaphore without callbacks: T's wait type after the notify: 0x00000020
+semaphore without callbacks: T's wait UID is the object after the notify: 0x00000001
+semaphore without callbacks: the call that ends T's wait: 0x00000000
+semaphore without callbacks: T's wait result: 0x00000000
+semaphore without callbacks: runs of the callback before T's check: 0x00000000
+semaphore without callbacks: runs of the callback after T's check: 0x00000001
+DONE

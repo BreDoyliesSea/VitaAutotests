@@ -1,0 +1,88 @@
+semaphore: T then W wait before the notify: 0x00000001
+semaphore: the notify: 0x00000000
+semaphore: the release: 0x00000000
+semaphore: the waiting threads after the release: 0x00000000
+semaphore: the count after the release: 0x00000000
+semaphore: T's status after the release: 0x00000002
+semaphore: W's status after the release: 0x00000002
+semaphore: who got the unit: 0x00000001
+semaphore: T waits again after its callback: 0x00000001
+semaphore: the second release: 0x00000000
+semaphore: runs of T's callback when its wait returned: 0x00000001
+semaphore: the check of T's callbacks after its wait: 0x00000000
+semaphore: runs of T's callback after the check: 0x00000001
+semaphore: T's wait: 0x00000000
+semaphore: W's wait: 0x00000000
+mutex: T then W wait before the notify: 0x00000001
+mutex: the notify: 0x00000000
+mutex: the release: 0x00000000
+mutex: the waiting threads after the release: 0x00000000
+mutex: the lock count after the release: 0x00000001
+mutex: the owner after the release: 0x00000001
+mutex: T's status after the release: 0x00000002
+mutex: W's status after the release: 0x00000002
+mutex: who got the unit: 0x00000001
+mutex: runs of T's callback when its wait returned: 0x00000001
+mutex: the check of T's callbacks after its wait: 0x00000000
+mutex: runs of T's callback after the check: 0x00000001
+mutex: T's wait: 0x00000000
+mutex: W's wait: 0x00000000
+lightweight mutex: T then W wait before the notify: 0x00000001
+lightweight mutex: the notify: 0x00000000
+lightweight mutex: the release: 0x00000000
+lightweight mutex: the waiting threads after the release: 0x00000000
+lightweight mutex: the lock count after the release: 0x00000001
+lightweight mutex: the owner after the release: 0x00000001
+lightweight mutex: T's status after the release: 0x00000002
+lightweight mutex: W's status after the release: 0x00000002
+lightweight mutex: who got the unit: 0x00000001
+lightweight mutex: runs of T's callback when its wait returned: 0x00000001
+lightweight mutex: the check of T's callbacks after its wait: 0x00000000
+lightweight mutex: runs of T's callback after the check: 0x00000001
+lightweight mutex: T's wait: 0x00000000
+lightweight mutex: W's wait: 0x00000000
+event flag: T then W wait before the notify: 0x00000001
+event flag: the notify: 0x00000000
+event flag: the release: 0x00000000
+event flag: the waiting threads after the release: 0x00000000
+event flag: the bits after the release: 0x00000000
+event flag: T's status after the release: 0x00000002
+event flag: W's status after the release: 0x00000002
+event flag: who got the unit: 0x00000001
+event flag: T waits again after its callback: 0x00000001
+event flag: the second release: 0x00000000
+event flag: runs of T's callback when its wait returned: 0x00000001
+event flag: the check of T's callbacks after its wait: 0x00000000
+event flag: runs of T's callback after the check: 0x00000001
+event flag: T's wait: 0x00000000
+event flag: W's wait: 0x00000000
+rwlock: T then W wait before the notify: 0x00000001
+rwlock: the notify: 0x00000000
+rwlock: the release: 0x00000000
+rwlock: the waiting threads after the release: 0x00000000
+rwlock: the lock count after the release: 0x00000001
+rwlock: the owner after the release: 0x00000001
+rwlock: T's status after the release: 0x00000002
+rwlock: W's status after the release: 0x00000002
+rwlock: who got the unit: 0x00000001
+rwlock: runs of T's callback when its wait returned: 0x00000001
+rwlock: the check of T's callbacks after its wait: 0x00000000
+rwlock: runs of T's callback after the check: 0x00000001
+rwlock: T's wait: 0x00000000
+rwlock: W's wait: 0x00000000
+semaphore, T waits without callbacks: T then W wait before the notify: 0x00000001
+semaphore, T waits without callbacks: the notify: 0x00000000
+semaphore, T waits without callbacks: the release: 0x00000000
+semaphore, T waits without callbacks: the waiting threads after the release: 0x00000001
+semaphore, T waits without callbacks: the count after the release: 0x00000000
+semaphore, T waits without callbacks: T's status after the release: 0x00000002
+semaphore, T waits without callbacks: W's status after the release: 0x00000008
+semaphore, T waits without callbacks: who got the unit: 0x00000002
+semaphore, T waits without callbacks: T waits again after its callback: 0x00000000
+semaphore, T waits without callbacks: the second release: 0x00000000
+semaphore, T waits without callbacks: runs of T's callback when its wait returned: 0x00000000
+semaphore, T waits without callbacks: the check of T's callbacks after its wait: 0x00000001
+semaphore, T waits without callbacks: runs of T's callback after the check: 0x00000001
+semaphore, T waits without callbacks: T's wait: 0x00000000
+semaphore, T waits without callbacks: W's wait: 0x00000000
+DONE

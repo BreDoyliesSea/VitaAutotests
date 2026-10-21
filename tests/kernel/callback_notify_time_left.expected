@@ -1,0 +1,16 @@
+semaphore, notify first: T waits when the main thread notifies: 0x00000001
+semaphore, notify first: T's wait result: 0x00000000
+semaphore, notify first: runs of T's callback: 0x00000001
+semaphore, notify first: the time left is within 200 ms of the one at the notify: 0x00000001
+semaphore, notify first: the time left is at least 300 ms less than the one at the notify: 0x00000000
+semaphore, busy first: T waits when the main thread notifies: 0x00000001
+semaphore, busy first: T's wait result: 0x00000000
+semaphore, busy first: runs of T's callback: 0x00000001
+semaphore, busy first: the time left is within 200 ms of the one at the notify: 0x00000001
+semaphore, busy first: the time left is at least 300 ms less than the one at the notify: 0x00000000
+event flag, notify first: T waits when the main thread notifies: 0x00000001
+event flag, notify first: T's wait result: 0x00000000
+event flag, notify first: runs of T's callback: 0x00000001
+event flag, notify first: the time left is within 200 ms of the one at the notify: 0x00000001
+event flag, notify first: the time left is at least 300 ms less than the one at the notify: 0x00000000
+DONE
