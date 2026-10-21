@@ -1,0 +1,12 @@
+a wait that takes the bits at once: A's wait: 0x00000000
+a wait that takes the bits at once: the poll: 0x00000000
+a wait that takes the bits at once: the poll after A ended: 0x00000000
+a wait with a timeout of 0 that takes the bits at once: A's wait: 0x00000000
+a wait with a timeout of 0 that takes the bits at once: the poll: 0x00000000
+a wait with a timeout of 0 that takes the bits at once: the poll after A ended: 0x00000000
+a timeout of 0 that misses, then a wait that takes the bits at once: A's first wait: 0x80028005
+a timeout of 0 that misses, then a wait that takes the bits at once: the poll after it: 0x800280E2
+a timeout of 0 that misses, then a wait that takes the bits at once: A's second wait: 0x00000000
+a timeout of 0 that misses, then a wait that takes the bits at once: the poll after it: 0x800280E2
+a timeout of 0 that misses, then a wait that takes the bits at once: the poll after A ended: 0x00000000
+DONE

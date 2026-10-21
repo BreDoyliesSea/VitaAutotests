@@ -1,0 +1,265 @@
+semaphore, T above the main thread: T waits with callbacks before the notify: 0x00000001
+semaphore, T above the main thread: step 0: 0x00000000
+semaphore, T above the main thread: step 1: 0x00000001
+semaphore, T above the main thread: step 2: 0x00000002
+semaphore, T above the main thread: the notify: 0x00000000
+semaphore, T above the main thread: T's status right after the notify: 0x00000008
+semaphore, T above the main thread: T's wait type right after the notify: 0x80000020
+semaphore, T above the main thread: T waits with callbacks right after the notify: 0x00000001
+semaphore, T above the main thread: runs of the callback: 0x00000001
+semaphore, T above the main thread: T waits with callbacks after the callback ran: 0x00000001
+semaphore, T above the main thread: T's wait: 0x00000000
+semaphore, T below the main thread: T waits with callbacks before the notify: 0x00000001
+semaphore, T below the main thread: step 0: 0x00000000
+semaphore, T below the main thread: step 1: 0x00000002
+semaphore, T below the main thread: step 2: 0x00000001
+semaphore, T below the main thread: the notify: 0x00000000
+semaphore, T below the main thread: T's status right after the notify: 0x00000002
+semaphore, T below the main thread: T's wait type right after the notify: 0x00000000
+semaphore, T below the main thread: T waits with callbacks right after the notify: 0x00000000
+semaphore, T below the main thread: runs of the callback: 0x00000001
+semaphore, T below the main thread: T waits with callbacks after the callback ran: 0x00000001
+semaphore, T below the main thread: T's wait: 0x00000000
+event flag, T above the main thread: T waits with callbacks before the notify: 0x00000001
+event flag, T above the main thread: step 0: 0x00000000
+event flag, T above the main thread: step 1: 0x00000001
+event flag, T above the main thread: step 2: 0x00000002
+event flag, T above the main thread: the notify: 0x00000000
+event flag, T above the main thread: T's status right after the notify: 0x00000008
+event flag, T above the main thread: T's wait type right after the notify: 0x80000010
+event flag, T above the main thread: T waits with callbacks right after the notify: 0x00000001
+event flag, T above the main thread: runs of the callback: 0x00000001
+event flag, T above the main thread: T waits with callbacks after the callback ran: 0x00000001
+event flag, T above the main thread: T's wait: 0x00000000
+event flag, T below the main thread: T waits with callbacks before the notify: 0x00000001
+event flag, T below the main thread: step 0: 0x00000000
+event flag, T below the main thread: step 1: 0x00000002
+event flag, T below the main thread: step 2: 0x00000001
+event flag, T below the main thread: the notify: 0x00000000
+event flag, T below the main thread: T's status right after the notify: 0x00000002
+event flag, T below the main thread: T's wait type right after the notify: 0x00000000
+event flag, T below the main thread: T waits with callbacks right after the notify: 0x00000000
+event flag, T below the main thread: runs of the callback: 0x00000001
+event flag, T below the main thread: T waits with callbacks after the callback ran: 0x00000001
+event flag, T below the main thread: T's wait: 0x00000000
+mutex, T above the main thread: T waits with callbacks before the notify: 0x00000001
+mutex, T above the main thread: step 0: 0x00000000
+mutex, T above the main thread: step 1: 0x00000001
+mutex, T above the main thread: step 2: 0x00000002
+mutex, T above the main thread: the notify: 0x00000000
+mutex, T above the main thread: T's status right after the notify: 0x00000008
+mutex, T above the main thread: T's wait type right after the notify: 0x80000040
+mutex, T above the main thread: T waits with callbacks right after the notify: 0x00000001
+mutex, T above the main thread: runs of the callback: 0x00000001
+mutex, T above the main thread: T waits with callbacks after the callback ran: 0x00000001
+mutex, T above the main thread: T's wait: 0x00000000
+mutex, T below the main thread: T waits with callbacks before the notify: 0x00000001
+mutex, T below the main thread: step 0: 0x00000000
+mutex, T below the main thread: step 1: 0x00000002
+mutex, T below the main thread: step 2: 0x00000001
+mutex, T below the main thread: the notify: 0x00000000
+mutex, T below the main thread: T's status right after the notify: 0x00000002
+mutex, T below the main thread: T's wait type right after the notify: 0x00000000
+mutex, T below the main thread: T waits with callbacks right after the notify: 0x00000000
+mutex, T below the main thread: runs of the callback: 0x00000001
+mutex, T below the main thread: T waits with callbacks after the callback ran: 0x00000001
+mutex, T below the main thread: T's wait: 0x00000000
+lightweight mutex, T above the main thread: T waits with callbacks before the notify: 0x00000001
+lightweight mutex, T above the main thread: step 0: 0x00000000
+lightweight mutex, T above the main thread: step 1: 0x00000001
+lightweight mutex, T above the main thread: step 2: 0x00000002
+lightweight mutex, T above the main thread: the notify: 0x00000000
+lightweight mutex, T above the main thread: T's status right after the notify: 0x00000008
+lightweight mutex, T above the main thread: T's wait type right after the notify: 0x80100000
+lightweight mutex, T above the main thread: T waits with callbacks right after the notify: 0x00000001
+lightweight mutex, T above the main thread: runs of the callback: 0x00000001
+lightweight mutex, T above the main thread: T waits with callbacks after the callback ran: 0x00000001
+lightweight mutex, T above the main thread: T's wait: 0x00000000
+lightweight mutex, T below the main thread: T waits with callbacks before the notify: 0x00000001
+lightweight mutex, T below the main thread: step 0: 0x00000000
+lightweight mutex, T below the main thread: step 1: 0x00000002
+lightweight mutex, T below the main thread: step 2: 0x00000001
+lightweight mutex, T below the main thread: the notify: 0x00000000
+lightweight mutex, T below the main thread: T's status right after the notify: 0x00000002
+lightweight mutex, T below the main thread: T's wait type right after the notify: 0x00000000
+lightweight mutex, T below the main thread: T waits with callbacks right after the notify: 0x00000000
+lightweight mutex, T below the main thread: runs of the callback: 0x00000001
+lightweight mutex, T below the main thread: T waits with callbacks after the callback ran: 0x00000001
+lightweight mutex, T below the main thread: T's wait: 0x00000000
+rwlock write lock, T above the main thread: T waits with callbacks before the notify: 0x00000001
+rwlock write lock, T above the main thread: step 0: 0x00000000
+rwlock write lock, T above the main thread: step 1: 0x00000001
+rwlock write lock, T above the main thread: step 2: 0x00000002
+rwlock write lock, T above the main thread: the notify: 0x00000000
+rwlock write lock, T above the main thread: T's status right after the notify: 0x00000008
+rwlock write lock, T above the main thread: T's wait type right after the notify: 0x80000080
+rwlock write lock, T above the main thread: T waits with callbacks right after the notify: 0x00000001
+rwlock write lock, T above the main thread: runs of the callback: 0x00000001
+rwlock write lock, T above the main thread: T waits with callbacks after the callback ran: 0x00000001
+rwlock write lock, T above the main thread: T's wait: 0x00000000
+rwlock write lock, T below the main thread: T waits with callbacks before the notify: 0x00000001
+rwlock write lock, T below the main thread: step 0: 0x00000000
+rwlock write lock, T below the main thread: step 1: 0x00000002
+rwlock write lock, T below the main thread: step 2: 0x00000001
+rwlock write lock, T below the main thread: the notify: 0x00000000
+rwlock write lock, T below the main thread: T's status right after the notify: 0x00000002
+rwlock write lock, T below the main thread: T's wait type right after the notify: 0x00000000
+rwlock write lock, T below the main thread: T waits with callbacks right after the notify: 0x00000000
+rwlock write lock, T below the main thread: runs of the callback: 0x00000001
+rwlock write lock, T below the main thread: T waits with callbacks after the callback ran: 0x00000001
+rwlock write lock, T below the main thread: T's wait: 0x00000000
+simple event, T above the main thread: T waits with callbacks before the notify: 0x00000001
+simple event, T above the main thread: step 0: 0x00000000
+simple event, T above the main thread: step 1: 0x00000001
+simple event, T above the main thread: step 2: 0x00000002
+simple event, T above the main thread: the notify: 0x00000000
+simple event, T above the main thread: T's status right after the notify: 0x00000008
+simple event, T above the main thread: T's wait type right after the notify: 0x80010000
+simple event, T above the main thread: T waits with callbacks right after the notify: 0x00000001
+simple event, T above the main thread: runs of the callback: 0x00000001
+simple event, T above the main thread: T waits with callbacks after the callback ran: 0x00000001
+simple event, T above the main thread: T's wait: 0x00000000
+simple event, T below the main thread: T waits with callbacks before the notify: 0x00000001
+simple event, T below the main thread: step 0: 0x00000000
+simple event, T below the main thread: step 1: 0x00000002
+simple event, T below the main thread: step 2: 0x00000001
+simple event, T below the main thread: the notify: 0x00000000
+simple event, T below the main thread: T's status right after the notify: 0x00000002
+simple event, T below the main thread: T's wait type right after the notify: 0x00000000
+simple event, T below the main thread: T waits with callbacks right after the notify: 0x00000000
+simple event, T below the main thread: runs of the callback: 0x00000001
+simple event, T below the main thread: T waits with callbacks after the callback ran: 0x00000001
+simple event, T below the main thread: T's wait: 0x00000000
+message pipe receive, T above the main thread: T waits with callbacks before the notify: 0x00000001
+message pipe receive, T above the main thread: step 0: 0x00000000
+message pipe receive, T above the main thread: step 1: 0x00000001
+message pipe receive, T above the main thread: step 2: 0x00000002
+message pipe receive, T above the main thread: the notify: 0x00000000
+message pipe receive, T above the main thread: T's status right after the notify: 0x00000008
+message pipe receive, T above the main thread: T's wait type right after the notify: 0x80040000
+message pipe receive, T above the main thread: T waits with callbacks right after the notify: 0x00000001
+message pipe receive, T above the main thread: runs of the callback: 0x00000001
+message pipe receive, T above the main thread: T waits with callbacks after the callback ran: 0x00000001
+message pipe receive, T above the main thread: T's wait: 0x00000000
+message pipe receive, T below the main thread: T waits with callbacks before the notify: 0x00000001
+message pipe receive, T below the main thread: step 0: 0x00000000
+message pipe receive, T below the main thread: step 1: 0x00000002
+message pipe receive, T below the main thread: step 2: 0x00000001
+message pipe receive, T below the main thread: the notify: 0x00000000
+message pipe receive, T below the main thread: T's status right after the notify: 0x00000002
+message pipe receive, T below the main thread: T's wait type right after the notify: 0x00000000
+message pipe receive, T below the main thread: T waits with callbacks right after the notify: 0x00000000
+message pipe receive, T below the main thread: runs of the callback: 0x00000001
+message pipe receive, T below the main thread: T waits with callbacks after the callback ran: 0x00000001
+message pipe receive, T below the main thread: T's wait: 0x00000000
+condition, T above the main thread: T waits with callbacks before the notify: 0x00000001
+condition, T above the main thread: step 0: 0x00000000
+condition, T above the main thread: step 1: 0x00000001
+condition, T above the main thread: step 2: 0x00000002
+condition, T above the main thread: the notify: 0x00000000
+condition, T above the main thread: T's status right after the notify: 0x00000008
+condition, T above the main thread: T's wait type right after the notify: 0x80000100
+condition, T above the main thread: T waits with callbacks right after the notify: 0x00000001
+condition, T above the main thread: runs of the callback: 0x00000001
+condition, T above the main thread: T waits with callbacks after the callback ran: 0x00000001
+condition, T above the main thread: T's wait: 0x00000000
+condition, T below the main thread: T waits with callbacks before the notify: 0x00000001
+condition, T below the main thread: step 0: 0x00000000
+condition, T below the main thread: step 1: 0x00000002
+condition, T below the main thread: step 2: 0x00000001
+condition, T below the main thread: the notify: 0x00000000
+condition, T below the main thread: T's status right after the notify: 0x00000002
+condition, T below the main thread: T's wait type right after the notify: 0x00000000
+condition, T below the main thread: T waits with callbacks right after the notify: 0x00000000
+condition, T below the main thread: runs of the callback: 0x00000001
+condition, T below the main thread: T waits with callbacks after the callback ran: 0x00000001
+condition, T below the main thread: T's wait: 0x00000000
+lightweight condition, T above the main thread: T waits with callbacks before the notify: 0x00000001
+lightweight condition, T above the main thread: step 0: 0x00000000
+lightweight condition, T above the main thread: step 1: 0x00000001
+lightweight condition, T above the main thread: step 2: 0x00000002
+lightweight condition, T above the main thread: the notify: 0x00000000
+lightweight condition, T above the main thread: T's status right after the notify: 0x00000008
+lightweight condition, T above the main thread: T's wait type right after the notify: 0x80200000
+lightweight condition, T above the main thread: T waits with callbacks right after the notify: 0x00000001
+lightweight condition, T above the main thread: runs of the callback: 0x00000001
+lightweight condition, T above the main thread: T waits with callbacks after the callback ran: 0x00000001
+lightweight condition, T above the main thread: T's wait: 0x00000000
+lightweight condition, T below the main thread: T waits with callbacks before the notify: 0x00000001
+lightweight condition, T below the main thread: step 0: 0x00000000
+lightweight condition, T below the main thread: step 1: 0x00000002
+lightweight condition, T below the main thread: step 2: 0x00000001
+lightweight condition, T below the main thread: the notify: 0x00000000
+lightweight condition, T below the main thread: T's status right after the notify: 0x00000002
+lightweight condition, T below the main thread: T's wait type right after the notify: 0x00000000
+lightweight condition, T below the main thread: T waits with callbacks right after the notify: 0x00000000
+lightweight condition, T below the main thread: runs of the callback: 0x00000001
+lightweight condition, T below the main thread: T waits with callbacks after the callback ran: 0x00000001
+lightweight condition, T below the main thread: T's wait: 0x00000000
+thread end, T above the main thread: T waits with callbacks before the notify: 0x00000001
+thread end, T above the main thread: step 0: 0x00000000
+thread end, T above the main thread: step 1: 0x00000001
+thread end, T above the main thread: step 2: 0x00000002
+thread end, T above the main thread: the notify: 0x00000000
+thread end, T above the main thread: T's status right after the notify: 0x00000008
+thread end, T above the main thread: T's wait type right after the notify: 0x80000002
+thread end, T above the main thread: T waits with callbacks right after the notify: 0x00000001
+thread end, T above the main thread: runs of the callback: 0x00000001
+thread end, T above the main thread: T waits with callbacks after the callback ran: 0x00000001
+thread end, T above the main thread: T's wait: 0x00000000
+thread end, T below the main thread: T waits with callbacks before the notify: 0x00000001
+thread end, T below the main thread: step 0: 0x00000000
+thread end, T below the main thread: step 1: 0x00000002
+thread end, T below the main thread: step 2: 0x00000001
+thread end, T below the main thread: the notify: 0x00000000
+thread end, T below the main thread: T's status right after the notify: 0x00000002
+thread end, T below the main thread: T's wait type right after the notify: 0x00000000
+thread end, T below the main thread: T waits with callbacks right after the notify: 0x00000000
+thread end, T below the main thread: runs of the callback: 0x00000001
+thread end, T below the main thread: T waits with callbacks after the callback ran: 0x00000001
+thread end, T below the main thread: T's wait: 0x00000000
+thread signal, T above the main thread: T waits with callbacks before the notify: 0x00000001
+thread signal, T above the main thread: step 0: 0x00000000
+thread signal, T above the main thread: step 1: 0x00000001
+thread signal, T above the main thread: step 2: 0x00000002
+thread signal, T above the main thread: the notify: 0x00000000
+thread signal, T above the main thread: T's status right after the notify: 0x00000008
+thread signal, T above the main thread: T's wait type right after the notify: 0x80000004
+thread signal, T above the main thread: T waits with callbacks right after the notify: 0x00000001
+thread signal, T above the main thread: runs of the callback: 0x00000001
+thread signal, T above the main thread: T waits with callbacks after the callback ran: 0x00000001
+thread signal, T above the main thread: T's wait: 0x00000000
+thread signal, T below the main thread: T waits with callbacks before the notify: 0x00000001
+thread signal, T below the main thread: step 0: 0x00000000
+thread signal, T below the main thread: step 1: 0x00000002
+thread signal, T below the main thread: step 2: 0x00000001
+thread signal, T below the main thread: the notify: 0x00000000
+thread signal, T below the main thread: T's status right after the notify: 0x00000002
+thread signal, T below the main thread: T's wait type right after the notify: 0x00000000
+thread signal, T below the main thread: T waits with callbacks right after the notify: 0x00000000
+thread signal, T below the main thread: runs of the callback: 0x00000001
+thread signal, T below the main thread: T waits with callbacks after the callback ran: 0x00000001
+thread signal, T below the main thread: T's wait: 0x00000000
+delay, T above the main thread: T waits with callbacks before the notify: 0x00000001
+delay, T above the main thread: step 0: 0x00000000
+delay, T above the main thread: step 1: 0x00000001
+delay, T above the main thread: step 2: 0x00000002
+delay, T above the main thread: the notify: 0x00000000
+delay, T above the main thread: T's status right after the notify: 0x00000008
+delay, T above the main thread: T's wait type right after the notify: 0x80000001
+delay, T above the main thread: T waits with callbacks right after the notify: 0x00000001
+delay, T above the main thread: runs of the callback: 0x00000001
+delay, T above the main thread: T waits with callbacks after the callback ran: 0x00000001
+delay, T above the main thread: T's wait: 0x00000000
+delay, T below the main thread: T waits with callbacks before the notify: 0x00000001
+delay, T below the main thread: step 0: 0x00000000
+delay, T below the main thread: step 1: 0x00000002
+delay, T below the main thread: step 2: 0x00000001
+delay, T below the main thread: the notify: 0x00000000
+delay, T below the main thread: T's status right after the notify: 0x00000002
+delay, T below the main thread: T's wait type right after the notify: 0x00000000
+delay, T below the main thread: T waits with callbacks right after the notify: 0x00000000
+delay, T below the main thread: runs of the callback: 0x00000001
+delay, T below the main thread: T waits with callbacks after the callback ran: 0x00000001
+delay, T below the main thread: T's wait: 0x00000000
+DONE
