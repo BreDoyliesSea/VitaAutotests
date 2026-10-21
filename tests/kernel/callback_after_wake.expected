@@ -1,0 +1,28 @@
+semaphore wait: T waits when the main thread wakes it: 0x00000001
+semaphore wait: the wake: 0x00000000
+semaphore wait: T's status after the wake: 0x00000002
+semaphore wait: the notify: 0x00000000
+semaphore wait: T's status after the notify: 0x00000002
+semaphore wait: the wait's result: 0x00000000
+semaphore wait: runs of the callback when the wait returned: 0x00000001
+semaphore wait: the check's result: 0x00000000
+semaphore wait: runs of the callback after the check: 0x00000001
+signal wait: T waits when the main thread wakes it: 0x00000001
+signal wait: the wake: 0x00000000
+signal wait: T's status after the wake: 0x00000002
+signal wait: the notify: 0x00000000
+signal wait: T's status after the notify: 0x00000002
+signal wait: the wait's result: 0x00000000
+signal wait: runs of the callback when the wait returned: 0x00000000
+signal wait: the check's result: 0x00000001
+signal wait: runs of the callback after the check: 0x00000001
+thread end wait: T waits when the main thread wakes it: 0x00000001
+thread end wait: the wake: 0x00000000
+thread end wait: T's status after the wake: 0x00000002
+thread end wait: the notify: 0x00000000
+thread end wait: T's status after the notify: 0x00000002
+thread end wait: the wait's result: 0x00000000
+thread end wait: runs of the callback when the wait returned: 0x00000000
+thread end wait: the check's result: 0x00000001
+thread end wait: runs of the callback after the check: 0x00000001
+DONE

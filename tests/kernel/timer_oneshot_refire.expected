@@ -1,0 +1,31 @@
+set event, stop and start: the first wait: 0x00000000
+set event, stop and start: a poll after the clear: 0x80028202
+set event, stop and start: the stop 1: 0x00000001
+set event, stop and start: the start 1: 0x00000000
+set event, stop and start: the wait after it 1: 0x00000000
+set event, stop and start: the stop 2: 0x00000001
+set event, stop and start: the start 2: 0x00000000
+set event, stop and start: the wait after it 2: 0x00000000
+set event, no stop and start: the first wait: 0x00000000
+set event, no stop and start: the wait after the first: 0x80028005
+set event, set time: the first wait: 0x00000000
+set event, set time: the set to 0: 0x00000000
+set event, set time: the wait after it: 0x00000000
+set event, set time: it fired within 500 ms of the set: 0x00000000
+set event, set time: it fired within 1500 ms of the set: 0x00000001
+pulse event, stop and start: the first wait: 0x00000000
+pulse event, stop and start: a poll after the clear: 0x80028202
+pulse event, stop and start: the stop 1: 0x00000001
+pulse event, stop and start: the start 1: 0x00000000
+pulse event, stop and start: the wait after it 1: 0x00000000
+pulse event, stop and start: the stop 2: 0x00000001
+pulse event, stop and start: the start 2: 0x00000000
+pulse event, stop and start: the wait after it 2: 0x00000000
+pulse event, no stop and start: the first wait: 0x00000000
+pulse event, no stop and start: the wait after the first: 0x80028005
+pulse event, set time: the first wait: 0x00000000
+pulse event, set time: the set to 0: 0x00000000
+pulse event, set time: the wait after it: 0x00000000
+pulse event, set time: it fired within 500 ms of the set: 0x00000000
+pulse event, set time: it fired within 1500 ms of the set: 0x00000001
+DONE

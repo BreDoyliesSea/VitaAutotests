@@ -1,0 +1,74 @@
+AND, set a then delete b: set a: 0x00000000
+AND, set a then delete b: a's bits after the set: 0x00000004
+AND, set a then delete b: still waiting after step 1: 0x00000001
+AND, set a then delete b: the wait: 0x00000002
+AND, set a then delete b: result 0 is for event 1, 2 or 3: 0x00000001
+AND, set a then delete b: result 0: 0x00000000
+AND, set a then delete b: result 0 bits: 0x01000000
+AND, set a then delete b: result 0 user data: 0x00000011
+AND, set a then delete b: result 1 is for event 1, 2 or 3: 0x00000002
+AND, set a then delete b: result 1: 0x80028006
+AND, set a then delete b: result 1 bits: 0x00000010
+AND, set a then delete b: result 1 user data: 0x00000000
+AND, set a then delete b: the time left is over 1 s: 0x00000001
+AND, delete b then set a: still waiting after step 1: 0x00000001
+AND, delete b then set a: set a: 0x00000000
+AND, delete b then set a: a's bits after the set: 0x00000004
+AND, delete b then set a: the wait: 0x00000002
+AND, delete b then set a: result 0 is for event 1, 2 or 3: 0x00000002
+AND, delete b then set a: result 0: 0x80028006
+AND, delete b then set a: result 0 bits: 0x00000010
+AND, delete b then set a: result 0 user data: 0x00000000
+AND, delete b then set a: result 1 is for event 1, 2 or 3: 0x00000001
+AND, delete b then set a: result 1: 0x00000000
+AND, delete b then set a: result 1 bits: 0x01000000
+AND, delete b then set a: result 1 user data: 0x00000011
+AND, delete b then set a: the time left is over 1 s: 0x00000001
+AND, a set before the call then delete b: a's bits while waiting: 0x00000004
+AND, a set before the call then delete b: the wait: 0x00000002
+AND, a set before the call then delete b: result 0 is for event 1, 2 or 3: 0x00000001
+AND, a set before the call then delete b: result 0: 0x00000000
+AND, a set before the call then delete b: result 0 bits: 0x01000000
+AND, a set before the call then delete b: result 0 user data: 0x00000011
+AND, a set before the call then delete b: result 1 is for event 1, 2 or 3: 0x00000002
+AND, a set before the call then delete b: result 1: 0x80028006
+AND, a set before the call then delete b: result 1 bits: 0x00000010
+AND, a set before the call then delete b: result 1 user data: 0x00000000
+AND, a set before the call then delete b: the time left is over 1 s: 0x00000001
+three events: the wait type: 0x00020000
+three events: the wait UID is 0x80000000: 0x00000001
+three events: the wait UID is a: 0x00000000
+three events: the wait UID is b: 0x00000000
+three events: the wait UID is c: 0x00000000
+three events, a set: the wait type: 0x00020000
+three events, a set: the wait UID is 0x80000000: 0x00000001
+three events, a set: the wait UID is a: 0x00000000
+three events, a set: the wait UID is b: 0x00000000
+three events, a set: the wait UID is c: 0x00000000
+three events, a and b set: still waiting: 0x00000001
+three events: the wait: 0x00000003
+three events: result 0 is for event 1, 2 or 3: 0x00000001
+three events: result 0: 0x00000000
+three events: result 0 bits: 0x01000000
+three events: result 0 user data: 0x00000011
+three events: result 1 is for event 1, 2 or 3: 0x00000002
+three events: result 1: 0x00000000
+three events: result 1 bits: 0x02000000
+three events: result 1 user data: 0x00000022
+three events: result 2 is for event 1, 2 or 3: 0x00000003
+three events: result 2: 0x00000000
+three events: result 2 bits: 0x04000000
+three events: result 2 user data: 0x00000033
+three events: the time left is over 1 s: 0x00000001
+AND, delete b then delete a: still waiting after step 1: 0x00000001
+AND, delete b then delete a: the wait: 0x00000002
+AND, delete b then delete a: result 0 is for event 1, 2 or 3: 0x00000002
+AND, delete b then delete a: result 0: 0x80028006
+AND, delete b then delete a: result 0 bits: 0x00000010
+AND, delete b then delete a: result 0 user data: 0x00000000
+AND, delete b then delete a: result 1 is for event 1, 2 or 3: 0x00000001
+AND, delete b then delete a: result 1: 0x80028006
+AND, delete b then delete a: result 1 bits: 0x00000010
+AND, delete b then delete a: result 1 user data: 0x00000000
+AND, delete b then delete a: the time left is over 1 s: 0x00000001
+DONE

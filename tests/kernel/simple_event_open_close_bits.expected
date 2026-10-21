@@ -1,0 +1,80 @@
+open then close: create the event: 0x00000000
+open then close: the pattern before the open: 0x01000004
+open then close: open it: 0x00000000
+open then close: the pattern after the open: 0x01000104
+open then close: poll for 0x200: 0x80028202
+open then close: poll for 0x100: 0x00000000
+open then close: poll for 0x100, the bits it got: 0x00000100
+open then close: the high word of the user data is the main thread's UID: 0x00000001
+open then close: the low word of the user data is the process ID: 0x00000001
+open then close: the user data is still the marker: 0x00000000
+open then close: the pattern after the polls: 0x01000104
+open then close: close the opened UID: 0x00000000
+open then close: the pattern after the close: 0x01000304
+open then close: poll for 0x200: 0x00000000
+open then close: poll for 0x200, the bits it got: 0x00000200
+open then close: the high word of the user data is the main thread's UID: 0x00000001
+open then close: the low word of the user data is the process ID: 0x00000001
+open then close: the user data is still the marker: 0x00000000
+open then close: the pattern after the poll: 0x01000304
+wait for the open: create the event: 0x00000000
+wait for the open: open it: 0x00000000
+wait for the open: the wait: 0x00000000
+wait for the open: the wait's result pattern: 0x00000100
+wait for the open: the high word of the user data is the main thread's UID: 0x00000001
+wait for the open: the low word of the user data is the process ID: 0x00000001
+wait for the open: the user data is still the marker: 0x00000000
+wait for the open: the pattern after: 0x01000104
+wait for the close: create the event: 0x00000000
+wait for the close: open it first: 0x00000000
+wait for the close: close the opened UID: 0x00000000
+wait for the close: the wait: 0x00000000
+wait for the close: the wait's result pattern: 0x00000200
+wait for the close: the high word of the user data is the main thread's UID: 0x00000001
+wait for the close: the low word of the user data is the process ID: 0x00000001
+wait for the close: the user data is still the marker: 0x00000000
+wait for the close: the pattern after: 0x01000304
+auto reset wait for the open: create the event: 0x00000000
+auto reset wait for the open: open it: 0x00000000
+auto reset wait for the open: the wait: 0x00000000
+auto reset wait for the open: the wait's result pattern: 0x00000100
+auto reset wait for the open: the high word of the user data is the main thread's UID: 0x00000001
+auto reset wait for the open: the low word of the user data is the process ID: 0x00000001
+auto reset wait for the open: the user data is still the marker: 0x00000000
+auto reset wait for the open: the pattern after: 0x01000004
+auto reset wait for the close: create the event: 0x00000000
+auto reset wait for the close: open it first: 0x00000000
+auto reset wait for the close: close the opened UID: 0x00000000
+auto reset wait for the close: the wait: 0x00000000
+auto reset wait for the close: the wait's result pattern: 0x00000200
+auto reset wait for the close: the high word of the user data is the main thread's UID: 0x00000001
+auto reset wait for the close: the low word of the user data is the process ID: 0x00000001
+auto reset wait for the close: the user data is still the marker: 0x00000000
+auto reset wait for the close: the pattern after: 0x01000104
+open and close twice: create the event: 0x00000000
+open and close twice: open number 1: 0x00000000
+open and close twice: the pattern after open number 1: 0x01000104
+open and close twice: open number 2: 0x00000000
+open and close twice: the pattern after open number 2: 0x01000104
+open and close twice: close number 1: 0x00000000
+open and close twice: the pattern after close number 1: 0x01000304
+open and close twice: close number 2: 0x00000000
+open and close twice: the pattern after close number 2: 0x01000304
+auto reset open and close twice: create the event: 0x00000000
+auto reset open and close twice: open number 1: 0x00000000
+auto reset open and close twice: the pattern after open number 1: 0x01000104
+auto reset open and close twice: poll for 0x100: 0x00000000
+auto reset open and close twice: the pattern after the poll after open number 1: 0x01000004
+auto reset open and close twice: open number 2: 0x00000000
+auto reset open and close twice: the pattern after open number 2: 0x01000104
+auto reset open and close twice: poll for 0x100: 0x00000000
+auto reset open and close twice: the pattern after the poll after open number 2: 0x01000004
+auto reset open and close twice: close number 1: 0x00000000
+auto reset open and close twice: the pattern after close number 1: 0x01000204
+auto reset open and close twice: poll for 0x200: 0x00000000
+auto reset open and close twice: the pattern after the poll after close number 1: 0x01000004
+auto reset open and close twice: close number 2: 0x00000000
+auto reset open and close twice: the pattern after close number 2: 0x01000204
+auto reset open and close twice: poll for 0x200: 0x00000000
+auto reset open and close twice: the pattern after the poll after close number 2: 0x01000004
+DONE

@@ -1,0 +1,49 @@
+read holds: the lock count with two readers: 0x00000002
+read holds: cancel with flag 0: 0x00000000
+read holds: the readers the cancel counted: 0x00000000
+read holds: the writers the cancel counted: 0x00000000
+read holds: the lock count after the cancel: 0x00000000
+read holds: a try write lock after the cancel: 0x00000000
+read holds: the write unlock: 0x00000000
+read holds: holder 1's read lock: 0x00000000
+read holds: holder 1's read unlock after the cancel: 0x800281E5
+read holds: holder 2's read lock: 0x00000000
+read holds: holder 2's read unlock after the cancel: 0x800281E5
+read holds: the lock count at the end: 0x00000000
+flag 1 on a free lock: cancel: 0x00000000
+flag 1 on a free lock: the readers the cancel counted: 0x00000000
+flag 1 on a free lock: the writers the cancel counted: 0x00000000
+flag 1 on a free lock: the lock count after: 0x00000001
+flag 1 on a free lock: the main thread owns the lock after: 0x00000001
+flag 1 on a free lock: the write unlock: 0x00000000
+flag 1 on a free lock: the lock count after the unlock: 0x00000000
+flag 1 while another thread reads: the lock count before: 0x00000001
+flag 1 while another thread reads: cancel: 0x00000000
+flag 1 while another thread reads: the lock count after: 0x00000001
+flag 1 while another thread reads: the main thread owns the lock after: 0x00000001
+flag 1 while another thread reads: the other thread's read unlock after: 0x800281E7
+flag 1 while another thread reads: the write unlock: 0x00000000
+flag 1 while another thread reads: the lock count after the unlock: 0x00000000
+flag 1 with a recursive write lock held twice: the first write lock: 0x00000000
+flag 1 with a recursive write lock held twice: the second write lock: 0x00000000
+flag 1 with a recursive write lock held twice: the lock count before: 0x00000002
+flag 1 with a recursive write lock held twice: cancel: 0x00000000
+flag 1 with a recursive write lock held twice: the lock count after: 0x00000001
+flag 1 with a recursive write lock held twice: the main thread owns the lock after: 0x00000001
+flag 1 with a recursive write lock held twice: the first write unlock: 0x00000000
+flag 1 with a recursive write lock held twice: the second write unlock: 0x800281E4
+flag 1 with a recursive write lock held twice: the lock count after the unlocks: 0x00000000
+flag 2: cancel: 0x8002000A
+flag 2: the count pointers are left alone: 0x00000000
+flag -1: cancel: 0x8002000A
+flag -1: the count pointers are left alone: 0x00000000
+flag 0x100: cancel: 0x8002000A
+flag 0x100: the count pointers are left alone: 0x00000000
+bad flags: the lock count after: 0x00000001
+bad flags: the main thread owns the lock after: 0x00000001
+bad flags: the reader still waits: 0x00000001
+bad flags: the write unlock: 0x00000000
+bad flags: the reader's result after the unlock: 0x00000000
+flag 2 on an unknown UID: cancel: 0x800281E1
+flag 2 on a semaphore: cancel: 0x8002000A
+DONE

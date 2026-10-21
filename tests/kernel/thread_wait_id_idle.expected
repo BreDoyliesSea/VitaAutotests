@@ -1,0 +1,87 @@
+the running thread through UID 0: the info call: 0x00000000
+the running thread through UID 0: its status: 0x00000001
+the running thread through UID 0: its wait type: 0x00000000
+the running thread through UID 0: its wait UID is -1: 0x00000001
+the running thread through UID 0: its wait UID is 0: 0x00000000
+the running thread through UID 0: its wait UID is its own UID: 0x00000000
+the running thread through its own UID: the info call: 0x00000000
+the running thread through its own UID: its status: 0x00000001
+the running thread through its own UID: its wait type: 0x00000000
+the running thread through its own UID: its wait UID is -1: 0x00000001
+the running thread through its own UID: its wait UID is 0: 0x00000000
+the running thread through its own UID: its wait UID is its own UID: 0x00000000
+the running thread: its own semaphore wait: 0x80028005
+the running thread after its own wait timed out: the info call: 0x00000000
+the running thread after its own wait timed out: its status: 0x00000001
+the running thread after its own wait timed out: its wait type: 0x00000000
+the running thread after its own wait timed out: its wait UID is -1: 0x00000001
+the running thread after its own wait timed out: its wait UID is 0: 0x00000000
+the running thread after its own wait timed out: its wait UID is its own UID: 0x00000000
+the running thread after its own wait timed out: its wait UID is the semaphore: 0x00000000
+a thread created and not started: the info call: 0x00000000
+a thread created and not started: its status: 0x00000010
+a thread created and not started: its wait type: 0x00000000
+a thread created and not started: its wait UID is -1: 0x00000001
+a thread created and not started: its wait UID is 0: 0x00000000
+a thread created and not started: its wait UID is its own UID: 0x00000000
+a thread that ended: the wait for its end: 0x00000000
+a thread that ended: its semaphore wait: 0x00000000
+a thread that ended: the info call: 0x00000000
+a thread that ended: its status: 0x00000010
+a thread that ended: its wait type: 0x00000000
+a thread that ended: its wait UID is -1: 0x00000001
+a thread that ended: its wait UID is 0: 0x00000000
+a thread that ended: its wait UID is its own UID: 0x00000000
+a thread that ended: its wait UID is the semaphore: 0x00000000
+a started thread that hasn't run: the info call: 0x00000000
+a started thread that hasn't run: its status: 0x00000002
+a started thread that hasn't run: its wait type: 0x00000000
+a started thread that hasn't run: its wait UID is -1: 0x00000001
+a started thread that hasn't run: its wait UID is 0: 0x00000000
+a started thread that hasn't run: its wait UID is its own UID: 0x00000000
+a started thread that hasn't run: the wait for its end: 0x00000000
+first semaphore signaled, thread not run yet: the info call: 0x00000000
+first semaphore signaled, thread not run yet: its status: 0x00000002
+first semaphore signaled, thread not run yet: its wait type: 0x00000000
+first semaphore signaled, thread not run yet: its wait UID is -1: 0x00000001
+first semaphore signaled, thread not run yet: its wait UID is 0: 0x00000000
+first semaphore signaled, thread not run yet: its wait UID is its own UID: 0x00000000
+first semaphore signaled, thread not run yet: its wait UID is the first semaphore: 0x00000000
+thread waits for the second semaphore: the info call: 0x00000000
+thread waits for the second semaphore: its status: 0x00000008
+thread waits for the second semaphore: its wait type: 0x00000020
+thread waits for the second semaphore: its wait UID is -1: 0x00000000
+thread waits for the second semaphore: its wait UID is 0: 0x00000000
+thread waits for the second semaphore: its wait UID is its own UID: 0x00000000
+thread waits for the second semaphore: its wait UID is the second semaphore: 0x00000001
+thread waits for the second semaphore: its wait UID is the first semaphore: 0x00000000
+second semaphore signaled, thread not run yet: the info call: 0x00000000
+second semaphore signaled, thread not run yet: its status: 0x00000002
+second semaphore signaled, thread not run yet: its wait type: 0x00000000
+second semaphore signaled, thread not run yet: its wait UID is -1: 0x00000001
+second semaphore signaled, thread not run yet: its wait UID is 0: 0x00000000
+second semaphore signaled, thread not run yet: its wait UID is its own UID: 0x00000000
+second semaphore signaled, thread not run yet: its wait UID is the second semaphore: 0x00000000
+signaled thread: the wait for its end: 0x00000000
+signaled thread: the first wait: 0x00000000
+signaled thread: the second wait: 0x00000000
+a wait that timed out: the semaphore wait: 0x80028005
+a wait that timed out, thread spinning: the info call: 0x00000000
+a wait that timed out, thread spinning: its wait type: 0x00000000
+a wait that timed out, thread spinning: its wait UID is -1: 0x00000001
+a wait that timed out, thread spinning: its wait UID is 0: 0x00000000
+a wait that timed out, thread spinning: its wait UID is its own UID: 0x00000000
+a wait that timed out, thread spinning: its wait UID is the semaphore: 0x00000000
+a wait that timed out: the wait for the thread's end: 0x00000000
+a callback in a wait: the notify: 0x00000000
+a callback in a wait: the callback ran: 0x00000001
+a callback in a wait, read from the callback through UID 0: the info call: 0x00000000
+a callback in a wait, read from the callback through UID 0: its status: 0x00000001
+a callback in a wait, read from the callback through UID 0: its wait type: 0x00000000
+a callback in a wait, read from the callback through UID 0: its wait UID is -1: 0x00000001
+a callback in a wait, read from the callback through UID 0: its wait UID is 0: 0x00000000
+a callback in a wait, read from the callback through UID 0: its wait UID is its own UID: 0x00000000
+a callback in a wait, read from the callback through UID 0: its wait UID is the semaphore: 0x00000000
+a callback in a wait: the wait's result: 0x00000000
+a callback in a wait: the wait for the thread's end: 0x00000000
+DONE
