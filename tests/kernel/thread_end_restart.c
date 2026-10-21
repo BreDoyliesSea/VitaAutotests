@@ -7,8 +7,10 @@
 // - T ends with 0x111, then the main thread starts it again, so it waits for go once more
 // - T ends with 0x111, is started again and ends with 0x222
 // - T ends with 0x111, then the main thread deletes it
-// - W2, at 0xB0, waits for T's end twice: T ends with 0x111 and is started again before W2 runs,
-//   then ends with 0x222 once W2 waits again
+// - W2, at 0xB0, waits for T's end twice: T ends with 0x111 and is started again, then W2 waits
+//   again, and T ends with 0x222. Between its two waits W2 waits on a semaphore that the main thread
+//   signals after the start, so the second wait comes after the start even where W2 runs as soon as
+//   it is woken
 // Each case prints W's result and the status it got, read once W ended. The last case prints both
 // results of W2 and the status each one got.
 //
@@ -24,7 +26,7 @@
 #define MAIN_PRIORITY 0x60
 #define WAITER_PRIORITY 0xB0
 
-static SceUID go, target;
+static SceUID go, again, target;
 static volatile int end_result[2], end_status[2];
 static volatile int waits_twice;
 
@@ -45,6 +47,10 @@ static int end_waiter(SceSize args, void *argp) {
         SceUInt timeout = 3 * TEST_WAIT_US;
         end_result[i] = sceKernelWaitThreadEnd(target, &status, &timeout);
         end_status[i] = status;
+        if (i + 1 < count) {
+            timeout = 3 * TEST_WAIT_US;
+            sceKernelWaitSema(again, 1, &timeout);
+        }
     }
     return 0;
 }
@@ -99,7 +105,7 @@ static void run_case(const char *name, Case c) {
 }
 
 // W2 waits for T's end twice. Its first wait ends with T's first end, and its second one waits for
-// the end of the run the main thread starts before W2 runs.
+// the end of the run the main thread starts, once the main thread signals again.
 static void twice_case(void) {
     const char *name = "W2 waits again after a start";
     waits_twice = 1;
@@ -114,6 +120,7 @@ static void twice_case(void) {
     sceKernelSignalSema(go, 1);
     wait_until_ended();
     start_target(0x222);
+    sceKernelSignalSema(again, 1);
     // W2 runs now, and waits for the second run's end
     TEST_WAIT_FOR(
         end_result[0] != (int)0xDEAD && test_in_wait(waiter, WAIT_TYPE_THREAD_END, target));
@@ -135,6 +142,7 @@ int main(void) {
     // The main thread only moves to core 0 when it is next scheduled
     sceKernelDelayThread(1000);
     go = sceKernelCreateSema("go", 0, 0, 1, NULL);
+    again = sceKernelCreateSema("again", 0, 0, 1, NULL);
 
     run_case("control", CONTROL);
     run_case("started again", RESTART);
@@ -143,6 +151,7 @@ int main(void) {
     twice_case();
 
     sceKernelDeleteSema(go);
+    sceKernelDeleteSema(again);
     test_exit();
     return 0;
 }
