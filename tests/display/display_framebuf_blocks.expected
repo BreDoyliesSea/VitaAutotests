@@ -70,6 +70,5 @@ a CDRAM framebuffer 4096 bytes in: 0x00000000
 a CDRAM framebuffer 4096 bytes in: the display reports it: 0x00000001
 a CDRAM framebuffer that ends at the block's end: 0x00000000
 a CDRAM framebuffer that ends at the block's end: the display reports it: 0x00000001
-where a block was freed: 0x80022007
 terminate libgxm: 0x00000000
 DONE

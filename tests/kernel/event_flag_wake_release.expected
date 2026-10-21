@@ -1,0 +1,50 @@
+a set of 0x1: A waits: 0x00000001
+a set of 0x1: the set: 0x00000000
+a set of 0x1: the poll before the main thread blocks: 0x00000000
+a set of 0x1: the flag's waiting threads before the main thread blocks: 0x00000000
+a set of 0x1: the flag's bits before the main thread blocks: 0x00000003
+a set of 0x1: A's out bits before the main thread blocks: 0x0000BEEF
+a set of 0x1: A's status before the main thread blocks: 0x00000002
+a set of 0x1: A's result: 0x00000000
+a set of 0x1: A's out bits after it ran: 0x00000003
+a set of 0x1 and 0x4: A waits: 0x00000001
+a set of 0x1 and 0x4: the set: 0x00000000
+a set of 0x1 and 0x4: the poll before the main thread blocks: 0x00000000
+a set of 0x1 and 0x4: the flag's waiting threads before the main thread blocks: 0x00000000
+a set of 0x1 and 0x4: the flag's bits before the main thread blocks: 0x00000007
+a set of 0x1 and 0x4: A's out bits before the main thread blocks: 0x0000BEEF
+a set of 0x1 and 0x4: A's status before the main thread blocks: 0x00000002
+a set of 0x1 and 0x4: A's result: 0x00000000
+a set of 0x1 and 0x4: A's out bits after it ran: 0x00000007
+a cancel with 0x8: A waits: 0x00000001
+a cancel with 0x8: the cancel: 0x00000000
+a cancel with 0x8: the waiting threads the cancel counts: 0x00000001
+a cancel with 0x8: the poll before the main thread blocks: 0x00000000
+a cancel with 0x8: the flag's waiting threads before the main thread blocks: 0x00000000
+a cancel with 0x8: the flag's bits before the main thread blocks: 0x00000008
+a cancel with 0x8: A's out bits before the main thread blocks: 0x0000BEEF
+a cancel with 0x8: A's status before the main thread blocks: 0x00000002
+a cancel with 0x8: A's result: 0x80028007
+a cancel with 0x8: A's out bits after it ran: 0x00000008
+a notified callback: A waits: 0x00000001
+a notified callback: the notify: 0x00000000
+a notified callback: the poll before the main thread blocks: 0x800280E2
+a notified callback: the flag's waiting threads before the main thread blocks: 0x00000000
+a notified callback: the flag's bits before the main thread blocks: 0x00000002
+a notified callback: A's out bits before the main thread blocks: 0x0000BEEF
+a notified callback: A's status before the main thread blocks: 0x00000002
+a notified callback: A's callback ran: 0x00000001
+a notified callback: the poll when A waits again: 0x800280E2
+a notified callback: the flag's waiting threads when A waits again: 0x00000001
+a notified callback: the flag's bits when A waits again: 0x00000002
+a notified callback: A's out bits when A waits again: 0x0000BEEF
+a notified callback: A's status when A waits again: 0x00000008
+a notified callback: the set: 0x00000000
+a notified callback: A's result: 0x00000000
+a notified callback: A's out bits after it ran: 0x00000003
+a delete of the flag: A waits: 0x00000001
+a delete of the flag: the delete: 0x00000000
+a delete of the flag: A's status before the main thread blocks: 0x00000002
+a delete of the flag: A's result: 0x80028006
+a delete of the flag: A's out bits after it ran: 0x00000002
+DONE

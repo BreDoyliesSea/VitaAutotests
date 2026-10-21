@@ -1,0 +1,40 @@
+receive FULL 4, send FULL 4: W waits before the send: 0x00000001
+receive FULL 4, send FULL 4: the send: 0x00000000
+receive FULL 4, send FULL 4: the send's size: 0x00000004
+receive FULL 4, send FULL 4: right after the wake: the pipe's free size: 0x00001000
+receive FULL 4, send FULL 4: right after the wake: the waiting senders: 0x00000000
+receive FULL 4, send FULL 4: right after the wake: the waiting receivers: 0x00000000
+receive FULL 4, send FULL 4: right after the wake: W's size: 0x00000004
+receive FULL 4, send FULL 4: right after the wake: W's buffer "abcd----": 0x00000008
+receive FULL 4, send FULL 4: right after the wake: W's status: 0x00000002
+receive FULL 4, send FULL 4: after W ran: its result: 0x00000000
+receive FULL 4, send FULL 4: after W ran: its size: 0x00000004
+receive FULL 4, send FULL 4: after W ran: its buffer "abcd----": 0x00000008
+receive ASAP 8, send FULL 2: W waits before the send: 0x00000001
+receive ASAP 8, send FULL 2: the send: 0x00000000
+receive ASAP 8, send FULL 2: the send's size: 0x00000002
+receive ASAP 8, send FULL 2: right after the wake: the pipe's free size: 0x00001000
+receive ASAP 8, send FULL 2: right after the wake: the waiting senders: 0x00000000
+receive ASAP 8, send FULL 2: right after the wake: the waiting receivers: 0x00000000
+receive ASAP 8, send FULL 2: right after the wake: W's size: 0x00000002
+receive ASAP 8, send FULL 2: right after the wake: W's buffer "xy------": 0x00000008
+receive ASAP 8, send FULL 2: right after the wake: W's status: 0x00000002
+receive ASAP 8, send FULL 2: after W ran: its result: 0x00000000
+receive ASAP 8, send FULL 2: after W ran: its size: 0x00000002
+receive ASAP 8, send FULL 2: after W ran: its buffer "xy------": 0x00000008
+send FULL 4 with 2 free, receive ASAP 4: the fill of 4094: 0x00000000
+send FULL 4 with 2 free, receive ASAP 4: W waits before the receive: 0x00000001
+send FULL 4 with 2 free, receive ASAP 4: while W waits: the pipe's free size: 0x00000002
+send FULL 4 with 2 free, receive ASAP 4: while W waits: the waiting senders: 0x00000001
+send FULL 4 with 2 free, receive ASAP 4: the receive: 0x00000000
+send FULL 4 with 2 free, receive ASAP 4: the receive's size: 0x00000004
+send FULL 4 with 2 free, receive ASAP 4: right after the wake: the pipe's free size: 0x00000002
+send FULL 4 with 2 free, receive ASAP 4: right after the wake: the waiting senders: 0x00000000
+send FULL 4 with 2 free, receive ASAP 4: right after the wake: the waiting receivers: 0x00000000
+send FULL 4 with 2 free, receive ASAP 4: right after the wake: W's size: 0x00000004
+send FULL 4 with 2 free, receive ASAP 4: right after the wake: W's status: 0x00000002
+send FULL 4 with 2 free, receive ASAP 4: after W ran: its result: 0x00000000
+send FULL 4 with 2 free, receive ASAP 4: after W ran: its size: 0x00000004
+send FULL 4 with 2 free, receive ASAP 4: the drain: 0x00000000
+send FULL 4 with 2 free, receive ASAP 4: the drain's size: 0x00000FFE
+DONE

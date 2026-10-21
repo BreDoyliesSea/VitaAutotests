@@ -282,7 +282,11 @@ vita_test(simple_event_open_close_bits kernel/simple_event_open_close_bits.c)
 vita_test(multi_events_unknown_uid kernel/multi_events_unknown_uid.c)
 vita_test(lw_info_by_id_uid kernel/lw_info_by_id_uid.c)
 vita_test(msgpipe_peek_stale kernel/msgpipe_peek_stale.c)
+vita_test(event_flag_wake_release kernel/event_flag_wake_release.c)
+vita_test(timeout_serves_before_run kernel/timeout_serves_before_run.c)
+vita_test(rwlock_wake_counts kernel/rwlock_wake_counts.c)
 vita_test(msgpipe_receive_sender_stays kernel/msgpipe_receive_sender_stays.c)
+vita_test(msgpipe_wake_state kernel/msgpipe_wake_state.c)
 
 # The module module_start_thread and module_start_vfp load. vita_create_self runs in a function, since it adds its flags
 # to the scope it runs in, where they would also apply to the test vpk's self.
@@ -377,6 +381,7 @@ vita_test(audioout audio/audioout.c)
 
 vita_test(display display/display.c)
 vita_test(display_framebuf_blocks display/display_framebuf_blocks.c)
+vita_test(display_framebuf_set_freed display/display_framebuf_set_freed.c)
 vita_test(display_framebuf_free display/display_framebuf_free.c)
 
 vita_test(savedata_slot_id apputil/savedata_slot_id.c)

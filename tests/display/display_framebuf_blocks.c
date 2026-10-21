@@ -11,15 +11,14 @@
 //   again while it's mapped.
 // - a CDRAM framebuffer 16, 64, 128, 512 and 4096 bytes in, and one 8 KiB in, which ends at the
 //   block's end
-// Last, since a wrong implementation may read it, a framebuffer where a block was freed. The valid
-// framebuffer is set after it.
+// A framebuffer where a block was freed is in display_framebuf_set_freed, since a wrong
+// implementation may crash once the display reads it.
 //
 // On a PS Vita TV on firmware 3.65 a framebuffer in a block of every type works, the read only
 // types, the opened block and the block for code too, before and while the block is mapped, and the
 // display reports each one. The block for code doesn't map, with 0x805B0017 (DRIVER), and the set
 // after works anyway. A CDRAM framebuffer 16, 64 or 128 bytes in fails with 0x80290002
-// (INVALID_ADDR), while 512 and 4096 bytes in work, as does one that ends at the block's end. A
-// framebuffer where a block was freed fails with 0x80022007 (VA2PA_FAULT).
+// (INVALID_ADDR), while 512 and 4096 bytes in work, as does one that ends at the block's end.
 #include <psp2/display.h>
 #include <psp2/gxm.h>
 #include <psp2/kernel/sysmem.h>
@@ -191,15 +190,6 @@ int main(void) {
     opened();
     for_code();
     offsets();
-
-    // Memory in no block goes last, since a wrong implementation may read it once it's displayed
-    const SceUID gone = sceKernelAllocMemBlock("display gone",
-                                               SCE_KERNEL_MEMBLOCK_TYPE_USER_CDRAM_RW, BLOCK_SIZE,
-                                               NULL);
-    void *const gone_base = base_of(gone);
-    sceKernelFreeMemBlock(gone);
-    set_at("where a block was freed", gone_base);
-    set_valid();
 
     PRINT("terminate libgxm", sceGxmTerminate());
     test_exit();

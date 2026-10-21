@@ -10,7 +10,7 @@
 // On a PS Vita TV on firmware 3.65 the free of the block works while the display shows the
 // framebuffer in it, and sceDisplayGetFrameBuf still reports the freed framebuffer after the free.
 // Setting the valid framebuffer then works, and the display reports that one. So a set of a
-// framebuffer where a block was freed fails, as display_framebuf_blocks shows, but the free of a
+// framebuffer where a block was freed fails, as display_framebuf_set_freed shows, but the free of a
 // block the display already shows works.
 #include <psp2/display.h>
 #include <psp2/kernel/sysmem.h>
