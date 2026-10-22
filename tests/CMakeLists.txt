@@ -304,6 +304,7 @@ vita_test(msgpipe_wake_state kernel/msgpipe_wake_state.c)
 vita_test(msgpipe_zero_bytes kernel/msgpipe_zero_bytes.c)
 vita_test(msgpipe_try_receive_senders kernel/msgpipe_try_receive_senders.c)
 vita_test(msgpipe_partial_head_order kernel/msgpipe_partial_head_order.c)
+vita_test(msgpipe_callback_rejoin_order kernel/msgpipe_callback_rejoin_order.c)
 
 # The module module_start_thread and module_start_vfp load. vita_create_self runs in a function, since it adds its flags
 # to the scope it runs in, where they would also apply to the test vpk's self.
