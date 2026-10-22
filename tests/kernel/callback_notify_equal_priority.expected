@@ -1,0 +1,25 @@
+semaphore, T at the priority of the main thread: T waits with callbacks before the notify: 0x00000001
+semaphore, T at the priority of the main thread: the notify: 0x00000000
+semaphore, T at the priority of the main thread: runs of the callback when the notify returned: 0x00000000
+semaphore, T at the priority of the main thread: T's status right after the notify: 0x00000002
+semaphore, T at the priority of the main thread: runs of the callback at the end: 0x00000001
+semaphore, T at the priority of the main thread: T's wait: 0x00000000
+semaphore, T below the main thread: T waits with callbacks before the notify: 0x00000001
+semaphore, T below the main thread: the notify: 0x00000000
+semaphore, T below the main thread: runs of the callback when the notify returned: 0x00000000
+semaphore, T below the main thread: T's status right after the notify: 0x00000002
+semaphore, T below the main thread: runs of the callback at the end: 0x00000001
+semaphore, T below the main thread: T's wait: 0x00000000
+semaphore, T above the main thread: T waits with callbacks before the notify: 0x00000001
+semaphore, T above the main thread: the notify: 0x00000000
+semaphore, T above the main thread: runs of the callback when the notify returned: 0x00000001
+semaphore, T above the main thread: T's status right after the notify: 0x00000008
+semaphore, T above the main thread: runs of the callback at the end: 0x00000001
+semaphore, T above the main thread: T's wait: 0x00000000
+delay, T at the priority of the main thread: T waits with callbacks before the notify: 0x00000001
+delay, T at the priority of the main thread: the notify: 0x00000000
+delay, T at the priority of the main thread: runs of the callback when the notify returned: 0x00000000
+delay, T at the priority of the main thread: T's status right after the notify: 0x00000002
+delay, T at the priority of the main thread: runs of the callback at the end: 0x00000001
+delay, T at the priority of the main thread: T's wait: 0x00000000
+DONE

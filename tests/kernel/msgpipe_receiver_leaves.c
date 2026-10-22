@@ -10,6 +10,11 @@
 #include "threadmgr_extra.h"
 
 #define CAPACITY 4096
+// The FULL receive that times out waits this long, far more than starting the ASAP receive and
+// sending take on a loaded machine
+#define FULL_TIMEOUT_US 1000000
+// The ASAP receive behind it waits far longer still, the cancel at the end of its case ends it
+#define ASAP_TIMEOUT_US 10000000
 
 static SceUID pipe;
 static volatile int result[2], done[2];
@@ -66,7 +71,7 @@ int main(void) {
     SceSize size;
 
     pipe = sceKernelCreateMsgPipe("pipe", MSG_PIPE_TYPE_USER, 0, CAPACITY, NULL);
-    start(0, MSG_PIPE_MODE_FULL, 200000);
+    start(0, MSG_PIPE_MODE_FULL, FULL_TIMEOUT_US);
     sceKernelTrySendMsgPipe(pipe, "abcd", 4, MSG_PIPE_MODE_FULL, &size);
     PRINT("timeout, after a send of 4: the bytes in the pipe", pipe_bytes());
     TEST_WAIT_FOR(done[0]);
@@ -96,8 +101,8 @@ int main(void) {
     print_receive("delete", 0);
 
     pipe = sceKernelCreateMsgPipe("pipe", MSG_PIPE_TYPE_USER, 0, CAPACITY, NULL);
-    start(0, MSG_PIPE_MODE_FULL, 200000);
-    start(1, MSG_PIPE_MODE_ASAP, TEST_WAIT_US);
+    start(0, MSG_PIPE_MODE_FULL, FULL_TIMEOUT_US);
+    start(1, MSG_PIPE_MODE_ASAP, ASAP_TIMEOUT_US);
     sceKernelTrySendMsgPipe(pipe, "mnop", 4, MSG_PIPE_MODE_FULL, &size);
     const int asap_before = done[1];
     TEST_WAIT_FOR(done[0]);

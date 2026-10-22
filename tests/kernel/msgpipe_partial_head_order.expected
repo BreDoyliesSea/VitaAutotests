@@ -1,0 +1,18 @@
+A took 4 of 8, B ASAP 4: receivers done after the send of "abcd": 0x00000000
+A took 4 of 8, B ASAP 4: A's result: 0x00000000
+A took 4 of 8, B ASAP 4: A got "abcdefgh", size: 0x00000008
+A took 4 of 8, B ASAP 4: B's result: 0x00000000
+A took 4 of 8, B ASAP 4: B got "ijkl", size: 0x00000004
+A took 4 of 8, B ASAP 4: the bytes left in the pipe: 0x00000000
+A took 4 of 8, B FULL 4: receivers done after the send of "abcd": 0x00000000
+A took 4 of 8, B FULL 4: A's result: 0x00000000
+A took 4 of 8, B FULL 4: A got "abcdefgh", size: 0x00000008
+A took 4 of 8, B FULL 4: B's result: 0x00000000
+A took 4 of 8, B FULL 4: B got "ijkl", size: 0x00000004
+A took 4 of 8, B FULL 4: the bytes left in the pipe: 0x00000000
+A took nothing, B ASAP 4: A's result: 0x00000000
+A took nothing, B ASAP 4: A got "ijklmnop", size: 0x00000008
+A took nothing, B ASAP 4: B's result: 0x00000000
+A took nothing, B ASAP 4: B got "efgh", size: 0x00000004
+A took nothing, B ASAP 4: the bytes left in the pipe: 0x00000000
+DONE

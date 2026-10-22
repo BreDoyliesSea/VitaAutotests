@@ -1,0 +1,4 @@
+an ARM entry: start: 0x00000000
+an ARM entry: the cpsr first thing: 0x00000010
+an ARM entry: the cpsr after a compare of equal values: 0x60000010
+DONE

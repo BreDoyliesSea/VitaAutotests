@@ -1,0 +1,35 @@
+event flag, mode 0x8: the wait: 0x80020010
+event flag, mode 0x8: runs of the callback when the wait returned: 0x00000000
+event flag, mode 0x8: the check's result: 0x00000001
+event flag, mode 0x8: runs of the callback after the check: 0x00000001
+event flag, both clear modes: the wait: 0x80020010
+event flag, both clear modes: runs of the callback when the wait returned: 0x00000000
+event flag, both clear modes: the check's result: 0x00000001
+event flag, both clear modes: runs of the callback after the check: 0x00000001
+event flag, pattern 0: the wait: 0x80020005
+event flag, pattern 0: runs of the callback when the wait returned: 0x00000000
+event flag, pattern 0: the check's result: 0x00000001
+event flag, pattern 0: runs of the callback after the check: 0x00000001
+event flag, held by another thread: the wait: 0x800280E2
+event flag, held by another thread: runs of the callback when the wait returned: 0x00000000
+event flag, held by another thread: the check's result: 0x00000001
+event flag, held by another thread: runs of the callback after the check: 0x00000001
+event flag, bits already set: the wait: 0x00000000
+event flag, bits already set: runs of the callback when the wait returned: 0x00000001
+event flag, bits already set: the check's result: 0x00000000
+event flag, bits already set: runs of the callback after the check: 0x00000001
+event flag, bits already set: the out bits the callback read: 0x0000DEAD
+event flag, bits already set: the out bits after the wait: 0x00000007
+semaphore, count 0: the wait: 0x8002000F
+semaphore, count 0: runs of the callback when the wait returned: 0x00000000
+semaphore, count 0: the check's result: 0x00000001
+semaphore, count 0: runs of the callback after the check: 0x00000001
+semaphore, count above the maximum: the wait: 0x8002000F
+semaphore, count above the maximum: runs of the callback when the wait returned: 0x00000000
+semaphore, count above the maximum: the check's result: 0x00000001
+semaphore, count above the maximum: runs of the callback after the check: 0x00000001
+event flag, unknown UID: the wait: 0x800280E1
+event flag, unknown UID: runs of the callback when the wait returned: 0x00000000
+event flag, unknown UID: the check's result: 0x00000001
+event flag, unknown UID: runs of the callback after the check: 0x00000001
+DONE

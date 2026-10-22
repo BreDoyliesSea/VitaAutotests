@@ -18,7 +18,6 @@ first start: r12: 0xDEADBEEF
 first start: sp, below the stack top by: 0x00000010
 first start: lr is Thumb: 0x00000001
 first start: lr is the first start's: 0x00000001
-first start: cpsr: 0x00000010
 restart: r0: 0x00000000
 restart: r1: 0x00000000
 restart: r2: 0xDEADBEEF
@@ -35,7 +34,6 @@ restart: r12: 0xDEADBEEF
 restart: sp, below the stack top by: 0x00000000
 restart: lr is Thumb: 0x00000001
 restart: lr is the first start's: 0x00000001
-restart: cpsr: 0x00000010
 restart from C: r0: 0x00000000
 restart from C: r1: 0x00000000
 restart from C: r2: 0xDEADBEEF
@@ -52,7 +50,6 @@ restart from C: r12: 0xDEADBEEF
 restart from C: sp, below the stack top by: 0x00000000
 restart from C: lr is Thumb: 0x00000001
 restart from C: lr is the first start's: 0x00000001
-restart from C: cpsr: 0x00000010
 new thread from C: r0: 0x00000000
 new thread from C: r1: 0x00000000
 new thread from C: r2: 0xDEADBEEF
@@ -69,7 +66,6 @@ new thread from C: r12: 0xDEADBEEF
 new thread from C: sp, below the stack top by: 0x00000000
 new thread from C: lr is Thumb: 0x00000001
 new thread from C: lr is the first start's: 0x00000001
-new thread from C: cpsr: 0x00000010
 from another thread: r0: 0x00000004
 from another thread: r1, below the stack top by: 0x00000010
 from another thread: r2: 0xDEADBEEF
@@ -86,5 +82,4 @@ from another thread: r12: 0xDEADBEEF
 from another thread: sp, below the stack top by: 0x00000010
 from another thread: lr is Thumb: 0x00000001
 from another thread: lr is the first start's: 0x00000001
-from another thread: cpsr: 0x00000010
 DONE

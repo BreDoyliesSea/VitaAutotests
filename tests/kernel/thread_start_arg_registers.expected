@@ -1,0 +1,46 @@
+size 1: start: 0x00000000
+size 1: the thread ran: 0x00000001
+size 1: r0: 0x00000001
+size 1: r1, below the stack top by: 0x00000010
+size 1: sp, below the stack top by: 0x00000010
+size 1: the copy holds the bytes sent: 0x00000001
+size 15: start: 0x00000000
+size 15: the thread ran: 0x00000001
+size 15: r0: 0x0000000F
+size 15: r1, below the stack top by: 0x00000010
+size 15: sp, below the stack top by: 0x00000010
+size 15: the copy holds the bytes sent: 0x00000001
+size 16: start: 0x00000000
+size 16: the thread ran: 0x00000001
+size 16: r0: 0x00000010
+size 16: r1, below the stack top by: 0x00000010
+size 16: sp, below the stack top by: 0x00000010
+size 16: the copy holds the bytes sent: 0x00000001
+size 17: start: 0x00000000
+size 17: the thread ran: 0x00000001
+size 17: r0: 0x00000011
+size 17: r1, below the stack top by: 0x00000020
+size 17: sp, below the stack top by: 0x00000020
+size 17: the copy holds the bytes sent: 0x00000001
+size 32: start: 0x00000000
+size 32: the thread ran: 0x00000001
+size 32: r0: 0x00000020
+size 32: r1, below the stack top by: 0x00000020
+size 32: sp, below the stack top by: 0x00000020
+size 32: the copy holds the bytes sent: 0x00000001
+size 0 with a pointer: start: 0x00000000
+size 0 with a pointer: the thread ran: 0x00000001
+size 0 with a pointer: r0: 0x00000000
+size 0 with a pointer: r1: 0x00000000
+size 0 with a pointer: sp, below the stack top by: 0x00000000
+size 4 with a NULL pointer: start: 0x00000000
+size 4 with a NULL pointer: the thread ran: 0x00000001
+size 4 with a NULL pointer: r0: 0x00000000
+size 4 with a NULL pointer: r1: 0x00000000
+size 4 with a NULL pointer: sp, below the stack top by: 0x00000000
+size 0 with a NULL pointer: start: 0x00000000
+size 0 with a NULL pointer: the thread ran: 0x00000001
+size 0 with a NULL pointer: r0: 0x00000000
+size 0 with a NULL pointer: r1: 0x00000000
+size 0 with a NULL pointer: sp, below the stack top by: 0x00000000
+DONE
