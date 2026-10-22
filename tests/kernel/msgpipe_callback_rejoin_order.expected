@@ -1,0 +1,13 @@
+T waits with callbacks before the notify: 0x00000001
+the notify: 0x00000000
+the try send of the older bytes during the callback: 0x00000000
+its size: 0x00000FFC
+S waits before T is back: 0x00000001
+the free size before T is back: 0x00000004
+T's receive: 0x00000000
+T got "abcd", size: 0x00000004
+S's send: 0x00000000
+S's size: 0x00000008
+the free size after both ended: 0x00000000
+the waiting senders after both ended: 0x00000000
+DONE
