@@ -1,0 +1,75 @@
+send of 0 bytes ASAP on an empty pipe: the call: 0x00000000
+send of 0 bytes ASAP on an empty pipe: its size: 0x00000000
+send of 0 bytes ASAP on an empty pipe: the timeout changed: 0x00000000
+send of 0 bytes ASAP on an empty pipe: it returned within 200 ms: 0x00000001
+send of 0 bytes ASAP on an empty pipe: the free size after it: 0x00001000
+send of 0 bytes ASAP on a full pipe: the call: 0x00000000
+send of 0 bytes ASAP on a full pipe: its size: 0x00000000
+send of 0 bytes ASAP on a full pipe: the timeout changed: 0x00000000
+send of 0 bytes ASAP on a full pipe: it returned within 200 ms: 0x00000001
+send of 0 bytes ASAP on a full pipe: the free size after it: 0x00000000
+send of 0 bytes FULL on an empty pipe: the call: 0x00000000
+send of 0 bytes FULL on an empty pipe: its size: 0x00000000
+send of 0 bytes FULL on an empty pipe: the timeout changed: 0x00000000
+send of 0 bytes FULL on an empty pipe: it returned within 200 ms: 0x00000001
+send of 0 bytes FULL on an empty pipe: the free size after it: 0x00001000
+send of 0 bytes FULL on a full pipe: the call: 0x00000000
+send of 0 bytes FULL on a full pipe: its size: 0x00000000
+send of 0 bytes FULL on a full pipe: the timeout changed: 0x00000000
+send of 0 bytes FULL on a full pipe: it returned within 200 ms: 0x00000001
+send of 0 bytes FULL on a full pipe: the free size after it: 0x00000000
+receive of 0 bytes ASAP on an empty pipe: the call: 0x00000000
+receive of 0 bytes ASAP on an empty pipe: its size: 0x00000000
+receive of 0 bytes ASAP on an empty pipe: the timeout changed: 0x00000000
+receive of 0 bytes ASAP on an empty pipe: it returned within 200 ms: 0x00000001
+receive of 0 bytes ASAP on an empty pipe: the free size after it: 0x00001000
+receive of 0 bytes ASAP, pipe with bytes: the call: 0x00000000
+receive of 0 bytes ASAP, pipe with bytes: its size: 0x00000000
+receive of 0 bytes ASAP, pipe with bytes: the timeout changed: 0x00000000
+receive of 0 bytes ASAP, pipe with bytes: it returned within 200 ms: 0x00000001
+receive of 0 bytes ASAP, pipe with bytes: the free size after it: 0x00000FF0
+receive of 0 bytes FULL on an empty pipe: the call: 0x00000000
+receive of 0 bytes FULL on an empty pipe: its size: 0x00000000
+receive of 0 bytes FULL on an empty pipe: the timeout changed: 0x00000000
+receive of 0 bytes FULL on an empty pipe: it returned within 200 ms: 0x00000001
+receive of 0 bytes FULL on an empty pipe: the free size after it: 0x00001000
+receive of 0 bytes FULL, pipe with bytes: the call: 0x00000000
+receive of 0 bytes FULL, pipe with bytes: its size: 0x00000000
+receive of 0 bytes FULL, pipe with bytes: the timeout changed: 0x00000000
+receive of 0 bytes FULL, pipe with bytes: it returned within 200 ms: 0x00000001
+receive of 0 bytes FULL, pipe with bytes: the free size after it: 0x00000FF0
+send CB of 0 bytes ASAP on an empty pipe: the call: 0x00000000
+send CB of 0 bytes ASAP on an empty pipe: its size: 0x00000000
+send CB of 0 bytes ASAP on an empty pipe: the timeout changed: 0x00000000
+send CB of 0 bytes ASAP on an empty pipe: it returned within 200 ms: 0x00000001
+send CB of 0 bytes ASAP on an empty pipe: the free size after it: 0x00001000
+send CB of 0 bytes ASAP on a full pipe: the call: 0x00000000
+send CB of 0 bytes ASAP on a full pipe: its size: 0x00000000
+send CB of 0 bytes ASAP on a full pipe: the timeout changed: 0x00000000
+send CB of 0 bytes ASAP on a full pipe: it returned within 200 ms: 0x00000001
+send CB of 0 bytes ASAP on a full pipe: the free size after it: 0x00000000
+receive CB of 0 bytes ASAP on an empty pipe: the call: 0x00000000
+receive CB of 0 bytes ASAP on an empty pipe: its size: 0x00000000
+receive CB of 0 bytes ASAP on an empty pipe: the timeout changed: 0x00000000
+receive CB of 0 bytes ASAP on an empty pipe: it returned within 200 ms: 0x00000001
+receive CB of 0 bytes ASAP on an empty pipe: the free size after it: 0x00001000
+receive CB of 0 bytes ASAP, pipe with bytes: the call: 0x00000000
+receive CB of 0 bytes ASAP, pipe with bytes: its size: 0x00000000
+receive CB of 0 bytes ASAP, pipe with bytes: the timeout changed: 0x00000000
+receive CB of 0 bytes ASAP, pipe with bytes: it returned within 200 ms: 0x00000001
+receive CB of 0 bytes ASAP, pipe with bytes: the free size after it: 0x00000FF0
+receive of 0 bytes ASAP on a full pipe with a FULL sender: the waiting senders before the receive: 0x00000001
+receive of 0 bytes ASAP on a full pipe with a FULL sender: the call: 0x00000000
+receive of 0 bytes ASAP on a full pipe with a FULL sender: its size: 0x00000000
+receive of 0 bytes ASAP on a full pipe with a FULL sender: the timeout changed: 0x00000000
+receive of 0 bytes ASAP on a full pipe with a FULL sender: it returned within 200 ms: 0x00000001
+receive of 0 bytes ASAP on a full pipe with a FULL sender: the free size after it: 0x00000000
+receive of 0 bytes ASAP on a full pipe with a FULL sender: the sender still waits: 0x00000001
+receive of 0 bytes ASAP on a full pipe with a FULL sender: the waiting senders after the receive: 0x00000001
+receive of 0 bytes ASAP on a full pipe with a FULL sender: the free size after the receive: 0x00000000
+receive of 0 bytes ASAP on a full pipe with a FULL sender: cancel the pipe: 0x00000000
+receive of 0 bytes ASAP on a full pipe with a FULL sender: the senders the cancel ended: 0x00000001
+receive of 0 bytes ASAP on a full pipe with a FULL sender: the receivers the cancel ended: 0x00000000
+receive of 0 bytes ASAP on a full pipe with a FULL sender: the sender's result: 0x80028007
+receive of 0 bytes ASAP on a full pipe with a FULL sender: the sender's size: 0x00000000
+DONE

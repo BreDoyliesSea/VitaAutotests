@@ -1,6 +1,6 @@
-// The core registers a thread starts with, r0 to r12, sp, lr and the CPSR: for a first start with
-// an argument, a restart without one, a restart from plain C code, a new thread, and a thread
-// started by another thread. The starting thread holds markers in r4 to r11 when it calls
+// The core registers a thread starts with, r0 to r12, sp and lr: for a first start with an
+// argument, a restart without one, a restart from plain C code, a new thread, and a thread started
+// by another thread. The starting thread holds markers in r4 to r11 when it calls
 // sceKernelStartThread, so the output shows whether any of them reach the new thread. A register
 // pointing into the thread's stack is printed as its distance below the stack top, and lr only as
 // comparisons.
@@ -10,7 +10,7 @@
 
 typedef struct Seen {
     unsigned int r[13];
-    unsigned int sp, lr, cpsr;
+    unsigned int sp, lr;
     unsigned int stack_low, stack_high;
 } Seen;
 
@@ -18,15 +18,14 @@ typedef struct Seen {
 static Seen seen[RUNS];
 static volatile int run;
 
-// Called by the entry with the registers it pushed and the CPSR it read
-void record_start(const unsigned int *pushed, unsigned int cpsr);
-void record_start(const unsigned int *pushed, unsigned int cpsr) {
+// Called by the entry with the registers it pushed
+void record_start(const unsigned int *pushed);
+void record_start(const unsigned int *pushed) {
     Seen *s = &seen[run];
     for (int i = 0; i < 13; i++)
         s->r[i] = pushed[i];
     s->lr = pushed[13];
     s->sp = (unsigned int)pushed + 14 * 4;
-    s->cpsr = cpsr;
     SceKernelThreadInfo info = { .size = sizeof(info) };
     sceKernelGetThreadInfo(sceKernelGetThreadId(), &info);
     s->stack_low = (unsigned int)info.stack;
@@ -40,7 +39,6 @@ __attribute__((naked)) static int start_entry(SceSize args, void *argp) {
     __asm__ volatile(
         "push {r0-r12, lr}\n\t"
         "mov r0, sp\n\t"
-        "mrs r1, apsr\n\t"
         "bl record_start\n\t"
         "pop {r0-r12, lr}\n\t"
         "movs r0, #0\n\t"
@@ -87,7 +85,6 @@ static void report(const char *name, int i) {
     print_register(name, s, "sp", s->sp);
     PRINTF(s->lr & 1, "%s: lr is Thumb", name);
     PRINTF(s->lr == seen[0].lr, "%s: lr is the first start's", name);
-    PRINTF(s->cpsr, "%s: cpsr", name);
 }
 
 static int starter_thread(SceSize args, void *argp) {

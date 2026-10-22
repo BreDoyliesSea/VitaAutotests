@@ -1,0 +1,31 @@
+manual reset, set event: waiter 0's result: 0x00000000
+manual reset, set event: the pattern waiter 0 got: 0x00008000
+manual reset, set event: waiter 1's result: 0x00000000
+manual reset, set event: the pattern waiter 1 got: 0x00008000
+manual reset, set event: waiter 2's result: 0x00000000
+manual reset, set event: the pattern waiter 2 got: 0x00008000
+manual reset, set event: the timer's bit after: 0x00008000
+manual reset, pulse event: waiter 0's result: 0x00000000
+manual reset, pulse event: the pattern waiter 0 got: 0x00008000
+manual reset, pulse event: waiter 1's result: 0x00000000
+manual reset, pulse event: the pattern waiter 1 got: 0x00008000
+manual reset, pulse event: waiter 2's result: 0x00000000
+manual reset, pulse event: the pattern waiter 2 got: 0x00008000
+manual reset, pulse event: the timer's bit after: 0x00000000
+auto reset, repeating set event, FIFO: waiter 0's result: 0x00000000
+auto reset, repeating set event, FIFO: the pattern waiter 0 got: 0x00008000
+auto reset, repeating set event, FIFO: waiter 1's result: 0x00000000
+auto reset, repeating set event, FIFO: the pattern waiter 1 got: 0x00008000
+auto reset, repeating set event, FIFO: waiter 2's result: 0x00000000
+auto reset, repeating set event, FIFO: the pattern waiter 2 got: 0x00008000
+auto reset, repeating set event, priority: waiter 0's result: 0x00000000
+auto reset, repeating set event, priority: the pattern waiter 0 got: 0x00008000
+auto reset, repeating set event, priority: waiter 1's result: 0x00000000
+auto reset, repeating set event, priority: the pattern waiter 1 got: 0x00008000
+auto reset, repeating set event, priority: waiter 2's result: 0x00000000
+auto reset, repeating set event, priority: the pattern waiter 2 got: 0x00008000
+auto reset, one shot set event: waiter 0's result: 0x00000000
+auto reset, one shot set event: the pattern waiter 0 got: 0x00008000
+auto reset, one shot set event: waiter 1's result: 0x80028005
+auto reset, one shot set event: waiter 2's result: 0x80028005
+DONE

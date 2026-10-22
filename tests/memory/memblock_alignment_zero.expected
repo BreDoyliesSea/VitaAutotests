@@ -1,0 +1,14 @@
+USER_RW aligned to 0x0: 0x00000000
+USER_RW aligned to 0x0: the base is aligned to 0x1000: 0x00000001
+USER_RW_UNCACHE aligned to 0x0: 0x00000000
+USER_RW_UNCACHE aligned to 0x0: the base is aligned to 0x1000: 0x00000001
+USER_CDRAM_RW aligned to 0x0: 0x00000000
+USER_CDRAM_RW aligned to 0x0: the base is aligned to 0x40000: 0x00000001
+USER_MAIN_PHYCONT_RW aligned to 0x0: 0x00000000
+USER_MAIN_PHYCONT_RW aligned to 0x0: the base is aligned to 0x100000: 0x00000001
+USER_MAIN_PHYCONT_NC_RW aligned to 0x0: 0x00000000
+USER_MAIN_PHYCONT_NC_RW aligned to 0x0: the base is aligned to 0x100000: 0x00000001
+USER_RW with PHYCONT aligned to 0x0: 0x00000000
+USER_RW with PHYCONT aligned to 0x0: the base is aligned to 0x100000: 0x00000001
+USER_MAIN_PHYCONT_RW aligned to 0x100000: 0x80020005
+DONE

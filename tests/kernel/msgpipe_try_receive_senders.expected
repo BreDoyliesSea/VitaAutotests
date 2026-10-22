@@ -1,0 +1,42 @@
+FULL 4096 with 4092 held and a FULL sender of 8: the pipe is ready for the try receive: 0x00000001
+FULL 4096 with 4092 held and a FULL sender of 8: the free size before the try receive: 0x00000004
+FULL 4096 with 4092 held and a FULL sender of 8: the waiting senders before the try receive: 0x00000001
+FULL 4096 with 4092 held and a FULL sender of 8: the try receive: 0x00000000
+FULL 4096 with 4092 held and a FULL sender of 8: the try receive gets "abcd" to "ABCD", size: 0x00001000
+FULL 4096 with 4092 held and a FULL sender of 8: the sender is done after the try receive: 0x00000001
+FULL 4096 with 4092 held and a FULL sender of 8: the free size after the try receive: 0x00000FFC
+FULL 4096 with 4092 held and a FULL sender of 8: the waiting senders after the try receive: 0x00000000
+FULL 4096 with 4092 held and a FULL sender of 8: the sender's result: 0x00000000
+FULL 4096 with 4092 held and a FULL sender of 8: the sender's size sent: 0x00000008
+FULL 4096 with 4092 held and a FULL sender of 8: the pipe then holds "EFGH" to "EFGH", size: 0x00000004
+FULL 4096 with a full pipe and a FULL sender of 8: the pipe is ready for the try receive: 0x00000001
+FULL 4096 with a full pipe and a FULL sender of 8: the free size before the try receive: 0x00000000
+FULL 4096 with a full pipe and a FULL sender of 8: the waiting senders before the try receive: 0x00000001
+FULL 4096 with a full pipe and a FULL sender of 8: the try receive: 0x00000000
+FULL 4096 with a full pipe and a FULL sender of 8: the try receive gets "abcd" to "klmn", size: 0x00001000
+FULL 4096 with a full pipe and a FULL sender of 8: the sender is done after the try receive: 0x00000001
+FULL 4096 with a full pipe and a FULL sender of 8: the free size after the try receive: 0x00000FF8
+FULL 4096 with a full pipe and a FULL sender of 8: the waiting senders after the try receive: 0x00000000
+FULL 4096 with a full pipe and a FULL sender of 8: the sender's result: 0x00000000
+FULL 4096 with a full pipe and a FULL sender of 8: the sender's size sent: 0x00000008
+FULL 4096 with a full pipe and a FULL sender of 8: the pipe then holds "ABCD" to "EFGH", size: 0x00000008
+ASAP 16 with 4092 held and a FULL sender of 8: the pipe is ready for the try receive: 0x00000001
+ASAP 16 with 4092 held and a FULL sender of 8: the free size before the try receive: 0x00000004
+ASAP 16 with 4092 held and a FULL sender of 8: the waiting senders before the try receive: 0x00000001
+ASAP 16 with 4092 held and a FULL sender of 8: the try receive: 0x00000000
+ASAP 16 with 4092 held and a FULL sender of 8: the try receive gets "abcd" to "mnop", size: 0x00000010
+ASAP 16 with 4092 held and a FULL sender of 8: the sender is done after the try receive: 0x00000001
+ASAP 16 with 4092 held and a FULL sender of 8: the free size after the try receive: 0x0000000C
+ASAP 16 with 4092 held and a FULL sender of 8: the waiting senders after the try receive: 0x00000000
+ASAP 16 with 4092 held and a FULL sender of 8: the sender's result: 0x00000000
+ASAP 16 with 4092 held and a FULL sender of 8: the sender's size sent: 0x00000008
+ASAP 16 with 4092 held and a FULL sender of 8: the pipe then holds "qrst" to "EFGH", size: 0x00000FF4
+FULL 4096 with 4000 held and no sender: the pipe is ready for the try receive: 0x00000001
+FULL 4096 with 4000 held and no sender: the free size before the try receive: 0x00000060
+FULL 4096 with 4000 held and no sender: the waiting senders before the try receive: 0x00000000
+FULL 4096 with 4000 held and no sender: the try receive: 0x80028223
+FULL 4096 with 4000 held and no sender: the try receive gets "" to "", size: 0x0000DEAD
+FULL 4096 with 4000 held and no sender: the free size after the try receive: 0x00000060
+FULL 4096 with 4000 held and no sender: the waiting senders after the try receive: 0x00000000
+FULL 4096 with 4000 held and no sender: the pipe then holds "abcd" to "stuv", size: 0x00000FA0
+DONE
