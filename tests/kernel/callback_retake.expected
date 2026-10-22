@@ -1,0 +1,43 @@
+recursive mutex the callback locks: T waits on the lock before the notify: 0x00000001
+recursive mutex the callback locks: T waits on the gate after the notify: 0x00000001
+recursive mutex the callback locks: the callback's lock: 0x00000000
+recursive mutex the callback locks: T waits on the lock again after its callback: 0x00000001
+recursive mutex the callback locks: T's wait: 0x80028005
+recursive mutex the callback locks: the lock's count after T's wait: 0x00000001
+recursive mutex the callback locks: T owns the lock after T's wait: 0x00000001
+mutex the callback locks: T waits on the lock before the notify: 0x00000001
+mutex the callback locks: T waits on the gate after the notify: 0x00000001
+mutex the callback locks: the callback's lock: 0x00000000
+mutex the callback locks: T waits on the lock again after its callback: 0x00000001
+mutex the callback locks: T's wait: 0x80028005
+mutex the callback locks: the lock's count after T's wait: 0x00000001
+mutex the callback locks: T owns the lock after T's wait: 0x00000001
+recursive lightweight mutex the callback locks: T waits on the lock before the notify: 0x00000001
+recursive lightweight mutex the callback locks: T waits on the gate after the notify: 0x00000001
+recursive lightweight mutex the callback locks: the callback's lock: 0x00000000
+recursive lightweight mutex the callback locks: T waits on the lock again after its callback: 0x00000001
+recursive lightweight mutex the callback locks: T's wait: 0x80028005
+recursive lightweight mutex the callback locks: the lock's count after T's wait: 0x00000001
+recursive lightweight mutex the callback locks: T owns the lock after T's wait: 0x00000001
+lightweight mutex the callback locks: T waits on the lock before the notify: 0x00000001
+lightweight mutex the callback locks: T waits on the gate after the notify: 0x00000001
+lightweight mutex the callback locks: the callback's lock: 0x00000000
+lightweight mutex the callback locks: T waits on the lock again after its callback: 0x00000001
+lightweight mutex the callback locks: T's wait: 0x80028005
+lightweight mutex the callback locks: the lock's count after T's wait: 0x00000001
+lightweight mutex the callback locks: T owns the lock after T's wait: 0x00000001
+reader comes back to a read lock: T waits on the lock before the notify: 0x00000001
+reader comes back to a read lock: T waits on the gate after the notify: 0x00000001
+reader comes back to a read lock: T's wait: 0x00000000
+reader comes back to a read lock: the lock count after T's wait: 0x00000002
+writer comes back to a read lock: T waits on the lock before the notify: 0x00000001
+writer comes back to a read lock: T waits on the gate after the notify: 0x00000001
+writer comes back to a read lock: T waits on the rwlock again after its callback: 0x00000001
+writer comes back to a read lock: T's wait: 0x00000000
+reader behind a writer that leaves for callbacks: W waits on the rwlock before the notify: 0x00000001
+reader behind a writer that leaves for callbacks: R waits on the rwlock before the notify: 0x00000001
+reader behind a writer that leaves for callbacks: W waits on the gate after the notify: 0x00000001
+reader behind a writer that leaves for callbacks: R got its read lock while W's callback waits: 0x00000001
+reader behind a writer that leaves for callbacks: R's wait: 0x00000000
+reader behind a writer that leaves for callbacks: W's wait: 0x00000000
+DONE

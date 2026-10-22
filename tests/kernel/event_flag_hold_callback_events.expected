@@ -1,0 +1,41 @@
+a set during the callback: the set: 0x00000000
+a set during the callback: the poll during the callback: 0x800280E2
+a set during the callback: A's wait: 0x00000000
+a set during the callback: A's time left is above 0: 0x00000001
+a set during the callback: the poll after A's wait returned: 0x00000000
+a set during the callback: the poll after A ended: 0x00000000
+a set during the callback past the deadline: A's wait: 0x00000000
+a set during the callback past the deadline: A's time left is above 0: 0x00000001
+a set during the callback past the deadline: the poll after A's wait returned: 0x00000000
+a set during the callback past the deadline: the poll after A ended: 0x00000000
+a cancel during the callback: the cancel: 0x00000000
+a cancel during the callback: the waiters the cancel woke: 0x00000000
+a cancel during the callback: the poll during the callback: 0x800280E2
+a cancel during the callback: A waits again after its callback: 0x00000001
+a cancel during the callback: the poll after the callback: 0x800280E2
+a cancel during the callback: A's wait: 0x00000000
+a cancel during the callback: the poll after A's wait returned: 0x00000000
+a cancel during the callback: the poll after A ended: 0x00000000
+a delete during the callback: the delete: 0x00000000
+a delete during the callback: A's wait: 0x80028006
+a delete during the callback: A's wait returned within 500 ms of the signal: 0x00000001
+a delete during the callback: A's time left is above 0: 0x00000001
+a semaphore deleted during the callback: the delete: 0x00000000
+a semaphore deleted during the callback: A's wait: 0x80028006
+a semaphore deleted during the callback: A's wait returned within 500 ms of the signal: 0x00000001
+a semaphore deleted during the callback: A's time left is above 0: 0x00000001
+a second notify during the callback: the second notify: 0x00000000
+a second notify during the callback: runs of the callback when A's wait returned: 0x00000002
+a second notify during the callback: A waits again after its callbacks: 0x00000001
+a second notify during the callback: the poll after the callbacks: 0x800280E2
+a second notify during the callback: A's wait: 0x00000000
+a second notify during the callback: the poll after A's wait returned: 0x00000000
+a second notify during the callback: the poll after A ended: 0x00000000
+a timeout while waiting again: A waits again after its callback: 0x00000001
+a timeout while waiting again: A's wait: 0x80028005
+a timeout while waiting again: the poll after A's wait returned: 0x00000000
+a timeout while waiting again: the poll after A ended: 0x00000000
+a timeout of 1 that misses: A's wait: 0x80028005
+a timeout of 1 that misses: the poll after it returned: 0x800280E2
+a timeout of 1 that misses: the poll after A ended: 0x00000000
+DONE

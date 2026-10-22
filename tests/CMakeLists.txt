@@ -293,6 +293,8 @@ vita_test(callback_notify_then_release kernel/callback_notify_then_release.c)
 vita_test(callback_notify_time_left kernel/callback_notify_time_left.c)
 vita_test(callback_notify_preempt kernel/callback_notify_preempt.c)
 vita_test(callback_notify_departure_state kernel/callback_notify_departure_state.c)
+vita_test(callback_retake kernel/callback_retake.c)
+vita_test(event_flag_hold_callback_events kernel/event_flag_hold_callback_events.c)
 vita_test(msgpipe_wake_state kernel/msgpipe_wake_state.c)
 
 # The module module_start_thread and module_start_vfp load. vita_create_self runs in a function, since it adds its flags
