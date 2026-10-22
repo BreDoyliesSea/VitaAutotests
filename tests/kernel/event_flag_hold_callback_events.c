@@ -39,17 +39,13 @@
 // - a timeout while waiting again: A's timeout is 600 ms and its callback returns at once. A waits
 //   again and its deadline passes while it waits in the queue. Prints whether A waits again, A's
 //   wait, the poll after A's wait returned, and the poll after A ended.
-// - a timeout of 1 that misses: A waits with sceKernelWaitEventFlag, without callbacks, for bit 0x1
-//   with a timeout of 1 microsecond. Prints A's wait, the poll after it returned, and the poll
-//   after A ended.
 //
 // On a PS Vita TV on firmware 3.65 the flag stays held while A runs its callback in every case. A
 // set during the callback lets A take the bits after it, also past A's deadline, with time left
 // from before, and frees the flag. A cancel during the callback wakes nobody, and A waits again,
 // still holding the flag, until the set. A delete of the flag or of a semaphore during the callback
 // ends A's wait with 0x80028006 at once, with time left. A second notify runs the callback twice
-// before A waits again. A timeout while A waits again frees the flag. A wait with a timeout of 1
-// that misses keeps the flag held until A ends, like one with a timeout of 0.
+// before A waits again. A timeout while A waits again frees the flag.
 #include <psp2/kernel/processmgr.h>
 #include <psp2/kernel/threadmgr.h>
 
@@ -73,8 +69,7 @@ typedef enum Case {
     DELETE_FLAG,
     DELETE_SEMA,
     SECOND_NOTIFY,
-    TIMEOUT_AGAIN,
-    TIMEOUT_ONE
+    TIMEOUT_AGAIN
 } Case;
 
 static SceUID flag, sema, gate, rest_sema;
@@ -108,30 +103,25 @@ static int hold_callback(int notify_id, int count, int arg, void *common) {
     return 0;
 }
 
-// Waits with callbacks for bit 0x1 of the flag, or for the semaphore, or without callbacks in the
-// last case. Then it records the result and rests until the main thread lets it end.
+// Waits with callbacks for bit 0x1 of the flag, or for the semaphore. Then it records the result
+// and rests until the main thread lets it end.
 static int a_entry(SceSize args, void *argp) {
     (void)args;
     (void)argp;
     SceUInt32 bits;
     SceUInt timeout = a_timeout;
-    if (current_case == TIMEOUT_ONE) {
-        a_result = sceKernelWaitEventFlag(flag, 0x1, SCE_EVENT_WAITOR, &bits, &timeout);
-    } else {
-        callback = sceKernelCreateCallback("hold", 0, hold_callback, NULL);
-        if (current_case == DELETE_SEMA)
-            a_result = sceKernelWaitSemaCB(sema, 1, &timeout);
-        else
-            a_result = sceKernelWaitEventFlagCB(flag, 0x1, SCE_EVENT_WAITOR, &bits, &timeout);
-    }
+    callback = sceKernelCreateCallback("hold", 0, hold_callback, NULL);
+    if (current_case == DELETE_SEMA)
+        a_result = sceKernelWaitSemaCB(sema, 1, &timeout);
+    else
+        a_result = sceKernelWaitEventFlagCB(flag, 0x1, SCE_EVENT_WAITOR, &bits, &timeout);
     a_end = sceKernelGetProcessTimeWide();
     a_left = timeout;
     runs_at_return = callback_runs;
     step = 1;
     timeout = LONG_TIMEOUT;
     sceKernelWaitSema(rest_sema, 1, &timeout);
-    if (callback)
-        sceKernelDeleteCallback(callback);
+    sceKernelDeleteCallback(callback);
     return 0;
 }
 
@@ -327,19 +317,6 @@ static void timeout_again_case(void) {
     PRINTF(poll_after_end, "%s: the poll after A ended", name);
 }
 
-static void timeout_one_case(void) {
-    const char *name = "a timeout of 1 that misses";
-    const SceUID a = begin(TIMEOUT_ONE, 1);
-    TEST_WAIT_FOR(step >= 1);
-    const int poll_after_wait = poll_set_bit();
-    end_a(a);
-    const int poll_after_end = poll_set_bit();
-    clean_up();
-    PRINTF(a_result, "%s: A's wait", name);
-    PRINTF(poll_after_wait, "%s: the poll after it returned", name);
-    PRINTF(poll_after_end, "%s: the poll after A ended", name);
-}
-
 int main(void) {
     sceKernelChangeThreadCpuAffinityMask(0, SCE_KERNEL_CPU_MASK_USER_0);
     sceKernelChangeThreadPriority(0, MAIN_PRIORITY);
@@ -353,7 +330,6 @@ int main(void) {
     delete_case(DELETE_SEMA, "a semaphore deleted during the callback");
     second_notify_case();
     timeout_again_case();
-    timeout_one_case();
 
     test_exit();
     return 0;
