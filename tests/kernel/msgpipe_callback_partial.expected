@@ -1,0 +1,32 @@
+callback returns: R waits with callbacks before the first send: 0x00000001
+callback returns: the first send: 0x00000000
+callback returns: the first send's size: 0x00000004
+callback returns: R still waits after the first send: 0x00000001
+callback returns: the notify: 0x00000000
+callback returns: R waits again after its callback: 0x00000001
+callback returns: the receivers the pipe counts then: 0x00000001
+callback returns: the bytes in the pipe then: 0x00000000
+callback returns: the second send: 0x00000000
+callback returns: the second send's size: 0x00000004
+callback returns: R's receive: 0x00000000
+callback returns: R's size: 0x00000008
+callback returns: R's buffer reads ABCDEFGH: 0x00000001
+callback returns: runs of R's callback: 0x00000001
+callback returns: the bytes left in the pipe: 0x00000000
+callback waits on a gate: R waits with callbacks before the first send: 0x00000001
+callback waits on a gate: the first send: 0x00000000
+callback waits on a gate: the first send's size: 0x00000004
+callback waits on a gate: R still waits after the first send: 0x00000001
+callback waits on a gate: the notify: 0x00000000
+callback waits on a gate: R is in the gate's wait: 0x00000001
+callback waits on a gate: the receivers the pipe counts then: 0x00000000
+callback waits on a gate: the bytes in the pipe then: 0x00000000
+callback waits on a gate: the second send: 0x00000000
+callback waits on a gate: the second send's size: 0x00000004
+callback waits on a gate: the bytes in the pipe after the second send: 0x00000004
+callback waits on a gate: R's receive: 0x00000000
+callback waits on a gate: R's size: 0x00000008
+callback waits on a gate: R's buffer reads ABCDEFGH: 0x00000001
+callback waits on a gate: runs of R's callback: 0x00000001
+callback waits on a gate: the bytes left in the pipe: 0x00000000
+DONE

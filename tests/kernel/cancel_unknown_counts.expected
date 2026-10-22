@@ -1,0 +1,73 @@
+semaphore: an unknown UID: cancel: 0x80028101
+semaphore: an unknown UID: the waiting count: 0x00000000
+semaphore: a deleted semaphore: cancel: 0x80028101
+semaphore: a deleted semaphore: the waiting count: 0x00000000
+semaphore: a mutex: cancel: 0x80028101
+semaphore: a mutex: the waiting count: 0x00000000
+semaphore: no waiters: cancel: 0x00000000
+semaphore: no waiters: the waiting count: 0x00000000
+mutex: an unknown UID: cancel: 0x80028141
+mutex: an unknown UID: the waiting count: 0x00000000
+mutex: a deleted mutex: cancel: 0x80028141
+mutex: a deleted mutex: the waiting count: 0x00000000
+mutex: a semaphore: cancel: 0x80028141
+mutex: a semaphore: the waiting count: 0x00000000
+mutex: no waiters: cancel: 0x00000000
+mutex: no waiters: the waiting count: 0x00000000
+reader/writer lock: an unknown UID: cancel: 0x800281E1
+reader/writer lock: an unknown UID: the waiting readers: 0x00000000
+reader/writer lock: an unknown UID: the waiting writers: 0x00000000
+reader/writer lock: a deleted reader/writer lock: cancel: 0x800281E1
+reader/writer lock: a deleted reader/writer lock: the waiting readers: 0x00000000
+reader/writer lock: a deleted reader/writer lock: the waiting writers: 0x00000000
+reader/writer lock: a semaphore: cancel: 0x800281E1
+reader/writer lock: a semaphore: the waiting readers: 0x00000000
+reader/writer lock: a semaphore: the waiting writers: 0x00000000
+reader/writer lock: no waiters: cancel: 0x00000000
+reader/writer lock: no waiters: the waiting readers: 0x00000000
+reader/writer lock: no waiters: the waiting writers: 0x00000000
+event flag: an unknown UID: cancel: 0x800280E1
+event flag: an unknown UID: the waiting count: 0x00000000
+event flag: a deleted event flag: cancel: 0x800280E1
+event flag: a deleted event flag: the waiting count: 0x00000000
+event flag: a semaphore: cancel: 0x800280E1
+event flag: a semaphore: the waiting count: 0x00000000
+event flag: no waiters: cancel: 0x00000000
+event flag: no waiters: the waiting count: 0x00000000
+simple event: an unknown UID: cancel: 0x80028201
+simple event: an unknown UID: the waiting count: 0x00000000
+simple event: a deleted simple event: cancel: 0x80028201
+simple event: a deleted simple event: the waiting count: 0x00000000
+simple event: a semaphore: cancel: 0x80028201
+simple event: a semaphore: the waiting count: 0x00000000
+simple event: no waiters: cancel: 0x00000000
+simple event: no waiters: the waiting count: 0x00000000
+simple event with a set pattern: an unknown UID: cancel: 0x80028201
+simple event with a set pattern: an unknown UID: the waiting count: 0x00000000
+simple event with a set pattern: a deleted simple event: cancel: 0x80028201
+simple event with a set pattern: a deleted simple event: the waiting count: 0x00000000
+simple event with a set pattern: a semaphore: cancel: 0x80028201
+simple event with a set pattern: a semaphore: the waiting count: 0x00000000
+simple event with a set pattern: no waiters: cancel: 0x00000000
+simple event with a set pattern: no waiters: the waiting count: 0x00000000
+message pipe: an unknown UID: cancel: 0x80028221
+message pipe: an unknown UID: the waiting senders: 0x00000000
+message pipe: an unknown UID: the waiting receivers: 0x00000000
+message pipe: a deleted message pipe: cancel: 0x80028221
+message pipe: a deleted message pipe: the waiting senders: 0x00000000
+message pipe: a deleted message pipe: the waiting receivers: 0x00000000
+message pipe: a semaphore: cancel: 0x80028221
+message pipe: a semaphore: the waiting senders: 0x00000000
+message pipe: a semaphore: the waiting receivers: 0x00000000
+message pipe: no waiters: cancel: 0x00000000
+message pipe: no waiters: the waiting senders: 0x00000000
+message pipe: no waiters: the waiting receivers: 0x00000000
+timer: an unknown UID: cancel: 0x80028241
+timer: an unknown UID: the waiting count: 0x00000000
+timer: a deleted timer: cancel: 0x80028241
+timer: a deleted timer: the waiting count: 0x00000000
+timer: a semaphore: cancel: 0x80028241
+timer: a semaphore: the waiting count: 0x00000000
+timer: no waiters: cancel: 0x00000000
+timer: no waiters: the waiting count: 0x00000000
+DONE

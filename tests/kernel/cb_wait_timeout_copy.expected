@@ -1,0 +1,49 @@
+semaphore: T waits with callbacks when the main thread notifies: 0x00000001
+semaphore: T's wait: 0x00000000
+semaphore: the timeout the callback saw is the one passed: 0x00000001
+semaphore: the timeout the callback saw is above 1 s: 0x00000001
+semaphore: the time left after the call is below the timeout passed: 0x00000001
+semaphore: the time left after the call is above 1 s: 0x00000001
+event flag: T waits with callbacks when the main thread notifies: 0x00000001
+event flag: T's wait: 0x00000000
+event flag: the timeout the callback saw is the one passed: 0x00000001
+event flag: the timeout the callback saw is above 1 s: 0x00000001
+event flag: the time left after the call is below the timeout passed: 0x00000001
+event flag: the time left after the call is above 1 s: 0x00000001
+mutex: T waits with callbacks when the main thread notifies: 0x00000001
+mutex: T's wait: 0x00000000
+mutex: the timeout the callback saw is the one passed: 0x00000001
+mutex: the timeout the callback saw is above 1 s: 0x00000001
+mutex: the time left after the call is below the timeout passed: 0x00000001
+mutex: the time left after the call is above 1 s: 0x00000001
+lightweight mutex: T waits with callbacks when the main thread notifies: 0x00000001
+lightweight mutex: T's wait: 0x00000000
+lightweight mutex: the timeout the callback saw is the one passed: 0x00000001
+lightweight mutex: the timeout the callback saw is above 1 s: 0x00000001
+lightweight mutex: the time left after the call is below the timeout passed: 0x00000001
+lightweight mutex: the time left after the call is above 1 s: 0x00000001
+rwlock write lock: T waits with callbacks when the main thread notifies: 0x00000001
+rwlock write lock: T's wait: 0x00000000
+rwlock write lock: the timeout the callback saw is the one passed: 0x00000001
+rwlock write lock: the timeout the callback saw is above 1 s: 0x00000001
+rwlock write lock: the time left after the call is below the timeout passed: 0x00000001
+rwlock write lock: the time left after the call is above 1 s: 0x00000001
+condition: T waits with callbacks when the main thread notifies: 0x00000001
+condition: T's wait: 0x00000000
+condition: the timeout the callback saw is the one passed: 0x00000001
+condition: the timeout the callback saw is above 1 s: 0x00000001
+condition: the time left after the call is below the timeout passed: 0x00000001
+condition: the time left after the call is above 1 s: 0x00000001
+simple event: T waits with callbacks when the main thread notifies: 0x00000001
+simple event: T's wait: 0x00000000
+simple event: the timeout the callback saw is the one passed: 0x00000001
+simple event: the timeout the callback saw is above 1 s: 0x00000001
+simple event: the time left after the call is below the timeout passed: 0x00000001
+simple event: the time left after the call is above 1 s: 0x00000001
+message pipe receive: T waits with callbacks when the main thread notifies: 0x00000001
+message pipe receive: T's wait: 0x00000000
+message pipe receive: the timeout the callback saw is the one passed: 0x00000000
+message pipe receive: the timeout the callback saw is above 1 s: 0x00000001
+message pipe receive: the time left after the call is below the timeout passed: 0x00000001
+message pipe receive: the time left after the call is above 1 s: 0x00000001
+DONE

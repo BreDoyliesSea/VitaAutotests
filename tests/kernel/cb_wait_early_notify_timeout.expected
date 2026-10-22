@@ -1,0 +1,21 @@
+semaphore, nothing pending: the wait: 0x00000000
+semaphore, nothing pending: the time left is below the timeout passed: 0x00000001
+event flag, nothing pending: the wait: 0x00000000
+event flag, nothing pending: the time left is below the timeout passed: 0x00000001
+simple event, nothing pending: the wait: 0x00000000
+simple event, nothing pending: the time left is below the timeout passed: 0x00000001
+message pipe, nothing pending: the wait: 0x00000000
+message pipe, nothing pending: the time left is below the timeout passed: 0x00000001
+semaphore, callback pending: the wait: 0x00000000
+semaphore, callback pending: runs of the callback: 0x00000002
+semaphore, callback pending: the timeout is exactly the one passed: 0x00000001
+event flag, callback pending: the wait: 0x00000000
+event flag, callback pending: runs of the callback: 0x00000002
+event flag, callback pending: the timeout is exactly the one passed: 0x00000001
+simple event, callback pending: the wait: 0x800280A2
+simple event, callback pending: runs of the callback: 0x00000002
+simple event, callback pending: the timeout is exactly the one passed: 0x00000001
+message pipe, callback pending: the wait: 0x00000000
+message pipe, callback pending: runs of the callback: 0x00000002
+message pipe, callback pending: the timeout is exactly the one passed: 0x00000001
+DONE

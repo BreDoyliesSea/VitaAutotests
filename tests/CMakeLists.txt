@@ -305,6 +305,15 @@ vita_test(msgpipe_zero_bytes kernel/msgpipe_zero_bytes.c)
 vita_test(msgpipe_try_receive_senders kernel/msgpipe_try_receive_senders.c)
 vita_test(msgpipe_partial_head_order kernel/msgpipe_partial_head_order.c)
 vita_test(msgpipe_callback_rejoin_order kernel/msgpipe_callback_rejoin_order.c)
+vita_test(cb_wait_timeout_copy kernel/cb_wait_timeout_copy.c)
+vita_test(cb_wait_early_notify_timeout kernel/cb_wait_early_notify_timeout.c)
+vita_test(callback_deleted_object kernel/callback_deleted_object.c)
+vita_test(msgpipe_callback_partial kernel/msgpipe_callback_partial.c)
+vita_test(msgpipe_partial_head_rejoin kernel/msgpipe_partial_head_rejoin.c)
+vita_test(event_initial_user_data kernel/event_initial_user_data.c)
+vita_test(event_flag_wait_out_bits kernel/event_flag_wait_out_bits.c)
+vita_test(cancel_unknown_counts kernel/cancel_unknown_counts.c)
+vita_test(cond_mutex_delete_wakes kernel/cond_mutex_delete_wakes.c)
 
 # The module module_start_thread and module_start_vfp load. vita_create_self runs in a function, since it adds its flags
 # to the scope it runs in, where they would also apply to the test vpk's self.

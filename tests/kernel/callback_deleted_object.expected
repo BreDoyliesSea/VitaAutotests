@@ -1,0 +1,21 @@
+semaphore: T's callback waits on the gate when the object is deleted: 0x00000001
+semaphore: the delete: 0x00000000
+semaphore: T's wait: 0x80028006
+semaphore: T's wait returned within 1 s of the gate signal: 0x00000001
+event flag: T's callback waits on the gate when the object is deleted: 0x00000001
+event flag: the delete: 0x00000000
+event flag: T's wait: 0x80028006
+event flag: T's wait returned within 1 s of the gate signal: 0x00000001
+lightweight mutex: T's callback waits on the gate when the object is deleted: 0x00000001
+lightweight mutex: the delete: 0x00000000
+lightweight mutex: T's wait: 0x80028006
+lightweight mutex: T's wait returned within 1 s of the gate signal: 0x00000001
+simple event: T's callback waits on the gate when the object is deleted: 0x00000001
+simple event: the delete: 0x00000000
+simple event: T's wait: 0x80028006
+simple event: T's wait returned within 1 s of the gate signal: 0x00000001
+mutex: T's callback waits on the gate when the object is deleted: 0x00000001
+mutex: the delete: 0x00000000
+mutex: T's wait: 0x80028006
+mutex: T's wait returned within 1 s of the gate signal: 0x00000001
+DONE

@@ -1,0 +1,31 @@
+unknown UID, wait: the result: 0x800280E1
+unknown UID, wait: the out bits: 0x00000000
+unknown UID, wait with callbacks: the result: 0x800280E1
+unknown UID, wait with callbacks: the out bits: 0x00000000
+pattern 0, wait: the result: 0x80020005
+pattern 0, wait: the out bits: 0x00000000
+pattern 0, wait with callbacks: the result: 0x80020005
+pattern 0, wait with callbacks: the out bits: 0x00000000
+mode 0x8, wait: the result: 0x80020010
+mode 0x8, wait: the out bits: 0x00000000
+mode 0x8, wait with callbacks: the result: 0x80020010
+mode 0x8, wait with callbacks: the out bits: 0x00000000
+both clear modes, wait: the result: 0x80020010
+both clear modes, wait: the out bits: 0x00000000
+both clear modes, wait with callbacks: the result: 0x80020010
+both clear modes, wait with callbacks: the out bits: 0x00000000
+timeout of 0, wait: the result: 0x80028005
+timeout of 0, wait: the out bits: 0x00000003
+timeout of 0, wait with callbacks: the result: 0x80028005
+timeout of 0, wait with callbacks: the out bits: 0x00000003
+timeout of 100 ms, wait: the result: 0x80028005
+timeout of 100 ms, wait: the out bits: 0x00000003
+timeout of 100 ms, wait with callbacks: the result: 0x80028005
+timeout of 100 ms, wait with callbacks: the out bits: 0x00000003
+held by another thread: that thread waits: 0x00000001
+held by another thread, wait: the result: 0x800280E2
+held by another thread, wait: the out bits: 0x00000000
+held by another thread, wait with callbacks: the result: 0x800280E2
+held by another thread, wait with callbacks: the out bits: 0x00000000
+held by another thread: that thread's result: 0x00000000
+DONE

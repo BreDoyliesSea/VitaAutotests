@@ -1,0 +1,53 @@
+rejoin, A holds 4 of 8: the first send: 0x00000000
+rejoin, A holds 4 of 8: the first send's size: 0x00000004
+rejoin, A holds 4 of 8: A still waits after the first send: 0x00000001
+rejoin, A holds 4 of 8: the notify of B's callback: 0x00000000
+rejoin, A holds 4 of 8: B ran its callback and waits again: 0x00000001
+rejoin, A holds 4 of 8: the receivers waiting before the last send: 0x00000003
+rejoin, A holds 4 of 8: the last send: 0x00000000
+rejoin, A holds 4 of 8: the last send's size: 0x00000014
+rejoin, A holds 4 of 8: A's result: 0x00000000
+rejoin, A holds 4 of 8: A got "abcdefgh", size: 0x00000008
+rejoin, A holds 4 of 8: B's result: 0x00000000
+rejoin, A holds 4 of 8: B got "ijklmnop", size: 0x00000008
+rejoin, A holds 4 of 8: C's result: 0x00000000
+rejoin, A holds 4 of 8: C got "qrstuvwx", size: 0x00000008
+rejoin, A holds 4 of 8: the bytes left in the pipe: 0x00000000
+priority change, A holds 4 of 8: the first send: 0x00000000
+priority change, A holds 4 of 8: the first send's size: 0x00000004
+priority change, A holds 4 of 8: A still waits after the first send: 0x00000001
+priority change, A holds 4 of 8: raising C's priority: 0x00000000
+priority change, A holds 4 of 8: the receivers waiting before the last send: 0x00000003
+priority change, A holds 4 of 8: the last send: 0x00000000
+priority change, A holds 4 of 8: the last send's size: 0x00000014
+priority change, A holds 4 of 8: A's result: 0x00000000
+priority change, A holds 4 of 8: A got "abcdefgh", size: 0x00000008
+priority change, A holds 4 of 8: B's result: 0x00000000
+priority change, A holds 4 of 8: B got "qrstuvwx", size: 0x00000008
+priority change, A holds 4 of 8: C's result: 0x00000000
+priority change, A holds 4 of 8: C got "ijklmnop", size: 0x00000008
+priority change, A holds 4 of 8: the bytes left in the pipe: 0x00000000
+rejoin, A holds nothing: the notify of B's callback: 0x00000000
+rejoin, A holds nothing: B ran its callback and waits again: 0x00000001
+rejoin, A holds nothing: the receivers waiting before the last send: 0x00000003
+rejoin, A holds nothing: the last send: 0x00000000
+rejoin, A holds nothing: the last send's size: 0x00000018
+rejoin, A holds nothing: A's result: 0x00000000
+rejoin, A holds nothing: A got "qrstuvwx", size: 0x00000008
+rejoin, A holds nothing: B's result: 0x00000000
+rejoin, A holds nothing: B got "ijklmnop", size: 0x00000008
+rejoin, A holds nothing: C's result: 0x00000000
+rejoin, A holds nothing: C got "abcdefgh", size: 0x00000008
+rejoin, A holds nothing: the bytes left in the pipe: 0x00000000
+priority change, A holds nothing: raising C's priority: 0x00000000
+priority change, A holds nothing: the receivers waiting before the last send: 0x00000003
+priority change, A holds nothing: the last send: 0x00000000
+priority change, A holds nothing: the last send's size: 0x00000018
+priority change, A holds nothing: A's result: 0x00000000
+priority change, A holds nothing: A got "ijklmnop", size: 0x00000008
+priority change, A holds nothing: B's result: 0x00000000
+priority change, A holds nothing: B got "qrstuvwx", size: 0x00000008
+priority change, A holds nothing: C's result: 0x00000000
+priority change, A holds nothing: C got "abcdefgh", size: 0x00000008
+priority change, A holds nothing: the bytes left in the pipe: 0x00000000
+DONE
