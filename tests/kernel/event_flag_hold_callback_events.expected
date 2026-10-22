@@ -35,7 +35,4 @@ a timeout while waiting again: A waits again after its callback: 0x00000001
 a timeout while waiting again: A's wait: 0x80028005
 a timeout while waiting again: the poll after A's wait returned: 0x00000000
 a timeout while waiting again: the poll after A ended: 0x00000000
-a timeout of 1 that misses: A's wait: 0x80028005
-a timeout of 1 that misses: the poll after it returned: 0x800280E2
-a timeout of 1 that misses: the poll after A ended: 0x00000000
 DONE
