@@ -15,4 +15,22 @@ A took nothing, B ASAP 4: A got "ijklmnop", size: 0x00000008
 A took nothing, B ASAP 4: B's result: 0x00000000
 A took nothing, B ASAP 4: B got "efgh", size: 0x00000004
 A took nothing, B ASAP 4: the bytes left in the pipe: 0x00000000
+A took 4 of 8, B above C: B waits before C starts: 0x00000001
+A took 4 of 8, B above C: C waits before the sends: 0x00000001
+A took 4 of 8, B above C: A's result: 0x00000000
+A took 4 of 8, B above C: A got "abcdefgh", size: 0x00000008
+A took 4 of 8, B above C: B's result: 0x00000000
+A took 4 of 8, B above C: B got "mnop", size: 0x00000004
+A took 4 of 8, B above C: C's result: 0x00000000
+A took 4 of 8, B above C: C got "ijkl", size: 0x00000004
+A took 4 of 8, B above C: the bytes left in the pipe: 0x00000000
+A took 4 of 8, B and C of the same priority: B waits before C starts: 0x00000001
+A took 4 of 8, B and C of the same priority: C waits before the sends: 0x00000001
+A took 4 of 8, B and C of the same priority: A's result: 0x00000000
+A took 4 of 8, B and C of the same priority: A got "abcdefgh", size: 0x00000008
+A took 4 of 8, B and C of the same priority: B's result: 0x00000000
+A took 4 of 8, B and C of the same priority: B got "mnop", size: 0x00000004
+A took 4 of 8, B and C of the same priority: C's result: 0x00000000
+A took 4 of 8, B and C of the same priority: C got "ijkl", size: 0x00000004
+A took 4 of 8, B and C of the same priority: the bytes left in the pipe: 0x00000000
 DONE
