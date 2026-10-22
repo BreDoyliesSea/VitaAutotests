@@ -1,0 +1,31 @@
+main thread's simple event: create: 0x00000000
+main thread's simple event: poll for the create bit: 0x00000000
+main thread's simple event: the bits the poll got: 0x00000004
+main thread's simple event: the high word of the poll's user data is the creating thread's UID: 0x00000001
+main thread's simple event: the low word of the poll's user data is the process ID: 0x00000001
+main thread's simple event: info: 0x00000000
+main thread's simple event: the info's pattern has the create bit: 0x00000004
+main thread's simple event: the high word of the info's user data is the creating thread's UID: 0x00000001
+main thread's simple event: the low word of the info's user data is the process ID: 0x00000001
+other thread's simple event: create: 0x00000000
+other thread's simple event: poll for the create bit: 0x00000000
+other thread's simple event: the bits the poll got: 0x00000004
+other thread's simple event: the high word of the poll's user data is the creating thread's UID: 0x00000001
+other thread's simple event: the low word of the poll's user data is the process ID: 0x00000001
+other thread's simple event: info: 0x00000000
+other thread's simple event: the info's pattern has the create bit: 0x00000004
+other thread's simple event: the high word of the info's user data is the creating thread's UID: 0x00000001
+other thread's simple event: the low word of the info's user data is the process ID: 0x00000001
+timer: create: 0x00000000
+timer: info: 0x00000000
+timer: the info's pattern has the create bit: 0x00000004
+timer: the high word of the info's user data is the creating thread's UID: 0x00000001
+timer: the low word of the info's user data is the process ID: 0x00000001
+timer: set a one shot set event: 0x00000000
+timer: start: 0x00000000
+timer: wait for its event: 0x00000000
+timer: the bits the wait got: 0x00008000
+timer: the user data the wait got is 0: 0x00000001
+timer: info after the wait: 0x00000000
+timer: the info's user data after the wait is 0: 0x00000001
+DONE

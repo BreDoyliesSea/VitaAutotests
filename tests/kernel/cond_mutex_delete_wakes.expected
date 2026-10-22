@@ -1,0 +1,13 @@
+heavy, plain wait: delete the mutex: 0x00000000
+heavy, plain wait: W's wait: 0x800281A2
+heavy, plain wait: W returned within 1 s of the delete: 0x00000001
+heavy, callback wait: delete the mutex: 0x00000000
+heavy, callback wait: W's wait: 0x800281A2
+heavy, callback wait: W returned within 1 s of the delete: 0x00000001
+lightweight, plain wait: delete the mutex: 0x00000000
+lightweight, plain wait: W's wait: 0x800281C2
+lightweight, plain wait: W returned within 1 s of the delete: 0x00000001
+lightweight, callback wait: delete the mutex: 0x00000000
+lightweight, callback wait: W's wait: 0x800281C2
+lightweight, callback wait: W returned within 1 s of the delete: 0x00000001
+DONE
