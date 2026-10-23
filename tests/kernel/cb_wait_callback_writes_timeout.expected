@@ -1,0 +1,29 @@
+semaphore, the callback gives: the wait: 0x00000000
+semaphore, the callback gives: runs of the callback: 0x00000001
+semaphore, the callback gives: the timeout holds the value passed: 0x00000001
+semaphore, the callback gives: the timeout holds the callback's value: 0x00000000
+event flag, the callback gives: the wait: 0x00000000
+event flag, the callback gives: runs of the callback: 0x00000001
+event flag, the callback gives: the timeout holds the value passed: 0x00000001
+event flag, the callback gives: the timeout holds the callback's value: 0x00000000
+simple event, the callback gives: the wait: 0x00000000
+simple event, the callback gives: runs of the callback: 0x00000001
+simple event, the callback gives: the timeout holds the value passed: 0x00000001
+simple event, the callback gives: the timeout holds the callback's value: 0x00000000
+message pipe, the callback gives: the wait: 0x00000000
+message pipe, the callback gives: runs of the callback: 0x00000001
+message pipe, the callback gives: the timeout holds the value passed: 0x00000000
+message pipe, the callback gives: the timeout holds the callback's value: 0x00000001
+semaphore, the callback gives nothing: the wait: 0x80028005
+semaphore, the callback gives nothing: runs of the callback: 0x00000001
+semaphore, the callback gives nothing: it lasted at least 0.25 s: 0x00000001
+event flag, the callback gives nothing: the wait: 0x80028005
+event flag, the callback gives nothing: runs of the callback: 0x00000001
+event flag, the callback gives nothing: it lasted at least 0.25 s: 0x00000001
+simple event, the callback gives nothing: the wait: 0x80028005
+simple event, the callback gives nothing: runs of the callback: 0x00000001
+simple event, the callback gives nothing: it lasted at least 0.25 s: 0x00000001
+message pipe, the callback gives nothing: the wait: 0x80028005
+message pipe, the callback gives nothing: runs of the callback: 0x00000001
+message pipe, the callback gives nothing: it lasted at least 0.25 s: 0x00000001
+DONE
