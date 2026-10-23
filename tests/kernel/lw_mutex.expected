@@ -16,6 +16,8 @@ lock recursive again: 0x00000000
 lock recursive past the maximum count: 0x00000000
 unlock more than locked: 0x80028184
 unlock all of it: 0x80028184
+lock by another thread with a zero timeout once the count wrapped: 0x80028005
+lock again with a zero timeout once the count wrapped: 0x80028183
 unlock by a thread that doesn't own it: 0x80028186
 lock with a zero timeout while owned: 0x80028005
 DONE

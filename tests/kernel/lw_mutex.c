@@ -5,8 +5,8 @@
 #include "test.h"
 #include "threadmgr_extra.h"
 
-static SceKernelLwMutexWork held;
-static int other_unlock, other_lock;
+static SceKernelLwMutexWork held, recursive;
+static int other_unlock, other_lock, wrapped_lock;
 
 static int other_thread(SceSize args, void *argp) {
     (void)args;
@@ -14,6 +14,14 @@ static int other_thread(SceSize args, void *argp) {
     SceUInt32 timeout = 0;
     other_unlock = sceKernelUnlockLwMutex(&held, 1);
     other_lock = sceKernelLockLwMutex(&held, 1, &timeout);
+    return 0;
+}
+
+static int wrapped_thread(SceSize args, void *argp) {
+    (void)args;
+    (void)argp;
+    SceUInt32 timeout = 0;
+    wrapped_lock = sceKernelLockLwMutex(&recursive, 1, &timeout);
     return 0;
 }
 
@@ -37,13 +45,17 @@ int main(void) {
     PRINT("unlock non-recursive with a count of 2", sceKernelUnlockLwMutex(&mutex, 2));
     PRINT("unlock", sceKernelUnlockLwMutex(&mutex, 1));
 
-    SceKernelLwMutexWork recursive;
     sceKernelCreateLwMutex(&recursive, "m", LW_MUTEX_ATTR_RECURSIVE, 0, NULL);
     PRINT("lock recursive with a count of 2", sceKernelLockLwMutex(&recursive, 2, NULL));
     PRINT("lock recursive again", sceKernelLockLwMutex(&recursive, 1, NULL));
     PRINT("lock recursive past the maximum count", sceKernelLockLwMutex(&recursive, 0x7FFFFFFF, NULL));
     PRINT("unlock more than locked", sceKernelUnlockLwMutex(&recursive, 4));
     PRINT("unlock all of it", sceKernelUnlockLwMutex(&recursive, 3));
+    // Locks while the count is still wrapped, by another thread and then by the owner
+    test_join_thread(test_start_thread(wrapped_thread));
+    PRINT("lock by another thread with a zero timeout once the count wrapped", wrapped_lock);
+    SceUInt32 timeout = 0;
+    PRINT("lock again with a zero timeout once the count wrapped", sceKernelLockLwMutex(&recursive, 1, &timeout));
 
     // Another thread can't unlock this thread's mutex, and a zero timeout gives up at once
     sceKernelCreateLwMutex(&held, "held", 0, 1, NULL);
