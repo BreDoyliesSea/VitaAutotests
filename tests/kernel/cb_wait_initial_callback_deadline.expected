@@ -1,0 +1,17 @@
+semaphore: the wait: 0x80028005
+semaphore: the time left: 0x00000000
+semaphore: runs of the callback: 0x00000001
+semaphore: it returned less than 1.25 s after it started: 0x00000001
+event flag: the wait: 0x80028005
+event flag: the time left: 0x00000000
+event flag: runs of the callback: 0x00000001
+event flag: it returned less than 1.25 s after it started: 0x00000001
+simple event: the wait: 0x80028005
+simple event: the time left: 0x00000000
+simple event: runs of the callback: 0x00000001
+simple event: it returned less than 1.25 s after it started: 0x00000001
+message pipe: the wait: 0x80028005
+message pipe: the time left: 0x00000000
+message pipe: runs of the callback: 0x00000001
+message pipe: it returned less than 1.25 s after it started: 0x00000001
+DONE
