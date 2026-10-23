@@ -1,0 +1,16 @@
+callback does nothing: T waits on the condition again after the callback: 0x00000001
+callback does nothing: the signal: 0x00000000
+callback does nothing: T's wait: 0x00000000
+callback does nothing: runs of the callback when the wait returned: 0x00000001
+callback does nothing: T's unlock: 0x00000000
+callback does nothing: T's check: 0x00000000
+callback locks the mutex: T waits on the condition again after the callback: 0x00000001
+callback locks the mutex: the callback's lock: 0x00000000
+callback locks the mutex: the signal: 0x00000000
+callback locks the mutex: T then waits for the mutex it holds: 0x00000000
+callback locks the mutex: the delete of the mutex: 0x00000000
+callback locks the mutex: T's wait: 0x80028142
+callback locks the mutex: runs of the callback when the wait returned: 0x00000001
+callback locks the mutex: T's unlock: 0x00000000
+callback locks the mutex: T's check: 0x00000000
+DONE
