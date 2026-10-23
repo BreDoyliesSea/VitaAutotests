@@ -1,0 +1,29 @@
+signal, then notify: the call that ended the wait: 0x00000000
+signal, then notify: T's status after it: 0x00000002
+signal, then notify: the notify: 0x00000000
+signal, then notify: T's status after the notify: 0x00000002
+signal, then notify: T's wait: 0x00000000
+signal, then notify: runs of the callback when the wait returned: 0x00000001
+signal, then notify: T's unlock: 0x00000000
+signal, then notify: T's check: 0x00000000
+signal, then notify: runs of the callback after the check: 0x00000001
+mutex handed over, then notify: T waits for the mutex after the signal: 0x00000001
+mutex handed over, then notify: the call that ended the wait: 0x00000000
+mutex handed over, then notify: T's status after it: 0x00000002
+mutex handed over, then notify: the notify: 0x00000000
+mutex handed over, then notify: T's status after the notify: 0x00000002
+mutex handed over, then notify: T's wait: 0x00000000
+mutex handed over, then notify: runs of the callback when the wait returned: 0x00000000
+mutex handed over, then notify: T's unlock: 0x00000000
+mutex handed over, then notify: T's check: 0x00000001
+mutex handed over, then notify: runs of the callback after the check: 0x00000001
+condition deleted, then notify: the call that ended the wait: 0x00000000
+condition deleted, then notify: T's status after it: 0x00000002
+condition deleted, then notify: the notify: 0x00000000
+condition deleted, then notify: T's status after the notify: 0x00000002
+condition deleted, then notify: T's wait: 0x800281A4
+condition deleted, then notify: runs of the callback when the wait returned: 0x00000001
+condition deleted, then notify: T's unlock: 0x80028146
+condition deleted, then notify: T's check: 0x00000000
+condition deleted, then notify: runs of the callback after the check: 0x00000001
+DONE

@@ -317,6 +317,9 @@ vita_test(cond_mutex_delete_wakes kernel/cond_mutex_delete_wakes.c)
 vita_test(cb_wait_zero_timeout_notify kernel/cb_wait_zero_timeout_notify.c)
 vita_test(cb_wait_initial_callback_deadline kernel/cb_wait_initial_callback_deadline.c)
 vita_test(cb_wait_callback_writes_timeout kernel/cb_wait_callback_writes_timeout.c)
+vita_test(cb_wait_take_final_check kernel/cb_wait_take_final_check.c)
+vita_test(cond_callback_departure kernel/cond_callback_departure.c)
+vita_test(cond_callback_after_wake kernel/cond_callback_after_wake.c)
 
 # The module module_start_thread and module_start_vfp load. vita_create_self runs in a function, since it adds its flags
 # to the scope it runs in, where they would also apply to the test vpk's self.

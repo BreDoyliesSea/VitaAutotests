@@ -1,0 +1,33 @@
+semaphore: the wait: 0x00000000
+semaphore: runs of the callback when the wait returned: 0x00000001
+semaphore: the check: 0x00000001
+semaphore: runs of the callback after the check: 0x00000002
+event flag: the wait: 0x00000000
+event flag: runs of the callback when the wait returned: 0x00000001
+event flag: the check: 0x00000001
+event flag: runs of the callback after the check: 0x00000002
+simple event: the wait: 0x00000000
+simple event: runs of the callback when the wait returned: 0x00000001
+simple event: the check: 0x00000001
+simple event: runs of the callback after the check: 0x00000002
+mutex: the wait: 0x00000000
+mutex: runs of the callback when the wait returned: 0x00000001
+mutex: the check: 0x00000001
+mutex: runs of the callback after the check: 0x00000002
+rwlock read: the wait: 0x00000000
+rwlock read: runs of the callback when the wait returned: 0x00000001
+rwlock read: the check: 0x00000001
+rwlock read: runs of the callback after the check: 0x00000002
+rwlock write: the wait: 0x00000000
+rwlock write: runs of the callback when the wait returned: 0x00000001
+rwlock write: the check: 0x00000001
+rwlock write: runs of the callback after the check: 0x00000002
+message pipe receive: the wait: 0x00000000
+message pipe receive: runs of the callback when the wait returned: 0x00000002
+message pipe receive: the check: 0x00000000
+message pipe receive: runs of the callback after the check: 0x00000002
+message pipe send: the wait: 0x00000000
+message pipe send: runs of the callback when the wait returned: 0x00000002
+message pipe send: the check: 0x00000000
+message pipe send: runs of the callback after the check: 0x00000002
+DONE
