@@ -1,0 +1,10 @@
+priority queue, A drops to 0x90: the priority change: 0x00000000
+priority queue, A drops to 0x90: A's wait: 0x80028005
+priority queue, A drops to 0x90: B's wait: 0x00000000
+priority queue, B is raised to 0x60: the priority change: 0x00000000
+priority queue, B is raised to 0x60: A's wait: 0x80028005
+priority queue, B is raised to 0x60: B's wait: 0x00000000
+FIFO queue, A drops to 0x90: the priority change: 0x00000000
+FIFO queue, A drops to 0x90: A's wait: 0x00000000
+FIFO queue, A drops to 0x90: B's wait: 0x80028005
+DONE

@@ -10,6 +10,8 @@
 static SceUID sema, mutex, rwlock, pipe;
 static int need[3];
 static volatile int order[3], woken;
+// Set once the main thread tried to lock the mutex, which the mutex waiter keeps until then
+static volatile int tried;
 
 static void reset_order(void) {
     woken = 0;
@@ -50,6 +52,7 @@ static int mutex_thread(SceSize args, void *argp) {
     SceUInt timeout = TEST_WAIT_US;
     if (sceKernelLockMutex(mutex, 1, &timeout) == 0) {
         order[i] = ++woken;
+        TEST_WAIT_FOR(tried);
         sceKernelUnlockMutex(mutex, 1);
     }
     return 0;
@@ -121,6 +124,7 @@ int main(void) {
     threads[0] = start(mutex_thread, 0, SCE_KERNEL_DEFAULT_PRIORITY_USER);
     sceKernelUnlockMutex(mutex, 1);
     PRINT("try lock right after unlocking to a waiter", sceKernelTryLockMutex(mutex, 1));
+    tried = 1;
     sceKernelUnlockMutex(mutex, 1);
     join_all(threads, 1);
     PRINT("the waiter got it", order[0] != 0);
