@@ -1,0 +1,37 @@
+writer whose callback takes the write lock: T waits on the rwlock before the notify: 0x00000001
+writer whose callback takes the write lock: T waits on the gate after the notify: 0x00000001
+writer whose callback takes the write lock: T waits on the rwlock again after its callback: 0x00000001
+writer whose callback takes the write lock: the callback's lock: 0x00000000
+writer whose callback takes the write lock: T's wait: 0x80028005
+writer whose callback takes the write lock: the lock count after T's wait: 0x00000001
+writer whose callback takes the write lock: T owns the write lock or the mutex after T's wait: 0x00000001
+writer whose callback takes a read lock: T waits on the rwlock before the notify: 0x00000001
+writer whose callback takes a read lock: T waits on the gate after the notify: 0x00000001
+writer whose callback takes a read lock: T waits on the rwlock again after its callback: 0x00000001
+writer whose callback takes a read lock: the callback's lock: 0x00000000
+writer whose callback takes a read lock: T's wait: 0x80028005
+writer whose callback takes a read lock: the lock count after T's wait: 0x00000001
+writer whose callback takes a read lock: T owns the write lock or the mutex after T's wait: 0x00000000
+reader whose callback takes the write lock: T waits on the rwlock before the notify: 0x00000001
+reader whose callback takes the write lock: T waits on the gate after the notify: 0x00000001
+reader whose callback takes the write lock: T waits on the rwlock again after its callback: 0x00000001
+reader whose callback takes the write lock: the callback's lock: 0x00000000
+reader whose callback takes the write lock: T's wait: 0x80028005
+reader whose callback takes the write lock: the lock count after T's wait: 0x00000001
+reader whose callback takes the write lock: T owns the write lock or the mutex after T's wait: 0x00000001
+reader whose callback takes a read lock: T waits on the rwlock before the notify: 0x00000001
+reader whose callback takes a read lock: T waits on the gate after the notify: 0x00000001
+reader whose callback takes a read lock: T waits on the rwlock again after its callback: 0x00000000
+reader whose callback takes a read lock: the callback's lock: 0x00000000
+reader whose callback takes a read lock: T's wait: 0x00000000
+reader whose callback takes a read lock: the lock count after T's wait: 0x00000002
+reader whose callback takes a read lock: T owns the write lock or the mutex after T's wait: 0x00000000
+mutex with the callback pending: the callback's lock: 0x00000000
+mutex with the callback pending: T's wait: 0x80028005
+mutex with the callback pending: the lock count after T's wait: 0x00000001
+mutex with the callback pending: T owns the write lock or the mutex after T's wait: 0x00000001
+rwlock writer with the callback pending: the callback's lock: 0x00000000
+rwlock writer with the callback pending: T's wait: 0x80028005
+rwlock writer with the callback pending: the lock count after T's wait: 0x00000001
+rwlock writer with the callback pending: T owns the write lock or the mutex after T's wait: 0x00000001
+DONE
