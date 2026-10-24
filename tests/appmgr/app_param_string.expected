@@ -1,0 +1,88 @@
+title id, size 0x0: 0x80801000
+title id, size 0x1: 0x80801000
+title id, size 0x9: 0x80801000
+title id, size 0xA: 0x00000000
+title id, size 0xA: index of the first NUL: 0x00000009
+title id, size 0xA: holds the string: 0x00000001
+title id, size 0xA: the rest of the buffer is untouched: 0x00000001
+title id, size 0xA: guards intact: 0x00000001
+title id, size 0xB: 0x00000000
+title id, size 0xB: index of the first NUL: 0x00000009
+title id, size 0xB: holds the string: 0x00000001
+title id, size 0xB: the rest of the buffer is untouched: 0x00000001
+title id, size 0xB: guards intact: 0x00000001
+title id, size 0x40: 0x00000000
+title id, size 0x40: index of the first NUL: 0x00000009
+title id, size 0x40: holds the string: 0x00000001
+title id, size 0x40: the rest of the buffer is untouched: 0x00000001
+title id, size 0x40: guards intact: 0x00000001
+title id, size 0x400: 0x00000000
+title id, size 0x400: index of the first NUL: 0x00000009
+title id, size 0x400: holds the string: 0x00000001
+title id, size 0x400: the rest of the buffer is untouched: 0x00000001
+title id, size 0x400: guards intact: 0x00000001
+title id, size 0x401: 0x00000000
+title id, size 0x401: index of the first NUL: 0x00000009
+title id, size 0x401: holds the string: 0x00000001
+title id, size 0x401: the rest of the buffer is untouched: 0x00000001
+title id, size 0x401: guards intact: 0x00000001
+title id with pid 0, size 0x40: 0x00000000
+title id with pid 0, size 0x40: index of the first NUL: 0x00000009
+title id with pid 0, size 0x40: holds the string: 0x00000001
+title id with pid 0, size 0x40: the rest of the buffer is untouched: 0x00000001
+title id with pid 0, size 0x40: guards intact: 0x00000001
+category, size 0x2: 0x80801000
+category, size 0x3: 0x80801000
+category, size 0x4: 0x00000000
+category, size 0x4: index of the first NUL: 0x00000002
+category, size 0x4: the rest of the buffer is untouched: 0x00000001
+category, size 0x4: guards intact: 0x00000001
+category, size 0x5: 0x00000000
+category, size 0x5: index of the first NUL: 0x00000002
+category, size 0x5: the rest of the buffer is untouched: 0x00000001
+category, size 0x5: guards intact: 0x00000001
+content id, size 0x24: 0x80801000
+content id, size 0x25: 0x80801000
+content id, size 0x2F: 0x80801000
+content id, size 0x30: 0x00000000
+content id, size 0x30: index of the first NUL: 0x00000024
+content id, size 0x30: the rest of the buffer is untouched: 0x00000001
+content id, size 0x30: guards intact: 0x00000001
+content id, size 0x100: 0x00000000
+content id, size 0x100: index of the first NUL: 0x00000024
+content id, size 0x100: the rest of the buffer is untouched: 0x00000001
+content id, size 0x100: guards intact: 0x00000001
+title, size 0x7F: 0x80801000
+title, size 0x80: 0x00000000
+title, size 0x80: index of the first NUL: 0x0000000E
+title, size 0x80: the rest of the buffer is untouched: 0x00000001
+title, size 0x80: guards intact: 0x00000001
+short title, size 0x33: 0x80801000
+short title, size 0x34: 0x00000000
+short title, size 0x34: index of the first NUL: 0x0000000E
+short title, size 0x34: the rest of the buffer is untouched: 0x00000001
+short title, size 0x34: guards intact: 0x00000001
+np communication id, size 0xC: 0x80801000
+np communication id, size 0xD: 0x00000000
+np communication id, size 0xD: index of the first NUL: 0x00000000
+np communication id, size 0xD: the rest of the buffer is untouched: 0x00000001
+np communication id, size 0xD: guards intact: 0x00000001
+content id override, size 0x30: 0x00000000
+content id override, size 0x30: index of the first NUL: 0x00000024
+content id override, size 0x30: the rest of the buffer is untouched: 0x00000001
+content id override, size 0x30: guards intact: 0x00000001
+title override, size 0x80: 0x00000000
+title override, size 0x80: index of the first NUL: 0x0000000E
+title override, size 0x80: the rest of the buffer is untouched: 0x00000001
+title override, size 0x80: guards intact: 0x00000001
+other parameter, size 0x100: 0x80801000
+other parameter, size 0x100: 0x80801000
+other parameter, size 0x100: 0x80801000
+other parameter, size 0x100: 0x80801000
+other parameter, size 0x100: 0x80801000
+other parameter, size 0x100: 0x80801000
+other parameter, size 0x100: 0x80801000
+other parameter, size 0x100: 0x80801000
+NULL string: 0x80800001
+NULL string, size 0: 0x80800001
+DONE
