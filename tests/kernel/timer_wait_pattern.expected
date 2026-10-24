@@ -1,0 +1,14 @@
+the event fired: 0x00000000
+a poll for a user bit: the poll: 0x80028202
+a poll for a user bit: the bits it got: 0x00000000
+a wait for a user bit: the wait: 0x80028005
+a wait for a user bit: the bits it got: 0x00000000
+a poll for the timer bit and a user bit: the poll: 0x00000000
+a poll for the timer bit and a user bit: the bits it got: 0x00008000
+a wait for the timer bit and a user bit: the wait: 0x00000000
+a wait for the timer bit and a user bit: the bits it got: 0x00008000
+a poll for the create bit: the poll: 0x00000000
+a poll for the create bit: the bits it got: 0x00000004
+a poll for the timer bit and the create bit: the poll: 0x00000000
+a poll for the timer bit and the create bit: the bits it got: 0x00008004
+DONE

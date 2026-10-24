@@ -1,0 +1,10 @@
+the delete: 0x00000000
+the wait for the delete bit: 0x00000000
+the wait for the delete bit: the bits it got: 0x00000008
+the wait for the delete bit: the high word of its user data is the deleting thread's UID: 0x00000001
+the wait for the delete bit: the low word of its user data is the process ID: 0x00000001
+the wait for the timer bit: 0x80028006
+the wait for the timer bit: the bits it got: 0x00000010
+the wait for the timer bit: the high word of its user data is the deleting thread's UID: 0x00000000
+the wait for the timer bit: the low word of its user data is the process ID: 0x00000000
+DONE

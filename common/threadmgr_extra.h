@@ -246,6 +246,7 @@ SceInt32 sceKernelGetTimerInfo(SceUID id, TimerInfo *info);
 SceInt32 sceKernelGetTimerTime(SceUID id, SceKernelSysClock *clock);
 SceInt32 sceKernelSetTimerTime(SceUID id, SceKernelSysClock *clock);
 SceInt32 sceKernelGetTimerBase(SceUID id, SceKernelSysClock *base);
+SceInt32 sceKernelGetTimerEventRemainingTime(SceUID id, SceKernelSysClock *remaining);
 
 // What sceKernelGetThreadInfo reports as the wait type. Waits that run callbacks add WAIT_TYPE_CB.
 #define WAIT_TYPE_DELAY 0x1
