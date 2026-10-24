@@ -166,6 +166,7 @@ SceUInt64 sceKernelSetTimerTimeWide(SceUID id, SceUInt64 time);
 SceInt32 sceKernelSetTimerEvent(SceUID id, SceInt32 type, SceUInt64 *interval, SceInt32 repeat);
 
 SceInt32 sceKernelLockLwMutexCB(SceKernelLwMutexWork *work, SceInt32 count, SceUInt32 *timeout);
+SceInt32 sceKernelUnlockLwMutex2(SceKernelLwMutexWork *work, SceInt32 count);
 
 // What sceKernelGetLwMutexInfo and sceKernelGetLwMutexInfoById fill
 typedef struct LwMutexInfo {
@@ -332,3 +333,7 @@ int sceKernelGetThreadContextForVM(SceUID thid, ThreadCpuRegisters *cpu, ThreadV
 // Suspend and resume a thread for sceKernelGetThreadContextForVM
 int sceKernelSuspendThreadForVM(SceUID thid);
 int sceKernelResumeThreadForVM(SceUID thid);
+
+// Calls sceKernelGetThreadRunStatus with the struct as the first argument and no thread ID, where
+// the vitasdk declaration takes a thread ID first
+SceInt32 get_thread_run_status(SceKernelThreadRunStatus *status) __asm__("sceKernelGetThreadRunStatus");

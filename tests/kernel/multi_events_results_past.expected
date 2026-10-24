@@ -1,0 +1,16 @@
+OR, only the third set: the call: 0x00000001
+OR, only the third set: entry 0 is for the third event: 0x00000001
+OR, only the third set: entry 0 result: 0x00000000
+OR, only the third set: entry 1 is all 0xAA: 0x00000000
+OR, only the third set: entry 2 is all 0xAA: 0x00000000
+OR, only the third set: entry 3 is all 0xAA: 0x00000000
+AND, all four set: the call: 0x00000004
+AND, all four set: entry 1 is all 0xAA: 0x00000000
+AND, all four set: entry 2 is all 0xAA: 0x00000000
+AND, all four set: entry 3 is all 0xAA: 0x00000000
+OR, an unknown UID first: the call: 0x00000001
+OR, an unknown UID first: entry 0 result: 0x80028201
+OR, an unknown UID first: entry 1 is all 0xAA: 0x00000000
+OR, an unknown UID first: entry 2 is all 0xAA: 0x00000000
+OR, an unknown UID first: entry 3 is all 0xAA: 0x00000000
+DONE

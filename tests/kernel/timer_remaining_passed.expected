@@ -1,0 +1,21 @@
+set event: the wait: 0x00000000
+set event, running: the remaining time: 0x00000000
+set event, running: the value is above 0x8000000000000000: 0x00000001
+set event, running: the value is 0: 0x00000000
+set event, running: the value is within 1 s below 2^64: 0x00000001
+set event: the stop: 0x00000001
+set event, stopped: the remaining time: 0x00000000
+set event, stopped: the value is above 0x8000000000000000: 0x00000001
+set event, stopped: the value is 0: 0x00000000
+set event, stopped: the value is within 1 s below 2^64: 0x00000001
+pulse event: the wait: 0x00000000
+pulse event, running: the remaining time: 0x00000000
+pulse event, running: the value is above 0x8000000000000000: 0x00000001
+pulse event, running: the value is 0: 0x00000000
+pulse event, running: the value is within 1 s below 2^64: 0x00000001
+pulse event: the stop: 0x00000001
+pulse event, stopped: the remaining time: 0x00000000
+pulse event, stopped: the value is above 0x8000000000000000: 0x00000001
+pulse event, stopped: the value is 0: 0x00000000
+pulse event, stopped: the value is within 1 s below 2^64: 0x00000001
+DONE

@@ -1,0 +1,43 @@
+OR on the pipe's bit 0x1: the try send: 0x00000000
+OR on the pipe's bit 0x1: the wait: 0x00000001
+OR on the pipe's bit 0x1: entry 0 is the pipe (1) or the event (2): 0x00000001
+OR on the pipe's bit 0x1: entry 0 result: 0x00000000
+OR on the pipe's bit 0x1: entry 0 bits: 0x00000001
+OR on the pipe's bit 0x1: entry 0 low half of the user data: 0x00000000
+OR on the pipe's bit 0x1: entry 0 high half of the user data: 0x00000004
+OR on the pipe's bit 0x2: the try send: 0x00000000
+OR on the pipe's bit 0x2: the wait is still going after the send: 0x00000001
+OR on the pipe's bit 0x2: the receive: 0x00000000
+OR on the pipe's bit 0x2: the wait: 0x00000001
+OR on the pipe's bit 0x2: entry 0 is the pipe (1) or the event (2): 0x00000001
+OR on the pipe's bit 0x2: entry 0 result: 0x00000000
+OR on the pipe's bit 0x2: entry 0 bits: 0x00000002
+OR on the pipe's bit 0x2: entry 0 low half of the user data: 0x00000000
+OR on the pipe's bit 0x2: entry 0 high half of the user data: 0x00000004
+AND on the pipe: the try send: 0x00000000
+AND on the pipe: the wait is still going after the send: 0x00000001
+AND on the pipe: the set: 0x00000000
+AND on the pipe: the wait: 0x00000002
+AND on the pipe: entry 0 is the pipe (1) or the event (2): 0x00000001
+AND on the pipe: entry 0 result: 0x00000000
+AND on the pipe: entry 0 bits: 0x00000001
+AND on the pipe: entry 0 low half of the user data: 0x00000000
+AND on the pipe: entry 0 high half of the user data: 0x00000004
+AND on the pipe: entry 1 is the pipe (1) or the event (2): 0x00000002
+AND on the pipe: entry 1 result: 0x00000000
+AND on the pipe: entry 1 bits: 0x01000000
+AND on the pipe: entry 1 low half of the user data: 0x00000077
+AND on the pipe: entry 1 high half of the user data: 0x00000000
+the bit set before: the try send: 0x00000000
+the bit set before: the wait: 0x00000001
+the bit set before: entry 0 is the pipe (1) or the event (2): 0x00000001
+the bit set before: entry 0 result: 0x00000000
+the bit set before: entry 0 bits: 0x00000001
+the bit set before: entry 0 low half of the user data: 0x00000000
+the bit set before: entry 0 high half of the user data: 0x00000004
+single wait: the try send: 0x00000000
+single wait: the wait: 0x00000000
+single wait: the bits: 0x00000001
+single wait: the low half of the user data: 0x00000000
+single wait: the high half of the user data: 0x00000004
+DONE

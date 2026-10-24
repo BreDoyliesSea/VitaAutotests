@@ -1,0 +1,11 @@
+semaphore: the UID >> 30: 0x00000001
+semaphore: the UID is positive: 0x00000001
+simple event: the UID >> 30: 0x00000001
+simple event: the UID & 1: 0x00000001
+simple event: the UID is positive: 0x00000001
+thread: the UID >> 30: 0x00000001
+thread: the UID & 1: 0x00000001
+thread: the UID is positive: 0x00000001
+sceKernelGetThreadId: the ID >> 30: 0x00000001
+sceKernelGetThreadId: the ID & 1: 0x00000001
+DONE
