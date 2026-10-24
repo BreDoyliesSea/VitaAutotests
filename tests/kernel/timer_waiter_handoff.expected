@@ -1,0 +1,11 @@
+A's wait times out: A's wait: 0x80028005
+A's wait times out: B's wait: 0x00000000
+A's wait times out: B returned within 1500 ms of the start: 0x00000001
+A leaves for a callback: A's callback waits on the gate: 0x00000001
+A leaves for a callback: A's wait: 0x80028005
+A leaves for a callback: B's wait: 0x00000000
+A leaves for a callback: B returned within 1500 ms of the start: 0x00000001
+the event moves earlier: the set: 0x00000000
+the event moves earlier: A's wait: 0x00000000
+the event moves earlier: A returned within 1500 ms of the set: 0x00000001
+DONE
