@@ -4,6 +4,7 @@ semaphore: runs of the callback: 0x00000002
 semaphore: the object holds what the second run gave: 0x00000001
 event flag: the wait: 0x80028005
 event flag: the time left: 0x00000000
+event flag: the out bits: 0x00000000
 event flag: runs of the callback: 0x00000002
 event flag: the object holds what the second run gave: 0x00000001
 simple event: the wait: 0x80028005
