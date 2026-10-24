@@ -1,0 +1,36 @@
+send 100 bytes: 0x00000000
+sleep: 0x00000000
+sema info: 0x00000000
+sema count: 0x00000002
+sema waiters: 0x00000001
+flag info: 0x00000000
+flag pattern: 0x00000005
+flag waiters: 0x00000002
+mutex info: 0x00000000
+mutex count: 0x00000002
+mutex owned by the worker: 0x00000001
+rwlock info: 0x00000000
+rwlock count: 0x00000002
+pipe info: 0x00000000
+pipe free: 0x00000F9C
+signal sema: 0x00000000
+sema wait: 0x00000000
+set 0x2: 0x00000000
+flag wait: 0x00000000
+flag bits: 0x00000007
+set 0x100: 0x00000000
+worker unlocks twice: 0x00000000
+signal cond: 0x00000000
+unlock cond mutex: 0x00000000
+cond wait: 0x00000000
+signalled cond wait: 0x00000000
+delay: 0x00000000
+wait thread end: 0x00000000
+receive 100 bytes: 0x00000000
+same bytes: 0x00000001
+unlock read: 0x00000000
+unlock read again: 0x00000000
+check callback: 0x00000001
+callback count: 0x00000001
+callback arg: 0x00000007
+DONE
