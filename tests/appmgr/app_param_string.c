@@ -7,6 +7,16 @@
 
 #include "test.h"
 
+// The parameter IDs, which older SDK headers don't declare
+#define PARAM_CONTENT_ID 6
+#define PARAM_NP_COMMUNICATION_ID 7
+#define PARAM_CATEGORY 8
+#define PARAM_TITLE 9
+#define PARAM_SHORT_TITLE 10
+#define PARAM_TITLE_ID 12
+#define PARAM_CONTENT_ID_OVERRIDE 100
+#define PARAM_TITLE_OVERRIDE 101
+
 #define FILL 0xAA
 #define GUARD 16
 #define MAX_SIZE 0x400
@@ -56,40 +66,40 @@ int main(void) {
     const int pid = sceKernelGetProcessId();
 
     // The title ID is "VTST00000", 9 characters
-    probe("title id", pid, SCE_APPMGR_APP_PARAM_TITLE_ID, 0, "VTST00000");
-    probe("title id", pid, SCE_APPMGR_APP_PARAM_TITLE_ID, 1, "VTST00000");
-    probe("title id", pid, SCE_APPMGR_APP_PARAM_TITLE_ID, 9, "VTST00000");
-    probe("title id", pid, SCE_APPMGR_APP_PARAM_TITLE_ID, 10, "VTST00000");
-    probe("title id", pid, SCE_APPMGR_APP_PARAM_TITLE_ID, 11, "VTST00000");
-    probe("title id", pid, SCE_APPMGR_APP_PARAM_TITLE_ID, 0x40, "VTST00000");
-    probe("title id", pid, SCE_APPMGR_APP_PARAM_TITLE_ID, MAX_SIZE, "VTST00000");
-    probe("title id", pid, SCE_APPMGR_APP_PARAM_TITLE_ID, MAX_SIZE + 1, "VTST00000");
-    probe("title id with pid 0", 0, SCE_APPMGR_APP_PARAM_TITLE_ID, 0x40, "VTST00000");
+    probe("title id", pid, PARAM_TITLE_ID, 0, "VTST00000");
+    probe("title id", pid, PARAM_TITLE_ID, 1, "VTST00000");
+    probe("title id", pid, PARAM_TITLE_ID, 9, "VTST00000");
+    probe("title id", pid, PARAM_TITLE_ID, 10, "VTST00000");
+    probe("title id", pid, PARAM_TITLE_ID, 11, "VTST00000");
+    probe("title id", pid, PARAM_TITLE_ID, 0x40, "VTST00000");
+    probe("title id", pid, PARAM_TITLE_ID, MAX_SIZE, "VTST00000");
+    probe("title id", pid, PARAM_TITLE_ID, MAX_SIZE + 1, "VTST00000");
+    probe("title id with pid 0", 0, PARAM_TITLE_ID, 0x40, "VTST00000");
 
     // The category is "gd" or "gdc", 2 or 3 characters, and needs 4 bytes at least
-    probe("category", pid, SCE_APPMGR_APP_PARAM_CATEGORY, 2, NULL);
-    probe("category", pid, SCE_APPMGR_APP_PARAM_CATEGORY, 3, NULL);
-    probe("category", pid, SCE_APPMGR_APP_PARAM_CATEGORY, 4, NULL);
-    probe("category", pid, SCE_APPMGR_APP_PARAM_CATEGORY, 5, NULL);
+    probe("category", pid, PARAM_CATEGORY, 2, NULL);
+    probe("category", pid, PARAM_CATEGORY, 3, NULL);
+    probe("category", pid, PARAM_CATEGORY, 4, NULL);
+    probe("category", pid, PARAM_CATEGORY, 5, NULL);
 
     // The content ID is 36 characters and needs 0x30 bytes at least
-    probe("content id", pid, SCE_APPMGR_APP_PARAM_CONTENT_ID, 0x24, NULL);
-    probe("content id", pid, SCE_APPMGR_APP_PARAM_CONTENT_ID, 0x25, NULL);
-    probe("content id", pid, SCE_APPMGR_APP_PARAM_CONTENT_ID, 0x2F, NULL);
-    probe("content id", pid, SCE_APPMGR_APP_PARAM_CONTENT_ID, 0x30, NULL);
-    probe("content id", pid, SCE_APPMGR_APP_PARAM_CONTENT_ID, 0x100, NULL);
+    probe("content id", pid, PARAM_CONTENT_ID, 0x24, NULL);
+    probe("content id", pid, PARAM_CONTENT_ID, 0x25, NULL);
+    probe("content id", pid, PARAM_CONTENT_ID, 0x2F, NULL);
+    probe("content id", pid, PARAM_CONTENT_ID, 0x30, NULL);
+    probe("content id", pid, PARAM_CONTENT_ID, 0x100, NULL);
 
     // The title needs 0x80 bytes at least, the short title 0x34
-    probe("title", pid, SCE_APPMGR_APP_PARAM_TITLE, 0x7F, NULL);
-    probe("title", pid, SCE_APPMGR_APP_PARAM_TITLE, 0x80, NULL);
-    probe("short title", pid, SCE_APPMGR_APP_PARAM_SHORT_TITLE, 0x33, NULL);
-    probe("short title", pid, SCE_APPMGR_APP_PARAM_SHORT_TITLE, 0x34, NULL);
-    probe("np communication id", pid, SCE_APPMGR_APP_PARAM_NP_COMMUNICATION_ID, 0xC, NULL);
-    probe("np communication id", pid, SCE_APPMGR_APP_PARAM_NP_COMMUNICATION_ID, 0xD, NULL);
+    probe("title", pid, PARAM_TITLE, 0x7F, NULL);
+    probe("title", pid, PARAM_TITLE, 0x80, NULL);
+    probe("short title", pid, PARAM_SHORT_TITLE, 0x33, NULL);
+    probe("short title", pid, PARAM_SHORT_TITLE, 0x34, NULL);
+    probe("np communication id", pid, PARAM_NP_COMMUNICATION_ID, 0xC, NULL);
+    probe("np communication id", pid, PARAM_NP_COMMUNICATION_ID, 0xD, NULL);
 
     // The overrides fall back to the content ID and the title
-    probe("content id override", pid, SCE_APPMGR_APP_PARAM_CONTENT_ID_OVERRIDE, 0x30, NULL);
-    probe("title override", pid, SCE_APPMGR_APP_PARAM_TITLE_OVERRIDE, 0x80, NULL);
+    probe("content id override", pid, PARAM_CONTENT_ID_OVERRIDE, 0x30, NULL);
+    probe("title override", pid, PARAM_TITLE_OVERRIDE, 0x80, NULL);
 
     // Parameters that aren't strings of the SFO
     static const int others[] = { 0, 5, 11, 13, 15, 99, 102, -1 };
@@ -97,8 +107,8 @@ int main(void) {
         probe("other parameter", pid, others[i], 0x100, NULL);
 
     // Last, in case they crash
-    PRINT("NULL string", sceAppMgrAppParamGetString(pid, SCE_APPMGR_APP_PARAM_TITLE_ID, NULL, 0x40));
-    PRINT("NULL string, size 0", sceAppMgrAppParamGetString(pid, SCE_APPMGR_APP_PARAM_TITLE_ID, NULL, 0));
+    PRINT("NULL string", sceAppMgrAppParamGetString(pid, PARAM_TITLE_ID, NULL, 0x40));
+    PRINT("NULL string, size 0", sceAppMgrAppParamGetString(pid, PARAM_TITLE_ID, NULL, 0));
     test_exit();
     return 0;
 }
