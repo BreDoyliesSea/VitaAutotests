@@ -1,0 +1,17 @@
+size of the event: 0x00000040
+first poll: 0x80802013
+first poll: event: 0x00000000
+first poll: untouched bytes: 0x00000000
+first poll: guards intact: 0x00000001
+events before the process is idle, capped: 0x00000000
+idle poll: 0x80802013
+idle poll again: 0x80802013
+idle poll: event: 0x00000000
+idle poll: untouched bytes: 0x00000000
+idle poll: guards intact: 0x00000001
+idle poll: reserved bytes are all zero: 0x00000001
+idle polls that succeed, of 1000: 0x00000000
+idle polls that give a resume event, of 1000: 0x00000000
+idle polls that give any event, of 1000: 0x00000000
+NULL event: 0x80802016
+DONE
