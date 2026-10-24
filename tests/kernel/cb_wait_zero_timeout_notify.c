@@ -11,11 +11,13 @@
 // - message pipe: sceKernelReceiveMsgPipeCB of 4 bytes in FULL mode, which C's second run sends to
 //   the same pipe
 // Each case prints the wait's result, the time left in the timeout variable, how often C ran, and
-// whether the object holds what C's second run gave, with a poll after T ended.
+// whether the object holds what C's second run gave, with a poll after T ended. The event flag case
+// also prints the wait's out bits, which start as 0xDEAD.
 //
 // On a PS Vita TV on firmware 3.65 all four waits return 0x80028005 with the time left 0, and the
 // message pipe wait received nothing. C runs twice in each: at the start of the wait, and once more
-// before the wait returns, so the object holds what the second run gave once T ended.
+// before the wait returns, so the object holds what the second run gave once T ended. The event
+// flag wait's out bits read 0, the flag's bits when its wait ended, not the bit C's second run set.
 #include <psp2/kernel/threadmgr.h>
 
 #include "test.h"
@@ -31,6 +33,7 @@ static SceUID object;
 static volatile SceUID callback;
 static volatile int callback_runs, wait_result;
 static volatile SceUInt time_after;
+static volatile SceUInt32 bits_after;
 static volatile SceSize moved;
 
 // Gives T's wait what it waits for
@@ -65,7 +68,7 @@ static int t_entry(SceSize args, void *argp) {
     callback = sceKernelCreateCallback("zero", 0, callback_entry, NULL);
     sceKernelNotifyCallback(callback, 1);
     SceUInt timeout = 0;
-    SceUInt32 bits = 0;
+    SceUInt32 bits = NOT_DONE;
     SceUInt64 user_data = 0;
     SceSize size = NOT_DONE;
     char buffer[MESSAGE_SIZE];
@@ -76,6 +79,7 @@ static int t_entry(SceSize args, void *argp) {
     case PIPE: wait_result = sceKernelReceiveMsgPipeCB(object, buffer, sizeof(buffer), MSG_PIPE_MODE_FULL, &size, &timeout); break;
     }
     time_after = timeout;
+    bits_after = bits;
     moved = size;
     sceKernelDeleteCallback(callback);
     return 0;
@@ -102,6 +106,7 @@ static void run_case(const char *name, Kind k) {
     callback_runs = 0;
     wait_result = NOT_DONE;
     time_after = NOT_DONE;
+    bits_after = NOT_DONE;
     moved = NOT_DONE;
     switch (k) {
     case SEMA: object = sceKernelCreateSema("sema", 0, 0, 1, NULL); break;
@@ -114,6 +119,8 @@ static void run_case(const char *name, Kind k) {
 
     PRINTF(wait_result, "%s: the wait", name);
     PRINTF(time_after, "%s: the time left", name);
+    if (k == FLAG)
+        PRINTF(bits_after, "%s: the out bits", name);
     if (k == PIPE)
         PRINTF(moved, "%s: the size received", name);
     PRINTF(callback_runs, "%s: runs of the callback", name);
