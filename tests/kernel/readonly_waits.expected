@@ -1,0 +1,21 @@
+allocate the original: 0x00000000
+open it read only: 0x00000000
+end wait with the status there and a timeout: 0x00000000
+end wait with the status there and a timeout: the words changed: 0x00000000
+end wait with the status there and no timeout: 0x80022005
+end wait with the status there and no timeout: the words changed: 0x00000000
+end wait with the status in writable memory: 0x00000000
+end wait with the status in writable memory: the status: 0x00001234
+receive that times out with the timeout there: 0x80028005
+receive that times out with the timeout there: the words changed: 0x00000000
+receive woken by a send with the timeout there: the send: 0x00000000
+receive woken by a send with the timeout there: it ended by itself: 0x00000001
+receive woken by a send with the timeout there: 0x00000000
+receive woken by a send with the timeout there: the words changed: 0x00000000
+receive woken by a send with the timeout there: it got the message: 0x00000001
+event flag wait woken by a set with the bits there: the set: 0x00000000
+event flag wait woken by a set with the bits there: it ended by itself: 0x00000001
+event flag wait woken by a set with the bits there: 0x80022005
+event flag wait woken by a set with the bits there: the words changed: 0x00000000
+event flag wait woken by a set with the bits there: the timeout still holds its value: 0x00000001
+DONE

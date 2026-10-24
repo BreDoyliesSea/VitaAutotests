@@ -1,0 +1,33 @@
+in a start handler: register the handler: 0x00000000
+in a start handler: the wait for the end of the target: 0x00000000
+in a start handler: runs of the handler for that type: 0x00000001
+in a start handler: register a handler for the same thread: 0x80027101
+in a start handler: unregister the handler itself: 0x80027101
+in a start handler: create a thread: 0x80027101
+in a start handler: start a thread created before: 0x80027101
+in a start handler: the thread it started ran: 0x00000000
+in a start handler: runs of the handler registered inside: 0x00000000
+in a start handler: unregister the handler from the main thread: 0x00000000
+in an end handler: register the handler: 0x00000000
+in an end handler: the wait for the end of the target: 0x00000000
+in an end handler: runs of the handler for that type: 0x00000001
+in an end handler: register a handler for the same thread: 0x80027101
+in an end handler: unregister the handler itself: 0x80027101
+in an end handler: create a thread: 0x80027101
+in an end handler: start a thread created before: 0x80027101
+in an end handler: the thread it started ran: 0x00000000
+in an end handler: runs of the handler registered inside: 0x00000000
+in an end handler: unregister the handler from the main thread: 0x00000000
+an end handler that returns 1: register: 0x00000000
+an end handler that returns 1: first run: the wait for the end: 0x00000000
+an end handler that returns 1: first run: runs of the handler: 0x00000001
+an end handler that returns 1: second run: the wait for the end: 0x00000000
+an end handler that returns 1: second run: runs of the handler: 0x00000001
+an end handler that returns 1: unregister it after: 0x80028061
+register for every thread with the mask 0: 0x00000000
+register for a created thread with the mask 0: 0x00000000
+register for the calling thread as 0 with START: 0x80020005
+register for the calling thread as 0 with END: 0x00000000
+register for the calling thread by UID with END: 0x00000000
+register for every thread with the mask 0x10: 0x80020005
+DONE

@@ -1,0 +1,19 @@
+try lock of 2 while free: 0x8002000F
+try lock of 2 while the caller holds it: 0x80028182
+try lock of 2 while another thread holds it: 0x80028185
+the lock that wraps the count: 0x00000000
+try lock by the owner after the wrap: 0x80028183
+try lock by another thread after the wrap: 0x80028185
+delete while held: 0x00000000
+unlock by the owner after the delete: 0x00000000
+the deleted work area after the unlock: word 0 is not 0: 0x00000000
+the deleted work area after the unlock: word 1 is not 0: 0x00000000
+the deleted work area after the unlock: word 2 is not 0: 0x00000000
+lock of the deleted work area: 0x00000000
+unlock of 1 with a UID word of 0: 0x80028181
+unlock 2 of 1 with a UID word of 0: 0x8002000F
+unlock of 1 with a UID word of -1: 0x80028181
+unlock 2 of 1 with a UID word of -1: 0x80028181
+info by an unknown UID with a size of 0x44: 0x8002710B
+info by an unknown UID with no struct: 0x80028181
+DONE

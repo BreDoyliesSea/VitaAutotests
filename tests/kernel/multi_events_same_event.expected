@@ -1,0 +1,43 @@
+OR, A twice, auto reset, set while waiting: the set: 0x00000000
+OR, A twice, auto reset, set while waiting: the call: 0x00000001
+OR, A twice, auto reset, set while waiting: entry 0 is A: 0x00000001
+OR, A twice, auto reset, set while waiting: entry 0 result: 0x00000000
+OR, A twice, auto reset, set while waiting: entry 0 bits: 0x01000000
+OR, A twice, auto reset, set while waiting: entry 0 user data: 0x00000077
+OR, A twice, auto reset, set while waiting: the bits of A after: 0x00000004
+OR, A twice, set before: the call: 0x00000002
+OR, A twice, set before: entry 0 is A: 0x00000001
+OR, A twice, set before: entry 0 result: 0x00000000
+OR, A twice, set before: entry 0 bits: 0x01000000
+OR, A twice, set before: entry 0 user data: 0x00000077
+OR, A twice, set before: entry 1 is A: 0x00000001
+OR, A twice, set before: entry 1 result: 0x00000000
+OR, A twice, set before: entry 1 bits: 0x01000000
+OR, A twice, set before: entry 1 user data: 0x00000077
+OR, A twice, set before: the bits of A after: 0x01000004
+OR, A twice, auto reset, set before: the call: 0x00000001
+OR, A twice, auto reset, set before: entry 0 is A: 0x00000001
+OR, A twice, auto reset, set before: entry 0 result: 0x00000000
+OR, A twice, auto reset, set before: entry 0 bits: 0x01000000
+OR, A twice, auto reset, set before: entry 0 user data: 0x00000077
+OR, A twice, auto reset, set before: the bits of A after: 0x00000004
+AND, A twice, M raised above S: raise M: 0x00000000
+AND, A twice, M raised above S: S still waits after the first set: 0x00000001
+AND, A twice, M raised above S: M still waits after the first set: 0x00000001
+AND, A twice, M raised above S: the bits of A after the first set: 0x00000004
+AND, A twice, M raised above S: S still waits after the second set: 0x00000001
+AND, A twice, M raised above S: M still waits after the second set: 0x00000000
+AND, A twice, M raised above S: the bits of A after the second set: 0x00000004
+AND, A twice, M raised above S: the cancel: 0x00000000
+AND, A twice, M raised above S: the waiters the cancel reports: 0x00000001
+AND, A twice, M raised above S: M's call: 0x00000002
+AND, A twice, M raised above S: entry 0 is A: 0x00000001
+AND, A twice, M raised above S: entry 0 result: 0x00000000
+AND, A twice, M raised above S: entry 0 bits: 0x01000000
+AND, A twice, M raised above S: entry 0 user data: 0x00000077
+AND, A twice, M raised above S: entry 1 is A: 0x00000001
+AND, A twice, M raised above S: entry 1 result: 0x00000000
+AND, A twice, M raised above S: entry 1 bits: 0x01000000
+AND, A twice, M raised above S: entry 1 user data: 0x00000088
+AND, A twice, M raised above S: S's wait: 0x80028007
+DONE

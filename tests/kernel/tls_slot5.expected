@@ -1,0 +1,11 @@
+slot 5 in a callback is not 0: 0x00000000
+lock with slot 5 set to 1: 0x80028004
+the mutex is free after the lock: 0x00000001
+lock with callbacks with slot 5 set to 1: 0x80028004
+the mutex is free after the lock with callbacks: 0x00000001
+try lock with slot 5 set to 1: 0x00000000
+lock once slot 5 is back: 0x00000000
+register the handler: 0x00000000
+slot 5 in the start handler is not 0: 0x00000000
+slot 5 in the end handler is not 0: 0x00000000
+DONE

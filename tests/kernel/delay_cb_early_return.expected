@@ -1,0 +1,9 @@
+delay: the result: 0x00000000
+delay: it took at least 500 ms: 0x00000000
+delay: runs of the callback when it returned: 0x00000001
+delay: runs of the callback after a check: 0x00000002
+semaphore wait: the result: 0x80028005
+semaphore wait: it took at least 500 ms: 0x00000001
+semaphore wait: runs of the callback when it returned: 0x00000002
+semaphore wait: runs of the callback after a check: 0x00000002
+DONE

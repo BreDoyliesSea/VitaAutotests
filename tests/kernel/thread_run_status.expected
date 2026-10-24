@@ -1,0 +1,17 @@
+size of the struct: the call: 0x00000000
+size of the struct: the size word is unchanged: 0x00000001
+size of the struct: a word of the struct changed: 0x00000001
+size of the struct: a word past the struct changed: 0x00000000
+size of the struct: the entries that hold this thread: 0x00000001
+size of the struct: its process is this one: 0x00000001
+size of the struct: its priority is this thread's: 0x00000001
+size 0: the call: 0x00000000
+size 0: the size word is unchanged: 0x00000001
+size 0: a word of the struct changed: 0x00000000
+size 0: a word past the struct changed: 0x00000000
+size past the struct: the call: 0x8002710B
+size past the struct: the size word is unchanged: 0x00000001
+size past the struct: a word of the struct changed: 0x00000000
+size past the struct: a word past the struct changed: 0x00000000
+NULL: 0x80020006
+DONE

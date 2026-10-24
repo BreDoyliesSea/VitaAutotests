@@ -1,0 +1,37 @@
+event info of a fresh pipe: 0x00000000
+a fresh pipe: the bits: 0x00000004
+clear every bit: 0x00000000
+the bits after the clear: 0x00000000
+try send of 4 ASAP: the call: 0x00000000
+try send of 4 ASAP: the bits after: 0x00010001
+try send of 4 ASAP: the low half of the user data: 0x00000000
+try send of 4 ASAP: the high half of the user data: 0x00000004
+try send FULL into a pipe holding 4: the bits before: 0x00000000
+try send FULL into a pipe holding 4: the call: 0x80028222
+try send FULL into a pipe holding 4: the bits after: 0x00000010
+try send FULL into a pipe holding 4: the low half of the user data: 0x80028222
+try send FULL into a pipe holding 4: the high half of the user data: 0xFFFFFFFF
+try receive of 4 that empties the pipe: the bits before: 0x00010001
+try receive of 4 that empties the pipe: the call: 0x00000000
+try receive of 4 that empties the pipe: the bits after: 0x00000003
+try receive of 4 that empties the pipe: the low half of the user data: 0x00000000
+try receive of 4 that empties the pipe: the high half of the user data: 0x00000004
+try receive of 4 ASAP from a pipe holding 8: the bits before: 0x00010001
+try receive of 4 ASAP from a pipe holding 8: the call: 0x00000000
+try receive of 4 ASAP from a pipe holding 8: the bits after: 0x00010003
+try receive of 4 ASAP from a pipe holding 8: the low half of the user data: 0x00000000
+try receive of 4 ASAP from a pipe holding 8: the high half of the user data: 0x00000004
+blocking send of 4: the call: 0x00000000
+blocking send of 4: the bits after: 0x00010001
+blocking send of 4: the low half of the user data: 0x00000000
+blocking send of 4: the high half of the user data: 0x00000004
+blocking receive of 4 that empties the pipe: the bits before: 0x00010001
+blocking receive of 4 that empties the pipe: the call: 0x00000000
+blocking receive of 4 that empties the pipe: the bits after: 0x00000003
+blocking receive of 4 that empties the pipe: the low half of the user data: 0x00000000
+blocking receive of 4 that empties the pipe: the high half of the user data: 0x00000004
+blocking receive with a timeout of 0: the call: 0x80028005
+blocking receive with a timeout of 0: the bits after: 0x00000010
+blocking receive with a timeout of 0: the low half of the user data: 0x80028005
+blocking receive with a timeout of 0: the high half of the user data: 0xFFFFFFFF
+DONE

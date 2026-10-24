@@ -1,0 +1,31 @@
+attr 0x2 with the user stack type USER_RW: create: 0x00000000
+attr 0x2 with the user stack type USER_RW: start: 0x00000000
+attr 0x2 with the user stack type USER_RW: it ran: 0x00000001
+attr 0x2 with the user stack type 0x0E20D060: create: 0x8002000C
+attr 0x4 with the TLS type USER_RW: create: 0x00000000
+attr 0x4 with the TLS type USER_RW: start: 0x00000000
+attr 0x4 with the TLS type USER_RW: it ran: 0x00000001
+attr 0x6 with both types USER_RW: create: 0x00000000
+attr 0x6 with both types USER_RW: start: 0x00000000
+attr 0x6 with both types USER_RW: it ran: 0x00000001
+attr 0x10 with the last field 0x301: create: 0x00000000
+attr 0x10 with the last field 0x301: start: 0x00000000
+attr 0x10 with the last field 0x301: it ran: 0x00000001
+attr 0x10 with the last field 0x1: create: 0x00000000
+attr 0x10 with the last field 0x1: start: 0x00000000
+attr 0x10 with the last field 0x1: it ran: 0x00000001
+attr 0x10 with the last field 0x100: create: 0x00000000
+attr 0x10 with the last field 0x100: start: 0x00000000
+attr 0x10 with the last field 0x100: it ran: 0x00000001
+attr 0x10 with the last field 0x200: create: 0x00000000
+attr 0x10 with the last field 0x200: start: 0x00000000
+attr 0x10 with the last field 0x200: it ran: 0x00000001
+attr 0x10 with the last field 0x2: create: 0x8002000C
+size 8, attr 0x2 and USER_RW at +0xC: create: 0x8002000C
+size 0x10, attr 0x2 and USER_RW at +0xC: create: 0x00000000
+size 0x10, attr 0x2 and USER_RW at +0xC: start: 0x00000000
+size 0x10, attr 0x2 and USER_RW at +0xC: it ran: 0x00000001
+attr 0x22 with the user stack type 0: create: 0x00000000
+attr 0x22 with the user stack type 0: start: 0x00000000
+attr 0x22 with the user stack type 0: it ran: 0x00000001
+DONE

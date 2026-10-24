@@ -327,6 +327,20 @@ vita_test(cb_wait_callback_writes_timeout kernel/cb_wait_callback_writes_timeout
 vita_test(cb_wait_take_final_check kernel/cb_wait_take_final_check.c)
 vita_test(cond_callback_departure kernel/cond_callback_departure.c)
 vita_test(cond_callback_after_wake kernel/cond_callback_after_wake.c)
+vita_test(thread_event_handler_context kernel/thread_event_handler_context.c)
+vita_test(thread_opt_fields kernel/thread_opt_fields.c)
+vita_test(mutex_ceiling_options kernel/mutex_ceiling_options.c)
+vita_test(uid_raw_bits kernel/uid_raw_bits.c)
+vita_test(timer_remaining_passed kernel/timer_remaining_passed.c)
+vita_test(thread_run_status kernel/thread_run_status.c)
+vita_test(multi_events_same_event kernel/multi_events_same_event.c)
+vita_test(multi_events_results_past kernel/multi_events_results_past.c)
+vita_test(delay_cb_early_return kernel/delay_cb_early_return.c)
+vita_test(lw_mutex_user_paths kernel/lw_mutex_user_paths.c)
+vita_test(tls_slot5 kernel/tls_slot5.c)
+vita_test(readonly_waits kernel/readonly_waits.c)
+vita_test(msgpipe_sync_events kernel/msgpipe_sync_events.c)
+vita_test(multi_events_pipe kernel/multi_events_pipe.c)
 
 # The module module_start_thread and module_start_vfp load. vita_create_self runs in a function, since it adds its flags
 # to the scope it runs in, where they would also apply to the test vpk's self.
