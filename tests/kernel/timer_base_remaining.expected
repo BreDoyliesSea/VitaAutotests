@@ -1,0 +1,19 @@
+a fresh timer: the base: 0x00000000
+a fresh timer: the base is 0: 0x00000001
+a fresh timer: the remaining time: 0x80028242
+set while stopped: the remaining time: 0x00000000
+set while stopped: the remaining time is the interval: 0x00000001
+started: the base: 0x00000000
+started: the base is the process time it started at: 0x00000001
+started: the remaining time: 0x00000000
+started: the remaining time plus the timer's time is the interval, within 50 ms: 0x00000001
+stopped: the base: 0x00000000
+stopped: the base is 0: 0x00000001
+stopped: the remaining time: 0x00000000
+stopped: the remaining time plus the timer's time is the interval: 0x00000001
+started again: the base: 0x00000000
+started again: the base isn't 0: 0x00000001
+started again: the remaining time: 0x00000000
+started again: the remaining time plus the timer's time is the interval, within 50 ms: 0x00000001
+canceled: the remaining time: 0x80028242
+DONE

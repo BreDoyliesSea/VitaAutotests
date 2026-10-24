@@ -1,0 +1,6 @@
+queued: T's wait: 0x80028006
+queued: T's out bits: 0x0000000C
+in its callback: T's callback waits on the gate when the flag is deleted: 0x00000001
+in its callback: T's wait: 0x80028006
+in its callback: T's out bits: 0x0000000E
+DONE
