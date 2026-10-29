@@ -5,9 +5,9 @@
 // writes first.
 //
 // A time is the median of FILE_COUNT calls, one per file, or of the reads or passes the case names.
-// It is printed rounded down to a power of two microseconds, so the output stays the same from run
-// to run unless a median sits right at a power of two. The exact medians, with the fastest and
-// slowest call, go to the debug output and to TIMES_PATH, which the runner doesn't compare.
+// It is printed as whether it is at least about a tenth of what the call takes on a Vita, so the
+// output stays the same from run to run and from Vita to Vita. The exact medians, with the fastest
+// and slowest call, go to the debug output and to TIMES_PATH, which the runner doesn't compare.
 //
 // Some games depend on these calls taking time. Silent Hill: Book of Memories reads a 20 MiB level
 // package through on its main thread while a loader thread it just started loads its own files and
@@ -50,24 +50,16 @@ static SceUInt32 median(SceUInt32 *values, int count) {
     return values[count / 2];
 }
 
-static SceUInt32 power_of_two_below(SceUInt32 us) {
-    if (us == 0)
-        return 0;
-    SceUInt32 p = 1;
-    while (p <= us / 2)
-        p *= 2;
-    return p;
-}
-
-// Prints the median of the times, rounded, and writes it exactly with the fastest and slowest
-static void report(const char *dev, const char *what, SceUInt32 *times, int count) {
+// Prints whether the median of the times is at least min_us, and writes it exactly with the fastest
+// and slowest
+static void report(const char *dev, const char *what, SceUInt32 *times, int count, SceUInt32 min_us) {
     SceUInt32 lo = times[0], hi = times[0];
     for (int i = 1; i < count; i++) {
         lo = times[i] < lo ? times[i] : lo;
         hi = times[i] > hi ? times[i] : hi;
     }
     const SceUInt32 mid = median(times, count);
-    PRINTF(power_of_two_below(mid), "%s: %s, median us rounded down to a power of two", dev, what);
+    PRINTF(mid >= min_us, "%s: %s, median at least %u us", dev, what, (unsigned)min_us);
     char line[192];
     const int len = sceClibSnprintf(line, sizeof(line), "%s: %s: median %u us, fastest %u, slowest %u, of %d\n",
                                     dev, what, (unsigned)mid, (unsigned)lo, (unsigned)hi, count);
@@ -166,16 +158,16 @@ static void time_device(const char *dev, const char *dir) {
         sceIoClose(fd);
 
     PRINTF(failures, "%s: calls that didn't do what they should", dev);
-    report(dev, "open a file the first time", first, FILE_COUNT);
-    report(dev, "open it again", again, FILE_COUNT);
-    report(dev, "getstat a file", stat_file, FILE_COUNT);
-    report(dev, "getstat a missing file", stat_missing, FILE_COUNT);
-    report(dev, "open a missing file", open_missing, FILE_COUNT);
-    report(dev, "read a whole 16 KiB file", read_small, FILE_COUNT);
-    report(dev, "close a file", close_file, FILE_COUNT);
-    report(dev, "read a 1 MiB file through in 64 KiB reads, the first time", big_first, 1);
-    report(dev, "read it through again", big_again, AGAIN_PASSES);
-    report(dev, "seek and read 4 KiB in another 1 MiB file", seek_read, SEEK_READS);
+    report(dev, "open a file the first time", first, FILE_COUNT, 100);
+    report(dev, "open it again", again, FILE_COUNT, 100);
+    report(dev, "getstat a file", stat_file, FILE_COUNT, 50);
+    report(dev, "getstat a missing file", stat_missing, FILE_COUNT, 250);
+    report(dev, "open a missing file", open_missing, FILE_COUNT, 50);
+    report(dev, "read a whole 16 KiB file", read_small, FILE_COUNT, 1000);
+    report(dev, "close a file", close_file, FILE_COUNT, 20);
+    report(dev, "read a 1 MiB file through in 64 KiB reads, the first time", big_first, 1, 10000);
+    report(dev, "read it through again", big_again, AGAIN_PASSES, 10000);
+    report(dev, "seek and read 4 KiB in another 1 MiB file", seek_read, SEEK_READS, 250);
 }
 
 static int copy_file(const char *from, const char *to) {
